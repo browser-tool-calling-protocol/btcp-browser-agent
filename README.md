@@ -337,22 +337,119 @@ try {
 }
 ```
 
+## Chrome Extension Support
+
+The agent supports running in Chrome extension context with enhanced capabilities:
+
+### Capabilities Comparison
+
+| Capability | Browser Tab | Chrome Extension |
+|------------|-------------|------------------|
+| Cross-origin | ❌ Same-origin only | ✅ Any page |
+| Screenshots | ⚠️ Canvas (limited) | ✅ `captureVisibleTab` |
+| Tab management | ❌ None | ✅ Full |
+| Network intercept | ❌ Track only | ✅ Modify |
+| DevTools Protocol | ❌ None | ✅ Available |
+
+### Context Detection
+
+```typescript
+const agent = new BrowserAgent();
+
+// Check context
+if (agent.isExtension()) {
+  console.log('Running in extension');
+  const ctx = agent.getContext();
+  console.log('Context type:', ctx.type); // 'extension-content' | 'extension-background' | 'extension-popup'
+}
+
+// Check specific capabilities
+if (agent.hasCapability('screenshot')) {
+  const { screenshot } = await agent.screenshot(); // Uses chrome.tabs.captureVisibleTab
+}
+```
+
+### Extension-Specific Functions
+
+```typescript
+import {
+  detectContext,
+  isExtensionContext,
+  extensionScreenshot,
+  extensionNavigate,
+  extensionGetTabs,
+  extensionNewTab,
+  extensionSwitchTab,
+  extensionCloseTab,
+  setupBackgroundHandler,
+  setupContentHandler,
+} from 'btcp-browser-agent';
+
+// Background script handler
+setupBackgroundHandler((message, sendResponse) => {
+  if (message.type === 'screenshot') {
+    extensionScreenshot(message.id).then(sendResponse);
+    return true; // Keep channel open for async response
+  }
+  return false;
+});
+
+// Content script handler
+setupContentHandler((message, sendResponse) => {
+  // Handle commands from background/popup
+});
+```
+
+### Extension Architecture
+
+For best results, use a multi-script architecture:
+
+1. **Background Script** - Handles chrome.* APIs (tabs, screenshots, network)
+2. **Content Script** - Runs BrowserAgent in page context
+3. **Popup** - UI for controlling the agent
+
+```
+┌─────────────┐     ┌─────────────────┐     ┌─────────────┐
+│   Popup     │────▶│  Background     │────▶│  Content    │
+│             │     │  Service Worker │     │  Script     │
+└─────────────┘     └─────────────────┘     └─────────────┘
+                           │                       │
+                    chrome.tabs.*           BrowserAgent
+                    chrome.debugger         DOM access
+```
+
 ## Limitations
 
-This browser-native implementation has some limitations compared to the Playwright-based version:
+### Browser Tab Context
+
+When running in a regular browser tab:
 
 1. **No cross-origin access** - Can only interact with same-origin content
-2. **Limited screenshot support** - Full screenshot requires canvas rendering
+2. **Limited screenshot support** - Canvas-based (doesn't capture actual page)
 3. **No HAR recording** - Limited to fetch/XHR request tracking
 4. **No video recording** - Not available in browser context
 5. **No PDF generation** - Requires server-side processing
 6. **No file upload** - File input interaction is limited
 7. **No network interception** - Can only track requests, not modify responses
-8. **Dialog handling** - Native dialogs (alert, confirm, prompt) cannot be intercepted
+8. **Dialog handling** - Native dialogs cannot be intercepted
+
+### Chrome Extension Context
+
+With extension permissions, most limitations are lifted:
+
+- ✅ Cross-origin via content scripts
+- ✅ Full screenshots via `chrome.tabs.captureVisibleTab`
+- ✅ Network interception via `chrome.webRequest`
+- ✅ Tab management via `chrome.tabs`
+
+Remaining limitations:
+- Video recording still not available
+- PDF generation requires external service
+- Some page interactions may need user gesture
 
 ## Use Cases
 
-- **Browser extensions** - Add AI agent capabilities to extensions
+- **Browser extensions** - Add AI agent capabilities to extensions (recommended)
 - **Web applications** - Build automation features into web apps
 - **Testing tools** - Create browser-based testing frameworks
 - **Accessibility tools** - Build tools that analyze and interact with pages

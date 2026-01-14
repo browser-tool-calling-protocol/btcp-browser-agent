@@ -141,11 +141,46 @@ export { executeCommand, setScreencastFrameCallback, toAIFriendlyError } from '.
 // Re-export unified describe API
 export { type Description, describe } from './describe.js';
 
+// Re-export context detection and extension support
+export {
+  type ContextType,
+  type ContextInfo,
+  detectContext,
+  isExtensionContext,
+  isContentScript,
+  isBackgroundScript,
+  sendToBackground,
+  sendToTab,
+  captureVisibleTab,
+  getActiveTab,
+  executeInTab,
+  createContextOperations,
+} from './context.js';
+
+export {
+  type ExtensionMessage,
+  type ExtensionResponse,
+  extensionScreenshot,
+  extensionNavigate,
+  extensionEvaluate,
+  extensionGetTabs,
+  extensionNewTab,
+  extensionSwitchTab,
+  extensionCloseTab,
+  executeInTabContext,
+  setupBackgroundHandler,
+  setupContentHandler,
+  getExtensionCapabilities,
+  hasCapability,
+} from './extension.js';
+
 // Import for creating the agent
 import { BrowserManager } from './browser.js';
 import { executeCommand, setScreencastFrameCallback } from './actions.js';
 import { parseCommand, serializeResponse, generateCommandId } from './protocol.js';
 import { describe, type Description } from './describe.js';
+import { detectContext, type ContextInfo } from './context.js';
+import { extensionScreenshot, hasCapability } from './extension.js';
 import type { Command, Response } from './types.js';
 
 /**
@@ -162,6 +197,10 @@ export interface BrowserAgentConfig {
   onResponse?: (response: Response) => void;
   /** Whether to auto-launch on first command */
   autoLaunch?: boolean;
+  /** Force specific context mode ('browser' | 'extension') */
+  forceContext?: 'browser' | 'extension';
+  /** Use extension APIs when available (default: true) */
+  useExtensionApis?: boolean;
 }
 
 /**
@@ -191,10 +230,15 @@ export class BrowserAgent {
   private browser: BrowserManager;
   private config: BrowserAgentConfig;
   private launched: boolean = false;
+  private contextInfo: ContextInfo;
 
   constructor(config: BrowserAgentConfig = {}) {
-    this.config = config;
+    this.config = {
+      useExtensionApis: true, // Default to using extension APIs when available
+      ...config,
+    };
     this.browser = new BrowserManager(config.targetWindow, config.targetDocument);
+    this.contextInfo = detectContext();
 
     if (config.onScreencastFrame) {
       setScreencastFrameCallback(config.onScreencastFrame);
@@ -508,6 +552,73 @@ export class BrowserAgent {
    */
   getBrowserManager(): BrowserManager {
     return this.browser;
+  }
+
+  // ============================================================================
+  // CONTEXT & EXTENSION API
+  // ============================================================================
+
+  /**
+   * Get the current runtime context information
+   *
+   * @example
+   * ```typescript
+   * const ctx = agent.getContext();
+   * if (ctx.isExtension) {
+   *   console.log('Running in extension:', ctx.type);
+   *   console.log('Can screenshot:', ctx.canCaptureScreenshot);
+   * }
+   * ```
+   */
+  getContext(): ContextInfo {
+    return this.contextInfo;
+  }
+
+  /**
+   * Check if running in Chrome extension context
+   */
+  isExtension(): boolean {
+    return this.contextInfo.isExtension;
+  }
+
+  /**
+   * Check if a specific capability is available
+   */
+  hasCapability(capability: 'screenshot' | 'crossOrigin' | 'network' | 'tabs' | 'debugger'): boolean {
+    return hasCapability(capability);
+  }
+
+  /**
+   * Take a screenshot (uses extension API when available for better results)
+   *
+   * @example
+   * ```typescript
+   * const { screenshot, format } = await agent.screenshot();
+   * // screenshot is base64 encoded image data
+   * ```
+   */
+  async screenshot(options?: { format?: 'png' | 'jpeg'; quality?: number }): Promise<{ screenshot: string; format: string }> {
+    // Use extension API if available and enabled
+    if (this.config.useExtensionApis && this.contextInfo.canCaptureScreenshot) {
+      const response = await extensionScreenshot(generateCommandId(), options);
+      if (response.success) {
+        return response.data as { screenshot: string; format: string };
+      }
+      // Fall back to standard method if extension screenshot fails
+    }
+
+    // Use standard screenshot command
+    const response = await this.execute({
+      id: generateCommandId(),
+      action: 'screenshot',
+      ...options,
+    });
+
+    if (!response.success) {
+      throw new Error(response.error);
+    }
+
+    return response.data as { screenshot: string; format: string };
   }
 
   // ============================================================================
