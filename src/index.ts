@@ -154,6 +154,20 @@ export {
   formatError,
 } from './schema.js';
 
+// Re-export programmatic interfaces for AI code generation
+export {
+  type FunctionParam,
+  type FunctionSignature,
+  type InterfaceDefinition,
+  type CallableFunction,
+  getTypeScriptInterfaces,
+  getFunctionSignatures,
+  getCallableFunctions,
+  getInterfaces,
+  getCompactInterface,
+  getInterfaceString,
+} from './interfaces.js';
+
 // Import for creating the agent
 import { BrowserManager } from './browser.js';
 import { executeCommand, setScreencastFrameCallback } from './actions.js';
@@ -168,8 +182,16 @@ import {
   suggestAction,
   formatError,
 } from './schema.js';
+import {
+  getInterfaces,
+  getTypeScriptInterfaces,
+  getFunctionSignatures,
+  getCompactInterface,
+  getInterfaceString,
+} from './interfaces.js';
 import type { Command, Response } from './types.js';
 import type { CommandSchema } from './schema.js';
+import type { InterfaceDefinition, FunctionSignature } from './interfaces.js';
 
 /**
  * Configuration options for the BrowserAgent
@@ -640,6 +662,77 @@ export class BrowserAgent {
   }
 
   // ============================================================================
+  // PROGRAMMATIC INTERFACES (for AI code generation)
+  // ============================================================================
+
+  /**
+   * Get complete interface definition including TypeScript types and function signatures
+   *
+   * @example
+   * ```typescript
+   * const interfaces = agent.getInterfaces();
+   * console.log(interfaces.typescript);  // TypeScript interface definitions
+   * console.log(interfaces.functions);   // Function signatures
+   * console.log(interfaces.usage);       // Usage guide
+   * ```
+   */
+  getInterfaces(): InterfaceDefinition {
+    return getInterfaces();
+  }
+
+  /**
+   * Get TypeScript interface definitions as a string
+   *
+   * @example
+   * ```typescript
+   * const types = agent.getTypeScriptInterfaces();
+   * // Returns: interface ClickCommand { action: 'click'; selector: string; ... }
+   * ```
+   */
+  getTypeScriptInterfaces(): string {
+    return getTypeScriptInterfaces();
+  }
+
+  /**
+   * Get function signatures for all BrowserAgent methods
+   *
+   * @example
+   * ```typescript
+   * const sigs = agent.getFunctionSignatures();
+   * // [{ name: 'click', params: [...], returns: {...} }, ...]
+   * ```
+   */
+  getFunctionSignatures(): FunctionSignature[] {
+    return getFunctionSignatures();
+  }
+
+  /**
+   * Get compact interface for AI context injection
+   *
+   * @example
+   * ```typescript
+   * const compact = agent.getCompactInterface();
+   * // { actions: [...], methods: [...], workflow: [...] }
+   * ```
+   */
+  getCompactInterface(): ReturnType<typeof getCompactInterface> {
+    return getCompactInterface();
+  }
+
+  /**
+   * Get interface as a single string (best for AI context)
+   *
+   * @example
+   * ```typescript
+   * const ctx = agent.getInterfaceString();
+   * // Returns formatted string with all methods and examples
+   * ```
+   */
+  getInterfaceString(): string {
+    return getInterfaceString();
+  }
+
+  // ============================================================================
   // STATIC HELP METHODS (accessible without instantiation)
   // ============================================================================
 
@@ -680,6 +773,41 @@ export class BrowserAgent {
       version: AGENT_SCHEMA.version,
       description: AGENT_SCHEMA.description,
     };
+  }
+
+  /**
+   * Get complete interface definition (static version)
+   */
+  static getInterfaces(): InterfaceDefinition {
+    return getInterfaces();
+  }
+
+  /**
+   * Get TypeScript interfaces (static version)
+   */
+  static getTypeScriptInterfaces(): string {
+    return getTypeScriptInterfaces();
+  }
+
+  /**
+   * Get function signatures (static version)
+   */
+  static getFunctionSignatures(): FunctionSignature[] {
+    return getFunctionSignatures();
+  }
+
+  /**
+   * Get compact interface (static version)
+   */
+  static getCompactInterface(): ReturnType<typeof getCompactInterface> {
+    return getCompactInterface();
+  }
+
+  /**
+   * Get interface string (static version)
+   */
+  static getInterfaceString(): string {
+    return getInterfaceString();
   }
 }
 
