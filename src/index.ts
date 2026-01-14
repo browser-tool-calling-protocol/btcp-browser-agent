@@ -138,11 +138,38 @@ export { BrowserManager, type ScreencastFrame, type ScreencastOptions } from './
 // Re-export action handlers
 export { executeCommand, setScreencastFrameCallback, toAIFriendlyError } from './actions.js';
 
+// Re-export schema utilities for self-description
+export {
+  type ParameterSchema,
+  type CommandSchema,
+  type AgentSchema,
+  AGENT_SCHEMA,
+  getAvailableActions,
+  getCommandsByCategory,
+  getCommandSchema,
+  getCommandHelp,
+  getFullHelp,
+  getJSONSchema,
+  suggestAction,
+  formatError,
+} from './schema.js';
+
 // Import for creating the agent
 import { BrowserManager } from './browser.js';
 import { executeCommand, setScreencastFrameCallback } from './actions.js';
 import { parseCommand, serializeResponse, generateCommandId } from './protocol.js';
+import {
+  AGENT_SCHEMA,
+  getAvailableActions,
+  getCommandHelp,
+  getFullHelp,
+  getJSONSchema,
+  getCommandSchema,
+  suggestAction,
+  formatError,
+} from './schema.js';
 import type { Command, Response } from './types.js';
+import type { CommandSchema } from './schema.js';
 
 /**
  * Configuration options for the BrowserAgent
@@ -504,6 +531,155 @@ export class BrowserAgent {
    */
   getBrowserManager(): BrowserManager {
     return this.browser;
+  }
+
+  // ============================================================================
+  // SELF-DESCRIPTION / HELP METHODS
+  // ============================================================================
+
+  /**
+   * Get full help text (similar to --help in CLI tools)
+   *
+   * @example
+   * ```typescript
+   * console.log(agent.help());
+   * // Outputs comprehensive documentation of all available commands
+   * ```
+   */
+  help(): string {
+    return getFullHelp();
+  }
+
+  /**
+   * Get detailed help for a specific command
+   *
+   * @example
+   * ```typescript
+   * console.log(agent.describeCommand('click'));
+   * // Outputs detailed documentation for the click action
+   * ```
+   */
+  describeCommand(action: string): string {
+    return getCommandHelp(action);
+  }
+
+  /**
+   * Get list of all available actions
+   *
+   * @example
+   * ```typescript
+   * const actions = agent.getAvailableCommands();
+   * // ['snapshot', 'click', 'type', 'fill', ...]
+   * ```
+   */
+  getAvailableCommands(): string[] {
+    return getAvailableActions();
+  }
+
+  /**
+   * Get schema for a specific command
+   *
+   * @example
+   * ```typescript
+   * const schema = agent.getCommandInfo('click');
+   * // { action: 'click', parameters: [...], examples: [...] }
+   * ```
+   */
+  getCommandInfo(action: string): CommandSchema | undefined {
+    return getCommandSchema(action);
+  }
+
+  /**
+   * Get JSON Schema for all commands (useful for programmatic validation)
+   *
+   * @example
+   * ```typescript
+   * const schema = agent.getJSONSchema();
+   * // Can be used with JSON Schema validators
+   * ```
+   */
+  getJSONSchema(): Record<string, unknown> {
+    return getJSONSchema();
+  }
+
+  /**
+   * Suggest similar actions for an unknown action
+   *
+   * @example
+   * ```typescript
+   * const suggestions = agent.suggestCommand('clck');
+   * // ['click']
+   * ```
+   */
+  suggestCommand(unknownAction: string): string[] {
+    return suggestAction(unknownAction);
+  }
+
+  /**
+   * Format an error with recovery suggestions
+   *
+   * @example
+   * ```typescript
+   * const message = agent.formatError('click', 'Element not found');
+   * // Includes error details and recovery suggestions
+   * ```
+   */
+  formatCommandError(action: string, error: string): string {
+    return formatError(action, error);
+  }
+
+  /**
+   * Get the agent schema (metadata about the agent)
+   */
+  getAgentInfo(): { name: string; version: string; description: string } {
+    return {
+      name: AGENT_SCHEMA.name,
+      version: AGENT_SCHEMA.version,
+      description: AGENT_SCHEMA.description,
+    };
+  }
+
+  // ============================================================================
+  // STATIC HELP METHODS (accessible without instantiation)
+  // ============================================================================
+
+  /**
+   * Get full help text (static version)
+   */
+  static help(): string {
+    return getFullHelp();
+  }
+
+  /**
+   * Get help for a specific command (static version)
+   */
+  static describeCommand(action: string): string {
+    return getCommandHelp(action);
+  }
+
+  /**
+   * Get list of all available actions (static version)
+   */
+  static getAvailableCommands(): string[] {
+    return getAvailableActions();
+  }
+
+  /**
+   * Get JSON Schema for all commands (static version)
+   */
+  static getJSONSchema(): Record<string, unknown> {
+    return getJSONSchema();
+  }
+
+  /**
+   * Get the agent schema (static version)
+   */
+  static getAgentInfo(): { name: string; version: string; description: string } {
+    return {
+      name: AGENT_SCHEMA.name,
+      version: AGENT_SCHEMA.version,
+      description: AGENT_SCHEMA.description,
+    };
   }
 }
 
