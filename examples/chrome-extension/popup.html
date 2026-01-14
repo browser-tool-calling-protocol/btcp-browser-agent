@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI Browser Agent</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      width: 400px;
+      padding: 16px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0 0 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h1::before {
+      content: "🤖";
+    }
+    .section {
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #333;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    button:disabled {
+      background: #9ca3af;
+      cursor: not-allowed;
+    }
+    button.secondary {
+      background: #6b7280;
+    }
+    button.secondary:hover {
+      background: #4b5563;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 12px;
+      resize: vertical;
+    }
+    .output {
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      padding: 8px;
+      font-family: monospace;
+      font-size: 11px;
+      max-height: 200px;
+      overflow: auto;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px;
+      background: #f3f4f6;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ef4444;
+    }
+    .status-dot.ready {
+      background: #22c55e;
+    }
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+    .actions button {
+      margin: 0;
+    }
+    .command-input {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .command-input input {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+    .command-input button {
+      width: auto;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Browser Agent</h1>
+
+  <div class="status">
+    <div class="status-dot" id="statusDot"></div>
+    <span id="statusText">Checking...</span>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Quick Actions</div>
+    <div class="actions">
+      <button id="btnSnapshot">Snapshot</button>
+      <button id="btnScreenshot">Screenshot</button>
+      <button id="btnGetTabs">Get Tabs</button>
+      <button id="btnNewTab">New Tab</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Click Element</div>
+    <div class="command-input">
+      <input type="text" id="clickSelector" placeholder="@e1 or #button">
+      <button id="btnClick">Click</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Fill Input</div>
+    <div class="command-input">
+      <input type="text" id="fillSelector" placeholder="@e2 or #input" style="width: 100px;">
+      <input type="text" id="fillValue" placeholder="value">
+      <button id="btnFill">Fill</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Custom Command (JSON)</div>
+    <textarea id="commandJson" placeholder='{ "action": "snapshot", "interactive": true }'></textarea>
+    <button id="btnExecute">Execute Command</button>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Output</div>
+    <div class="output" id="output">Ready...</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
