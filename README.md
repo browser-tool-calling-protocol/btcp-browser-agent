@@ -375,12 +375,13 @@ if (agent.hasCapability('screenshot')) {
 import {
   detectContext,
   isExtensionContext,
-  extensionScreenshot,
-  extensionNavigate,
-  extensionGetTabs,
-  extensionNewTab,
-  extensionSwitchTab,
-  extensionCloseTab,
+  screenshot,
+  navigate,
+  getTabs,
+  newTab,
+  switchTab,
+  closeTab,
+  getCapabilities,
   setupBackgroundHandler,
   setupContentHandler,
 } from 'btcp-browser-agent';
@@ -388,7 +389,7 @@ import {
 // Background script handler
 setupBackgroundHandler((message, sendResponse) => {
   if (message.type === 'screenshot') {
-    extensionScreenshot(message.id).then(sendResponse);
+    screenshot(message.id).then(sendResponse);
     return true; // Keep channel open for async response
   }
   return false;

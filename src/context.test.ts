@@ -131,68 +131,68 @@ describe('extension context simulation', () => {
     // Import extension module to verify it exports properly
     const ext = await import('./extension.js');
 
-    expect(ext.extensionScreenshot).toBeDefined();
-    expect(ext.extensionNavigate).toBeDefined();
-    expect(ext.extensionEvaluate).toBeDefined();
-    expect(ext.extensionGetTabs).toBeDefined();
-    expect(ext.extensionNewTab).toBeDefined();
-    expect(ext.extensionSwitchTab).toBeDefined();
-    expect(ext.extensionCloseTab).toBeDefined();
-    expect(ext.getExtensionCapabilities).toBeDefined();
+    expect(ext.screenshot).toBeDefined();
+    expect(ext.navigate).toBeDefined();
+    expect(ext.evaluate).toBeDefined();
+    expect(ext.getTabs).toBeDefined();
+    expect(ext.newTab).toBeDefined();
+    expect(ext.switchTab).toBeDefined();
+    expect(ext.closeTab).toBeDefined();
+    expect(ext.getCapabilities).toBeDefined();
     expect(ext.hasCapability).toBeDefined();
   });
 
-  it('extensionScreenshot should fail gracefully in browser context', async () => {
-    const { extensionScreenshot } = await import('./extension.js');
-    const response = await extensionScreenshot('test-id');
+  it('screenshot should fail gracefully in browser context', async () => {
+    const { screenshot } = await import('./extension.js');
+    const response = await screenshot('test-id');
 
     expect(response.success).toBe(false);
     expect(response.error).toContain('Not running in extension context');
   });
 
-  it('extensionNavigate should fail gracefully in browser context', async () => {
-    const { extensionNavigate } = await import('./extension.js');
-    const response = await extensionNavigate('test-id', 'https://example.com');
+  it('navigate should fail gracefully in browser context', async () => {
+    const { navigate } = await import('./extension.js');
+    const response = await navigate('test-id', 'https://example.com');
 
     expect(response.success).toBe(false);
     expect(response.error).toContain('Tabs API not available');
   });
 
-  it('extensionGetTabs should fail gracefully in browser context', async () => {
-    const { extensionGetTabs } = await import('./extension.js');
-    const response = await extensionGetTabs('test-id');
+  it('getTabs should fail gracefully in browser context', async () => {
+    const { getTabs } = await import('./extension.js');
+    const response = await getTabs('test-id');
 
     expect(response.success).toBe(false);
     expect(response.error).toContain('Not in extension context');
   });
 
-  it('extensionNewTab should fail gracefully in browser context', async () => {
-    const { extensionNewTab } = await import('./extension.js');
-    const response = await extensionNewTab('test-id');
+  it('newTab should fail gracefully in browser context', async () => {
+    const { newTab } = await import('./extension.js');
+    const response = await newTab('test-id');
 
     expect(response.success).toBe(false);
     expect(response.error).toContain('Not in extension context');
   });
 
-  it('extensionSwitchTab should fail gracefully in browser context', async () => {
-    const { extensionSwitchTab } = await import('./extension.js');
-    const response = await extensionSwitchTab('test-id', 1);
+  it('switchTab should fail gracefully in browser context', async () => {
+    const { switchTab } = await import('./extension.js');
+    const response = await switchTab('test-id', 1);
 
     expect(response.success).toBe(false);
     expect(response.error).toContain('Not in extension context');
   });
 
-  it('extensionCloseTab should fail gracefully in browser context', async () => {
-    const { extensionCloseTab } = await import('./extension.js');
-    const response = await extensionCloseTab('test-id');
+  it('closeTab should fail gracefully in browser context', async () => {
+    const { closeTab } = await import('./extension.js');
+    const response = await closeTab('test-id');
 
     expect(response.success).toBe(false);
     expect(response.error).toContain('Not in extension context');
   });
 
-  it('getExtensionCapabilities should return browser context info', async () => {
-    const { getExtensionCapabilities } = await import('./extension.js');
-    const caps = getExtensionCapabilities();
+  it('getCapabilities should return browser context info', async () => {
+    const { getCapabilities } = await import('./extension.js');
+    const caps = getCapabilities();
 
     expect(caps.type).toBe('browser');
     expect(caps.isExtension).toBe(false);

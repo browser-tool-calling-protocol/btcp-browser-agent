@@ -37,7 +37,7 @@ export interface ExtensionResponse {
 /**
  * Extension-enhanced screenshot using chrome.tabs.captureVisibleTab
  */
-export async function extensionScreenshot(
+export async function screenshot(
   commandId: string,
   options: { format?: 'png' | 'jpeg'; quality?: number } = {}
 ): Promise<Response> {
@@ -84,7 +84,7 @@ export async function extensionScreenshot(
 /**
  * Navigate using chrome.tabs API
  */
-export async function extensionNavigate(
+export async function navigate(
   commandId: string,
   url: string
 ): Promise<Response> {
@@ -121,7 +121,7 @@ export async function extensionNavigate(
 /**
  * Execute script in active tab using chrome.scripting API
  */
-export async function extensionEvaluate<T = unknown>(
+export async function evaluate<T = unknown>(
   commandId: string,
   script: string
 ): Promise<Response> {
@@ -158,7 +158,7 @@ export async function extensionEvaluate<T = unknown>(
 /**
  * Get all tabs (extension only)
  */
-export async function extensionGetTabs(commandId: string): Promise<Response> {
+export async function getTabs(commandId: string): Promise<Response> {
   try {
     if (!isExtensionContext()) {
       return errorResponse(commandId, 'Not in extension context');
@@ -190,7 +190,7 @@ export async function extensionGetTabs(commandId: string): Promise<Response> {
 /**
  * Create new tab (extension only)
  */
-export async function extensionNewTab(
+export async function newTab(
   commandId: string,
   url?: string
 ): Promise<Response> {
@@ -223,7 +223,7 @@ export async function extensionNewTab(
 /**
  * Switch to tab (extension only)
  */
-export async function extensionSwitchTab(
+export async function switchTab(
   commandId: string,
   tabId: number
 ): Promise<Response> {
@@ -256,7 +256,7 @@ export async function extensionSwitchTab(
 /**
  * Close tab (extension only)
  */
-export async function extensionCloseTab(
+export async function closeTab(
   commandId: string,
   tabId?: number
 ): Promise<Response> {
@@ -363,7 +363,7 @@ export function setupContentHandler(
 /**
  * Get extension capabilities
  */
-export function getExtensionCapabilities(): ContextInfo {
+export function getCapabilities(): ContextInfo {
   return detectContext();
 }
 

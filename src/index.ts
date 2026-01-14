@@ -157,20 +157,21 @@ export {
   createContextOperations,
 } from './context.js';
 
+// Extension-specific functions (clean names)
 export {
   type ExtensionMessage,
   type ExtensionResponse,
-  extensionScreenshot,
-  extensionNavigate,
-  extensionEvaluate,
-  extensionGetTabs,
-  extensionNewTab,
-  extensionSwitchTab,
-  extensionCloseTab,
+  screenshot,
+  navigate,
+  evaluate,
+  getTabs,
+  newTab,
+  switchTab,
+  closeTab,
+  getCapabilities,
   executeInTabContext,
   setupBackgroundHandler,
   setupContentHandler,
-  getExtensionCapabilities,
   hasCapability,
 } from './extension.js';
 
@@ -180,7 +181,7 @@ import { executeCommand, setScreencastFrameCallback } from './actions.js';
 import { parseCommand, serializeResponse, generateCommandId } from './protocol.js';
 import { describe, type Description } from './describe.js';
 import { detectContext, type ContextInfo } from './context.js';
-import { extensionScreenshot, hasCapability } from './extension.js';
+import { screenshot as extensionScreenshot, hasCapability } from './extension.js';
 import type { Command, Response } from './types.js';
 
 /**
