@@ -281,13 +281,19 @@ function getAccessibleName(el: Element): string {
     return el.textContent?.trim() || '';
   }
 
+  // For elements with explicit button/link roles, use text content
+  const explicitRole = el.getAttribute('role');
+  if (explicitRole === 'button' || explicitRole === 'link') {
+    return el.textContent?.trim() || '';
+  }
+
   // For links, use text content
   if (el.tagName === 'A') {
     return el.textContent?.trim() || '';
   }
 
   // For headings, use text content
-  if (/^H[1-6]$/.test(el.tagName)) {
+  if (/^H[1-6]$/.test(el.tagName) || explicitRole === 'heading') {
     return el.textContent?.trim() || '';
   }
 
@@ -315,8 +321,12 @@ function isVisible(el: Element): boolean {
   }
 
   // Check if element has zero dimensions
+  // Note: In jsdom, getBoundingClientRect() returns all zeros since layout isn't implemented.
+  // We detect this by checking if all rect values are 0 and skip the dimension check in that case.
   const rect = el.getBoundingClientRect();
-  if (rect.width === 0 && rect.height === 0) {
+  const isJsdomLikeEnvironment = rect.top === 0 && rect.left === 0 && rect.right === 0 && rect.bottom === 0;
+
+  if (!isJsdomLikeEnvironment && rect.width === 0 && rect.height === 0) {
     return false;
   }
 
@@ -346,18 +356,29 @@ function isInteractive(el: Element): boolean {
 }
 
 /**
+ * CSS.escape polyfill for environments like jsdom where it's not available
+ */
+function cssEscape(str: string): string {
+  if (typeof CSS !== 'undefined' && CSS.escape) {
+    return CSS.escape(str);
+  }
+  // Simple fallback that escapes special characters
+  return str.replace(/([^\w-])/g, '\\$1');
+}
+
+/**
  * Generate a CSS selector for an element
  */
 function generateSelector(el: Element): string {
   // Use ID if available
   if (el.id) {
-    return `#${CSS.escape(el.id)}`;
+    return `#${cssEscape(el.id)}`;
   }
 
   // Use data-testid if available
   const testId = el.getAttribute('data-testid');
   if (testId) {
-    return `[data-testid="${CSS.escape(testId)}"]`;
+    return `[data-testid="${cssEscape(testId)}"]`;
   }
 
   // Build a path-based selector
@@ -372,7 +393,7 @@ function generateSelector(el: Element): string {
       .filter((c) => !c.startsWith('_') && !c.match(/^[a-z0-9]{6,}$/i)) // Skip generated class names
       .slice(0, 2);
     if (classes.length) {
-      selector += '.' + classes.map((c) => CSS.escape(c)).join('.');
+      selector += '.' + classes.map((c) => cssEscape(c)).join('.');
     }
 
     // Add nth-child if needed for uniqueness

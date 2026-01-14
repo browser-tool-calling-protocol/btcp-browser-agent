@@ -675,14 +675,28 @@ export class BrowserManager {
     const clientX = options?.clientX ?? rect.left + rect.width / 2;
     const clientY = options?.clientY ?? rect.top + rect.height / 2;
 
-    const event = new MouseEvent(type, {
-      bubbles: true,
-      cancelable: true,
-      view: this.getWindow(),
-      button: options?.button ?? 0,
-      clientX,
-      clientY,
-    });
+    // Try to create event with view parameter first (standard browsers)
+    // Fall back to no view for jsdom which has strict type checking
+    let event: MouseEvent;
+    try {
+      event = new MouseEvent(type, {
+        bubbles: true,
+        cancelable: true,
+        view: this.getWindow(),
+        button: options?.button ?? 0,
+        clientX,
+        clientY,
+      });
+    } catch {
+      // Fallback for jsdom which may reject the view parameter
+      event = new MouseEvent(type, {
+        bubbles: true,
+        cancelable: true,
+        button: options?.button ?? 0,
+        clientX,
+        clientY,
+      });
+    }
 
     element.dispatchEvent(event);
   }
