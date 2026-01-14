@@ -1,0 +1,44 @@
+{
+  "name": "btcp-browser-agent",
+  "version": "0.1.0",
+  "description": "Browser Tool Calling Protocol - Browser-native agent automation library",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "browser",
+    "automation",
+    "agent",
+    "ai",
+    "dom",
+    "accessibility"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthropics/btcp-browser-agent.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  }
+}
