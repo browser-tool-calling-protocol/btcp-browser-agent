@@ -89,6 +89,7 @@ import type {
   InputEventData,
 } from './types.js';
 import { successResponse, errorResponse } from './protocol.js';
+import { getCommandHelp, getFullHelp, getAvailableActions, suggestAction } from './schema.js';
 
 // Screencast frame callback
 let screencastFrameCallback: ((frame: ScreencastFrame) => void) | null = null;
@@ -137,9 +138,55 @@ function getRequiredElement(browser: BrowserManager, selector: string): Element 
 }
 
 /**
+ * Handle help request - returns documentation for an action
+ */
+function handleHelpRequest(command: Command): Response {
+  const action = command.action;
+
+  // Special case: action is 'help' or empty - return full help
+  if (!action || action === 'help') {
+    return successResponse(command.id, {
+      type: 'help',
+      content: getFullHelp(),
+      availableActions: getAvailableActions(),
+    });
+  }
+
+  // Check if action exists
+  const availableActions = getAvailableActions();
+  if (!availableActions.includes(action)) {
+    const suggestions = suggestAction(action);
+    return successResponse(command.id, {
+      type: 'help',
+      error: `Unknown action: "${action}"`,
+      suggestions,
+      hint: suggestions.length > 0
+        ? `Did you mean: ${suggestions.join(', ')}?`
+        : `Use { action: 'help', help: true } to see all available actions.`,
+      availableActions,
+    });
+  }
+
+  // Return help for the specific action
+  return successResponse(command.id, {
+    type: 'help',
+    action,
+    content: getCommandHelp(action),
+  });
+}
+
+/**
  * Execute a command and return a response
+ *
+ * If command.help is true, returns documentation for the action instead of executing.
+ * This enables AI agents to self-correct by calling the same action with help: true.
  */
 export async function executeCommand(command: Command, browser: BrowserManager): Promise<Response> {
+  // Handle help request - return documentation instead of executing
+  if (command.help) {
+    return handleHelpRequest(command);
+  }
+
   try {
     switch (command.action) {
       case 'launch':

@@ -657,4 +657,96 @@ describe('actions', () => {
       }
     });
   });
+
+  describe('inline help', () => {
+    it('should return help for action when help: true', async () => {
+      const response = await executeCommand(
+        { id: 'cmd1', action: 'click', help: true },
+        browser
+      );
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.type).toBe('help');
+        expect(response.data.action).toBe('click');
+        expect(response.data.content).toContain('ACTION: click');
+        expect(response.data.content).toContain('PARAMETERS');
+        expect(response.data.content).toContain('selector');
+      }
+    });
+
+    it('should return full help for help action', async () => {
+      const response = await executeCommand(
+        { id: 'cmd1', action: 'help', help: true },
+        browser
+      );
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.type).toBe('help');
+        expect(response.data.content).toContain('BROWSER TOOL CALLING PROTOCOL');
+        expect(response.data.availableActions).toContain('click');
+        expect(response.data.availableActions).toContain('snapshot');
+      }
+    });
+
+    it('should suggest similar actions for typos', async () => {
+      const response = await executeCommand(
+        { id: 'cmd1', action: 'clck', help: true },
+        browser
+      );
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.type).toBe('help');
+        expect(response.data.error).toContain('Unknown action');
+        expect(response.data.suggestions).toContain('click');
+        expect(response.data.hint).toContain('Did you mean');
+      }
+    });
+
+    it('should not execute when help: true', async () => {
+      document.body.innerHTML = '<button id="btn">Click</button>';
+      const button = document.getElementById('btn')!;
+      const handler = vi.fn();
+      button.addEventListener('click', handler);
+
+      const response = await executeCommand(
+        { id: 'cmd1', action: 'click', selector: '#btn', help: true },
+        browser
+      );
+
+      expect(response.success).toBe(true);
+      expect(handler).not.toHaveBeenCalled(); // Should not click
+      if (response.success) {
+        expect(response.data.type).toBe('help');
+      }
+    });
+
+    it('should return help for snapshot action', async () => {
+      const response = await executeCommand(
+        { id: 'cmd1', action: 'snapshot', help: true },
+        browser
+      );
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.content).toContain('snapshot');
+        expect(response.data.content).toContain('TIPS');
+      }
+    });
+
+    it('should return help for type action', async () => {
+      const response = await executeCommand(
+        { id: 'cmd1', action: 'type', help: true },
+        browser
+      );
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.content).toContain('type');
+        expect(response.data.content).toContain('text');
+      }
+    });
+  });
 });

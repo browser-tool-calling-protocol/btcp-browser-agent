@@ -9,6 +9,8 @@
 export interface BaseCommand {
   id: string;
   action: string;
+  /** When true, returns help/documentation for this action instead of executing */
+  help?: boolean;
 }
 
 // Navigation commands
