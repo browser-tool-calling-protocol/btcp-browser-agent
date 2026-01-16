@@ -71,8 +71,6 @@ export type {
   FormattedOutput,
   HistoryEntry,
   TerminalConfig,
-  SnapshotResult,
-  ElementRef,
 } from './types.js';
 
 // Re-export utilities
