@@ -79,12 +79,32 @@ await agent.execute({ id: '3', action: 'fill', selector: '@ref:3', value: 'text'
 |--------|-------------|
 | `snapshot` | Get accessibility tree with element refs |
 | `click` | Click element |
+| `dblclick` | Double-click element |
 | `type` | Type text keystroke by keystroke |
 | `fill` | Fill input instantly |
+| `clear` | Clear input value |
+| `check` | Check a checkbox |
+| `uncheck` | Uncheck a checkbox |
+| `select` | Select option(s) in a dropdown |
+| `focus` | Focus an element |
+| `blur` | Remove focus from element |
 | `hover` | Hover over element |
 | `scroll` | Scroll page or element |
+| `scrollIntoView` | Scroll element into view |
+| `querySelector` | Find element by selector |
+| `querySelectorAll` | Find all matching elements |
 | `getText` | Get element text |
+| `getAttribute` | Get element attribute value |
+| `getProperty` | Get element property value |
+| `getBoundingBox` | Get element dimensions and position |
 | `isVisible` | Check visibility |
+| `isEnabled` | Check if element is enabled |
+| `isChecked` | Check if checkbox/radio is checked |
+| `press` | Press a keyboard key |
+| `keyDown` | Key down event |
+| `keyUp` | Key up event |
+| `wait` | Wait for element state |
+| `evaluate` | Execute JavaScript in page context |
 
 ### Browser Operations (BackgroundAgent)
 
@@ -92,6 +112,9 @@ await agent.execute({ id: '3', action: 'fill', selector: '@ref:3', value: 'text'
 |--------|-------------|
 | `navigate` | Go to URL |
 | `back` / `forward` | History navigation |
+| `reload` | Reload the page |
+| `getUrl` | Get current page URL |
+| `getTitle` | Get current page title |
 | `screenshot` | Capture visible tab |
 | `tabNew` / `tabClose` | Tab management |
 | `tabSwitch` / `tabList` | Tab switching |
