@@ -2,20 +2,35 @@
 
 Browser Tool Calling Protocol - A browser-native implementation for AI agents to interact with web pages using native browser APIs.
 
-## Overview
+## Architecture
 
-This library is a port of [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) adapted to run directly in the browser context. Instead of using Playwright (which requires Node.js), it uses native browser APIs to provide similar functionality for browser automation.
+This package provides a clean separation between browser-level and DOM-level operations:
 
-## Key Differences from agent-browser
-
-| Feature | agent-browser | btcp-browser-agent |
-|---------|--------------|-------------------|
-| Runtime | Node.js | Browser |
-| Browser Control | Playwright | Native DOM APIs |
-| Element Selection | Playwright Locators | CSS Selectors + Refs |
-| Accessibility Tree | Playwright ARIA | Custom DOM Walker |
-| Screenshots | Playwright API | Canvas API |
-| Network | CDP/Routes | fetch/XHR interception |
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  Background Script (Extension Service Worker)                    │
+│  ┌─────────────────────────────────────────────────────────────┐│
+│  │ BackgroundAgent                                              ││
+│  │  - Tab management (create, close, switch, list)             ││
+│  │  - Navigation (goto, back, forward, reload)                 ││
+│  │  - Screenshots (chrome.tabs.captureVisibleTab)              ││
+│  │  - Routes DOM commands → ContentAgent                       ││
+│  └─────────────────────────────────────────────────────────────┘│
+└─────────────────────────────────────────────────────────────────┘
+                              │
+            chrome.tabs.sendMessage
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  Content Script (Per Tab)                                        │
+│  ┌─────────────────────────────────────────────────────────────┐│
+│  │ ContentAgent                                                 ││
+│  │  - DOM snapshot (accessibility tree)                        ││
+│  │  - Element interaction (click, type, fill, hover)           ││
+│  │  - DOM queries (getText, getAttribute, isVisible)           ││
+│  │  - Keyboard/mouse events                                    ││
+│  └─────────────────────────────────────────────────────────────┘│
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ## Installation
 
@@ -25,437 +40,243 @@ npm install btcp-browser-agent
 
 ## Quick Start
 
+### Extension Usage
+
+**Background Script:**
 ```typescript
-import { BrowserAgent } from 'btcp-browser-agent';
+import { BackgroundAgent, setupMessageListener } from 'btcp-browser-agent/extension';
 
-// Create an agent
-const agent = new BrowserAgent();
-await agent.launch();
+// Option 1: Just set up message routing
+setupMessageListener();
 
-// Get a snapshot of the page
-const { snapshot, refs } = await agent.snapshot();
-console.log(snapshot);
+// Option 2: Use BackgroundAgent directly for programmatic control
+const agent = new BackgroundAgent();
+await agent.navigate('https://example.com');
+await agent.screenshot();
+```
 
-// Interact with elements using refs
-await agent.click('@e1'); // Click element ref e1
-await agent.fill('@e2', 'Hello World'); // Fill input ref e2
+**Content Script:**
+```typescript
+import { createContentAgent } from 'btcp-browser-agent';
 
-// Or use CSS selectors
-await agent.click('button.submit');
-await agent.type('input[name="email"]', 'user@example.com');
+const agent = createContentAgent();
 
-// Close when done
-await agent.close();
+// Take a snapshot
+const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+console.log(data.tree);  // Accessibility tree with refs
+
+// Click an element using ref from snapshot
+await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
+```
+
+**Popup (sending commands via messaging):**
+```typescript
+import { createClient } from 'btcp-browser-agent';
+
+const client = createClient();
+
+// Navigate and interact
+await client.navigate('https://example.com');
+const snapshot = await client.snapshot();
+await client.click('@ref:5');
+const screenshot = await client.screenshot();
+```
+
+### Standalone Usage (No Extension)
+
+For use directly in a web page (limited to same-origin, no tab management):
+
+```typescript
+import { createContentAgent } from 'btcp-browser-agent';
+
+const agent = createContentAgent();
+
+// Take a snapshot
+const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+
+// Interact with elements
+await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
+await agent.execute({ id: '3', action: 'fill', selector: '@ref:3', value: 'Hello' });
 ```
 
 ## API Reference
 
-### BrowserAgent
+### BackgroundAgent (Extension Background Script)
 
-The main entry point for browser automation.
+High-level browser orchestrator that runs in the extension's background script.
 
 ```typescript
-const agent = new BrowserAgent({
-  targetWindow?: Window,      // Target window (default: current window)
-  targetDocument?: Document,  // Target document (default: current document)
-  onScreencastFrame?: (frame) => void, // Screencast callback
-  onResponse?: (response) => void,     // Command response callback
-  autoLaunch?: boolean,       // Auto-launch on first command (default: true)
-});
+import { BackgroundAgent } from 'btcp-browser-agent/extension';
+
+const agent = new BackgroundAgent();
+
+// Tab Management
+await agent.newTab({ url: 'https://example.com' });
+await agent.switchTab(tabId);
+await agent.closeTab(tabId);
+const tabs = await agent.listTabs();
+
+// Navigation
+await agent.navigate('https://example.com');
+await agent.back();
+await agent.forward();
+await agent.reload();
+
+// Screenshots
+const screenshot = await agent.screenshot({ format: 'png' });
+
+// Execute commands (routes to ContentAgent for DOM operations)
+await agent.execute({ id: '1', action: 'click', selector: '#submit' });
 ```
 
-#### Methods
-
-- `launch()` - Initialize the agent
-- `close()` - Clean up and close
-- `execute(command)` - Execute a command
-- `executeJSON(json)` - Execute command from JSON string
-- `snapshot(options?)` - Get DOM snapshot with element refs
-- `click(selector, options?)` - Click an element
-- `type(selector, text, options?)` - Type text keystroke by keystroke
-- `fill(selector, value)` - Fill an input instantly
-- `hover(selector)` - Hover over an element
-- `press(key, selector?)` - Press a key
-- `waitFor(selector, options?)` - Wait for an element
-- `scroll(options)` - Scroll the page or element
-- `evaluate(script)` - Execute JavaScript
-- `getText(selector)` - Get element text content
-- `getAttribute(selector, attr)` - Get element attribute
-- `isVisible(selector)` - Check element visibility
-- `getUrl()` - Get current URL
-- `getTitle()` - Get page title
-- `describe(action?)` - Get API documentation (see Self-Description API)
-
-### Self-Description API
-
-The agent provides a single unified function for AI agents to understand its capabilities:
+#### Multi-Tab Operations
 
 ```typescript
-// Get full API description
-const info = agent.describe();
-console.log(info.actions);    // ['click', 'snapshot', 'type', ...]
-console.log(info.methods);    // [{ name: 'click', signature: '...' }, ...]
-console.log(info.quickRef);   // Quick reference string for context injection
+// Open tabs
+const tab1 = await agent.newTab({ url: 'https://google.com' });
+const tab2 = await agent.newTab({ url: 'https://github.com', active: false });
 
-// Get specific action help
-const clickInfo = agent.describe('click');
-console.log(clickInfo.action);  // { name: 'click', parameters: [...], examples: [...] }
+// Method 1: tab() handle - interact without switching
+const githubTab = agent.tab(tab2.id);
+await githubTab.snapshot();
+await githubTab.click('@ref:5');
 
-// Get suggestions for typos
-const typoInfo = agent.describe('clck');
-console.log(typoInfo.suggestions);  // ['click']
+// Method 2: Specify tabId in execute
+await agent.execute(
+  { id: '1', action: 'getText', selector: 'h1' },
+  { tabId: tab2.id }
+);
 
-// Works as static method too
-const info = BrowserAgent.describe();
+// Active tab stays tab1 (no switching needed)
 ```
 
-The `Description` object contains:
-- `agent` - Name, version, and description
-- `actions` - List of all available action names
-- `action` - Specific action details (when queried)
-- `suggestions` - Suggestions for unknown actions
-- `methods` - Method signatures with examples
-- `selectors` - Selector format reference
-- `workflow` - Typical workflow steps
-- `quickRef` - Compact reference for AI context injection
+### BrowserAgent (Standalone - Browser Tab)
 
-### Inline Help
-
-Any command can return documentation instead of executing by setting `help: true`:
+For use directly in a browser tab with convenience methods:
 
 ```typescript
-// Get help for click action without executing
+import { BrowserAgent } from 'btcp-browser-agent';
+
+const agent = new BrowserAgent();
+await agent.launch();
+
+// Convenience methods
+const { snapshot, refs } = await agent.snapshot();
+await agent.click('@e1');
+await agent.fill('@e2', 'Hello World');
+await agent.type('input[name="email"]', 'user@example.com');
+
+await agent.close();
+```
+
+### ContentAgent (Content Script)
+
+DOM automation agent that runs in content scripts or web pages.
+
+```typescript
+import { createContentAgent } from 'btcp-browser-agent';
+
+const agent = createContentAgent();
+
+// Execute commands
 const response = await agent.execute({
   id: 'cmd1',
-  action: 'click',
-  selector: 'button', // Won't be clicked
-  help: true          // Returns documentation instead
-});
-
-console.log(response.data.action);    // { name: 'click', parameters: [...] }
-console.log(response.data.quickRef);  // Quick reference string
-```
-
-This enables AI agents to self-correct by calling the same action with `help: true` when errors occur.
-
-### Commands
-
-Execute commands using the `execute()` method:
-
-```typescript
-const response = await agent.execute({
-  id: 'cmd1',
-  action: 'click',
-  selector: 'button.submit'
+  action: 'snapshot'
 });
 ```
 
 #### Available Actions
 
-**Navigation**
-- `navigate` - Navigate to URL
-- `back` - Go back
-- `forward` - Go forward
-- `reload` - Reload page
+**DOM Reading:**
+| Action | Description |
+|--------|-------------|
+| `snapshot` | Get accessibility tree with element refs |
+| `getText` | Get element text content |
+| `getAttribute` | Get element attribute value |
+| `isVisible` | Check if element is visible |
+| `isEnabled` | Check if element is enabled |
+| `isChecked` | Check if checkbox/radio is checked |
+| `getBoundingBox` | Get element dimensions |
 
-**Interaction**
-- `click` - Click element
-- `dblclick` - Double click
-- `type` - Type text (keystroke by keystroke)
-- `fill` - Fill input (instant)
-- `check` - Check checkbox
-- `uncheck` - Uncheck checkbox
-- `select` - Select dropdown option
-- `hover` - Hover over element
-- `focus` - Focus element
-- `drag` - Drag and drop
-- `tap` - Touch tap
+**Element Interaction:**
+| Action | Description |
+|--------|-------------|
+| `click` | Click an element |
+| `dblclick` | Double-click an element |
+| `type` | Type text (keystroke by keystroke) |
+| `fill` | Fill input (instant) |
+| `clear` | Clear input value |
+| `check` | Check checkbox |
+| `uncheck` | Uncheck checkbox |
+| `select` | Select dropdown option |
+| `hover` | Hover over element |
+| `focus` | Focus element |
+| `blur` | Remove focus |
 
-**Semantic Locators**
-- `getbyrole` - Find by ARIA role
-- `getbytext` - Find by text content
-- `getbylabel` - Find by label
-- `getbyplaceholder` - Find by placeholder
-- `getbyalttext` - Find by alt text
-- `getbytitle` - Find by title
-- `getbytestid` - Find by data-testid
+**Keyboard/Mouse:**
+| Action | Description |
+|--------|-------------|
+| `press` | Press a key |
+| `keyDown` | Key down event |
+| `keyUp` | Key up event |
 
-**Queries**
-- `snapshot` - Get accessibility snapshot
-- `content` - Get HTML content
-- `getattribute` - Get attribute value
-- `gettext` - Get text content
-- `innertext` - Get inner text
-- `innerhtml` - Get inner HTML
-- `inputvalue` - Get input value
-- `isvisible` - Check visibility
-- `isenabled` - Check if enabled
-- `ischecked` - Check if checked
-- `count` - Count matching elements
-- `boundingbox` - Get element bounds
-
-**Keyboard**
-- `press` - Press key
-- `keyboard` - Press key combo
-- `keydown` - Key down event
-- `keyup` - Key up event
-- `inserttext` - Insert text
-
-**Mouse**
-- `mousemove` - Move mouse
-- `mousedown` - Mouse down
-- `mouseup` - Mouse up
-- `wheel` - Mouse wheel
-
-**Frames**
-- `frame` - Switch to frame
-- `mainframe` - Switch to main frame
-
-**Storage**
-- `storage_get` - Get storage value
-- `storage_set` - Set storage value
-- `storage_clear` - Clear storage
-
-**Waiting**
-- `wait` - Wait for condition
-- `waitforurl` - Wait for URL
-- `waitforloadstate` - Wait for load state
-- `waitforfunction` - Wait for function
-
-**Other**
-- `screenshot` - Take screenshot
-- `evaluate` - Execute JavaScript
-- `scroll` - Scroll page/element
-- `scrollintoview` - Scroll element into view
-- `highlight` - Highlight element
-- `clear` - Clear input
-- `selectall` - Select all text
-- `dispatch` - Dispatch event
-- `addscript` - Add script tag
-- `addstyle` - Add style tag
-- `setcontent` - Set page HTML
-- `console` - Get console messages
-- `errors` - Get page errors
+**Other:**
+| Action | Description |
+|--------|-------------|
+| `scroll` | Scroll page or element |
+| `scrollIntoView` | Scroll element into view |
+| `wait` | Wait for element state |
+| `evaluate` | Execute JavaScript |
 
 ### Element Refs
 
-The `snapshot` command returns element references that can be used for stable element selection:
+The `snapshot` action returns element references for stable selection:
 
 ```typescript
-const { snapshot, refs } = await agent.snapshot();
-// snapshot contains: "- button 'Submit' [ref=e1]"
+const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+// data.tree: "- button 'Submit' [ref=5]\n- textbox 'Email' [ref=3]"
+// data.refs: { '5': { role: 'button', name: 'Submit' }, ... }
 
-// Use refs in commands
-await agent.click('@e1');
-await agent.click('ref=e1');
-await agent.click('[ref=e1]');
-await agent.click('e1');
+// Use refs in subsequent commands
+await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
 ```
 
-### Low-Level API
+## Package Structure
 
-For more control, use the individual modules:
-
-```typescript
-import {
-  BrowserManager,
-  executeCommand,
-  parseCommand,
-  getEnhancedSnapshot,
-} from 'btcp-browser-agent';
-
-// Create browser manager
-const browser = new BrowserManager();
-await browser.launch({ id: '1', action: 'launch' });
-
-// Get snapshot
-const snapshot = await browser.getSnapshot();
-
-// Execute commands
-const response = await executeCommand({
-  id: '2',
-  action: 'click',
-  selector: 'button'
-}, browser);
+```
+btcp-browser-agent/
+├── @aspect/core          # ContentAgent - DOM operations
+│   ├── createContentAgent()
+│   ├── DOMActions
+│   └── createSnapshot()
+│
+├── @aspect/extension     # BackgroundAgent - Browser operations
+│   ├── BackgroundAgent
+│   ├── setupMessageListener()
+│   └── createClient()
+│
+└── btcp-browser-agent    # Main package - re-exports both
 ```
 
-## AI Agent Optimization
+## Capabilities Comparison
 
-The agent is designed specifically for AI workflows. Recommended approach:
-
-### Workflow
-
-1. **Get snapshot** - Capture accessibility tree with element refs
-2. **Identify targets** - Use refs like `@e1`, `@e2` from snapshot
-3. **Execute actions** - Use refs for stable element selection
-4. **Re-snapshot** - Refresh view after page changes
-
-```typescript
-// 1. Get initial snapshot
-const { snapshot, refs } = await agent.snapshot({ interactive: true });
-// Returns: "- button 'Submit' [ref=e1]\n- textbox 'Email' [ref=e2]"
-
-// 2. Interact using refs (stable, deterministic)
-await agent.fill('@e2', 'user@example.com');
-await agent.click('@e1');
-
-// 3. Wait for changes and re-snapshot
-await agent.waitFor('#success');
-const updated = await agent.snapshot();
-```
-
-### Selector Formats
-
-| Format | Example | Description |
-|--------|---------|-------------|
-| `@e1` | `@e1` | Element ref (preferred, stable) |
-| `ref=` | `ref=e1` | Alt ref format |
-| `#id` | `#submit` | CSS ID selector |
-| `.class` | `.btn` | CSS class selector |
-| `[attr]` | `[data-testid="x"]` | CSS attribute selector |
-
-### Context Injection
-
-Use `describe().quickRef` for minimal AI context:
-
-```typescript
-const systemPrompt = `You are a browser automation agent.
-${agent.describe().quickRef}`;
-```
-
-### Error Recovery
-
-When actions fail, use inline help to understand correct usage:
-
-```typescript
-try {
-  await agent.execute({ id: '1', action: 'clck', selector: '#btn' });
-} catch (error) {
-  // Get help for similar action
-  const help = await agent.execute({ id: '2', action: 'clck', help: true });
-  console.log(help.data.suggestions); // ['click']
-}
-```
-
-## Chrome Extension Support
-
-The agent supports running in Chrome extension context with enhanced capabilities:
-
-### Capabilities Comparison
-
-| Capability | Browser Tab | Chrome Extension |
-|------------|-------------|------------------|
+| Capability | ContentAgent (Standalone) | BackgroundAgent (Extension) |
+|------------|--------------------------|--------------------------|
+| DOM Snapshot | ✅ | ✅ (via ContentAgent) |
+| Element Clicks | ✅ | ✅ (via ContentAgent) |
+| Form Filling | ✅ | ✅ (via ContentAgent) |
 | Cross-origin | ❌ Same-origin only | ✅ Any page |
-| Screenshots | ⚠️ Canvas (limited) | ✅ `captureVisibleTab` |
-| Tab management | ❌ None | ✅ Full |
-| Network intercept | ❌ Track only | ✅ Modify |
-| DevTools Protocol | ❌ None | ✅ Available |
-
-### Context Detection
-
-```typescript
-const agent = new BrowserAgent();
-
-// Check context
-if (agent.isExtension()) {
-  console.log('Running in extension');
-  const ctx = agent.getContext();
-  console.log('Context type:', ctx.type); // 'extension-content' | 'extension-background' | 'extension-popup'
-}
-
-// Check specific capabilities
-if (agent.hasCapability('screenshot')) {
-  const { screenshot } = await agent.screenshot(); // Uses chrome.tabs.captureVisibleTab
-}
-```
-
-### Extension-Specific Functions
-
-```typescript
-import {
-  detectContext,
-  isExtensionContext,
-  screenshot,
-  navigate,
-  getTabs,
-  newTab,
-  switchTab,
-  closeTab,
-  getCapabilities,
-  setupBackgroundHandler,
-  setupContentHandler,
-} from 'btcp-browser-agent';
-
-// Background script handler
-setupBackgroundHandler((message, sendResponse) => {
-  if (message.type === 'screenshot') {
-    screenshot(message.id).then(sendResponse);
-    return true; // Keep channel open for async response
-  }
-  return false;
-});
-
-// Content script handler
-setupContentHandler((message, sendResponse) => {
-  // Handle commands from background/popup
-});
-```
-
-### Extension Architecture
-
-For best results, use a multi-script architecture:
-
-1. **Background Script** - Handles chrome.* APIs (tabs, screenshots, network)
-2. **Content Script** - Runs BrowserAgent in page context
-3. **Popup** - UI for controlling the agent
-
-```
-┌─────────────┐     ┌─────────────────┐     ┌─────────────┐
-│   Popup     │────▶│  Background     │────▶│  Content    │
-│             │     │  Service Worker │     │  Script     │
-└─────────────┘     └─────────────────┘     └─────────────┘
-                           │                       │
-                    chrome.tabs.*           BrowserAgent
-                    chrome.debugger         DOM access
-```
-
-## Limitations
-
-### Browser Tab Context
-
-When running in a regular browser tab:
-
-1. **No cross-origin access** - Can only interact with same-origin content
-2. **Limited screenshot support** - Canvas-based (doesn't capture actual page)
-3. **No HAR recording** - Limited to fetch/XHR request tracking
-4. **No video recording** - Not available in browser context
-5. **No PDF generation** - Requires server-side processing
-6. **No file upload** - File input interaction is limited
-7. **No network interception** - Can only track requests, not modify responses
-8. **Dialog handling** - Native dialogs cannot be intercepted
-
-### Chrome Extension Context
-
-With extension permissions, most limitations are lifted:
-
-- ✅ Cross-origin via content scripts
-- ✅ Full screenshots via `chrome.tabs.captureVisibleTab`
-- ✅ Network interception via `chrome.webRequest`
-- ✅ Tab management via `chrome.tabs`
-
-Remaining limitations:
-- Video recording still not available
-- PDF generation requires external service
-- Some page interactions may need user gesture
+| Tab Management | ❌ | ✅ |
+| Navigation | ❌ | ✅ |
+| Screenshots | ❌ | ✅ |
 
 ## Use Cases
 
-- **Browser extensions** - Add AI agent capabilities to extensions (recommended)
-- **Web applications** - Build automation features into web apps
-- **Testing tools** - Create browser-based testing frameworks
-- **Accessibility tools** - Build tools that analyze and interact with pages
-- **AI assistants** - Enable AI models to control web pages
+- **Browser Extensions** - Full browser automation with BackgroundAgent + ContentAgent
+- **Web Applications** - DOM automation with ContentAgent only
+- **Testing Tools** - Automated UI testing
+- **AI Assistants** - Enable AI models to control web pages
 
 ## License
 
-Apache-2.0 (same as original agent-browser)
+Apache-2.0

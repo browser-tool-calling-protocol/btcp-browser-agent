@@ -434,7 +434,7 @@ export class DOMActions {
 
   private async getProperty(selector: string, property: string): Promise<{ value: unknown }> {
     const element = this.getElement(selector);
-    return { value: (element as Record<string, unknown>)[property] };
+    return { value: (element as unknown as Record<string, unknown>)[property] };
   }
 
   private async getBoundingBox(selector: string): Promise<{ box: BoundingBox }> {

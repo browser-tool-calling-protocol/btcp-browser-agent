@@ -3,28 +3,40 @@
  *
  * Chrome extension bridge for browser automation.
  *
- * This package provides:
- * - Content script: Handles DOM commands in web pages
- * - Background script: Handles navigation, tabs, screenshots
+ * Architecture:
+ * - BackgroundAgent: Runs in background script, manages tabs/navigation/screenshots
+ * - ContentAgent: Runs in content scripts, handles DOM operations (from @aspect/core)
  * - Client: API for sending commands from popup or external scripts
  *
- * @example Extension popup usage:
+ * @example Background script setup:
+ * ```typescript
+ * import { BackgroundAgent, setupMessageListener } from '@aspect/extension';
+ *
+ * // Set up message routing
+ * setupMessageListener();
+ *
+ * // Or use BackgroundAgent directly
+ * const agent = new BackgroundAgent();
+ * await agent.navigate('https://example.com');
+ * await agent.screenshot();
+ * ```
+ *
+ * @example Content script setup:
+ * ```typescript
+ * import { createContentAgent } from '@aspect/core';
+ *
+ * const agent = createContentAgent();
+ * await agent.execute({ id: '1', action: 'snapshot' });
+ * ```
+ *
+ * @example Popup/external usage:
  * ```typescript
  * import { createClient } from '@aspect/extension';
  *
  * const client = createClient();
- *
- * // Navigate to a URL
  * await client.navigate('https://example.com');
- *
- * // Take a snapshot
  * const snapshot = await client.snapshot();
- *
- * // Click an element
  * await client.click('@ref:5');
- *
- * // Take a screenshot
- * const screenshot = await client.screenshot();
  * ```
  */
 
@@ -37,6 +49,19 @@ import type {
 } from './types.js';
 
 export * from './types.js';
+
+// Re-export BackgroundAgent for background script usage
+export {
+  BackgroundAgent,
+  getBackgroundAgent,
+  setupMessageListener,
+  // Deprecated aliases for backwards compatibility
+  BrowserAgent,
+  getBrowserAgent,
+} from './background.js';
+
+// Re-export ContentAgent for content script usage
+export { createContentAgent, type ContentAgent } from '@aspect/core';
 
 // Re-export core types
 export type {

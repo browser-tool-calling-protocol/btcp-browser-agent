@@ -4,8 +4,48 @@
  * A browser-native implementation of the agent-browser protocol for AI agents
  * to interact with web pages using native browser APIs.
  *
+ * ## Architecture
+ *
+ * This package provides two main agents:
+ *
+ * - **BrowserAgent** (from @aspect/extension): Runs in extension background script.
+ *   Manages tabs, navigation, screenshots, and routes DOM commands to ContentAgents.
+ *
+ * - **ContentAgent** (from @aspect/core): Runs in content scripts or web pages.
+ *   Handles all DOM operations (click, type, snapshot, etc.).
+ *
+ * @example Extension usage
+ * ```typescript
+ * // background.ts
+ * import { BrowserAgent, setupMessageListener } from 'btcp-browser-agent';
+ * setupMessageListener();
+ *
+ * // content.ts
+ * import { createContentAgent } from 'btcp-browser-agent';
+ * const agent = createContentAgent();
+ * await agent.execute({ id: '1', action: 'snapshot' });
+ * ```
+ *
+ * @example Standalone usage (no extension)
+ * ```typescript
+ * import { createContentAgent } from 'btcp-browser-agent';
+ * const agent = createContentAgent();
+ * const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+ * await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
+ * ```
+ *
  * @packageDocumentation
  */
+
+// =============================================================================
+// IMPORTS
+// =============================================================================
+
+// NOTE: For the new clean API, import directly from the subpackages:
+//   - import { createContentAgent } from 'btcp-browser-agent/core';
+//   - import { BrowserAgent } from 'btcp-browser-agent/extension';
+//
+// The exports below are the legacy API maintained for backwards compatibility.
 
 // Re-export types
 export type {

@@ -2,20 +2,20 @@
  * @aspect/extension - Content Script
  *
  * Runs in web pages, handles DOM commands from the background script.
- * Injects the core agent and forwards commands.
+ * Uses ContentAgent from @aspect/core for DOM operations.
  */
 
-import { createAgent, type Agent, type Command as CoreCommand, type Response } from '@aspect/core';
+import { createContentAgent, type ContentAgent, type Command as CoreCommand, type Response } from '@aspect/core';
 import type { ExtensionMessage, ExtensionResponse, Command } from './types.js';
 
-let agent: Agent | null = null;
+let agent: ContentAgent | null = null;
 
 /**
- * Initialize the agent
+ * Get or create the ContentAgent instance for this page
  */
-function getAgent(): Agent {
+function getContentAgent(): ContentAgent {
   if (!agent) {
-    agent = createAgent(document, window);
+    agent = createContentAgent(document, window);
   }
   return agent;
 }
@@ -36,9 +36,9 @@ function isCoreCommand(command: Command): command is CoreCommand {
  * Handle a command from the background script
  */
 async function handleCommand(command: Command): Promise<Response> {
-  // Core DOM commands
+  // Core DOM commands are handled by ContentAgent
   if (isCoreCommand(command)) {
-    return getAgent().execute(command);
+    return getContentAgent().execute(command);
   }
 
   // Extension commands that need content script execution
@@ -115,4 +115,4 @@ window.addEventListener('message', async (event) => {
 });
 
 // Export for programmatic use
-export { getAgent, handleCommand };
+export { getContentAgent, handleCommand };

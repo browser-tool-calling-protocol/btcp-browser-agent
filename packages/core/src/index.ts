@@ -2,13 +2,13 @@
  * @aspect/core
  *
  * Core DOM actions for browser automation.
- * Runs in any browser context (page, extension content script, iframe).
+ * Runs in content script context (web page, extension content script, iframe).
  *
  * @example
  * ```typescript
- * import { createAgent } from '@aspect/core';
+ * import { createContentAgent } from '@aspect/core';
  *
- * const agent = createAgent(document, window);
+ * const agent = createContentAgent(document, window);
  *
  * // Take a snapshot
  * const snapshot = await agent.execute({
@@ -35,9 +35,18 @@ export { createRefMap, createSimpleRefMap } from './ref-map.js';
 export { DOMActions } from './actions.js';
 
 /**
- * Agent interface - the main entry point for DOM automation
+ * ContentAgent - DOM automation agent that runs in content script context
+ *
+ * This agent handles all DOM-level operations:
+ * - Element interaction (click, type, fill, etc.)
+ * - DOM queries (snapshot, getText, getAttribute, etc.)
+ * - Keyboard/mouse events
+ *
+ * Use this in content scripts or directly in web pages.
+ * For browser-level operations (tabs, navigation, screenshots),
+ * use BrowserAgent from @aspect/extension.
  */
-export interface Agent {
+export interface ContentAgent {
   /**
    * Execute a command and return a response
    */
@@ -60,14 +69,26 @@ export interface Agent {
 }
 
 /**
- * Create an agent for DOM automation
+ * Create a ContentAgent for DOM automation
  *
- * @param doc - The document to operate on
- * @param win - The window context
- * @returns An agent instance
+ * @param doc - The document to operate on (defaults to current document)
+ * @param win - The window context (defaults to current window)
+ * @returns A ContentAgent instance
+ *
+ * @example
+ * ```typescript
+ * // In content script
+ * const agent = createContentAgent();
+ *
+ * // Take a snapshot of the page
+ * const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+ *
+ * // Click an element using ref from snapshot
+ * await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
+ * ```
  */
-export function createAgent(doc: Document = document, win: Window = window): Agent {
-  // Use WeakRef-based map if available
+export function createContentAgent(doc: Document = document, win: Window = window): ContentAgent {
+  // Use WeakRef-based map if available for better memory management
   const refMap = typeof WeakRef !== 'undefined'
     ? createRefMap()
     : createSimpleRefMap();
@@ -103,6 +124,16 @@ export function createAgent(doc: Document = document, win: Window = window): Age
     },
   };
 }
+
+/**
+ * @deprecated Use createContentAgent instead
+ */
+export const createAgent = createContentAgent;
+
+/**
+ * @deprecated Use ContentAgent instead
+ */
+export type Agent = ContentAgent;
 
 /**
  * Message types for extension communication

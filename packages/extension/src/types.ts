@@ -127,6 +127,7 @@ export interface ChromeTab {
   title?: string;
   active: boolean;
   index: number;
+  status?: 'loading' | 'complete' | 'unloaded';
 }
 
 export interface ChromeRuntime {
