@@ -153,7 +153,9 @@ describe('createCLI', () => {
         goto https://example.com
         snapshot
       `);
-      expect(result.data).toContain('button');
+      // Snapshot now returns { tree, refs, count }
+      expect(result.data).toHaveProperty('tree');
+      expect((result.data as { tree: string }).tree).toContain('button');
     });
 
     it('includes failure index in error data', async () => {
@@ -374,10 +376,24 @@ describe('command execution', () => {
   });
 
   describe('inspection commands', () => {
-    it('snapshot returns tree', async () => {
+    it('snapshot returns tree and refs', async () => {
       const result = await cli.execute('snapshot');
       expect(result.success).toBe(true);
-      expect(result.data).toContain('button');
+      // Snapshot returns { tree, refs, count }
+      const data = result.data as { tree: string; refs: Record<string, unknown>; count: number };
+      expect(data.tree).toContain('button');
+      expect(data.refs).toHaveProperty('@ref:1');
+      expect(data.count).toBe(1);
+    });
+
+    it('snapshot --json returns only refs', async () => {
+      const result = await cli.execute('snapshot --json');
+      expect(result.success).toBe(true);
+      const data = result.data as { refs: Record<string, unknown>; count: number };
+      expect(data.refs).toHaveProperty('@ref:1');
+      expect(data.count).toBe(1);
+      // Should not include tree in JSON mode
+      expect(data).not.toHaveProperty('tree');
     });
 
     it('screenshot returns data URL', async () => {

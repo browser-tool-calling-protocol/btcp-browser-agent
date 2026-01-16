@@ -35,6 +35,34 @@ export interface CommandResult {
 }
 
 /**
+ * Snapshot result with both ASCII tree and structured refs
+ */
+export interface SnapshotResult {
+  /** ASCII tree representation for display */
+  tree: string;
+  /** Structured refs for programmatic access */
+  refs: Record<string, ElementRef>;
+  /** Number of interactive elements found */
+  count: number;
+}
+
+/**
+ * Element reference from snapshot
+ */
+export interface ElementRef {
+  /** CSS selector to target this element */
+  selector: string;
+  /** ARIA role */
+  role: string;
+  /** Accessible name */
+  name?: string;
+  /** Element tag name */
+  tagName?: string;
+  /** Whether the element is visible */
+  visible?: boolean;
+}
+
+/**
  * Result of executing multiple commands
  */
 export interface BatchResult {

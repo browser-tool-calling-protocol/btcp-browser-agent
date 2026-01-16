@@ -207,7 +207,7 @@ describe('executeCommand', () => {
   });
 
   describe('result passthrough', () => {
-    it('returns success result unchanged when no error', async () => {
+    it('returns success result from snapshot', async () => {
       const command: ParsedCommand = {
         name: 'snapshot',
         args: [],
@@ -216,7 +216,11 @@ describe('executeCommand', () => {
       };
       const result = await executeCommand(client, command);
       expect(result.success).toBe(true);
-      expect(result.data).toContain('button');
+      // Snapshot returns { tree, refs, count }
+      const data = result.data as { tree: string; refs: Record<string, unknown>; count: number };
+      expect(data.tree).toContain('button');
+      expect(data.refs).toHaveProperty('@ref:1');
+      expect(data.count).toBe(1);
     });
 
     it('returns error result from command handler', async () => {
