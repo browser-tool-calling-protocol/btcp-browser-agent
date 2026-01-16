@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BTCP Extension Test Page</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .card {
+      background: #f8f9fa;
+      border: 2px solid #dee2e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .success { border-color: #28a745; background: #d4edda; }
+    .info { border-color: #17a2b8; background: #d1ecf1; }
+    .warning { border-color: #ffc107; background: #fff3cd; }
+    h1 { color: #2563eb; }
+    h2 { margin-top: 0; }
+    code {
+      background: #e9ecef;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    ol { padding-left: 20px; }
+    li { margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <h1>🧪 BTCP Extension Test Page</h1>
+
+  <div class="card info">
+    <h2>Purpose</h2>
+    <p>This page helps you test the BTCP Browser Agent extension. Use this as your "active tab" when testing session creation.</p>
+  </div>
+
+  <div class="card success">
+    <h2>✅ You're Ready to Test!</h2>
+    <p>This page is loaded successfully. Now follow these steps:</p>
+    <ol>
+      <li>Make sure this tab is <strong>active</strong> (you're viewing it now)</li>
+      <li>Click the <strong>BTCP Browser Agent extension icon</strong> in your Chrome toolbar</li>
+      <li>In the popup, click <strong>"Start New Session"</strong></li>
+      <li>You should see this tab get added to a <strong>blue tab group</strong> labeled "BTCP Session 1"</li>
+    </ol>
+  </div>
+
+  <div class="card warning">
+    <h2>⚠️ Troubleshooting</h2>
+    <p><strong>If the button doesn't work:</strong></p>
+    <ol>
+      <li>Open Chrome DevTools on the popup (right-click popup → Inspect)</li>
+      <li>Check the Console tab for error messages</li>
+      <li>Also check the Background Service Worker console:
+        <ul>
+          <li>Go to <code>chrome://extensions</code></li>
+          <li>Find "BTCP Browser Agent"</li>
+          <li>Click "service worker" link</li>
+          <li>Check console for errors</li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="card info">
+    <h2>📋 Expected Behavior</h2>
+    <p><strong>When you start a session:</strong></p>
+    <ul>
+      <li>✅ This tab should be added to a blue tab group</li>
+      <li>✅ The group should be labeled "BTCP Session 1"</li>
+      <li>✅ The popup should show:
+        <ul>
+          <li>Blue session status box</li>
+          <li>Session name: "BTCP Session 1"</li>
+          <li>Tab count: "1 tab"</li>
+          <li>"Close Session" button (red)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p><strong>When you click "New Tab" in the popup:</strong></p>
+    <ul>
+      <li>✅ A new tab should open</li>
+      <li>✅ It should automatically join the "BTCP Session 1" group</li>
+      <li>✅ Tab count should update to "2 tabs"</li>
+    </ul>
+
+    <p><strong>When you click "Close Session":</strong></p>
+    <ul>
+      <li>✅ All tabs in the group should close at once</li>
+      <li>✅ This includes this test page!</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🔍 Quick Debug Check</h2>
+    <p>Open the Console (F12 → Console tab) and run this:</p>
+    <pre><code>chrome.tabGroups.query({}).then(groups =>
+  console.log('Active groups:', groups.length, groups)
+);</code></pre>
+    <p>This shows all active tab groups in your browser.</p>
+  </div>
+
+  <div class="card info">
+    <h2>📚 More Help</h2>
+    <p>For detailed debugging instructions, see:</p>
+    <ul>
+      <li><code>DEBUG.md</code> - Full debugging guide</li>
+      <li><code>QUICK_TEST.md</code> - Quick console tests</li>
+    </ul>
+    <p>Both files are in the extension directory.</p>
+  </div>
+
+  <script>
+    console.log('BTCP Test Page loaded');
+    console.log('Tab ID:', chrome?.runtime?.id || 'N/A');
+    console.log('Ready for testing!');
+  </script>
+</body>
+</html>

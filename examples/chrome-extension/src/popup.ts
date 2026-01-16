@@ -8,12 +8,80 @@ const client = createClient();
 // DOM elements
 const output = document.getElementById('output') as HTMLDivElement;
 const commandJson = document.getElementById('commandJson') as HTMLTextAreaElement;
+const sessionStatus = document.getElementById('sessionStatus') as HTMLDivElement;
+const sessionName = document.getElementById('sessionName') as HTMLSpanElement;
+const sessionCount = document.getElementById('sessionCount') as HTMLSpanElement;
+const btnStartSession = document.getElementById('btnStartSession') as HTMLButtonElement;
+const btnCloseSession = document.getElementById('btnCloseSession') as HTMLButtonElement;
 
 function log(message: unknown) {
   const timestamp = new Date().toLocaleTimeString();
   const text = typeof message === 'object' ? JSON.stringify(message, null, 2) : String(message);
   output.textContent = `[${timestamp}]\n${text}`;
 }
+
+// Session management
+async function updateSessionUI() {
+  try {
+    const { session } = await client.sessionGetCurrent();
+    if (session) {
+      sessionStatus.classList.remove('inactive');
+      sessionName.classList.remove('inactive');
+      sessionName.textContent = session.title;
+      sessionCount.textContent = `${session.tabCount} tab${session.tabCount !== 1 ? 's' : ''}`;
+      btnStartSession.style.display = 'none';
+      btnCloseSession.style.display = 'block';
+
+      // Enable all action buttons when session is active
+      document.querySelectorAll('button:not(#btnStartSession)').forEach(btn => {
+        (btn as HTMLButtonElement).disabled = false;
+      });
+    } else {
+      sessionStatus.classList.add('inactive');
+      sessionName.classList.add('inactive');
+      sessionName.textContent = 'No active session';
+      sessionCount.textContent = '';
+      btnStartSession.style.display = 'block';
+      btnCloseSession.style.display = 'none';
+
+      // Disable action buttons when no session (except Start Session)
+      document.querySelectorAll('button:not(#btnStartSession)').forEach(btn => {
+        (btn as HTMLButtonElement).disabled = true;
+      });
+    }
+  } catch (e) {
+    console.error('Failed to update session UI:', e);
+  }
+}
+
+// Session controls
+btnStartSession.addEventListener('click', async () => {
+  log('Starting new session...');
+  try {
+    const { group } = await client.groupCreate();
+    log({ created: group.title, groupId: group.id });
+    await updateSessionUI();
+  } catch (e) {
+    log(`Error: ${e}`);
+  }
+});
+
+btnCloseSession.addEventListener('click', async () => {
+  log('Closing session...');
+  try {
+    const { session } = await client.sessionGetCurrent();
+    if (session) {
+      await client.groupDelete(session.groupId);
+      log({ closed: session.title });
+      await updateSessionUI();
+    }
+  } catch (e) {
+    log(`Error: ${e}`);
+  }
+});
+
+// Update session UI on load
+updateSessionUI();
 
 // Quick actions
 document.getElementById('btnSnapshot')?.addEventListener('click', async () => {

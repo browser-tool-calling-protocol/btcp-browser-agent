@@ -79,10 +79,60 @@
       border-radius: 6px;
     }
     .command-input button { width: auto; margin: 0; }
+    .session-status {
+      background: #eff6ff;
+      border: 1px solid #3b82f6;
+      border-radius: 6px;
+      padding: 8px;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+    .session-status.inactive {
+      background: #f3f4f6;
+      border-color: #9ca3af;
+    }
+    .session-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .session-name {
+      font-weight: 600;
+      color: #2563eb;
+    }
+    .session-name.inactive {
+      color: #6b7280;
+    }
+    .session-count {
+      font-size: 11px;
+      color: #6b7280;
+    }
+    button.danger {
+      background: #dc2626;
+    }
+    button.danger:hover {
+      background: #b91c1c;
+    }
   </style>
 </head>
 <body>
   <h1>BTCP Browser Agent</h1>
+
+  <div class="section">
+    <div class="section-title">Session</div>
+    <div id="sessionStatus" class="session-status inactive">
+      <div class="session-info">
+        <span class="session-name inactive" id="sessionName">No active session</span>
+        <span class="session-count" id="sessionCount"></span>
+      </div>
+      <div style="font-size: 11px; color: #6b7280; margin-top: 4px;">
+        ℹ️ Extension only manages tabs within the active session
+      </div>
+    </div>
+    <button id="btnStartSession">Start New Session</button>
+    <button id="btnCloseSession" class="danger" style="display: none;">Close Session</button>
+  </div>
 
   <div class="section">
     <div class="section-title">Quick Actions</div>
@@ -130,6 +180,6 @@
     <div class="output" id="output">Ready...</div>
   </div>
 
-  <script type="module" src="dist/popup.js"></script>
+  <script type="module" src="popup.js"></script>
 </body>
 </html>

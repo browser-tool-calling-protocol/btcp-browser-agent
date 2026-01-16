@@ -47,6 +47,7 @@ import type {
   Response,
   TabInfo,
 } from './types.js';
+import type { GroupColor } from './session-types.js';
 
 export * from './types.js';
 
@@ -172,6 +173,56 @@ export interface Client {
    * List all tabs
    */
   tabList(): Promise<TabInfo[]>;
+
+  // --- Tab Groups & Sessions ---
+
+  /**
+   * Create a new tab group
+   */
+  groupCreate(options?: {
+    tabIds?: number[];
+    title?: string;
+    color?: string;
+    collapsed?: boolean;
+  }): Promise<{ group: import('./session-types.js').GroupInfo }>;
+
+  /**
+   * Update a tab group
+   */
+  groupUpdate(
+    groupId: number,
+    options: { title?: string; color?: string; collapsed?: boolean }
+  ): Promise<{ group: import('./session-types.js').GroupInfo }>;
+
+  /**
+   * Delete a tab group (closes all tabs)
+   */
+  groupDelete(groupId: number): Promise<Response>;
+
+  /**
+   * List all tab groups
+   */
+  groupList(): Promise<import('./session-types.js').GroupInfo[]>;
+
+  /**
+   * Add tabs to a group
+   */
+  groupAddTabs(groupId: number, tabIds: number[]): Promise<Response>;
+
+  /**
+   * Remove tabs from their group
+   */
+  groupRemoveTabs(tabIds: number[]): Promise<Response>;
+
+  /**
+   * Get a specific tab group
+   */
+  groupGet(groupId: number): Promise<{ group: import('./session-types.js').GroupInfo }>;
+
+  /**
+   * Get current active session
+   */
+  sessionGetCurrent(): Promise<{ session: import('./session-types.js').SessionInfo | null }>;
 }
 
 let commandIdCounter = 0;
@@ -361,6 +412,86 @@ export function createClient(): Client {
       });
       assertSuccess(response);
       return (response.data as { tabs: TabInfo[] }).tabs;
+    },
+
+    // Tab Groups & Sessions
+    async groupCreate(options) {
+      const response = await sendCommand({
+        id: generateCommandId(),
+        action: 'groupCreate',
+        tabIds: options?.tabIds,
+        title: options?.title,
+        color: options?.color as GroupColor | undefined,
+        collapsed: options?.collapsed,
+      });
+      assertSuccess(response);
+      return response.data as { group: import('./session-types.js').GroupInfo };
+    },
+
+    async groupUpdate(groupId, options) {
+      const response = await sendCommand({
+        id: generateCommandId(),
+        action: 'groupUpdate',
+        groupId,
+        title: options.title,
+        color: options.color as GroupColor | undefined,
+        collapsed: options.collapsed,
+      });
+      assertSuccess(response);
+      return response.data as { group: import('./session-types.js').GroupInfo };
+    },
+
+    async groupDelete(groupId) {
+      return sendCommand({
+        id: generateCommandId(),
+        action: 'groupDelete',
+        groupId,
+      } as any);
+    },
+
+    async groupList() {
+      const response = await sendCommand({
+        id: generateCommandId(),
+        action: 'groupList',
+      } as any);
+      assertSuccess(response);
+      return (response.data as { groups: import('./session-types.js').GroupInfo[] }).groups;
+    },
+
+    async groupAddTabs(groupId, tabIds) {
+      return sendCommand({
+        id: generateCommandId(),
+        action: 'groupAddTabs',
+        groupId,
+        tabIds,
+      } as any);
+    },
+
+    async groupRemoveTabs(tabIds) {
+      return sendCommand({
+        id: generateCommandId(),
+        action: 'groupRemoveTabs',
+        tabIds,
+      } as any);
+    },
+
+    async groupGet(groupId) {
+      const response = await sendCommand({
+        id: generateCommandId(),
+        action: 'groupGet',
+        groupId,
+      } as any);
+      assertSuccess(response);
+      return response.data as { group: import('./session-types.js').GroupInfo };
+    },
+
+    async sessionGetCurrent() {
+      const response = await sendCommand({
+        id: generateCommandId(),
+        action: 'sessionGetCurrent',
+      } as any);
+      assertSuccess(response);
+      return response.data as { session: import('./session-types.js').SessionInfo | null };
     },
   };
 }

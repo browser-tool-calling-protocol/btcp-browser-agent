@@ -21,6 +21,7 @@ import type {
   TabInfo,
   ChromeTab,
 } from './types.js';
+import { SessionManager } from './session-manager.js';
 
 /**
  * TabHandle - Interface for interacting with a specific tab
@@ -70,8 +71,10 @@ export interface TabHandle {
  */
 export class BackgroundAgent {
   private activeTabId: number | null = null;
+  private sessionManager: SessionManager;
 
   constructor() {
+    this.sessionManager = new SessionManager();
     // Initialize active tab on creation
     this.initActiveTab();
   }
@@ -177,22 +180,45 @@ export class BackgroundAgent {
   // ============================================================================
 
   /**
-   * Get the currently active tab
+   * Get the currently active tab (only if in session)
    */
   async getActiveTab(): Promise<ChromeTab | null> {
+    const sessionGroupId = this.sessionManager.getActiveSessionGroupId();
+
+    // If no session, return null
+    if (sessionGroupId === null) {
+      return null;
+    }
+
+    // Get active tab and verify it's in the session
     return new Promise((resolve) => {
       chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-        resolve(tabs[0] || null);
+        const activeTab = tabs[0];
+        // Only return if it's in the session group
+        if (activeTab && activeTab.groupId === sessionGroupId) {
+          resolve(activeTab);
+        } else {
+          resolve(null);
+        }
       });
     });
   }
 
   /**
-   * List all tabs in the current window
+   * List all tabs (only in session group)
    */
   async listTabs(): Promise<TabInfo[]> {
+    // Get active session group ID
+    const sessionGroupId = this.sessionManager.getActiveSessionGroupId();
+
+    // Session is required
+    if (sessionGroupId === null) {
+      throw new Error('No active session. Create a session first to manage tabs.');
+    }
+
+    // Only return tabs in the session group
     const tabs = await new Promise<ChromeTab[]>((resolve) => {
-      chrome.tabs.query({ currentWindow: true }, (t) => resolve(t));
+      chrome.tabs.query({ groupId: sessionGroupId }, (t) => resolve(t));
     });
 
     return tabs.map((t) => ({
@@ -205,9 +231,15 @@ export class BackgroundAgent {
   }
 
   /**
-   * Create a new tab
+   * Create a new tab (only in session group)
    */
   async newTab(options?: { url?: string; active?: boolean }): Promise<TabInfo> {
+    // Require active session
+    const sessionGroupId = this.sessionManager.getActiveSessionGroupId();
+    if (sessionGroupId === null) {
+      throw new Error('No active session. Create a session first to manage tabs.');
+    }
+
     const tab = await new Promise<ChromeTab>((resolve) => {
       chrome.tabs.create(
         { url: options?.url, active: options?.active ?? true },
@@ -223,6 +255,16 @@ export class BackgroundAgent {
       this.activeTabId = tab.id!;
     }
 
+    // Add to active session
+    if (tab.id) {
+      const added = await this.sessionManager.addTabToActiveSession(tab.id);
+      if (!added) {
+        // If we couldn't add to session, close the tab
+        await chrome.tabs.remove(tab.id);
+        throw new Error('Failed to add new tab to session');
+      }
+    }
+
     return {
       id: tab.id!,
       url: tab.url,
@@ -233,11 +275,33 @@ export class BackgroundAgent {
   }
 
   /**
-   * Close a tab
+   * Check if a tab is in the active session
+   */
+  private async isTabInSession(tabId: number): Promise<boolean> {
+    const sessionGroupId = this.sessionManager.getActiveSessionGroupId();
+
+    // Session is required - no operations allowed without it
+    if (sessionGroupId === null) {
+      throw new Error('No active session. Create a session first to manage tabs.');
+    }
+
+    // Check if tab is in the session group
+    const tab = await chrome.tabs.get(tabId);
+    return tab.groupId === sessionGroupId;
+  }
+
+  /**
+   * Close a tab (only if in session)
    */
   async closeTab(tabId?: number): Promise<void> {
     const targetId = tabId ?? this.activeTabId;
     if (!targetId) throw new Error('No tab to close');
+
+    // Validate tab is in session
+    const inSession = await this.isTabInSession(targetId);
+    if (!inSession) {
+      throw new Error('Cannot close tab: tab is not in the active session');
+    }
 
     await new Promise<void>((resolve) => {
       chrome.tabs.remove(targetId, () => resolve());
@@ -251,9 +315,15 @@ export class BackgroundAgent {
   }
 
   /**
-   * Switch to a tab
+   * Switch to a tab (only if in session)
    */
   async switchTab(tabId: number): Promise<void> {
+    // Validate tab is in session
+    const inSession = await this.isTabInSession(tabId);
+    if (!inSession) {
+      throw new Error('Cannot switch to tab: tab is not in the active session');
+    }
+
     await new Promise<void>((resolve) => {
       chrome.tabs.update(tabId, { active: true }, () => resolve());
     });
@@ -265,11 +335,17 @@ export class BackgroundAgent {
   // ============================================================================
 
   /**
-   * Navigate to a URL
+   * Navigate to a URL (only in session tabs)
    */
   async navigate(url: string, options?: { waitUntil?: 'load' | 'domcontentloaded' }): Promise<void> {
     const tabId = this.activeTabId ?? (await this.getActiveTab())?.id;
     if (!tabId) throw new Error('No active tab');
+
+    // Validate tab is in session
+    const inSession = await this.isTabInSession(tabId);
+    if (!inSession) {
+      throw new Error('Cannot navigate: tab is not in the active session');
+    }
 
     await new Promise<void>((resolve) => {
       chrome.tabs.update(tabId, { url }, () => resolve());
@@ -446,6 +522,9 @@ export class BackgroundAgent {
       'navigate', 'back', 'forward', 'reload',
       'getUrl', 'getTitle', 'screenshot',
       'tabNew', 'tabClose', 'tabSwitch', 'tabList',
+      'groupCreate', 'groupUpdate', 'groupDelete', 'groupList',
+      'groupAddTabs', 'groupRemoveTabs', 'groupGet',
+      'sessionGetCurrent',
     ];
     return extensionActions.includes(command.action);
   }
@@ -502,6 +581,52 @@ export class BackgroundAgent {
       case 'tabList': {
         const tabs = await this.listTabs();
         return { id: command.id, success: true, data: { tabs } };
+      }
+
+      case 'groupCreate': {
+        const group = await this.sessionManager.createGroup({
+          tabIds: command.tabIds,
+          title: command.title,
+          color: command.color,
+          collapsed: command.collapsed,
+        });
+        return { id: command.id, success: true, data: { group } };
+      }
+
+      case 'groupUpdate': {
+        const group = await this.sessionManager.updateGroup(command.groupId, {
+          title: command.title,
+          color: command.color,
+          collapsed: command.collapsed,
+        });
+        return { id: command.id, success: true, data: { group } };
+      }
+
+      case 'groupDelete':
+        await this.sessionManager.deleteGroup(command.groupId);
+        return { id: command.id, success: true, data: { deleted: command.groupId } };
+
+      case 'groupList': {
+        const groups = await this.sessionManager.listGroups();
+        return { id: command.id, success: true, data: { groups } };
+      }
+
+      case 'groupAddTabs':
+        await this.sessionManager.addTabsToGroup(command.groupId, command.tabIds);
+        return { id: command.id, success: true, data: { addedTabs: command.tabIds } };
+
+      case 'groupRemoveTabs':
+        await this.sessionManager.removeTabsFromGroup(command.tabIds);
+        return { id: command.id, success: true, data: { removedTabs: command.tabIds } };
+
+      case 'groupGet': {
+        const group = await this.sessionManager.getGroup(command.groupId);
+        return { id: command.id, success: true, data: { group } };
+      }
+
+      case 'sessionGetCurrent': {
+        const session = await this.sessionManager.getCurrentSession();
+        return { id: command.id, success: true, data: { session } };
       }
 
       default:

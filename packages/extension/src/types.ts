@@ -5,6 +5,7 @@
  */
 
 import type { Command as CoreCommand, Response } from '@btcp/core';
+import type { SessionCommand } from './session-types.js';
 
 // Extension-specific actions
 export type ExtensionAction =
@@ -18,7 +19,15 @@ export type ExtensionAction =
   | 'tabNew'
   | 'tabClose'
   | 'tabSwitch'
-  | 'tabList';
+  | 'tabList'
+  | 'groupCreate'
+  | 'groupUpdate'
+  | 'groupDelete'
+  | 'groupList'
+  | 'groupAddTabs'
+  | 'groupRemoveTabs'
+  | 'groupGet'
+  | 'sessionGetCurrent';
 
 // Base extension command
 export interface ExtensionBaseCommand {
@@ -91,13 +100,23 @@ export type ExtensionCommand =
   | TabNewCommand
   | TabCloseCommand
   | TabSwitchCommand
-  | TabListCommand;
+  | TabListCommand
+  | SessionCommand;
 
 // Combined command type (core + extension)
 export type Command = CoreCommand | ExtensionCommand;
 
 // Re-export Response type
 export type { Response };
+
+// Re-export session types
+export type {
+  SessionCommand,
+  GroupInfo,
+  SessionInfo,
+  GroupCreateOptions,
+  GroupUpdateOptions,
+} from './session-types.js';
 
 // Message types for extension communication
 export interface ExtensionMessage {
