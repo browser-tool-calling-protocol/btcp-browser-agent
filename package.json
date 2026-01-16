@@ -25,11 +25,19 @@
     "./extension/background": {
       "types": "./packages/extension/dist/background.d.ts",
       "import": "./packages/extension/dist/background.js"
+    },
+    "./cli": {
+      "types": "./packages/cli/dist/index.d.ts",
+      "import": "./packages/cli/dist/index.js"
+    },
+    "./cli/terminal": {
+      "types": "./packages/cli/dist/terminal/index.d.ts",
+      "import": "./packages/cli/dist/terminal/index.js"
     }
   },
   "scripts": {
     "build": "npm run build:packages && tsc -p tsconfig.build.json",
-    "build:packages": "tsc -p packages/core/tsconfig.json && tsc -p packages/extension/tsconfig.json",
+    "build:packages": "tsc -p packages/core/tsconfig.json && tsc -p packages/extension/tsconfig.json && tsc -p packages/cli/tsconfig.json",
     "clean": "rm -rf dist packages/*/dist",
     "prepare": "npm run build",
     "test": "vitest run",
@@ -38,7 +46,8 @@
   },
   "workspaces": [
     "packages/core",
-    "packages/extension"
+    "packages/extension",
+    "packages/cli"
   ],
   "license": "Apache-2.0",
   "repository": {
