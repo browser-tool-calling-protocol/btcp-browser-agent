@@ -1,23 +1,43 @@
 {
-  "name": "aspect-monorepo",
+  "name": "btcp-browser-agent",
   "version": "0.1.0",
-  "private": true,
   "description": "Browser automation with DOM actions and extension APIs",
   "type": "module",
-  "workspaces": [
-    "packages/*"
-  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./packages/core/dist/index.d.ts",
+      "import": "./packages/core/dist/index.js"
+    },
+    "./extension": {
+      "types": "./packages/extension/dist/index.d.ts",
+      "import": "./packages/extension/dist/index.js"
+    }
+  },
   "scripts": {
-    "build": "npm run build --workspaces",
-    "clean": "npm run clean --workspaces",
+    "build": "tsc -p tsconfig.build.json && npm run build:packages",
+    "build:packages": "tsc -p packages/core/tsconfig.json && tsc -p packages/extension/tsconfig.json",
+    "clean": "rm -rf dist packages/*/dist",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
   },
+  "workspaces": [
+    "packages/core",
+    "packages/extension"
+  ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/browser-tool-calling-protocol/btcp-browser-agent.git"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",

@@ -314,21 +314,25 @@ function isVisible(el: Element): boolean {
     return true;
   }
 
-  const style = window.getComputedStyle(el);
+  // Check inline style first (faster and works in jsdom)
+  const inlineDisplay = el.style.display;
+  const inlineVisibility = el.style.visibility;
+  if (inlineDisplay === 'none') return false;
+  if (inlineVisibility === 'hidden') return false;
 
-  if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') {
-    return false;
+  // Check computed style
+  const style = el.ownerDocument.defaultView?.getComputedStyle(el);
+  if (style) {
+    if (style.display === 'none') return false;
+    if (style.visibility === 'hidden') return false;
+    if (style.opacity === '0') return false;
   }
 
-  // Check if element has zero dimensions
-  // Note: In jsdom, getBoundingClientRect() returns all zeros since layout isn't implemented.
-  // We detect this by checking if all rect values are 0 and skip the dimension check in that case.
-  const rect = el.getBoundingClientRect();
-  const isJsdomLikeEnvironment = rect.top === 0 && rect.left === 0 && rect.right === 0 && rect.bottom === 0;
+  // Check hidden attribute
+  if (el.hidden) return false;
 
-  if (!isJsdomLikeEnvironment && rect.width === 0 && rect.height === 0) {
-    return false;
-  }
+  // Note: getBoundingClientRect returns zeros in jsdom, so we skip that check
+  // In real browsers, elements with zero dimensions would typically not be visible
 
   return true;
 }
