@@ -245,12 +245,12 @@ await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
 
 ```
 btcp-browser-agent/
-├── @aspect/core          # ContentAgent - DOM operations
+├── @btcp/core          # ContentAgent - DOM operations
 │   ├── createContentAgent()
 │   ├── DOMActions
 │   └── createSnapshot()
 │
-├── @aspect/extension     # BackgroundAgent - Browser operations
+├── @btcp/extension     # BackgroundAgent - Browser operations
 │   ├── BackgroundAgent
 │   ├── setupMessageListener()
 │   └── createClient()

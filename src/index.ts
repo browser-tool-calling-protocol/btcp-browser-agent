@@ -2,8 +2,8 @@
  * BTCP Browser Agent
  *
  * Browser automation with clean separation of concerns:
- * - ContentAgent (@aspect/core): DOM operations in content scripts
- * - BackgroundAgent (@aspect/extension): Tab management in background scripts
+ * - ContentAgent (@btcp/core): DOM operations in content scripts
+ * - BackgroundAgent (@btcp/extension): Tab management in background scripts
  * - Client: API for sending commands from popup/external scripts
  *
  * @example Extension usage

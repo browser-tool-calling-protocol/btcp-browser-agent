@@ -1,5 +1,5 @@
 {
-  "name": "@aspect/extension",
+  "name": "@btcp/extension",
   "version": "0.1.0",
   "description": "Chrome extension bridge for browser automation",
   "type": "module",
@@ -34,7 +34,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "@aspect/core": "file:../core"
+    "@btcp/core": "file:../core"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.268",

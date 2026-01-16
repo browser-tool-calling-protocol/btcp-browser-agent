@@ -1,10 +1,10 @@
 /**
- * @aspect/extension - Type definitions
+ * @btcp/extension - Type definitions
  *
  * Types for extension commands and Chrome API wrappers.
  */
 
-import type { Command as CoreCommand, Response } from '@aspect/core';
+import type { Command as CoreCommand, Response } from '@btcp/core';
 
 // Extension-specific actions
 export type ExtensionAction =
@@ -101,13 +101,13 @@ export type { Response };
 
 // Message types for extension communication
 export interface ExtensionMessage {
-  type: 'aspect:command';
+  type: 'btcp:command';
   command: Command;
   tabId?: number;
 }
 
 export interface ExtensionResponse {
-  type: 'aspect:response';
+  type: 'btcp:response';
   response: Response;
 }
 

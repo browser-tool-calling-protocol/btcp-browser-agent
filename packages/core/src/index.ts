@@ -1,12 +1,12 @@
 /**
- * @aspect/core
+ * @btcp/core
  *
  * Core DOM actions for browser automation.
  * Runs in content script context (web page, extension content script, iframe).
  *
  * @example
  * ```typescript
- * import { createContentAgent } from '@aspect/core';
+ * import { createContentAgent } from '@btcp/core';
  *
  * const agent = createContentAgent(document, window);
  *
@@ -44,7 +44,7 @@ export { DOMActions } from './actions.js';
  *
  * Use this in content scripts or directly in web pages.
  * For browser-level operations (tabs, navigation, screenshots),
- * use BrowserAgent from @aspect/extension.
+ * use BrowserAgent from @btcp/extension.
  */
 export interface ContentAgent {
   /**

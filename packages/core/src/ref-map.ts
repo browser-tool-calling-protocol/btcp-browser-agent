@@ -1,5 +1,5 @@
 /**
- * @aspect/core - Element Reference Map
+ * @btcp/core - Element Reference Map
  *
  * Maintains a mapping between string refs and DOM elements.
  * Used by the snapshot system to enable @ref:xxx selectors.

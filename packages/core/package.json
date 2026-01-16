@@ -1,5 +1,5 @@
 {
-  "name": "@aspect/core",
+  "name": "@btcp/core",
   "version": "0.1.0",
   "description": "Core DOM actions for browser automation - runs in any browser context",
   "type": "module",

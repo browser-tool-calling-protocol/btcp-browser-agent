@@ -19,7 +19,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@aspect/core": ["../core/dist/index.d.ts"]
+      "@btcp/core": ["../core/dist/index.d.ts"]
     }
   },
   "include": ["src/**/*"],

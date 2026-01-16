@@ -1,5 +1,5 @@
 /**
- * @aspect/core - DOM Actions
+ * @btcp/core - DOM Actions
  *
  * Element interaction handlers using native browser APIs.
  */
