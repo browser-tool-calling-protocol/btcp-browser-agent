@@ -4,6 +4,11 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "paths": {
+      "@btcp/core": ["./packages/core/dist/index.d.ts"],
+      "@btcp/extension": ["./packages/extension/dist/index.d.ts"]
+    },
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,

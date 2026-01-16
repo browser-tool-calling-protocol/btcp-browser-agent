@@ -20,9 +20,10 @@
     }
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json && npm run build:packages",
+    "build": "npm run build:packages && tsc -p tsconfig.build.json",
     "build:packages": "tsc -p packages/core/tsconfig.json && tsc -p packages/extension/tsconfig.json",
     "clean": "rm -rf dist packages/*/dist",
+    "prepare": "npm run build",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit"
@@ -36,10 +37,9 @@
     "type": "git",
     "url": "git+https://github.com/browser-tool-calling-protocol/btcp-browser-agent.git"
   },
-  "dependencies": {
-    "zod": "^3.22.4"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/chrome": "^0.0.268",
     "@types/node": "^20.10.0",
     "jsdom": "^24.0.0",
     "typescript": "^5.3.0",

@@ -1,6 +1,6 @@
-# @aspect/extension
+# @btcp/extension
 
-Chrome extension bridge for browser automation. Provides `BrowserAgent` for background scripts and integrates with `ContentAgent` from `@aspect/core`.
+Chrome extension bridge for browser automation. Provides `BrowserAgent` for background scripts and integrates with `ContentAgent` from `@btcp/core`.
 
 ## Architecture
 
@@ -21,7 +21,7 @@ Chrome extension bridge for browser automation. Provides `BrowserAgent` for back
 ┌─────────────────────────────────────────────────────────────────┐
 │  Content Script (Per Tab)                                        │
 │  ┌─────────────────────────────────────────────────────────────┐│
-│  │ ContentAgent (from @aspect/core)                             ││
+│  │ ContentAgent (from @btcp/core)                             ││
 │  │  - DOM snapshot                                              ││
 │  │  - Element interaction (click, type, fill)                  ││
 │  │  - DOM queries                                               ││
@@ -32,7 +32,7 @@ Chrome extension bridge for browser automation. Provides `BrowserAgent` for back
 ## Installation
 
 ```bash
-npm install @aspect/extension
+npm install @btcp/extension
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ npm install @aspect/extension
 ### Background Script
 
 ```typescript
-import { BrowserAgent, setupMessageListener } from '@aspect/extension';
+import { BrowserAgent, setupMessageListener } from '@btcp/extension';
 
 // Option 1: Set up automatic message routing
 setupMessageListener();
@@ -70,7 +70,7 @@ await browser.execute({ id: '1', action: 'click', selector: '#submit' });
 ### Content Script
 
 ```typescript
-import { createContentAgent } from '@aspect/core';
+import { createContentAgent } from '@btcp/core';
 
 const agent = createContentAgent();
 
@@ -86,7 +86,7 @@ await agent.execute({ id: '3', action: 'fill', selector: '@ref:3', value: 'Hello
 ### Popup / External Scripts
 
 ```typescript
-import { createClient } from '@aspect/extension';
+import { createClient } from '@btcp/extension';
 
 const client = createClient();
 

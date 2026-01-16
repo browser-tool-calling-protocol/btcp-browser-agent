@@ -90,7 +90,7 @@ const googleSnapshot = await aspectAgent.snapshot();
 
 **Background script:**
 ```javascript
-import { BackgroundAgent, setupMessageListener } from '@aspect/extension';
+import { BackgroundAgent, setupMessageListener } from '@btcp/extension';
 
 // Option 1: Auto message routing
 setupMessageListener();
@@ -103,7 +103,7 @@ await agent.screenshot();
 
 **Content script:**
 ```javascript
-import { createContentAgent } from '@aspect/core';
+import { createContentAgent } from '@btcp/core';
 
 const agent = createContentAgent();
 await agent.execute({ id: '1', action: 'snapshot' });

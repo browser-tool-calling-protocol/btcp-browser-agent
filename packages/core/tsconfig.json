@@ -9,7 +9,6 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "composite": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,

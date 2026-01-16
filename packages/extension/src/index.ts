@@ -1,16 +1,16 @@
 /**
- * @aspect/extension
+ * @btcp/extension
  *
  * Chrome extension bridge for browser automation.
  *
  * Architecture:
  * - BackgroundAgent: Runs in background script, manages tabs/navigation/screenshots
- * - ContentAgent: Runs in content scripts, handles DOM operations (from @aspect/core)
+ * - ContentAgent: Runs in content scripts, handles DOM operations (from @btcp/core)
  * - Client: API for sending commands from popup or external scripts
  *
  * @example Background script setup:
  * ```typescript
- * import { BackgroundAgent, setupMessageListener } from '@aspect/extension';
+ * import { BackgroundAgent, setupMessageListener } from '@btcp/extension';
  *
  * // Set up message routing
  * setupMessageListener();
@@ -23,7 +23,7 @@
  *
  * @example Content script setup:
  * ```typescript
- * import { createContentAgent } from '@aspect/core';
+ * import { createContentAgent } from '@btcp/core';
  *
  * const agent = createContentAgent();
  * await agent.execute({ id: '1', action: 'snapshot' });
@@ -31,7 +31,7 @@
  *
  * @example Popup/external usage:
  * ```typescript
- * import { createClient } from '@aspect/extension';
+ * import { createClient } from '@btcp/extension';
  *
  * const client = createClient();
  * await client.navigate('https://example.com');
@@ -61,14 +61,14 @@ export {
 } from './background.js';
 
 // Re-export ContentAgent for content script usage
-export { createContentAgent, type ContentAgent } from '@aspect/core';
+export { createContentAgent, type ContentAgent } from '@btcp/core';
 
 // Re-export core types
 export type {
   SnapshotData,
   BoundingBox,
   Modifier,
-} from '@aspect/core';
+} from '@btcp/core';
 
 /**
  * Client for sending commands to the extension background script
@@ -187,7 +187,7 @@ export function createClient(): Client {
   async function sendCommand(command: Command): Promise<Response> {
     return new Promise((resolve) => {
       chrome.runtime.sendMessage(
-        { type: 'aspect:command', command } satisfies ExtensionMessage,
+        { type: 'btcp:command', command } satisfies ExtensionMessage,
         (response) => {
           if (chrome.runtime.lastError) {
             resolve({

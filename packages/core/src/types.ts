@@ -1,5 +1,5 @@
 /**
- * @aspect/core - Type definitions
+ * @btcp/core - Type definitions
  *
  * Core types for DOM automation commands and responses.
  */

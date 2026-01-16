@@ -1,10 +1,10 @@
 /**
- * @aspect/extension - Type definitions
+ * @btcp/extension - Type definitions
  *
  * Types for extension commands and Chrome API wrappers.
  */
 
-import type { Command as CoreCommand, Response } from '@aspect/core';
+import type { Command as CoreCommand, Response } from '@btcp/core';
 
 // Extension-specific actions
 export type ExtensionAction =
@@ -101,13 +101,13 @@ export type { Response };
 
 // Message types for extension communication
 export interface ExtensionMessage {
-  type: 'aspect:command';
+  type: 'btcp:command';
   command: Command;
   tabId?: number;
 }
 
 export interface ExtensionResponse {
-  type: 'aspect:response';
+  type: 'btcp:response';
   response: Response;
 }
 
@@ -120,51 +120,5 @@ export interface TabInfo {
   index: number;
 }
 
-// Chrome API types (minimal, for type safety without @types/chrome)
-export interface ChromeTab {
-  id?: number;
-  url?: string;
-  title?: string;
-  active: boolean;
-  index: number;
-  status?: 'loading' | 'complete' | 'unloaded';
-}
-
-export interface ChromeRuntime {
-  id?: string;
-  lastError?: { message?: string };
-  sendMessage: (message: unknown, callback?: (response: unknown) => void) => void;
-  onMessage: {
-    addListener: (
-      callback: (
-        message: unknown,
-        sender: { tab?: ChromeTab },
-        sendResponse: (response: unknown) => void
-      ) => boolean | void
-    ) => void;
-  };
-}
-
-export interface ChromeTabs {
-  query: (query: object, callback: (tabs: ChromeTab[]) => void) => void;
-  get: (tabId: number, callback: (tab: ChromeTab) => void) => void;
-  create: (options: object, callback?: (tab: ChromeTab) => void) => void;
-  update: (tabId: number, options: object, callback?: (tab: ChromeTab) => void) => void;
-  remove: (tabId: number | number[], callback?: () => void) => void;
-  captureVisibleTab: (
-    windowId: number | null,
-    options: { format?: string; quality?: number },
-    callback: (dataUrl: string) => void
-  ) => void;
-  sendMessage: (tabId: number, message: unknown, callback?: (response: unknown) => void) => void;
-  goBack: (tabId: number, callback?: () => void) => void;
-  goForward: (tabId: number, callback?: () => void) => void;
-  reload: (tabId: number, options?: { bypassCache?: boolean }, callback?: () => void) => void;
-}
-
-declare global {
-  const chrome: {
-    runtime: ChromeRuntime;
-    tabs: ChromeTabs;
-  };
-}
+// Chrome tab type alias (uses @types/chrome)
+export type ChromeTab = chrome.tabs.Tab;

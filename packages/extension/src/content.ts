@@ -1,11 +1,11 @@
 /**
- * @aspect/extension - Content Script
+ * @btcp/extension - Content Script
  *
  * Runs in web pages, handles DOM commands from the background script.
- * Uses ContentAgent from @aspect/core for DOM operations.
+ * Uses ContentAgent from @btcp/core for DOM operations.
  */
 
-import { createContentAgent, type ContentAgent, type Command as CoreCommand, type Response } from '@aspect/core';
+import { createContentAgent, type ContentAgent, type Command as CoreCommand, type Response } from '@btcp/core';
 import type { ExtensionMessage, ExtensionResponse, Command } from './types.js';
 
 let agent: ContentAgent | null = null;
@@ -73,17 +73,17 @@ async function handleCommand(command: Command): Promise<Response> {
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
   const msg = message as ExtensionMessage;
 
-  if (msg.type !== 'aspect:command') {
+  if (msg.type !== 'btcp:command') {
     return false;
   }
 
   handleCommand(msg.command)
     .then((response) => {
-      sendResponse({ type: 'aspect:response', response } satisfies ExtensionResponse);
+      sendResponse({ type: 'btcp:response', response } satisfies ExtensionResponse);
     })
     .catch((error) => {
       sendResponse({
-        type: 'aspect:response',
+        type: 'btcp:response',
         response: {
           id: msg.command.id,
           success: false,
@@ -104,12 +104,12 @@ window.addEventListener('message', async (event) => {
   if (event.source !== window) return;
 
   const msg = event.data as ExtensionMessage;
-  if (msg?.type !== 'aspect:command') return;
+  if (msg?.type !== 'btcp:command') return;
 
   const response = await handleCommand(msg.command);
 
   window.postMessage({
-    type: 'aspect:response',
+    type: 'btcp:response',
     response,
   } satisfies ExtensionResponse, '*');
 });

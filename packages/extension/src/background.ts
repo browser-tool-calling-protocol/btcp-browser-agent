@@ -1,5 +1,5 @@
 /**
- * @aspect/extension - Background Script
+ * @btcp/extension - Background Script
  *
  * Contains BrowserAgent - the high-level orchestrator that runs in the
  * extension's background/service worker context.
@@ -347,7 +347,6 @@ export class BackgroundAgent {
 
     const dataUrl = await new Promise<string>((resolve, reject) => {
       chrome.tabs.captureVisibleTab(
-        null,
         { format, quality },
         (url) => {
           if (chrome.runtime.lastError) {
@@ -421,7 +420,7 @@ export class BackgroundAgent {
     return new Promise((resolve) => {
       chrome.tabs.sendMessage(
         targetTabId,
-        { type: 'aspect:command', command } satisfies ExtensionMessage,
+        { type: 'btcp:command', command } satisfies ExtensionMessage,
         (response) => {
           if (chrome.runtime.lastError) {
             resolve({
@@ -570,7 +569,7 @@ export function setupMessageListener(): void {
   chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
     const msg = message as ExtensionMessage;
 
-    if (msg.type !== 'aspect:command') {
+    if (msg.type !== 'btcp:command') {
       return false;
     }
 
@@ -579,11 +578,11 @@ export function setupMessageListener(): void {
     // Execute the command (BackgroundAgent handles routing to correct tab)
     agent.execute(msg.command)
       .then((response) => {
-        sendResponse({ type: 'aspect:response', response } satisfies ExtensionResponse);
+        sendResponse({ type: 'btcp:response', response } satisfies ExtensionResponse);
       })
       .catch((error) => {
         sendResponse({
-          type: 'aspect:response',
+          type: 'btcp:response',
           response: {
             id: msg.command.id,
             success: false,

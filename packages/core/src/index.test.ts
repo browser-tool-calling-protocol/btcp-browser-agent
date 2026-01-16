@@ -1,12 +1,12 @@
 /**
- * @aspect/core - Tests for DOM actions and snapshot
+ * @btcp/core - Tests for DOM actions and snapshot
  */
 
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { createAgent, createSnapshot, createRefMap, DOMActions } from './index.js';
 import type { Command } from './types.js';
 
-describe('@aspect/core', () => {
+describe('@btcp/core', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
   });

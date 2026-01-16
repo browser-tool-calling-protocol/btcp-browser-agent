@@ -1,5 +1,5 @@
 /**
- * @aspect/core - DOM Snapshot
+ * @btcp/core - DOM Snapshot
  *
  * Generates accessibility tree representation of the DOM.
  * Produces a compact, AI-friendly view of page structure.
