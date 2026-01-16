@@ -66,6 +66,21 @@ export interface ContentAgent {
    * Clear all element references
    */
   clearRefs(): void;
+
+  /**
+   * Message handler for chrome.runtime.onMessage
+   *
+   * @example
+   * ```typescript
+   * const agent = createContentAgent();
+   * chrome.runtime.onMessage.addListener(agent.handleMessage);
+   * ```
+   */
+  handleMessage: (
+    message: unknown,
+    sender: unknown,
+    sendResponse: (response: unknown) => void
+  ) => boolean;
 }
 
 /**
@@ -95,7 +110,7 @@ export function createContentAgent(doc: Document = document, win: Window = windo
 
   const actions = new DOMActions(doc, win, refMap);
 
-  return {
+  const agent: ContentAgent = {
     async execute(command: Command): Promise<Response> {
       return actions.execute(command);
     },
@@ -122,7 +137,33 @@ export function createContentAgent(doc: Document = document, win: Window = windo
     clearRefs(): void {
       refMap.clear();
     },
+
+    handleMessage(
+      message: unknown,
+      _sender: unknown,
+      sendResponse: (response: unknown) => void
+    ): boolean {
+      const msg = message as { type?: string; command?: Command };
+      if (msg?.type !== 'btcp:command') return false;
+
+      agent.execute(msg.command!).then(response => {
+        sendResponse({ type: 'btcp:response', response });
+      }).catch(error => {
+        sendResponse({
+          type: 'btcp:response',
+          response: {
+            id: msg.command?.id ?? 'unknown',
+            success: false,
+            error: error instanceof Error ? error.message : String(error),
+          },
+        });
+      });
+
+      return true; // Keep channel open for async response
+    },
   };
+
+  return agent;
 }
 
 /**

@@ -19,14 +19,7 @@ Three files, minimal setup:
 import { createContentAgent } from 'btcp-browser-agent/extension';
 
 const agent = createContentAgent();
-
-chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
-  if (message.type !== 'btcp:command') return false;
-  agent.execute(message.command).then(response => {
-    sendResponse({ type: 'btcp:response', response });
-  });
-  return true;
-});
+chrome.runtime.onMessage.addListener(agent.handleMessage);
 ```
 
 ### 2. Background Script (routes messages)
