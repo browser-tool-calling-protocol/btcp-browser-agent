@@ -1,427 +1,355 @@
 /**
- * Content Script
+ * Content Script - Runs in web pages
  *
- * Runs in the context of web pages and executes BrowserAgent commands.
- * Communicates with background script for chrome.* API access.
+ * Handles DOM commands from the background script.
+ * In production, bundle @aspect/core and import it.
  */
 
-// Import BrowserAgent (bundled version would be injected)
-// In production, you'd bundle btcp-browser-agent and include it
-
-let agent = null;
-
-// Initialize agent when script loads
-async function initAgent() {
-  try {
-    // For production, import from bundled file:
-    // const { BrowserAgent } = await import(chrome.runtime.getURL('btcp-browser-agent.js'));
-
-    // For now, we'll create a minimal agent inline
-    // This would be replaced with the actual BrowserAgent import
-    agent = createMinimalAgent();
-
-    // Notify background that agent is ready
-    chrome.runtime.sendMessage({ type: 'agentReady' });
-    console.log('[Content] BrowserAgent initialized');
-  } catch (error) {
-    console.error('[Content] Failed to initialize agent:', error);
-  }
-}
-
-// Create minimal agent for demo (replace with actual BrowserAgent)
-function createMinimalAgent() {
-  return {
-    async execute(command) {
-      console.log('[Content] Executing:', command);
-
-      try {
-        switch (command.action) {
-          case 'snapshot':
-            return handleSnapshot(command);
-          case 'click':
-            return handleClick(command);
-          case 'type':
-            return handleType(command);
-          case 'fill':
-            return handleFill(command);
-          case 'screenshot':
-            return handleScreenshot(command);
-          case 'evaluate':
-            return handleEvaluate(command);
-          case 'getText':
-          case 'gettext':
-            return handleGetText(command);
-          case 'isVisible':
-          case 'isvisible':
-            return handleIsVisible(command);
-          case 'wait':
-            return handleWait(command);
-          case 'scroll':
-            return handleScroll(command);
-          case 'hover':
-            return handleHover(command);
-          default:
-            return { id: command.id, success: false, error: `Unknown action: ${command.action}` };
-        }
-      } catch (error) {
-        return { id: command.id, success: false, error: error.message };
-      }
-    },
-  };
-}
-
 // ============================================================================
-// Command Handlers
+// Inline @aspect/core (simplified for standalone example)
+// In production: import { createAgent } from '@aspect/core';
 // ============================================================================
 
-// Element ref storage
-const elementRefs = new Map();
+const refMap = new Map();
 let refCounter = 0;
 
-function handleSnapshot(command) {
-  elementRefs.clear();
-  refCounter = 0;
-
-  const snapshot = buildSnapshot(document.body, command.interactive);
-  const refs = {};
-
-  elementRefs.forEach((el, ref) => {
-    refs[ref] = {
-      role: getRole(el),
-      name: getAccessibleName(el),
-      selector: generateSelector(el),
-    };
-  });
-
-  return {
-    id: command.id,
-    success: true,
-    data: { snapshot, refs },
-  };
+function getRef(ref) {
+  const element = refMap.get(ref);
+  if (!element || !element.isConnected) {
+    refMap.delete(ref);
+    return null;
+  }
+  return element;
 }
 
-function buildSnapshot(root, interactiveOnly = false) {
+function generateRef(element) {
+  for (const [ref, el] of refMap.entries()) {
+    if (el === element) return ref;
+  }
+  const ref = `@ref:${refCounter++}`;
+  refMap.set(ref, element);
+  return ref;
+}
+
+function clearRefs() {
+  refMap.clear();
+  refCounter = 0;
+}
+
+function getElement(selector) {
+  if (selector.startsWith('@ref:')) {
+    return getRef(selector);
+  }
+  return document.querySelector(selector);
+}
+
+// Snapshot generation
+const IMPLICIT_ROLES = {
+  A: 'link', BUTTON: 'button', H1: 'heading', H2: 'heading',
+  H3: 'heading', H4: 'heading', H5: 'heading', H6: 'heading',
+  IMG: 'img', INPUT: 'textbox', NAV: 'navigation', SELECT: 'combobox',
+  TEXTAREA: 'textbox', MAIN: 'main', FORM: 'form',
+};
+
+const INPUT_ROLES = {
+  button: 'button', checkbox: 'checkbox', radio: 'radio',
+  submit: 'button', text: 'textbox', email: 'textbox',
+  password: 'textbox', search: 'searchbox',
+};
+
+function getRole(el) {
+  const explicit = el.getAttribute('role');
+  if (explicit) return explicit;
+  if (el.tagName === 'INPUT') {
+    return INPUT_ROLES[el.type] || 'textbox';
+  }
+  return IMPLICIT_ROLES[el.tagName] || null;
+}
+
+function getAccessibleName(el) {
+  const ariaLabel = el.getAttribute('aria-label');
+  if (ariaLabel) return ariaLabel.trim();
+
+  if (el.tagName === 'IMG') {
+    const alt = el.getAttribute('alt');
+    if (alt) return alt.trim();
+  }
+
+  if (el.tagName === 'BUTTON' || el.tagName === 'A') {
+    return el.textContent?.trim() || '';
+  }
+
+  if (el.tagName === 'INPUT' && ['submit', 'button'].includes(el.type)) {
+    return el.value || el.type;
+  }
+
+  // Check for label
+  if (el.id) {
+    const label = document.querySelector(`label[for="${el.id}"]`);
+    if (label) return label.textContent?.trim() || '';
+  }
+
+  return '';
+}
+
+function isInteractive(role) {
+  return ['button', 'link', 'textbox', 'checkbox', 'radio', 'combobox',
+    'listbox', 'menuitem', 'option', 'slider', 'searchbox', 'switch'].includes(role);
+}
+
+function createSnapshot(root = document.body, maxDepth = 10) {
+  clearRefs();
+  const refs = {};
   const lines = [];
 
-  function walk(el, depth = 0) {
-    if (!isVisible(el)) return;
+  function process(el, depth, indent) {
+    if (depth > maxDepth) return;
 
-    const isInteractive = isInteractiveElement(el);
-    if (interactiveOnly && !isInteractive) {
-      // Still walk children
-      for (const child of el.children) {
-        walk(child, depth);
-      }
-      return;
-    }
+    const style = window.getComputedStyle(el);
+    if (style.display === 'none' || style.visibility === 'hidden') return;
 
     const role = getRole(el);
     const name = getAccessibleName(el);
+    const interactive = role && isInteractive(role);
 
-    if (role || isInteractive) {
-      const ref = `e${++refCounter}`;
-      elementRefs.set(ref, el);
+    if (role) {
+      let line = indent;
+      let ref;
 
-      const indent = '  '.repeat(depth);
-      const namePart = name ? ` '${name}'` : '';
-      lines.push(`${indent}- ${role}${namePart} [ref=${ref}]`);
+      if (interactive) {
+        ref = generateRef(el);
+        refs[ref] = { role, name: name || undefined };
+        line += `${ref} `;
+      }
+
+      line += role;
+      if (name) {
+        const truncated = name.length > 50 ? name.slice(0, 47) + '...' : name;
+        line += ` "${truncated}"`;
+      }
+
+      const states = [];
+      if (el.disabled) states.push('disabled');
+      if (el.checked) states.push('checked');
+      if (states.length) line += ` (${states.join(', ')})`;
+
+      lines.push(line);
     }
 
     for (const child of el.children) {
-      walk(child, depth + 1);
+      process(child, depth + 1, indent + '  ');
     }
   }
 
-  walk(root);
-  return lines.join('\n');
+  process(root, 0, '');
+  return { tree: lines.join('\n') || 'Empty page', refs };
 }
 
-function handleClick(command) {
-  const el = findElement(command.selector);
-  if (!el) {
-    return { id: command.id, success: false, error: `Element not found: ${command.selector}` };
-  }
+// ============================================================================
+// Command handlers
+// ============================================================================
 
-  el.click();
-  return { id: command.id, success: true, data: {} };
-}
+async function executeCommand(cmd) {
+  switch (cmd.action) {
+    case 'snapshot':
+      return createSnapshot(
+        cmd.selector ? getElement(cmd.selector) : document.body,
+        cmd.maxDepth || 10
+      );
 
-function handleType(command) {
-  const el = findElement(command.selector);
-  if (!el) {
-    return { id: command.id, success: false, error: `Element not found: ${command.selector}` };
-  }
-
-  el.focus();
-  for (const char of command.text) {
-    el.dispatchEvent(new KeyboardEvent('keydown', { key: char }));
-    el.dispatchEvent(new KeyboardEvent('keypress', { key: char }));
-    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-      el.value += char;
+    case 'click': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      el.focus?.();
+      el.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
+      el.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));
+      el.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+      return { clicked: true };
     }
-    el.dispatchEvent(new KeyboardEvent('keyup', { key: char }));
-    el.dispatchEvent(new InputEvent('input', { data: char }));
+
+    case 'type': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      if (cmd.clear) el.value = '';
+      el.focus?.();
+      for (const char of cmd.text) {
+        el.dispatchEvent(new KeyboardEvent('keydown', { key: char, bubbles: true }));
+        el.value += char;
+        el.dispatchEvent(new Event('input', { bubbles: true }));
+        el.dispatchEvent(new KeyboardEvent('keyup', { key: char, bubbles: true }));
+      }
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+      return { typed: true };
+    }
+
+    case 'fill': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      el.focus?.();
+      el.value = cmd.value;
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+      return { filled: true };
+    }
+
+    case 'check': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      if (!el.checked) el.click();
+      return { checked: true };
+    }
+
+    case 'uncheck': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      if (el.checked) el.click();
+      return { unchecked: true };
+    }
+
+    case 'select': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      const values = Array.isArray(cmd.values) ? cmd.values : [cmd.values];
+      for (const opt of el.options) {
+        opt.selected = values.includes(opt.value);
+      }
+      el.dispatchEvent(new Event('change', { bubbles: true }));
+      return { selected: values };
+    }
+
+    case 'focus': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      el.focus?.();
+      return { focused: true };
+    }
+
+    case 'hover': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      el.dispatchEvent(new MouseEvent('mouseenter', { bubbles: true }));
+      el.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));
+      return { hovered: true };
+    }
+
+    case 'scroll': {
+      const x = cmd.x || 0;
+      const y = cmd.y || 0;
+      if (cmd.selector) {
+        const el = getElement(cmd.selector);
+        if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+        el.scrollBy(x, y);
+      } else {
+        window.scrollBy(x, y);
+      }
+      return { scrolled: true };
+    }
+
+    case 'scrollIntoView': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return { scrolled: true };
+    }
+
+    case 'getText': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      return { text: el.textContent };
+    }
+
+    case 'getAttribute': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      return { value: el.getAttribute(cmd.attribute) };
+    }
+
+    case 'isVisible': {
+      const el = getElement(cmd.selector);
+      if (!el) return { visible: false };
+      const style = window.getComputedStyle(el);
+      const visible = style.display !== 'none' && style.visibility !== 'hidden';
+      return { visible };
+    }
+
+    case 'isEnabled': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      return { enabled: !el.disabled };
+    }
+
+    case 'isChecked': {
+      const el = getElement(cmd.selector);
+      if (!el) throw new Error(`Element not found: ${cmd.selector}`);
+      return { checked: !!el.checked };
+    }
+
+    case 'wait': {
+      const timeout = cmd.timeout || 5000;
+      const start = Date.now();
+      while (Date.now() - start < timeout) {
+        if (cmd.selector) {
+          const el = getElement(cmd.selector);
+          if (el) {
+            const style = window.getComputedStyle(el);
+            if (style.display !== 'none' && style.visibility !== 'hidden') {
+              return { waited: true };
+            }
+          }
+        }
+        await new Promise(r => setTimeout(r, 100));
+      }
+      throw new Error(`Timeout waiting for ${cmd.selector}`);
+    }
+
+    case 'getUrl':
+      return { url: window.location.href };
+
+    case 'getTitle':
+      return { title: document.title };
+
+    case 'evaluate': {
+      const result = new Function(`return (${cmd.script})`)();
+      return { result };
+    }
+
+    default:
+      throw new Error(`Unknown action: ${cmd.action}`);
   }
-
-  return { id: command.id, success: true, data: {} };
 }
 
-function handleFill(command) {
-  const el = findElement(command.selector);
-  if (!el) {
-    return { id: command.id, success: false, error: `Element not found: ${command.selector}` };
-  }
-
-  el.focus();
-  el.value = command.value;
-  el.dispatchEvent(new InputEvent('input', { data: command.value }));
-  el.dispatchEvent(new Event('change', { bubbles: true }));
-
-  return { id: command.id, success: true, data: {} };
-}
-
-async function handleScreenshot(command) {
-  // Request screenshot from background script
-  const response = await chrome.runtime.sendMessage({ type: 'screenshot' });
-  return { id: command.id, ...response };
-}
-
-function handleEvaluate(command) {
+async function handleCommand(command) {
   try {
-    const result = eval(command.script);
-    return { id: command.id, success: true, data: { result } };
+    const data = await executeCommand(command);
+    return { id: command.id, success: true, data };
   } catch (error) {
     return { id: command.id, success: false, error: error.message };
   }
 }
 
-function handleGetText(command) {
-  const el = findElement(command.selector);
-  if (!el) {
-    return { id: command.id, success: false, error: `Element not found: ${command.selector}` };
-  }
-
-  return { id: command.id, success: true, data: { text: el.textContent } };
-}
-
-function handleIsVisible(command) {
-  const el = findElement(command.selector);
-  if (!el) {
-    return { id: command.id, success: true, data: { visible: false } };
-  }
-
-  return { id: command.id, success: true, data: { visible: isVisible(el) } };
-}
-
-async function handleWait(command) {
-  const timeout = command.timeout || 5000;
-  const start = Date.now();
-
-  while (Date.now() - start < timeout) {
-    const el = findElement(command.selector);
-    if (el && isVisible(el)) {
-      return { id: command.id, success: true, data: {} };
-    }
-    await new Promise((r) => setTimeout(r, 100));
-  }
-
-  return { id: command.id, success: false, error: `Timeout waiting for: ${command.selector}` };
-}
-
-function handleScroll(command) {
-  if (command.selector) {
-    const el = findElement(command.selector);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  } else {
-    const amount = command.amount || 300;
-    const dir = command.direction || 'down';
-    const x = dir === 'left' ? -amount : dir === 'right' ? amount : 0;
-    const y = dir === 'up' ? -amount : dir === 'down' ? amount : 0;
-    window.scrollBy({ left: x, top: y, behavior: 'smooth' });
-  }
-  return { id: command.id, success: true, data: {} };
-}
-
-function handleHover(command) {
-  const el = findElement(command.selector);
-  if (!el) {
-    return { id: command.id, success: false, error: `Element not found: ${command.selector}` };
-  }
-
-  const rect = el.getBoundingClientRect();
-  el.dispatchEvent(
-    new MouseEvent('mouseover', {
-      bubbles: true,
-      clientX: rect.left + rect.width / 2,
-      clientY: rect.top + rect.height / 2,
-    })
-  );
-
-  return { id: command.id, success: true, data: {} };
-}
-
 // ============================================================================
-// Helper Functions
+// Message listener
 // ============================================================================
 
-function findElement(selector) {
-  if (!selector) return null;
-
-  // Handle ref selectors (@e1, ref=e1, e1)
-  const refMatch = selector.match(/^(?:@|ref=)?e(\d+)$/);
-  if (refMatch) {
-    return elementRefs.get(`e${refMatch[1]}`);
-  }
-
-  // Handle ref in brackets [ref=e1]
-  const bracketMatch = selector.match(/^\[ref=e(\d+)\]$/);
-  if (bracketMatch) {
-    return elementRefs.get(`e${bracketMatch[1]}`);
-  }
-
-  // CSS selector
-  return document.querySelector(selector);
-}
-
-function isVisible(el) {
-  if (!el || el.nodeType !== 1) return false;
-  const style = getComputedStyle(el);
-  if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') {
-    return false;
-  }
-  const rect = el.getBoundingClientRect();
-  return rect.width > 0 && rect.height > 0;
-}
-
-function isInteractiveElement(el) {
-  const interactiveTags = ['A', 'BUTTON', 'INPUT', 'SELECT', 'TEXTAREA'];
-  if (interactiveTags.includes(el.tagName)) return true;
-  if (el.getAttribute('role') === 'button') return true;
-  if (el.getAttribute('tabindex') !== null) return true;
-  if (el.onclick || el.getAttribute('onclick')) return true;
-  return false;
-}
-
-function getRole(el) {
-  const explicit = el.getAttribute('role');
-  if (explicit) return explicit;
-
-  const tagRoles = {
-    A: 'link',
-    BUTTON: 'button',
-    INPUT: el.type === 'checkbox' ? 'checkbox' : el.type === 'radio' ? 'radio' : 'textbox',
-    SELECT: 'combobox',
-    TEXTAREA: 'textbox',
-    IMG: 'img',
-    H1: 'heading',
-    H2: 'heading',
-    H3: 'heading',
-    H4: 'heading',
-    H5: 'heading',
-    H6: 'heading',
-    NAV: 'navigation',
-    MAIN: 'main',
-    HEADER: 'banner',
-    FOOTER: 'contentinfo',
-    FORM: 'form',
-    TABLE: 'table',
-    UL: 'list',
-    OL: 'list',
-    LI: 'listitem',
-  };
-
-  return tagRoles[el.tagName] || '';
-}
-
-function getAccessibleName(el) {
-  // aria-label
-  const ariaLabel = el.getAttribute('aria-label');
-  if (ariaLabel) return ariaLabel.trim();
-
-  // aria-labelledby
-  const labelledBy = el.getAttribute('aria-labelledby');
-  if (labelledBy) {
-    const labelEl = document.getElementById(labelledBy);
-    if (labelEl) return labelEl.textContent?.trim() || '';
-  }
-
-  // Input labels
-  if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT') {
-    const id = el.id;
-    if (id) {
-      const label = document.querySelector(`label[for="${id}"]`);
-      if (label) return label.textContent?.trim() || '';
-    }
-    const placeholder = el.getAttribute('placeholder');
-    if (placeholder) return placeholder.trim();
-  }
-
-  // Button/link text
-  if (el.tagName === 'BUTTON' || el.tagName === 'A') {
-    return el.textContent?.trim() || '';
-  }
-
-  // Image alt
-  if (el.tagName === 'IMG') {
-    return el.getAttribute('alt') || '';
-  }
-
-  // Title
-  const title = el.getAttribute('title');
-  if (title) return title.trim();
-
-  return '';
-}
-
-function generateSelector(el) {
-  if (el.id) return `#${CSS.escape(el.id)}`;
-
-  const testId = el.getAttribute('data-testid');
-  if (testId) return `[data-testid="${CSS.escape(testId)}"]`;
-
-  // Build path
-  const path = [];
-  let current = el;
-
-  while (current && current !== document.body) {
-    let selector = current.tagName.toLowerCase();
-
-    const classes = Array.from(current.classList)
-      .filter((c) => !c.match(/^[a-z0-9]{8,}$/i))
-      .slice(0, 2);
-    if (classes.length) {
-      selector += '.' + classes.map((c) => CSS.escape(c)).join('.');
-    }
-
-    path.unshift(selector);
-    current = current.parentElement;
-  }
-
-  return path.join(' > ');
-}
-
-// ============================================================================
-// Message Handling
-// ============================================================================
-
-// Listen for commands from background/popup
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  console.log('[Content] Received:', message.type, message);
+  if (message.type !== 'aspect:command') return false;
 
-  if (message.type === 'executeCommand' && agent) {
-    agent.execute(message.command).then(sendResponse);
-    return true; // Keep channel open for async
-  }
+  handleCommand(message.command)
+    .then(response => {
+      sendResponse({ type: 'aspect:response', response });
+    })
+    .catch(error => {
+      sendResponse({
+        type: 'aspect:response',
+        response: {
+          id: message.command.id,
+          success: false,
+          error: error.message
+        }
+      });
+    });
 
-  if (message.type === 'ping') {
-    sendResponse({ success: true, ready: !!agent });
-    return false;
-  }
-
-  return false;
+  return true; // Async response
 });
 
-// Initialize on load
-initAgent();
+console.log('[Aspect] Content script loaded');

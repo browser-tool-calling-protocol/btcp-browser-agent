@@ -1,49 +1,28 @@
 {
-  "name": "btcp-browser-agent",
+  "name": "aspect-monorepo",
   "version": "0.1.0",
-  "description": "Browser Tool Calling Protocol - Browser-native agent automation library",
+  "private": true,
+  "description": "Browser automation with DOM actions and extension APIs",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    }
-  },
-  "files": [
-    "dist"
+  "workspaces": [
+    "packages/*"
   ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist",
+    "build": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prepublishOnly": "npm run build"
+    "typecheck": "tsc --noEmit"
   },
-  "keywords": [
-    "browser",
-    "automation",
-    "agent",
-    "ai",
-    "dom",
-    "accessibility"
-  ],
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anthropics/btcp-browser-agent.git"
+    "url": "git+https://github.com/browser-tool-calling-protocol/btcp-browser-agent.git"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
     "jsdom": "^24.0.0",
     "typescript": "^5.3.0",
     "vitest": "^2.0.0"
-  },
-  "dependencies": {
-    "zod": "^3.22.4"
   }
 }

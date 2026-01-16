@@ -1,90 +1,39 @@
 /**
  * Popup Script
  *
- * UI for controlling the AI Browser Agent.
- * Communicates with background and content scripts.
+ * UI for controlling the Aspect Browser Agent.
+ * Sends commands to background script which routes them appropriately.
  */
 
 let commandId = 0;
 
-// Elements
-const statusDot = document.getElementById('statusDot');
-const statusText = document.getElementById('statusText');
 const output = document.getElementById('output');
 const commandJson = document.getElementById('commandJson');
-
-// Initialize
-document.addEventListener('DOMContentLoaded', async () => {
-  await checkStatus();
-  setupEventListeners();
-});
-
-// Check if content script is ready
-async function checkStatus() {
-  try {
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    if (!tab?.id) {
-      setStatus(false, 'No active tab');
-      return;
-    }
-
-    const response = await chrome.tabs.sendMessage(tab.id, { type: 'ping' });
-    if (response?.ready) {
-      setStatus(true, `Ready on: ${new URL(tab.url).hostname}`);
-    } else {
-      setStatus(false, 'Agent not ready');
-    }
-  } catch (error) {
-    setStatus(false, 'Content script not loaded');
-  }
-}
-
-function setStatus(ready, text) {
-  statusDot.classList.toggle('ready', ready);
-  statusText.textContent = text;
-}
 
 function log(message) {
   const timestamp = new Date().toLocaleTimeString();
   const text = typeof message === 'object' ? JSON.stringify(message, null, 2) : message;
   output.textContent = `[${timestamp}]\n${text}`;
-  console.log('[Popup]', message);
 }
 
-// Execute command in active tab
-async function executeCommand(command) {
+// Send command to background script
+async function sendCommand(command) {
   try {
-    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    if (!tab?.id) {
-      log('Error: No active tab');
-      return null;
-    }
-
-    // Add command ID
-    command.id = `cmd${++commandId}`;
-
+    command.id = `cmd_${++commandId}`;
     log(`Executing: ${command.action}...`);
 
-    const response = await chrome.tabs.sendMessage(tab.id, {
-      type: 'executeCommand',
+    const response = await chrome.runtime.sendMessage({
+      type: 'aspect:command',
       command,
     });
 
-    log(response);
-    return response;
-  } catch (error) {
-    log(`Error: ${error.message}`);
-    return null;
-  }
-}
-
-// Execute via background script
-async function executeViaBackground(type, data = {}) {
-  try {
-    log(`${type}...`);
-    const response = await chrome.runtime.sendMessage({ type, ...data });
-    log(response);
-    return response;
+    if (response?.type === 'aspect:response') {
+      log(response.response);
+      return response.response;
+    } else {
+      log(response);
+      return response;
+    }
   } catch (error) {
     log(`Error: ${error.message}`);
     return null;
@@ -92,34 +41,44 @@ async function executeViaBackground(type, data = {}) {
 }
 
 // Setup event listeners
-function setupEventListeners() {
+document.addEventListener('DOMContentLoaded', () => {
   // Snapshot
   document.getElementById('btnSnapshot').addEventListener('click', () => {
-    executeCommand({ action: 'snapshot', interactive: true });
+    sendCommand({ action: 'snapshot' });
   });
 
   // Screenshot
   document.getElementById('btnScreenshot').addEventListener('click', () => {
-    executeViaBackground('screenshot');
+    sendCommand({ action: 'screenshot' });
   });
 
-  // Get Tabs
+  // List Tabs
   document.getElementById('btnGetTabs').addEventListener('click', () => {
-    executeViaBackground('getTabs');
+    sendCommand({ action: 'tabList' });
   });
 
   // New Tab
   document.getElementById('btnNewTab').addEventListener('click', () => {
-    executeViaBackground('newTab', { url: 'https://example.com' });
+    sendCommand({ action: 'tabNew', url: 'https://example.com' });
+  });
+
+  // Navigate
+  document.getElementById('btnNavigate').addEventListener('click', () => {
+    const url = document.getElementById('navigateUrl').value.trim();
+    if (url) {
+      sendCommand({ action: 'navigate', url });
+    } else {
+      log('Enter a URL');
+    }
   });
 
   // Click
   document.getElementById('btnClick').addEventListener('click', () => {
     const selector = document.getElementById('clickSelector').value.trim();
     if (selector) {
-      executeCommand({ action: 'click', selector });
+      sendCommand({ action: 'click', selector });
     } else {
-      log('Enter a selector');
+      log('Enter a selector (e.g., @ref:0)');
     }
   });
 
@@ -128,7 +87,7 @@ function setupEventListeners() {
     const selector = document.getElementById('fillSelector').value.trim();
     const value = document.getElementById('fillValue').value;
     if (selector) {
-      executeCommand({ action: 'fill', selector, value });
+      sendCommand({ action: 'fill', selector, value });
     } else {
       log('Enter a selector');
     }
@@ -143,13 +102,17 @@ function setupEventListeners() {
         return;
       }
       const command = JSON.parse(json);
-      executeCommand(command);
+      sendCommand(command);
     } catch (error) {
       log(`Invalid JSON: ${error.message}`);
     }
   });
 
-  // Enter key in inputs
+  // Enter key handlers
+  document.getElementById('navigateUrl').addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') document.getElementById('btnNavigate').click();
+  });
+
   document.getElementById('clickSelector').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') document.getElementById('btnClick').click();
   });
@@ -157,4 +120,4 @@ function setupEventListeners() {
   document.getElementById('fillValue').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') document.getElementById('btnFill').click();
   });
-}
+});

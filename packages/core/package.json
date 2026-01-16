@@ -1,0 +1,35 @@
+{
+  "name": "@aspect/core",
+  "version": "0.1.0",
+  "description": "Core DOM actions for browser automation - runs in any browser context",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "browser",
+    "automation",
+    "dom",
+    "accessibility"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "jsdom": "^24.0.0"
+  }
+}

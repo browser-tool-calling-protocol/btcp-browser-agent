@@ -2,11 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>AI Browser Agent</title>
+  <title>Aspect Browser Agent</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       width: 400px;
       padding: 16px;
@@ -17,12 +15,6 @@
     h1 {
       font-size: 18px;
       margin: 0 0 16px 0;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    h1::before {
-      content: "🤖";
     }
     .section {
       margin-bottom: 16px;
@@ -43,22 +35,13 @@
       width: 100%;
       margin-bottom: 8px;
     }
-    button:hover {
-      background: #1d4ed8;
-    }
-    button:disabled {
-      background: #9ca3af;
-      cursor: not-allowed;
-    }
-    button.secondary {
-      background: #6b7280;
-    }
-    button.secondary:hover {
-      background: #4b5563;
-    }
+    button:hover { background: #1d4ed8; }
+    button:disabled { background: #9ca3af; cursor: not-allowed; }
+    button.secondary { background: #6b7280; }
+    button.secondary:hover { background: #4b5563; }
     textarea {
       width: 100%;
-      height: 120px;
+      height: 100px;
       padding: 8px;
       border: 1px solid #d1d5db;
       border-radius: 6px;
@@ -78,32 +61,12 @@
       white-space: pre-wrap;
       word-break: break-all;
     }
-    .status {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px;
-      background: #f3f4f6;
-      border-radius: 6px;
-      margin-bottom: 16px;
-    }
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #ef4444;
-    }
-    .status-dot.ready {
-      background: #22c55e;
-    }
     .actions {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
     }
-    .actions button {
-      margin: 0;
-    }
+    .actions button { margin: 0; }
     .command-input {
       display: flex;
       gap: 8px;
@@ -115,34 +78,34 @@
       border: 1px solid #d1d5db;
       border-radius: 6px;
     }
-    .command-input button {
-      width: auto;
-      margin: 0;
-    }
+    .command-input button { width: auto; margin: 0; }
   </style>
 </head>
 <body>
-  <h1>AI Browser Agent</h1>
-
-  <div class="status">
-    <div class="status-dot" id="statusDot"></div>
-    <span id="statusText">Checking...</span>
-  </div>
+  <h1>Aspect Browser Agent</h1>
 
   <div class="section">
     <div class="section-title">Quick Actions</div>
     <div class="actions">
       <button id="btnSnapshot">Snapshot</button>
       <button id="btnScreenshot">Screenshot</button>
-      <button id="btnGetTabs">Get Tabs</button>
+      <button id="btnGetTabs">List Tabs</button>
       <button id="btnNewTab">New Tab</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Navigate</div>
+    <div class="command-input">
+      <input type="text" id="navigateUrl" placeholder="https://example.com">
+      <button id="btnNavigate">Go</button>
     </div>
   </div>
 
   <div class="section">
     <div class="section-title">Click Element</div>
     <div class="command-input">
-      <input type="text" id="clickSelector" placeholder="@e1 or #button">
+      <input type="text" id="clickSelector" placeholder="@ref:0 or #button">
       <button id="btnClick">Click</button>
     </div>
   </div>
@@ -150,16 +113,16 @@
   <div class="section">
     <div class="section-title">Fill Input</div>
     <div class="command-input">
-      <input type="text" id="fillSelector" placeholder="@e2 or #input" style="width: 100px;">
-      <input type="text" id="fillValue" placeholder="value">
+      <input type="text" id="fillSelector" placeholder="@ref:1" style="width: 100px;">
+      <input type="text" id="fillValue" placeholder="value to fill">
       <button id="btnFill">Fill</button>
     </div>
   </div>
 
   <div class="section">
     <div class="section-title">Custom Command (JSON)</div>
-    <textarea id="commandJson" placeholder='{ "action": "snapshot", "interactive": true }'></textarea>
-    <button id="btnExecute">Execute Command</button>
+    <textarea id="commandJson" placeholder='{ "action": "snapshot" }'></textarea>
+    <button id="btnExecute">Execute</button>
   </div>
 
   <div class="section">

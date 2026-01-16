@@ -1,208 +1,271 @@
 /**
  * Background Service Worker
  *
- * Handles chrome.* APIs and coordinates between AI and content scripts.
- * This is where you'd connect to your AI backend (e.g., Claude API).
+ * Handles:
+ * - Navigation (navigate, back, forward, reload)
+ * - Tab management (new, close, switch, list)
+ * - Screenshots
+ * - Forwarding DOM commands to content scripts
  */
 
-// Store active sessions
-const sessions = new Map();
+// ============================================================================
+// Extension-level command handling
+// ============================================================================
 
-// Message handler for content scripts and popup
-chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  console.log('[Background] Received:', message.type, message);
+const EXTENSION_ACTIONS = [
+  'navigate', 'back', 'forward', 'reload',
+  'getUrl', 'getTitle', 'screenshot',
+  'tabNew', 'tabClose', 'tabSwitch', 'tabList',
+];
 
-  switch (message.type) {
-    case 'screenshot':
-      handleScreenshot(sender.tab?.windowId).then(sendResponse);
-      return true; // Keep channel open for async
-
-    case 'navigate':
-      handleNavigate(sender.tab?.id, message.url).then(sendResponse);
-      return true;
-
-    case 'getTabs':
-      handleGetTabs().then(sendResponse);
-      return true;
-
-    case 'newTab':
-      handleNewTab(message.url).then(sendResponse);
-      return true;
-
-    case 'switchTab':
-      handleSwitchTab(message.tabId).then(sendResponse);
-      return true;
-
-    case 'closeTab':
-      handleCloseTab(message.tabId || sender.tab?.id).then(sendResponse);
-      return true;
-
-    case 'executeInTab':
-      handleExecuteInTab(message.tabId, message.command).then(sendResponse);
-      return true;
-
-    case 'agentReady':
-      // Content script agent is ready
-      sessions.set(sender.tab?.id, { ready: true, timestamp: Date.now() });
-      sendResponse({ success: true });
-      return false;
-
-    case 'agentResult':
-      // Forward result to popup or AI backend
-      handleAgentResult(message.result);
-      sendResponse({ success: true });
-      return false;
-
-    default:
-      sendResponse({ success: false, error: 'Unknown message type' });
-      return false;
-  }
-});
-
-// Screenshot using chrome.tabs.captureVisibleTab
-async function handleScreenshot(windowId) {
-  try {
-    const dataUrl = await chrome.tabs.captureVisibleTab(windowId || null, {
-      format: 'png',
-    });
-    const base64 = dataUrl.split(',')[1];
-    return { success: true, data: { screenshot: base64, format: 'png' } };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
+function isExtensionCommand(command) {
+  return EXTENSION_ACTIONS.includes(command.action);
 }
 
-// Navigate tab to URL
-async function handleNavigate(tabId, url) {
-  try {
-    const tab = await chrome.tabs.update(tabId, { url });
-    return { success: true, data: { url: tab.url, title: tab.title } };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
+async function getActiveTab() {
+  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  return tab || null;
 }
 
-// Get all tabs
-async function handleGetTabs() {
+async function waitForTabLoad(tabId, timeout = 30000) {
+  const startTime = Date.now();
+
+  return new Promise((resolve, reject) => {
+    const checkTab = async () => {
+      try {
+        const tab = await chrome.tabs.get(tabId);
+        if (tab.status === 'complete') {
+          resolve();
+          return;
+        }
+        if (Date.now() - startTime > timeout) {
+          reject(new Error('Tab load timeout'));
+          return;
+        }
+        setTimeout(checkTab, 100);
+      } catch (error) {
+        reject(error);
+      }
+    };
+    checkTab();
+  });
+}
+
+async function executeExtensionCommand(command) {
   try {
-    const tabs = await chrome.tabs.query({});
-    return {
-      success: true,
-      data: {
-        tabs: tabs.map((t) => ({
+    switch (command.action) {
+      case 'navigate': {
+        const tab = await getActiveTab();
+        if (!tab?.id) throw new Error('No active tab');
+        await chrome.tabs.update(tab.id, { url: command.url });
+        if (command.waitUntil) {
+          await waitForTabLoad(tab.id);
+        }
+        return { id: command.id, success: true, data: { url: command.url } };
+      }
+
+      case 'back': {
+        const tab = await getActiveTab();
+        if (!tab?.id) throw new Error('No active tab');
+        await chrome.tabs.goBack(tab.id);
+        return { id: command.id, success: true, data: { navigated: 'back' } };
+      }
+
+      case 'forward': {
+        const tab = await getActiveTab();
+        if (!tab?.id) throw new Error('No active tab');
+        await chrome.tabs.goForward(tab.id);
+        return { id: command.id, success: true, data: { navigated: 'forward' } };
+      }
+
+      case 'reload': {
+        const tab = await getActiveTab();
+        if (!tab?.id) throw new Error('No active tab');
+        await chrome.tabs.reload(tab.id, { bypassCache: command.bypassCache });
+        await waitForTabLoad(tab.id);
+        return { id: command.id, success: true, data: { reloaded: true } };
+      }
+
+      case 'getUrl': {
+        const tab = await getActiveTab();
+        return { id: command.id, success: true, data: { url: tab?.url || '' } };
+      }
+
+      case 'getTitle': {
+        const tab = await getActiveTab();
+        return { id: command.id, success: true, data: { title: tab?.title || '' } };
+      }
+
+      case 'screenshot': {
+        const format = command.format || 'png';
+        const quality = command.quality;
+        const dataUrl = await chrome.tabs.captureVisibleTab(null, { format, quality });
+        const base64 = dataUrl.split(',')[1];
+        return { id: command.id, success: true, data: { screenshot: base64, format } };
+      }
+
+      case 'tabNew': {
+        const tab = await chrome.tabs.create({
+          url: command.url,
+          active: command.active ?? true,
+        });
+        if (command.url) {
+          await waitForTabLoad(tab.id);
+        }
+        return { id: command.id, success: true, data: { tabId: tab.id, url: tab.url } };
+      }
+
+      case 'tabClose': {
+        let tabId = command.tabId;
+        if (!tabId) {
+          const tab = await getActiveTab();
+          tabId = tab?.id;
+        }
+        if (!tabId) throw new Error('No tab to close');
+        await chrome.tabs.remove(tabId);
+        return { id: command.id, success: true, data: { closed: tabId } };
+      }
+
+      case 'tabSwitch': {
+        await chrome.tabs.update(command.tabId, { active: true });
+        return { id: command.id, success: true, data: { switched: command.tabId } };
+      }
+
+      case 'tabList': {
+        const tabs = await chrome.tabs.query({ currentWindow: true });
+        const tabList = tabs.map(t => ({
           id: t.id,
           url: t.url,
           title: t.title,
           active: t.active,
-        })),
-      },
-    };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-}
+          index: t.index,
+        }));
+        return { id: command.id, success: true, data: { tabs: tabList } };
+      }
 
-// Create new tab
-async function handleNewTab(url) {
-  try {
-    const tab = await chrome.tabs.create({ url: url || 'about:blank' });
-    return { success: true, data: { tabId: tab.id, url: tab.url } };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-}
-
-// Switch to tab
-async function handleSwitchTab(tabId) {
-  try {
-    const tab = await chrome.tabs.update(tabId, { active: true });
-    return { success: true, data: { tabId: tab.id, url: tab.url } };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-}
-
-// Close tab
-async function handleCloseTab(tabId) {
-  try {
-    await chrome.tabs.remove(tabId);
-    return { success: true, data: { closed: true, tabId } };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-}
-
-// Execute command in specific tab via content script
-async function handleExecuteInTab(tabId, command) {
-  try {
-    const response = await chrome.tabs.sendMessage(tabId, {
-      type: 'executeCommand',
-      command,
-    });
-    return response;
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-}
-
-// Handle results from agent (forward to AI backend)
-function handleAgentResult(result) {
-  console.log('[Background] Agent result:', result);
-  // Here you would send to your AI backend
-  // Example: fetch('https://your-ai-backend.com/result', { method: 'POST', body: JSON.stringify(result) })
-}
-
-// ============================================================================
-// AI Integration Example
-// ============================================================================
-
-/**
- * Example: Process AI command and execute in tab
- *
- * This is where you'd integrate with Claude API or other AI backend.
- * The AI would send commands, and this function executes them.
- */
-async function processAICommand(aiCommand) {
-  // Get active tab
-  const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  if (!activeTab?.id) {
-    return { error: 'No active tab' };
-  }
-
-  // Send command to content script
-  const result = await chrome.tabs.sendMessage(activeTab.id, {
-    type: 'executeCommand',
-    command: aiCommand,
-  });
-
-  return result;
-}
-
-// Example: AI workflow - snapshot then click
-async function exampleAIWorkflow() {
-  // 1. Get snapshot
-  const snapshot = await processAICommand({
-    id: '1',
-    action: 'snapshot',
-    interactive: true,
-  });
-  console.log('Snapshot:', snapshot);
-
-  // 2. AI would analyze snapshot and decide what to click
-  // For demo, just click first interactive element
-  if (snapshot.success && snapshot.data?.refs) {
-    const firstRef = Object.keys(snapshot.data.refs)[0];
-    if (firstRef) {
-      const clickResult = await processAICommand({
-        id: '2',
-        action: 'click',
-        selector: `@${firstRef}`,
-      });
-      console.log('Click result:', clickResult);
+      default:
+        throw new Error(`Unknown extension action: ${command.action}`);
     }
+  } catch (error) {
+    return { id: command.id, success: false, error: error.message };
   }
 }
 
-// Make workflow available to popup
-globalThis.exampleAIWorkflow = exampleAIWorkflow;
-globalThis.processAICommand = processAICommand;
+// ============================================================================
+// Command routing
+// ============================================================================
+
+async function sendToContentScript(tabId, command) {
+  return new Promise((resolve) => {
+    chrome.tabs.sendMessage(
+      tabId,
+      { type: 'aspect:command', command },
+      (response) => {
+        if (chrome.runtime.lastError) {
+          resolve({
+            id: command.id,
+            success: false,
+            error: chrome.runtime.lastError.message || 'Failed to send to tab',
+          });
+        } else {
+          resolve(response?.response || { id: command.id, success: false, error: 'No response' });
+        }
+      }
+    );
+  });
+}
+
+async function handleCommand(command, tabId) {
+  // Extension commands handled here
+  if (isExtensionCommand(command)) {
+    return executeExtensionCommand(command);
+  }
+
+  // DOM commands forwarded to content script
+  let targetTabId = tabId;
+  if (!targetTabId) {
+    const tab = await getActiveTab();
+    targetTabId = tab?.id;
+  }
+
+  if (!targetTabId) {
+    return { id: command.id, success: false, error: 'No active tab for DOM command' };
+  }
+
+  return sendToContentScript(targetTabId, command);
+}
+
+// ============================================================================
+// Message listener
+// ============================================================================
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  console.log('[Background] Received:', message.type);
+
+  if (message.type === 'aspect:command') {
+    handleCommand(message.command, message.tabId || sender.tab?.id)
+      .then(response => {
+        sendResponse({ type: 'aspect:response', response });
+      })
+      .catch(error => {
+        sendResponse({
+          type: 'aspect:response',
+          response: { id: message.command.id, success: false, error: error.message }
+        });
+      });
+    return true; // Async response
+  }
+
+  return false;
+});
+
+// ============================================================================
+// API for popup/external use
+// ============================================================================
+
+let commandIdCounter = 0;
+
+function generateCommandId() {
+  return `cmd_${Date.now()}_${commandIdCounter++}`;
+}
+
+// Make functions available globally for popup
+globalThis.aspectAgent = {
+  async execute(command) {
+    return handleCommand({ id: generateCommandId(), ...command });
+  },
+
+  async navigate(url, options = {}) {
+    return handleCommand({ id: generateCommandId(), action: 'navigate', url, ...options });
+  },
+
+  async snapshot(options = {}) {
+    return handleCommand({ id: generateCommandId(), action: 'snapshot', ...options });
+  },
+
+  async click(selector) {
+    return handleCommand({ id: generateCommandId(), action: 'click', selector });
+  },
+
+  async type(selector, text, options = {}) {
+    return handleCommand({ id: generateCommandId(), action: 'type', selector, text, ...options });
+  },
+
+  async fill(selector, value) {
+    return handleCommand({ id: generateCommandId(), action: 'fill', selector, value });
+  },
+
+  async screenshot(options = {}) {
+    return handleCommand({ id: generateCommandId(), action: 'screenshot', ...options });
+  },
+
+  async tabList() {
+    return handleCommand({ id: generateCommandId(), action: 'tabList' });
+  },
+
+  async tabNew(options = {}) {
+    return handleCommand({ id: generateCommandId(), action: 'tabNew', ...options });
+  },
+};
+
+console.log('[Aspect] Background script loaded');

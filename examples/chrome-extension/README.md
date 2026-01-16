@@ -1,263 +1,196 @@
-# AI Browser Agent - Chrome Extension Example
+# Aspect Browser Agent - Chrome Extension Example
 
-This example shows how to build a Chrome extension that enables AI to control browser tabs using the BTCP Browser Agent.
+This example shows how to build a Chrome extension that enables AI to control browser tabs.
 
 ## Architecture
 
 ```
-┌─────────────┐     ┌─────────────────┐     ┌─────────────┐
-│   Popup     │────▶│  Background     │────▶│  Content    │
-│   (UI)      │     │  Service Worker │     │  Script     │
-└─────────────┘     └─────────────────┘     └─────────────┘
-      │                    │                       │
-  User input         chrome.tabs.*           BrowserAgent
-  Display results    chrome.scripting        DOM access
-                     Screenshots             Element refs
+┌─────────────────────────────────────────────────────────────────┐
+│                         WEB PAGE                                 │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │              Content Script (@aspect/core)                │  │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐   │  │
+│  │  │   Snapshot  │  │  Actions    │  │  Element Refs   │   │  │
+│  │  │  (DOM→A11y) │  │  (click,    │  │  (@ref:0, etc)  │   │  │
+│  │  │             │  │   type...)  │  │                 │   │  │
+│  │  └─────────────┘  └─────────────┘  └─────────────────┘   │  │
+│  └───────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
+                               │
+                chrome.runtime.sendMessage
+                               │
+┌──────────────────────────────┼───────────────────────────────────┐
+│                              ▼                                   │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │              Background Service Worker                    │  │
+│  │  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐   │  │
+│  │  │  Navigation │  │  Tab Mgmt   │  │  Screenshot     │   │  │
+│  │  │  (goto,     │  │  (new, close│  │  (capture)      │   │  │
+│  │  │   back...)  │  │   switch)   │  │                 │   │  │
+│  │  └─────────────┘  └─────────────┘  └─────────────────┘   │  │
+│  └───────────────────────────────────────────────────────────┘  │
+│                         ▲                                        │
+│                         │ aspectAgent API                        │
+│  ┌───────────────────────────────────────────────────────────┐  │
+│  │                    Popup UI                               │  │
+│  └───────────────────────────────────────────────────────────┘  │
+└──────────────────────────────────────────────────────────────────┘
 ```
+
+## Command Routing
+
+Commands are automatically routed to the right handler:
+
+| Command Type | Handler | Examples |
+|--------------|---------|----------|
+| **DOM Actions** | Content Script | `snapshot`, `click`, `type`, `fill`, `scroll`, `hover` |
+| **Navigation** | Background | `navigate`, `back`, `forward`, `reload` |
+| **Tab Management** | Background | `tabNew`, `tabClose`, `tabSwitch`, `tabList` |
+| **Screenshot** | Background | `screenshot` |
 
 ## Files
 
 - `manifest.json` - Extension manifest (Manifest V3)
-- `background.js` - Service worker handling chrome.* APIs
-- `content.js` - Content script running BrowserAgent in page context
+- `background.js` - Handles navigation, tabs, screenshots, and routes DOM commands
+- `content.js` - Runs in pages, handles DOM commands
 - `popup.html/js` - Extension popup UI
 
 ## Installation
 
-### Development Mode
-
-1. **Build the agent library** (from project root):
-   ```bash
-   npm run build
-   ```
-
-2. **Copy the built library**:
-   ```bash
-   cp dist/index.js examples/chrome-extension/btcp-browser-agent.js
-   ```
-
-3. **Load in Chrome**:
-   - Open `chrome://extensions`
-   - Enable "Developer mode"
-   - Click "Load unpacked"
-   - Select this directory (`examples/chrome-extension`)
-
-### Production Build
-
-For production, bundle everything with a tool like esbuild or webpack:
-
-```bash
-# Install esbuild
-npm install -D esbuild
-
-# Bundle content script with agent
-npx esbuild content.js --bundle --outfile=dist/content.js --format=iife
-
-# Bundle background script
-npx esbuild background.js --bundle --outfile=dist/background.js --format=esm
-```
+1. Open `chrome://extensions`
+2. Enable "Developer mode"
+3. Click "Load unpacked"
+4. Select this directory
 
 ## Usage
 
 ### From Popup UI
 
 1. Click the extension icon to open the popup
-2. Check that status shows "Ready"
-3. Use quick actions:
-   - **Snapshot** - Get accessibility tree with element refs
+2. Use quick actions:
+   - **Snapshot** - Get page structure with element refs
    - **Screenshot** - Capture visible tab
-   - **Click** - Click element by ref (@e1) or CSS selector
+   - **List Tabs** - Get all open tabs
+   - **Navigate** - Go to a URL
+   - **Click** - Click element by ref (`@ref:0`) or CSS selector
    - **Fill** - Fill input field
-
-### From AI Backend
-
-The extension can be controlled programmatically. Example integration:
-
-```javascript
-// In your AI backend or orchestration layer
-async function aiControlBrowser(tabId, action) {
-  // Send command to extension via native messaging or WebSocket
-  const command = {
-    id: generateId(),
-    action: 'snapshot',
-    interactive: true,
-  };
-
-  // Extension executes and returns result
-  const result = await sendToExtension(tabId, command);
-
-  // AI analyzes snapshot and decides next action
-  const nextAction = await askAI(result.data.snapshot);
-
-  // Execute AI's decision
-  return sendToExtension(tabId, nextAction);
-}
-```
 
 ### Programmatic API
 
-From the background script:
+From the background script or popup:
 
 ```javascript
-// Get snapshot of active tab
-const snapshot = await processAICommand({
-  id: '1',
-  action: 'snapshot',
-  interactive: true,
-});
+// Using the aspectAgent API (available globally in background)
+const snapshot = await aspectAgent.snapshot();
+console.log(snapshot.data.tree);
 
-// Click element using ref from snapshot
-await processAICommand({
-  id: '2',
-  action: 'click',
-  selector: '@e1',
-});
+// Click using ref from snapshot
+await aspectAgent.click('@ref:0');
 
-// Fill form field
-await processAICommand({
-  id: '3',
-  action: 'fill',
-  selector: '@e2',
-  value: 'user@example.com',
-});
+// Fill a form field
+await aspectAgent.fill('@ref:1', 'user@example.com');
+
+// Navigate
+await aspectAgent.navigate('https://example.com');
 
 // Take screenshot
-const screenshot = await chrome.runtime.sendMessage({ type: 'screenshot' });
+const screenshot = await aspectAgent.screenshot();
 ```
 
-## AI Integration Examples
-
-### With Claude API
+### Raw Command Format
 
 ```javascript
-// background.js - Add AI integration
-import Anthropic from '@anthropic-ai/sdk';
+// Send command via message
+chrome.runtime.sendMessage({
+  type: 'aspect:command',
+  command: {
+    id: 'cmd_1',
+    action: 'snapshot'
+  }
+});
 
-const client = new Anthropic();
-
-async function runAIAgent(task) {
-  // Get initial snapshot
-  const snapshot = await processAICommand({
-    id: '1',
-    action: 'snapshot',
-    interactive: true,
-  });
-
-  // Ask Claude what to do
-  const response = await client.messages.create({
-    model: 'claude-sonnet-4-20250514',
-    max_tokens: 1024,
-    system: `You are a browser automation agent. You can control the browser using these commands:
-- snapshot: Get page structure with element refs
-- click: Click element (selector: @e1 or CSS)
-- fill: Fill input (selector + value)
-- type: Type text keystroke by keystroke
-- scroll: Scroll page or element
-- wait: Wait for element
-
-Current page snapshot:
-${snapshot.data.snapshot}
-
-Respond with a JSON command to execute.`,
-    messages: [{ role: 'user', content: task }],
-  });
-
-  // Parse and execute Claude's command
-  const command = JSON.parse(response.content[0].text);
-  return processAICommand(command);
-}
-```
-
-### With OpenAI API
-
-```javascript
-import OpenAI from 'openai';
-
-const openai = new OpenAI();
-
-async function runOpenAIAgent(task) {
-  const snapshot = await processAICommand({ id: '1', action: 'snapshot', interactive: true });
-
-  const completion = await openai.chat.completions.create({
-    model: 'gpt-4',
-    messages: [
-      {
-        role: 'system',
-        content: `Browser automation agent. Page snapshot:\n${snapshot.data.snapshot}`,
-      },
-      { role: 'user', content: task },
-    ],
-    functions: [
-      {
-        name: 'browser_action',
-        parameters: {
-          type: 'object',
-          properties: {
-            action: { type: 'string', enum: ['click', 'fill', 'type', 'scroll'] },
-            selector: { type: 'string' },
-            value: { type: 'string' },
-          },
-          required: ['action', 'selector'],
-        },
-      },
-    ],
-  });
-
-  const call = completion.choices[0].message.function_call;
-  return processAICommand(JSON.parse(call.arguments));
+// Response format
+{
+  type: 'aspect:response',
+  response: {
+    id: 'cmd_1',
+    success: true,
+    data: {
+      tree: '@ref:0 link "Home"\n@ref:1 textbox "Email"\n...',
+      refs: { '@ref:0': { role: 'link', name: 'Home' }, ... }
+    }
+  }
 }
 ```
 
 ## Available Commands
 
+### DOM Commands (handled by content script)
+
 | Command | Parameters | Description |
 |---------|------------|-------------|
-| `snapshot` | `interactive?: boolean` | Get accessibility tree |
-| `click` | `selector: string` | Click element |
+| `snapshot` | `selector?, maxDepth?` | Get accessibility tree |
+| `click` | `selector` | Click element |
 | `fill` | `selector, value` | Set input value |
-| `type` | `selector, text` | Type keystroke by keystroke |
-| `scroll` | `selector?, direction?, amount?` | Scroll |
+| `type` | `selector, text, clear?, delay?` | Type text |
+| `check` | `selector` | Check checkbox/radio |
+| `uncheck` | `selector` | Uncheck checkbox |
+| `select` | `selector, values` | Select option(s) |
 | `hover` | `selector` | Hover over element |
-| `wait` | `selector, timeout?` | Wait for element |
-| `evaluate` | `script` | Execute JavaScript |
+| `scroll` | `selector?, x?, y?` | Scroll |
+| `scrollIntoView` | `selector` | Scroll element into view |
+| `focus` | `selector` | Focus element |
 | `getText` | `selector` | Get element text |
+| `getAttribute` | `selector, attribute` | Get attribute value |
 | `isVisible` | `selector` | Check visibility |
+| `isEnabled` | `selector` | Check if enabled |
+| `isChecked` | `selector` | Check if checked |
+| `wait` | `selector?, timeout?` | Wait for element |
+| `evaluate` | `script` | Execute JavaScript |
+
+### Extension Commands (handled by background)
+
+| Command | Parameters | Description |
+|---------|------------|-------------|
+| `navigate` | `url, waitUntil?` | Navigate to URL |
+| `back` | - | Go back |
+| `forward` | - | Go forward |
+| `reload` | `bypassCache?` | Reload page |
+| `getUrl` | - | Get current URL |
+| `getTitle` | - | Get page title |
+| `screenshot` | `format?, quality?` | Capture visible tab |
+| `tabNew` | `url?, active?` | Create new tab |
+| `tabClose` | `tabId?` | Close tab |
+| `tabSwitch` | `tabId` | Switch to tab |
+| `tabList` | - | List all tabs |
 
 ## Selector Formats
 
-- `@e1` - Element ref from snapshot (recommended)
-- `ref=e1` - Alternative ref format
+- `@ref:0` - Element ref from snapshot (recommended)
 - `#id` - CSS ID selector
 - `.class` - CSS class selector
 - `[data-testid="x"]` - Attribute selector
 
 ## Permissions
 
-The extension requests these permissions:
-
 - `activeTab` - Access current tab
-- `tabs` - Tab management
+- `tabs` - Tab management and screenshots
 - `scripting` - Inject content scripts
-- `<all_urls>` - Access all URLs (for content script)
+- `<all_urls>` - Access all URLs
 
-## Security Notes
+## AI Integration Example
 
-1. The extension has broad permissions - review before installing
-2. Commands are executed in page context with full DOM access
-3. For production, add input validation and sandboxing
-4. Consider using isolated worlds for content scripts
+```javascript
+// background.js - AI agent loop
+async function runAgent(task) {
+  // 1. Get page snapshot
+  const { data } = await aspectAgent.snapshot();
 
-## Troubleshooting
+  // 2. Send to AI with task
+  const aiResponse = await askAI(task, data.tree);
 
-**"Content script not loaded"**
-- Refresh the page after installing the extension
-- Check that the URL isn't restricted (chrome://, etc.)
-
-**"Agent not ready"**
-- The content script may have failed to load
-- Check the console for errors (right-click popup → Inspect)
-
-**Commands not executing**
-- Ensure the element exists (get snapshot first)
-- Check selector format (@e1 vs CSS)
-- Some pages may block injected scripts
+  // 3. Execute AI's command
+  const command = JSON.parse(aiResponse);
+  return aspectAgent.execute(command);
+}
+```
