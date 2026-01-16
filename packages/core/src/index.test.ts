@@ -82,6 +82,102 @@ describe('@btcp/core', () => {
         expect(response.data.tree).toContain('Close dialog');
       }
     });
+
+    it('should return structured elements array', async () => {
+      document.body.innerHTML = `
+        <button>Submit</button>
+        <a href="/home">Home</a>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.elements).toBeDefined();
+        expect(Array.isArray(response.data.elements)).toBe(true);
+        expect(response.data.elements.length).toBeGreaterThan(0);
+
+        // Find button element in the structure
+        const buttonEl = response.data.elements.find(
+          (el) => el.role === 'button' && el.name === 'Submit'
+        );
+        expect(buttonEl).toBeDefined();
+        expect(buttonEl?.ref).toMatch(/^@ref:\d+$/);
+        expect(buttonEl?.selector).toBeDefined();
+      }
+    });
+
+    it('should include element state in structured output', async () => {
+      document.body.innerHTML = `
+        <button disabled>Disabled Button</button>
+        <input type="checkbox" checked>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        // Find disabled button
+        const buttonEl = response.data.elements.find(
+          (el) => el.role === 'button' && el.name === 'Disabled Button'
+        );
+        expect(buttonEl?.disabled).toBe(true);
+
+        // Find checked checkbox
+        const checkboxEl = response.data.elements.find((el) => el.role === 'checkbox');
+        expect(checkboxEl?.checked).toBe(true);
+      }
+    });
+
+    it('should match refs between tree, elements, and refs map', async () => {
+      document.body.innerHTML = '<button id="btn">Click me</button>';
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        // Get ref from elements
+        const buttonEl = response.data.elements.find((el) => el.role === 'button');
+        const ref = buttonEl?.ref;
+        expect(ref).toBeDefined();
+
+        // Check refs map has matching entry
+        expect(response.data.refs[ref!]).toBeDefined();
+        expect(response.data.refs[ref!].role).toBe('button');
+        expect(response.data.refs[ref!].name).toBe('Click me');
+
+        // Check ASCII tree has matching ref
+        expect(response.data.tree).toContain(ref!);
+      }
+    });
+
+    it('should handle nested elements in structured output', async () => {
+      document.body.innerHTML = `
+        <nav>
+          <a href="/home">Home</a>
+          <a href="/about">About</a>
+        </nav>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        // Find nav element
+        const navEl = response.data.elements.find((el) => el.role === 'navigation');
+        expect(navEl).toBeDefined();
+        expect(navEl?.children).toBeDefined();
+        expect(navEl?.children?.length).toBe(2);
+
+        // Check children are links
+        const links = navEl?.children?.filter((el) => el.role === 'link');
+        expect(links?.length).toBe(2);
+      }
+    });
   });
 
   describe('click', () => {

@@ -5,7 +5,7 @@
  * Produces a compact, AI-friendly view of page structure.
  */
 
-import type { SnapshotData, RefMap } from './types.js';
+import type { SnapshotData, SnapshotElement, SnapshotRef, RefMap } from './types.js';
 
 interface SnapshotOptions {
   root?: Element;
@@ -193,6 +193,7 @@ function isInteractive(element: Element): boolean {
 
 /**
  * Generate snapshot of the DOM
+ * Returns both ASCII tree representation and structured JSON elements
  */
 export function createSnapshot(
   document: Document,
@@ -201,7 +202,7 @@ export function createSnapshot(
 ): SnapshotData {
   const { root = document.body, maxDepth = 10, includeHidden = false } = options;
 
-  const refs: SnapshotData['refs'] = {};
+  const refs: Record<string, SnapshotRef> = {};
   const lines: string[] = [];
   let refCounter = 0;
 
@@ -211,67 +212,129 @@ export function createSnapshot(
     return ref;
   }
 
-  function processNode(element: Element, depth: number, indent: string): void {
-    if (depth > maxDepth) return;
+  /**
+   * Process a DOM node and return structured element + append to ASCII lines
+   */
+  function processNode(element: Element, depth: number, indent: string): SnapshotElement | null {
+    if (depth > maxDepth) return null;
 
     // Skip hidden elements unless requested
-    if (!includeHidden && !isVisible(element)) return;
+    if (!includeHidden && !isVisible(element)) return null;
 
     const role = getRole(element);
     const name = getAccessibleName(element);
     const interactive = isInteractive(element);
 
     // Skip non-semantic elements without interesting content
-    if (!role && !name && element.children.length === 0) return;
+    if (!role && !name && element.children.length === 0) return null;
 
     // Build node representation
     let line = indent;
+    let snapshotElement: SnapshotElement | null = null;
 
     if (role) {
       // Generate ref for interactive elements
       let ref: string | undefined;
+      let selector: string | undefined;
       if (interactive) {
         ref = generateRef(element);
+        selector = generateSelector(element);
         refs[ref] = {
-          selector: generateSelector(element),
+          selector,
           role,
           name: name || undefined,
         };
       }
 
-      // Format: [ref] role "name" (state)
+      // Get element state
+      const disabled = element.hasAttribute('disabled');
+      const checked = (element as HTMLInputElement).checked || false;
+      const expanded = element.getAttribute('aria-expanded') === 'true';
+      const selected = element.getAttribute('aria-selected') === 'true';
+
+      // Build ASCII line: [ref] role "name" (state)
       if (ref) line += `${ref} `;
       line += role;
       if (name) line += ` "${truncate(name, 50)}"`;
 
-      // Add state info
+      // Add state info to ASCII
       const states: string[] = [];
-      if (element.hasAttribute('disabled')) states.push('disabled');
-      if ((element as HTMLInputElement).checked) states.push('checked');
-      if (element.getAttribute('aria-expanded') === 'true') states.push('expanded');
-      if (element.getAttribute('aria-selected') === 'true') states.push('selected');
-
+      if (disabled) states.push('disabled');
+      if (checked) states.push('checked');
+      if (expanded) states.push('expanded');
+      if (selected) states.push('selected');
       if (states.length) line += ` (${states.join(', ')})`;
 
       lines.push(line);
+
+      // Build structured element
+      snapshotElement = {
+        role,
+        ...(ref && { ref }),
+        ...(name && { name }),
+        ...(selector && { selector }),
+        ...(disabled && { disabled }),
+        ...(checked && { checked }),
+        ...(expanded && { expanded }),
+        ...(selected && { selected }),
+      };
     } else if (name && element.children.length === 0) {
       // Text-only node
       lines.push(`${indent}text "${truncate(name, 80)}"`);
+      snapshotElement = {
+        role: 'text',
+        name,
+      };
     }
 
     // Process children
     const childIndent = indent + '  ';
+    const children: SnapshotElement[] = [];
     for (const child of element.children) {
-      processNode(child, depth + 1, childIndent);
+      const childElement = processNode(child, depth + 1, childIndent);
+      if (childElement) {
+        children.push(childElement);
+      }
     }
+
+    // Add children to the structured element if any
+    if (snapshotElement && children.length > 0) {
+      snapshotElement.children = children;
+    }
+
+    // Return children even if parent has no role (for collecting nested elements)
+    if (!snapshotElement && children.length > 0) {
+      // Return a generic container for elements with no semantic meaning but with children
+      return {
+        role: 'group',
+        children,
+      };
+    }
+
+    return snapshotElement;
   }
 
-  processNode(root, 0, '');
+  const rootElement = processNode(root, 0, '');
+
+  // Extract top-level elements array
+  const elements: SnapshotElement[] = rootElement?.children || (rootElement ? [rootElement] : []);
 
   return {
     tree: lines.join('\n') || 'Empty page',
+    elements,
     refs,
   };
+}
+
+/**
+ * Escape CSS identifiers - uses CSS.escape when available, fallback for test environments
+ */
+function cssEscape(str: string): string {
+  if (typeof CSS !== 'undefined' && CSS.escape) {
+    return CSS.escape(str);
+  }
+  // Basic fallback for environments without CSS.escape (e.g., jsdom)
+  return str.replace(/([^\w-])/g, '\\$1');
 }
 
 /**
@@ -280,7 +343,7 @@ export function createSnapshot(
 function generateSelector(element: Element): string {
   // Prefer ID
   if (element.id) {
-    return `#${CSS.escape(element.id)}`;
+    return `#${cssEscape(element.id)}`;
   }
 
   // Try data-testid
@@ -300,7 +363,7 @@ function generateSelector(element: Element): string {
     if (current.className && typeof current.className === 'string') {
       const classes = current.className.trim().split(/\s+/).filter(c => c.length < 30);
       if (classes.length) {
-        selector += `.${classes.slice(0, 2).map(c => CSS.escape(c)).join('.')}`;
+        selector += `.${classes.slice(0, 2).map(c => cssEscape(c)).join('.')}`;
       }
     }
 

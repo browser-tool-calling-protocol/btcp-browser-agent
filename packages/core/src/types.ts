@@ -259,20 +259,45 @@ export interface ErrorResponse {
 
 export type Response<T = unknown> = SuccessResponse<T> | ErrorResponse;
 
-// Snapshot data
-export interface SnapshotNode {
-  role: string;
-  name?: string;
+// Snapshot data - structured element representation
+export interface SnapshotElement {
+  /** Reference ID for interaction (e.g., "@ref:0") */
   ref?: string;
-  value?: string;
-  checked?: boolean;
+  /** ARIA role of the element */
+  role: string;
+  /** Accessible name of the element */
+  name?: string;
+  /** CSS selector for direct element access */
+  selector?: string;
+  /** Element state attributes */
   disabled?: boolean;
-  children?: SnapshotNode[];
+  checked?: boolean;
+  expanded?: boolean;
+  selected?: boolean;
+  /** Nested child elements */
+  children?: SnapshotElement[];
 }
 
+/** Reference metadata for quick element lookup */
+export interface SnapshotRef {
+  selector: string;
+  role: string;
+  name?: string;
+}
+
+/**
+ * SnapshotData represents the dual output format:
+ * - `tree`: Human/AI-readable ASCII representation
+ * - `elements`: Structured JSON for programmatic access
+ * - `refs`: Quick lookup map for interactive elements
+ */
 export interface SnapshotData {
+  /** ASCII tree representation with embedded refs (e.g., "@ref:0 button 'Submit'") */
   tree: string;
-  refs: Record<string, { selector: string; role: string; name?: string }>;
+  /** Structured JSON array of elements for programmatic processing */
+  elements: SnapshotElement[];
+  /** Quick lookup map: ref -> element metadata */
+  refs: Record<string, SnapshotRef>;
 }
 
 // Bounding box
