@@ -123,6 +123,7 @@ export class DOMActions {
           includeHidden: command.includeHidden,
           interactive: command.interactive,
           compact: command.compact,
+          all: command.all,
         });
 
       case 'querySelector':
@@ -642,6 +643,7 @@ export class DOMActions {
     includeHidden?: boolean;
     interactive?: boolean;
     compact?: boolean;
+    all?: boolean;
   }): Promise<SnapshotData> {
     const root = options.selector
       ? this.getElement(options.selector)
@@ -653,6 +655,7 @@ export class DOMActions {
       includeHidden: options.includeHidden,
       interactive: options.interactive,
       compact: options.compact,
+      all: options.all,
     });
   }
 

@@ -143,6 +143,7 @@ export interface SnapshotCommand extends BaseCommand {
   landmarks?: boolean;
   incremental?: boolean;
   baseSnapshot?: SnapshotData;
+  all?: boolean;
 }
 
 export interface QuerySelectorCommand extends BaseCommand {

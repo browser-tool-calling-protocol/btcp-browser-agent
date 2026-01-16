@@ -46,6 +46,7 @@ interface SnapshotOptions {
   landmarks?: boolean;
   incremental?: boolean;
   baseSnapshot?: import('./types.js').SnapshotData;
+  all?: boolean;
 }
 
 interface SizeMetrics {
@@ -480,6 +481,12 @@ function isVisible(element: Element): boolean {
  * Check if element is interactive
  */
 function isInteractive(element: Element): boolean {
+  // Filter out non-interactive anchor name tags (legacy HTML fragment identifiers)
+  // These are <a name="..."></a> tags without href - not clickable
+  if (element.tagName === 'A' && !element.hasAttribute('href')) {
+    return false;
+  }
+
   const role = getRole(element);
   if (!role) return false;
 
@@ -501,6 +508,37 @@ function isInteractive(element: Element): boolean {
   ];
 
   return interactiveRoles.includes(role);
+}
+
+/**
+ * Truncate text with smart word boundary preservation
+ */
+function truncateText(text: string, maxLength: number): string {
+  if (text.length <= maxLength) return text;
+
+  const truncated = text.substring(0, maxLength);
+  const lastSpace = truncated.lastIndexOf(' ');
+
+  // If we found a space and it's not too early in the string, break at word boundary
+  if (lastSpace > maxLength * 0.7) {
+    return truncated.substring(0, lastSpace) + '...';
+  }
+
+  return truncated + '...';
+}
+
+/**
+ * Extract filename from image src URL
+ */
+function extractFilename(src: string): string {
+  try {
+    const url = new URL(src, window.location.href);
+    const pathname = url.pathname;
+    const filename = pathname.substring(pathname.lastIndexOf('/') + 1);
+    return filename || 'image';
+  } catch {
+    return 'image';
+  }
 }
 
 /**
@@ -546,7 +584,8 @@ export function createSnapshot(
     compact = true,
     minDepth = 5,
     contentPreview = true,
-    landmarks = true
+    landmarks = true,
+    all = false
   } = options;
 
   // Clear old refs before generating new snapshot
@@ -604,6 +643,7 @@ export function createSnapshot(
   if (includeHidden) modes.push('include-hidden');
   if (landmarks) modes.push('landmarks');
   if (contentPreview) modes.push('content-preview');
+  if (all) modes.push('all');
 
   const depthInfo = limited ? `${effectiveDepth}/${maxDepth} (auto-limited: ${reason})` : `${effectiveDepth}/${maxDepth}`;
   const pageHeader = `PAGE: ${document.location?.href || 'about:blank'} | ${document.title || 'Untitled'} | viewport=${win.innerWidth}x${win.innerHeight}`;
@@ -660,6 +700,53 @@ export function createSnapshot(
     const role = getRole(element, { enriched: true });
     const name = getAccessibleName(element);
     const isInteractiveElement = isInteractive(element);
+
+    // Handle 'all' mode: capture images, headings, and text content
+    if (all) {
+      const tagName = element.tagName;
+
+      // Handle images
+      if (tagName === 'IMG') {
+        const img = element as HTMLImageElement;
+        const alt = img.alt?.trim();
+        const title = img.title?.trim();
+        const imgText = alt || title || extractFilename(img.src);
+        if (imgText) {
+          const truncatedText = truncateText(imgText, 100);
+          lines.push(`${indent}IMAGE "${truncatedText}" src="${img.src}"`);
+        }
+        return; // Images don't have children to process
+      }
+
+      // Handle headings (h1-h6)
+      if (tagName.match(/^H[1-6]$/)) {
+        const level = tagName.charAt(1);
+        const text = element.textContent?.trim();
+        if (text) {
+          const truncatedText = truncateText(text, 150);
+          lines.push(`${indent}HEADING_${level} "${truncatedText}"`);
+        }
+        return; // Headings typically don't have meaningful children
+      }
+
+      // Handle paragraphs and text blocks
+      if (tagName === 'P' || (tagName === 'DIV' && element.children.length === 0)) {
+        const text = element.textContent?.trim();
+        // Only include substantial text (>20 characters)
+        if (text && text.length > 20) {
+          const truncatedText = truncateText(text, 200);
+          lines.push(`${indent}TEXT "${truncatedText}"`);
+        }
+        // Paragraphs might have children, continue processing
+        if (tagName === 'P') {
+          const childIndent = indent + '  ';
+          for (const child of element.children) {
+            processNode(child, depth + 1, childIndent);
+          }
+          return;
+        }
+      }
+    }
 
     // Interactive mode: skip non-interactive elements
     if (interactive && !isInteractiveElement && !isFormElement && !isFieldsetElement) {
@@ -1111,23 +1198,18 @@ function countVisibleChildren(element: Element, includeHidden: boolean): number 
 
 /**
  * Format children indicator for display
+ *
+ * Note: Child indicators (filtered, hidden by depth, skipped containers) have been
+ * removed as they provide no actionable value to AI agents. Agents only need to
+ * know what IS present in the snapshot, not what was filtered out.
+ * Metadata about filtering is already available in the SNAPSHOT header.
  */
 function formatChildrenIndicator(
-  totalChildren: number,
-  shownChildren: number,
-  reason?: 'depth-limit' | 'compact-mode' | 'interactive-filter'
+  _totalChildren: number,
+  _shownChildren: number,
+  _reason?: 'depth-limit' | 'compact-mode' | 'interactive-filter'
 ): string {
-  const hidden = totalChildren - shownChildren;
-  if (hidden <= 0) return '';
-
-  if (reason === 'depth-limit') {
-    return ` (${totalChildren} children: ${shownChildren} shown, ${hidden} hidden by depth limit)`;
-  }
-  if (reason === 'compact-mode') {
-    return ` (${hidden} empty containers skipped)`;
-  }
-  if (reason === 'interactive-filter') {
-    return ` (${hidden} non-interactive children filtered)`;
-  }
-  return ` (${totalChildren} children)`;
+  // Return empty string - no indicators needed
+  // AI agents work with what's present, not what's missing
+  return '';
 }
