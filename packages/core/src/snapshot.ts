@@ -751,10 +751,17 @@ export function createSnapshot(
   const pageHeader = `PAGE: ${document.location?.href || 'about:blank'} | ${document.title || 'Untitled'} | viewport=${win.innerWidth}x${win.innerHeight}`;
   const snapshotHeader = `SNAPSHOT: elements=${elements.length} refs=${capturedInteractive}`;
 
-  // Apply grep filter if specified
-  const filteredLines = grepPattern
-    ? lines.filter(line => line.includes(grepPattern))
-    : lines;
+  // Apply grep filter if specified (supports regex)
+  let filteredLines = lines;
+  if (grepPattern) {
+    try {
+      const regex = new RegExp(grepPattern);
+      filteredLines = lines.filter(line => regex.test(line));
+    } catch {
+      // Invalid regex, fall back to string matching
+      filteredLines = lines.filter(line => line.includes(grepPattern));
+    }
+  }
 
   const output = [pageHeader, snapshotHeader, '', ...filteredLines].join('\n');
 
