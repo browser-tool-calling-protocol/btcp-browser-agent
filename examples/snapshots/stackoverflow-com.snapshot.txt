@@ -1,213 +1,213 @@
 PAGE: http://localhost/ | Send attachments with PHP Mail()? - Stack Overflow | viewport=1024x768
 SNAPSHOT: elements=925 refs=210
 
-LINK "terms of service" @ref:0 /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/a[1]
-LINK "privacy policy" @ref:1 /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/a[2]
-BUTTON "Sign up with Google" @ref:2 /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form/button[1]
-BUTTON "Sign up with GitHub" @ref:3 /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form/button[2]
-TEXTBOX "Email" @ref:4 [maxlength=100] /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form/input#signup-modal-email
-TEXTBOX "Password" @ref:5 [type=password] /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form/input#signup-modal-password
-BUTTON @ref:6 /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form/button
-BUTTON "Sign up" @ref:7 /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form/button#signup-modal-submit-button
-LINK "Log in" @ref:8 /div#signup-modal-container[1]/aside/a
-BUTTON "Close" @ref:9 /div#signup-modal-container[1]/aside/button
-LINK "Skip to main content" @ref:10 /header/a
-LINK @ref:11 /header/a[1]
-LINK "Stack Overflow" @ref:12 /header/a[2]
-LINK "About" @ref:13 /header/ol/li[1]/a
-BUTTON "Products" @ref:14 /header/ol/li[2]/button
-LINK "For Teams" @ref:15 /header/ol/li[3]/a
-LINK "Stack Internal Implement a knowledge platform l..." @ref:16 /header/div#products-popover[2]/ol.list-reset/li[1]/a
-LINK "Stack Data Licensing Get access to top-class te..." @ref:17 /header/div#products-popover[2]/ol.list-reset/li[2]/a
-LINK "Stack Ads Connect your brand to the world’s mos..." @ref:18 /header/div#products-popover[2]/ol.list-reset/li[3]/a
-LINK "Releases Keep up-to-date on features we add to ..." @ref:19 /header/div#products-popover[2]/ol.list-reset/li[4]/a
-LINK "About the company" @ref:20 /header/div#products-popover[2]/ol.list-reset/li[5]/a[1]
-LINK "Visit the blog" @ref:21 /header/div#products-popover[2]/ol.list-reset/li[5]/a[2]
-COMBOBOX "Search" @ref:22 [maxlength=240] /header/form#search/input
-LINK "current community" @ref:23 /nav/ol/li[1]/div.header[1]/h3/a
-BUTTON "Close" @ref:24 /header/nav/ol/li[1]/div.header[1]/button
-LINK "Meta Stack Overflow" @ref:25 /ol/li[1]/div.modal-content[2]/ul/li[2]/a
-LINK "Sign up" @ref:26 /header/nav/ol/li[1]/div#your-communities-section[4]/a.login-link[1]
-LINK "log in" @ref:27 /header/nav/ol/li[1]/div#your-communities-section[4]/a.login-link[2]
-LINK "more stack exchange communities" @ref:28 /nav/ol/li[1]/div.header[5]/h3/a
-LINK "company blog" @ref:29 /header/nav/ol/li[1]/div.header[5]/a
-BUTTON "Search" @ref:30 /header/nav/ol/li[2]/button
-LINK "Log in" @ref:31 /header/nav/ol/li[3]/a
-LINK "Sign up" @ref:32 /header/nav/ol/li[4]/a
-BUTTON "python" @ref:33 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[1]
-BUTTON "javascript" @ref:34 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[2]
-BUTTON "c#" @ref:35 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[3]
-BUTTON "reactjs" @ref:36 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[4]
-BUTTON "java" @ref:37 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[5]
-BUTTON "android" @ref:38 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[6]
-BUTTON "html" @ref:39 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[7]
-BUTTON "flutter" @ref:40 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[8]
-BUTTON "c++" @ref:41 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[9]
-BUTTON "node.js" @ref:42 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[10]
-BUTTON "typescript" @ref:43 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[11]
-BUTTON "css" @ref:44 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[12]
-BUTTON "r" @ref:45 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[13]
-BUTTON "php" @ref:46 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[14]
-BUTTON "angular" @ref:47 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[15]
-BUTTON "next.js" @ref:48 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[16]
-BUTTON "spring-boot" @ref:49 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[17]
-BUTTON "machine-learning" @ref:50 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[18]
-BUTTON "sql" @ref:51 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[19]
-BUTTON "excel" @ref:52 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[20]
-BUTTON "ios" @ref:53 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[21]
-BUTTON "azure" @ref:54 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[22]
-BUTTON "docker" @ref:55 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[23]
-COMBOBOX @ref:56 /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]
-BUTTON "Next" @ref:57 (disabled) /div.container[5]/div#homepage-wizard-container[1]/aside/button
-BUTTON "Close" @ref:58 /div.container[5]/div#homepage-wizard-container[1]/aside/button
-LINK "Home" @ref:59 /nav/ol.nav-links/li[1]/ol.nav-links/li[1]/a.nav-links--link
-LINK "Questions" @ref:60 /nav/ol.nav-links/li[1]/ol.nav-links/li[2]/a#nav-questions
-LINK "AI Assist" @ref:61 /nav/ol.nav-links/li[1]/ol.nav-links/li[3]/a#nav-askstack
-LINK "Tags" @ref:62 /nav/ol.nav-links/li[1]/ol.nav-links/li[4]/a.nav-links--link
-LINK "Challenges" @ref:63 /nav/ol.nav-links/li[1]/ol.nav-links/li[6]/a#nav-challenges
-LINK "Chat" @ref:64 (expanded) /nav/ol.nav-links/li[1]/ol.nav-links/li[7]/a#nav-chat
-LINK "Articles" @ref:65 /nav/ol.nav-links/li[1]/ol.nav-links/li[8]/a#nav-articles
-LINK "Users" @ref:66 /nav/ol.nav-links/li[1]/ol.nav-links/li[9]/a#nav-users
-LINK "Companies" @ref:67 /nav/ol.nav-links/li[1]/ol.nav-links/li[11]/a#nav-companies
-BUTTON "Collectives" @ref:68 /nav/ol.nav-links/li[1]/ol.nav-links/li[12]/a
-LINK "Explore all Collectives" @ref:69 /nav/ol.nav-links/li[1]/ol.nav-links/li[13]/a
-LINK "Try for free" @ref:70 /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[2]/a[1]
-LINK "Learn more" @ref:71 /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[2]/a[2]
-BUTTON "Stack Internal" @ref:72 /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[3]/a
-LINK "Learn more" @ref:73 /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[4]/a
-LINK "Learn more about Collectives" @ref:74 /div.container[5]/div#left-sidebar[2]/div#popover-discover-collectives[2]/a
-LINK "Explore Stack Internal" @ref:75 /div.container[5]/div#left-sidebar[2]/div#popover-teams-create-cta[3]/a
-LINK "Send attachments with PHP Mail()?" @ref:76 /div.container[5]/div#content[3]/div#question-header[1]/h1/a
-LINK "Ask Question" @ref:77 /div.container[5]/div#content[3]/div#question-header[1]/a
-LINK "4 years ago" @ref:78 /div.container[5]/div#content[3]/a
-LINK "PHP" @ref:79 /div.container[5]/div#content[3]/a
-BUTTON "Up vote" @ref:80 /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/button#upvote-btn-12301358[1]
-BUTTON "Down vote" @ref:81 /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/button#downvote-btn-12301358[2]
-BUTTON "Save" @ref:82 /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/button#saves-btn-12301358[3]
-LINK "Timeline" @ref:83 /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/a
-BUTTON "Use comments to ask for more information or sug..." @ref:84 /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/div#comments-link-12301358[2]/a[1]
-BUTTON "Show 4 more comments" @ref:85 /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/div#comments-link-12301358[2]/a[2]
-BUTTON "Report this ad" @ref:86 /div.container[5]/div#content[3]/div#mainbar[3]/button
-LINK "PHP Collective See more" @ref:87 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-subcommunity[1]/a
-LINK "This question is in a collective:" @ref:88 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-subcommunity[1]/a
-LINK "How Stack Overflow is taking on spam and bad ac..." @ref:89 /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[2]/a
-LINK "How AWS re:Invented the cloud" @ref:90 /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[3]/a
-LINK "A proposal for bringing back Community Promotio..." @ref:91 /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[5]/a
-LINK "Community Asks Sprint Announcement – January 20..." @ref:92 /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[6]/a
-LINK "Policy: Generative AI (e.g., ChatGPT) is banned" @ref:93 /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[7]/a
-LINK "All users on Stack Overflow can now participate..." @ref:94 /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[8]/a
-LINK "Should Stack Overflow utilize machine learning ..." @ref:95 /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[9]/a
-BUTTON "Report this ad" @ref:96 /div.container[5]/div#content[3]/div#sidebar[4]/button
-LINK "14" @ref:97 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "How to attach two or multiple files and send ma..." @ref:98 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "2" @ref:99 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "How to Attach Image into Mail Function Without ..." @ref:100 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "0" @ref:101 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "PHP Mail with attachment - but file is empty" @ref:102 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "-1" @ref:103 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "PHP email attachment 0 byte file size when rece..." @ref:104 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "1" @ref:105 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "Sending email with pdf attachment in php" @ref:106 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "-2" @ref:107 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "How can I add file upload to my existing contac..." @ref:108 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "0" @ref:109 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "How to send a screenshot of the webpage to mail..." @ref:110 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "-1" @ref:111 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "Unable to send attached file to E-Mail" @ref:112 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "0" @ref:113 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "PHP Warning: mail(): Multiple or malformed newl..." @ref:114 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "0" @ref:115 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
-LINK "PHP - Mail attachment can't be opened" @ref:116 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
-LINK "See more linked questions" @ref:117 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a
-LINK "2" @ref:118 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "Send email with attachments in PHP?" @ref:119 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "1" @ref:120 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "Sending an attachment with php" @ref:121 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "4" @ref:122 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "How to send email attachments in PHP" @ref:123 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "3" @ref:124 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "php send e-mail with attachment" @ref:125 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "14" @ref:126 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "php send email with attachment" @ref:127 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "1" @ref:128 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "Send mail with attachments" @ref:129 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "1" @ref:130 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "Attachment mail using php mail()?" @ref:131 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "0" @ref:132 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "Sending mail with attachments" @ref:133 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "0" @ref:134 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "Sending attachment(s) in email" @ref:135 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "1" @ref:136 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
-LINK "send attachment in php mail" @ref:137 /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
-LINK "Hot Network Questions" @ref:138 /div.container[5]/div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/h4/a
-LINK "How to have filled line symbology that merges r..." @ref:139 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[1]/a
-LINK "datetime2, command \currenttime undefined" @ref:140 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[2]/a
-LINK "looking for a short story about a computer" @ref:141 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[3]/a
-LINK "How was Case found to have assaulted the police..." @ref:142 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[4]/a
-LINK "Symmetric metric on the Hilbert cube?" @ref:143 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[5]/a
-LINK "How to say "spicy" in Latin?" @ref:144 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[6]/a
-LINK "1950s or 60s short story. A Martian disguised a..." @ref:145 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[7]/a
-LINK "How do capital loss carryovers from previous ye..." @ref:146 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[8]/a
-LINK "Looking for a way to prevent PCB from sparking ..." @ref:147 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[9]/a
-LINK "Did Paul intend 1 Corinthians 15:1-4 to be the ..." @ref:148 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[10]/a
-LINK "Does GPL require code-sharing to be specific to..." @ref:149 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[11]/a
-LINK "Is there a non-metagaming way to learn about mo..." @ref:150 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[12]/a
-LINK "Add parentheses to make the biggest possible value" @ref:151 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[13]/a
-LINK "Why is diphenic acid optically inactive?" @ref:152 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[14]/a
-LINK "Print all distinct words found in a text file" @ref:153 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[15]/a
-LINK "What are the differences between Gizmos & Gadge..." @ref:154 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[16]/a
-LINK "Buy-and-hold investors: how do you track gains ..." @ref:155 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[17]/a
-LINK "Should I wrap or replace a damaged lamp cord?" @ref:156 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[18]/a
-LINK "Connection between TL431 Compensator and Contro..." @ref:157 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[19]/a
-LINK "How do I draw one side mesh in the two side sur..." @ref:158 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[20]/a
-LINK "Long term side effect of cryosleep" @ref:159 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[21]/a
-LINK "What are the differences between the 1994 and 2..." @ref:160 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[22]/a
-LINK "What is the Zero Vector in the Zero vector space?" @ref:161 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[23]/a
-LINK "Killer sudoku: Solve for X" @ref:162 /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[24]/a
-LINK "Question feed" @ref:163 /div.container[5]/div#content[3]/div#sidebar[4]/div#feed-link[10]/a
-TEXTBOX "Question feed To subscribe to this RSS feed, co..." @ref:164 /div.container[5]/div#content[3]/div#sidebar[4]/aside/input#feed-url
-LINK "Close" @ref:165 /div.container[5]/div#content[3]/div#sidebar[4]/aside/a
-RADIO "Probable spam. This comment promotes a product,..." @ref:166 [type=radio] /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]/input#CommentProbableSpam
-RADIO "Unfriendly or contains harassment/bigotry/abuse..." @ref:167 [type=radio] /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]/input#CommentRudeOrOffensive
-RADIO "Not needed. This comment is not relevant to the..." @ref:168 [type=radio] /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]/input#CommentNoLongerNeeded
-RADIO "Something else. A problem not listed above. Try..." @ref:169 [type=radio] /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]/input#CommentOther
-BUTTON "Flag comment" @ref:170 /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/button[1]
-BUTTON "Cancel" @ref:171 /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/button[2]
-BUTTON "Close" @ref:172 /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/button
-BUTTON "Save this post for later" @ref:173 /div.container[5]/div#content[3]/div[3]/aside/button[1]
-BUTTON "Not now" @ref:174 /div.container[5]/div#content[3]/div[3]/aside/button[2]
-BUTTON "Close" @ref:175 /div.container[5]/div#content[3]/div[3]/aside/button
-LINK "Stack Overflow" @ref:176 /footer#footer/a
-LINK "Stack Overflow" @ref:177 /footer#footer/nav/h5/a
-LINK "Questions" @ref:178 /footer#footer/nav/ul/li[1]/a
-LINK "Help" @ref:179 /footer#footer/nav/ul/li[2]/a
-LINK "Chat" @ref:180 /footer#footer/nav/ul/li[3]/a
-LINK "Business" @ref:181 /footer#footer/nav/h5/a
-LINK "Stack Internal" @ref:182 /footer#footer/nav/ul/li[1]/a
-LINK "Stack Data Licensing" @ref:183 /footer#footer/nav/ul/li[2]/a
-LINK "Stack Ads" @ref:184 /footer#footer/nav/ul/li[3]/a
-LINK "Company" @ref:185 /footer#footer/nav/h5/a
-LINK "About" @ref:186 /footer#footer/nav/ul/li[1]/a
-LINK "Press" @ref:187 /footer#footer/nav/ul/li[2]/a
-LINK "Work Here" @ref:188 /footer#footer/nav/ul/li[3]/a
-LINK "Legal" @ref:189 /footer#footer/nav/ul/li[4]/a
-LINK "Privacy Policy" @ref:190 /footer#footer/nav/ul/li[5]/a
-LINK "Terms of Service" @ref:191 /footer#footer/nav/ul/li[6]/a
-LINK "Contact Us" @ref:192 /footer#footer/nav/ul/li[7]/a
-BUTTON "Cookie Settings" @ref:193 /footer#footer/nav/ul/li#consent-footer-link[8]/button
-LINK "Cookie Policy" @ref:194 /footer#footer/nav/ul/li[9]/a
-LINK "Stack Exchange Network" @ref:195 /footer#footer/nav/h5/a
-LINK "Technology" @ref:196 /footer#footer/nav/ul/li[1]/a
-LINK "Culture & recreation" @ref:197 /footer#footer/nav/ul/li[2]/a
-LINK "Life & arts" @ref:198 /footer#footer/nav/ul/li[3]/a
-LINK "Science" @ref:199 /footer#footer/nav/ul/li[4]/a
-LINK "Professional" @ref:200 /footer#footer/nav/ul/li[5]/a
-LINK "Business" @ref:201 /footer#footer/nav/ul/li[6]/a
-LINK "API" @ref:202 /footer#footer/nav/ul/li[7]/a
-LINK "Data" @ref:203 /footer#footer/nav/ul/li[8]/a
-LINK "Blog" @ref:204 /footer#footer/ul/li[1]/a
-LINK "Facebook" @ref:205 /footer#footer/ul/li[2]/a
-LINK "Twitter" @ref:206 /footer#footer/ul/li[3]/a
-LINK "LinkedIn" @ref:207 /footer#footer/ul/li[4]/a
-LINK "Instagram" @ref:208 /footer#footer/ul/li[5]/a
-LINK "CC BY-SA" @ref:209 /footer#footer/a
+@0, LINK, "terms of service", , , /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/a[1]
+@1, LINK, "privacy policy", , , /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/a[2]
+@2, BUTTON, "Sign up with Google", , , /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form/button[1]
+@3, BUTTON, "Sign up with GitHub", , , /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form/button[2]
+@4, TEXTBOX, "Email", [maxlength=100], , /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form/input#signup-modal-email
+@5, TEXTBOX, "Password", [type=password], , /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form/input#signup-modal-password
+@6, BUTTON, , , , /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form/button
+@7, BUTTON, "Sign up", , , /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form/button#signup-modal-submit-button
+@8, LINK, "Log in", , , /div#signup-modal-container[1]/aside/a
+@9, BUTTON, "Close", , , /div#signup-modal-container[1]/aside/button
+@10, LINK, "Skip to main content", , , /header/a
+@11, LINK, , , , /header/a[1]
+@12, LINK, "Stack Overflow", , , /header/a[2]
+@13, LINK, "About", , , /header/ol/li[1]/a
+@14, BUTTON, "Products", , , /header/ol/li[2]/button
+@15, LINK, "For Teams", , , /header/ol/li[3]/a
+@16, LINK, "Stack Internal Implement a knowledge platform l...", , , /header/div#products-popover[2]/ol.list-reset/li[1]/a
+@17, LINK, "Stack Data Licensing Get access to top-class te...", , , /header/div#products-popover[2]/ol.list-reset/li[2]/a
+@18, LINK, "Stack Ads Connect your brand to the world’s mos...", , , /header/div#products-popover[2]/ol.list-reset/li[3]/a
+@19, LINK, "Releases Keep up-to-date on features we add to ...", , , /header/div#products-popover[2]/ol.list-reset/li[4]/a
+@20, LINK, "About the company", , , /header/div#products-popover[2]/ol.list-reset/li[5]/a[1]
+@21, LINK, "Visit the blog", , , /header/div#products-popover[2]/ol.list-reset/li[5]/a[2]
+@22, COMBOBOX, "Search", [maxlength=240], , /header/form#search/input
+@23, LINK, "current community", , , /nav/ol/li[1]/div.header[1]/h3/a
+@24, BUTTON, "Close", , , /header/nav/ol/li[1]/div.header[1]/button
+@25, LINK, "Meta Stack Overflow", , , /ol/li[1]/div.modal-content[2]/ul/li[2]/a
+@26, LINK, "Sign up", , , /header/nav/ol/li[1]/div#your-communities-section[4]/a.login-link[1]
+@27, LINK, "log in", , , /header/nav/ol/li[1]/div#your-communities-section[4]/a.login-link[2]
+@28, LINK, "more stack exchange communities", , , /nav/ol/li[1]/div.header[5]/h3/a
+@29, LINK, "company blog", , , /header/nav/ol/li[1]/div.header[5]/a
+@30, BUTTON, "Search", , , /header/nav/ol/li[2]/button
+@31, LINK, "Log in", , , /header/nav/ol/li[3]/a
+@32, LINK, "Sign up", , , /header/nav/ol/li[4]/a
+@33, BUTTON, "python", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[1]
+@34, BUTTON, "javascript", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[2]
+@35, BUTTON, "c#", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[3]
+@36, BUTTON, "reactjs", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[4]
+@37, BUTTON, "java", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[5]
+@38, BUTTON, "android", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[6]
+@39, BUTTON, "html", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[7]
+@40, BUTTON, "flutter", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[8]
+@41, BUTTON, "c++", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[9]
+@42, BUTTON, "node.js", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[10]
+@43, BUTTON, "typescript", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[11]
+@44, BUTTON, "css", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[12]
+@45, BUTTON, "r", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[13]
+@46, BUTTON, "php", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[14]
+@47, BUTTON, "angular", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[15]
+@48, BUTTON, "next.js", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[16]
+@49, BUTTON, "spring-boot", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[17]
+@50, BUTTON, "machine-learning", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[18]
+@51, BUTTON, "sql", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[19]
+@52, BUTTON, "excel", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[20]
+@53, BUTTON, "ios", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[21]
+@54, BUTTON, "azure", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[22]
+@55, BUTTON, "docker", , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#popular-tags[1]/button[23]
+@56, COMBOBOX, , , , /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]
+@57, BUTTON, "Next", , (disabled), /div.container[5]/div#homepage-wizard-container[1]/aside/button
+@58, BUTTON, "Close", , , /div.container[5]/div#homepage-wizard-container[1]/aside/button
+@59, LINK, "Home", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[1]/a.nav-links--link
+@60, LINK, "Questions", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[2]/a#nav-questions
+@61, LINK, "AI Assist", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[3]/a#nav-askstack
+@62, LINK, "Tags", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[4]/a.nav-links--link
+@63, LINK, "Challenges", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[6]/a#nav-challenges
+@64, LINK, "Chat", , (expanded), /nav/ol.nav-links/li[1]/ol.nav-links/li[7]/a#nav-chat
+@65, LINK, "Articles", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[8]/a#nav-articles
+@66, LINK, "Users", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[9]/a#nav-users
+@67, LINK, "Companies", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[11]/a#nav-companies
+@68, BUTTON, "Collectives", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[12]/a
+@69, LINK, "Explore all Collectives", , , /nav/ol.nav-links/li[1]/ol.nav-links/li[13]/a
+@70, LINK, "Try for free", , , /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[2]/a[1]
+@71, LINK, "Learn more", , , /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[2]/a[2]
+@72, BUTTON, "Stack Internal", , , /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[3]/a
+@73, LINK, "Learn more", , , /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[4]/a
+@74, LINK, "Learn more about Collectives", , , /div.container[5]/div#left-sidebar[2]/div#popover-discover-collectives[2]/a
+@75, LINK, "Explore Stack Internal", , , /div.container[5]/div#left-sidebar[2]/div#popover-teams-create-cta[3]/a
+@76, LINK, "Send attachments with PHP Mail()?", , , /div.container[5]/div#content[3]/div#question-header[1]/h1/a
+@77, LINK, "Ask Question", , , /div.container[5]/div#content[3]/div#question-header[1]/a
+@78, LINK, "4 years ago", , , /div.container[5]/div#content[3]/a
+@79, LINK, "PHP", , , /div.container[5]/div#content[3]/a
+@80, BUTTON, "Up vote", , , /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/button#upvote-btn-12301358[1]
+@81, BUTTON, "Down vote", , , /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/button#downvote-btn-12301358[2]
+@82, BUTTON, "Save", , , /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/button#saves-btn-12301358[3]
+@83, LINK, "Timeline", , , /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/a
+@84, BUTTON, "Use comments to ask for more information or sug...", , , /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/div#comments-link-12301358[2]/a[1]
+@85, BUTTON, "Show 4 more comments", , , /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/div#comments-link-12301358[2]/a[2]
+@86, BUTTON, "Report this ad", , , /div.container[5]/div#content[3]/div#mainbar[3]/button
+@87, LINK, "PHP Collective See more", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-subcommunity[1]/a
+@88, LINK, "This question is in a collective:", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-subcommunity[1]/a
+@89, LINK, "How Stack Overflow is taking on spam and bad ac...", , , /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[2]/a
+@90, LINK, "How AWS re:Invented the cloud", , , /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[3]/a
+@91, LINK, "A proposal for bringing back Community Promotio...", , , /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[5]/a
+@92, LINK, "Community Asks Sprint Announcement – January 20...", , , /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[6]/a
+@93, LINK, "Policy: Generative AI (e.g., ChatGPT) is banned", , , /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[7]/a
+@94, LINK, "All users on Stack Overflow can now participate...", , , /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[8]/a
+@95, LINK, "Should Stack Overflow utilize machine learning ...", , , /div.container[5]/div#content[3]/div#sidebar[4]/ul/li[9]/a
+@96, BUTTON, "Report this ad", , , /div.container[5]/div#content[3]/div#sidebar[4]/button
+@97, LINK, "14", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@98, LINK, "How to attach two or multiple files and send ma...", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@99, LINK, "2", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@100, LINK, "How to Attach Image into Mail Function Without ...", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@101, LINK, "0", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@102, LINK, "PHP Mail with attachment - but file is empty", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@103, LINK, "-1", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@104, LINK, "PHP email attachment 0 byte file size when rece...", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@105, LINK, "1", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@106, LINK, "Sending email with pdf attachment in php", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@107, LINK, "-2", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@108, LINK, "How can I add file upload to my existing contac...", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@109, LINK, "0", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@110, LINK, "How to send a screenshot of the webpage to mail...", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@111, LINK, "-1", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@112, LINK, "Unable to send attached file to E-Mail", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@113, LINK, "0", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@114, LINK, "PHP Warning: mail(): Multiple or malformed newl...", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@115, LINK, "0", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[1]
+@116, LINK, "PHP - Mail attachment can't be opened", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a[2]
+@117, LINK, "See more linked questions", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked/a
+@118, LINK, "2", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@119, LINK, "Send email with attachments in PHP?", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@120, LINK, "1", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@121, LINK, "Sending an attachment with php", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@122, LINK, "4", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@123, LINK, "How to send email attachments in PHP", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@124, LINK, "3", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@125, LINK, "php send e-mail with attachment", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@126, LINK, "14", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@127, LINK, "php send email with attachment", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@128, LINK, "1", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@129, LINK, "Send mail with attachments", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@130, LINK, "1", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@131, LINK, "Attachment mail using php mail()?", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@132, LINK, "0", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@133, LINK, "Sending mail with attachments", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@134, LINK, "0", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@135, LINK, "Sending attachment(s) in email", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@136, LINK, "1", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[1]
+@137, LINK, "send attachment in php mail", , , /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/a[2]
+@138, LINK, "Hot Network Questions", , , /div.container[5]/div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/h4/a
+@139, LINK, "How to have filled line symbology that merges r...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[1]/a
+@140, LINK, "datetime2, command \currenttime undefined", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[2]/a
+@141, LINK, "looking for a short story about a computer", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[3]/a
+@142, LINK, "How was Case found to have assaulted the police...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[4]/a
+@143, LINK, "Symmetric metric on the Hilbert cube?", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[5]/a
+@144, LINK, "How to say ", , , spicy" in Latin?"  /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[6]/a
+@145, LINK, "1950s or 60s short story. A Martian disguised a...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[7]/a
+@146, LINK, "How do capital loss carryovers from previous ye...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[8]/a
+@147, LINK, "Looking for a way to prevent PCB from sparking ...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[9]/a
+@148, LINK, "Did Paul intend 1 Corinthians 15:1-4 to be the ...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[10]/a
+@149, LINK, "Does GPL require code-sharing to be specific to...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[11]/a
+@150, LINK, "Is there a non-metagaming way to learn about mo...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[12]/a
+@151, LINK, "Add parentheses to make the biggest possible value", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[13]/a
+@152, LINK, "Why is diphenic acid optically inactive?", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[14]/a
+@153, LINK, "Print all distinct words found in a text file", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[15]/a
+@154, LINK, "What are the differences between Gizmos & Gadge...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[16]/a
+@155, LINK, "Buy-and-hold investors: how do you track gains ...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[17]/a
+@156, LINK, "Should I wrap or replace a damaged lamp cord?", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[18]/a
+@157, LINK, "Connection between TL431 Compensator and Contro...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[19]/a
+@158, LINK, "How do I draw one side mesh in the two side sur...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[20]/a
+@159, LINK, "Long term side effect of cryosleep", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[21]/a
+@160, LINK, "What are the differences between the 1994 and 2...", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[22]/a
+@161, LINK, "What is the Zero Vector in the Zero vector space?", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[23]/a
+@162, LINK, "Killer sudoku: Solve for X", , , /div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul/li[24]/a
+@163, LINK, "Question feed", , , /div.container[5]/div#content[3]/div#sidebar[4]/div#feed-link[10]/a
+@164, TEXTBOX, "Question feed To subscribe to this RSS feed, co...", , , /div.container[5]/div#content[3]/div#sidebar[4]/aside/input#feed-url
+@165, LINK, "Close", , , /div.container[5]/div#content[3]/div#sidebar[4]/aside/a
+@166, RADIO, "Probable spam. This comment promotes a product,...", [type=radio], , /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]/input#CommentProbableSpam
+@167, RADIO, "Unfriendly or contains harassment/bigotry/abuse...", [type=radio], , /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]/input#CommentRudeOrOffensive
+@168, RADIO, "Not needed. This comment is not relevant to the...", [type=radio], , /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]/input#CommentNoLongerNeeded
+@169, RADIO, "Something else. A problem not listed above. Try...", [type=radio], , /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]/input#CommentOther
+@170, BUTTON, "Flag comment", , , /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/button[1]
+@171, BUTTON, "Cancel", , , /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/button[2]
+@172, BUTTON, "Close", , , /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/button
+@173, BUTTON, "Save this post for later", , , /div.container[5]/div#content[3]/div[3]/aside/button[1]
+@174, BUTTON, "Not now", , , /div.container[5]/div#content[3]/div[3]/aside/button[2]
+@175, BUTTON, "Close", , , /div.container[5]/div#content[3]/div[3]/aside/button
+@176, LINK, "Stack Overflow", , , /footer#footer/a
+@177, LINK, "Stack Overflow", , , /footer#footer/nav/h5/a
+@178, LINK, "Questions", , , /footer#footer/nav/ul/li[1]/a
+@179, LINK, "Help", , , /footer#footer/nav/ul/li[2]/a
+@180, LINK, "Chat", , , /footer#footer/nav/ul/li[3]/a
+@181, LINK, "Business", , , /footer#footer/nav/h5/a
+@182, LINK, "Stack Internal", , , /footer#footer/nav/ul/li[1]/a
+@183, LINK, "Stack Data Licensing", , , /footer#footer/nav/ul/li[2]/a
+@184, LINK, "Stack Ads", , , /footer#footer/nav/ul/li[3]/a
+@185, LINK, "Company", , , /footer#footer/nav/h5/a
+@186, LINK, "About", , , /footer#footer/nav/ul/li[1]/a
+@187, LINK, "Press", , , /footer#footer/nav/ul/li[2]/a
+@188, LINK, "Work Here", , , /footer#footer/nav/ul/li[3]/a
+@189, LINK, "Legal", , , /footer#footer/nav/ul/li[4]/a
+@190, LINK, "Privacy Policy", , , /footer#footer/nav/ul/li[5]/a
+@191, LINK, "Terms of Service", , , /footer#footer/nav/ul/li[6]/a
+@192, LINK, "Contact Us", , , /footer#footer/nav/ul/li[7]/a
+@193, BUTTON, "Cookie Settings", , , /footer#footer/nav/ul/li#consent-footer-link[8]/button
+@194, LINK, "Cookie Policy", , , /footer#footer/nav/ul/li[9]/a
+@195, LINK, "Stack Exchange Network", , , /footer#footer/nav/h5/a
+@196, LINK, "Technology", , , /footer#footer/nav/ul/li[1]/a
+@197, LINK, "Culture & recreation", , , /footer#footer/nav/ul/li[2]/a
+@198, LINK, "Life & arts", , , /footer#footer/nav/ul/li[3]/a
+@199, LINK, "Science", , , /footer#footer/nav/ul/li[4]/a
+@200, LINK, "Professional", , , /footer#footer/nav/ul/li[5]/a
+@201, LINK, "Business", , , /footer#footer/nav/ul/li[6]/a
+@202, LINK, "API", , , /footer#footer/nav/ul/li[7]/a
+@203, LINK, "Data", , , /footer#footer/nav/ul/li[8]/a
+@204, LINK, "Blog", , , /footer#footer/ul/li[1]/a
+@205, LINK, "Facebook", , , /footer#footer/ul/li[2]/a
+@206, LINK, "Twitter", , , /footer#footer/ul/li[3]/a
+@207, LINK, "LinkedIn", , , /footer#footer/ul/li[4]/a
+@208, LINK, "Instagram", , , /footer#footer/ul/li[5]/a
+@209, LINK, "CC BY-SA", , , /footer#footer/a

@@ -2,7 +2,7 @@
  * @btcp/core - Element Reference Map
  *
  * Maintains a mapping between string refs and DOM elements.
- * Used by the snapshot system to enable @ref:xxx selectors.
+ * Used by the snapshot system to enable @N selectors.
  */
 
 import type { RefMap } from './types.js';
@@ -53,7 +53,7 @@ export function createRefMap(): RefMap {
       }
 
       // Generate new ref
-      const ref = `@ref:${counter++}`;
+      const ref = `@${counter++}`;
       map.set(ref, new WeakRef(element));
       return ref;
     },
@@ -99,7 +99,7 @@ export function createSimpleRefMap(): RefMap {
       }
 
       // Generate new ref
-      const ref = `@ref:${counter++}`;
+      const ref = `@${counter++}`;
       map.set(ref, element);
       return ref;
     },

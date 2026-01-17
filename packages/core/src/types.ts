@@ -274,7 +274,7 @@ export interface ValidateElementCommand extends BaseCommand {
  * const validation = await agent.execute({
  *   id: 'v1',
  *   action: 'validateRefs',
- *   refs: ['@ref:0', '@ref:1', '@ref:2']
+ *   refs: ['@0', '@1', '@2']
  * });
  *
  * // Use only valid refs

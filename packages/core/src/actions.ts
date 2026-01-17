@@ -190,7 +190,7 @@ export class DOMActions {
   private getElement(selector: string): Element {
     const element = this.queryElement(selector);
     if (!element) {
-      const isRef = selector.startsWith('@ref:');
+      const isRef = /^@\d+$/.test(selector);
       const similarSelectors = isRef ? [] : this.findSimilarSelectors(selector);
       const nearbyElements = this.getNearbyInteractiveElements();
 
@@ -352,8 +352,8 @@ export class DOMActions {
   }
 
   private queryElement(selector: string): Element | null {
-    // Check if it's a ref
-    if (selector.startsWith('@ref:')) {
+    // Check if it's a ref (format: @N where N is a number)
+    if (/^@\d+$/.test(selector)) {
       return this.refMap.get(selector);
     }
 
@@ -362,7 +362,7 @@ export class DOMActions {
   }
 
   private queryElements(selector: string): Element[] {
-    if (selector.startsWith('@ref:')) {
+    if (/^@\d+$/.test(selector)) {
       const el = this.refMap.get(selector);
       return el ? [el] : [];
     }

@@ -1,38 +1,387 @@
 PAGE: http://localhost/ | microsoft/vscode: Visual Studio Code | viewport=1024x768
-SNAPSHOT: elements=241 refs=35
+SNAPSHOT: elements=2097 refs=384
 
-LINK "Skip to content" @ref:0 /div.header-wrapper[2]/a
-BUTTON "Open global navigation menu" @ref:1 /div.header-wrapper[2]/header/button.Button--secondary
-LINK "Homepage" @ref:2 /div.header-wrapper[2]/header/a
-BUTTON "Search or jump to…" @ref:3 /div.header-wrapper[2]/header/qbsearch-input.search-input/div.search-input-container[1]/button
-LINK "Chat with Copilot" @ref:4 /div.header-wrapper[2]/header/a#copilot-chat-header-button
-BUTTON "Open Copilot…" @ref:5 /div.header-wrapper[2]/header/button#global-copilot-menu-button
-BUTTON "Create something new" @ref:6 /div.header-wrapper[2]/header/button#global-create-menu-anchor
-LINK "Your issues" @ref:7 /div.header-wrapper[2]/header/a.Button[1]
-LINK "Your pull requests" @ref:8 /div.header-wrapper[2]/header/a.Button[2]
-LINK "Repositories" @ref:9 /div.header-wrapper[2]/header/a.Button[3]
-LINK "You have unread notifications" @ref:10 /div.header-wrapper[2]/header/a.Button
-BUTTON "Open user navigation menu" @ref:11 /div.header-wrapper[2]/header/button.Button--invisible
-LINK "Code" @ref:12 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[1]/a#code-tab
-LINK "Issues 5k+" @ref:13 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[2]/a#issues-tab
-LINK "Pull requests 975" @ref:14 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[3]/a#pull-requests-tab
-LINK "Actions" @ref:15 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[4]/a#actions-tab
-LINK "Projects 1" @ref:16 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[5]/a#projects-tab
-LINK "Models" @ref:17 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[6]/a#models-tab
-LINK "Wiki" @ref:18 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[7]/a#wiki-tab
-BUTTON "Additional navigation options" @ref:19 /div.header-wrapper[2]/header/nav/button.Button
-LINK "vscode" @ref:20 /main#js-repo-pjax-container/div#repository-container-header/div#repo-title-component[1]/a
-LINK "MIT license" @ref:21 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
-LINK "Open in github.dev" @ref:22 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
-LINK "Open in a new github.dev tab" @ref:23 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
-LINK "Open in codespace" @ref:24 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[3]
-LINK "GitHub Homepage" @ref:25 /footer.footer/a.footer-octicon
-LINK "Terms" @ref:26 /footer.footer/nav/ul.list-style-none/li[1]/a.Link--secondary
-LINK "Privacy" @ref:27 /footer.footer/nav/ul.list-style-none/li[2]/a.Link--secondary
-LINK "Security" @ref:28 /footer.footer/nav/ul.list-style-none/li[3]/a.Link--secondary
-LINK "Status" @ref:29 /footer.footer/nav/ul.list-style-none/li[4]/a.Link--secondary
-LINK "Community" @ref:30 /footer.footer/nav/ul.list-style-none/li[5]/a.Link--secondary
-LINK "Docs" @ref:31 /footer.footer/nav/ul.list-style-none/li[6]/a.Link--secondary
-LINK "Contact" @ref:32 /footer.footer/nav/ul.list-style-none/li[7]/a.Link--secondary
-BUTTON "Manage cookies" @ref:33 /footer.footer/nav/ul.list-style-none/li[8]/button.Link--secondary
-BUTTON "Do not share my personal information" @ref:34 /footer.footer/nav/ul.list-style-none/li[9]/button.Link--secondary
+@0, LINK, "Skip to content", , , /div.header-wrapper[2]/a
+@1, BUTTON, "Open global navigation menu", , , /div.header-wrapper[2]/header/button.Button--secondary
+@2, LINK, "Home", , , /div.header-wrapper[2]/header/li[1]/a#_r_p_
+@3, LINK, "Issues", , , /div.header-wrapper[2]/header/li[2]/a#_r_q_
+@4, LINK, "Pull requests", , , /div.header-wrapper[2]/header/li[3]/a#_r_r_
+@5, LINK, "Homepage", , , /div.header-wrapper[2]/header/a
+@6, LINK, "microsoft", , , /div.header-wrapper[2]/header/nav/a
+@7, LINK, "vscode", , , /div.header-wrapper[2]/header/nav/a
+@8, BUTTON, "Search or jump to…", , , /div.header-wrapper[2]/header/qbsearch-input.search-input/div.search-input-container[1]/button
+@9, BUTTON, "Type / to search", , , /div.header-wrapper[2]/header/qbsearch-input.search-input/div.search-input-container[1]/button.form-control
+@10, LINK, "Chat with Copilot", , , /div.header-wrapper[2]/header/a#copilot-chat-header-button
+@11, BUTTON, "Open Copilot…", , , /div.header-wrapper[2]/header/button#global-copilot-menu-button
+@12, BUTTON, "Create something new", , , /div.header-wrapper[2]/header/button#global-create-menu-anchor
+@13, LINK, "Your issues", , , /div.header-wrapper[2]/header/a.Button[1]
+@14, LINK, "Your pull requests", , , /div.header-wrapper[2]/header/a.Button[2]
+@15, LINK, "Repositories", , , /div.header-wrapper[2]/header/a.Button[3]
+@16, LINK, "You have unread notifications", , , /div.header-wrapper[2]/header/a.Button
+@17, BUTTON, "Open user navigation menu", , , /div.header-wrapper[2]/header/button.Button--invisible
+@18, LINK, "Code", , , /div.header-wrapper[2]/header/nav/ul.list-style-none/li[1]/a#code-tab
+@19, LINK, "Issues 5k+", , , /div.header-wrapper[2]/header/nav/ul.list-style-none/li[2]/a#issues-tab
+@20, LINK, "Pull requests 975", , , /div.header-wrapper[2]/header/nav/ul.list-style-none/li[3]/a#pull-requests-tab
+@21, LINK, "Actions", , , /div.header-wrapper[2]/header/nav/ul.list-style-none/li[4]/a#actions-tab
+@22, LINK, "Projects 1", , , /div.header-wrapper[2]/header/nav/ul.list-style-none/li[5]/a#projects-tab
+@23, LINK, "Models", , , /div.header-wrapper[2]/header/nav/ul.list-style-none/li[6]/a#models-tab
+@24, LINK, "Wiki", , , /div.header-wrapper[2]/header/nav/ul.list-style-none/li[7]/a#wiki-tab
+@25, BUTTON, "Additional navigation options", , , /div.header-wrapper[2]/header/nav/button.Button
+@26, MENUITEM, "Security", , , /header/nav/anchored-position/ul/li[8]/a
+@27, MENUITEM, "Insights", , , /header/nav/anchored-position/ul/li[9]/a
+@28, LINK, "vscode", , , /main#js-repo-pjax-container/div#repository-container-header/div#repo-title-component[1]/a
+@29, BUTTON, "Watch: Participating in microsoft/vscode", , , /main#js-repo-pjax-container/div#repository-container-header/div#repository-details-container[2]/ul/li[1]/button#_r_e_
+@30, BUTTON, "Watch: Participating in microsoft/vscode", , , /main#js-repo-pjax-container/div#repository-container-header/div#repository-details-container[2]/ul/li[1]/button#_r_h_
+@31, LINK, "Fork 37.4k Fork your own copy of microsoft/vscode", , , /div#repository-container-header/div#repository-details-container[2]/ul/li[2]/div.BtnGroup/a#fork-button
+@32, BUTTON, "See your forks of this repository", , , /div#repository-details-container[2]/ul/li[2]/div.BtnGroup/details#my-forks-menu-41881900/summary.btn-sm
+@33, BUTTON, "Close menu", , , /div#repository-details-container[2]/ul/li[2]/div.BtnGroup/details#my-forks-menu-41881900/button
+@34, MENUITEM, , , , /div#repository-details-container[2]/ul/li[2]/div.BtnGroup/details#my-forks-menu-41881900/div#filter-menu-45fe21
+@35, BUTTON, "Starred, click to unstar this repository (180737)", , , /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[1]/form.BtnGroup-parent/button.btn-with-aria-count
+@36, BUTTON, "Add this repository to a list", , , /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/summary.btn-sm
+@37, BUTTON, "Close menu", , , /ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/header/button
+@38, MENUITEM, , , , /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/div#filter-menu-5408e1
+@39, BUTTON, "Star this repository (180737)", , , /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[2]/form.BtnGroup-parent/button.btn-with-aria-count
+@40, BUTTON, "Add this repository to a list", , , /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/summary.btn-sm
+@41, BUTTON, "Close menu", , , /ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/header/button
+@42, MENUITEM, , , , /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/div#filter-menu-81fde2
+@43, BUTTON, "Watch: Participating in microsoft/vscode", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/button#_r_3_
+@44, BUTTON, "Watch: Participating in microsoft/vscode", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/button#_r_6_
+@45, LINK, "Fork your own copy of microsoft/vscode", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/a#fork-icon-button
+@46, BUTTON, "Unstar this repository", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/form.BtnGroup-parent/button.Button
+@47, BUTTON, "Add this repository to a list", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/summary.btn-sm
+@48, BUTTON, "Close menu", , , /div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/header/button
+@49, MENUITEM, , , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/div#filter-menu-7a926c
+@50, BUTTON, "Star this repository", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/form.BtnGroup-parent/button.Button
+@51, BUTTON, "Add this repository to a list", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/summary.btn-sm
+@52, BUTTON, "Close menu", , , /div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/header/button
+@53, MENUITEM, , , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/div#filter-menu-9a8929
+@54, LINK, "code.visualstudio.com", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.Link--secondary[2]/a
+@55, LINK, "MIT license", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+@56, LINK, "Code of conduct", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+@57, LINK, "Contributing", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+@58, LINK, "Security policy", , , /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+@59, LINK, "Open in github.dev", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+@60, LINK, "Open in a new github.dev tab", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+@61, LINK, "Open in codespace", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[3]
+@62, BUTTON, "main branch", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button[1]
+@63, LINK, "2618 Branches", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+@64, LINK, "342 Tags", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+@65, LINK, "Go to Branches page", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+@66, LINK, "Go to Tags page", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+@67, COMBOBOX, "Go to file", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/input
+@68, BUTTON, "Go to file", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button
+@69, BUTTON, "Add file", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button#_R_a35ab_
+@70, BUTTON, "Code", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button#_R_75ab_
+@71, BUTTON, "Open more actions menu", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button#_R_95ab_
+@72, LINK, "ulugbekna", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a[1]
+@73, LINK, "commits by ulugbekna", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a[2]
+@74, LINK, "inline completions: fix passing changeHint cont...", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a.Link--secondary[1]
+@75, LINK, "#288428", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a[2]
+@76, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a.Link--secondary[3]
+@77, BUTTON, "pending", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/button
+@78, LINK, "Commit ea6ce12", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a.Link--secondary
+@79, LINK, "143,778 Commits", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a
+@80, BUTTON, "Open commit details", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/button
+@81, LINK, "View commit history for this file.", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/span#history-icon-button-tooltip/a
+@82, LINK, ".config, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a.Link--primary
+@83, LINK, ".config, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a.Link--primary
+@84, LINK, "chore: suppress node warnings (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a.Link--secondary[1]
+@85, LINK, "#274905", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a[2]
+@86, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a.Link--secondary[3]
+@87, LINK, ".devcontainer, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--primary
+@88, LINK, ".devcontainer, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--primary
+@89, LINK, "fix: changed the node js version from 20 to 22 ...", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--secondary[1]
+@90, LINK, "#257193", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a[2]
+@91, LINK, "(", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--secondary[3]
+@92, LINK, "#257400", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a[4]
+@93, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--secondary[5]
+@94, LINK, ".eslint-plugin-local, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-2[4]/a.Link--primary
+@95, LINK, ".eslint-plugin-local, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-2[4]/a.Link--primary
+@96, LINK, "Remove Map/Set eslint rule", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-2[4]/a.Link--secondary
+@97, LINK, ".github, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a.Link--primary
+@98, LINK, ".github, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a.Link--primary
+@99, LINK, "updates learnings (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a.Link--secondary[1]
+@100, LINK, "#287749", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a[2]
+@101, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a.Link--secondary[3]
+@102, LINK, ".vscode, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a.Link--primary
+@103, LINK, ".vscode, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a.Link--primary
+@104, LINK, "eng - opt the team into using sessions (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a.Link--secondary[1]
+@105, LINK, "#288384", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a[2]
+@106, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a.Link--secondary[3]
+@107, LINK, "build, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a.Link--primary
+@108, LINK, "build, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a.Link--primary
+@109, LINK, "feat: enable win11 context menu for stable (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a.Link--secondary[1]
+@110, LINK, "#287832", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a[2]
+@111, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a.Link--secondary[3]
+@112, LINK, "cli, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a.Link--primary
+@113, LINK, "cli, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a.Link--primary
+@114, LINK, "3rd party notices (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a.Link--secondary[1]
+@115, LINK, "#286063", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a[2]
+@116, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a.Link--secondary[3]
+@117, LINK, "extensions, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a.Link--primary
+@118, LINK, "extensions, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a.Link--primary
+@119, LINK, "Merge pull request", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a.Link--secondary[1]
+@120, LINK, "#288417", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a[2]
+@121, LINK, "from microsoft/mrleemurray/probable-quail-…", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a.Link--secondary[3]
+@122, LINK, "remote, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a.Link--primary
+@123, LINK, "remote, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a.Link--primary
+@124, LINK, "Merge pull request", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a.Link--secondary[1]
+@125, LINK, "#287561", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a[2]
+@126, LINK, "from microsoft/tyriar/xterm_260113", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a.Link--secondary[3]
+@127, LINK, "resources, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a.Link--primary
+@128, LINK, "resources, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a.Link--primary
+@129, LINK, "fix: ci for snap builds (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a.Link--secondary[1]
+@130, LINK, "#280871", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a[2]
+@131, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a.Link--secondary[3]
+@132, LINK, "scripts, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a.Link--primary
+@133, LINK, "scripts, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a.Link--primary
+@134, LINK, "Deletes unused playground-server. (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a.Link--secondary[1]
+@135, LINK, "#286718", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a[2]
+@136, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a.Link--secondary[3]
+@137, LINK, "src, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a.Link--primary
+@138, LINK, "src, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a.Link--primary
+@139, LINK, "inline completions: fix passing changeHint cont...", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a.Link--secondary[1]
+@140, LINK, "#288428", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a[2]
+@141, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a.Link--secondary[3]
+@142, LINK, "test, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a.Link--primary
+@143, LINK, "test, (Directory)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a.Link--primary
+@144, LINK, "deps - check in a package.lock (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a.Link--secondary[1]
+@145, LINK, "#288233", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a[2]
+@146, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a.Link--secondary[3]
+@147, LINK, ".editorconfig, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-13[15]/a.Link--primary
+@148, LINK, ".editorconfig, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-13[15]/a.Link--primary
+@149, LINK, "No forcing tabsize on users", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-13[15]/a.Link--secondary
+@150, LINK, ".eslint-ignore, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--primary
+@151, LINK, ".eslint-ignore, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--primary
+@152, LINK, "Remove", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary[1]
+@153, LINK, "src/vs/loader.js", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary
+@154, LINK, "(", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary[2]
+@155, LINK, "fix", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary
+@156, LINK, "#285255", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a[3]
+@157, LINK, ") (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary[4]
+@158, LINK, "#286727", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a[5]
+@159, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary[6]
+@160, LINK, ".git-blame-ignore-revs, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--primary
+@161, LINK, ".git-blame-ignore-revs, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--primary
+@162, LINK, "eng - add ESM migration commit to", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--secondary[1]
+@163, LINK, ".git-blame-ignore-revs", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--secondary
+@164, LINK, "(", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--secondary[2]
+@165, LINK, "#227190", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a[3]
+@166, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--secondary[4]
+@167, LINK, ".gitattributes, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-16[18]/a.Link--primary
+@168, LINK, ".gitattributes, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-16[18]/a.Link--primary
+@169, LINK, "Whitelist comments in all JSON files. For", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-16[18]/a.Link--secondary[1]
+@170, LINK, "#129206", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-16[18]/a[2]
+@171, LINK, ".gitignore, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a.Link--primary
+@172, LINK, ".gitignore, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a.Link--primary
+@173, LINK, "Add data prompt (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a.Link--secondary[1]
+@174, LINK, "#267543", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a[2]
+@175, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a.Link--secondary[3]
+@176, LINK, ".lsifrc.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-18[20]/a.Link--primary
+@177, LINK, ".lsifrc.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-18[20]/a.Link--primary
+@178, LINK, "Add lsifrc file", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-18[20]/a.Link--secondary
+@179, LINK, ".mailmap, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a.Link--primary
+@180, LINK, ".mailmap, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a.Link--primary
+@181, LINK, "update .mailmap (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a.Link--secondary[1]
+@182, LINK, "#159565", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a[2]
+@183, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a.Link--secondary[3]
+@184, LINK, ".mention-bot, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-20[22]/a.Link--primary
+@185, LINK, ".mention-bot, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-20[22]/a.Link--primary
+@186, LINK, "update mention bot configuration", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-20[22]/a.Link--secondary
+@187, LINK, ".npmrc, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-21[23]/a.Link--primary
+@188, LINK, ".npmrc, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-21[23]/a.Link--primary
+@189, LINK, "fix: capture diagnostics and add workaround for...", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-21[23]/a.Link--secondary
+@190, LINK, ".nvmrc, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a.Link--primary
+@191, LINK, ".nvmrc, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a.Link--primary
+@192, LINK, "chore: bump .nvmrc (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a.Link--secondary[1]
+@193, LINK, "#282925", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a[2]
+@194, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a.Link--secondary[3]
+@195, LINK, ".vscode-test.js, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a.Link--primary
+@196, LINK, ".vscode-test.js, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a.Link--primary
+@197, LINK, "Support folding in git COMMIT_MSG files (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a.Link--secondary[1]
+@198, LINK, "#272356", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a[2]
+@199, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a.Link--secondary[3]
+@200, LINK, "AGENTS.md, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a.Link--primary
+@201, LINK, "AGENTS.md, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a.Link--primary
+@202, LINK, "docs - add instructions for AI coding agents (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a.Link--secondary[1]
+@203, LINK, "#280321", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a[2]
+@204, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a.Link--secondary[3]
+@205, LINK, "CONTRIBUTING.md, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-25[27]/a.Link--primary
+@206, LINK, "CONTRIBUTING.md, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-25[27]/a.Link--primary
+@207, LINK, "Merge branch 'main' into patch-1", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-25[27]/a.Link--secondary
+@208, LINK, "CodeQL.yml, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a.Link--primary
+@209, LINK, "CodeQL.yml, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a.Link--primary
+@210, LINK, "eng: mark the patch application file as being g...", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a.Link--secondary[1]
+@211, LINK, "#194047", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a[2]
+@212, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a.Link--secondary[3]
+@213, LINK, "LICENSE.txt, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-27[29]/a.Link--primary
+@214, LINK, "LICENSE.txt, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-27[29]/a.Link--primary
+@215, LINK, "remove blank line (my best checkin ever)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-27[29]/a.Link--secondary
+@216, LINK, "README.md, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a.Link--primary
+@217, LINK, "README.md, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a.Link--primary
+@218, LINK, "docs: update Twitter branding to X in README (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a.Link--secondary[1]
+@219, LINK, "#280235", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a[2]
+@220, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a.Link--secondary[3]
+@221, LINK, "SECURITY.md, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a.Link--primary
+@222, LINK, "SECURITY.md, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a.Link--primary
+@223, LINK, "update security.md (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a.Link--secondary[1]
+@224, LINK, "#252288", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a[2]
+@225, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a.Link--secondary[3]
+@226, LINK, "ThirdPartyNotices.txt, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a.Link--primary
+@227, LINK, "ThirdPartyNotices.txt, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a.Link--primary
+@228, LINK, "oss tool (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a.Link--secondary[1]
+@229, LINK, "#280470", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a[2]
+@230, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a.Link--secondary[3]
+@231, LINK, "cglicenses.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a.Link--primary
+@232, LINK, "cglicenses.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a.Link--primary
+@233, LINK, "adopt new version of tas-client, no longer use ...", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a.Link--secondary[1]
+@234, LINK, "#263340", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a[2]
+@235, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a.Link--secondary[3]
+@236, LINK, "cgmanifest.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a.Link--primary
+@237, LINK, "cgmanifest.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a.Link--primary
+@238, LINK, "chore: bump electron@39.2.7 (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a.Link--secondary[1]
+@239, LINK, "#283786", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a[2]
+@240, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a.Link--secondary[3]
+@241, LINK, "eslint.config.js, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a.Link--primary
+@242, LINK, "eslint.config.js, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a.Link--primary
+@243, LINK, "chore: bump native-watchdog (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a.Link--secondary[1]
+@244, LINK, "#287848", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a[2]
+@245, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a.Link--secondary[3]
+@246, LINK, "gulpfile.mjs, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a.Link--primary
+@247, LINK, "gulpfile.mjs, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a.Link--primary
+@248, LINK, "Run our build scripts directly as typescript (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a.Link--secondary[1]
+@249, LINK, "#277567", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a[2]
+@250, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a.Link--secondary[3]
+@251, LINK, "package-lock.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a.Link--primary
+@252, LINK, "package-lock.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a.Link--primary
+@253, LINK, "Merge pull request", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a.Link--secondary[1]
+@254, LINK, "#287561", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a[2]
+@255, LINK, "from microsoft/tyriar/xterm_260113", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a.Link--secondary[3]
+@256, LINK, "package.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a.Link--primary
+@257, LINK, "package.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a.Link--primary
+@258, LINK, "updating distro hash (", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a.Link--secondary[1]
+@259, LINK, "#288309", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a[2]
+@260, LINK, ")", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a.Link--secondary[3]
+@261, LINK, "product.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-37[39]/a.Link--primary
+@262, LINK, "product.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-37[39]/a.Link--primary
+@263, LINK, "make it a command for the setup tool", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-37[39]/a.Link--secondary
+@264, LINK, "tsfmt.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-38[40]/a.Link--primary
+@265, LINK, "tsfmt.json, (File)", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-38[40]/a.Link--primary
+@266, LINK, "Add insertSpaceAfterOpeningAndBeforeClosingEmpt...", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-38[40]/a.Link--secondary
+@267, BUTTON, "View all files", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/button
+@268, LINK, "README", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul/li[1]/a
+@269, LINK, "Code of conduct", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul/li[2]/a
+@270, LINK, "Contributing", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul/li[3]/a
+@271, BUTTON, "More Repository files items", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul/li[4]/button
+@272, BUTTON, "Edit file", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button[1]
+@273, BUTTON, "Outline", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button#_R_r9ab_[2]
+@274, LINK, "Permalink: Visual Studio Code - Open Source ("C...", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@275, LINK, "issues", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+@276, LINK, "issues", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+@277, LINK, "vscode", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[3]
+@278, LINK, "Permalink: The Repository", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-the-repository
+@279, LINK, "Visual Studio Code", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+@280, LINK, "roadmap", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+@281, LINK, "monthly iteration plans", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[3]
+@282, LINK, "endgame plans", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[4]
+@283, LINK, "MIT license", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[5]
+@284, LINK, "Permalink: Visual Studio Code", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@285, LINK, "118224532 3842c400 b438 11eb 923d a5f66fa6785a", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@286, LINK, "Visual Studio Code", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+@287, LINK, "Microsoft product license", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+@288, LINK, "Visual Studio Code", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@289, LINK, "Visual Studio Code's website", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+@290, LINK, "Insiders build", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+@291, LINK, "Permalink: Contributing", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-contributing
+@292, LINK, "Submit bugs and feature requests", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[1]/li[1]/a
+@293, LINK, "source code changes", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[1]/li[2]/a
+@294, LINK, "documentation", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[1]/li[3]/a
+@295, LINK, "How to Contribute", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@296, LINK, "How to build and run from source", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[1]/a
+@297, LINK, "The development workflow, including debugging a...", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[2]/a
+@298, LINK, "Coding guidelines", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[3]/a
+@299, LINK, "Submitting pull requests", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[4]/a
+@300, LINK, "Finding an issue to work on", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[5]/a
+@301, LINK, "Contributing to translations", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[6]/a
+@302, LINK, "Permalink: Feedback", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-feedback
+@303, LINK, "Stack Overflow", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[1]/a
+@304, LINK, "Request a new feature", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[2]/a
+@305, LINK, "popular feature requests", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[3]/a
+@306, LINK, "File an issue", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[4]/a
+@307, LINK, "GitHub Discussions", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[5]/a[1]
+@308, LINK, "Slack", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[5]/a[2]
+@309, LINK, "@code", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[6]/a
+@310, LINK, "wiki", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@311, LINK, "Permalink: Related Projects", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-related-projects
+@312, LINK, "node debug adapter", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+@313, LINK, "mono debug adapter", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+@314, LINK, "Related Projects", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[3]
+@315, LINK, "wiki", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[4]
+@316, LINK, "Permalink: Bundled Extensions", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@317, LINK, "extensions", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@318, LINK, "Permalink: Development Container", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@319, LINK, "Dev Containers", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[4]/li[1]/a
+@320, LINK, "here", , , /article/ul[4]/li[1]/ul/li/a
+@321, LINK, "GitHub Codespaces", , , /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[4]/li[2]/a
+@322, LINK, "development container README", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@323, LINK, "Permalink: Code of Conduct", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-code-of-conduct
+@324, LINK, "Microsoft Open Source Code of Conduct", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+@325, LINK, "Code of Conduct FAQ", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+@326, LINK, "opencode@microsoft.com", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[3]
+@327, LINK, "Permalink: License", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-license
+@328, LINK, "MIT", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+@329, LINK, "code.visualstudio.com", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a
+@330, LINK, "electron", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+@331, LINK, "microsoft", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+@332, LINK, "editor", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[3]
+@333, LINK, "typescript", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[4]
+@334, LINK, "visual-studio-code", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[5]
+@335, LINK, "Readme", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+@336, LINK, "MIT license", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+@337, LINK, "Code of conduct", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+@338, LINK, "Contributing", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+@339, LINK, "Security policy", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+@340, LINK, "Activity", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+@341, LINK, "Custom properties", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+@342, LINK, "181k stars", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+@343, LINK, "3.4k watching", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+@344, LINK, "37.4k forks", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+@345, LINK, "Report repository", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+@346, LINK, "Releases 191", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2/a.Link--primary
+@347, LINK, "November 2025 Recovery 1 Latest Dec 18, 2025", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--primary
+@348, LINK, "+ 190 releases", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+@349, LINK, "Contributors 2,337", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2/a.Link--primary
+@350, LINK, "bpasero", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[1]/a
+@351, LINK, "Tyriar", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[2]/a
+@352, LINK, "jrieken", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[3]/a
+@353, LINK, "mjbvz", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[4]/a
+@354, LINK, "joaomoreno", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[5]/a
+@355, LINK, "sandy081", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[6]/a
+@356, LINK, "alexdima", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[7]/a
+@357, LINK, "isidorn", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[8]/a
+@358, LINK, "roblourens", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[9]/a
+@359, LINK, "aeschli", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[10]/a
+@360, LINK, "rebornix", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[11]/a
+@361, LINK, "meganrogge", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[12]/a
+@362, LINK, "alexr00", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[13]/a
+@363, LINK, "connor4312", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[14]/a
+@364, LINK, "+ 2,323 contributors", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--inTextBlock
+@365, LINK, "Deployments 500+", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2/a.Link--primary
+@366, LINK, "main July 25, 2024 05:55", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li/a.Link--primary
+@367, LINK, "+ more deployments", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--inTextBlock
+@368, LINK, "TypeScript 95.4%", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[1]/a.Link--secondary
+@369, LINK, "CSS 1.5%", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[2]/a.Link--secondary
+@370, LINK, "JavaScript 1.0%", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[3]/a.Link--secondary
+@371, LINK, "Inno Setup 0.7%", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[4]/a.Link--secondary
+@372, LINK, "Rust 0.6%", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[5]/a.Link--secondary
+@373, LINK, "HTML 0.5%", , , /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[6]/a.Link--secondary
+@374, LINK, "GitHub Homepage", , , /footer.footer/a.footer-octicon
+@375, LINK, "Terms", , , /footer.footer/nav/ul.list-style-none/li[1]/a.Link--secondary
+@376, LINK, "Privacy", , , /footer.footer/nav/ul.list-style-none/li[2]/a.Link--secondary
+@377, LINK, "Security", , , /footer.footer/nav/ul.list-style-none/li[3]/a.Link--secondary
+@378, LINK, "Status", , , /footer.footer/nav/ul.list-style-none/li[4]/a.Link--secondary
+@379, LINK, "Community", , , /footer.footer/nav/ul.list-style-none/li[5]/a.Link--secondary
+@380, LINK, "Docs", , , /footer.footer/nav/ul.list-style-none/li[6]/a.Link--secondary
+@381, LINK, "Contact", , , /footer.footer/nav/ul.list-style-none/li[7]/a.Link--secondary
+@382, BUTTON, "Manage cookies", , , /footer.footer/nav/ul.list-style-none/li[8]/button.Link--secondary
+@383, BUTTON, "Do not share my personal information", , , /footer.footer/nav/ul.list-style-none/li[9]/button.Link--secondary

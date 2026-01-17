@@ -20,7 +20,7 @@
  * await agent.execute({
  *   id: '2',
  *   action: 'click',
- *   selector: '@ref:5'  // From snapshot
+ *   selector: '@5'  // From snapshot
  * });
  * ```
  */
@@ -100,7 +100,7 @@ export interface ContentAgent {
  * const { data } = await agent.execute({ id: '1', action: 'snapshot' });
  *
  * // Click an element using ref from snapshot
- * await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
+ * await agent.execute({ id: '2', action: 'click', selector: '@5' });
  * ```
  */
 export function createContentAgent(doc: Document = document, win: Window = window): ContentAgent {

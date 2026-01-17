@@ -684,22 +684,16 @@ export function createSnapshot(
 
     const name = getAccessibleName(element);
 
-    // Build line
-    let line = '';
-
+    // Build line in CSV format: @ref, ROLE, "name", [attrs], (states), /xpath
     if (role) {
       const roleUpper = role.toUpperCase();
-      line = roleUpper;
+      const lineParts: string[] = [];
 
-      if (name) {
-        line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
-      }
-
-      // Generate ref for interactive elements
+      // Generate ref for interactive elements (goes first in CSV format)
+      let ref: string | null = null;
       if (isInteractiveElement) {
-        const ref = `@ref:${refCounter++}`;
+        ref = `@${refCounter++}`;
         refMap.set(ref, element);
-        line += ` ${ref}`;
         capturedInteractive++;
 
         try {
@@ -725,8 +719,14 @@ export function createSnapshot(
         }
       }
 
+      // Build CSV line parts
+      lineParts.push(ref || '');
+      lineParts.push(roleUpper);
+      lineParts.push(name ? `"${truncateByType(name, 'ELEMENT_NAME')}"` : '');
+
       // Add input attributes
-      line += getInputAttributes(element);
+      const attrs = getInputAttributes(element);
+      lineParts.push(attrs.trim());
 
       // Add state info
       const states: string[] = [];
@@ -735,13 +735,13 @@ export function createSnapshot(
       if (element.getAttribute('aria-expanded') === 'true') states.push('expanded');
       if (element.getAttribute('aria-selected') === 'true') states.push('selected');
 
-      if (states.length) line += ` (${states.join(', ')})`;
+      lineParts.push(states.length ? `(${states.join(', ')})` : '');
 
       // Add semantic xpath
       const xpath = buildSemanticXPath(element);
-      line += ` ${xpath}`;
+      lineParts.push(xpath);
 
-      lines.push(line);
+      lines.push(lineParts.join(', '));
     }
   }
 

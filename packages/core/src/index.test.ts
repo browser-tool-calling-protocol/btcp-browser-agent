@@ -34,7 +34,7 @@ describe('@btcp/core', () => {
       if (response.success) {
         expect(response.data.tree).toContain('button');
         expect(response.data.tree).toContain('Click me');
-        expect(response.data.tree).toContain('@ref:');
+        expect(response.data.tree).toMatch(/@\d+/);
       }
     });
 
@@ -115,7 +115,7 @@ describe('@btcp/core', () => {
       const response = await agent.execute({
         id: '2',
         action: 'click',
-        selector: '@ref:0',
+        selector: '@0',
       });
 
       expect(response.success).toBe(true);
@@ -505,7 +505,7 @@ describe('@btcp/core', () => {
       const refMap = createRefMap();
       const ref = refMap.generateRef(button);
 
-      expect(ref).toMatch(/^@ref:\d+$/);
+      expect(ref).toMatch(/^@\d+$/);
       expect(refMap.get(ref)).toBe(button);
     });
 

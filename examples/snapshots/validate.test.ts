@@ -228,7 +228,7 @@ describe('Real-World Snapshot Validation', () => {
           const refCount = Object.keys(snapshot.refs).length;
           const lines = snapshot.tree.split('\n');
           const interactiveLines = lines.filter(l =>
-            l.includes('@ref:') ||
+            l.includes('@') ||
             l.includes('BUTTON') ||
             l.includes('LINK') ||
             l.includes('TEXTBOX')
