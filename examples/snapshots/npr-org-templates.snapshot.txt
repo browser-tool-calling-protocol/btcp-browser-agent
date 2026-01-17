@@ -1,5 +1,5 @@
 PAGE: http://localhost/ | Rose Mary Woods, Devoted Nixon Secretary, Dies : NPR | viewport=1024x768
-SNAPSHOT: elements=565 refs=143 captured=143/143 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
+SNAPSHOT: elements=565 refs=143
 
 LINK "Skip to main content" @ref:0
 LINK "Keyboard shortcuts for audio player" @ref:1

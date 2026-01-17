@@ -1,5 +1,5 @@
 PAGE: http://localhost/ | Amazon.com: ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C : Electronics | viewport=1024x768
-SNAPSHOT: elements=1288 refs=95 captured=95/95 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
+SNAPSHOT: elements=1288 refs=95
 
 LINK "main content" @ref:0
 LINK "About this item" @ref:1
@@ -14,10 +14,8 @@ BUTTON "Add to cart, shift, option, K" @ref:9
 BUTTON "Show/hide shortcuts, shift, option, z" @ref:10
 LINK "Amazon" @ref:11
 BUTTON "Deliver to Vietnam" @ref:12
-FORM id=nav-search-bar-form action=http://localhost/s/ref=nb_sb_noss method=GET
-  SEARCH "All Select the department you want to search in..."
-    SEARCHBOX "Search Amazon" @ref:13
-    BUTTON "Agent Search" @ref:14 [type=submit]
+SEARCHBOX "Search Amazon" @ref:13
+BUTTON "Agent Search" @ref:14 [type=submit]
 LINK "Choose a language for shopping in Amazon United..." @ref:15
 LINK "Hello, sign in Account & Lists" @ref:16
 LINK "Returns & Orders" @ref:17
@@ -27,10 +25,8 @@ BUTTON "Change Address" @ref:20 [type=submit]
 LINK "Sign in" @ref:21
 BUTTON "Open All Categories Menu" @ref:22
 LINK "Click to call our Disability Customer Support l..." @ref:23
-FORM action=http://localhost/ method=GET
-  FORM
 BUTTON @ref:24
-  BUTTON "Share" @ref:25
+BUTTON "Share" @ref:25
 TAB "VIDEOS" @ref:26
 TAB "IMAGES" @ref:27
 TAB @ref:28
@@ -41,8 +37,6 @@ LINK "(889)" @ref:32
 CHECKBOX @ref:33 [type=checkbox]
 BUTTON @ref:34
 LINK "See more product details" @ref:35
-FORM action=http://localhost/ method=GET
-  FORM
 LINK "Report an issue with this product or seller" @ref:36
 LINK "WARNING" @ref:37
 BUTTON "Back to top" @ref:38

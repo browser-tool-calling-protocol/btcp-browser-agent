@@ -1,7 +1,5 @@
 PAGE: http://localhost/ | Test All Mode - Images, Headings, and Text | viewport=1024x768
-SNAPSHOT: elements=25 refs=2 captured=2/2 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
+SNAPSHOT: elements=25 refs=2
 
-FORM action=http://localhost/ method=GET
-  FORM "Email: Submit"
-    TEXTBOX "Email:" @ref:0 [type=email]
-    BUTTON "Submit" @ref:1
+TEXTBOX "Email:" @ref:0 [type=email]
+BUTTON "Submit" @ref:1

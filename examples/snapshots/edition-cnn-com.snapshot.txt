@@ -1,12 +1,10 @@
 PAGE: http://localhost/ | Breaking News, Latest News and Videos | CNN | viewport=1024x768
-SNAPSHOT: elements=158 refs=39 captured=39/39 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
+SNAPSHOT: elements=158 refs=39
 
 BUTTON "Open Menu Icon" @ref:0
 LINK "CNN logo" @ref:1
-FORM action=https://www.cnn.com/search method=GET
-  SEARCH
-    TEXTBOX "Search" @ref:2
-    BUTTON "Submit" @ref:3
+TEXTBOX "Search" @ref:2
+BUTTON "Submit" @ref:3
 LINK "User Account Log In Button" @ref:4
 LINK "Live TV" @ref:5
 LINK "Audio" @ref:6

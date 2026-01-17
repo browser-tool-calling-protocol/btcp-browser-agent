@@ -1,5 +1,5 @@
 PAGE: http://localhost/ | microsoft/vscode: Visual Studio Code | viewport=1024x768
-SNAPSHOT: elements=241 refs=35 captured=35/35 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
+SNAPSHOT: elements=241 refs=35
 
 LINK "Skip to content" @ref:0
 BUTTON "Open global navigation menu" @ref:1

@@ -1,22 +1,16 @@
 PAGE: http://localhost/ | Send attachments with PHP Mail()? - Stack Overflow | viewport=1024x768
-SNAPSHOT: elements=925 refs=210 captured=210/210 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
+SNAPSHOT: elements=925 refs=210
 
 LINK "terms of service" @ref:0
 LINK "privacy policy" @ref:1
-FORM action=http://localhost/users/signup?ssrc=undefined&returnurl=https%3A%2F%2Fstackoverflow.com%2Fusers%2Fafter-signup%2Foauth-only method=POST
-  FORM "Sign up with Google Sign up with GitHub"
-    BUTTON "Sign up with Google" @ref:2
-    BUTTON "Sign up with GitHub" @ref:3
-FORM id=signup-modal-signup-form action=http://localhost/users/signup?ssrc=undefined&returnurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F12301358%2Fsend-attachments-with-php-mail method=POST
-  FORM "Email Password Sign up"
-    TEXTBOX "Email" @ref:4 [maxlength=100]
-    TEXTBOX "Password" @ref:5 [type=password]
-    BUTTON @ref:6
-    BUTTON "Sign up" @ref:7
+BUTTON "Sign up with Google" @ref:2
+BUTTON "Sign up with GitHub" @ref:3
+TEXTBOX "Email" @ref:4 [maxlength=100]
+TEXTBOX "Password" @ref:5 [type=password]
+BUTTON @ref:6
+BUTTON "Sign up" @ref:7
 LINK "Log in" @ref:8
 BUTTON "Close" @ref:9
-FORM id=one-tap-form action=http://localhost/users/auth/gcp?ssrc=google-one-tap&returnurl=https%253a%252f%252fstackoverflow.com%252fquestions%252f12301358%252fsend-attachments-with-php-mail method=POST
-  FORM
 LINK "Skip to main content" @ref:10
 LINK @ref:11
 LINK "Stack Overflow" @ref:12
@@ -29,9 +23,7 @@ LINK "Stack Ads Connect your brand to the world’s mos..." @ref:18
 LINK "Releases Keep up-to-date on features we add to ..." @ref:19
 LINK "About the company" @ref:20
 LINK "Visit the blog" @ref:21
-FORM id=search action=http://localhost/search method=GET
-  SEARCH "Loading…"
-    COMBOBOX "Search" @ref:22 [maxlength=240]
+COMBOBOX "Search" @ref:22 [maxlength=240]
 LINK "current community" @ref:23
 BUTTON "Close" @ref:24
 LINK "Meta Stack Overflow" @ref:25
@@ -81,12 +73,9 @@ BUTTON "Collectives" @ref:68
 LINK "Explore all Collectives" @ref:69
 LINK "Try for free" @ref:70
 LINK "Learn more" @ref:71
-  → context: "Stack Overflow for Teams is now called Stack Internal. Bring the best of human thought and AI automa"
 BUTTON "Stack Internal" @ref:72
 LINK "Learn more" @ref:73
-  → context: "Bring the best of human thought and AI automation together at your work."
 LINK "Learn more about Collectives" @ref:74
-  → context: "Collectives™ on Stack Overflow Find centralized, trusted content and collaborate aro"
 LINK "Explore Stack Internal" @ref:75
 LINK "Send attachments with PHP Mail()?" @ref:76
 LINK "Ask Question" @ref:77
@@ -178,11 +167,10 @@ LINK "Killer sudoku: Solve for X" @ref:162
 LINK "Question feed" @ref:163
 TEXTBOX "Question feed To subscribe to this RSS feed, co..." @ref:164
 LINK "Close" @ref:165
-GROUP
-    RADIO "Probable spam. This comment promotes a product,..." @ref:166 [type=radio]
-    RADIO "Unfriendly or contains harassment/bigotry/abuse..." @ref:167 [type=radio]
-    RADIO "Not needed. This comment is not relevant to the..." @ref:168 [type=radio]
-    RADIO "Something else. A problem not listed above. Try..." @ref:169 [type=radio]
+RADIO "Probable spam. This comment promotes a product,..." @ref:166 [type=radio]
+RADIO "Unfriendly or contains harassment/bigotry/abuse..." @ref:167 [type=radio]
+RADIO "Not needed. This comment is not relevant to the..." @ref:168 [type=radio]
+RADIO "Something else. A problem not listed above. Try..." @ref:169 [type=radio]
 BUTTON "Flag comment" @ref:170
 BUTTON "Cancel" @ref:171
 BUTTON "Close" @ref:172
