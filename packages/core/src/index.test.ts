@@ -102,6 +102,8 @@ describe('@btcp/core', () => {
         expect(response.data.tree).toContain('Submit');
         expect(response.data.tree).not.toContain('Cancel');
         expect(response.data.tree).not.toContain('Home');
+        expect(response.data.tree).toContain('grep=Submit');
+        expect(response.data.tree).toContain('matches=1');
       }
     });
 

@@ -749,7 +749,6 @@ export function createSnapshot(
 
   // Build header
   const pageHeader = `PAGE: ${document.location?.href || 'about:blank'} | ${document.title || 'Untitled'} | viewport=${win.innerWidth}x${win.innerHeight}`;
-  const snapshotHeader = `SNAPSHOT: elements=${elements.length} refs=${capturedInteractive}`;
 
   // Apply grep filter if specified (supports regex)
   let filteredLines = lines;
@@ -761,6 +760,12 @@ export function createSnapshot(
       // Invalid regex, fall back to string matching
       filteredLines = lines.filter(line => line.includes(grepPattern));
     }
+  }
+
+  // Build snapshot header with grep info if applicable
+  let snapshotHeader = `SNAPSHOT: elements=${elements.length} refs=${capturedInteractive}`;
+  if (grepPattern) {
+    snapshotHeader += ` grep=${grepPattern} matches=${filteredLines.length}`;
   }
 
   const output = [pageHeader, snapshotHeader, '', ...filteredLines].join('\n');
