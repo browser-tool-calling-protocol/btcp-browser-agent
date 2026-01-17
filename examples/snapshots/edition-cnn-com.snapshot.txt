@@ -1,8 +1,8 @@
 PAGE: http://localhost/ | Breaking News, Latest News and Videos | CNN | viewport=1024x768
 SNAPSHOT: elements=158 refs=39 captured=39/39 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
 
-BUTTON "Open Menu Icon" @ref:0 (1 non-interactive children filtered)
-LINK "CNN logo" @ref:1 href=https://edition.cnn.com (1 non-interactive children filtered)
+BUTTON "Open Menu Icon" @ref:0
+LINK "CNN logo" @ref:1 href=https://edition.cnn.com
 FORM action=https://www.cnn.com/search method=GET
   SEARCH
     TEXTBOX "Search" @ref:2
@@ -31,9 +31,9 @@ LINK "Watch" @ref:24 href=https://edition.cnn.com/watch
 LINK "Listen" @ref:25 href=https://edition.cnn.com/audio
 LINK "Games" @ref:26 href=https://edition.cnn.com/games
 LINK "About CNN" @ref:27 href=https://edition.cnn.com/about
-LINK "CNN logo" @ref:28 href=https://edition.cnn.com (1 non-interactive children filtered)
-LINK "Download on Apple App Store" @ref:29 href=https://cnn.onelink.me/PVpf/q9j1odhf (1 non-interactive children filtered)
-LINK "Get it on Google Play" @ref:30 href=https://cnn.onelink.me/PVpf/43qg6lsp (1 non-interactive children filtered)
+LINK "CNN logo" @ref:28 href=https://edition.cnn.com
+LINK "Download on Apple App Store" @ref:29 href=https://cnn.onelink.me/PVpf/q9j1odhf
+LINK "Get it on Google Play" @ref:30 href=https://cnn.onelink.me/PVpf/43qg6lsp
 LINK "Terms of Use" @ref:31 href=https://edition.cnn.com/terms
 LINK "Privacy Policy" @ref:32 href=https://edition.cnn.com/privacy
 LINK "Manage Cookies" @ref:33 href=#

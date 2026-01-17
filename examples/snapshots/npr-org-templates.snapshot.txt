@@ -1,5 +1,5 @@
 PAGE: http://localhost/ | Rose Mary Woods, Devoted Nixon Secretary, Dies : NPR | viewport=1024x768
-SNAPSHOT: elements=565 refs=144 captured=144/144 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
+SNAPSHOT: elements=565 refs=143 captured=143/143 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
 
 LINK "Skip to main content" @ref:0 href=#mainContent
 LINK "Keyboard shortcuts for audio player" @ref:1 href=https://help.npr.org/contact/s/article?name=what-are-the-keyboard-shortcuts-for-using-the-npr-org-audio-player
@@ -8,19 +8,19 @@ BUTTON @ref:3
 BUTTON @ref:4
 BUTTON @ref:5
 BUTTON @ref:6
-BUTTON "NPR 24 Hour Program StreamOn Air Now" @ref:7 (1 non-interactive children filtered)
-BUTTON "Hourly News" @ref:8 (1 non-interactive children filtered)
-BUTTON "Listen Live" @ref:9 (1 non-interactive children filtered)
-BUTTON "My Playlist" @ref:10 (1 non-interactive children filtered)
+BUTTON "NPR 24 Hour Program StreamOn Air Now" @ref:7
+BUTTON "Hourly News" @ref:8
+BUTTON "Listen Live" @ref:9
+BUTTON "My Playlist" @ref:10
 BUTTON "Open Navigation Menu" @ref:11
-LINK @ref:12 href=/ (1 non-interactive children filtered)
+LINK @ref:12 href=/
 LINK "Newsletters" @ref:13 href=/newsletters/
 LINK "Sign In" @ref:14 href=#
 LINK "NPR Shop" @ref:15 href=https://shopnpr.org
-LINK "Donate" @ref:16 href=/donations/support (1 non-interactive children filtered)
-LINK "Local Station" @ref:17 href=/donations/support (1 non-interactive children filtered)
-LINK "NPR Network" @ref:18 href=https://contribute.npr.org/ (1 non-interactive children filtered)
-BUTTON "Close Navigation Menu" @ref:19 (expanded) (1 non-interactive children filtered)
+LINK "Donate" @ref:16 href=/donations/support
+LINK "Local Station" @ref:17 href=/donations/support
+LINK "NPR Network" @ref:18 href=https://contribute.npr.org/
+BUTTON "Close Navigation Menu" @ref:19 (expanded)
 LINK "Home" @ref:20 href=/
 LINK "News" @ref:21 href=/sections/news/
 BUTTON "Expand/collapse submenu for News" @ref:22
@@ -52,22 +52,22 @@ LINK "Music Features" @ref:47 href=https://www.npr.org/sections/music-features
 LINK "Live Sessions" @ref:48 href=https://www.npr.org/series/770565791/npr-music-live-sessions
 LINK "Podcasts & Shows" @ref:49 href=/podcasts-and-shows/
 BUTTON "Expand/collapse submenu for Podcasts & Shows" @ref:50
-LINK "Morning Edition" @ref:51 href=/programs/morning-edition/ (1 children: 0 shown, 1 hidden by depth limit)
-LINK "Weekend Edition Saturday" @ref:52 href=/programs/weekend-edition-saturday/ (1 children: 0 shown, 1 hidden by depth limit)
-LINK "Weekend Edition Sunday" @ref:53 href=/programs/weekend-edition-sunday/ (1 children: 0 shown, 1 hidden by depth limit)
-LINK "All Things Considered" @ref:54 href=/programs/all-things-considered/ (1 children: 0 shown, 1 hidden by depth limit)
-LINK "Fresh Air" @ref:55 href=/programs/fresh-air/ (1 children: 0 shown, 1 hidden by depth limit)
-LINK "Up First" @ref:56 href=/podcasts/510318/up-first/ (1 children: 0 shown, 1 hidden by depth limit)
-LINK "Embedded" @ref:57 href=https://www.npr.org/podcasts/510311/embedded (1 children: 0 shown, 1 hidden by depth limit)
-LINK "The NPR Politics Podcast" @ref:58 href=https://www.npr.org/podcasts/510310/npr-politics-podcast (1 children: 0 shown, 1 hidden by depth limit)
-LINK "Throughline" @ref:59 href=https://www.npr.org/podcasts/510333/throughline (1 children: 0 shown, 1 hidden by depth limit)
-LINK "Trump's Terms" @ref:60 href=https://www.npr.org/podcasts/510374/trumps-terms (1 children: 0 shown, 1 hidden by depth limit)
+LINK "Morning Edition" @ref:51 href=/programs/morning-edition/
+LINK "Weekend Edition Saturday" @ref:52 href=/programs/weekend-edition-saturday/
+LINK "Weekend Edition Sunday" @ref:53 href=/programs/weekend-edition-sunday/
+LINK "All Things Considered" @ref:54 href=/programs/all-things-considered/
+LINK "Fresh Air" @ref:55 href=/programs/fresh-air/
+LINK "Up First" @ref:56 href=/podcasts/510318/up-first/
+LINK "Embedded" @ref:57 href=https://www.npr.org/podcasts/510311/embedded
+LINK "The NPR Politics Podcast" @ref:58 href=https://www.npr.org/podcasts/510310/npr-politics-podcast
+LINK "Throughline" @ref:59 href=https://www.npr.org/podcasts/510333/throughline
+LINK "Trump's Terms" @ref:60 href=https://www.npr.org/podcasts/510374/trumps-terms
 LINK "More Podcasts & Shows" @ref:61 href=/podcasts-and-shows/
 LINK "Search" @ref:62 href=/search/
 LINK "Newsletters" @ref:63 href=/newsletters/
 LINK "NPR Shop" @ref:64 href=https://shopnpr.org
 LINK "Sign In" @ref:65 href=#
-LINK "music" @ref:66 href=/music/ (2 non-interactive children filtered)
+LINK "music" @ref:66 href=/music/
 LINK "The Best Music of 2025" @ref:67 href=https://www.npr.org/2025/12/10/g-s1-99930/best-music-of-2025
 LINK "All Songs Considered" @ref:68 href=https://www.npr.org/sections/allsongs/
 LINK "Tiny Desk" @ref:69 href=https://www.npr.org/series/tiny-desk-concerts/
@@ -79,69 +79,68 @@ LINK "Support" @ref:74 href=/support/
 LINK "Careers" @ref:75 href=/careers/
 LINK "Press" @ref:76 href=/series/750003/press-room/
 LINK "Ethics" @ref:77 href=/ethics/
-LINK @ref:78
-LINK "Obituaries" @ref:79 href=https://www.npr.org/sections/obituaries/
-LINK "Morning Edition" @ref:80 href=https://www.npr.org/programs/morning-edition/2005/01/24/13107969/
-BUTTON "Listen· 2:20" @ref:81 (1 children: 0 shown, 1 hidden by depth limit)
-BUTTON "Playlist" @ref:82 (1 children: 0 shown, 1 hidden by depth limit)
-BUTTON "Toggle more options" @ref:83 (2 non-interactive children filtered)
-BUTTON "Enlarge this image" @ref:84
-BUTTON "Facebook" @ref:85 (1 non-interactive children filtered)
-BUTTON "Flipboard" @ref:86 (1 non-interactive children filtered)
-BUTTON "Email" @ref:87 (1 non-interactive children filtered)
-LINK "2 police officers relive Jan. 6 through their o..." @ref:88 href=https://www.npr.org/sections/the-picture-show/2026/01/05/g-s1-103118/jan6-trump-capitol-police-officers-bodycam-footage-video (1 non-interactive children filtered)
-LINK "Venezuela's Machado says she presented her Nobe..." @ref:89 href=https://www.npr.org/2026/01/16/nx-s1-5679424/venezuela-machado-nobel-prize-trump-meeting (1 non-interactive children filtered)
-LINK "NPR+ | The News Roundup For October 24, 2025" @ref:90 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-october-24-2025 (1 non-interactive children filtered)
-LINK "House Republicans are investigating Jan. 6. NPR..." @ref:91 href=https://www.npr.org/2026/01/16/nx-s1-5678645/jan-6-house-gop-capitol-trump (1 non-interactive children filtered)
-LINK "NPR+ | The News Roundup For November 14, 2025" @ref:92 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-november-14-2025 (1 non-interactive children filtered)
-LINK "NPR+ | The News Roundup For January 9, 2026" @ref:93 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-january-9-2026 (1 non-interactive children filtered)
-LINK "claudette colvin obituary montgomery bus civil ..." @ref:94 href=https://www.npr.org/2026/01/13/g-s1-105927/claudette-colvin-obituary-montgomery-bus-civil-rights (2 children: 0 shown, 2 hidden by depth limit)
-LINK "scott adams dilbert dies" @ref:95 href=https://www.npr.org/2026/01/13/nx-s1-5413219/scott-adams-dilbert-dies (2 children: 0 shown, 2 hidden by depth limit)
-LINK "bob weir grateful dead obituary" @ref:96 href=https://www.npr.org/2026/01/10/nx-s1-4373822/bob-weir-grateful-dead-obituary (2 children: 0 shown, 2 hidden by depth limit)
-LINK "cia turncoat aldrich ames dies at 84" @ref:97 href=https://www.npr.org/2026/01/07/g-s1-104875/cia-turncoat-aldrich-ames-dies-at-84 (2 children: 0 shown, 2 hidden by depth limit)
-LINK "bela tarr filmmaker dead" @ref:98 href=https://www.npr.org/2026/01/06/nx-s1-5668240/bela-tarr-filmmaker-dead (2 children: 0 shown, 2 hidden by depth limit)
-LINK "edith renfrow smith pioneer and witness to hist..." @ref:99 href=https://www.npr.org/2026/01/06/g-s1-104782/edith-renfrow-smith-pioneer-and-witness-to-history-dies-at-111 (2 children: 0 shown, 2 hidden by depth limit)
-LINK "trump post online minnesota social media ice" @ref:100 href=https://www.npr.org/2026/01/16/nx-s1-5675909/trump-post-online-minnesota-social-media-ice (2 children: 0 shown, 2 hidden by depth limit)
-LINK "jan 6 house gop capitol trump" @ref:101 href=https://www.npr.org/2026/01/16/nx-s1-5678645/jan-6-house-gop-capitol-trump (2 children: 0 shown, 2 hidden by depth limit)
-LINK "a knight of the seven kingdoms review hbo game ..." @ref:102 href=https://www.npr.org/2026/01/16/nx-s1-5671737/a-knight-of-the-seven-kingdoms-review-hbo-game-of-thrones-prequel (2 children: 0 shown, 2 hidden by depth limit)
-LINK "minneapolis insurrection act trump threats" @ref:103 href=https://www.npr.org/2026/01/15/nx-s1-5678612/minneapolis-insurrection-act-trump-threats (2 children: 0 shown, 2 hidden by depth limit)
-LINK "verizon outage what happened" @ref:104 href=https://www.npr.org/2026/01/15/nx-s1-5678889/verizon-outage-what-happened (2 children: 0 shown, 2 hidden by depth limit)
-LINK "up first newsletter minneapolis protests venezu..." @ref:105 href=https://www.npr.org/2026/01/16/g-s1-106275/up-first-newsletter-minneapolis-protests-venezuela-opposition-trump-health-care-plan (2 children: 0 shown, 2 hidden by depth limit)
-LINK "trumprx pharma drug price deals list prices" @ref:106 href=https://www.npr.org/2026/01/16/nx-s1-5678915/trumprx-pharma-drug-price-deals-list-prices (2 children: 0 shown, 2 hidden by depth limit)
-LINK "hospice cervical cancer prevention" @ref:107 href=https://www.npr.org/2026/01/16/g-s1-106001/hospice-cervical-cancer-prevention (2 children: 0 shown, 2 hidden by depth limit)
-LINK "canada cut tariff chinese evs canadian farm pro..." @ref:108 href=https://www.npr.org/2026/01/16/nx-s1-5679469/canada-cut-tariff-chinese-evs-canadian-farm-products (2 children: 0 shown, 2 hidden by depth limit)
-LINK "greenland denmark nasa grok star trek golden gl..." @ref:109 href=https://www.npr.org/2026/01/16/g-s1-106110/greenland-denmark-nasa-grok-star-trek-golden-globes (2 children: 0 shown, 2 hidden by depth limit)
-LINK "immigration minnesota democrats navigate resist..." @ref:110 href=https://www.npr.org/2026/01/16/nx-s1-5678565/immigration-minnesota-democrats-navigate-resistance-to-trump (2 children: 0 shown, 2 hidden by depth limit)
-LINK "fema cuts jobs trump" @ref:111 href=https://www.npr.org/2026/01/16/nx-s1-5677605/fema-cuts-jobs-trump (2 children: 0 shown, 2 hidden by depth limit)
-LINK "Home" @ref:112 href=/
-LINK "News" @ref:113 href=/sections/news/
-LINK "Culture" @ref:114 href=/sections/culture/
-LINK "Music" @ref:115 href=/music/
-LINK "Podcasts & Shows" @ref:116 href=/podcasts-and-shows
-LINK "Newsletters" @ref:117 href=/newsletters/
-LINK "Facebook" @ref:118 href=https://www.facebook.com/NPR/
-LINK "Instagram" @ref:119 href=https://www.instagram.com/npr/
-LINK "Press" @ref:120 href=/series/750003/press-room/
-LINK "Public Editor" @ref:121 href=/sections/publiceditor/
-LINK "Corrections" @ref:122 href=/corrections/
-LINK "Transcripts" @ref:123 href=/transcripts/
-LINK "Contact & Help" @ref:124 href=https://help.npr.org/contact/s/
-LINK "Overview" @ref:125 href=/about/
-LINK "Diversity" @ref:126 href=/diversity/
-LINK "NPR Network" @ref:127 href=/network/
-LINK "Accessibility" @ref:128 href=/about-npr/1136563345/accessibility
-LINK "Ethics" @ref:129 href=/ethics/
-LINK "Finances" @ref:130 href=/about-npr/178660742/public-radio-finances
-LINK "Support Public Radio" @ref:131 href=/support/
-LINK "Sponsor NPR" @ref:132 href=/about-npr/186948703/corporate-sponsorship
-LINK "NPR Careers" @ref:133 href=/careers/
-LINK "NPR Shop" @ref:134 href=https://shopnpr.org/
-LINK "NPR Extra" @ref:135 href=/sections/npr-extra/
-LINK "Terms of Use" @ref:136 href=/about-npr/179876898/terms-of-use
-LINK "Privacy" @ref:137 href=/about-npr/179878450/privacy-policy
-LINK "Your Privacy Choices" @ref:138 href=/about-npr/179878450/privacy-policy#yourchoices
-LINK "Text Only" @ref:139 href=https://text.npr.org/
-LINK "Become an NPR sponsor" @ref:140 href=/about-npr/186948703/corporate-sponsorship
-LINK "Get NPR+" @ref:141 href=https://plus.npr.org/?utm_medium=nprweb&source=mvpcta
-LINK "Sign In" @ref:142 href=#
-BUTTON "Close modal" @ref:143
+LINK "Obituaries" @ref:78 href=https://www.npr.org/sections/obituaries/
+LINK "Morning Edition" @ref:79 href=https://www.npr.org/programs/morning-edition/2005/01/24/13107969/
+BUTTON "Listen· 2:20" @ref:80
+BUTTON "Playlist" @ref:81
+BUTTON "Toggle more options" @ref:82
+BUTTON "Enlarge this image" @ref:83
+BUTTON "Facebook" @ref:84
+BUTTON "Flipboard" @ref:85
+BUTTON "Email" @ref:86
+LINK "2 police officers relive Jan. 6 through their o..." @ref:87 href=https://www.npr.org/sections/the-picture-show/2026/01/05/g-s1-103118/jan6-trump-capitol-police-officers-bodycam-footage-video
+LINK "Venezuela's Machado says she presented her Nobe..." @ref:88 href=https://www.npr.org/2026/01/16/nx-s1-5679424/venezuela-machado-nobel-prize-trump-meeting
+LINK "NPR+ | The News Roundup For October 24, 2025" @ref:89 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-october-24-2025
+LINK "House Republicans are investigating Jan. 6. NPR..." @ref:90 href=https://www.npr.org/2026/01/16/nx-s1-5678645/jan-6-house-gop-capitol-trump
+LINK "NPR+ | The News Roundup For November 14, 2025" @ref:91 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-november-14-2025
+LINK "NPR+ | The News Roundup For January 9, 2026" @ref:92 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-january-9-2026
+LINK "claudette colvin obituary montgomery bus civil ..." @ref:93 href=https://www.npr.org/2026/01/13/g-s1-105927/claudette-colvin-obituary-montgomery-bus-civil-rights
+LINK "scott adams dilbert dies" @ref:94 href=https://www.npr.org/2026/01/13/nx-s1-5413219/scott-adams-dilbert-dies
+LINK "bob weir grateful dead obituary" @ref:95 href=https://www.npr.org/2026/01/10/nx-s1-4373822/bob-weir-grateful-dead-obituary
+LINK "cia turncoat aldrich ames dies at 84" @ref:96 href=https://www.npr.org/2026/01/07/g-s1-104875/cia-turncoat-aldrich-ames-dies-at-84
+LINK "bela tarr filmmaker dead" @ref:97 href=https://www.npr.org/2026/01/06/nx-s1-5668240/bela-tarr-filmmaker-dead
+LINK "edith renfrow smith pioneer and witness to hist..." @ref:98 href=https://www.npr.org/2026/01/06/g-s1-104782/edith-renfrow-smith-pioneer-and-witness-to-history-dies-at-111
+LINK "trump post online minnesota social media ice" @ref:99 href=https://www.npr.org/2026/01/16/nx-s1-5675909/trump-post-online-minnesota-social-media-ice
+LINK "jan 6 house gop capitol trump" @ref:100 href=https://www.npr.org/2026/01/16/nx-s1-5678645/jan-6-house-gop-capitol-trump
+LINK "a knight of the seven kingdoms review hbo game ..." @ref:101 href=https://www.npr.org/2026/01/16/nx-s1-5671737/a-knight-of-the-seven-kingdoms-review-hbo-game-of-thrones-prequel
+LINK "minneapolis insurrection act trump threats" @ref:102 href=https://www.npr.org/2026/01/15/nx-s1-5678612/minneapolis-insurrection-act-trump-threats
+LINK "verizon outage what happened" @ref:103 href=https://www.npr.org/2026/01/15/nx-s1-5678889/verizon-outage-what-happened
+LINK "up first newsletter minneapolis protests venezu..." @ref:104 href=https://www.npr.org/2026/01/16/g-s1-106275/up-first-newsletter-minneapolis-protests-venezuela-opposition-trump-health-care-plan
+LINK "trumprx pharma drug price deals list prices" @ref:105 href=https://www.npr.org/2026/01/16/nx-s1-5678915/trumprx-pharma-drug-price-deals-list-prices
+LINK "hospice cervical cancer prevention" @ref:106 href=https://www.npr.org/2026/01/16/g-s1-106001/hospice-cervical-cancer-prevention
+LINK "canada cut tariff chinese evs canadian farm pro..." @ref:107 href=https://www.npr.org/2026/01/16/nx-s1-5679469/canada-cut-tariff-chinese-evs-canadian-farm-products
+LINK "greenland denmark nasa grok star trek golden gl..." @ref:108 href=https://www.npr.org/2026/01/16/g-s1-106110/greenland-denmark-nasa-grok-star-trek-golden-globes
+LINK "immigration minnesota democrats navigate resist..." @ref:109 href=https://www.npr.org/2026/01/16/nx-s1-5678565/immigration-minnesota-democrats-navigate-resistance-to-trump
+LINK "fema cuts jobs trump" @ref:110 href=https://www.npr.org/2026/01/16/nx-s1-5677605/fema-cuts-jobs-trump
+LINK "Home" @ref:111 href=/
+LINK "News" @ref:112 href=/sections/news/
+LINK "Culture" @ref:113 href=/sections/culture/
+LINK "Music" @ref:114 href=/music/
+LINK "Podcasts & Shows" @ref:115 href=/podcasts-and-shows
+LINK "Newsletters" @ref:116 href=/newsletters/
+LINK "Facebook" @ref:117 href=https://www.facebook.com/NPR/
+LINK "Instagram" @ref:118 href=https://www.instagram.com/npr/
+LINK "Press" @ref:119 href=/series/750003/press-room/
+LINK "Public Editor" @ref:120 href=/sections/publiceditor/
+LINK "Corrections" @ref:121 href=/corrections/
+LINK "Transcripts" @ref:122 href=/transcripts/
+LINK "Contact & Help" @ref:123 href=https://help.npr.org/contact/s/
+LINK "Overview" @ref:124 href=/about/
+LINK "Diversity" @ref:125 href=/diversity/
+LINK "NPR Network" @ref:126 href=/network/
+LINK "Accessibility" @ref:127 href=/about-npr/1136563345/accessibility
+LINK "Ethics" @ref:128 href=/ethics/
+LINK "Finances" @ref:129 href=/about-npr/178660742/public-radio-finances
+LINK "Support Public Radio" @ref:130 href=/support/
+LINK "Sponsor NPR" @ref:131 href=/about-npr/186948703/corporate-sponsorship
+LINK "NPR Careers" @ref:132 href=/careers/
+LINK "NPR Shop" @ref:133 href=https://shopnpr.org/
+LINK "NPR Extra" @ref:134 href=/sections/npr-extra/
+LINK "Terms of Use" @ref:135 href=/about-npr/179876898/terms-of-use
+LINK "Privacy" @ref:136 href=/about-npr/179878450/privacy-policy
+LINK "Your Privacy Choices" @ref:137 href=/about-npr/179878450/privacy-policy#yourchoices
+LINK "Text Only" @ref:138 href=https://text.npr.org/
+LINK "Become an NPR sponsor" @ref:139 href=/about-npr/186948703/corporate-sponsorship
+LINK "Get NPR+" @ref:140 href=https://plus.npr.org/?utm_medium=nprweb&source=mvpcta
+LINK "Sign In" @ref:141 href=#
+BUTTON "Close modal" @ref:142
