@@ -82,6 +82,109 @@ describe('@btcp/core', () => {
         expect(response.data.tree).toContain('Close dialog');
       }
     });
+
+    it('should filter snapshot with grep option', async () => {
+      document.body.innerHTML = `
+        <button>Submit</button>
+        <button>Cancel</button>
+        <a href="/home">Home</a>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({
+        id: '1',
+        action: 'snapshot',
+        grep: 'Submit',
+      });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.tree).toContain('Submit');
+        expect(response.data.tree).not.toContain('Cancel');
+        expect(response.data.tree).not.toContain('Home');
+        expect(response.data.tree).toContain('grep=Submit');
+        expect(response.data.tree).toContain('matches=1');
+      }
+    });
+
+    it('should return all elements when grep matches none', async () => {
+      document.body.innerHTML = '<button>Click</button>';
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({
+        id: '1',
+        action: 'snapshot',
+        grep: 'nonexistent',
+      });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.tree).toContain('PAGE:');
+        expect(response.data.tree).not.toContain('Click');
+      }
+    });
+
+    it('should support grep ignoreCase option (-i)', async () => {
+      document.body.innerHTML = `
+        <button>SUBMIT</button>
+        <button>Cancel</button>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({
+        id: '1',
+        action: 'snapshot',
+        grep: { pattern: 'submit', ignoreCase: true },
+      });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.tree).toContain('SUBMIT');
+        expect(response.data.tree).not.toContain('Cancel');
+      }
+    });
+
+    it('should support grep invert option (-v)', async () => {
+      document.body.innerHTML = `
+        <button>Submit</button>
+        <button>Cancel</button>
+        <a href="/home">Home</a>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({
+        id: '1',
+        action: 'snapshot',
+        grep: { pattern: 'BUTTON', invert: true },
+      });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.tree).not.toContain('Submit');
+        expect(response.data.tree).not.toContain('Cancel');
+        expect(response.data.tree).toContain('Home');
+      }
+    });
+
+    it('should support grep fixedStrings option (-F)', async () => {
+      document.body.innerHTML = `
+        <button>Click [here]</button>
+        <button>Other</button>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({
+        id: '1',
+        action: 'snapshot',
+        grep: { pattern: '[here]', fixedStrings: true },
+      });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.tree).toContain('[here]');
+        expect(response.data.tree).not.toContain('Other');
+      }
+    });
   });
 
   describe('click', () => {
