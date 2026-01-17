@@ -49,17 +49,26 @@ import type {
 } from './types.js';
 import type { GroupColor } from './session-types.js';
 
+// Import for local use (and re-export below)
+import {
+  BackgroundAgent as _BackgroundAgent,
+  getBackgroundAgent as _getBackgroundAgent,
+  setupMessageListener as _setupMessageListener,
+  BrowserAgent as _BrowserAgent,
+  getBrowserAgent as _getBrowserAgent,
+} from './background.js';
+
 export * from './types.js';
 
 // Re-export BackgroundAgent for background script usage
 export {
-  BackgroundAgent,
-  getBackgroundAgent,
-  setupMessageListener,
+  _BackgroundAgent as BackgroundAgent,
+  _getBackgroundAgent as getBackgroundAgent,
+  _setupMessageListener as setupMessageListener,
   // Deprecated aliases for backwards compatibility
-  BrowserAgent,
-  getBrowserAgent,
-} from './background.js';
+  _BrowserAgent as BrowserAgent,
+  _getBrowserAgent as getBrowserAgent,
+};
 
 // Re-export ContentAgent for content script usage
 export { createContentAgent, type ContentAgent } from '@btcp/core';
@@ -243,10 +252,57 @@ function generateCommandId(): string {
 }
 
 /**
+ * Check if we're running in a background/service worker context
+ */
+function isBackgroundContext(): boolean {
+  // In Manifest V3, background scripts run as service workers
+  return typeof ServiceWorkerGlobalScope !== 'undefined' && self instanceof ServiceWorkerGlobalScope;
+}
+
+/**
  * Create a client for communicating with the extension
+ *
+ * This function works in both popup/content scripts and background scripts:
+ * - In popup/content scripts: Uses chrome.runtime.sendMessage to communicate with background
+ * - In background scripts: Uses BackgroundAgent directly for better performance
+ *
+ * @example Popup usage:
+ * ```typescript
+ * import { createClient } from 'btcp-browser-agent/extension';
+ * const client = createClient();
+ * await client.navigate('https://example.com');
+ * ```
+ *
+ * @example Background script usage:
+ * ```typescript
+ * import { createClient } from 'btcp-browser-agent/extension';
+ * const client = createClient();
+ * // Works the same way - commands go directly to BackgroundAgent
+ * await client.navigate('https://example.com');
+ * ```
  */
 export function createClient(): Client {
+  // Detect if we're in background context
+  const inBackground = isBackgroundContext();
+
+  // Lazily get the background agent to avoid circular dependency issues
+  let bgAgent: _BackgroundAgent | null = null;
+
+  function getAgent(): _BackgroundAgent {
+    if (!bgAgent) {
+      // Use the singleton getter from background.js
+      bgAgent = _getBackgroundAgent();
+    }
+    return bgAgent;
+  }
+
   async function sendCommand(command: Command): Promise<Response> {
+    // In background context, use BackgroundAgent directly
+    if (inBackground) {
+      return getAgent().execute(command);
+    }
+
+    // In popup/content context, use message passing
     return new Promise((resolve) => {
       chrome.runtime.sendMessage(
         { type: 'btcp:command', command } satisfies ExtensionMessage,
