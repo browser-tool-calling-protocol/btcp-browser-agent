@@ -82,6 +82,45 @@ describe('@btcp/core', () => {
         expect(response.data.tree).toContain('Close dialog');
       }
     });
+
+    it('should filter snapshot with grep option', async () => {
+      document.body.innerHTML = `
+        <button>Submit</button>
+        <button>Cancel</button>
+        <a href="/home">Home</a>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({
+        id: '1',
+        action: 'snapshot',
+        grep: 'Submit',
+      });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.tree).toContain('Submit');
+        expect(response.data.tree).not.toContain('Cancel');
+        expect(response.data.tree).not.toContain('Home');
+      }
+    });
+
+    it('should return all elements when grep matches none', async () => {
+      document.body.innerHTML = '<button>Click</button>';
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({
+        id: '1',
+        action: 'snapshot',
+        grep: 'nonexistent',
+      });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data.tree).toContain('PAGE:');
+        expect(response.data.tree).not.toContain('Click');
+      }
+    });
   });
 
   describe('click', () => {

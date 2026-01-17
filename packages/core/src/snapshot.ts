@@ -41,6 +41,7 @@ interface SnapshotOptions {
   interactive?: boolean;
   compact?: boolean;
   all?: boolean;
+  grep?: string;
 }
 
 const TRUNCATE_LIMITS = {
@@ -640,7 +641,8 @@ export function createSnapshot(
     maxDepth = 50,
     includeHidden = false,
     interactive = true,
-    all = false
+    all = false,
+    grep: grepPattern
   } = options;
 
   refMap.clear();
@@ -749,7 +751,12 @@ export function createSnapshot(
   const pageHeader = `PAGE: ${document.location?.href || 'about:blank'} | ${document.title || 'Untitled'} | viewport=${win.innerWidth}x${win.innerHeight}`;
   const snapshotHeader = `SNAPSHOT: elements=${elements.length} refs=${capturedInteractive}`;
 
-  const output = [pageHeader, snapshotHeader, '', ...lines].join('\n');
+  // Apply grep filter if specified
+  const filteredLines = grepPattern
+    ? lines.filter(line => line.includes(grepPattern))
+    : lines;
+
+  const output = [pageHeader, snapshotHeader, '', ...filteredLines].join('\n');
 
   return {
     tree: output,

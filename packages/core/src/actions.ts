@@ -124,6 +124,7 @@ export class DOMActions {
           interactive: command.interactive,
           compact: command.compact,
           all: command.all,
+          grep: command.grep,
         });
 
       case 'querySelector':
@@ -644,6 +645,7 @@ export class DOMActions {
     interactive?: boolean;
     compact?: boolean;
     all?: boolean;
+    grep?: string;
   }): Promise<SnapshotData> {
     const root = options.selector
       ? this.getElement(options.selector)
@@ -656,6 +658,7 @@ export class DOMActions {
       interactive: options.interactive,
       compact: options.compact,
       all: options.all,
+      grep: options.grep,
     });
   }
 

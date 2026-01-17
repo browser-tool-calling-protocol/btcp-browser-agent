@@ -144,6 +144,7 @@ export interface SnapshotCommand extends BaseCommand {
   incremental?: boolean;
   baseSnapshot?: SnapshotData;
   all?: boolean;
+  grep?: string;
 }
 
 export interface QuerySelectorCommand extends BaseCommand {
