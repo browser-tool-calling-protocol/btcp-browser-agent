@@ -133,6 +133,20 @@ export interface ScrollIntoViewCommand extends BaseCommand {
   block?: 'start' | 'center' | 'end' | 'nearest';
 }
 
+/**
+ * Grep options for filtering snapshot output (mirrors Unix grep flags)
+ */
+export interface GrepOptions {
+  /** Pattern to search for (regex by default) */
+  pattern: string;
+  /** Case-insensitive matching (grep -i) */
+  ignoreCase?: boolean;
+  /** Invert match - return non-matching lines (grep -v) */
+  invert?: boolean;
+  /** Treat pattern as fixed string, not regex (grep -F) */
+  fixedStrings?: boolean;
+}
+
 export interface SnapshotCommand extends BaseCommand {
   action: 'snapshot';
   selector?: Selector;
@@ -148,6 +162,8 @@ export interface SnapshotCommand extends BaseCommand {
   baseSnapshot?: SnapshotData;
   all?: boolean;
   format?: 'tree' | 'html';
+  /** Filter output lines - simple string or full grep options */
+  grep?: string | GrepOptions;
 }
 
 export interface QuerySelectorCommand extends BaseCommand {

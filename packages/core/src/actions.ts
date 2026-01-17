@@ -129,6 +129,7 @@ export class DOMActions {
           compact: command.compact,
           all: command.all,
           format: command.format,
+          grep: command.grep,
         });
 
       case 'querySelector':
@@ -656,6 +657,7 @@ export class DOMActions {
     compact?: boolean;
     all?: boolean;
     format?: 'tree' | 'html';
+    grep?: string | { pattern: string; ignoreCase?: boolean; invert?: boolean; fixedStrings?: boolean };
   }): Promise<SnapshotData> {
     const root = options.selector
       ? this.getElement(options.selector)
@@ -669,6 +671,7 @@ export class DOMActions {
       compact: options.compact,
       all: options.all,
       format: options.format,
+      grep: options.grep,
     });
 
     // Store snapshot data for highlight command

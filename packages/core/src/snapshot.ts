@@ -34,6 +34,20 @@ function getHTMLConstructors(element: Element) {
   };
 }
 
+/**
+ * Grep options (mirrors Unix grep flags)
+ */
+interface GrepOptions {
+  /** Pattern to search for */
+  pattern: string;
+  /** Case-insensitive matching (grep -i) */
+  ignoreCase?: boolean;
+  /** Invert match - return non-matching lines (grep -v) */
+  invert?: boolean;
+  /** Treat pattern as fixed string, not regex (grep -F) */
+  fixedStrings?: boolean;
+}
+
 interface SnapshotOptions {
   root?: Element;
   maxDepth?: number;
@@ -42,6 +56,8 @@ interface SnapshotOptions {
   compact?: boolean;
   all?: boolean;
   format?: 'tree' | 'html';
+  /** Grep filter - string pattern or options object */
+  grep?: string | GrepOptions;
 }
 
 const TRUNCATE_LIMITS = {
@@ -655,7 +671,8 @@ export function createSnapshot(
     includeHidden = false,
     interactive = true,
     all = false,
-    format = 'tree'
+    format = 'tree',
+    grep: grepPattern
   } = options;
 
   // Fast path for HTML format - return raw body HTML without processing
@@ -779,9 +796,51 @@ export function createSnapshot(
 
   // Build header
   const pageHeader = `PAGE: ${document.location?.href || 'about:blank'} | ${document.title || 'Untitled'} | viewport=${win.innerWidth}x${win.innerHeight}`;
-  const snapshotHeader = `SNAPSHOT: elements=${elements.length} refs=${capturedInteractive}`;
 
-  const output = [pageHeader, snapshotHeader, '', ...lines].join('\n');
+  // Apply grep filter if specified (supports Unix grep options)
+  let filteredLines = lines;
+  let grepDisplayPattern = '';
+
+  if (grepPattern) {
+    // Parse grep options
+    const grepOpts = typeof grepPattern === 'string'
+      ? { pattern: grepPattern }
+      : grepPattern;
+
+    const { pattern, ignoreCase = false, invert = false, fixedStrings = false } = grepOpts;
+    grepDisplayPattern = pattern;
+
+    // Build regex
+    let regexPattern = fixedStrings
+      ? pattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')  // Escape regex chars
+      : pattern;
+
+    const flags = ignoreCase ? 'i' : '';
+
+    try {
+      const regex = new RegExp(regexPattern, flags);
+      filteredLines = lines.filter(line => {
+        const matches = regex.test(line);
+        return invert ? !matches : matches;
+      });
+    } catch {
+      // Invalid regex, fall back to string matching
+      filteredLines = lines.filter(line => {
+        const matches = ignoreCase
+          ? line.toLowerCase().includes(pattern.toLowerCase())
+          : line.includes(pattern);
+        return invert ? !matches : matches;
+      });
+    }
+  }
+
+  // Build snapshot header with grep info if applicable
+  let snapshotHeader = `SNAPSHOT: elements=${elements.length} refs=${capturedInteractive}`;
+  if (grepPattern) {
+    snapshotHeader += ` grep=${grepDisplayPattern} matches=${filteredLines.length}`;
+  }
+
+  const output = [pageHeader, snapshotHeader, '', ...filteredLines].join('\n');
 
   // Detect problematic page states
   const warnings: string[] = [];
