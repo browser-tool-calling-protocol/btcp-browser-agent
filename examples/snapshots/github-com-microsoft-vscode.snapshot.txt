@@ -1,38 +1,38 @@
 PAGE: http://localhost/ | microsoft/vscode: Visual Studio Code | viewport=1024x768
 SNAPSHOT: elements=241 refs=35
 
-LINK "Skip to content" @ref:0
-BUTTON "Open global navigation menu" @ref:1
-LINK "Homepage" @ref:2
-BUTTON "Search or jump to…" @ref:3
-LINK "Chat with Copilot" @ref:4
-BUTTON "Open Copilot…" @ref:5
-BUTTON "Create something new" @ref:6
-LINK "Your issues" @ref:7
-LINK "Your pull requests" @ref:8
-LINK "Repositories" @ref:9
-LINK "You have unread notifications" @ref:10
-BUTTON "Open user navigation menu" @ref:11
-LINK "Code" @ref:12
-LINK "Issues 5k+" @ref:13
-LINK "Pull requests 975" @ref:14
-LINK "Actions" @ref:15
-LINK "Projects 1" @ref:16
-LINK "Models" @ref:17
-LINK "Wiki" @ref:18
-BUTTON "Additional navigation options" @ref:19
-LINK "vscode" @ref:20
-LINK "MIT license" @ref:21
-LINK "Open in github.dev" @ref:22
-LINK "Open in a new github.dev tab" @ref:23
-LINK "Open in codespace" @ref:24
-LINK "GitHub Homepage" @ref:25
-LINK "Terms" @ref:26
-LINK "Privacy" @ref:27
-LINK "Security" @ref:28
-LINK "Status" @ref:29
-LINK "Community" @ref:30
-LINK "Docs" @ref:31
-LINK "Contact" @ref:32
-BUTTON "Manage cookies" @ref:33
-BUTTON "Do not share my personal information" @ref:34
+LINK "Skip to content" @ref:0 /div.header-wrapper[2]/a
+BUTTON "Open global navigation menu" @ref:1 /div.header-wrapper[2]/header/button.Button--secondary
+LINK "Homepage" @ref:2 /div.header-wrapper[2]/header/a
+BUTTON "Search or jump to…" @ref:3 /div.header-wrapper[2]/header/qbsearch-input.search-input/div.search-input-container[1]/button
+LINK "Chat with Copilot" @ref:4 /div.header-wrapper[2]/header/a#copilot-chat-header-button
+BUTTON "Open Copilot…" @ref:5 /div.header-wrapper[2]/header/button#global-copilot-menu-button
+BUTTON "Create something new" @ref:6 /div.header-wrapper[2]/header/button#global-create-menu-anchor
+LINK "Your issues" @ref:7 /div.header-wrapper[2]/header/a.Button[1]
+LINK "Your pull requests" @ref:8 /div.header-wrapper[2]/header/a.Button[2]
+LINK "Repositories" @ref:9 /div.header-wrapper[2]/header/a.Button[3]
+LINK "You have unread notifications" @ref:10 /div.header-wrapper[2]/header/a.Button
+BUTTON "Open user navigation menu" @ref:11 /div.header-wrapper[2]/header/button.Button--invisible
+LINK "Code" @ref:12 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[1]/a#code-tab
+LINK "Issues 5k+" @ref:13 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[2]/a#issues-tab
+LINK "Pull requests 975" @ref:14 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[3]/a#pull-requests-tab
+LINK "Actions" @ref:15 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[4]/a#actions-tab
+LINK "Projects 1" @ref:16 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[5]/a#projects-tab
+LINK "Models" @ref:17 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[6]/a#models-tab
+LINK "Wiki" @ref:18 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[7]/a#wiki-tab
+BUTTON "Additional navigation options" @ref:19 /div.header-wrapper[2]/header/nav/button.Button
+LINK "vscode" @ref:20 /main#js-repo-pjax-container/div#repository-container-header/div#repo-title-component[1]/a
+LINK "MIT license" @ref:21 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+LINK "Open in github.dev" @ref:22 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+LINK "Open in a new github.dev tab" @ref:23 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+LINK "Open in codespace" @ref:24 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[3]
+LINK "GitHub Homepage" @ref:25 /footer.footer/a.footer-octicon
+LINK "Terms" @ref:26 /footer.footer/nav/ul.list-style-none/li[1]/a.Link--secondary
+LINK "Privacy" @ref:27 /footer.footer/nav/ul.list-style-none/li[2]/a.Link--secondary
+LINK "Security" @ref:28 /footer.footer/nav/ul.list-style-none/li[3]/a.Link--secondary
+LINK "Status" @ref:29 /footer.footer/nav/ul.list-style-none/li[4]/a.Link--secondary
+LINK "Community" @ref:30 /footer.footer/nav/ul.list-style-none/li[5]/a.Link--secondary
+LINK "Docs" @ref:31 /footer.footer/nav/ul.list-style-none/li[6]/a.Link--secondary
+LINK "Contact" @ref:32 /footer.footer/nav/ul.list-style-none/li[7]/a.Link--secondary
+BUTTON "Manage cookies" @ref:33 /footer.footer/nav/ul.list-style-none/li[8]/button.Link--secondary
+BUTTON "Do not share my personal information" @ref:34 /footer.footer/nav/ul.list-style-none/li[9]/button.Link--secondary

@@ -3,72 +3,72 @@
     "filename": "amazon-com-detail",
     "htmlFile": "amazon-com-detail.html",
     "snapshotFile": "amazon-com-detail.snapshot.txt",
-    "generatedAt": "2026-01-17T13:52:57.401Z",
+    "generatedAt": "2026-01-17T13:56:31.525Z",
     "stats": {
       "elementCount": 97,
       "refCount": 95,
-      "outputSize": 4037,
-      "generationTime": 4237
+      "outputSize": 13637,
+      "generationTime": 4333
     }
   },
   {
     "filename": "edition-cnn-com",
     "htmlFile": "edition-cnn-com.html",
     "snapshotFile": "edition-cnn-com.snapshot.txt",
-    "generatedAt": "2026-01-17T13:53:02.556Z",
+    "generatedAt": "2026-01-17T13:56:36.699Z",
     "stats": {
       "elementCount": 41,
       "refCount": 39,
-      "outputSize": 1129,
-      "generationTime": 3694
+      "outputSize": 3822,
+      "generationTime": 3777
     }
   },
   {
     "filename": "github-com-microsoft-vscode",
     "htmlFile": "github-com-microsoft-vscode.html",
     "snapshotFile": "github-com-microsoft-vscode.snapshot.txt",
-    "generatedAt": "2026-01-17T13:53:02.844Z",
+    "generatedAt": "2026-01-17T13:56:36.981Z",
     "stats": {
       "elementCount": 37,
       "refCount": 35,
-      "outputSize": 1171,
-      "generationTime": 83
+      "outputSize": 3450,
+      "generationTime": 87
     }
   },
   {
     "filename": "npr-org-templates",
     "htmlFile": "npr-org-templates.html",
     "snapshotFile": "npr-org-templates.snapshot.txt",
-    "generatedAt": "2026-01-17T13:53:04.019Z",
+    "generatedAt": "2026-01-17T13:56:38.223Z",
     "stats": {
       "elementCount": 145,
       "refCount": 143,
-      "outputSize": 4852,
-      "generationTime": 949
+      "outputSize": 14949,
+      "generationTime": 1009
     }
   },
   {
     "filename": "stackoverflow-com",
     "htmlFile": "stackoverflow-com.html",
     "snapshotFile": "stackoverflow-com.snapshot.txt",
-    "generatedAt": "2026-01-17T13:53:05.317Z",
+    "generatedAt": "2026-01-17T13:56:39.601Z",
     "stats": {
       "elementCount": 212,
       "refCount": 210,
-      "outputSize": 7821,
-      "generationTime": 816
+      "outputSize": 22081,
+      "generationTime": 908
     }
   },
   {
     "filename": "test-all-mode",
     "htmlFile": "test-all-mode.html",
     "snapshotFile": "test-all-mode.snapshot.txt",
-    "generatedAt": "2026-01-17T13:53:05.332Z",
+    "generatedAt": "2026-01-17T13:56:39.618Z",
     "stats": {
       "elementCount": 4,
       "refCount": 2,
-      "outputSize": 178,
-      "generationTime": 8
+      "outputSize": 241,
+      "generationTime": 9
     }
   }
 ]

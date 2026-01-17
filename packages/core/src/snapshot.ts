@@ -528,6 +528,105 @@ function generateSimpleSelector(element: Element): string {
   return `${tag}:nth-of-type(${index})`;
 }
 
+// Semantic HTML tags worth preserving in xpath
+const SEMANTIC_TAGS = new Set([
+  'main', 'nav', 'header', 'footer', 'article', 'section', 'aside',
+  'form', 'table', 'ul', 'ol', 'li', 'dialog', 'menu',
+  'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+  'a', 'button', 'input', 'select', 'textarea', 'label',
+  'figure', 'figcaption', 'details', 'summary'
+]);
+
+// Class name patterns that are semantically meaningful
+const SEMANTIC_CLASS_PATTERNS = [
+  /^(nav|menu|header|footer|sidebar|content|main|search|login|signup|cart|modal|dialog)/i,
+  /^(btn|button|link|tab|card|list|item|form|input|field)/i,
+  /^(primary|secondary|active|selected|disabled|error|success|warning)/i,
+  /^(container|wrapper|row|col|grid)$/i,
+];
+
+/**
+ * Check if a class name is semantically meaningful
+ */
+function isSemanticClass(className: string): boolean {
+  // Skip utility classes (too short, or common CSS framework classes)
+  if (className.length < 3 || className.length > 25) return false;
+  if (/^[a-z]-/.test(className)) return false; // Tailwind-like single letter prefix
+  if (/^(mt|mb|ml|mr|mx|my|pt|pb|pl|pr|px|py|w-|h-|flex|grid|text-|bg-|border)/i.test(className)) return false;
+
+  return SEMANTIC_CLASS_PATTERNS.some(pattern => pattern.test(className));
+}
+
+/**
+ * Get the best semantic class from an element
+ */
+function getSemanticClass(element: Element): string | null {
+  if (!element.className || typeof element.className !== 'string') return null;
+
+  const classes = element.className.trim().split(/\s+/).filter(c => c.length > 0);
+  const semantic = classes.find(c => isSemanticClass(c));
+
+  return semantic || null;
+}
+
+/**
+ * Build a semantic xpath for an element
+ * Format: /body/main#content/nav.primary/ul/li[2]/a.nav-link
+ */
+function buildSemanticXPath(element: Element): string {
+  const parts: string[] = [];
+  let current: Element | null = element;
+  const body = element.ownerDocument.body;
+
+  while (current && current !== body && current.parentElement) {
+    const tag = current.tagName.toLowerCase();
+    const id = current.id;
+    const semanticClass = getSemanticClass(current);
+    const isSemanticTag = SEMANTIC_TAGS.has(tag);
+
+    // Build the segment
+    let segment = '';
+
+    // Always include semantic tags, skip generic div/span unless they have id/class
+    if (isSemanticTag || id || semanticClass) {
+      segment = tag;
+
+      // Add id if present (most specific)
+      if (id && id.length < 30 && !/^\d/.test(id) && !/[^a-zA-Z0-9_-]/.test(id)) {
+        segment += `#${id}`;
+      }
+      // Add semantic class if no id
+      else if (semanticClass) {
+        segment += `.${semanticClass}`;
+      }
+
+      // Add index if there are siblings with same tag
+      const parent = current.parentElement;
+      if (parent) {
+        const siblings = Array.from(parent.children).filter(s => s.tagName === current!.tagName);
+        if (siblings.length > 1) {
+          const index = siblings.indexOf(current) + 1;
+          segment += `[${index}]`;
+        }
+      }
+
+      parts.unshift(segment);
+    }
+
+    current = current.parentElement;
+
+    // Limit depth to keep xpath readable
+    if (parts.length >= 6) break;
+  }
+
+  // Always start with body for context
+  if (parts.length === 0) {
+    return '/' + element.tagName.toLowerCase();
+  }
+
+  return '/' + parts.join('/');
+}
+
 /**
  * Generate flat snapshot of the DOM
  */
@@ -637,6 +736,10 @@ export function createSnapshot(
       if (element.getAttribute('aria-selected') === 'true') states.push('selected');
 
       if (states.length) line += ` (${states.join(', ')})`;
+
+      // Add semantic xpath
+      const xpath = buildSemanticXPath(element);
+      line += ` ${xpath}`;
 
       lines.push(line);
     }
