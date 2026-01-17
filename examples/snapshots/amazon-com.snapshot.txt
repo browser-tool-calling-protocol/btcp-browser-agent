@@ -1,29 +1,29 @@
 PAGE: http://localhost/ | Amazon.com : gaming | viewport=1024x768
 SNAPSHOT: elements=1000 refs=21 captured=21/100 quality=low depth=10/10 mode=interactive,compact,landmarks,content-preview
 
-LINK "main content" @ref:0 href=#skippedLink
-LINK "Results" @ref:1 href=.s-asin a:has(h2)
-LINK "Filters" @ref:2 href=#s-refinements > div.a-section > div:first-child
-LINK "Search, option, forward slash" @ref:3 href=javascript:void(0)
-LINK "Cart, shift, option, c" @ref:4 href=javascript:void(0)
-LINK "Home, shift, option, h" @ref:5 href=javascript:void(0)
-LINK "Your orders, shift, option, o" @ref:6 href=javascript:void(0)
+LINK "main content" @ref:0
+LINK "Results" @ref:1
+LINK "Filters" @ref:2
+LINK "Search, option, forward slash" @ref:3
+LINK "Cart, shift, option, c" @ref:4
+LINK "Home, shift, option, h" @ref:5
+LINK "Your orders, shift, option, o" @ref:6
 BUTTON "Show/hide shortcuts, shift, option, z" @ref:7
-LINK "Amazon" @ref:8 href=/ref=nav_logo
+LINK "Amazon" @ref:8
 BUTTON "Deliver to Vietnam" @ref:9
 FORM id=nav-search-bar-form action=http://localhost/s/ref=nb_sb_noss method=GET
   SEARCH "All Select the department you want to search in..."
     SEARCHBOX "Search Amazon" @ref:10
     BUTTON "Agent Search" @ref:11 [type=submit]
-LINK "Choose a language for shopping in Amazon United..." @ref:12 href=/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang_ais
-LINK "Hello, sign in Account & Lists" @ref:13 href=https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fs%3Fk%3Dgaming%26_encoding%3DUTF8%26con...
-LINK "Returns & Orders" @ref:14 href=/gp/css/order-history?ref_=nav_orders_first
-LINK "0 items in cart" @ref:15 href=/gp/cart/view.html?ref_=nav_cart
+LINK "Choose a language for shopping in Amazon United..." @ref:12
+LINK "Hello, sign in Account & Lists" @ref:13
+LINK "Returns & Orders" @ref:14
+LINK "0 items in cart" @ref:15
 BUTTON @ref:16 [type=submit]
 BUTTON @ref:17 [type=submit]
-LINK "Sign in" @ref:18 href=https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fs%3Fk%3Dgaming%26_encoding%3DUTF8%26con...
-BUTTON "Open All Categories Menu" @ref:19 href=javascript: void(0)
-LINK "Click to call our Disability Customer Support l..." @ref:20 href=/gp/help/customer/accessibility
+LINK "Sign in" @ref:18
+BUTTON "Open All Categories Menu" @ref:19
+LINK "Click to call our Disability Customer Support l..." @ref:20
 FORM action=http://localhost/s method=GET
   FORM "Sort by: Featured Price: Low to High Price: Hig..."
 

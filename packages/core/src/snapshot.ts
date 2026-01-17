@@ -182,17 +182,6 @@ function getInputAttributes(element: Element): string {
 }
 
 /**
- * Get link destination
- */
-function getLinkHref(element: Element): string {
-  if (element.tagName === 'A') {
-    const href = element.getAttribute('href');
-    if (href) return ` href=${truncateByType(href, 'URL')}`;
-  }
-  return '';
-}
-
-/**
  * Get error message associated via aria-describedby
  */
 function getErrorMessage(element: Element, document: Document): string {
@@ -818,9 +807,6 @@ export function createSnapshot(
 
       // Add input attributes
       line += getInputAttributes(element);
-
-      // Add link href
-      line += getLinkHref(element);
 
       // Add state info
       const states: string[] = [];

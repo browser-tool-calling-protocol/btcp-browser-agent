@@ -3,79 +3,79 @@
     "filename": "amazon-com-detail",
     "htmlFile": "amazon-com-detail.html",
     "snapshotFile": "amazon-com-detail.snapshot.txt",
-    "generatedAt": "2026-01-17T13:36:08.489Z",
+    "generatedAt": "2026-01-17T13:37:41.845Z",
     "stats": {
       "elementCount": 103,
       "refCount": 95,
-      "outputSize": 8282,
-      "generationTime": 3855
+      "outputSize": 4376,
+      "generationTime": 3982
     }
   },
   {
     "filename": "amazon-com",
     "htmlFile": "amazon-com.html",
     "snapshotFile": "amazon-com.snapshot.txt",
-    "generatedAt": "2026-01-17T13:36:09.467Z",
+    "generatedAt": "2026-01-17T13:37:42.809Z",
     "stats": {
       "elementCount": 31,
       "refCount": 21,
-      "outputSize": 2335,
-      "generationTime": 466
+      "outputSize": 1578,
+      "generationTime": 477
     }
   },
   {
     "filename": "edition-cnn-com",
     "htmlFile": "edition-cnn-com.html",
     "snapshotFile": "edition-cnn-com.snapshot.txt",
-    "generatedAt": "2026-01-17T13:36:14.179Z",
+    "generatedAt": "2026-01-17T13:37:47.288Z",
     "stats": {
       "elementCount": 43,
       "refCount": 39,
-      "outputSize": 2583,
-      "generationTime": 3355
+      "outputSize": 1287,
+      "generationTime": 3097
     }
   },
   {
     "filename": "github-com-microsoft-vscode",
     "htmlFile": "github-com-microsoft-vscode.html",
     "snapshotFile": "github-com-microsoft-vscode.snapshot.txt",
-    "generatedAt": "2026-01-17T13:36:14.488Z",
+    "generatedAt": "2026-01-17T13:37:47.586Z",
     "stats": {
       "elementCount": 37,
       "refCount": 35,
-      "outputSize": 2114,
-      "generationTime": 124
+      "outputSize": 1262,
+      "generationTime": 119
     }
   },
   {
     "filename": "npr-org-templates",
     "htmlFile": "npr-org-templates.html",
     "snapshotFile": "npr-org-templates.snapshot.txt",
-    "generatedAt": "2026-01-17T13:36:15.693Z",
+    "generatedAt": "2026-01-17T13:37:48.729Z",
     "stats": {
       "elementCount": 145,
       "refCount": 143,
-      "outputSize": 10137,
-      "generationTime": 1009
+      "outputSize": 4945,
+      "generationTime": 955
     }
   },
   {
     "filename": "stackoverflow-com",
     "htmlFile": "stackoverflow-com.html",
     "snapshotFile": "stackoverflow-com.snapshot.txt",
-    "generatedAt": "2026-01-17T13:36:17.092Z",
+    "generatedAt": "2026-01-17T13:37:50.014Z",
     "stats": {
       "elementCount": 224,
       "refCount": 210,
-      "outputSize": 21312,
-      "generationTime": 927
+      "outputSize": 8977,
+      "generationTime": 853
     }
   },
   {
     "filename": "test-all-mode",
     "htmlFile": "test-all-mode.html",
     "snapshotFile": "test-all-mode.snapshot.txt",
-    "generatedAt": "2026-01-17T13:36:17.110Z",
+    "generatedAt": "2026-01-17T13:37:50.031Z",
     "stats": {
       "elementCount": 6,
       "refCount": 2,

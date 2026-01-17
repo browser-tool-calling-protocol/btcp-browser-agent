@@ -1,38 +1,38 @@
 PAGE: http://localhost/ | microsoft/vscode: Visual Studio Code | viewport=1024x768
 SNAPSHOT: elements=241 refs=35 captured=35/35 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
 
-LINK "Skip to content" @ref:0 href=#start-of-content
+LINK "Skip to content" @ref:0
 BUTTON "Open global navigation menu" @ref:1
-LINK "Homepage" @ref:2 href=https://github.com/
+LINK "Homepage" @ref:2
 BUTTON "Search or jump to…" @ref:3
-LINK "Chat with Copilot" @ref:4 href=/copilot
+LINK "Chat with Copilot" @ref:4
 BUTTON "Open Copilot…" @ref:5
 BUTTON "Create something new" @ref:6
-LINK "Your issues" @ref:7 href=/issues
-LINK "Your pull requests" @ref:8 href=/pulls
-LINK "Repositories" @ref:9 href=/repos
-LINK "You have unread notifications" @ref:10 href=/notifications
+LINK "Your issues" @ref:7
+LINK "Your pull requests" @ref:8
+LINK "Repositories" @ref:9
+LINK "You have unread notifications" @ref:10
 BUTTON "Open user navigation menu" @ref:11
-LINK "Code" @ref:12 href=/microsoft/vscode
-LINK "Issues 5k+" @ref:13 href=/microsoft/vscode/issues
-LINK "Pull requests 975" @ref:14 href=/microsoft/vscode/pulls
-LINK "Actions" @ref:15 href=/microsoft/vscode/actions
-LINK "Projects 1" @ref:16 href=/microsoft/vscode/projects
-LINK "Models" @ref:17 href=/microsoft/vscode/models
-LINK "Wiki" @ref:18 href=/microsoft/vscode/wiki
+LINK "Code" @ref:12
+LINK "Issues 5k+" @ref:13
+LINK "Pull requests 975" @ref:14
+LINK "Actions" @ref:15
+LINK "Projects 1" @ref:16
+LINK "Models" @ref:17
+LINK "Wiki" @ref:18
 BUTTON "Additional navigation options" @ref:19
-LINK "vscode" @ref:20 href=/microsoft/vscode
-LINK "MIT license" @ref:21 href=/microsoft/vscode/blob/main/LICENSE.txt
-LINK "Open in github.dev" @ref:22 href=https://github.dev/
-LINK "Open in a new github.dev tab" @ref:23 href=https://github.dev/
-LINK "Open in codespace" @ref:24 href=/codespaces/new/microsoft/vscode?resume=1
-LINK "GitHub Homepage" @ref:25 href=https://github.com
-LINK "Terms" @ref:26 href=https://docs.github.com/site-policy/github-terms/github-terms-of-service
-LINK "Privacy" @ref:27 href=https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
-LINK "Security" @ref:28 href=https://github.com/security
-LINK "Status" @ref:29 href=https://www.githubstatus.com/
-LINK "Community" @ref:30 href=https://github.community/
-LINK "Docs" @ref:31 href=https://docs.github.com/
-LINK "Contact" @ref:32 href=https://support.github.com?tags=dotcom-footer
+LINK "vscode" @ref:20
+LINK "MIT license" @ref:21
+LINK "Open in github.dev" @ref:22
+LINK "Open in a new github.dev tab" @ref:23
+LINK "Open in codespace" @ref:24
+LINK "GitHub Homepage" @ref:25
+LINK "Terms" @ref:26
+LINK "Privacy" @ref:27
+LINK "Security" @ref:28
+LINK "Status" @ref:29
+LINK "Community" @ref:30
+LINK "Docs" @ref:31
+LINK "Contact" @ref:32
 BUTTON "Manage cookies" @ref:33
 BUTTON "Do not share my personal information" @ref:34

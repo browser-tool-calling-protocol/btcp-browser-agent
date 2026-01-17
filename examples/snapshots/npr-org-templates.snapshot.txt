@@ -1,8 +1,8 @@
 PAGE: http://localhost/ | Rose Mary Woods, Devoted Nixon Secretary, Dies : NPR | viewport=1024x768
 SNAPSHOT: elements=565 refs=143 captured=143/143 quality=high depth=10/10 mode=interactive,compact,landmarks,content-preview
 
-LINK "Skip to main content" @ref:0 href=#mainContent
-LINK "Keyboard shortcuts for audio player" @ref:1 href=https://help.npr.org/contact/s/article?name=what-are-the-keyboard-shortcuts-for-using-the-npr-org-audio-player
+LINK "Skip to main content" @ref:0
+LINK "Keyboard shortcuts for audio player" @ref:1
 BUTTON @ref:2
 BUTTON @ref:3
 BUTTON @ref:4
@@ -13,74 +13,74 @@ BUTTON "Hourly News" @ref:8
 BUTTON "Listen Live" @ref:9
 BUTTON "My Playlist" @ref:10
 BUTTON "Open Navigation Menu" @ref:11
-LINK @ref:12 href=/
-LINK "Newsletters" @ref:13 href=/newsletters/
-LINK "Sign In" @ref:14 href=#
-LINK "NPR Shop" @ref:15 href=https://shopnpr.org
-LINK "Donate" @ref:16 href=/donations/support
-LINK "Local Station" @ref:17 href=/donations/support
-LINK "NPR Network" @ref:18 href=https://contribute.npr.org/
+LINK @ref:12
+LINK "Newsletters" @ref:13
+LINK "Sign In" @ref:14
+LINK "NPR Shop" @ref:15
+LINK "Donate" @ref:16
+LINK "Local Station" @ref:17
+LINK "NPR Network" @ref:18
 BUTTON "Close Navigation Menu" @ref:19 (expanded)
-LINK "Home" @ref:20 href=/
-LINK "News" @ref:21 href=/sections/news/
+LINK "Home" @ref:20
+LINK "News" @ref:21
 BUTTON "Expand/collapse submenu for News" @ref:22
-LINK "National" @ref:23 href=/sections/national/
-LINK "World" @ref:24 href=/sections/world/
-LINK "Politics" @ref:25 href=/sections/politics/
-LINK "Business" @ref:26 href=/sections/business/
-LINK "Health" @ref:27 href=/sections/health/
-LINK "Science" @ref:28 href=/sections/science/
-LINK "Climate" @ref:29 href=/sections/climate/
-LINK "Race" @ref:30 href=/sections/codeswitch/
-LINK "Culture" @ref:31 href=/sections/culture/
+LINK "National" @ref:23
+LINK "World" @ref:24
+LINK "Politics" @ref:25
+LINK "Business" @ref:26
+LINK "Health" @ref:27
+LINK "Science" @ref:28
+LINK "Climate" @ref:29
+LINK "Race" @ref:30
+LINK "Culture" @ref:31
 BUTTON "Expand/collapse submenu for Culture" @ref:32
-LINK "Books" @ref:33 href=/books/
-LINK "Movies" @ref:34 href=/sections/movies/
-LINK "Television" @ref:35 href=/sections/television/
-LINK "Pop Culture" @ref:36 href=/sections/pop-culture/
-LINK "Food" @ref:37 href=/sections/food/
-LINK "Art & Design" @ref:38 href=/sections/art-design/
-LINK "Performing Arts" @ref:39 href=/sections/performing-arts/
-LINK "Life Kit" @ref:40 href=/lifekit/
-LINK "Gaming" @ref:41 href=/sections/gaming/
-LINK "Music" @ref:42 href=/music/
+LINK "Books" @ref:33
+LINK "Movies" @ref:34
+LINK "Television" @ref:35
+LINK "Pop Culture" @ref:36
+LINK "Food" @ref:37
+LINK "Art & Design" @ref:38
+LINK "Performing Arts" @ref:39
+LINK "Life Kit" @ref:40
+LINK "Gaming" @ref:41
+LINK "Music" @ref:42
 BUTTON "Expand/collapse submenu for Music" @ref:43
-LINK "The Best Music of 2025" @ref:44 href=https://www.npr.org/2025/12/10/g-s1-99930/best-music-of-2025
-LINK "All Songs Considered" @ref:45 href=https://www.npr.org/sections/allsongs/
-LINK "Tiny Desk" @ref:46 href=https://www.npr.org/series/tiny-desk-concerts/
-LINK "Music Features" @ref:47 href=https://www.npr.org/sections/music-features
-LINK "Live Sessions" @ref:48 href=https://www.npr.org/series/770565791/npr-music-live-sessions
-LINK "Podcasts & Shows" @ref:49 href=/podcasts-and-shows/
+LINK "The Best Music of 2025" @ref:44
+LINK "All Songs Considered" @ref:45
+LINK "Tiny Desk" @ref:46
+LINK "Music Features" @ref:47
+LINK "Live Sessions" @ref:48
+LINK "Podcasts & Shows" @ref:49
 BUTTON "Expand/collapse submenu for Podcasts & Shows" @ref:50
-LINK "Morning Edition" @ref:51 href=/programs/morning-edition/
-LINK "Weekend Edition Saturday" @ref:52 href=/programs/weekend-edition-saturday/
-LINK "Weekend Edition Sunday" @ref:53 href=/programs/weekend-edition-sunday/
-LINK "All Things Considered" @ref:54 href=/programs/all-things-considered/
-LINK "Fresh Air" @ref:55 href=/programs/fresh-air/
-LINK "Up First" @ref:56 href=/podcasts/510318/up-first/
-LINK "Embedded" @ref:57 href=https://www.npr.org/podcasts/510311/embedded
-LINK "The NPR Politics Podcast" @ref:58 href=https://www.npr.org/podcasts/510310/npr-politics-podcast
-LINK "Throughline" @ref:59 href=https://www.npr.org/podcasts/510333/throughline
-LINK "Trump's Terms" @ref:60 href=https://www.npr.org/podcasts/510374/trumps-terms
-LINK "More Podcasts & Shows" @ref:61 href=/podcasts-and-shows/
-LINK "Search" @ref:62 href=/search/
-LINK "Newsletters" @ref:63 href=/newsletters/
-LINK "NPR Shop" @ref:64 href=https://shopnpr.org
-LINK "Sign In" @ref:65 href=#
-LINK "music" @ref:66 href=/music/
-LINK "The Best Music of 2025" @ref:67 href=https://www.npr.org/2025/12/10/g-s1-99930/best-music-of-2025
-LINK "All Songs Considered" @ref:68 href=https://www.npr.org/sections/allsongs/
-LINK "Tiny Desk" @ref:69 href=https://www.npr.org/series/tiny-desk-concerts/
-LINK "Music Features" @ref:70 href=https://www.npr.org/sections/music-features
-LINK "Live Sessions" @ref:71 href=https://www.npr.org/series/770565791/npr-music-live-sessions
-LINK "About NPR" @ref:72 href=/about/
-LINK "Diversity" @ref:73 href=/diversity/
-LINK "Support" @ref:74 href=/support/
-LINK "Careers" @ref:75 href=/careers/
-LINK "Press" @ref:76 href=/series/750003/press-room/
-LINK "Ethics" @ref:77 href=/ethics/
-LINK "Obituaries" @ref:78 href=https://www.npr.org/sections/obituaries/
-LINK "Morning Edition" @ref:79 href=https://www.npr.org/programs/morning-edition/2005/01/24/13107969/
+LINK "Morning Edition" @ref:51
+LINK "Weekend Edition Saturday" @ref:52
+LINK "Weekend Edition Sunday" @ref:53
+LINK "All Things Considered" @ref:54
+LINK "Fresh Air" @ref:55
+LINK "Up First" @ref:56
+LINK "Embedded" @ref:57
+LINK "The NPR Politics Podcast" @ref:58
+LINK "Throughline" @ref:59
+LINK "Trump's Terms" @ref:60
+LINK "More Podcasts & Shows" @ref:61
+LINK "Search" @ref:62
+LINK "Newsletters" @ref:63
+LINK "NPR Shop" @ref:64
+LINK "Sign In" @ref:65
+LINK "music" @ref:66
+LINK "The Best Music of 2025" @ref:67
+LINK "All Songs Considered" @ref:68
+LINK "Tiny Desk" @ref:69
+LINK "Music Features" @ref:70
+LINK "Live Sessions" @ref:71
+LINK "About NPR" @ref:72
+LINK "Diversity" @ref:73
+LINK "Support" @ref:74
+LINK "Careers" @ref:75
+LINK "Press" @ref:76
+LINK "Ethics" @ref:77
+LINK "Obituaries" @ref:78
+LINK "Morning Edition" @ref:79
 BUTTON "Listen· 2:20" @ref:80
 BUTTON "Playlist" @ref:81
 BUTTON "Toggle more options" @ref:82
@@ -88,59 +88,59 @@ BUTTON "Enlarge this image" @ref:83
 BUTTON "Facebook" @ref:84
 BUTTON "Flipboard" @ref:85
 BUTTON "Email" @ref:86
-LINK "2 police officers relive Jan. 6 through their o..." @ref:87 href=https://www.npr.org/sections/the-picture-show/2026/01/05/g-s1-103118/jan6-trump-capitol-police-officers-bodycam-footage-video
-LINK "Venezuela's Machado says she presented her Nobe..." @ref:88 href=https://www.npr.org/2026/01/16/nx-s1-5679424/venezuela-machado-nobel-prize-trump-meeting
-LINK "NPR+ | The News Roundup For October 24, 2025" @ref:89 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-october-24-2025
-LINK "House Republicans are investigating Jan. 6. NPR..." @ref:90 href=https://www.npr.org/2026/01/16/nx-s1-5678645/jan-6-house-gop-capitol-trump
-LINK "NPR+ | The News Roundup For November 14, 2025" @ref:91 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-november-14-2025
-LINK "NPR+ | The News Roundup For January 9, 2026" @ref:92 href=https://donate.plus.npr.org/listen/1a-plus/the-news-roundup-for-january-9-2026
-LINK "claudette colvin obituary montgomery bus civil ..." @ref:93 href=https://www.npr.org/2026/01/13/g-s1-105927/claudette-colvin-obituary-montgomery-bus-civil-rights
-LINK "scott adams dilbert dies" @ref:94 href=https://www.npr.org/2026/01/13/nx-s1-5413219/scott-adams-dilbert-dies
-LINK "bob weir grateful dead obituary" @ref:95 href=https://www.npr.org/2026/01/10/nx-s1-4373822/bob-weir-grateful-dead-obituary
-LINK "cia turncoat aldrich ames dies at 84" @ref:96 href=https://www.npr.org/2026/01/07/g-s1-104875/cia-turncoat-aldrich-ames-dies-at-84
-LINK "bela tarr filmmaker dead" @ref:97 href=https://www.npr.org/2026/01/06/nx-s1-5668240/bela-tarr-filmmaker-dead
-LINK "edith renfrow smith pioneer and witness to hist..." @ref:98 href=https://www.npr.org/2026/01/06/g-s1-104782/edith-renfrow-smith-pioneer-and-witness-to-history-dies-at-111
-LINK "trump post online minnesota social media ice" @ref:99 href=https://www.npr.org/2026/01/16/nx-s1-5675909/trump-post-online-minnesota-social-media-ice
-LINK "jan 6 house gop capitol trump" @ref:100 href=https://www.npr.org/2026/01/16/nx-s1-5678645/jan-6-house-gop-capitol-trump
-LINK "a knight of the seven kingdoms review hbo game ..." @ref:101 href=https://www.npr.org/2026/01/16/nx-s1-5671737/a-knight-of-the-seven-kingdoms-review-hbo-game-of-thrones-prequel
-LINK "minneapolis insurrection act trump threats" @ref:102 href=https://www.npr.org/2026/01/15/nx-s1-5678612/minneapolis-insurrection-act-trump-threats
-LINK "verizon outage what happened" @ref:103 href=https://www.npr.org/2026/01/15/nx-s1-5678889/verizon-outage-what-happened
-LINK "up first newsletter minneapolis protests venezu..." @ref:104 href=https://www.npr.org/2026/01/16/g-s1-106275/up-first-newsletter-minneapolis-protests-venezuela-opposition-trump-health-care-plan
-LINK "trumprx pharma drug price deals list prices" @ref:105 href=https://www.npr.org/2026/01/16/nx-s1-5678915/trumprx-pharma-drug-price-deals-list-prices
-LINK "hospice cervical cancer prevention" @ref:106 href=https://www.npr.org/2026/01/16/g-s1-106001/hospice-cervical-cancer-prevention
-LINK "canada cut tariff chinese evs canadian farm pro..." @ref:107 href=https://www.npr.org/2026/01/16/nx-s1-5679469/canada-cut-tariff-chinese-evs-canadian-farm-products
-LINK "greenland denmark nasa grok star trek golden gl..." @ref:108 href=https://www.npr.org/2026/01/16/g-s1-106110/greenland-denmark-nasa-grok-star-trek-golden-globes
-LINK "immigration minnesota democrats navigate resist..." @ref:109 href=https://www.npr.org/2026/01/16/nx-s1-5678565/immigration-minnesota-democrats-navigate-resistance-to-trump
-LINK "fema cuts jobs trump" @ref:110 href=https://www.npr.org/2026/01/16/nx-s1-5677605/fema-cuts-jobs-trump
-LINK "Home" @ref:111 href=/
-LINK "News" @ref:112 href=/sections/news/
-LINK "Culture" @ref:113 href=/sections/culture/
-LINK "Music" @ref:114 href=/music/
-LINK "Podcasts & Shows" @ref:115 href=/podcasts-and-shows
-LINK "Newsletters" @ref:116 href=/newsletters/
-LINK "Facebook" @ref:117 href=https://www.facebook.com/NPR/
-LINK "Instagram" @ref:118 href=https://www.instagram.com/npr/
-LINK "Press" @ref:119 href=/series/750003/press-room/
-LINK "Public Editor" @ref:120 href=/sections/publiceditor/
-LINK "Corrections" @ref:121 href=/corrections/
-LINK "Transcripts" @ref:122 href=/transcripts/
-LINK "Contact & Help" @ref:123 href=https://help.npr.org/contact/s/
-LINK "Overview" @ref:124 href=/about/
-LINK "Diversity" @ref:125 href=/diversity/
-LINK "NPR Network" @ref:126 href=/network/
-LINK "Accessibility" @ref:127 href=/about-npr/1136563345/accessibility
-LINK "Ethics" @ref:128 href=/ethics/
-LINK "Finances" @ref:129 href=/about-npr/178660742/public-radio-finances
-LINK "Support Public Radio" @ref:130 href=/support/
-LINK "Sponsor NPR" @ref:131 href=/about-npr/186948703/corporate-sponsorship
-LINK "NPR Careers" @ref:132 href=/careers/
-LINK "NPR Shop" @ref:133 href=https://shopnpr.org/
-LINK "NPR Extra" @ref:134 href=/sections/npr-extra/
-LINK "Terms of Use" @ref:135 href=/about-npr/179876898/terms-of-use
-LINK "Privacy" @ref:136 href=/about-npr/179878450/privacy-policy
-LINK "Your Privacy Choices" @ref:137 href=/about-npr/179878450/privacy-policy#yourchoices
-LINK "Text Only" @ref:138 href=https://text.npr.org/
-LINK "Become an NPR sponsor" @ref:139 href=/about-npr/186948703/corporate-sponsorship
-LINK "Get NPR+" @ref:140 href=https://plus.npr.org/?utm_medium=nprweb&source=mvpcta
-LINK "Sign In" @ref:141 href=#
+LINK "2 police officers relive Jan. 6 through their o..." @ref:87
+LINK "Venezuela's Machado says she presented her Nobe..." @ref:88
+LINK "NPR+ | The News Roundup For October 24, 2025" @ref:89
+LINK "House Republicans are investigating Jan. 6. NPR..." @ref:90
+LINK "NPR+ | The News Roundup For November 14, 2025" @ref:91
+LINK "NPR+ | The News Roundup For January 9, 2026" @ref:92
+LINK "claudette colvin obituary montgomery bus civil ..." @ref:93
+LINK "scott adams dilbert dies" @ref:94
+LINK "bob weir grateful dead obituary" @ref:95
+LINK "cia turncoat aldrich ames dies at 84" @ref:96
+LINK "bela tarr filmmaker dead" @ref:97
+LINK "edith renfrow smith pioneer and witness to hist..." @ref:98
+LINK "trump post online minnesota social media ice" @ref:99
+LINK "jan 6 house gop capitol trump" @ref:100
+LINK "a knight of the seven kingdoms review hbo game ..." @ref:101
+LINK "minneapolis insurrection act trump threats" @ref:102
+LINK "verizon outage what happened" @ref:103
+LINK "up first newsletter minneapolis protests venezu..." @ref:104
+LINK "trumprx pharma drug price deals list prices" @ref:105
+LINK "hospice cervical cancer prevention" @ref:106
+LINK "canada cut tariff chinese evs canadian farm pro..." @ref:107
+LINK "greenland denmark nasa grok star trek golden gl..." @ref:108
+LINK "immigration minnesota democrats navigate resist..." @ref:109
+LINK "fema cuts jobs trump" @ref:110
+LINK "Home" @ref:111
+LINK "News" @ref:112
+LINK "Culture" @ref:113
+LINK "Music" @ref:114
+LINK "Podcasts & Shows" @ref:115
+LINK "Newsletters" @ref:116
+LINK "Facebook" @ref:117
+LINK "Instagram" @ref:118
+LINK "Press" @ref:119
+LINK "Public Editor" @ref:120
+LINK "Corrections" @ref:121
+LINK "Transcripts" @ref:122
+LINK "Contact & Help" @ref:123
+LINK "Overview" @ref:124
+LINK "Diversity" @ref:125
+LINK "NPR Network" @ref:126
+LINK "Accessibility" @ref:127
+LINK "Ethics" @ref:128
+LINK "Finances" @ref:129
+LINK "Support Public Radio" @ref:130
+LINK "Sponsor NPR" @ref:131
+LINK "NPR Careers" @ref:132
+LINK "NPR Shop" @ref:133
+LINK "NPR Extra" @ref:134
+LINK "Terms of Use" @ref:135
+LINK "Privacy" @ref:136
+LINK "Your Privacy Choices" @ref:137
+LINK "Text Only" @ref:138
+LINK "Become an NPR sponsor" @ref:139
+LINK "Get NPR+" @ref:140
+LINK "Sign In" @ref:141
 BUTTON "Close modal" @ref:142
