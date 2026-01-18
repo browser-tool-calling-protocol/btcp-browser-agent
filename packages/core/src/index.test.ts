@@ -32,9 +32,9 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        expect(response.data.tree).toContain('button');
-        expect(response.data.tree).toContain('Click me');
-        expect(response.data.tree).toContain('@ref:');
+        expect(response.data).toContain('button');
+        expect(response.data).toContain('Click me');
+        expect(response.data).toContain('@ref:');
       }
     });
 
@@ -50,8 +50,9 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        const refs = response.data.refs;
-        expect(Object.keys(refs).length).toBeGreaterThan(0);
+        // Snapshot now returns string directly (refs are internal)
+        expect(typeof response.data).toBe('string');
+        expect(response.data.length).toBeGreaterThan(0);
       }
     });
 
@@ -66,8 +67,8 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        expect(response.data.tree).toContain('Visible');
-        expect(response.data.tree).not.toContain('Hidden');
+        expect(response.data).toContain('Visible');
+        expect(response.data).not.toContain('Hidden');
       }
     });
 
@@ -79,7 +80,7 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        expect(response.data.tree).toContain('Close dialog');
+        expect(response.data).toContain('Close dialog');
       }
     });
 
@@ -99,11 +100,11 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        expect(response.data.tree).toContain('Submit');
-        expect(response.data.tree).not.toContain('Cancel');
-        expect(response.data.tree).not.toContain('Home');
-        expect(response.data.tree).toContain('grep=Submit');
-        expect(response.data.tree).toContain('matches=1');
+        expect(response.data).toContain('Submit');
+        expect(response.data).not.toContain('Cancel');
+        expect(response.data).not.toContain('Home');
+        expect(response.data).toContain('grep=Submit');
+        expect(response.data).toContain('matches=1');
       }
     });
 
@@ -119,8 +120,8 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        expect(response.data.tree).toContain('PAGE:');
-        expect(response.data.tree).not.toContain('Click');
+        expect(response.data).toContain('PAGE:');
+        expect(response.data).not.toContain('Click');
       }
     });
 
@@ -139,8 +140,8 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        expect(response.data.tree).toContain('SUBMIT');
-        expect(response.data.tree).not.toContain('Cancel');
+        expect(response.data).toContain('SUBMIT');
+        expect(response.data).not.toContain('Cancel');
       }
     });
 
@@ -160,9 +161,9 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        expect(response.data.tree).not.toContain('Submit');
-        expect(response.data.tree).not.toContain('Cancel');
-        expect(response.data.tree).toContain('Home');
+        expect(response.data).not.toContain('Submit');
+        expect(response.data).not.toContain('Cancel');
+        expect(response.data).toContain('Home');
       }
     });
 
@@ -181,8 +182,8 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       if (response.success) {
-        expect(response.data.tree).toContain('[here]');
-        expect(response.data.tree).not.toContain('Other');
+        expect(response.data).toContain('[here]');
+        expect(response.data).not.toContain('Other');
       }
     });
   });

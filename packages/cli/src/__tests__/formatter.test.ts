@@ -109,13 +109,7 @@ describe('formatData', () => {
       expect(result).toContain('value: 42');
     });
 
-    it('extracts tree from snapshot data', () => {
-      const data = {
-        tree: '- button "Submit"\n- input "Email"',
-        refs: {},
-      };
-      expect(formatData(data)).toBe('- button "Submit"\n- input "Email"');
-    });
+    // Removed: snapshot now returns string directly, not object with tree field
   });
 });
 

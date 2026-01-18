@@ -3,6 +3,7 @@
  */
 import { createClient } from 'btcp-browser-agent/extension';
 import { createCLI } from 'btcp-browser-agent/cli';
+import { runGoogleGithubScenario } from './scenario-google-github';
 
 const client = createClient();
 const cli = createCLI(client);
@@ -98,6 +99,42 @@ async function initializePopup() {
 
 initializePopup();
 
+// AI Scenario
+document.getElementById('btnRunScenario')?.addEventListener('click', async () => {
+  console.log('[DEBUG] Scenario button clicked!');
+  const btn = document.getElementById('btnRunScenario') as HTMLButtonElement;
+  const originalText = btn.textContent;
+
+  try {
+    console.log('[DEBUG] Starting scenario execution...');
+    btn.disabled = true;
+    btn.textContent = '🤖 Running scenario...';
+    log('Starting AI Agent Scenario...\n───────────────────────────');
+
+    await runGoogleGithubScenario(client, (message, type = 'info') => {
+      console.log('[DEBUG] Scenario log:', message);
+      const timestamp = new Date().toLocaleTimeString();
+      const prefix = type === 'error' ? '❌' : type === 'success' ? '✅' : type === 'warning' ? '⚠️' : 'ℹ️';
+      const currentOutput = output.textContent || '';
+      output.textContent = currentOutput + `\n[${timestamp}] ${prefix} ${message}`;
+      output.scrollTop = output.scrollHeight;
+    });
+
+    btn.textContent = '✅ Scenario Complete!';
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }, 3000);
+  } catch (e) {
+    log(`Scenario failed: ${e}`);
+    btn.textContent = '❌ Scenario Failed';
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.disabled = false;
+    }, 3000);
+  }
+});
+
 // Quick actions
 document.getElementById('btnSnapshot')?.addEventListener('click', async () => {
   log('Taking snapshot...');
@@ -113,7 +150,7 @@ document.getElementById('btnGetHTML')?.addEventListener('click', async () => {
   log('Getting page HTML...');
   try {
     const data = await client.snapshot({ format: 'html' });
-    log(data.tree);
+    log(data);
   } catch (e) {
     log(`Error: ${e}`);
   }

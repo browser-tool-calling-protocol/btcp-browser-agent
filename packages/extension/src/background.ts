@@ -357,6 +357,17 @@ export class BackgroundAgent {
 
     if (options?.waitUntil) {
       await this.waitForTabLoad(tabId);
+
+      // Clear refs and highlights after navigation completes
+      try {
+        await this.sendToContentAgent({
+          id: `nav_clear_${Date.now()}`,
+          action: 'clearHighlight'
+        }, tabId);
+      } catch (error) {
+        // Ignore errors - content script might not be ready yet
+        console.log('[BackgroundAgent] Failed to clear highlights after navigation:', error);
+      }
     }
   }
 

@@ -14,7 +14,10 @@ import { JSDOM, VirtualConsole } from 'jsdom';
 import { createSnapshot } from '../../packages/core/src/snapshot.js';
 import { createSimpleRefMap } from '../../packages/core/src/ref-map.js';
 
-const SNAPSHOTS_DIR = join(process.cwd(), 'examples', 'snapshots');
+// Support running from repo root or snapshots directory
+const SNAPSHOTS_DIR = process.cwd().endsWith('snapshots')
+  ? process.cwd()
+  : join(process.cwd(), 'examples', 'snapshots');
 
 // Create a JSDOM instance from HTML content
 function createDom(html: string) {
@@ -44,7 +47,7 @@ function processFile(htmlPath: string) {
   const refMap = createSimpleRefMap();
 
   const start = performance.now();
-  const snapshot = createSnapshot(document, refMap, {
+  const snapshotTree = createSnapshot(document, refMap, {
     interactive: true,
     compact: true,
     maxDepth: 50,
@@ -52,11 +55,12 @@ function processFile(htmlPath: string) {
   });
   const duration = performance.now() - start;
 
-  const elementCount = snapshot.tree.split('\n').filter(line => line.trim()).length;
-  const refCount = Object.keys(snapshot.refs).length;
+  const elementCount = snapshotTree.split('\n').filter(line => line.trim()).length;
+  // Extract ref count from @ref: markers in the tree
+  const refCount = (snapshotTree.match(/@ref:\d+/g) || []).length;
 
   // Save snapshot
-  writeFileSync(join(SNAPSHOTS_DIR, snapshotFile), snapshot.tree, 'utf-8');
+  writeFileSync(join(SNAPSHOTS_DIR, snapshotFile), snapshotTree, 'utf-8');
 
   console.log(`    -> ${snapshotFile} (${elementCount} elements, ${refCount} refs, ${Math.round(duration)}ms)`);
 
@@ -65,7 +69,7 @@ function processFile(htmlPath: string) {
     htmlFile,
     snapshotFile,
     generatedAt: new Date().toISOString(),
-    stats: { elementCount, refCount, outputSize: snapshot.tree.length, generationTime: Math.round(duration) },
+    stats: { elementCount, refCount, outputSize: snapshotTree.length, generationTime: Math.round(duration) },
   };
 }
 

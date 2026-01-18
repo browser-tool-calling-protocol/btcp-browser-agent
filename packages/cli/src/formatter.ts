@@ -76,11 +76,6 @@ function formatObject(obj: Record<string, unknown>): string {
   if (entries.length === 0) return '{}';
 
   // Check for specific known formats
-  if ('tree' in obj && typeof obj.tree === 'string') {
-    // Snapshot data - just return the tree
-    return obj.tree;
-  }
-
   if ('tabs' in obj && Array.isArray(obj.tabs)) {
     // Tab list
     return formatTabList(obj.tabs as TabInfo[]);

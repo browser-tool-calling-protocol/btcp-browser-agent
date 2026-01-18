@@ -18,10 +18,7 @@ function createMockClient(overrides: Partial<CommandClient> = {}): CommandClient
     reload: vi.fn().mockResolvedValue({ id: '1', success: true }),
     getUrl: vi.fn().mockResolvedValue('https://example.com'),
     getTitle: vi.fn().mockResolvedValue('Example Page'),
-    snapshot: vi.fn().mockResolvedValue({
-      tree: '- button "Submit" [@ref:1]',
-      refs: { '@ref:1': { selector: '#submit', role: 'button', name: 'Submit' } },
-    }),
+    snapshot: vi.fn().mockResolvedValue('- button "Submit" [@ref:1]'),
     click: vi.fn().mockResolvedValue({ id: '1', success: true }),
     type: vi.fn().mockResolvedValue({ id: '1', success: true }),
     fill: vi.fn().mockResolvedValue({ id: '1', success: true }),

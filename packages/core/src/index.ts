@@ -137,6 +137,7 @@ export function createContentAgent(doc: Document = document, win: Window = windo
 
     clearRefs(): void {
       refMap.clear();
+      actions.invalidateSnapshot();
     },
 
     handleMessage(

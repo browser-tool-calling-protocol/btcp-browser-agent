@@ -123,10 +123,7 @@ export interface Client {
     interactive?: boolean;
     compact?: boolean;
     format?: 'tree' | 'html';
-  }): Promise<{
-    tree: string;
-    refs: Record<string, { selector: string; role: string; name?: string }>;
-  }>;
+  }): Promise<string>;
 
   /**
    * Click an element
@@ -334,10 +331,7 @@ export function createClient(): Client {
         format: options?.format,
       });
       assertSuccess(response);
-      return response.data as {
-        tree: string;
-        refs: Record<string, { selector: string; role: string; name?: string }>;
-      };
+      return response.data as string;
     },
 
     async click(selector, options) {

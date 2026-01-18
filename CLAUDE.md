@@ -67,16 +67,19 @@ Commands are strongly typed with a discriminated union:
 - **ExtensionAction** (11 actions in `packages/extension/src/types.ts`): Browser operations like `navigate`, `screenshot`, `tabNew`
 - All commands extend `BaseCommand` with `id` and `action` fields
 
-### Element References
+### Element References and Snapshot API
 
 The snapshot system creates stable element references:
 
 ```typescript
-// Snapshot returns: { tree: string, refs: Record<string, RefInfo> }
+// Snapshot returns a string (accessibility tree with embedded @ref:N markers)
+const tree = await client.snapshot();
+// Example output: "- BUTTON \"Submit\" [@ref:1]"
+
 // Use refs in commands: { action: 'click', selector: '@ref:5' }
 ```
 
-Refs are stored in a `RefMap` (WeakRef-based for memory management) and persist across commands within the same content script session.
+**Important**: The snapshot API returns a `string` directly (the accessibility tree). Element refs are embedded as `@ref:N` markers in the tree and stored internally in a `RefMap` (WeakRef-based for memory management). Refs persist across commands within the same content script session and are used internally for the `highlight` feature.
 
 ## Package Structure
 

@@ -658,7 +658,7 @@ export class DOMActions {
     all?: boolean;
     format?: 'tree' | 'html';
     grep?: string | { pattern: string; ignoreCase?: boolean; invert?: boolean; fixedStrings?: boolean };
-  }): Promise<SnapshotData> {
+  }): Promise<string> {
     const root = options.selector
       ? this.getElement(options.selector)
       : this.document.body;
@@ -674,10 +674,11 @@ export class DOMActions {
       grep: options.grep,
     });
 
-    // Store snapshot data for highlight command
+    // Store snapshot data for highlight command (preserve refs internally)
     this.lastSnapshotData = snapshotData;
 
-    return snapshotData;
+    // Return only the tree string
+    return snapshotData.tree;
   }
 
   private async querySelector(selector: string): Promise<{ found: boolean; ref?: string }> {
@@ -991,15 +992,15 @@ export class DOMActions {
     // Clear any existing highlights
     this.clearExistingOverlay();
 
-    // Create overlay container with absolute positioning
+    // Create overlay container with absolute positioning covering entire document
     this.overlayContainer = this.document.createElement('div');
     this.overlayContainer.id = 'btcp-highlight-overlay';
     this.overlayContainer.style.cssText = `
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: ${this.document.documentElement.scrollWidth}px;
+      height: ${this.document.documentElement.scrollHeight}px;
       pointer-events: none;
       z-index: 999999;
       contain: layout style paint;
@@ -1093,6 +1094,14 @@ export class DOMActions {
     this.window.addEventListener('scroll', this.scrollListener, { passive: true });
 
     return { highlighted: highlightedCount };
+  }
+
+  /**
+   * Invalidate snapshot data (called on navigation or manual clear)
+   */
+  public invalidateSnapshot(): void {
+    this.lastSnapshotData = null;
+    this.clearHighlight();
   }
 
   /**

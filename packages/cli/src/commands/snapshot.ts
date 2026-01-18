@@ -16,6 +16,6 @@ export const snapshotCommand: CommandHandler = {
     const maxDepth = getFlagNumber(flags, 'depth');
 
     const result = await client.snapshot({ selector, maxDepth });
-    return { success: true, data: result.tree };
+    return { success: true, data: result };
   },
 };

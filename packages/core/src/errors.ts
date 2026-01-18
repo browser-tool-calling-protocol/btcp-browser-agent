@@ -165,7 +165,7 @@ export function createElementNotFoundError(
 
   if (isRef) {
     suggestions.push(
-      'Ref may have expired. Refs are cleared on each snapshot() call.',
+      'Ref may have expired. Refs are cleared on snapshot() calls and page navigation.',
       'Call snapshot() again to get fresh refs.'
     );
   }

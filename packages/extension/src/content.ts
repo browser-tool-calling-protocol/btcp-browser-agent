@@ -149,5 +149,24 @@ document.addEventListener('resume', () => {
   getContentAgent();
 });
 
+// Clear refs on navigation (full page navigation)
+window.addEventListener('beforeunload', () => {
+  console.log('[ContentScript] Page navigating, clearing refs...');
+  const currentAgent = getContentAgent();
+  currentAgent.clearRefs();
+});
+
+// Detect SPA navigation (URL changes without full page reload)
+let lastUrl = window.location.href;
+setInterval(() => {
+  const currentUrl = window.location.href;
+  if (currentUrl !== lastUrl) {
+    console.log('[ContentScript] URL changed, clearing refs...', { from: lastUrl, to: currentUrl });
+    lastUrl = currentUrl;
+    const currentAgent = getContentAgent();
+    currentAgent.clearRefs();
+  }
+}, 1000);
+
 // Export for programmatic use
 export { getContentAgent, handleCommand };
