@@ -5,7 +5,7 @@
  * Produces a compact, AI-friendly list of interactive elements.
  */
 
-import type { SnapshotData, RefMap, PageContentResponse, HeadingInfo, LandmarkInfo } from './types.js';
+import type { SnapshotData, RefMap, PageContentResponse, PageOutlineResponse, HeadingInfo, LandmarkInfo, SectionInfo } from './types.js';
 
 /**
  * Get HTML element constructors from window (works in both browser and jsdom)
@@ -1222,5 +1222,273 @@ export function extractPageContent(
       paragraphs: paragraphCount,
       links: linkCount,
     },
+  };
+}
+
+/**
+ * Page outline extraction options
+ */
+interface OutlineExtractionOptions {
+  includeSections?: boolean;
+  includeLandmarks?: boolean;
+  previewLength?: number;
+  refMap: RefMap;
+}
+
+/**
+ * Get text preview from an element (first N characters of meaningful content)
+ */
+function getTextPreview(element: Element, maxLength: number): string {
+  const text = extractTextContent(element);
+  if (text.length <= maxLength) return text;
+
+  // Try to break at word boundary
+  const truncated = text.slice(0, maxLength);
+  const lastSpace = truncated.lastIndexOf(' ');
+  if (lastSpace > maxLength * 0.7) {
+    return truncated.slice(0, lastSpace) + '...';
+  }
+  return truncated + '...';
+}
+
+/**
+ * Count words in an element
+ */
+function countWords(element: Element): number {
+  const text = extractTextContent(element);
+  return text.split(/\s+/).filter(Boolean).length;
+}
+
+/**
+ * Get content between this heading and the next heading of same or higher level
+ */
+function getSectionContent(heading: Element): Element | null {
+  const level = parseInt(heading.tagName[1], 10);
+  const container = heading.ownerDocument.createElement('div');
+
+  let sibling = heading.nextElementSibling;
+  while (sibling) {
+    // Stop at next heading of same or higher level
+    if (sibling.tagName.match(/^H[1-6]$/)) {
+      const siblingLevel = parseInt(sibling.tagName[1], 10);
+      if (siblingLevel <= level) break;
+    }
+    container.appendChild(sibling.cloneNode(true));
+    sibling = sibling.nextElementSibling;
+  }
+
+  return container.children.length > 0 ? container : null;
+}
+
+/**
+ * Build hierarchical section structure from headings
+ */
+function buildSectionHierarchy(
+  root: Element,
+  refMap: RefMap,
+  previewLength: number
+): SectionInfo[] {
+  const headings = root.querySelectorAll('h1, h2, h3, h4, h5, h6');
+  const sections: SectionInfo[] = [];
+  const stack: { level: number; section: SectionInfo }[] = [];
+
+  for (const heading of headings) {
+    const level = parseInt(heading.tagName[1], 10);
+    const text = heading.textContent?.trim() || '';
+    if (!text) continue;
+
+    // Generate ref for this heading
+    const ref = refMap.generateRef(heading);
+
+    // Get section content for preview and word count
+    const sectionContent = getSectionContent(heading);
+    const preview = sectionContent
+      ? getTextPreview(sectionContent, previewLength)
+      : '';
+    const wordCount = sectionContent ? countWords(sectionContent) : 0;
+
+    const section: SectionInfo = {
+      heading: text.slice(0, 200),
+      level,
+      ref,
+      preview,
+      wordCount,
+    };
+
+    // Find parent section (closest heading with lower level)
+    while (stack.length > 0 && stack[stack.length - 1].level >= level) {
+      stack.pop();
+    }
+
+    if (stack.length === 0) {
+      // Top-level section
+      sections.push(section);
+    } else {
+      // Nested section
+      const parent = stack[stack.length - 1].section;
+      if (!parent.subsections) parent.subsections = [];
+      parent.subsections.push(section);
+    }
+
+    stack.push({ level, section });
+  }
+
+  return sections;
+}
+
+/**
+ * Extract landmarks with refs for drilling down
+ */
+function extractLandmarksWithRefs(
+  root: Element,
+  refMap: RefMap,
+  previewLength: number
+): LandmarkInfo[] {
+  const landmarks: LandmarkInfo[] = [];
+  const seen = new Set<Element>();
+
+  // Find elements with explicit landmark roles
+  const roleElements = root.querySelectorAll('[role]');
+  for (const element of roleElements) {
+    if (seen.has(element)) continue;
+
+    const role = element.getAttribute('role');
+    if (role && ['main', 'navigation', 'banner', 'contentinfo', 'complementary', 'form', 'search', 'region', 'article'].includes(role)) {
+      seen.add(element);
+      const ref = refMap.generateRef(element);
+      const label = element.getAttribute('aria-label') || undefined;
+      const preview = getTextPreview(element, previewLength);
+      const wordCount = countWords(element);
+
+      landmarks.push({
+        role,
+        label,
+        preview,
+        ref,
+        wordCount,
+      });
+    }
+  }
+
+  // Find semantic landmark elements
+  const semanticTags = ['main', 'nav', 'header', 'footer', 'aside', 'article', 'section'];
+  for (const tagName of semanticTags) {
+    const elements = root.querySelectorAll(tagName);
+    for (const element of elements) {
+      if (seen.has(element)) continue;
+      if (element.hasAttribute('role')) continue; // Already handled
+
+      seen.add(element);
+      const role = LANDMARK_ROLES[tagName.toUpperCase()] || tagName;
+      const ref = refMap.generateRef(element);
+      const label = element.getAttribute('aria-label') || undefined;
+      const preview = getTextPreview(element, previewLength);
+      const wordCount = countWords(element);
+
+      // Only include if there's meaningful content
+      if (wordCount > 5) {
+        landmarks.push({
+          role,
+          label,
+          preview,
+          ref,
+          wordCount,
+        });
+      }
+    }
+  }
+
+  return landmarks;
+}
+
+/**
+ * Generate suggestions for which sections to read
+ */
+function generateSuggestions(
+  sections: SectionInfo[],
+  landmarks: LandmarkInfo[]
+): string[] {
+  const suggestions: string[] = [];
+
+  // Suggest main content area
+  const mainLandmark = landmarks.find(l => l.role === 'main' || l.role === 'article');
+  if (mainLandmark && mainLandmark.wordCount && mainLandmark.wordCount > 50) {
+    suggestions.push(`Main content area (${mainLandmark.ref}) has ~${mainLandmark.wordCount} words`);
+  }
+
+  // Suggest largest sections
+  const topSections = [...sections]
+    .filter(s => s.wordCount > 50)
+    .sort((a, b) => b.wordCount - a.wordCount)
+    .slice(0, 3);
+
+  for (const section of topSections) {
+    suggestions.push(`Section "${section.heading}" (${section.ref}) has ~${section.wordCount} words`);
+  }
+
+  return suggestions;
+}
+
+/**
+ * Extract lightweight page outline for AI-driven exploration
+ *
+ * This provides structure with refs, allowing AI agents to decide
+ * which sections to drill into for full content.
+ */
+export function extractPageOutline(
+  document: Document,
+  refMap: RefMap,
+  options: Partial<OutlineExtractionOptions> = {}
+): PageOutlineResponse {
+  const {
+    includeSections = true,
+    includeLandmarks = true,
+    previewLength = 100,
+  } = options;
+
+  const root = document.body;
+
+  // Extract sections with refs
+  const sections = includeSections
+    ? buildSectionHierarchy(root, refMap, previewLength)
+    : [];
+
+  // Extract landmarks with refs
+  const landmarks = includeLandmarks
+    ? extractLandmarksWithRefs(root, refMap, previewLength)
+    : [];
+
+  // Calculate statistics
+  const totalWords = countWords(root);
+  const linkCount = root.querySelectorAll('a[href]').length;
+  const imageCount = root.querySelectorAll('img').length;
+  const formCount = root.querySelectorAll('form').length;
+
+  // Count sections recursively
+  function countSections(sects: SectionInfo[]): number {
+    let count = sects.length;
+    for (const s of sects) {
+      if (s.subsections) count += countSections(s.subsections);
+    }
+    return count;
+  }
+
+  // Generate suggestions
+  const suggestions = generateSuggestions(sections, landmarks);
+
+  return {
+    url: document.location?.href || 'about:blank',
+    title: document.title || '',
+    description: document.querySelector('meta[name="description"]')?.getAttribute('content') || undefined,
+    sections,
+    landmarks,
+    stats: {
+      totalWords,
+      sectionCount: countSections(sections),
+      linkCount,
+      imageCount,
+      formCount,
+    },
+    suggestions: suggestions.length > 0 ? suggestions : undefined,
   };
 }

@@ -14,8 +14,9 @@ import type {
   ValidateElementResponse,
   ValidateRefsResponse,
   PageContentResponse,
+  PageOutlineResponse,
 } from './types.js';
-import { createSnapshot, extractPageContent } from './snapshot.js';
+import { createSnapshot, extractPageContent, extractPageOutline } from './snapshot.js';
 import {
   DetailedError,
   createElementNotFoundError,
@@ -216,6 +217,13 @@ export class DOMActions {
           includeHeadings: command.includeHeadings,
           includeLandmarks: command.includeLandmarks,
           includeMetadata: command.includeMetadata,
+        });
+
+      case 'getPageOutline':
+        return this.getPageOutline({
+          includeSections: command.includeSections,
+          includeLandmarks: command.includeLandmarks,
+          previewLength: command.previewLength,
         });
 
       default:
@@ -1221,6 +1229,21 @@ export class DOMActions {
       includeHeadings: options.includeHeadings,
       includeLandmarks: options.includeLandmarks,
       includeMetadata: options.includeMetadata,
+    });
+  }
+
+  /**
+   * Get lightweight page outline for AI-driven exploration
+   */
+  private async getPageOutline(options: {
+    includeSections?: boolean;
+    includeLandmarks?: boolean;
+    previewLength?: number;
+  }): Promise<PageOutlineResponse> {
+    return extractPageOutline(this.document, this.refMap, {
+      includeSections: options.includeSections,
+      includeLandmarks: options.includeLandmarks,
+      previewLength: options.previewLength,
     });
   }
 

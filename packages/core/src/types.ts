@@ -45,7 +45,8 @@ export type CoreAction =
   | 'highlight'
   | 'clearHighlight'
   // Content extraction
-  | 'getPageContent';
+  | 'getPageContent'
+  | 'getPageOutline';
 
 // Base command structure (id is optional - auto-generated if not provided)
 export interface BaseCommand {
@@ -414,17 +415,42 @@ export interface GetPageContentCommand extends BaseCommand {
 export interface HeadingInfo {
   level: number;
   text: string;
-  /** Optional ref if heading is interactive */
+  /** Ref for drilling down into this section */
   ref?: string;
 }
 
 /**
- * Landmark region summary
+ * Landmark region info for page outline
  */
 export interface LandmarkInfo {
   role: string;
   label?: string;
-  summary: string;
+  /** Brief preview of content (for outline mode) */
+  preview?: string;
+  /** Full summary of content (for content mode) */
+  summary?: string;
+  /** Ref for drilling down into this landmark */
+  ref?: string;
+  /** Estimated word count in this section */
+  wordCount?: number;
+}
+
+/**
+ * Section info for page outline
+ */
+export interface SectionInfo {
+  /** Heading text */
+  heading: string;
+  /** Heading level (1-6) */
+  level: number;
+  /** Ref for drilling down into this section */
+  ref: string;
+  /** Brief preview of section content */
+  preview: string;
+  /** Estimated word count */
+  wordCount: number;
+  /** Nested subsections */
+  subsections?: SectionInfo[];
 }
 
 /**
@@ -454,6 +480,78 @@ export interface PageContentResponse {
     paragraphs: number;
     links: number;
   };
+}
+
+/**
+ * Get a lightweight page outline for AI-driven exploration
+ *
+ * Returns just the page structure without heavy content extraction,
+ * allowing AI agents to decide which sections to drill into.
+ *
+ * @example Reactive summarization workflow
+ * ```typescript
+ * // Step 1: Get page outline
+ * const outline = await agent.execute({ action: 'getPageOutline' });
+ * // Returns structure with refs for each section
+ *
+ * // Step 2: AI decides which sections are relevant
+ * // "I see a main article and sidebar. Let me extract the article."
+ *
+ * // Step 3: Drill into specific section
+ * const article = await agent.execute({
+ *   action: 'getPageContent',
+ *   selector: '@ref:3'  // The main article section
+ * });
+ * ```
+ */
+export interface GetPageOutlineCommand extends BaseCommand {
+  action: 'getPageOutline';
+
+  /** Include section hierarchy with previews (default: true) */
+  includeSections?: boolean;
+
+  /** Include landmark regions (default: true) */
+  includeLandmarks?: boolean;
+
+  /** Maximum preview length per section (default: 100) */
+  previewLength?: number;
+}
+
+/**
+ * Response data for getPageOutline command
+ */
+export interface PageOutlineResponse {
+  /** Page URL */
+  url: string;
+
+  /** Page title */
+  title: string;
+
+  /** Meta description */
+  description?: string;
+
+  /** Hierarchical section structure with refs */
+  sections: SectionInfo[];
+
+  /** Landmark regions with refs */
+  landmarks: LandmarkInfo[];
+
+  /** Overall page statistics */
+  stats: {
+    /** Estimated total word count */
+    totalWords: number;
+    /** Number of sections */
+    sectionCount: number;
+    /** Number of links */
+    linkCount: number;
+    /** Number of images */
+    imageCount: number;
+    /** Number of forms */
+    formCount: number;
+  };
+
+  /** Suggested sections to read based on content density */
+  suggestions?: string[];
 }
 
 export type Modifier = 'Alt' | 'Control' | 'Meta' | 'Shift';
@@ -492,7 +590,8 @@ export type Command =
   | ValidateRefsCommand
   | HighlightCommand
   | ClearHighlightCommand
-  | GetPageContentCommand;
+  | GetPageContentCommand
+  | GetPageOutlineCommand;
 
 // Response types
 export interface SuccessResponse<T = unknown> {
