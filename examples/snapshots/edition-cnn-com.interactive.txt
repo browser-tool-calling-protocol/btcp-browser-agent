@@ -1,0 +1,202 @@
+PAGE: http://localhost/ | Breaking News, Latest News and Videos | CNN | viewport=1024x768
+SNAPSHOT: elements=1903 refs=199
+
+BUTTON "Open Menu Icon" @ref:0 /nav#pageHeader/div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__left[1]/button#headerMenuIcon[1]
+LINK "CNN logo" @ref:1 /nav#pageHeader/div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__left[1]/a
+LINK "User Account Log In Button" @ref:2 /div.header__subnav-mount/div.header__container[1]/div.header__right[2]/div#desktop-header-account-nav/nav/button[3]
+LINK "CIA director in Venezuela" @ref:3 /section/section.tabcontent/div.container/ul/li.card[1]/a
+LINK "Viktor Orbán" @ref:4 /section/section.tabcontent/div.container/ul/li.card[2]/a
+LINK "Lull in nuclear tests" @ref:5 /section/section.tabcontent/div.container/ul/li.card[3]/a
+LINK "Video Trump’s eating habits 3:13" @ref:6 /section/section.tabcontent/div.container/ul/li.card[4]/a
+LINK "Basketball and gambling" @ref:7 /section/section.tabcontent/div.container/ul/li.card[5]/a
+LINK "Tourism in Bangladesh" @ref:8 /section/section.tabcontent/div.container/ul/li.card[6]/a
+LINK "How to find your style" @ref:9 /section/section.tabcontent/div.container/ul/li.card[7]/a
+LINK "new pope conclave day two 05 08 25" @ref:10 /section[3]/section/section.tabcontent/a
+LINK "function imageLoadError(img) { const fallbackIm..." @ref:11 /section/section.tabcontent/div.container[1]/ul/li.card[1]/a[1]
+LINK "911 transcripts and incident report reveal wher..." @ref:12 /section/section.tabcontent/div.container[1]/ul/li.card[1]/a[2]
+LINK "Catch up Trump threatens to invoke a rarely-use..." @ref:13 /section/section.tabcontent/div.container[1]/ul/li.card[2]/a
+LINK "Analysis Minneapolis is becoming a critical tes..." @ref:14 /section/section.tabcontent/div.container[1]/ul/li.card[3]/a
+LINK "The White House" @ref:15 /section/section.tabcontent/div.container[2]/ul/li.card[1]/a[1]
+LINK "Venezuela’s Machado gave Trump her Nobel prize...." @ref:16 /section/section.tabcontent/div.container[2]/ul/li.card[1]/a[2]
+LINK "CIA director traveled to Venezuela to meet with..." @ref:17 /section/section.tabcontent/div.container[2]/ul/li.card[2]/a
+LINK "Why the Trump administration is holding million..." @ref:18 /section/section.tabcontent/div.container[2]/ul/li.card[3]/a
+LINK "Trump floats tariffs on countries opposed to US..." @ref:19 /section[3]/section/section.tabcontent/div.container[1]/a
+LINK "• Live Updates Live Updates CNN" @ref:20 /section[3]/section/section.tabcontent/div.container[1]/div.card[1]/a[1]
+LINK "• Live Updates Live Updates Live Updates The US..." @ref:21 /section[3]/section/section.tabcontent/div.container[1]/div.card[1]/a[2]
+LINK "• CNN Poll CNN Poll CNN Poll Majority of Americ..." @ref:22 /section[3]/section/section.tabcontent/div.container[1]/div.card[2]/a
+LINK "Judge deals blow to the Trump Justice Departmen..." @ref:23 /section[3]/section/section.tabcontent/div.container[1]/div.card[3]/a
+LINK "• Video 2:01 MAHSA/AFP/Middle East Images/Getty..." @ref:24 /section/section.tabcontent/div.container[2]/ul/li.card[1]/a[1]
+LINK "Video Angha: In US-Iran tensions, ‘next 48 to 7..." @ref:25 /section/section.tabcontent/div.container[2]/ul/li.card[1]/a[2]
+LINK "• Video 1:32 CNN" @ref:26 /section/section.tabcontent/div.container[2]/ul/li.card[2]/a[1]
+LINK "Video CNN political director breaks down the po..." @ref:27 /section/section.tabcontent/div.container[2]/ul/li.card[2]/a[2]
+LINK "• Video 6:52 CNN" @ref:28 /section/section.tabcontent/div.container[2]/ul/li.card[3]/a[1]
+LINK "Video ‘Sloppy’: Journalist went through ICE’s h..." @ref:29 /section/section.tabcontent/div.container[2]/ul/li.card[3]/a[2]
+LINK "Learn More" @ref:30 /li.card/div.card--media-large/div/div/div#overlay-root/a
+LINK "Video Catch up on today’s global news" @ref:31 /section/section.tabcontent/div.container[1]/ul/li.card/a
+LINK "Md Zakir Hossain/iStock Editorial/Getty Images" @ref:32 /section/section.tabcontent/div.container[2]/ul/li.card[1]/a[1]
+LINK "It’s home to the world’s longest natural sea be..." @ref:33 /section/section.tabcontent/div.container[2]/ul/li.card[1]/a[2]
+LINK "• Video 18:17 Travel Nevada" @ref:34 /section/section.tabcontent/div.container[2]/ul/li.card[2]/a[1]
+LINK "Video Is this man going to die live on Netflix?..." @ref:35 /section/section.tabcontent/div.container[2]/ul/li.card[2]/a[2]
+LINK "Yosef Garfinkel" @ref:36 /section/section.tabcontent/div.container[2]/ul/li.card[3]/a[1]
+LINK "These ancient designs may be the first evidence..." @ref:37 /section/section.tabcontent/div.container[2]/ul/li.card[3]/a[2]
+LINK "Sunny Celeste/imageBROKER/Shutterstock" @ref:38 /section/section.tabcontent/div.container[2]/ul/li.card[4]/a[1]
+LINK "Leonardo da Vinci’s DNA may be hiding in his ar..." @ref:39 /section/section.tabcontent/div.container[2]/ul/li.card[4]/a[2]
+LINK "• Video 1:08 Youtube/@dhammacetiya" @ref:40 /section/section.tabcontent/div.container[2]/ul/li.card[5]/a[1]
+LINK "Video Why Buddhist monks and their dog are walk..." @ref:41 /section/section.tabcontent/div.container[2]/ul/li.card[5]/a[2]
+LINK "Marton Monus/picture-alliance/dpa/AP" @ref:42 /section/section.tabcontent/div.container/ul/li.card[1]/a[1]
+LINK "Rightwingers of the world unite to endorse Orbá..." @ref:43 /section/section.tabcontent/div.container/ul/li.card[1]/a[2]
+LINK "On the verge of strikes in Iran, the US held of..." @ref:44 /section/section.tabcontent/div.container/ul/li.card[2]/a
+LINK "At least 7 killed in Uganda election violence" @ref:45 /section/section.tabcontent/div.container/ul/li.card[3]/a
+LINK "Canada’s leader patches things up with China as..." @ref:46 /section/section.tabcontent/div.container/ul/li.card[4]/a
+LINK "Video Hundreds evacuated after fire in Seoul 0:25" @ref:47 /section/section.tabcontent/div.container/ul/li.card[5]/a
+LINK "Mother of Elon Musk’s son sues his xAI over AI-..." @ref:48 /section/section.tabcontent/div.container/ul/li.card[6]/a
+LINK "Britta Pedersen/picture alliance/Getty Images" @ref:49 /section/section.tabcontent/div.container/ul/li.card[1]/a[1]
+LINK "‘As far as I’m concerned, this regime has falle..." @ref:50 /section/section.tabcontent/div.container/ul/li.card[1]/a[2]
+LINK "Dia Dipasupil/WireImage/Getty Images" @ref:51 /section/section.tabcontent/div.container/ul/li.card[2]/a[1]
+LINK "Jennifer Lawrence says she lost out on Tarantin..." @ref:52 /section/section.tabcontent/div.container/ul/li.card[2]/a[2]
+LINK "Richard Shotwell/Invision/AP" @ref:53 /section/section.tabcontent/div.container/ul/li.card[3]/a[1]
+LINK "Pamela Anderson felt ‘yucky’ sitting close to ‘..." @ref:54 /section/section.tabcontent/div.container/ul/li.card[3]/a[2]
+LINK "Richard Tsong-Taatarii/Star Tribune/AP" @ref:55 /section/section.tabcontent/div.container/ul/li.card[1]/a[1]
+LINK "How the unrest of 2020 cast a long shadow on Mi..." @ref:56 /section/section.tabcontent/div.container/ul/li.card[1]/a[2]
+LINK "Tyrone Siu/Reuters" @ref:57 /section/section.tabcontent/div.container/ul/li.card[2]/a[1]
+LINK "The Minneapolis mayor told ICE to leave his cit..." @ref:58 /section/section.tabcontent/div.container/ul/li.card[2]/a[2]
+LINK "Sarah Rudd" @ref:59 /section[3]/section/section.tabcontent/div.container/div.card/a[1]
+LINK "A 4-year-old died of flu complications. Her mot..." @ref:60 /section[3]/section/section.tabcontent/div.container/div.card/a[2]
+LINK "Touchstone/Kobal/Shutterstock" @ref:61 /section/section.tabcontent/div.container/ul/li.card[1]/a[1]
+LINK "How to actually find your personal style in 2026" @ref:62 /section/section.tabcontent/div.container/ul/li.card[1]/a[2]
+LINK "Roger Kisby/2026GG/Penske Media/Getty Images" @ref:63 /section/section.tabcontent/div.container/ul/li.card[2]/a[1]
+LINK "Why men are setting aside their sneakers in 2026" @ref:64 /section/section.tabcontent/div.container/ul/li.card[2]/a[2]
+LINK "• Video 3:13 cnn" @ref:65 /section/section.tabcontent/div.container/ul/li.card[1]/a[1]
+LINK "Video RFK Jr.: Trump has the most ‘unhinged’ ea..." @ref:66 /section/section.tabcontent/div.container/ul/li.card[1]/a[2]
+LINK "• Analysis Analysis Francis Chung/Politico/Bloo..." @ref:67 /section/section.tabcontent/div.container/ul/li.card[2]/a[1]
+LINK "Analysis Dolls, pencils, backyard chickens and ..." @ref:68 /section/section.tabcontent/div.container/ul/li.card[2]/a[2]
+LINK "Mark Schiefelbein/AP/File" @ref:69 /section/section.tabcontent/div.container/ul/li.card[3]/a[1]
+LINK "Pentagon moves to turn independent military out..." @ref:70 /section/section.tabcontent/div.container/ul/li.card[3]/a[2]
+LINK "David Paul Morris/Bloomberg/Getty Images" @ref:71 /section/section.tabcontent/div.container/ul/li.card[1]/a[1]
+LINK "Trump’s affordability pledge strikes directly a..." @ref:72 /section/section.tabcontent/div.container/ul/li.card[1]/a[2]
+LINK "William Volcov/Brazil Photo Pres/Shutterstock" @ref:73 /section/section.tabcontent/div.container/ul/li.card[2]/a[1]
+LINK "Americans are paying more than ever for cars. C..." @ref:74 /section/section.tabcontent/div.container/ul/li.card[2]/a[2]
+LINK "skynesher/E+/Getty Images" @ref:75 /section/section.tabcontent/div.container/ul/li.card[3]/a[1]
+LINK "When a credit report can hurt your chances of b..." @ref:76 /section/section.tabcontent/div.container/ul/li.card[3]/a[2]
+LINK "Rick Egan/Pool/The Salt Lake Tribune" @ref:77 /section/section.tabcontent/div.container/ul/li.card/a[1]
+LINK "Alleged Charlie Kirk assassin Tyler Robinson’s ..." @ref:78 /section/section.tabcontent/div.container/ul/li.card/a[2]
+LINK "• Analysis Analysis Steven King/Icon Sportswire..." @ref:79 /section/section.tabcontent/div.container/ul/li.card/a[1]
+LINK "Analysis Money is flowing freely in college ath..." @ref:80 /section/section.tabcontent/div.container/ul/li.card/a[2]
+LINK "Edwin Tan/E+/Getty Images" @ref:81 /section/section.tabcontent/div.container/ul/li.card/a[1]
+LINK "Financial stress may be as bad for the heart as..." @ref:82 /section/section.tabcontent/div.container/ul/li.card/a[2]
+LINK "Lexi Critchett/Bloomberg/Getty Images" @ref:83 /section/section.tabcontent/div.container/ul/li.card/a[1]
+LINK "Trump and northeastern governors push for massi..." @ref:84 /section/section.tabcontent/div.container/ul/li.card/a[2]
+LINK "Roger Harris/Science Photo Library RF/Getty Images" @ref:85 /section/section.tabcontent/div.container/ul/li.card/a[1]
+LINK "Fossil analysis changes what paleontologists kn..." @ref:86 /section/section.tabcontent/div.container/ul/li.card/a[2]
+LINK "Wales News Service" @ref:87 /section/section.tabcontent/div.container/ul/li.card/a[1]
+LINK "Two-star Michelin restaurant receives one-star ..." @ref:88 /section/section.tabcontent/div.container/ul/li.card/a[2]
+LINK "• Video 1:12 Wrecktangle Pizza" @ref:89 /section/section.tabcontent/div.container/ul/li.card[1]/a[1]
+LINK "Video Crowd confronts federal agents at MN pizz..." @ref:90 /section/section.tabcontent/div.container/ul/li.card[1]/a[2]
+LINK "• Video 0:38 Obtained by CNN" @ref:91 /section/section.tabcontent/div.container/ul/li.card[2]/a[1]
+LINK "Video Law enforcement use flash bang to enter h..." @ref:92 /section/section.tabcontent/div.container/ul/li.card[2]/a[2]
+LINK "• Video 1:32 CNN" @ref:93 /section/section.tabcontent/div.container/ul/li.card[3]/a[1]
+LINK "Video CNN Poll: Majority call Trump’s first yea..." @ref:94 /section/section.tabcontent/div.container/ul/li.card[3]/a[2]
+LINK "• Video 0:41 Reuters" @ref:95 /section/section.tabcontent/div.container/ul/li.card[4]/a[1]
+LINK "Video Machado gave Trump her Nobel prize medal ..." @ref:96 /section/section.tabcontent/div.container/ul/li.card[4]/a[2]
+LINK "• Video 1:18 CNN" @ref:97 /section/section.tabcontent/div.container/ul/li.card[5]/a[1]
+LINK "Video We went to the ‘Mom Dance Party’ 1:18" @ref:98 /section/section.tabcontent/div.container/ul/li.card[5]/a[2]
+LINK "• Video 1:15 The White House" @ref:99 /section/section.tabcontent/div.container/ul/li.card[6]/a[1]
+LINK "Video See Kimmel’s offer to Trump after Machado..." @ref:100 /section/section.tabcontent/div.container/ul/li.card[6]/a[2]
+LINK "• Video 0:25 Reuters" @ref:101 /section/section.tabcontent/div.container/ul/li.card[7]/a[1]
+LINK "Video Hundreds evacuated after fire in Seoul 0:25" @ref:102 /section/section.tabcontent/div.container/ul/li.card[7]/a[2]
+LINK "• Video 1:07 Korean Central TV" @ref:103 /section/section.tabcontent/div.container/ul/li.card[8]/a[1]
+LINK "Video North Korea takes a cue from Hollywood 1:07" @ref:104 /section/section.tabcontent/div.container/ul/li.card[8]/a[2]
+LINK "• Video 0:18 New York State Police" @ref:105 /section/section.tabcontent/div.container/ul/li.card[9]/a[1]
+LINK "Video Several hospitalized after multi-car cras..." @ref:106 /section/section.tabcontent/div.container/ul/li.card[9]/a[2]
+LINK "• Video 1:22 CNN" @ref:107 /section/section.tabcontent/div.container/ul/li.card[10]/a[1]
+LINK "Video CNN on scene as tear gas deployed in Minn..." @ref:108 /section/section.tabcontent/div.container/ul/li.card[10]/a[2]
+LINK "• Video 0:50 Todd Pomerleau" @ref:109 /section/section.tabcontent/div.container/ul/li.card[11]/a[1]
+LINK "Video Student who was mistakenly deported accep..." @ref:110 /section/section.tabcontent/div.container/ul/li.card[11]/a[2]
+LINK "• Video 1:46 Reuters" @ref:111 /section/section.tabcontent/div.container/ul/li.card[12]/a[1]
+LINK "Video Trump to use private military contractors..." @ref:112 /section/section.tabcontent/div.container/ul/li.card[12]/a[2]
+LINK "• Video 1:08 Youtube/@dhammacetiya" @ref:113 /section/section.tabcontent/div.container/ul/li.card[13]/a[1]
+LINK "Video Why Buddhist monks and their dog are walk..." @ref:114 /section/section.tabcontent/div.container/ul/li.card[13]/a[2]
+LINK "• Video 0:35 Getty Images" @ref:115 /section/section.tabcontent/div.container/ul/li.card[14]/a[1]
+LINK "Video Palestinian activist Mahmoud Khalil faces..." @ref:116 /section/section.tabcontent/div.container/ul/li.card[14]/a[2]
+LINK "• Video 1:03 Reuters" @ref:117 /section/section.tabcontent/div.container/ul/li.card[15]/a[1]
+LINK "Video More European troops head to Greenland as..." @ref:118 /section/section.tabcontent/div.container/ul/li.card[15]/a[2]
+LINK "• Video 1:18 Metropolitan Detention Center Bern..." @ref:119 /section/section.tabcontent/div.container/ul/li.card[16]/a[1]
+LINK "Video Director Timothy Busfield appears in cour..." @ref:120 /section/section.tabcontent/div.container/ul/li.card[16]/a[2]
+LINK "• Video 2:04 CNN" @ref:121 /section/section.tabcontent/div.container/ul/li.card[17]/a[1]
+LINK "Video Buildings collapse over tents in Gaza ami..." @ref:122 /section/section.tabcontent/div.container/ul/li.card[17]/a[2]
+LINK "• Video 3:05 CNN" @ref:123 /section/section.tabcontent/div.container/ul/li.card[18]/a[1]
+LINK "Video Trump threatens to invoke insurrection ac..." @ref:124 /section/section.tabcontent/div.container/ul/li.card[18]/a[2]
+LINK "• Video 1:48 Bryce Urbany/CNN" @ref:125 /section/section.tabcontent/div.container/ul/li.card[19]/a[1]
+LINK "Video Can you buy a longer, healthier life? 1:48" @ref:126 /section/section.tabcontent/div.container/ul/li.card[19]/a[2]
+LINK "• Video 1:08 Andriy Sadovyi, Mayor of Lviv" @ref:127 /section/section.tabcontent/div.container/ul/li.card[20]/a[1]
+LINK "Video Woman in Ukraine carries on working after..." @ref:128 /section/section.tabcontent/div.container/ul/li.card[20]/a[2]
+LINK "• Video 1:09 CNN File" @ref:129 /section/section.tabcontent/div.container/ul/li.card[21]/a[1]
+LINK "Video Why Japan’s Prime Minister may skip sumo ..." @ref:130 /section/section.tabcontent/div.container/ul/li.card[21]/a[2]
+LINK "• Video 1:29 CNN" @ref:131 /section/section.tabcontent/div.container/ul/li.card[22]/a[1]
+LINK "Video People line up for fast-growing Atlanta c..." @ref:132 /section/section.tabcontent/div.container/ul/li.card[22]/a[2]
+LINK "• Video 0:28 Reuters" @ref:133 /section/section.tabcontent/div.container/ul/li.card[23]/a[1]
+LINK "Video Cars swept out to sea in Australian flood..." @ref:134 /section/section.tabcontent/div.container/ul/li.card[23]/a[2]
+LINK "• Video 0:29 CNN" @ref:135 /section/section.tabcontent/div.container/ul/li.card[24]/a[1]
+LINK "Video Minneapolis mayor says city tensions are ..." @ref:136 /section/section.tabcontent/div.container/ul/li.card[24]/a[2]
+LINK "• Video 0:58 NASA Via YouTube" @ref:137 /section/section.tabcontent/div.container/ul/li.card[25]/a[1]
+LINK "Video NASA SpaceX Crew-11 returns to earth 0:58" @ref:138 /section/section.tabcontent/div.container/ul/li.card[25]/a[2]
+LINK "Call to Earth Show all" @ref:139 /section[3]/section/section.tabcontent/div.container/a
+LINK "Getty Images" @ref:140 /section/section.tabcontent/div.container/ul/li.card[1]/a[1]
+LINK "He brought over 600 water bodies back to life. ..." @ref:141 /section/section.tabcontent/div.container/ul/li.card[1]/a[2]
+LINK "Deshakalyan Chowdhury/AFP/Getty Images" @ref:142 /section/section.tabcontent/div.container/ul/li.card[2]/a[1]
+LINK "Labeled ‘husband eaters’ after tiger attacks, t..." @ref:143 /section/section.tabcontent/div.container/ul/li.card[2]/a[2]
+LINK "Northcrest Developments" @ref:144 /section/section.tabcontent/div.container/ul/li.card[3]/a[1]
+LINK "Inside the abandoned airport being transformed ..." @ref:145 /section/section.tabcontent/div.container/ul/li.card[3]/a[2]
+LINK "One Ocean Foundation" @ref:146 /section/section.tabcontent/div.container/ul/li.card[4]/a[1]
+LINK "First mission to bottom of deep-sea canyon reve..." @ref:147 /section/section.tabcontent/div.container/ul/li.card[4]/a[2]
+LINK "Gareth Cattermole/Getty Images" @ref:148 /section[3]/section/section.tabcontent/div.container/div.card/a[1]
+LINK "Lee Byung-hun didn’t plan for global domination..." @ref:149 /section[3]/section/section.tabcontent/div.container/div.card/a[2]
+LINK "Worried Greenlanders fear for future as Trump t..." @ref:150 /section/section.tabcontent/div.container/ul/li.card[1]/a
+LINK "Japan and the Philippines sign a new defense pa..." @ref:151 /section/section.tabcontent/div.container/ul/li.card[2]/a
+LINK "4 questions that will be answered in the NFL pl..." @ref:152 /section/section.tabcontent/div.container/ul/li.card[3]/a
+LINK "Prehistoric wolf’s gut frozen in time reveals a..." @ref:153 /section/section.tabcontent/div.container/ul/li.card[4]/a
+LINK "How killing time at a laundromat set Lily Zhang..." @ref:154 /section/section.tabcontent/div.container/ul/li.card[5]/a
+LINK "Ariana Grande will reunite with ‘Wicked’ costar..." @ref:155 /section/section.tabcontent/div.container/ul/li.card[6]/a
+LINK "Horses really can smell our fear, new study finds" @ref:156 /section/section.tabcontent/div.container/ul/li.card[7]/a
+TEXTBOX "Search" @ref:157 /footer#pageFooter/div.footer__inner/div.search-bar[1]/form.search-bar__form/input.search-bar__input
+BUTTON "Submit" @ref:158 /footer#pageFooter/div.footer__inner/div.search-bar[1]/form.search-bar__form/button.search-bar__submit
+LINK "User Account Log In Button" @ref:159 /footer#pageFooter/div.footer__inner/div#mobile-footer-account-nav[2]/nav/button[3]
+LINK "Live TV" @ref:160 /footer#pageFooter/div.footer__inner/a.footer__live-tv-link[1]
+LINK "Audio" @ref:161 /footer#pageFooter/div.footer__inner/a.footer__audio-link[2]
+LINK "Video" @ref:162 /footer#pageFooter/div.footer__inner/a.footer__video-link[3]
+LINK "World" @ref:163 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[1]/a
+LINK "US Politics" @ref:164 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[2]/a
+LINK "Business" @ref:165 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[3]/a
+LINK "Markets" @ref:166 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[4]/a
+LINK "Health" @ref:167 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[5]/a
+LINK "Entertainment" @ref:168 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[6]/a
+LINK "Tech" @ref:169 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[7]/a
+LINK "Style" @ref:170 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[8]/a
+LINK "Travel" @ref:171 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[9]/a
+LINK "Sports" @ref:172 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[10]/a
+LINK "Science" @ref:173 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[11]/a
+LINK "Climate" @ref:174 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[12]/a
+LINK "Weather" @ref:175 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[13]/a
+LINK "Ukraine-Russia War" @ref:176 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[14]/a
+LINK "Israel-Hamas War" @ref:177 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[15]/a
+LINK "Features" @ref:178 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[16]/a
+LINK "Watch" @ref:179 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[17]/a
+LINK "Listen" @ref:180 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[18]/a
+LINK "Games" @ref:181 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[19]/a
+LINK "About CNN" @ref:182 /div.footer__inner/div.footer__subnav[3]/nav/ul/li[20]/a
+LINK "CNN logo" @ref:183 /footer#pageFooter/div.footer__inner/div.footer__row[4]/div.footer__brand-logo[1]/a
+LINK "Visit us on Facebook" @ref:184 /div.footer__row[4]/div.footer__right[2]/div.footer__social-and-app[2]/ul/li[1]/a
+LINK "Visit us on X" @ref:185 /div.footer__row[4]/div.footer__right[2]/div.footer__social-and-app[2]/ul/li[2]/a
+LINK "Visit us on Instagram" @ref:186 /div.footer__row[4]/div.footer__right[2]/div.footer__social-and-app[2]/ul/li[3]/a
+LINK "Visit us on TikTok" @ref:187 /div.footer__row[4]/div.footer__right[2]/div.footer__social-and-app[2]/ul/li[4]/a
+LINK "Visit us on LinkedIn" @ref:188 /div.footer__row[4]/div.footer__right[2]/div.footer__social-and-app[2]/ul/li[5]/a
+LINK "Download on Apple App Store" @ref:189 /footer#pageFooter/div.footer__inner/div.footer__app-download/a.footer__app-download-link[1]
+LINK "Get it on Google Play" @ref:190 /footer#pageFooter/div.footer__inner/div.footer__app-download/a.footer__app-download-link[2]
+LINK "Terms of Use" @ref:191 /footer#pageFooter/div.footer__inner/nav.footer__links/a.footer__link[1]
+LINK "Privacy Policy" @ref:192 /footer#pageFooter/div.footer__inner/nav.footer__links/a.footer__link[2]
+LINK "Manage Cookies" @ref:193 /footer#pageFooter/div.footer__inner/nav.footer__links/a.footer__link[3]
+LINK "Ad Choices" @ref:194 /footer#pageFooter/div.footer__inner/nav.footer__links/a.footer__link[4]
+LINK "Accessibility & CC" @ref:195 /footer#pageFooter/div.footer__inner/nav.footer__links/a.footer__link[5]
+LINK "About" @ref:196 /footer#pageFooter/div.footer__inner/nav.footer__links/a.footer__link[6]
+LINK "Newsletters" @ref:197 /footer#pageFooter/div.footer__inner/nav.footer__links/a.footer__link[7]
+LINK "Transcripts" @ref:198 /footer#pageFooter/div.footer__inner/nav.footer__links/a.footer__link[8]

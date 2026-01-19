@@ -1,0 +1,1702 @@
+<!-- source: http://localhost/ -->
+<!-- xpath: /div#player-react-mount[4]/section#npr-player -->
+
+- Hourly News
+- Listen Live
+- My Playlist
+
+
+<!-- xpath: /div#player-react-mount[4]/section#npr-player/article.item-initial -->
+
+
+<!-- xpath: /div#player-react-mount[4]/section#npr-player/ul -->
+
+- Hourly News
+- Listen Live
+- My Playlist
+
+
+<!-- xpath: /header#globalheader -->
+
+- Open Navigation Menu
+- Newsletters
+- Sign InPersonalize Your Experience
+- NPR Shop
+- DonateLocal StationNPR Network
+
+- Home
+- News Expand/collapse submenu for News National World Politics Business Health Science Climate Race
+- Culture Expand/collapse submenu for Culture Books Movies Television Pop Culture Food Art & Design Performing Arts Life Kit Gaming
+- Music Expand/collapse submenu for Music The Best Music of 2025 All Songs Considered Tiny Desk Music Features Live Sessions
+- Podcasts & Shows Expand/collapse submenu for Podcasts & Shows Daily Morning Edition Weekend Edition Saturday Weekend Edition Sunday All Things Considered Fresh Air Up First Featured Embedded The NP...
+- Search
+- Newsletters
+- NPR Shop
+- Sign InPersonalize Your Experience
+
+- The Best Music of 2025
+- All Songs Considered
+- Tiny Desk
+- Music Features
+- Live Sessions
+
+- About NPR
+- Diversity
+- Support
+- Careers
+- Press
+- Ethics
+
+
+<!-- xpath: /header#globalheader/nav.navigation -->
+
+- Open Navigation Menu
+- Newsletters
+- Sign InPersonalize Your Experience
+- NPR Shop
+- DonateLocal StationNPR Network
+
+- Home
+- News Expand/collapse submenu for News National World Politics Business Health Science Climate Race
+- Culture Expand/collapse submenu for Culture Books Movies Television Pop Culture Food Art & Design Performing Arts Life Kit Gaming
+- Music Expand/collapse submenu for Music The Best Music of 2025 All Songs Considered Tiny Desk Music Features Live Sessions
+- Podcasts & Shows Expand/collapse submenu for Podcasts & Shows Daily Morning Edition Weekend Edition Saturday Weekend Edition Sunday All Things Considered Fresh Air Up First Featured Embedded The NP...
+- Search
+- Newsletters
+- NPR Shop
+- Sign InPersonalize Your Experience
+
+- The Best Music of 2025
+- All Songs Considered
+- Tiny Desk
+- Music Features
+- Live Sessions
+
+- About NPR
+- Diversity
+- Support
+- Careers
+- Press
+- Ethics
+
+
+<!-- xpath: /header#globalheader/nav.navigation/section#main-menu[1] -->
+
+- Home
+- News Expand/collapse submenu for News National World Politics Business Health Science Climate Race
+- Culture Expand/collapse submenu for Culture Books Movies Television Pop Culture Food Art & Design Performing Arts Life Kit Gaming
+- Music Expand/collapse submenu for Music The Best Music of 2025 All Songs Considered Tiny Desk Music Features Live Sessions
+- Podcasts & Shows Expand/collapse submenu for Podcasts & Shows Daily Morning Edition Weekend Edition Saturday Weekend Edition Sunday All Things Considered Fresh Air Up First Featured Embedded The NP...
+- Search
+- Newsletters
+- NPR Shop
+- Sign InPersonalize Your Experience
+
+
+<!-- xpath: /header#globalheader/nav.navigation/section#main-menu[1]/div.menu__inner -->
+
+- Home
+- News Expand/collapse submenu for News National World Politics Business Health Science Climate Race
+- Culture Expand/collapse submenu for Culture Books Movies Television Pop Culture Food Art & Design Performing Arts Life Kit Gaming
+- Music Expand/collapse submenu for Music The Best Music of 2025 All Songs Considered Tiny Desk Music Features Live Sessions
+- Podcasts & Shows Expand/collapse submenu for Podcasts & Shows Daily Morning Edition Weekend Edition Saturday Weekend Edition Sunday All Things Considered Fresh Air Up First Featured Embedded The NP...
+- Search
+- Newsletters
+- NPR Shop
+- Sign InPersonalize Your Experience
+
+
+<!-- xpath: /header#globalheader/nav.navigation/section#main-menu[1]/div.menu__inner/header.menu__header -->
+
+
+<!-- xpath: /header#globalheader/nav.navigation/section.menu[2] -->
+
+- The Best Music of 2025
+- All Songs Considered
+- Tiny Desk
+- Music Features
+- Live Sessions
+
+
+<!-- xpath: /header#globalheader/nav.navigation/section.menu[3] -->
+
+- About NPR
+- Diversity
+- Support
+- Careers
+- Press
+- Ethics
+
+
+<!-- xpath: /main -->
+
+### Obituaries
+
+# Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+By
+
+Libby Lewis
+
+#### Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+- Download
+- Embed Embed <iframe src="https://www.npr.org/player/embed/4463532/4463533" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player">
+
+![image](https://media.npr.org/assets/news/2009/07/16/watergate-9c1e999311b642af290e3779e5ed5c760fe6d002.jpg?s=1100&c=50&f=jpeg)
+
+Woods demonstrates how she might have erased 18.5 minutes of tape. (U.S. National Archives and Records Administration) hide caption
+
+![image]()
+
+Woods demonstrates how she might have erased 18.5 minutes of tape.
+
+Rose Mary Woods, the loyal secretary and friend of President Richard Nixon, has died at age 87.
+
+No matter where the truth lies, Woods will be remembered for the infamous 18.5-minute gap in one of the Watergate tapes, not because she erased it, but because she said she had erased only part of it by mistake.
+
+There's that famous photo of her trying to demonstrate how she could have accidentally erased it — it's known as the "Rose Mary Stretch."
+
+Woods was a stand-up woman and an ideal secretary, says John Dean, former White House counsel. She could decipher Nixon's handwriting, she was very discreet, and she was a formidable gatekeeper who knew who should get access to the president, and who shouldn't.
+
+The tape incident, Dean says, showed that Woods had intimate knowledge about the Watergate scandal. Dean remembers the day he warned Nixon about the cancer on the presidency and told Nixon the Watergate burglars wanted hush money:
+
+"The president said, 'Well, how much will it cost?' and I said, 'It's gonna cost $1 million.' And the president said to me, 'Well, John, I know where we can get that.' As soon as I left the office, he went in to see Rose Mary and ask her if she had any money. It got picked up on the taping machine."
+
+William Safire was in the Nixon White House as a speechwriter at the time and remembers Woods as a secret poet who could turn his prose into phrasing that painted a picture on the page.
+
+"You would read it and it was like reading e.e. cummings," Safire recalls.
+
+Safire says it's unfortunate Woods will be remembered for those 18.5 minutes of missing tape.
+
+"She wasn't involved in the cover-up," he says. "She was involved in being loyal and fighting for her boss."
+
+After she left the White House, Woods moved back to Ohio, where she had been born, and lived an intensely private life. In a statement, Nixon's daughters, Julie Nixon Eisenhower and Tricia Nixon Cox, said Woods was a cherished friend. They said they would not forget how she served her country with unswerving loyalty and dedication.
+
+- Facebook
+- Flipboard
+- Email
+
+### More Stories From NPR
+
+![image](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1080+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2e%2F57%2Facb61f8444689f044d1640fee036%2Ftwoofficers-1.jpg)
+
+##### NPR Investigation: January 6, 2021
+
+#### 2 police officers relive Jan. 6 through their own bodycam footage
+
+![Venezuelan opposition leader María Corina Machado waves to supporters on Pennsylvania Avenue as she leaves the White House after meeting with President Donald Trump Thursday, in Washington.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3683x2072+0+192/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff1%2Fde%2F112992a34462be4822945f2dfcec%2Fap26015713681855.jpg)
+
+##### Politics
+
+#### Venezuela's Machado says she presented her Nobel Peace Prize to Trump during their meeting
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/4aa9e4f02b9fc6825bc6b450f6766ae832c705ff.jpg?69691eac)
+
+#### NPR+ | The News Roundup For October 24, 2025
+
+![Rep. Barry Loudermilk sits with a microphone in front of him.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/08a41daf8e9ea0cac3c901882cbdfeb157a09880.jpg?6967bfe5)
+
+#### NPR+ | The News Roundup For November 14, 2025
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/28665ffc5c2aa816ee5fa8f46bf52f79cde0f9de.jpg?69627d61)
+
+#### NPR+ | The News Roundup For January 9, 2026
+
+### More Stories From NPR
+
+![Claudette Colvin sits for a portrait, Feb. 5, 2009, in New York.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4080x2294+0+204/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F41%2F58%2Fecdd08fc4ed3b92c210c98373ce4%2Fap26013777455658.jpg)
+
+##### Obituaries
+
+#### Claudette Colvin, who refused to move seats on a bus at start of civil rights movement, dies
+
+![Cartoonist Scott Adams poses with his a life-size cutout of his creation, Dilbert, in 2014.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3527x1984+0+434/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fc5%2Fcabf24e14e8c99bdbe295b55dd15%2Fgettyimages-1322061055.jpg)
+
+##### Obituaries
+
+#### Scott Adams, the controversial cartoonist behind 'Dilbert,' dies at 68
+
+![Bob Weir performs with the Grateful Dead at the Greek Theater in Berkeley, Calif. in 1983. A member of the Dead from its inception, Weir took few solos, but his distinctive rhythm guitar playing and emotive singing were signatures of the group.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+277/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2Fa8%2F46ad5b0a4264b9763bf24ff4da02%2Fgettyimages-1186165081.jpg)
+
+##### Obituaries
+
+#### Bob Weir, guitarist and founding member of the Grateful Dead, has died at 78
+
+![Former CIA agent Aldrich Ames leaves federal court after pleading guilty to espionage and tax evasion conspiracy charges April 28, 1994, in Alexandria, Va.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2069x1164+0+108/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc5%2Fef%2Ffd99e3904b819e3a9bb807679f45%2Fap26007043283817.jpg)
+
+##### Obituaries
+
+#### CIA turncoat Aldrich Ames, who sold U.S. secrets to the Soviets, dies in prison at 84
+
+![Hungarian director Béla Tarr at the Berlin International Film Festival in 2011.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1687+0+49/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc7%2Fdb%2F95399d4e44008c2138835d90428e%2Fgettyimages-109298560.jpg)
+
+##### Obituaries
+
+#### Hungarian filmmaker Béla Tarr — known for bleak, existential movies — has died
+
+![Renfrow Smith in her cap and gown the day she graduated from Grinnell College in 1937.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1151x647+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F06%2F98%2F5b42122a498f80a7116f734e36aa%2Fedith-renfrow-grinnell-college-graduation-1937.jpg)
+
+##### Obituaries
+
+#### Edith Renfrow Smith, pioneer and witness to history, dies at 111
+
+### Popular on NPR.org
+
+![White House Press Secretary Karoline Leavitt holds up a printout of a social media post with pictures of alleged undocumented criminals arrested recently by Immigration and Customs Enforcement (ICE) in Minnesota as she speaks during a press briefing at the White House on Jan. 15, 2026. (Photo by Mandel NGAN / AFP via Getty Images)](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F28%2F01%2F88f2e80046ee87ea8d9040172e72%2Fgettyimages-2255804293.jpg)
+
+##### Politics
+
+#### Minnesota shows what happens when governing and content creation merge
+
+![Rep. Barry Loudermilk sits with a microphone in front of him. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![Peter Claffey and Dexter Sol Ansell in A Knight of the Seven Kingdoms.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1079+0+12/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2c%2Fef%2F69ed71fc45c8ba515fe0b748b0c2%2Fpeter-claffey-dexter-sol-ansell-0.jpg)
+
+##### Pop Culture Happy Hour
+
+#### 'A Knight of the Seven Kingdoms' is 'Game of Thrones' for the haters
+
+![Clouds and bursts of tear gas fill a nighttime scene with two law enforcement officers standing in silhouette.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F13%2F9b815b4f46068a2d7dbeacd876ee%2Fap26015098898221.jpg)
+
+##### Explainer
+
+#### Trump threatened to invoke the Insurrection Act (again). What is it?
+
+![Signs are displayed outside a Verizon retail location in Portland, Oregon, on May 14, 2024.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fa7%2F9b4a313947d9bcf3aec4d5678479%2Fverizon-photo.jpg)
+
+##### Business
+
+#### Verizon just had a big outage. Here's what we know
+
+![Protesters (R) are confronted by an ICE supporter during a demonstration outside the Bishop Whipple Federal Building in Minneapolis, Minn.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2F59%2Fa1a6c9574aedbe1ba0cfef9a4c55%2Fgettyimages-2255813342.jpg)
+
+##### Up First Newsletter
+
+#### Trump threatens military action in Minneapolis. And, inside his healthcare plan
+
+### NPR Editors' Picks
+
+![Pfizer CEO Albert Bourla joined President Donald Trump at the podium in the White House on Sept. 30, to announce a voluntary effort to reduce some drug prices. The Trump administration went on to reach similar deals with 15 other drug companies, but all 16 companies still rolled out price hikes this month.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4478x2519+0+260/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3f%2F08%2F1a131422498fa9aaf448e64f8e31%2Fgettyimages-2238336352.jpg)
+
+##### Health
+
+#### Trump struck deals with 16 drug companies. But they're still raising prices this year
+
+![Sylvia Nakami, Rays of Hope Hospice Jinja executive director, is leading the Uganda institution's cancer prevention and treatment efforts. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+378/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5c%2F29%2F6d21a950455e9041d52f8daacf03%2Fhospice-21.jpg)
+
+##### Global Health
+
+#### This hospice has a bold new mission: saving lives
+
+![Canada's Prime Minister Mark Carney, left, meets with Chinese President Xi Jinping at the Great Hall of the People in Beijing Friday, Jan. 16, 2026. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7964x4480+0+464/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fee%2F15136d19448ea2c861a6bac5f954%2Fap26016117118261.jpg)
+
+##### Business
+
+#### Canada agrees to cut tariff on Chinese EVs in return for lower tariffs on Canadian farm products
+
+![From left: Bob Weir, Eric Adams and Amy Poehler.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2827x1590+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F7c%2Fbaa6c83b4ee09272f610c24958e3%2Fbob-eric-amy.jpg)
+
+##### The NPR news quiz
+
+#### What do eggs, Grok and Greenland have in common? They're all quiz-worthy! Are you?
+
+![Customs and Border Protection officers stand near a car parked at the curb. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3200x1800+0+166/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F6f%2Faa4b907745ad8a0581cfaf785b39%2F20260112-cbp-03.jpg)
+
+##### Politics
+
+#### With limited political power, Minnesota Democrats navigate resistance to Trump
+
+![Ellaird Bailey and his wife, Charlotte, who lost their home in Altadena, California, to a wildfire in early 2025, stand in front of their recreational vehicle in December 2025.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F0a%2F087dd2d147d89359a28ae0f620b8%2Fap25348238952091.jpg)
+
+##### Climate
+
+#### FEMA is getting rid of thousands of workers in areas recovering from disasters
+
+###### Read & Listen
+
+- Home
+- News
+- Culture
+- Music
+- Podcasts & Shows
+
+###### Connect
+
+- Newsletters
+- Facebook
+- Instagram
+- Press
+- Public Editor
+- Corrections
+- Transcripts
+- Contact & Help
+
+###### About NPR
+
+- Overview
+- Diversity
+- NPR Network
+- Accessibility
+- Ethics
+- Finances
+
+###### Get Involved
+
+- Support Public Radio
+- Sponsor NPR
+- NPR Careers
+- NPR Shop
+- NPR Extra
+
+- Terms of Use
+- Privacy
+- Your Privacy Choices
+- Text Only
+- © 2026 npr
+
+Sponsor Message
+
+Become an NPR sponsor
+
+![NPR Plus logo](https://prod-eks-static-assets.npr.org/chrome_svg/npr-plus/npr-plus-combo-logo.svg)
+
+##### Exclusive benefits
+
+###### Give a little. Get a lot.
+
+Support mission-driven journalism while getting something great in return. Enjoy bonus content, early access and sponsor-free listening from your favorite NPR podcasts.
+
+Already have NPR+?Sign In
+
+
+<!-- xpath: /main/div#wrapper[2] -->
+
+### Obituaries
+
+# Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+By
+
+Libby Lewis
+
+#### Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+- Download
+- Embed Embed <iframe src="https://www.npr.org/player/embed/4463532/4463533" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player">
+
+![image](https://media.npr.org/assets/news/2009/07/16/watergate-9c1e999311b642af290e3779e5ed5c760fe6d002.jpg?s=1100&c=50&f=jpeg)
+
+Woods demonstrates how she might have erased 18.5 minutes of tape. (U.S. National Archives and Records Administration) hide caption
+
+![image]()
+
+Woods demonstrates how she might have erased 18.5 minutes of tape.
+
+Rose Mary Woods, the loyal secretary and friend of President Richard Nixon, has died at age 87.
+
+No matter where the truth lies, Woods will be remembered for the infamous 18.5-minute gap in one of the Watergate tapes, not because she erased it, but because she said she had erased only part of it by mistake.
+
+There's that famous photo of her trying to demonstrate how she could have accidentally erased it — it's known as the "Rose Mary Stretch."
+
+Woods was a stand-up woman and an ideal secretary, says John Dean, former White House counsel. She could decipher Nixon's handwriting, she was very discreet, and she was a formidable gatekeeper who knew who should get access to the president, and who shouldn't.
+
+The tape incident, Dean says, showed that Woods had intimate knowledge about the Watergate scandal. Dean remembers the day he warned Nixon about the cancer on the presidency and told Nixon the Watergate burglars wanted hush money:
+
+"The president said, 'Well, how much will it cost?' and I said, 'It's gonna cost $1 million.' And the president said to me, 'Well, John, I know where we can get that.' As soon as I left the office, he went in to see Rose Mary and ask her if she had any money. It got picked up on the taping machine."
+
+William Safire was in the Nixon White House as a speechwriter at the time and remembers Woods as a secret poet who could turn his prose into phrasing that painted a picture on the page.
+
+"You would read it and it was like reading e.e. cummings," Safire recalls.
+
+Safire says it's unfortunate Woods will be remembered for those 18.5 minutes of missing tape.
+
+"She wasn't involved in the cover-up," he says. "She was involved in being loyal and fighting for her boss."
+
+After she left the White House, Woods moved back to Ohio, where she had been born, and lived an intensely private life. In a statement, Nixon's daughters, Julie Nixon Eisenhower and Tricia Nixon Cox, said Woods was a cherished friend. They said they would not forget how she served her country with unswerving loyalty and dedication.
+
+- Facebook
+- Flipboard
+- Email
+
+### More Stories From NPR
+
+![image](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1080+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2e%2F57%2Facb61f8444689f044d1640fee036%2Ftwoofficers-1.jpg)
+
+##### NPR Investigation: January 6, 2021
+
+#### 2 police officers relive Jan. 6 through their own bodycam footage
+
+![Venezuelan opposition leader María Corina Machado waves to supporters on Pennsylvania Avenue as she leaves the White House after meeting with President Donald Trump Thursday, in Washington.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3683x2072+0+192/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff1%2Fde%2F112992a34462be4822945f2dfcec%2Fap26015713681855.jpg)
+
+##### Politics
+
+#### Venezuela's Machado says she presented her Nobel Peace Prize to Trump during their meeting
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/4aa9e4f02b9fc6825bc6b450f6766ae832c705ff.jpg?69691eac)
+
+#### NPR+ | The News Roundup For October 24, 2025
+
+![Rep. Barry Loudermilk sits with a microphone in front of him.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/08a41daf8e9ea0cac3c901882cbdfeb157a09880.jpg?6967bfe5)
+
+#### NPR+ | The News Roundup For November 14, 2025
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/28665ffc5c2aa816ee5fa8f46bf52f79cde0f9de.jpg?69627d61)
+
+#### NPR+ | The News Roundup For January 9, 2026
+
+### More Stories From NPR
+
+![Claudette Colvin sits for a portrait, Feb. 5, 2009, in New York.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4080x2294+0+204/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F41%2F58%2Fecdd08fc4ed3b92c210c98373ce4%2Fap26013777455658.jpg)
+
+##### Obituaries
+
+#### Claudette Colvin, who refused to move seats on a bus at start of civil rights movement, dies
+
+![Cartoonist Scott Adams poses with his a life-size cutout of his creation, Dilbert, in 2014.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3527x1984+0+434/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fc5%2Fcabf24e14e8c99bdbe295b55dd15%2Fgettyimages-1322061055.jpg)
+
+##### Obituaries
+
+#### Scott Adams, the controversial cartoonist behind 'Dilbert,' dies at 68
+
+![Bob Weir performs with the Grateful Dead at the Greek Theater in Berkeley, Calif. in 1983. A member of the Dead from its inception, Weir took few solos, but his distinctive rhythm guitar playing and emotive singing were signatures of the group.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+277/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2Fa8%2F46ad5b0a4264b9763bf24ff4da02%2Fgettyimages-1186165081.jpg)
+
+##### Obituaries
+
+#### Bob Weir, guitarist and founding member of the Grateful Dead, has died at 78
+
+![Former CIA agent Aldrich Ames leaves federal court after pleading guilty to espionage and tax evasion conspiracy charges April 28, 1994, in Alexandria, Va.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2069x1164+0+108/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc5%2Fef%2Ffd99e3904b819e3a9bb807679f45%2Fap26007043283817.jpg)
+
+##### Obituaries
+
+#### CIA turncoat Aldrich Ames, who sold U.S. secrets to the Soviets, dies in prison at 84
+
+![Hungarian director Béla Tarr at the Berlin International Film Festival in 2011.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1687+0+49/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc7%2Fdb%2F95399d4e44008c2138835d90428e%2Fgettyimages-109298560.jpg)
+
+##### Obituaries
+
+#### Hungarian filmmaker Béla Tarr — known for bleak, existential movies — has died
+
+![Renfrow Smith in her cap and gown the day she graduated from Grinnell College in 1937.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1151x647+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F06%2F98%2F5b42122a498f80a7116f734e36aa%2Fedith-renfrow-grinnell-college-graduation-1937.jpg)
+
+##### Obituaries
+
+#### Edith Renfrow Smith, pioneer and witness to history, dies at 111
+
+### Popular on NPR.org
+
+![White House Press Secretary Karoline Leavitt holds up a printout of a social media post with pictures of alleged undocumented criminals arrested recently by Immigration and Customs Enforcement (ICE) in Minnesota as she speaks during a press briefing at the White House on Jan. 15, 2026. (Photo by Mandel NGAN / AFP via Getty Images)](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F28%2F01%2F88f2e80046ee87ea8d9040172e72%2Fgettyimages-2255804293.jpg)
+
+##### Politics
+
+#### Minnesota shows what happens when governing and content creation merge
+
+![Rep. Barry Loudermilk sits with a microphone in front of him. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![Peter Claffey and Dexter Sol Ansell in A Knight of the Seven Kingdoms.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1079+0+12/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2c%2Fef%2F69ed71fc45c8ba515fe0b748b0c2%2Fpeter-claffey-dexter-sol-ansell-0.jpg)
+
+##### Pop Culture Happy Hour
+
+#### 'A Knight of the Seven Kingdoms' is 'Game of Thrones' for the haters
+
+![Clouds and bursts of tear gas fill a nighttime scene with two law enforcement officers standing in silhouette.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F13%2F9b815b4f46068a2d7dbeacd876ee%2Fap26015098898221.jpg)
+
+##### Explainer
+
+#### Trump threatened to invoke the Insurrection Act (again). What is it?
+
+![Signs are displayed outside a Verizon retail location in Portland, Oregon, on May 14, 2024.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fa7%2F9b4a313947d9bcf3aec4d5678479%2Fverizon-photo.jpg)
+
+##### Business
+
+#### Verizon just had a big outage. Here's what we know
+
+![Protesters (R) are confronted by an ICE supporter during a demonstration outside the Bishop Whipple Federal Building in Minneapolis, Minn.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2F59%2Fa1a6c9574aedbe1ba0cfef9a4c55%2Fgettyimages-2255813342.jpg)
+
+##### Up First Newsletter
+
+#### Trump threatens military action in Minneapolis. And, inside his healthcare plan
+
+### NPR Editors' Picks
+
+![Pfizer CEO Albert Bourla joined President Donald Trump at the podium in the White House on Sept. 30, to announce a voluntary effort to reduce some drug prices. The Trump administration went on to reach similar deals with 15 other drug companies, but all 16 companies still rolled out price hikes this month.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4478x2519+0+260/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3f%2F08%2F1a131422498fa9aaf448e64f8e31%2Fgettyimages-2238336352.jpg)
+
+##### Health
+
+#### Trump struck deals with 16 drug companies. But they're still raising prices this year
+
+![Sylvia Nakami, Rays of Hope Hospice Jinja executive director, is leading the Uganda institution's cancer prevention and treatment efforts. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+378/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5c%2F29%2F6d21a950455e9041d52f8daacf03%2Fhospice-21.jpg)
+
+##### Global Health
+
+#### This hospice has a bold new mission: saving lives
+
+![Canada's Prime Minister Mark Carney, left, meets with Chinese President Xi Jinping at the Great Hall of the People in Beijing Friday, Jan. 16, 2026. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7964x4480+0+464/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fee%2F15136d19448ea2c861a6bac5f954%2Fap26016117118261.jpg)
+
+##### Business
+
+#### Canada agrees to cut tariff on Chinese EVs in return for lower tariffs on Canadian farm products
+
+![From left: Bob Weir, Eric Adams and Amy Poehler.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2827x1590+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F7c%2Fbaa6c83b4ee09272f610c24958e3%2Fbob-eric-amy.jpg)
+
+##### The NPR news quiz
+
+#### What do eggs, Grok and Greenland have in common? They're all quiz-worthy! Are you?
+
+![Customs and Border Protection officers stand near a car parked at the curb. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3200x1800+0+166/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F6f%2Faa4b907745ad8a0581cfaf785b39%2F20260112-cbp-03.jpg)
+
+##### Politics
+
+#### With limited political power, Minnesota Democrats navigate resistance to Trump
+
+![Ellaird Bailey and his wife, Charlotte, who lost their home in Altadena, California, to a wildfire in early 2025, stand in front of their recreational vehicle in December 2025.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F0a%2F087dd2d147d89359a28ae0f620b8%2Fap25348238952091.jpg)
+
+##### Climate
+
+#### FEMA is getting rid of thousands of workers in areas recovering from disasters
+
+###### Read & Listen
+
+- Home
+- News
+- Culture
+- Music
+- Podcasts & Shows
+
+###### Connect
+
+- Newsletters
+- Facebook
+- Instagram
+- Press
+- Public Editor
+- Corrections
+- Transcripts
+- Contact & Help
+
+###### About NPR
+
+- Overview
+- Diversity
+- NPR Network
+- Accessibility
+- Ethics
+- Finances
+
+###### Get Involved
+
+- Support Public Radio
+- Sponsor NPR
+- NPR Careers
+- NPR Shop
+- NPR Extra
+
+- Terms of Use
+- Privacy
+- Your Privacy Choices
+- Text Only
+- © 2026 npr
+
+Sponsor Message
+
+Become an NPR sponsor
+
+
+<!-- xpath: /main/div#wrapper[2]/header.contentheader -->
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section -->
+
+### Obituaries
+
+# Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+By
+
+Libby Lewis
+
+#### Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+- Download
+- Embed Embed <iframe src="https://www.npr.org/player/embed/4463532/4463533" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player">
+
+![image](https://media.npr.org/assets/news/2009/07/16/watergate-9c1e999311b642af290e3779e5ed5c760fe6d002.jpg?s=1100&c=50&f=jpeg)
+
+Woods demonstrates how she might have erased 18.5 minutes of tape. (U.S. National Archives and Records Administration) hide caption
+
+![image]()
+
+Woods demonstrates how she might have erased 18.5 minutes of tape.
+
+Rose Mary Woods, the loyal secretary and friend of President Richard Nixon, has died at age 87.
+
+No matter where the truth lies, Woods will be remembered for the infamous 18.5-minute gap in one of the Watergate tapes, not because she erased it, but because she said she had erased only part of it by mistake.
+
+There's that famous photo of her trying to demonstrate how she could have accidentally erased it — it's known as the "Rose Mary Stretch."
+
+Woods was a stand-up woman and an ideal secretary, says John Dean, former White House counsel. She could decipher Nixon's handwriting, she was very discreet, and she was a formidable gatekeeper who knew who should get access to the president, and who shouldn't.
+
+The tape incident, Dean says, showed that Woods had intimate knowledge about the Watergate scandal. Dean remembers the day he warned Nixon about the cancer on the presidency and told Nixon the Watergate burglars wanted hush money:
+
+"The president said, 'Well, how much will it cost?' and I said, 'It's gonna cost $1 million.' And the president said to me, 'Well, John, I know where we can get that.' As soon as I left the office, he went in to see Rose Mary and ask her if she had any money. It got picked up on the taping machine."
+
+William Safire was in the Nixon White House as a speechwriter at the time and remembers Woods as a secret poet who could turn his prose into phrasing that painted a picture on the page.
+
+"You would read it and it was like reading e.e. cummings," Safire recalls.
+
+Safire says it's unfortunate Woods will be remembered for those 18.5 minutes of missing tape.
+
+"She wasn't involved in the cover-up," he says. "She was involved in being loyal and fighting for her boss."
+
+After she left the White House, Woods moved back to Ohio, where she had been born, and lived an intensely private life. In a statement, Nixon's daughters, Julie Nixon Eisenhower and Tricia Nixon Cox, said Woods was a cherished friend. They said they would not forget how she served her country with unswerving loyalty and dedication.
+
+- Facebook
+- Flipboard
+- Email
+
+### More Stories From NPR
+
+![image](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1080+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2e%2F57%2Facb61f8444689f044d1640fee036%2Ftwoofficers-1.jpg)
+
+##### NPR Investigation: January 6, 2021
+
+#### 2 police officers relive Jan. 6 through their own bodycam footage
+
+![Venezuelan opposition leader María Corina Machado waves to supporters on Pennsylvania Avenue as she leaves the White House after meeting with President Donald Trump Thursday, in Washington.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3683x2072+0+192/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff1%2Fde%2F112992a34462be4822945f2dfcec%2Fap26015713681855.jpg)
+
+##### Politics
+
+#### Venezuela's Machado says she presented her Nobel Peace Prize to Trump during their meeting
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/4aa9e4f02b9fc6825bc6b450f6766ae832c705ff.jpg?69691eac)
+
+#### NPR+ | The News Roundup For October 24, 2025
+
+![Rep. Barry Loudermilk sits with a microphone in front of him.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/08a41daf8e9ea0cac3c901882cbdfeb157a09880.jpg?6967bfe5)
+
+#### NPR+ | The News Roundup For November 14, 2025
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/28665ffc5c2aa816ee5fa8f46bf52f79cde0f9de.jpg?69627d61)
+
+#### NPR+ | The News Roundup For January 9, 2026
+
+### More Stories From NPR
+
+![Claudette Colvin sits for a portrait, Feb. 5, 2009, in New York.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4080x2294+0+204/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F41%2F58%2Fecdd08fc4ed3b92c210c98373ce4%2Fap26013777455658.jpg)
+
+##### Obituaries
+
+#### Claudette Colvin, who refused to move seats on a bus at start of civil rights movement, dies
+
+![Cartoonist Scott Adams poses with his a life-size cutout of his creation, Dilbert, in 2014.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3527x1984+0+434/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fc5%2Fcabf24e14e8c99bdbe295b55dd15%2Fgettyimages-1322061055.jpg)
+
+##### Obituaries
+
+#### Scott Adams, the controversial cartoonist behind 'Dilbert,' dies at 68
+
+![Bob Weir performs with the Grateful Dead at the Greek Theater in Berkeley, Calif. in 1983. A member of the Dead from its inception, Weir took few solos, but his distinctive rhythm guitar playing and emotive singing were signatures of the group.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+277/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2Fa8%2F46ad5b0a4264b9763bf24ff4da02%2Fgettyimages-1186165081.jpg)
+
+##### Obituaries
+
+#### Bob Weir, guitarist and founding member of the Grateful Dead, has died at 78
+
+![Former CIA agent Aldrich Ames leaves federal court after pleading guilty to espionage and tax evasion conspiracy charges April 28, 1994, in Alexandria, Va.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2069x1164+0+108/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc5%2Fef%2Ffd99e3904b819e3a9bb807679f45%2Fap26007043283817.jpg)
+
+##### Obituaries
+
+#### CIA turncoat Aldrich Ames, who sold U.S. secrets to the Soviets, dies in prison at 84
+
+![Hungarian director Béla Tarr at the Berlin International Film Festival in 2011.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1687+0+49/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc7%2Fdb%2F95399d4e44008c2138835d90428e%2Fgettyimages-109298560.jpg)
+
+##### Obituaries
+
+#### Hungarian filmmaker Béla Tarr — known for bleak, existential movies — has died
+
+![Renfrow Smith in her cap and gown the day she graduated from Grinnell College in 1937.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1151x647+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F06%2F98%2F5b42122a498f80a7116f734e36aa%2Fedith-renfrow-grinnell-college-graduation-1937.jpg)
+
+##### Obituaries
+
+#### Edith Renfrow Smith, pioneer and witness to history, dies at 111
+
+### Popular on NPR.org
+
+![White House Press Secretary Karoline Leavitt holds up a printout of a social media post with pictures of alleged undocumented criminals arrested recently by Immigration and Customs Enforcement (ICE) in Minnesota as she speaks during a press briefing at the White House on Jan. 15, 2026. (Photo by Mandel NGAN / AFP via Getty Images)](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F28%2F01%2F88f2e80046ee87ea8d9040172e72%2Fgettyimages-2255804293.jpg)
+
+##### Politics
+
+#### Minnesota shows what happens when governing and content creation merge
+
+![Rep. Barry Loudermilk sits with a microphone in front of him. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![Peter Claffey and Dexter Sol Ansell in A Knight of the Seven Kingdoms.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1079+0+12/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2c%2Fef%2F69ed71fc45c8ba515fe0b748b0c2%2Fpeter-claffey-dexter-sol-ansell-0.jpg)
+
+##### Pop Culture Happy Hour
+
+#### 'A Knight of the Seven Kingdoms' is 'Game of Thrones' for the haters
+
+![Clouds and bursts of tear gas fill a nighttime scene with two law enforcement officers standing in silhouette.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F13%2F9b815b4f46068a2d7dbeacd876ee%2Fap26015098898221.jpg)
+
+##### Explainer
+
+#### Trump threatened to invoke the Insurrection Act (again). What is it?
+
+![Signs are displayed outside a Verizon retail location in Portland, Oregon, on May 14, 2024.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fa7%2F9b4a313947d9bcf3aec4d5678479%2Fverizon-photo.jpg)
+
+##### Business
+
+#### Verizon just had a big outage. Here's what we know
+
+![Protesters (R) are confronted by an ICE supporter during a demonstration outside the Bishop Whipple Federal Building in Minneapolis, Minn.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2F59%2Fa1a6c9574aedbe1ba0cfef9a4c55%2Fgettyimages-2255813342.jpg)
+
+##### Up First Newsletter
+
+#### Trump threatens military action in Minneapolis. And, inside his healthcare plan
+
+### NPR Editors' Picks
+
+![Pfizer CEO Albert Bourla joined President Donald Trump at the podium in the White House on Sept. 30, to announce a voluntary effort to reduce some drug prices. The Trump administration went on to reach similar deals with 15 other drug companies, but all 16 companies still rolled out price hikes this month.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4478x2519+0+260/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3f%2F08%2F1a131422498fa9aaf448e64f8e31%2Fgettyimages-2238336352.jpg)
+
+##### Health
+
+#### Trump struck deals with 16 drug companies. But they're still raising prices this year
+
+![Sylvia Nakami, Rays of Hope Hospice Jinja executive director, is leading the Uganda institution's cancer prevention and treatment efforts. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+378/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5c%2F29%2F6d21a950455e9041d52f8daacf03%2Fhospice-21.jpg)
+
+##### Global Health
+
+#### This hospice has a bold new mission: saving lives
+
+![Canada's Prime Minister Mark Carney, left, meets with Chinese President Xi Jinping at the Great Hall of the People in Beijing Friday, Jan. 16, 2026. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7964x4480+0+464/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fee%2F15136d19448ea2c861a6bac5f954%2Fap26016117118261.jpg)
+
+##### Business
+
+#### Canada agrees to cut tariff on Chinese EVs in return for lower tariffs on Canadian farm products
+
+![From left: Bob Weir, Eric Adams and Amy Poehler.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2827x1590+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F7c%2Fbaa6c83b4ee09272f610c24958e3%2Fbob-eric-amy.jpg)
+
+##### The NPR news quiz
+
+#### What do eggs, Grok and Greenland have in common? They're all quiz-worthy! Are you?
+
+![Customs and Border Protection officers stand near a car parked at the curb. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3200x1800+0+166/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F6f%2Faa4b907745ad8a0581cfaf785b39%2F20260112-cbp-03.jpg)
+
+##### Politics
+
+#### With limited political power, Minnesota Democrats navigate resistance to Trump
+
+![Ellaird Bailey and his wife, Charlotte, who lost their home in Altadena, California, to a wildfire in early 2025, stand in front of their recreational vehicle in December 2025.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F0a%2F087dd2d147d89359a28ae0f620b8%2Fap25348238952091.jpg)
+
+##### Climate
+
+#### FEMA is getting rid of thousands of workers in areas recovering from disasters
+
+###### Read & Listen
+
+- Home
+- News
+- Culture
+- Music
+- Podcasts & Shows
+
+###### Connect
+
+- Newsletters
+- Facebook
+- Instagram
+- Press
+- Public Editor
+- Corrections
+- Transcripts
+- Contact & Help
+
+###### About NPR
+
+- Overview
+- Diversity
+- NPR Network
+- Accessibility
+- Ethics
+- Finances
+
+###### Get Involved
+
+- Support Public Radio
+- Sponsor NPR
+- NPR Careers
+- NPR Shop
+- NPR Extra
+
+- Terms of Use
+- Privacy
+- Your Privacy Choices
+- Text Only
+- © 2026 npr
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article -->
+
+### Obituaries
+
+# Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+By
+
+Libby Lewis
+
+#### Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+- Download
+- Embed Embed <iframe src="https://www.npr.org/player/embed/4463532/4463533" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player">
+
+![image](https://media.npr.org/assets/news/2009/07/16/watergate-9c1e999311b642af290e3779e5ed5c760fe6d002.jpg?s=1100&c=50&f=jpeg)
+
+Woods demonstrates how she might have erased 18.5 minutes of tape. (U.S. National Archives and Records Administration) hide caption
+
+![image]()
+
+Woods demonstrates how she might have erased 18.5 minutes of tape.
+
+Rose Mary Woods, the loyal secretary and friend of President Richard Nixon, has died at age 87.
+
+No matter where the truth lies, Woods will be remembered for the infamous 18.5-minute gap in one of the Watergate tapes, not because she erased it, but because she said she had erased only part of it by mistake.
+
+There's that famous photo of her trying to demonstrate how she could have accidentally erased it — it's known as the "Rose Mary Stretch."
+
+Woods was a stand-up woman and an ideal secretary, says John Dean, former White House counsel. She could decipher Nixon's handwriting, she was very discreet, and she was a formidable gatekeeper who knew who should get access to the president, and who shouldn't.
+
+The tape incident, Dean says, showed that Woods had intimate knowledge about the Watergate scandal. Dean remembers the day he warned Nixon about the cancer on the presidency and told Nixon the Watergate burglars wanted hush money:
+
+"The president said, 'Well, how much will it cost?' and I said, 'It's gonna cost $1 million.' And the president said to me, 'Well, John, I know where we can get that.' As soon as I left the office, he went in to see Rose Mary and ask her if she had any money. It got picked up on the taping machine."
+
+William Safire was in the Nixon White House as a speechwriter at the time and remembers Woods as a secret poet who could turn his prose into phrasing that painted a picture on the page.
+
+"You would read it and it was like reading e.e. cummings," Safire recalls.
+
+Safire says it's unfortunate Woods will be remembered for those 18.5 minutes of missing tape.
+
+"She wasn't involved in the cover-up," he says. "She was involved in being loyal and fighting for her boss."
+
+After she left the White House, Woods moved back to Ohio, where she had been born, and lived an intensely private life. In a statement, Nixon's daughters, Julie Nixon Eisenhower and Tricia Nixon Cox, said Woods was a cherished friend. They said they would not forget how she served her country with unswerving loyalty and dedication.
+
+- Facebook
+- Flipboard
+- Email
+
+### More Stories From NPR
+
+![image](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1080+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2e%2F57%2Facb61f8444689f044d1640fee036%2Ftwoofficers-1.jpg)
+
+##### NPR Investigation: January 6, 2021
+
+#### 2 police officers relive Jan. 6 through their own bodycam footage
+
+![Venezuelan opposition leader María Corina Machado waves to supporters on Pennsylvania Avenue as she leaves the White House after meeting with President Donald Trump Thursday, in Washington.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3683x2072+0+192/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff1%2Fde%2F112992a34462be4822945f2dfcec%2Fap26015713681855.jpg)
+
+##### Politics
+
+#### Venezuela's Machado says she presented her Nobel Peace Prize to Trump during their meeting
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/4aa9e4f02b9fc6825bc6b450f6766ae832c705ff.jpg?69691eac)
+
+#### NPR+ | The News Roundup For October 24, 2025
+
+![Rep. Barry Loudermilk sits with a microphone in front of him.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/08a41daf8e9ea0cac3c901882cbdfeb157a09880.jpg?6967bfe5)
+
+#### NPR+ | The News Roundup For November 14, 2025
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/28665ffc5c2aa816ee5fa8f46bf52f79cde0f9de.jpg?69627d61)
+
+#### NPR+ | The News Roundup For January 9, 2026
+
+### More Stories From NPR
+
+![Claudette Colvin sits for a portrait, Feb. 5, 2009, in New York.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4080x2294+0+204/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F41%2F58%2Fecdd08fc4ed3b92c210c98373ce4%2Fap26013777455658.jpg)
+
+##### Obituaries
+
+#### Claudette Colvin, who refused to move seats on a bus at start of civil rights movement, dies
+
+![Cartoonist Scott Adams poses with his a life-size cutout of his creation, Dilbert, in 2014.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3527x1984+0+434/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fc5%2Fcabf24e14e8c99bdbe295b55dd15%2Fgettyimages-1322061055.jpg)
+
+##### Obituaries
+
+#### Scott Adams, the controversial cartoonist behind 'Dilbert,' dies at 68
+
+![Bob Weir performs with the Grateful Dead at the Greek Theater in Berkeley, Calif. in 1983. A member of the Dead from its inception, Weir took few solos, but his distinctive rhythm guitar playing and emotive singing were signatures of the group.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+277/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2Fa8%2F46ad5b0a4264b9763bf24ff4da02%2Fgettyimages-1186165081.jpg)
+
+##### Obituaries
+
+#### Bob Weir, guitarist and founding member of the Grateful Dead, has died at 78
+
+![Former CIA agent Aldrich Ames leaves federal court after pleading guilty to espionage and tax evasion conspiracy charges April 28, 1994, in Alexandria, Va.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2069x1164+0+108/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc5%2Fef%2Ffd99e3904b819e3a9bb807679f45%2Fap26007043283817.jpg)
+
+##### Obituaries
+
+#### CIA turncoat Aldrich Ames, who sold U.S. secrets to the Soviets, dies in prison at 84
+
+![Hungarian director Béla Tarr at the Berlin International Film Festival in 2011.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1687+0+49/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc7%2Fdb%2F95399d4e44008c2138835d90428e%2Fgettyimages-109298560.jpg)
+
+##### Obituaries
+
+#### Hungarian filmmaker Béla Tarr — known for bleak, existential movies — has died
+
+![Renfrow Smith in her cap and gown the day she graduated from Grinnell College in 1937.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1151x647+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F06%2F98%2F5b42122a498f80a7116f734e36aa%2Fedith-renfrow-grinnell-college-graduation-1937.jpg)
+
+##### Obituaries
+
+#### Edith Renfrow Smith, pioneer and witness to history, dies at 111
+
+### Popular on NPR.org
+
+![White House Press Secretary Karoline Leavitt holds up a printout of a social media post with pictures of alleged undocumented criminals arrested recently by Immigration and Customs Enforcement (ICE) in Minnesota as she speaks during a press briefing at the White House on Jan. 15, 2026. (Photo by Mandel NGAN / AFP via Getty Images)](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F28%2F01%2F88f2e80046ee87ea8d9040172e72%2Fgettyimages-2255804293.jpg)
+
+##### Politics
+
+#### Minnesota shows what happens when governing and content creation merge
+
+![Rep. Barry Loudermilk sits with a microphone in front of him. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![Peter Claffey and Dexter Sol Ansell in A Knight of the Seven Kingdoms.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1079+0+12/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2c%2Fef%2F69ed71fc45c8ba515fe0b748b0c2%2Fpeter-claffey-dexter-sol-ansell-0.jpg)
+
+##### Pop Culture Happy Hour
+
+#### 'A Knight of the Seven Kingdoms' is 'Game of Thrones' for the haters
+
+![Clouds and bursts of tear gas fill a nighttime scene with two law enforcement officers standing in silhouette.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F13%2F9b815b4f46068a2d7dbeacd876ee%2Fap26015098898221.jpg)
+
+##### Explainer
+
+#### Trump threatened to invoke the Insurrection Act (again). What is it?
+
+![Signs are displayed outside a Verizon retail location in Portland, Oregon, on May 14, 2024.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fa7%2F9b4a313947d9bcf3aec4d5678479%2Fverizon-photo.jpg)
+
+##### Business
+
+#### Verizon just had a big outage. Here's what we know
+
+![Protesters (R) are confronted by an ICE supporter during a demonstration outside the Bishop Whipple Federal Building in Minneapolis, Minn.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2F59%2Fa1a6c9574aedbe1ba0cfef9a4c55%2Fgettyimages-2255813342.jpg)
+
+##### Up First Newsletter
+
+#### Trump threatens military action in Minneapolis. And, inside his healthcare plan
+
+### NPR Editors' Picks
+
+![Pfizer CEO Albert Bourla joined President Donald Trump at the podium in the White House on Sept. 30, to announce a voluntary effort to reduce some drug prices. The Trump administration went on to reach similar deals with 15 other drug companies, but all 16 companies still rolled out price hikes this month.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4478x2519+0+260/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3f%2F08%2F1a131422498fa9aaf448e64f8e31%2Fgettyimages-2238336352.jpg)
+
+##### Health
+
+#### Trump struck deals with 16 drug companies. But they're still raising prices this year
+
+![Sylvia Nakami, Rays of Hope Hospice Jinja executive director, is leading the Uganda institution's cancer prevention and treatment efforts. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+378/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5c%2F29%2F6d21a950455e9041d52f8daacf03%2Fhospice-21.jpg)
+
+##### Global Health
+
+#### This hospice has a bold new mission: saving lives
+
+![Canada's Prime Minister Mark Carney, left, meets with Chinese President Xi Jinping at the Great Hall of the People in Beijing Friday, Jan. 16, 2026. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7964x4480+0+464/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fee%2F15136d19448ea2c861a6bac5f954%2Fap26016117118261.jpg)
+
+##### Business
+
+#### Canada agrees to cut tariff on Chinese EVs in return for lower tariffs on Canadian farm products
+
+![From left: Bob Weir, Eric Adams and Amy Poehler.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2827x1590+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F7c%2Fbaa6c83b4ee09272f610c24958e3%2Fbob-eric-amy.jpg)
+
+##### The NPR news quiz
+
+#### What do eggs, Grok and Greenland have in common? They're all quiz-worthy! Are you?
+
+![Customs and Border Protection officers stand near a car parked at the curb. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3200x1800+0+166/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F6f%2Faa4b907745ad8a0581cfaf785b39%2F20260112-cbp-03.jpg)
+
+##### Politics
+
+#### With limited political power, Minnesota Democrats navigate resistance to Trump
+
+![Ellaird Bailey and his wife, Charlotte, who lost their home in Altadena, California, to a wildfire in early 2025, stand in front of their recreational vehicle in December 2025.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F0a%2F087dd2d147d89359a28ae0f620b8%2Fap25348238952091.jpg)
+
+##### Climate
+
+#### FEMA is getting rid of thousands of workers in areas recovering from disasters
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/div#headlineaudio[4]/article#res4463533 -->
+
+#### Rose Mary Woods, Devoted Nixon Secretary, Dies
+
+- Download
+- Embed Embed <iframe src="https://www.npr.org/player/embed/4463532/4463533" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player">
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/div#storytext[5] -->
+
+![image](https://media.npr.org/assets/news/2009/07/16/watergate-9c1e999311b642af290e3779e5ed5c760fe6d002.jpg?s=1100&c=50&f=jpeg)
+
+Woods demonstrates how she might have erased 18.5 minutes of tape. (U.S. National Archives and Records Administration) hide caption
+
+![image]()
+
+Woods demonstrates how she might have erased 18.5 minutes of tape.
+
+Rose Mary Woods, the loyal secretary and friend of President Richard Nixon, has died at age 87.
+
+No matter where the truth lies, Woods will be remembered for the infamous 18.5-minute gap in one of the Watergate tapes, not because she erased it, but because she said she had erased only part of it by mistake.
+
+There's that famous photo of her trying to demonstrate how she could have accidentally erased it — it's known as the "Rose Mary Stretch."
+
+Woods was a stand-up woman and an ideal secretary, says John Dean, former White House counsel. She could decipher Nixon's handwriting, she was very discreet, and she was a formidable gatekeeper who knew who should get access to the president, and who shouldn't.
+
+The tape incident, Dean says, showed that Woods had intimate knowledge about the Watergate scandal. Dean remembers the day he warned Nixon about the cancer on the presidency and told Nixon the Watergate burglars wanted hush money:
+
+"The president said, 'Well, how much will it cost?' and I said, 'It's gonna cost $1 million.' And the president said to me, 'Well, John, I know where we can get that.' As soon as I left the office, he went in to see Rose Mary and ask her if she had any money. It got picked up on the taping machine."
+
+William Safire was in the Nixon White House as a speechwriter at the time and remembers Woods as a secret poet who could turn his prose into phrasing that painted a picture on the page.
+
+"You would read it and it was like reading e.e. cummings," Safire recalls.
+
+Safire says it's unfortunate Woods will be remembered for those 18.5 minutes of missing tape.
+
+"She wasn't involved in the cover-up," he says. "She was involved in being loyal and fighting for her boss."
+
+After she left the White House, Woods moved back to Ohio, where she had been born, and lived an intensely private life. In a statement, Nixon's daughters, Julie Nixon Eisenhower and Tricia Nixon Cox, said Woods was a cherished friend. They said they would not forget how she served her country with unswerving loyalty and dedication.
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/div#storytext[5]/div#res111029306 -->
+
+![image](https://media.npr.org/assets/news/2009/07/16/watergate-9c1e999311b642af290e3779e5ed5c760fe6d002.jpg?s=1100&c=50&f=jpeg)
+
+Woods demonstrates how she might have erased 18.5 minutes of tape. (U.S. National Archives and Records Administration) hide caption
+
+![image]()
+
+Woods demonstrates how she might have erased 18.5 minutes of tape.
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/div#storytext[5]/aside#ad-backstage-wrap -->
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[1] -->
+
+### More Stories From NPR
+
+![image](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1080+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2e%2F57%2Facb61f8444689f044d1640fee036%2Ftwoofficers-1.jpg)
+
+##### NPR Investigation: January 6, 2021
+
+#### 2 police officers relive Jan. 6 through their own bodycam footage
+
+![Venezuelan opposition leader María Corina Machado waves to supporters on Pennsylvania Avenue as she leaves the White House after meeting with President Donald Trump Thursday, in Washington.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3683x2072+0+192/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff1%2Fde%2F112992a34462be4822945f2dfcec%2Fap26015713681855.jpg)
+
+##### Politics
+
+#### Venezuela's Machado says she presented her Nobel Peace Prize to Trump during their meeting
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/4aa9e4f02b9fc6825bc6b450f6766ae832c705ff.jpg?69691eac)
+
+#### NPR+ | The News Roundup For October 24, 2025
+
+![Rep. Barry Loudermilk sits with a microphone in front of him.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/08a41daf8e9ea0cac3c901882cbdfeb157a09880.jpg?6967bfe5)
+
+#### NPR+ | The News Roundup For November 14, 2025
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/28665ffc5c2aa816ee5fa8f46bf52f79cde0f9de.jpg?69627d61)
+
+#### NPR+ | The News Roundup For January 9, 2026
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[1]/article -->
+
+![image](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1080+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2e%2F57%2Facb61f8444689f044d1640fee036%2Ftwoofficers-1.jpg)
+
+##### NPR Investigation: January 6, 2021
+
+#### 2 police officers relive Jan. 6 through their own bodycam footage
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[1]/article -->
+
+![Venezuelan opposition leader María Corina Machado waves to supporters on Pennsylvania Avenue as she leaves the White House after meeting with President Donald Trump Thursday, in Washington.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3683x2072+0+192/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff1%2Fde%2F112992a34462be4822945f2dfcec%2Fap26015713681855.jpg)
+
+##### Politics
+
+#### Venezuela's Machado says she presented her Nobel Peace Prize to Trump during their meeting
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[1]/article -->
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/4aa9e4f02b9fc6825bc6b450f6766ae832c705ff.jpg?69691eac)
+
+#### NPR+ | The News Roundup For October 24, 2025
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[1]/article -->
+
+![Rep. Barry Loudermilk sits with a microphone in front of him.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[1]/article -->
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/08a41daf8e9ea0cac3c901882cbdfeb157a09880.jpg?6967bfe5)
+
+#### NPR+ | The News Roundup For November 14, 2025
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[1]/article -->
+
+![image](https://content-thumbnail.cxpublic.com/content/dominantthumbnail/28665ffc5c2aa816ee5fa8f46bf52f79cde0f9de.jpg?69627d61)
+
+#### NPR+ | The News Roundup For January 9, 2026
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[2] -->
+
+### More Stories From NPR
+
+![Claudette Colvin sits for a portrait, Feb. 5, 2009, in New York.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4080x2294+0+204/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F41%2F58%2Fecdd08fc4ed3b92c210c98373ce4%2Fap26013777455658.jpg)
+
+##### Obituaries
+
+#### Claudette Colvin, who refused to move seats on a bus at start of civil rights movement, dies
+
+![Cartoonist Scott Adams poses with his a life-size cutout of his creation, Dilbert, in 2014.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3527x1984+0+434/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fc5%2Fcabf24e14e8c99bdbe295b55dd15%2Fgettyimages-1322061055.jpg)
+
+##### Obituaries
+
+#### Scott Adams, the controversial cartoonist behind 'Dilbert,' dies at 68
+
+![Bob Weir performs with the Grateful Dead at the Greek Theater in Berkeley, Calif. in 1983. A member of the Dead from its inception, Weir took few solos, but his distinctive rhythm guitar playing and emotive singing were signatures of the group.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+277/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2Fa8%2F46ad5b0a4264b9763bf24ff4da02%2Fgettyimages-1186165081.jpg)
+
+##### Obituaries
+
+#### Bob Weir, guitarist and founding member of the Grateful Dead, has died at 78
+
+![Former CIA agent Aldrich Ames leaves federal court after pleading guilty to espionage and tax evasion conspiracy charges April 28, 1994, in Alexandria, Va.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2069x1164+0+108/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc5%2Fef%2Ffd99e3904b819e3a9bb807679f45%2Fap26007043283817.jpg)
+
+##### Obituaries
+
+#### CIA turncoat Aldrich Ames, who sold U.S. secrets to the Soviets, dies in prison at 84
+
+![Hungarian director Béla Tarr at the Berlin International Film Festival in 2011.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1687+0+49/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc7%2Fdb%2F95399d4e44008c2138835d90428e%2Fgettyimages-109298560.jpg)
+
+##### Obituaries
+
+#### Hungarian filmmaker Béla Tarr — known for bleak, existential movies — has died
+
+![Renfrow Smith in her cap and gown the day she graduated from Grinnell College in 1937.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1151x647+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F06%2F98%2F5b42122a498f80a7116f734e36aa%2Fedith-renfrow-grinnell-college-graduation-1937.jpg)
+
+##### Obituaries
+
+#### Edith Renfrow Smith, pioneer and witness to history, dies at 111
+
+### Popular on NPR.org
+
+![White House Press Secretary Karoline Leavitt holds up a printout of a social media post with pictures of alleged undocumented criminals arrested recently by Immigration and Customs Enforcement (ICE) in Minnesota as she speaks during a press briefing at the White House on Jan. 15, 2026. (Photo by Mandel NGAN / AFP via Getty Images)](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F28%2F01%2F88f2e80046ee87ea8d9040172e72%2Fgettyimages-2255804293.jpg)
+
+##### Politics
+
+#### Minnesota shows what happens when governing and content creation merge
+
+![Rep. Barry Loudermilk sits with a microphone in front of him. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![Peter Claffey and Dexter Sol Ansell in A Knight of the Seven Kingdoms.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1079+0+12/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2c%2Fef%2F69ed71fc45c8ba515fe0b748b0c2%2Fpeter-claffey-dexter-sol-ansell-0.jpg)
+
+##### Pop Culture Happy Hour
+
+#### 'A Knight of the Seven Kingdoms' is 'Game of Thrones' for the haters
+
+![Clouds and bursts of tear gas fill a nighttime scene with two law enforcement officers standing in silhouette.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F13%2F9b815b4f46068a2d7dbeacd876ee%2Fap26015098898221.jpg)
+
+##### Explainer
+
+#### Trump threatened to invoke the Insurrection Act (again). What is it?
+
+![Signs are displayed outside a Verizon retail location in Portland, Oregon, on May 14, 2024.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fa7%2F9b4a313947d9bcf3aec4d5678479%2Fverizon-photo.jpg)
+
+##### Business
+
+#### Verizon just had a big outage. Here's what we know
+
+![Protesters (R) are confronted by an ICE supporter during a demonstration outside the Bishop Whipple Federal Building in Minneapolis, Minn.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2F59%2Fa1a6c9574aedbe1ba0cfef9a4c55%2Fgettyimages-2255813342.jpg)
+
+##### Up First Newsletter
+
+#### Trump threatens military action in Minneapolis. And, inside his healthcare plan
+
+### NPR Editors' Picks
+
+![Pfizer CEO Albert Bourla joined President Donald Trump at the podium in the White House on Sept. 30, to announce a voluntary effort to reduce some drug prices. The Trump administration went on to reach similar deals with 15 other drug companies, but all 16 companies still rolled out price hikes this month.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4478x2519+0+260/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3f%2F08%2F1a131422498fa9aaf448e64f8e31%2Fgettyimages-2238336352.jpg)
+
+##### Health
+
+#### Trump struck deals with 16 drug companies. But they're still raising prices this year
+
+![Sylvia Nakami, Rays of Hope Hospice Jinja executive director, is leading the Uganda institution's cancer prevention and treatment efforts. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+378/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5c%2F29%2F6d21a950455e9041d52f8daacf03%2Fhospice-21.jpg)
+
+##### Global Health
+
+#### This hospice has a bold new mission: saving lives
+
+![Canada's Prime Minister Mark Carney, left, meets with Chinese President Xi Jinping at the Great Hall of the People in Beijing Friday, Jan. 16, 2026. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7964x4480+0+464/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fee%2F15136d19448ea2c861a6bac5f954%2Fap26016117118261.jpg)
+
+##### Business
+
+#### Canada agrees to cut tariff on Chinese EVs in return for lower tariffs on Canadian farm products
+
+![From left: Bob Weir, Eric Adams and Amy Poehler.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2827x1590+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F7c%2Fbaa6c83b4ee09272f610c24958e3%2Fbob-eric-amy.jpg)
+
+##### The NPR news quiz
+
+#### What do eggs, Grok and Greenland have in common? They're all quiz-worthy! Are you?
+
+![Customs and Border Protection officers stand near a car parked at the curb. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3200x1800+0+166/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F6f%2Faa4b907745ad8a0581cfaf785b39%2F20260112-cbp-03.jpg)
+
+##### Politics
+
+#### With limited political power, Minnesota Democrats navigate resistance to Trump
+
+![Ellaird Bailey and his wife, Charlotte, who lost their home in Altadena, California, to a wildfire in early 2025, stand in front of their recreational vehicle in December 2025.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F0a%2F087dd2d147d89359a28ae0f620b8%2Fap25348238952091.jpg)
+
+##### Climate
+
+#### FEMA is getting rid of thousands of workers in areas recovering from disasters
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[2]/section[1] -->
+
+### More Stories From NPR
+
+![Claudette Colvin sits for a portrait, Feb. 5, 2009, in New York.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4080x2294+0+204/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F41%2F58%2Fecdd08fc4ed3b92c210c98373ce4%2Fap26013777455658.jpg)
+
+##### Obituaries
+
+#### Claudette Colvin, who refused to move seats on a bus at start of civil rights movement, dies
+
+![Cartoonist Scott Adams poses with his a life-size cutout of his creation, Dilbert, in 2014.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3527x1984+0+434/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fc5%2Fcabf24e14e8c99bdbe295b55dd15%2Fgettyimages-1322061055.jpg)
+
+##### Obituaries
+
+#### Scott Adams, the controversial cartoonist behind 'Dilbert,' dies at 68
+
+![Bob Weir performs with the Grateful Dead at the Greek Theater in Berkeley, Calif. in 1983. A member of the Dead from its inception, Weir took few solos, but his distinctive rhythm guitar playing and emotive singing were signatures of the group.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+277/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2Fa8%2F46ad5b0a4264b9763bf24ff4da02%2Fgettyimages-1186165081.jpg)
+
+##### Obituaries
+
+#### Bob Weir, guitarist and founding member of the Grateful Dead, has died at 78
+
+![Former CIA agent Aldrich Ames leaves federal court after pleading guilty to espionage and tax evasion conspiracy charges April 28, 1994, in Alexandria, Va.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2069x1164+0+108/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc5%2Fef%2Ffd99e3904b819e3a9bb807679f45%2Fap26007043283817.jpg)
+
+##### Obituaries
+
+#### CIA turncoat Aldrich Ames, who sold U.S. secrets to the Soviets, dies in prison at 84
+
+![Hungarian director Béla Tarr at the Berlin International Film Festival in 2011.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1687+0+49/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc7%2Fdb%2F95399d4e44008c2138835d90428e%2Fgettyimages-109298560.jpg)
+
+##### Obituaries
+
+#### Hungarian filmmaker Béla Tarr — known for bleak, existential movies — has died
+
+![Renfrow Smith in her cap and gown the day she graduated from Grinnell College in 1937.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1151x647+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F06%2F98%2F5b42122a498f80a7116f734e36aa%2Fedith-renfrow-grinnell-college-graduation-1937.jpg)
+
+##### Obituaries
+
+#### Edith Renfrow Smith, pioneer and witness to history, dies at 111
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article -->
+
+![Claudette Colvin sits for a portrait, Feb. 5, 2009, in New York.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4080x2294+0+204/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F41%2F58%2Fecdd08fc4ed3b92c210c98373ce4%2Fap26013777455658.jpg)
+
+##### Obituaries
+
+#### Claudette Colvin, who refused to move seats on a bus at start of civil rights movement, dies
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article -->
+
+![Cartoonist Scott Adams poses with his a life-size cutout of his creation, Dilbert, in 2014.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3527x1984+0+434/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F66%2Fc5%2Fcabf24e14e8c99bdbe295b55dd15%2Fgettyimages-1322061055.jpg)
+
+##### Obituaries
+
+#### Scott Adams, the controversial cartoonist behind 'Dilbert,' dies at 68
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article -->
+
+![Bob Weir performs with the Grateful Dead at the Greek Theater in Berkeley, Calif. in 1983. A member of the Dead from its inception, Weir took few solos, but his distinctive rhythm guitar playing and emotive singing were signatures of the group.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+277/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffe%2Fa8%2F46ad5b0a4264b9763bf24ff4da02%2Fgettyimages-1186165081.jpg)
+
+##### Obituaries
+
+#### Bob Weir, guitarist and founding member of the Grateful Dead, has died at 78
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article -->
+
+![Former CIA agent Aldrich Ames leaves federal court after pleading guilty to espionage and tax evasion conspiracy charges April 28, 1994, in Alexandria, Va.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2069x1164+0+108/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc5%2Fef%2Ffd99e3904b819e3a9bb807679f45%2Fap26007043283817.jpg)
+
+##### Obituaries
+
+#### CIA turncoat Aldrich Ames, who sold U.S. secrets to the Soviets, dies in prison at 84
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article -->
+
+![Hungarian director Béla Tarr at the Berlin International Film Festival in 2011.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1687+0+49/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc7%2Fdb%2F95399d4e44008c2138835d90428e%2Fgettyimages-109298560.jpg)
+
+##### Obituaries
+
+#### Hungarian filmmaker Béla Tarr — known for bleak, existential movies — has died
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article -->
+
+![Renfrow Smith in her cap and gown the day she graduated from Grinnell College in 1937.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1151x647+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F06%2F98%2F5b42122a498f80a7116f734e36aa%2Fedith-renfrow-grinnell-college-graduation-1937.jpg)
+
+##### Obituaries
+
+#### Edith Renfrow Smith, pioneer and witness to history, dies at 111
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[2]/aside#ad-end-of-story-wrap -->
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[2]/section[2] -->
+
+### Popular on NPR.org
+
+![White House Press Secretary Karoline Leavitt holds up a printout of a social media post with pictures of alleged undocumented criminals arrested recently by Immigration and Customs Enforcement (ICE) in Minnesota as she speaks during a press briefing at the White House on Jan. 15, 2026. (Photo by Mandel NGAN / AFP via Getty Images)](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F28%2F01%2F88f2e80046ee87ea8d9040172e72%2Fgettyimages-2255804293.jpg)
+
+##### Politics
+
+#### Minnesota shows what happens when governing and content creation merge
+
+![Rep. Barry Loudermilk sits with a microphone in front of him. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+![Peter Claffey and Dexter Sol Ansell in A Knight of the Seven Kingdoms.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1079+0+12/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2c%2Fef%2F69ed71fc45c8ba515fe0b748b0c2%2Fpeter-claffey-dexter-sol-ansell-0.jpg)
+
+##### Pop Culture Happy Hour
+
+#### 'A Knight of the Seven Kingdoms' is 'Game of Thrones' for the haters
+
+![Clouds and bursts of tear gas fill a nighttime scene with two law enforcement officers standing in silhouette.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F13%2F9b815b4f46068a2d7dbeacd876ee%2Fap26015098898221.jpg)
+
+##### Explainer
+
+#### Trump threatened to invoke the Insurrection Act (again). What is it?
+
+![Signs are displayed outside a Verizon retail location in Portland, Oregon, on May 14, 2024.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fa7%2F9b4a313947d9bcf3aec4d5678479%2Fverizon-photo.jpg)
+
+##### Business
+
+#### Verizon just had a big outage. Here's what we know
+
+![Protesters (R) are confronted by an ICE supporter during a demonstration outside the Bishop Whipple Federal Building in Minneapolis, Minn.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2F59%2Fa1a6c9574aedbe1ba0cfef9a4c55%2Fgettyimages-2255813342.jpg)
+
+##### Up First Newsletter
+
+#### Trump threatens military action in Minneapolis. And, inside his healthcare plan
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article -->
+
+![White House Press Secretary Karoline Leavitt holds up a printout of a social media post with pictures of alleged undocumented criminals arrested recently by Immigration and Customs Enforcement (ICE) in Minnesota as she speaks during a press briefing at the White House on Jan. 15, 2026. (Photo by Mandel NGAN / AFP via Getty Images)](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3840x2160+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F28%2F01%2F88f2e80046ee87ea8d9040172e72%2Fgettyimages-2255804293.jpg)
+
+##### Politics
+
+#### Minnesota shows what happens when governing and content creation merge
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article -->
+
+![Rep. Barry Loudermilk sits with a microphone in front of him. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+218/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F76%2F19%2Fb70b75444b4a9b529f55108bac41%2Fap23131575325564.jpg)
+
+##### Investigations
+
+#### House Republicans are investigating Jan. 6. NPR fact-checked the first hearing
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article -->
+
+![Peter Claffey and Dexter Sol Ansell in A Knight of the Seven Kingdoms.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1920x1079+0+12/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2c%2Fef%2F69ed71fc45c8ba515fe0b748b0c2%2Fpeter-claffey-dexter-sol-ansell-0.jpg)
+
+##### Pop Culture Happy Hour
+
+#### 'A Knight of the Seven Kingdoms' is 'Game of Thrones' for the haters
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article -->
+
+![Clouds and bursts of tear gas fill a nighttime scene with two law enforcement officers standing in silhouette.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F13%2F9b815b4f46068a2d7dbeacd876ee%2Fap26015098898221.jpg)
+
+##### Explainer
+
+#### Trump threatened to invoke the Insurrection Act (again). What is it?
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article -->
+
+![Signs are displayed outside a Verizon retail location in Portland, Oregon, on May 14, 2024.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fa7%2F9b4a313947d9bcf3aec4d5678479%2Fverizon-photo.jpg)
+
+##### Business
+
+#### Verizon just had a big outage. Here's what we know
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article -->
+
+![Protesters (R) are confronted by an ICE supporter during a demonstration outside the Bishop Whipple Federal Building in Minneapolis, Minn.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+156/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2F59%2Fa1a6c9574aedbe1ba0cfef9a4c55%2Fgettyimages-2255813342.jpg)
+
+##### Up First Newsletter
+
+#### Trump threatens military action in Minneapolis. And, inside his healthcare plan
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/article/aside[2]/section[3] -->
+
+### NPR Editors' Picks
+
+![Pfizer CEO Albert Bourla joined President Donald Trump at the podium in the White House on Sept. 30, to announce a voluntary effort to reduce some drug prices. The Trump administration went on to reach similar deals with 15 other drug companies, but all 16 companies still rolled out price hikes this month.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4478x2519+0+260/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3f%2F08%2F1a131422498fa9aaf448e64f8e31%2Fgettyimages-2238336352.jpg)
+
+##### Health
+
+#### Trump struck deals with 16 drug companies. But they're still raising prices this year
+
+![Sylvia Nakami, Rays of Hope Hospice Jinja executive director, is leading the Uganda institution's cancer prevention and treatment efforts. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+378/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5c%2F29%2F6d21a950455e9041d52f8daacf03%2Fhospice-21.jpg)
+
+##### Global Health
+
+#### This hospice has a bold new mission: saving lives
+
+![Canada's Prime Minister Mark Carney, left, meets with Chinese President Xi Jinping at the Great Hall of the People in Beijing Friday, Jan. 16, 2026. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7964x4480+0+464/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fee%2F15136d19448ea2c861a6bac5f954%2Fap26016117118261.jpg)
+
+##### Business
+
+#### Canada agrees to cut tariff on Chinese EVs in return for lower tariffs on Canadian farm products
+
+![From left: Bob Weir, Eric Adams and Amy Poehler.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2827x1590+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F7c%2Fbaa6c83b4ee09272f610c24958e3%2Fbob-eric-amy.jpg)
+
+##### The NPR news quiz
+
+#### What do eggs, Grok and Greenland have in common? They're all quiz-worthy! Are you?
+
+![Customs and Border Protection officers stand near a car parked at the curb. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3200x1800+0+166/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F6f%2Faa4b907745ad8a0581cfaf785b39%2F20260112-cbp-03.jpg)
+
+##### Politics
+
+#### With limited political power, Minnesota Democrats navigate resistance to Trump
+
+![Ellaird Bailey and his wife, Charlotte, who lost their home in Altadena, California, to a wildfire in early 2025, stand in front of their recreational vehicle in December 2025.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F0a%2F087dd2d147d89359a28ae0f620b8%2Fap25348238952091.jpg)
+
+##### Climate
+
+#### FEMA is getting rid of thousands of workers in areas recovering from disasters
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article -->
+
+![Pfizer CEO Albert Bourla joined President Donald Trump at the podium in the White House on Sept. 30, to announce a voluntary effort to reduce some drug prices. The Trump administration went on to reach similar deals with 15 other drug companies, but all 16 companies still rolled out price hikes this month.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4478x2519+0+260/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3f%2F08%2F1a131422498fa9aaf448e64f8e31%2Fgettyimages-2238336352.jpg)
+
+##### Health
+
+#### Trump struck deals with 16 drug companies. But they're still raising prices this year
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article -->
+
+![Sylvia Nakami, Rays of Hope Hospice Jinja executive director, is leading the Uganda institution's cancer prevention and treatment efforts. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4032x2268+0+378/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5c%2F29%2F6d21a950455e9041d52f8daacf03%2Fhospice-21.jpg)
+
+##### Global Health
+
+#### This hospice has a bold new mission: saving lives
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article -->
+
+![Canada's Prime Minister Mark Carney, left, meets with Chinese President Xi Jinping at the Great Hall of the People in Beijing Friday, Jan. 16, 2026. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/7964x4480+0+464/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb3%2Fee%2F15136d19448ea2c861a6bac5f954%2Fap26016117118261.jpg)
+
+##### Business
+
+#### Canada agrees to cut tariff on Chinese EVs in return for lower tariffs on Canadian farm products
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article -->
+
+![From left: Bob Weir, Eric Adams and Amy Poehler.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2827x1590+0+0/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa5%2F7c%2Fbaa6c83b4ee09272f610c24958e3%2Fbob-eric-amy.jpg)
+
+##### The NPR news quiz
+
+#### What do eggs, Grok and Greenland have in common? They're all quiz-worthy! Are you?
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article -->
+
+![Customs and Border Protection officers stand near a car parked at the curb. ](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3200x1800+0+166/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F05%2F6f%2Faa4b907745ad8a0581cfaf785b39%2F20260112-cbp-03.jpg)
+
+##### Politics
+
+#### With limited political power, Minnesota Democrats navigate resistance to Trump
+
+
+<!-- xpath: /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article -->
+
+![Ellaird Bailey and his wife, Charlotte, who lost their home in Altadena, California, to a wildfire in early 2025, stand in front of their recreational vehicle in December 2025.](https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/800/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe2%2F0a%2F087dd2d147d89359a28ae0f620b8%2Fap25348238952091.jpg)
+
+##### Climate
+
+#### FEMA is getting rid of thousands of workers in areas recovering from disasters
+
+
+<!-- xpath: /main/div#wrapper[2]/section#main-section/footer#npr-footer -->
+
+###### Read & Listen
+
+- Home
+- News
+- Culture
+- Music
+- Podcasts & Shows
+
+###### Connect
+
+- Newsletters
+- Facebook
+- Instagram
+- Press
+- Public Editor
+- Corrections
+- Transcripts
+- Contact & Help
+
+###### About NPR
+
+- Overview
+- Diversity
+- NPR Network
+- Accessibility
+- Ethics
+- Finances
+
+###### Get Involved
+
+- Support Public Radio
+- Sponsor NPR
+- NPR Careers
+- NPR Shop
+- NPR Extra
+
+- Terms of Use
+- Privacy
+- Your Privacy Choices
+- Text Only
+- © 2026 npr
+
+
+<!-- xpath: /main/div#wrapper[2]/div#main-sidebar/aside#ad-standard-wrap -->
+
+Sponsor Message
+
+Become an NPR sponsor
+
+
+<!-- xpath: /main/section#global-modal-mount[1] -->
+
+
+<!-- xpath: /main/section[2] -->
+
+![NPR Plus logo](https://prod-eks-static-assets.npr.org/chrome_svg/npr-plus/npr-plus-combo-logo.svg)
+
+##### Exclusive benefits
+
+###### Give a little. Get a lot.
+
+Support mission-driven journalism while getting something great in return. Enjoy bonus content, early access and sponsor-free listening from your favorite NPR podcasts.
+
+Already have NPR+?Sign In
+
+
+<!-- xpath: /div#onetrust-consent-sdk[5] -->
+
+![NPR logo](https://cdn.cookielaw.org/logos/26b1c6a2-1285-46a9-a3af-3a0d7ddde52e/82089dfe-410c-4e1b-a7f9-698174b62a86/12f4304d-661a-4de3-80ce-82f3165cfb61/NPR_Logo_Color.png)
+
+## Privacy Preference Center
+
+### Manage Consent Preferences
+
+#### Strictly Necessary or Essential Cookies
+
+These cookies are essential to provide you with services available through the NPR Services and to enable you to use some of their features. For example, these cookies allow NPR to remember your registration information while you are logged in. Local station customization, the NPR Shop, and other interactive features also use cookies. Without these cookies, the services that you have asked for cannot be provided, and we only use these cookies to provide you with those services.
+
+#### Performance and Analytics Cookies
+
+These cookies are used to collect information about traffic to our Services and how users interact with the NPR Services. The information collected includes the number of visitors to the NPR Services, the websites that referred visitors to the NPR Services, the pages that they visited on the NPR Services, what time of day they visited the NPR Services, whether they have visited the NPR Services before, and other similar information. We use this information to help operate the NPR Services more efficiently, to gather broad demographic information and to monitor the level of activity on the NPR Services.
+
+#### Functional Cookies
+
+These cookies allow our Services to remember choices you make when you use them, such as remembering your Member station preferences and remembering your account details. The purpose of these cookies is to provide you with a more personal experience and to prevent you from having to re-enter your preferences every time you visit the NPR Services.
+
+#### Targeting and Sponsor Cookies
+
+These cookies track your browsing habits or other information, such as location, to enable us to show sponsorship credits which are more likely to be of interest to you. These cookies use information about your browsing history to group you with other users who have similar interests. Based on that information, and with our permission, we and our sponsors can place cookies to enable us or our sponsors to show sponsorship credits and other messages that we think will be relevant to your interests while you are using third-party services.
+
+### Cookie List
+
+![Powered by Onetrust](https://cdn.cookielaw.org/logos/static/powered_by_logo.svg)
+
+
+<!-- end: 5933 words extracted -->

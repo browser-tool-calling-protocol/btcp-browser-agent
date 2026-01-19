@@ -1,0 +1,195 @@
+PAGE: http://localhost/ | Rose Mary Woods, Devoted Nixon Secretary, Dies : NPR | viewport=1024x768
+SNAPSHOT: elements=846 refs=192
+
+LINK "Skip to main content" @ref:0 /ul/li[1]/a
+LINK "Keyboard shortcuts for audio player" @ref:1 /ul/li[2]/a
+BUTTON @ref:2 /div#player-react-mount[4]/section#npr-player/button#npr-player__stream-initiated[1]
+BUTTON @ref:3 /div#player-react-mount[4]/section#npr-player/button#npr-player__segment-initiated[2]
+BUTTON @ref:4 /div#player-react-mount[4]/section#npr-player/button[3]
+BUTTON @ref:5 /div#player-react-mount[4]/section#npr-player/button[4]
+BUTTON @ref:6 /div#player-react-mount[4]/section#npr-player/button#npr-player__audio-complete[5]
+BUTTON "NPR 24 Hour Program StreamOn Air Now" @ref:7 /div#player-react-mount[4]/section#npr-player/article.item-initial/button
+BUTTON "Hourly News" @ref:8 /div#player-react-mount[4]/section#npr-player/ul/li[1]/button.btn-newscast
+BUTTON "Listen Live" @ref:9 /div#player-react-mount[4]/section#npr-player/ul/li[2]/button.btn-live-radio
+BUTTON "My Playlist" @ref:10 /div#player-react-mount[4]/section#npr-player/ul/li[3]/button.btn-playlist
+BUTTON "Open Navigation Menu" @ref:11 /header#globalheader/nav.navigation/ul.navigation__top-level/li.navigation__toggle-wrap[1]/button#navigation__toggle--open
+LINK @ref:12 /header#globalheader/nav.navigation/ul.navigation__top-level/li.navigation__home[2]/a
+LINK "Newsletters" @ref:13 /header#globalheader/nav.navigation/ul.navigation__top-level/li.navigation__newsletters[4]/a
+LINK "Sign In" @ref:14 /header#globalheader/nav.navigation/ul.navigation__top-level/li#user-account-dropdown-mount[5]/a
+LINK "NPR Shop" @ref:15 /header#globalheader/nav.navigation/ul.navigation__top-level/li.navigation__shop[6]/a
+LINK "Donate" @ref:16 /header#globalheader/nav.navigation/ul.navigation__top-level/li[7]/a
+LINK "Local Station" @ref:17 /nav.navigation/ul.navigation__top-level/li[7]/ul/li[1]/a
+LINK "NPR Network" @ref:18 /nav.navigation/ul.navigation__top-level/li[7]/ul/li[2]/a
+BUTTON "Close Navigation Menu" @ref:19 (expanded) /header#globalheader/nav.navigation/section#main-menu[1]/div.menu__inner/header.menu__header/button#navigation__toggle--close
+LINK "Home" @ref:20 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[1]/div.menu__item-inner/a
+LINK "News" @ref:21 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[2]/div.menu__item-inner/a
+BUTTON "Expand/collapse submenu for News" @ref:22 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[2]/div.menu__item-inner/button.menu__toggle-submenu
+LINK "National" @ref:23 /div.menu__inner/ul.menu__list/li.menu__item[2]/ul/li[1]/a
+LINK "World" @ref:24 /div.menu__inner/ul.menu__list/li.menu__item[2]/ul/li[2]/a
+LINK "Politics" @ref:25 /div.menu__inner/ul.menu__list/li.menu__item[2]/ul/li[3]/a
+LINK "Business" @ref:26 /div.menu__inner/ul.menu__list/li.menu__item[2]/ul/li[4]/a
+LINK "Health" @ref:27 /div.menu__inner/ul.menu__list/li.menu__item[2]/ul/li[5]/a
+LINK "Science" @ref:28 /div.menu__inner/ul.menu__list/li.menu__item[2]/ul/li[6]/a
+LINK "Climate" @ref:29 /div.menu__inner/ul.menu__list/li.menu__item[2]/ul/li[7]/a
+LINK "Race" @ref:30 /div.menu__inner/ul.menu__list/li.menu__item[2]/ul/li[8]/a
+LINK "Culture" @ref:31 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[3]/div.menu__item-inner/a
+BUTTON "Expand/collapse submenu for Culture" @ref:32 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[3]/div.menu__item-inner/button.menu__toggle-submenu
+LINK "Books" @ref:33 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[1]/a
+LINK "Movies" @ref:34 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[2]/a
+LINK "Television" @ref:35 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[3]/a
+LINK "Pop Culture" @ref:36 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[4]/a
+LINK "Food" @ref:37 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[5]/a
+LINK "Art & Design" @ref:38 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[6]/a
+LINK "Performing Arts" @ref:39 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[7]/a
+LINK "Life Kit" @ref:40 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[8]/a
+LINK "Gaming" @ref:41 /div.menu__inner/ul.menu__list/li.menu__item[3]/ul/li[9]/a
+LINK "Music" @ref:42 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[4]/div.menu__item-inner/a
+BUTTON "Expand/collapse submenu for Music" @ref:43 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[4]/div.menu__item-inner/button.menu__toggle-submenu
+LINK "The Best Music of 2025" @ref:44 /div.menu__inner/ul.menu__list/li.menu__item[4]/ul/li[1]/a
+LINK "All Songs Considered" @ref:45 /div.menu__inner/ul.menu__list/li.menu__item[4]/ul/li[2]/a
+LINK "Tiny Desk" @ref:46 /div.menu__inner/ul.menu__list/li.menu__item[4]/ul/li[3]/a
+LINK "Music Features" @ref:47 /div.menu__inner/ul.menu__list/li.menu__item[4]/ul/li[4]/a
+LINK "Live Sessions" @ref:48 /div.menu__inner/ul.menu__list/li.menu__item[4]/ul/li[5]/a
+LINK "Podcasts & Shows" @ref:49 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[5]/div.menu__item-inner[1]/a
+BUTTON "Expand/collapse submenu for Podcasts & Shows" @ref:50 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[5]/div.menu__item-inner[1]/button.menu__toggle-submenu
+LINK "Morning Edition" @ref:51 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[1]/li[1]/a
+LINK "Weekend Edition Saturday" @ref:52 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[1]/li[2]/a
+LINK "Weekend Edition Sunday" @ref:53 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[1]/li[3]/a
+LINK "All Things Considered" @ref:54 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[1]/li[4]/a
+LINK "Fresh Air" @ref:55 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[1]/li[5]/a
+LINK "Up First" @ref:56 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[1]/li[6]/a
+LINK "Embedded" @ref:57 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[2]/li[1]/a
+LINK "The NPR Politics Podcast" @ref:58 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[2]/li[2]/a
+LINK "Throughline" @ref:59 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[2]/li[3]/a
+LINK "Trump's Terms" @ref:60 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[2]/li[4]/a
+LINK "More Podcasts & Shows" @ref:61 /div.menu__inner/ul.menu__list/li.menu__item[5]/ul[3]/li/a
+LINK "Search" @ref:62 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[6]/div.menu__item-inner/a#navigation_dropdown-search
+LINK "Newsletters" @ref:63 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[7]/div.menu__item-inner/a
+LINK "NPR Shop" @ref:64 /section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[8]/div.menu__item-inner/a
+LINK "Sign In" @ref:65 /nav.navigation/section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[9]/a
+LINK "music" @ref:66 /nav.navigation/section.menu[2]/div.menu__list-wrap/ul.menu__list/li.menu__item[1]/a
+LINK "The Best Music of 2025" @ref:67 /nav.navigation/section.menu[2]/div.menu__list-wrap/ul.menu__list/li.menu__item[2]/a
+LINK "All Songs Considered" @ref:68 /nav.navigation/section.menu[2]/div.menu__list-wrap/ul.menu__list/li.menu__item[3]/a
+LINK "Tiny Desk" @ref:69 /nav.navigation/section.menu[2]/div.menu__list-wrap/ul.menu__list/li.menu__item[4]/a
+LINK "Music Features" @ref:70 /nav.navigation/section.menu[2]/div.menu__list-wrap/ul.menu__list/li.menu__item[5]/a
+LINK "Live Sessions" @ref:71 /nav.navigation/section.menu[2]/div.menu__list-wrap/ul.menu__list/li.menu__item[6]/a
+LINK "About NPR" @ref:72 /nav.navigation/section.menu[3]/div.menu__list-wrap/ul.menu__list/li.menu__item[1]/a
+LINK "Diversity" @ref:73 /nav.navigation/section.menu[3]/div.menu__list-wrap/ul.menu__list/li.menu__item[2]/a
+LINK "Support" @ref:74 /nav.navigation/section.menu[3]/div.menu__list-wrap/ul.menu__list/li.menu__item[3]/a
+LINK "Careers" @ref:75 /nav.navigation/section.menu[3]/div.menu__list-wrap/ul.menu__list/li.menu__item[4]/a
+LINK "Press" @ref:76 /nav.navigation/section.menu[3]/div.menu__list-wrap/ul.menu__list/li.menu__item[5]/a
+LINK "Ethics" @ref:77 /nav.navigation/section.menu[3]/div.menu__list-wrap/ul.menu__list/li.menu__item[6]/a
+LINK "Obituaries" @ref:78 /main/div#wrapper[2]/section#main-section/article/h3/a
+LINK "Morning Edition" @ref:79 /main/div#wrapper[2]/section#main-section/article/div#story-meta[3]/a
+BUTTON "Listen· 2:20" @ref:80 /div#wrapper[2]/section#main-section/article/div#headlineaudio[4]/article#res4463533/button[1]
+BUTTON "Playlist" @ref:81 /div#wrapper[2]/section#main-section/article/div#headlineaudio[4]/article#res4463533/button[2]
+BUTTON "Toggle more options" @ref:82 /div#wrapper[2]/section#main-section/article/div#headlineaudio[4]/article#res4463533/button
+LINK "Download" @ref:83 /article/div#headlineaudio[4]/article#res4463533/ul/li[1]/a
+BUTTON "Embed" @ref:84 /article/div#headlineaudio[4]/article#res4463533/ul/li[2]/button
+BUTTON @ref:85 /article/div#headlineaudio[4]/article#res4463533/ul/li[2]/button.btn-close
+TEXTBOX "Embed" @ref:86 /div#headlineaudio[4]/article#res4463533/ul/li[2]/label/input
+BUTTON "Enlarge this image" @ref:87 /div#wrapper[2]/section#main-section/article/div#storytext[5]/div#res111029306/button
+BUTTON "Facebook" @ref:88 /div#wrapper[2]/section#main-section/article/ul/li[1]/button
+BUTTON "Flipboard" @ref:89 /div#wrapper[2]/section#main-section/article/ul/li[2]/button
+BUTTON "Email" @ref:90 /div#wrapper[2]/section#main-section/article/ul/li[3]/button
+LINK "2 police officers relive Jan. 6 through their o..." @ref:91 /div#wrapper[2]/section#main-section/article/aside[1]/article/a#cXLinkIdmkh7i777z7prn3d5
+LINK "NPR Investigation: January 6, 2021" @ref:92 /section#main-section/article/aside[1]/article/h5/a#cXLinkIdmkh7i777uhg12w6k
+LINK "2 police officers relive Jan. 6 through their o..." @ref:93 /section#main-section/article/aside[1]/article/h4/a#cXLinkIdmkh7i778nvq3iw4f
+LINK "Venezuela's Machado says she presented her Nobe..." @ref:94 /div#wrapper[2]/section#main-section/article/aside[1]/article/a#cXLinkIdmkh7i778steu0r2v
+LINK "Politics" @ref:95 /section#main-section/article/aside[1]/article/h5/a#cXLinkIdmkh7i778dtnhrs2b
+LINK "Venezuela's Machado says she presented her Nobe..." @ref:96 /section#main-section/article/aside[1]/article/h4/a#cXLinkIdmkh7i778mk02q9fc
+LINK "NPR+ | The News Roundup For October 24, 2025" @ref:97 /div#wrapper[2]/section#main-section/article/aside[1]/article/a#cXLinkIdmkh7i778eatsbvmq
+LINK "NPR+ | The News Roundup For October 24, 2025" @ref:98 /section#main-section/article/aside[1]/article/h4/a#cXLinkIdmkh7i778s092j0uk
+LINK "House Republicans are investigating Jan. 6. NPR..." @ref:99 /div#wrapper[2]/section#main-section/article/aside[1]/article/a#cXLinkIdmkh7i778lm23riyj
+LINK "Investigations" @ref:100 /section#main-section/article/aside[1]/article/h5/a#cXLinkIdmkh7i778owydaowv
+LINK "House Republicans are investigating Jan. 6. NPR..." @ref:101 /section#main-section/article/aside[1]/article/h4/a#cXLinkIdmkh7i778v02jcv5n
+LINK "NPR+ | The News Roundup For November 14, 2025" @ref:102 /div#wrapper[2]/section#main-section/article/aside[1]/article/a#cXLinkIdmkh7i778717wtpvk
+LINK "NPR+ | The News Roundup For November 14, 2025" @ref:103 /section#main-section/article/aside[1]/article/h4/a#cXLinkIdmkh7i779i4igybi0
+LINK "NPR+ | The News Roundup For January 9, 2026" @ref:104 /div#wrapper[2]/section#main-section/article/aside[1]/article/a#cXLinkIdmkh7i779kahdox7s
+LINK "NPR+ | The News Roundup For January 9, 2026" @ref:105 /section#main-section/article/aside[1]/article/h4/a#cXLinkIdmkh7i779676idjeh
+LINK "claudette colvin obituary montgomery bus civil ..." @ref:106 /section#main-section/article/aside[2]/section[1]/article/a
+LINK "Obituaries" @ref:107 /article/aside[2]/section[1]/article/h5/a
+LINK "Claudette Colvin, who refused to move seats on ..." @ref:108 /article/aside[2]/section[1]/article/h4/a
+LINK "scott adams dilbert dies" @ref:109 /section#main-section/article/aside[2]/section[1]/article/a
+LINK "Obituaries" @ref:110 /article/aside[2]/section[1]/article/h5/a
+LINK "Scott Adams, the controversial cartoonist behin..." @ref:111 /article/aside[2]/section[1]/article/h4/a
+LINK "bob weir grateful dead obituary" @ref:112 /section#main-section/article/aside[2]/section[1]/article/a
+LINK "Obituaries" @ref:113 /article/aside[2]/section[1]/article/h5/a
+LINK "Bob Weir, guitarist and founding member of the ..." @ref:114 /article/aside[2]/section[1]/article/h4/a
+LINK "cia turncoat aldrich ames dies at 84" @ref:115 /section#main-section/article/aside[2]/section[1]/article/a
+LINK "Obituaries" @ref:116 /article/aside[2]/section[1]/article/h5/a
+LINK "CIA turncoat Aldrich Ames, who sold U.S. secret..." @ref:117 /article/aside[2]/section[1]/article/h4/a
+LINK "bela tarr filmmaker dead" @ref:118 /section#main-section/article/aside[2]/section[1]/article/a
+LINK "Obituaries" @ref:119 /article/aside[2]/section[1]/article/h5/a
+LINK "Hungarian filmmaker Béla Tarr — known for bleak..." @ref:120 /article/aside[2]/section[1]/article/h4/a
+LINK "edith renfrow smith pioneer and witness to hist..." @ref:121 /section#main-section/article/aside[2]/section[1]/article/a
+LINK "Obituaries" @ref:122 /article/aside[2]/section[1]/article/h5/a
+LINK "Edith Renfrow Smith, pioneer and witness to his..." @ref:123 /article/aside[2]/section[1]/article/h4/a
+LINK "trump post online minnesota social media ice" @ref:124 /section#main-section/article/aside[2]/section[2]/article/a
+LINK "Politics" @ref:125 /article/aside[2]/section[2]/article/h5/a
+LINK "Minnesota shows what happens when governing and..." @ref:126 /article/aside[2]/section[2]/article/h4/a
+LINK "jan 6 house gop capitol trump" @ref:127 /section#main-section/article/aside[2]/section[2]/article/a
+LINK "Investigations" @ref:128 /article/aside[2]/section[2]/article/h5/a
+LINK "House Republicans are investigating Jan. 6. NPR..." @ref:129 /article/aside[2]/section[2]/article/h4/a
+LINK "a knight of the seven kingdoms review hbo game ..." @ref:130 /section#main-section/article/aside[2]/section[2]/article/a
+LINK "Pop Culture Happy Hour" @ref:131 /article/aside[2]/section[2]/article/h5/a
+LINK "'A Knight of the Seven Kingdoms' is 'Game of Th..." @ref:132 /article/aside[2]/section[2]/article/h4/a
+LINK "minneapolis insurrection act trump threats" @ref:133 /section#main-section/article/aside[2]/section[2]/article/a
+LINK "Explainer" @ref:134 /article/aside[2]/section[2]/article/h5/a
+LINK "Trump threatened to invoke the Insurrection Act..." @ref:135 /article/aside[2]/section[2]/article/h4/a
+LINK "verizon outage what happened" @ref:136 /section#main-section/article/aside[2]/section[2]/article/a
+LINK "Business" @ref:137 /article/aside[2]/section[2]/article/h5/a
+LINK "Verizon just had a big outage. Here's what we know" @ref:138 /article/aside[2]/section[2]/article/h4/a
+LINK "up first newsletter minneapolis protests venezu..." @ref:139 /section#main-section/article/aside[2]/section[2]/article/a
+LINK "Up First Newsletter" @ref:140 /article/aside[2]/section[2]/article/h5/a
+LINK "Trump threatens military action in Minneapolis...." @ref:141 /article/aside[2]/section[2]/article/h4/a
+LINK "trumprx pharma drug price deals list prices" @ref:142 /section#main-section/article/aside[2]/section[3]/article/a
+LINK "Health" @ref:143 /article/aside[2]/section[3]/article/h5/a
+LINK "Trump struck deals with 16 drug companies. But ..." @ref:144 /article/aside[2]/section[3]/article/h4/a
+LINK "hospice cervical cancer prevention" @ref:145 /section#main-section/article/aside[2]/section[3]/article/a
+LINK "Global Health" @ref:146 /article/aside[2]/section[3]/article/h5/a
+LINK "This hospice has a bold new mission: saving lives" @ref:147 /article/aside[2]/section[3]/article/h4/a
+LINK "canada cut tariff chinese evs canadian farm pro..." @ref:148 /section#main-section/article/aside[2]/section[3]/article/a
+LINK "Business" @ref:149 /article/aside[2]/section[3]/article/h5/a
+LINK "Canada agrees to cut tariff on Chinese EVs in r..." @ref:150 /article/aside[2]/section[3]/article/h4/a
+LINK "greenland denmark nasa grok star trek golden gl..." @ref:151 /section#main-section/article/aside[2]/section[3]/article/a
+LINK "The NPR news quiz" @ref:152 /article/aside[2]/section[3]/article/h5/a
+LINK "What do eggs, Grok and Greenland have in common..." @ref:153 /article/aside[2]/section[3]/article/h4/a
+LINK "immigration minnesota democrats navigate resist..." @ref:154 /section#main-section/article/aside[2]/section[3]/article/a
+LINK "Politics" @ref:155 /article/aside[2]/section[3]/article/h5/a
+LINK "With limited political power, Minnesota Democra..." @ref:156 /article/aside[2]/section[3]/article/h4/a
+LINK "fema cuts jobs trump" @ref:157 /section#main-section/article/aside[2]/section[3]/article/a
+LINK "Climate" @ref:158 /article/aside[2]/section[3]/article/h5/a
+LINK "FEMA is getting rid of thousands of workers in ..." @ref:159 /article/aside[2]/section[3]/article/h4/a
+LINK "Home" @ref:160 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[1]/a
+LINK "News" @ref:161 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[2]/a
+LINK "Culture" @ref:162 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[3]/a
+LINK "Music" @ref:163 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[4]/a
+LINK "Podcasts & Shows" @ref:164 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[5]/a
+LINK "Newsletters" @ref:165 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[1]/a
+LINK "Facebook" @ref:166 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[2]/a
+LINK "Instagram" @ref:167 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[3]/a
+LINK "Press" @ref:168 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[4]/a
+LINK "Public Editor" @ref:169 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[5]/a
+LINK "Corrections" @ref:170 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[6]/a
+LINK "Transcripts" @ref:171 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[7]/a
+LINK "Contact & Help" @ref:172 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[8]/a
+LINK "Overview" @ref:173 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[1]/a
+LINK "Diversity" @ref:174 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[2]/a
+LINK "NPR Network" @ref:175 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[3]/a
+LINK "Accessibility" @ref:176 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[4]/a
+LINK "Ethics" @ref:177 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[5]/a
+LINK "Finances" @ref:178 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[6]/a
+LINK "Support Public Radio" @ref:179 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[1]/a
+LINK "Sponsor NPR" @ref:180 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[2]/a
+LINK "NPR Careers" @ref:181 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[3]/a
+LINK "NPR Shop" @ref:182 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[4]/a
+LINK "NPR Extra" @ref:183 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[5]/a
+LINK "Terms of Use" @ref:184 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[1]/a
+LINK "Privacy" @ref:185 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[2]/a
+LINK "Your Privacy Choices" @ref:186 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[3]/a
+LINK "Text Only" @ref:187 /div#wrapper[2]/section#main-section/footer#npr-footer/ul/li[4]/a
+LINK "Become an NPR sponsor" @ref:188 /main/div#wrapper[2]/div#main-sidebar/aside#ad-standard-wrap/a
+LINK "Get NPR+" @ref:189 /main/section[2]/a
+LINK "Sign In" @ref:190 /main/section[2]/a
+BUTTON "Close modal" @ref:191 /main/section[2]/button#npr-plus-access__close

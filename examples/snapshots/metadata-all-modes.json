@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-01-19T14:27:00.419Z",
+  "modes": [
+    {
+      "mode": "interactive",
+      "format": "tree",
+      "suffix": "interactive"
+    },
+    {
+      "mode": "outline",
+      "format": "tree",
+      "suffix": "outline"
+    },
+    {
+      "mode": "content",
+      "format": "tree",
+      "suffix": "content"
+    },
+    {
+      "mode": "content",
+      "format": "markdown",
+      "suffix": "content-markdown"
+    }
+  ],
+  "files": [
+    {
+      "filename": "npr-org-templates",
+      "outputFile": "npr-org-templates.interactive.txt",
+      "mode": "interactive",
+      "format": "tree",
+      "stats": {
+        "outputSize": 19707,
+        "lineCount": 195,
+        "refCount": 192,
+        "wordCount": 1212,
+        "generationTime": 1304
+      }
+    },
+    {
+      "filename": "npr-org-templates",
+      "outputFile": "npr-org-templates.outline.txt",
+      "mode": "outline",
+      "format": "tree",
+      "stats": {
+        "outputSize": 15981,
+        "lineCount": 133,
+        "refCount": 53,
+        "wordCount": 1094,
+        "generationTime": 1334
+      }
+    },
+    {
+      "filename": "npr-org-templates",
+      "outputFile": "npr-org-templates.content.txt",
+      "mode": "content",
+      "format": "tree",
+      "stats": {
+        "outputSize": 47623,
+        "lineCount": 843,
+        "refCount": 0,
+        "wordCount": 6635,
+        "generationTime": 1347
+      }
+    },
+    {
+      "filename": "npr-org-templates",
+      "outputFile": "npr-org-templates.content-markdown.txt",
+      "mode": "content",
+      "format": "markdown",
+      "stats": {
+        "outputSize": 97513,
+        "lineCount": 1702,
+        "refCount": 0,
+        "wordCount": 9435,
+        "generationTime": 1352
+      }
+    }
+  ]
+}

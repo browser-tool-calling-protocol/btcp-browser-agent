@@ -32,7 +32,7 @@ function generateSnapshotFromHTML(htmlPath: string) {
   const refMap = createSimpleRefMap();
 
   return createSnapshot(document, refMap, {
-    interactive: true,
+    mode: 'interactive',
     compact: true,
     maxDepth: 10,
     includeHidden: false,

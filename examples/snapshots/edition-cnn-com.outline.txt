@@ -1,0 +1,72 @@
+PAGE: http://localhost/ | Breaking News, Latest News and Videos | CNN | viewport=1024x768
+OUTLINE: landmarks=12 sections=28 headings=18 words=60876
+
+BANNER "header wrapper outer" @ref:0 [385 words, 179 links, 136 items] /header.header__wrapper-outer
+  REGION "header wrapper inner" @ref:1 [385 words, 179 links, 136 items] /header.header__wrapper-outer/div.header__wrapper-inner
+    NAVIGATION "pageHeader" @ref:2 [289 words, 179 links, 136 items] /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader
+      REGION "header inner" @ref:3 [289 words, 179 links, 136 items] /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner
+        REGION "header subnav mount" @ref:4 [289 words, 179 links, 136 items] /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner/div.header__subnav-mount
+          REGION "header container" @ref:5 [62 words, 39 links, 4 items] /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner/div.header__subnav-mount/div.header__container[1]
+            NAVIGATION "User Account Nav" @ref:6 [20 words, 5 links, 4 items] /div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__right[2]/div#desktop-header-account-nav/nav
+REGION @ref:7 /section[1]
+REGION "Trump floats tariffs on countries opposed to US..." @ref:8 [1450 words, 155 links, 4 paragraphs, 85 items] /section[3]
+  REGION "Trump floats tariffs on countries opposed to US..." @ref:9 [1450 words, 155 links, 4 paragraphs, 85 items] /section[3]/section
+    MAIN "Trump floats tariffs on countries opposed to US..." @ref:10 [1450 words, 155 links, 4 paragraphs, 85 items] /section[3]/section
+      REGION "tabcontent" @ref:11 [1450 words, 155 links, 4 paragraphs, 85 items] /section[3]/section/section.tabcontent
+        LIST [7 items] /section[3]/section/section.tabcontent/div.container/ul
+        REGION "container" @ref:12 [77 words, 4 links, 3 items] /section[3]/section/section.tabcontent/div.container[1]
+          LIST [3 items] /section[3]/section/section.tabcontent/div.container[1]/ul
+        LIST [3 items] /section[3]/section/section.tabcontent/div.container[2]/ul
+        REGION "container" @ref:13 [131 words, 5 links] /section[3]/section/section.tabcontent/div.container[1]
+          HEADING level=2 "Trump floats tariffs on countries opposed to US control o..." /section[3]/section/section.tabcontent/div.container[1]/a/h2
+          REGION "card" @ref:14 [67 words, 1 links] /section[3]/section/section.tabcontent/div.container[1]/div.card[3]
+        HEADING level=2 "More politics" /section[3]/section/section.tabcontent/div.container[2]/h2
+        LIST [3 items] /section[3]/section/section.tabcontent/div.container[2]/ul
+        LIST [1 items] /section[3]/section/section.tabcontent/div.container[1]/ul
+        REGION "container" @ref:15 [79 words, 10 links, 5 items] /section[3]/section/section.tabcontent/div.container[2]
+          LIST [5 items] /section[3]/section/section.tabcontent/div.container[2]/ul
+        REGION "container" @ref:16 [76 words, 7 links, 6 items] /section[3]/section/section.tabcontent/div.container
+          HEADING level=2 "More top stories" /section[3]/section/section.tabcontent/div.container/h2
+          LIST [6 items] /section[3]/section/section.tabcontent/div.container/ul
+        REGION "container" @ref:17 [56 words, 6 links, 3 items] /section[3]/section/section.tabcontent/div.container
+          HEADING level=2 "Entertainment" /section[3]/section/section.tabcontent/div.container/h2
+          LIST [3 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "More on Minneapolis" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [2 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "Health & wellness" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING level=2 "Style" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [2 items] /section[3]/section/section.tabcontent/div.container/ul
+        REGION "container" @ref:18 [54 words, 6 links, 3 items] /section[3]/section/section.tabcontent/div.container
+          HEADING level=2 "More US POLITICS" /section[3]/section/section.tabcontent/div.container/h2
+          LIST [3 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "Business & Tech" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [3 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "Crime & courts" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [1 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "Sports" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [1 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "Health & Wellness" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [1 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "US economy" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [1 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "Science & Discovery" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [1 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "Travel" /section[3]/section/section.tabcontent/div.container/h2
+        LIST [1 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "CNN Shorts" /section[3]/section/section.tabcontent/h2
+        REGION "container" @ref:19 [384 words, 50 links, 25 items] /section[3]/section/section.tabcontent/div.container
+          LIST [25 items] /section[3]/section/section.tabcontent/div.container/ul
+        REGION "container" @ref:20 [65 words, 9 links, 4 items] /section[3]/section/section.tabcontent/div.container
+          HEADING level=2 "Call to Earth" /section[3]/section/section.tabcontent/div.container/a/h2
+          LIST [4 items] /section[3]/section/section.tabcontent/div.container/ul
+        HEADING level=2 "More from CNN" /section[3]/section/section.tabcontent/h2
+        REGION "container" @ref:21 [88 words, 7 links, 7 items] /section[3]/section/section.tabcontent/div.container
+          LIST [7 items] /section[3]/section/section.tabcontent/div.container/ul
+CONTENTINFO "pageFooter" @ref:22 [296 words, 157 links, 136 items] /footer#pageFooter
+  REGION "footer inner" @ref:23 [296 words, 157 links, 136 items] /footer#pageFooter/div.footer__inner
+    NAVIGATION "User Account Nav" @ref:24 [20 words, 5 links, 4 items] /footer#pageFooter/div.footer__inner/div#mobile-footer-account-nav[2]/nav
+    REGION "footer subnav" @ref:25 [199 words, 123 links, 123 items] /footer#pageFooter/div.footer__inner/div.footer__subnav[3]
+      NAVIGATION @ref:26 [199 words, 123 links, 123 items] /footer#pageFooter/div.footer__inner/div.footer__subnav[3]/nav
+        LIST [20 items] /footer#pageFooter/div.footer__inner/div.footer__subnav[3]/nav/ul
+    LIST [5 items] /footer#pageFooter/div.footer__inner/div.footer__row[4]/div.footer__right[2]/div.footer__social-and-app[2]/ul
+    NAVIGATION "footer links" @ref:27 [15 words, 8 links] /footer#pageFooter/div.footer__inner/nav.footer__links

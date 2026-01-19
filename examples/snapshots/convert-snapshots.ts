@@ -47,14 +47,16 @@ function processFile(htmlPath: string) {
   const refMap = createSimpleRefMap();
 
   const start = performance.now();
-  const snapshotTree = createSnapshot(document, refMap, {
-    interactive: true,
+  const snapshotData = createSnapshot(document, refMap, {
+    mode: 'interactive',
     compact: true,
     maxDepth: 50,
     includeHidden: true,
   });
   const duration = performance.now() - start;
 
+  // Get tree string from snapshot data
+  const snapshotTree = snapshotData.tree;
   const elementCount = snapshotTree.split('\n').filter(line => line.trim()).length;
   // Extract ref count from @ref: markers in the tree
   const refCount = (snapshotTree.match(/@ref:\d+/g) || []).length;

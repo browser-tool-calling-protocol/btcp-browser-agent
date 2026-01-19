@@ -1,0 +1,637 @@
+<!-- source: http://localhost/ -->
+<!-- xpath: /div#__primerPortalRoot__[1] -->
+
+
+<!-- xpath: /div.header-wrapper[2] -->
+
+## Navigation Menu
+
+- microsoft
+- vscode
+
+# Search code, repositories, users, issues, pull requests...
+
+
+# Provide feedback
+
+We read every piece of feedback, and take your input very seriously.
+
+# Saved searches
+
+## Use saved searches to filter your results more quickly
+
+To see all available qualifiers, see our documentation.
+
+![image](https://avatars.githubusercontent.com/u/11575076?v=4)
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+- Code
+- Issues 5k+
+- Pull requests 975
+- Actions
+- Projects 1
+- Models
+- Wiki
+- Security 19 Uh oh! There was an error while loading. Please reload this page.
+- Insights
+
+- Code
+- Issues
+- Pull requests
+- Actions
+- Projects
+- Models
+- Wiki
+- Security
+- Insights
+
+
+<!-- xpath: /div.header-wrapper[2]/header -->
+
+## Navigation Menu
+
+- microsoft
+- vscode
+
+# Search code, repositories, users, issues, pull requests...
+
+
+# Provide feedback
+
+We read every piece of feedback, and take your input very seriously.
+
+# Saved searches
+
+## Use saved searches to filter your results more quickly
+
+To see all available qualifiers, see our documentation.
+
+![image](https://avatars.githubusercontent.com/u/11575076?v=4)
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+- Code
+- Issues 5k+
+- Pull requests 975
+- Actions
+- Projects 1
+- Models
+- Wiki
+- Security 19 Uh oh! There was an error while loading. Please reload this page.
+- Insights
+
+- Code
+- Issues
+- Pull requests
+- Actions
+- Projects
+- Models
+- Wiki
+- Security
+- Insights
+
+
+<!-- xpath: /div.header-wrapper[2]/header/nav -->
+
+- microsoft
+- vscode
+
+
+<!-- xpath: /div.header-wrapper[2]/header/nav -->
+
+- Code
+- Issues 5k+
+- Pull requests 975
+- Actions
+- Projects 1
+- Models
+- Wiki
+- Security 19 Uh oh! There was an error while loading. Please reload this page.
+- Insights
+
+- Code
+- Issues
+- Pull requests
+- Actions
+- Projects
+- Models
+- Wiki
+- Security
+- Insights
+
+
+<!-- xpath: /main#js-repo-pjax-container -->
+
+![Owner avatar](https://avatars.githubusercontent.com/u/6154722?s=48&v=4)
+
+- {"props":{"subscriptionType":"none","repositoryId":41881900,"repositoryName":"microsoft/vscode","watchersCount":3388,"subscribableThreadTypes":[{"name":"Issue","enabled":true,"subscribed":false},{"...
+- Fork 37.4k Fork your own copy of microsoft/vscode Forks could not be loaded Loading Uh oh! There was an error while loading. Please reload this page.
+- Starred 181k Lists Loading Uh oh! There was an error while loading. Please reload this page. Star 181k Lists Loading Uh oh! There was an error while loading. Please reload this page.
+
+#### Lists
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+#### Lists
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+Visual Studio Code
+
+### License
+
+### Code of conduct
+
+### Contributing
+
+### Security policy
+
+
+# microsoft/vscode
+
+## Add file
+
+## Folders and files
+
+## Latest commit
+
+![ulugbekna](https://avatars.githubusercontent.com/u/16353531?v=4&size=40)
+
+## History
+
+## Repository files navigation
+
+- README
+- Code of conduct
+- Contributing
+- More Repository files itemsMIT licenseSecurity
+
+# Visual Studio Code - Open Source ("Code - OSS")
+
+## The Repository
+
+This repository ("Code - OSS") is where we (Microsoft) develop the Visual Studio Code product together with the community. Not only do we work on code and issues here, we also publish our roadmap, monthly iteration plans, and our endgame plans. This source code is available to everyone under the standard MIT license.
+
+## Visual Studio Code
+
+Visual Studio Code is a distribution of the Code - OSS repository with Microsoft-specific customizations released under a traditional Microsoft product license.
+
+Visual Studio Code combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.
+
+Visual Studio Code is updated monthly with new features and bug fixes. You can download it for Windows, macOS, and Linux on Visual Studio Code's website. To get the latest releases every day, install the Insiders build.
+
+## Contributing
+
+There are many ways in which you can participate in this project, for example:
+
+- Submit bugs and feature requests, and help us verify as they are checked in
+- Review source code changes
+- Review the documentation and make pull requests for anything from typos to additional and new content
+
+If you are interested in fixing issues and contributing directly to the code base, please see the document How to Contribute, which covers the following:
+
+- How to build and run from source
+- The development workflow, including debugging and running tests
+- Coding guidelines
+- Submitting pull requests
+- Finding an issue to work on
+- Contributing to translations
+
+## Feedback
+
+- Ask a question on Stack Overflow
+- Request a new feature
+- Upvote popular feature requests
+- File an issue
+- Connect with the extension author community on GitHub Discussions or Slack
+- Follow @code and let us know what you think!
+
+See our wiki for a description of each of these channels and information on some other available community-driven channels.
+
+## Related Projects
+
+Many of the core components and extensions to VS Code live in their own repositories on GitHub. For example, the node debug adapter and the mono debug adapter repositories are separate from each other. For a complete list, please visit the Related Projects page on our wiki.
+
+## Bundled Extensions
+
+VS Code includes a set of built-in extensions located in the extensions folder, including grammars and snippets for many languages. Extensions that provide rich language support (inline suggestions, Go to Definition) for a language have the suffix language-features. For example, the json extension provides coloring for JSON and the json-language-features extension provides rich language support for JSON.
+
+## Development Container
+
+This repository includes a Visual Studio Code Dev Containers / GitHub Codespaces development container.
+
+- For Dev Containers, use the Dev Containers: Clone Repository in Container Volume... command which creates a Docker volume for better disk I/O on macOS and Windows. If you already have VS Code and D...
+- If you already have VS Code and Docker installed, you can also click here to get started. This will cause VS Code to automatically install the Dev Containers extension if needed, clone the source c...
+- For Codespaces, install the GitHub Codespaces extension in VS Code, and use the Codespaces: Create New Codespace command.
+
+Docker / the Codespace should have at least 4 Cores and 6 GB of RAM (8 GB recommended) to run a full build. See the development container README for more information.
+
+## Code of Conduct
+
+This project has adopted the Microsoft Open Source Code of Conduct. For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.
+
+## License
+
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Licensed under the MIT license.
+
+## About
+
+Visual Studio Code
+
+### Topics
+
+### Resources
+
+### License
+
+### Code of conduct
+
+### Contributing
+
+### Security policy
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+### Stars
+
+### Watchers
+
+### Forks
+
+## Releases 191
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+## Contributors 2,337
+
+
+## Deployments 500+
+
+- Deployment successful main July 25, 2024 05:55
+
+## Languages
+
+- TypeScript 95.4%
+- CSS 1.5%
+- JavaScript 1.0%
+- Inno Setup 0.7%
+- Rust 0.6%
+- HTML 0.5%
+- Other 0.3%
+
+
+<!-- xpath: /main#js-repo-pjax-container/div#repository-container-header -->
+
+![Owner avatar](https://avatars.githubusercontent.com/u/6154722?s=48&v=4)
+
+- {"props":{"subscriptionType":"none","repositoryId":41881900,"repositoryName":"microsoft/vscode","watchersCount":3388,"subscribableThreadTypes":[{"name":"Issue","enabled":true,"subscribed":false},{"...
+- Fork 37.4k Fork your own copy of microsoft/vscode Forks could not be loaded Loading Uh oh! There was an error while loading. Please reload this page.
+- Starred 181k Lists Loading Uh oh! There was an error while loading. Please reload this page. Star 181k Lists Loading Uh oh! There was an error while loading. Please reload this page.
+
+#### Lists
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+#### Lists
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+Visual Studio Code
+
+### License
+
+### Code of conduct
+
+### Contributing
+
+### Security policy
+
+
+
+<!-- xpath: /main#js-repo-pjax-container/div#repository-container-header/div#repository-details-container[2] -->
+
+- {"props":{"subscriptionType":"none","repositoryId":41881900,"repositoryName":"microsoft/vscode","watchersCount":3388,"subscribableThreadTypes":[{"name":"Issue","enabled":true,"subscribed":false},{"...
+- Fork 37.4k Fork your own copy of microsoft/vscode Forks could not be loaded Loading Uh oh! There was an error while loading. Please reload this page.
+- Starred 181k Lists Loading Uh oh! There was an error while loading. Please reload this page. Star 181k Lists Loading Uh oh! There was an error while loading. Please reload this page.
+
+
+<!-- xpath: /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/header -->
+
+#### Lists
+
+
+<!-- xpath: /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/header -->
+
+#### Lists
+
+
+<!-- xpath: /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1] -->
+
+#### Lists
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+#### Lists
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+Visual Studio Code
+
+### License
+
+### Code of conduct
+
+### Contributing
+
+### Security policy
+
+
+
+<!-- xpath: /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/header -->
+
+#### Lists
+
+
+<!-- xpath: /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/header -->
+
+#### Lists
+
+
+<!-- xpath: /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container -->
+
+# microsoft/vscode
+
+## Add file
+
+## Folders and files
+
+## Latest commit
+
+![ulugbekna](https://avatars.githubusercontent.com/u/16353531?v=4&size=40)
+
+## History
+
+## Repository files navigation
+
+- README
+- Code of conduct
+- Contributing
+- More Repository files itemsMIT licenseSecurity
+
+# Visual Studio Code - Open Source ("Code - OSS")
+
+## The Repository
+
+This repository ("Code - OSS") is where we (Microsoft) develop the Visual Studio Code product together with the community. Not only do we work on code and issues here, we also publish our roadmap, monthly iteration plans, and our endgame plans. This source code is available to everyone under the standard MIT license.
+
+## Visual Studio Code
+
+Visual Studio Code is a distribution of the Code - OSS repository with Microsoft-specific customizations released under a traditional Microsoft product license.
+
+Visual Studio Code combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.
+
+Visual Studio Code is updated monthly with new features and bug fixes. You can download it for Windows, macOS, and Linux on Visual Studio Code's website. To get the latest releases every day, install the Insiders build.
+
+## Contributing
+
+There are many ways in which you can participate in this project, for example:
+
+- Submit bugs and feature requests, and help us verify as they are checked in
+- Review source code changes
+- Review the documentation and make pull requests for anything from typos to additional and new content
+
+If you are interested in fixing issues and contributing directly to the code base, please see the document How to Contribute, which covers the following:
+
+- How to build and run from source
+- The development workflow, including debugging and running tests
+- Coding guidelines
+- Submitting pull requests
+- Finding an issue to work on
+- Contributing to translations
+
+## Feedback
+
+- Ask a question on Stack Overflow
+- Request a new feature
+- Upvote popular feature requests
+- File an issue
+- Connect with the extension author community on GitHub Discussions or Slack
+- Follow @code and let us know what you think!
+
+See our wiki for a description of each of these channels and information on some other available community-driven channels.
+
+## Related Projects
+
+Many of the core components and extensions to VS Code live in their own repositories on GitHub. For example, the node debug adapter and the mono debug adapter repositories are separate from each other. For a complete list, please visit the Related Projects page on our wiki.
+
+## Bundled Extensions
+
+VS Code includes a set of built-in extensions located in the extensions folder, including grammars and snippets for many languages. Extensions that provide rich language support (inline suggestions, Go to Definition) for a language have the suffix language-features. For example, the json extension provides coloring for JSON and the json-language-features extension provides rich language support for JSON.
+
+## Development Container
+
+This repository includes a Visual Studio Code Dev Containers / GitHub Codespaces development container.
+
+- For Dev Containers, use the Dev Containers: Clone Repository in Container Volume... command which creates a Docker volume for better disk I/O on macOS and Windows. If you already have VS Code and D...
+- If you already have VS Code and Docker installed, you can also click here to get started. This will cause VS Code to automatically install the Dev Containers extension if needed, clone the source c...
+- For Codespaces, install the GitHub Codespaces extension in VS Code, and use the Codespaces: Create New Codespace command.
+
+Docker / the Codespace should have at least 4 Cores and 6 GB of RAM (8 GB recommended) to run a full build. See the development container README for more information.
+
+## Code of Conduct
+
+This project has adopted the Microsoft Open Source Code of Conduct. For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.
+
+## License
+
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Licensed under the MIT license.
+
+## About
+
+Visual Studio Code
+
+### Topics
+
+### Resources
+
+### License
+
+### Code of conduct
+
+### Contributing
+
+### Security policy
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+### Stars
+
+### Watchers
+
+### Forks
+
+## Releases 191
+
+### Uh oh!
+
+There was an error while loading. Please reload this page.
+
+## Contributors 2,337
+
+
+## Deployments 500+
+
+- Deployment successful main July 25, 2024 05:55
+
+## Languages
+
+- TypeScript 95.4%
+- CSS 1.5%
+- JavaScript 1.0%
+- Inno Setup 0.7%
+- Rust 0.6%
+- HTML 0.5%
+- Other 0.3%
+
+
+<!-- xpath: /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav -->
+
+- README
+- Code of conduct
+- Contributing
+- More Repository files itemsMIT licenseSecurity
+
+
+<!-- xpath: /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article -->
+
+# Visual Studio Code - Open Source ("Code - OSS")
+
+## The Repository
+
+This repository ("Code - OSS") is where we (Microsoft) develop the Visual Studio Code product together with the community. Not only do we work on code and issues here, we also publish our roadmap, monthly iteration plans, and our endgame plans. This source code is available to everyone under the standard MIT license.
+
+## Visual Studio Code
+
+Visual Studio Code is a distribution of the Code - OSS repository with Microsoft-specific customizations released under a traditional Microsoft product license.
+
+Visual Studio Code combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.
+
+Visual Studio Code is updated monthly with new features and bug fixes. You can download it for Windows, macOS, and Linux on Visual Studio Code's website. To get the latest releases every day, install the Insiders build.
+
+## Contributing
+
+There are many ways in which you can participate in this project, for example:
+
+- Submit bugs and feature requests, and help us verify as they are checked in
+- Review source code changes
+- Review the documentation and make pull requests for anything from typos to additional and new content
+
+If you are interested in fixing issues and contributing directly to the code base, please see the document How to Contribute, which covers the following:
+
+- How to build and run from source
+- The development workflow, including debugging and running tests
+- Coding guidelines
+- Submitting pull requests
+- Finding an issue to work on
+- Contributing to translations
+
+## Feedback
+
+- Ask a question on Stack Overflow
+- Request a new feature
+- Upvote popular feature requests
+- File an issue
+- Connect with the extension author community on GitHub Discussions or Slack
+- Follow @code and let us know what you think!
+
+See our wiki for a description of each of these channels and information on some other available community-driven channels.
+
+## Related Projects
+
+Many of the core components and extensions to VS Code live in their own repositories on GitHub. For example, the node debug adapter and the mono debug adapter repositories are separate from each other. For a complete list, please visit the Related Projects page on our wiki.
+
+## Bundled Extensions
+
+VS Code includes a set of built-in extensions located in the extensions folder, including grammars and snippets for many languages. Extensions that provide rich language support (inline suggestions, Go to Definition) for a language have the suffix language-features. For example, the json extension provides coloring for JSON and the json-language-features extension provides rich language support for JSON.
+
+## Development Container
+
+This repository includes a Visual Studio Code Dev Containers / GitHub Codespaces development container.
+
+- For Dev Containers, use the Dev Containers: Clone Repository in Container Volume... command which creates a Docker volume for better disk I/O on macOS and Windows. If you already have VS Code and D...
+- If you already have VS Code and Docker installed, you can also click here to get started. This will cause VS Code to automatically install the Dev Containers extension if needed, clone the source c...
+- For Codespaces, install the GitHub Codespaces extension in VS Code, and use the Codespaces: Create New Codespace command.
+
+Docker / the Codespace should have at least 4 Cores and 6 GB of RAM (8 GB recommended) to run a full build. See the development container README for more information.
+
+## Code of Conduct
+
+This project has adopted the Microsoft Open Source Code of Conduct. For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.
+
+## License
+
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Licensed under the MIT license.
+
+
+<!-- xpath: /footer.footer -->
+
+## Footer
+
+### Footer navigation
+
+- Terms
+- Privacy
+- Security
+- Status
+- Community
+- Docs
+- Contact
+- Manage cookies
+- Do not share my personal information
+
+
+<!-- xpath: /footer.footer/nav -->
+
+### Footer navigation
+
+- Terms
+- Privacy
+- Security
+- Status
+- Community
+- Docs
+- Contact
+- Manage cookies
+- Do not share my personal information
+
+
+<!-- end: 9768 words extracted -->

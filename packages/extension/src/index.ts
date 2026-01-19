@@ -129,9 +129,13 @@ export interface Client {
   snapshot(options?: {
     selector?: string;
     maxDepth?: number;
-    interactive?: boolean;
+    mode?: 'interactive' | 'outline' | 'content';
     compact?: boolean;
-    format?: 'tree' | 'html';
+    format?: 'tree' | 'html' | 'markdown';
+    grep?: string;
+    maxLength?: number;
+    includeLinks?: boolean;
+    includeImages?: boolean;
   }): Promise<string>;
 
   /**
@@ -386,9 +390,13 @@ export function createClient(): Client {
         action: 'snapshot',
         selector: options?.selector,
         maxDepth: options?.maxDepth,
-        interactive: options?.interactive,
+        mode: options?.mode,
         compact: options?.compact,
         format: options?.format,
+        grep: options?.grep,
+        maxLength: options?.maxLength,
+        includeLinks: options?.includeLinks,
+        includeImages: options?.includeImages,
       });
       assertSuccess(response);
       return response.data as string;

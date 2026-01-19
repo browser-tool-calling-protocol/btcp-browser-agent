@@ -1,0 +1,4 @@
+PAGE: http://localhost/ | hello - Google Search | viewport=1024x768
+OUTLINE: landmarks=0 sections=0 headings=1 words=31652
+
+HEADING level=1 "Accessibility links" /h1

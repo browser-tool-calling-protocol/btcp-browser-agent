@@ -1,0 +1,76 @@
+PAGE: http://localhost/ | microsoft/vscode: Visual Studio Code | viewport=1024x768
+OUTLINE: landmarks=12 sections=18 headings=42 words=4467
+
+REGION "primerPortalRoot" @ref:0 /div#__primerPortalRoot__[1]
+REGION "header wrapper" @ref:1 [1231 words, 44 links, 8 paragraphs, 24 items] /div.header-wrapper[2]
+  BANNER "Navigation Menu" @ref:2 [1185 words, 40 links, 8 paragraphs, 24 items] /div.header-wrapper[2]/header
+    HEADING level=2 "Navigation Menu" /div.header-wrapper[2]/header/h2
+    NAVIGATION "GitHub Breadcrumb" @ref:3 [13 words, 4 links, 3 items] /div.header-wrapper[2]/header/nav
+    HEADING level=1 "Search code, repositories, users, issues, pull requests..." /div.header-wrapper[2]/header/qbsearch-input.search-input/div.search-input-container[1]/modal-dialog#search-suggestions-dialog/h1
+    NAVIGATION "Repository" @ref:4 [39 words, 24 links, 3 paragraphs, 18 items] /div.header-wrapper[2]/header/nav
+      LIST [9 items] /div.header-wrapper[2]/header/nav/ul.list-style-none
+      LIST [9 items] /div.header-wrapper[2]/header/nav/anchored-position/ul
+MAIN "js repo pjax container" @ref:5 [3182 words, 326 links, 45 paragraphs, 49 items, 9 code] /main#js-repo-pjax-container
+  REGION "repository container header" @ref:6 [269 words, 21 links, 20 paragraphs, 3 items] /main#js-repo-pjax-container/div#repository-container-header
+    REGION "repository details container" @ref:7 [60 words, 4 links, 10 paragraphs, 3 items] /main#js-repo-pjax-container/div#repository-container-header/div#repository-details-container[2]
+      LIST [3 items] /main#js-repo-pjax-container/div#repository-container-header/div#repository-details-container[2]/ul
+        BANNER "Lists" @ref:8 [1 words] /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/header
+          HEADING level=4 "Lists" /ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/header/h4#user-lists-menu
+        BANNER "Lists" @ref:9 [1 words] /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/header
+          HEADING level=4 "Lists" /ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/header/h4#user-lists-menu
+    REGION "responsive meta container" @ref:10 [207 words, 16 links, 10 paragraphs] /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]
+      BANNER "Lists" @ref:11 [1 words] /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/header
+        HEADING level=4 "Lists" /div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/header/h4#user-lists-menu
+      BANNER "Lists" @ref:12 [1 words] /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/header
+        HEADING level=4 "Lists" /div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/header/h4#user-lists-menu
+      HEADING level=3 "License" /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/h3
+      HEADING level=3 "Code of conduct" /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/h3[1]
+      HEADING level=3 "Contributing" /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/h3[2]
+      HEADING level=3 "Security policy" /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/h3[3]
+  REGION "repo content pjax container" @ref:13 [2913 words, 305 links, 25 paragraphs, 46 items, 9 code] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container
+    HEADING level=1 "microsoft/vscode" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h1
+    HEADING level=2 "Add file" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2
+    HEADING level=2 "Folders and files" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2#folders-and-files
+    HEADING level=2 "Latest commit" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/h2
+    HEADING level=2 "History" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/h2
+    HEADING level=2 "Repository files navigation" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2
+    NAVIGATION "Repository files" @ref:14 [7 words, 3 links, 6 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav
+      LIST [4 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul
+    ARTICLE "Visual Studio Code - Open Source ("Code - OSS")" @ref:15 [619 words, 55 links, 18 paragraphs, 18 items, 7 code] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article
+      HEADING level=1 "Visual Studio Code - Open Source ("Code - OSS")" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h1
+      HEADING level=2 "The Repository" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+      HEADING level=2 "Visual Studio Code" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+      HEADING level=2 "Contributing" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+      LIST [3 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[1]
+      LIST [6 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]
+      HEADING level=2 "Feedback" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+      LIST [6 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]
+      HEADING level=2 "Related Projects" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+      HEADING level=2 "Bundled Extensions" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+      HEADING level=2 "Development Container" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+      LIST [3 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[4]
+        LIST [1 items] /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[4]/li[1]/ul
+      HEADING level=2 "Code of Conduct" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+      HEADING level=2 "License" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/h2
+    HEADING level=2 "About" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2
+    HEADING level=3 "Topics" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[1]
+    HEADING level=3 "Resources" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[2]
+    HEADING level=3 "License" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[3]
+    HEADING level=3 "Code of conduct" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[4]
+    HEADING level=3 "Contributing" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[5]
+    HEADING level=3 "Security policy" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[6]
+    HEADING level=3 "Stars" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[7]
+    HEADING level=3 "Watchers" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[8]
+    HEADING level=3 "Forks" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h3[9]
+    HEADING level=2 "Releases 191" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2
+    HEADING level=2 "Contributors 2,337" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2
+    LIST [14 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none
+    HEADING level=2 "Deployments 500+" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2
+    LIST [1 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none
+    HEADING level=2 "Languages" /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2
+    LIST [7 items] /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none
+CONTENTINFO "footer" @ref:16 [22 words, 8 links, 9 items] /footer.footer
+  HEADING level=2 "Footer" /footer.footer/h2
+  NAVIGATION "Footer" @ref:17 [17 words, 7 links, 9 items] /footer.footer/nav
+    HEADING level=3 "Footer navigation" /footer.footer/nav/h3#sr-footer-heading
+    LIST [9 items] /footer.footer/nav/ul.list-style-none

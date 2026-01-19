@@ -1,0 +1,387 @@
+PAGE: http://localhost/ | microsoft/vscode: Visual Studio Code | viewport=1024x768
+SNAPSHOT: elements=2097 refs=384
+
+LINK "Skip to content" @ref:0 /div.header-wrapper[2]/a
+BUTTON "Open global navigation menu" @ref:1 /div.header-wrapper[2]/header/button.Button--secondary
+LINK "Home" @ref:2 /div.header-wrapper[2]/header/li[1]/a#_r_p_
+LINK "Issues" @ref:3 /div.header-wrapper[2]/header/li[2]/a#_r_q_
+LINK "Pull requests" @ref:4 /div.header-wrapper[2]/header/li[3]/a#_r_r_
+LINK "Homepage" @ref:5 /div.header-wrapper[2]/header/a
+LINK "microsoft" @ref:6 /div.header-wrapper[2]/header/nav/a
+LINK "vscode" @ref:7 /div.header-wrapper[2]/header/nav/a
+BUTTON "Search or jump to…" @ref:8 /div.header-wrapper[2]/header/qbsearch-input.search-input/div.search-input-container[1]/button
+BUTTON "Type / to search" @ref:9 /div.header-wrapper[2]/header/qbsearch-input.search-input/div.search-input-container[1]/button.form-control
+LINK "Chat with Copilot" @ref:10 /div.header-wrapper[2]/header/a#copilot-chat-header-button
+BUTTON "Open Copilot…" @ref:11 /div.header-wrapper[2]/header/button#global-copilot-menu-button
+BUTTON "Create something new" @ref:12 /div.header-wrapper[2]/header/button#global-create-menu-anchor
+LINK "Your issues" @ref:13 /div.header-wrapper[2]/header/a.Button[1]
+LINK "Your pull requests" @ref:14 /div.header-wrapper[2]/header/a.Button[2]
+LINK "Repositories" @ref:15 /div.header-wrapper[2]/header/a.Button[3]
+LINK "You have unread notifications" @ref:16 /div.header-wrapper[2]/header/a.Button
+BUTTON "Open user navigation menu" @ref:17 /div.header-wrapper[2]/header/button.Button--invisible
+LINK "Code" @ref:18 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[1]/a#code-tab
+LINK "Issues 5k+" @ref:19 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[2]/a#issues-tab
+LINK "Pull requests 975" @ref:20 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[3]/a#pull-requests-tab
+LINK "Actions" @ref:21 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[4]/a#actions-tab
+LINK "Projects 1" @ref:22 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[5]/a#projects-tab
+LINK "Models" @ref:23 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[6]/a#models-tab
+LINK "Wiki" @ref:24 /div.header-wrapper[2]/header/nav/ul.list-style-none/li[7]/a#wiki-tab
+BUTTON "Additional navigation options" @ref:25 /div.header-wrapper[2]/header/nav/button.Button
+MENUITEM "Security" @ref:26 /header/nav/anchored-position/ul/li[8]/a
+MENUITEM "Insights" @ref:27 /header/nav/anchored-position/ul/li[9]/a
+LINK "vscode" @ref:28 /main#js-repo-pjax-container/div#repository-container-header/div#repo-title-component[1]/a
+BUTTON "Watch: Participating in microsoft/vscode" @ref:29 /main#js-repo-pjax-container/div#repository-container-header/div#repository-details-container[2]/ul/li[1]/button#_r_e_
+BUTTON "Watch: Participating in microsoft/vscode" @ref:30 /main#js-repo-pjax-container/div#repository-container-header/div#repository-details-container[2]/ul/li[1]/button#_r_h_
+LINK "Fork 37.4k Fork your own copy of microsoft/vscode" @ref:31 /div#repository-container-header/div#repository-details-container[2]/ul/li[2]/div.BtnGroup/a#fork-button
+BUTTON "See your forks of this repository" @ref:32 /div#repository-details-container[2]/ul/li[2]/div.BtnGroup/details#my-forks-menu-41881900/summary.btn-sm
+BUTTON "Close menu" @ref:33 /div#repository-details-container[2]/ul/li[2]/div.BtnGroup/details#my-forks-menu-41881900/button
+MENUITEM @ref:34 /div#repository-details-container[2]/ul/li[2]/div.BtnGroup/details#my-forks-menu-41881900/div#filter-menu-45fe21
+BUTTON "Starred, click to unstar this repository (180737)" @ref:35 /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[1]/form.BtnGroup-parent/button.btn-with-aria-count
+BUTTON "Add this repository to a list" @ref:36 /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/summary.btn-sm
+BUTTON "Close menu" @ref:37 /ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/header/button
+MENUITEM @ref:38 /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[1]/details.BtnGroup-parent/div#filter-menu-5408e1
+BUTTON "Star this repository (180737)" @ref:39 /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[2]/form.BtnGroup-parent/button.btn-with-aria-count
+BUTTON "Add this repository to a list" @ref:40 /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/summary.btn-sm
+BUTTON "Close menu" @ref:41 /ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/header/button
+MENUITEM @ref:42 /div#repository-details-container[2]/ul/li[3]/div.BtnGroup[2]/details.BtnGroup-parent/div#filter-menu-81fde2
+BUTTON "Watch: Participating in microsoft/vscode" @ref:43 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/button#_r_3_
+BUTTON "Watch: Participating in microsoft/vscode" @ref:44 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/button#_r_6_
+LINK "Fork your own copy of microsoft/vscode" @ref:45 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/a#fork-icon-button
+BUTTON "Unstar this repository" @ref:46 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/form.BtnGroup-parent/button.Button
+BUTTON "Add this repository to a list" @ref:47 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/summary.btn-sm
+BUTTON "Close menu" @ref:48 /div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/header/button
+MENUITEM @ref:49 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[1]/details#details-user-list-41881900/div#filter-menu-7a926c
+BUTTON "Star this repository" @ref:50 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/form.BtnGroup-parent/button.Button
+BUTTON "Add this repository to a list" @ref:51 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/summary.btn-sm
+BUTTON "Close menu" @ref:52 /div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/header/button
+MENUITEM @ref:53 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.BtnGroup[2]/details#details-user-list-41881900/div#filter-menu-9a8929
+LINK "code.visualstudio.com" @ref:54 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/div.Link--secondary[2]/a
+LINK "MIT license" @ref:55 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+LINK "Code of conduct" @ref:56 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+LINK "Contributing" @ref:57 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+LINK "Security policy" @ref:58 /main#js-repo-pjax-container/div#repository-container-header/div#responsive-meta-container[1]/a.Link--muted
+LINK "Open in github.dev" @ref:59 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+LINK "Open in a new github.dev tab" @ref:60 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+LINK "Open in codespace" @ref:61 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[3]
+BUTTON "main branch" @ref:62 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button[1]
+LINK "2618 Branches" @ref:63 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+LINK "342 Tags" @ref:64 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+LINK "Go to Branches page" @ref:65 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+LINK "Go to Tags page" @ref:66 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+COMBOBOX "Go to file" @ref:67 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/input
+BUTTON "Go to file" @ref:68 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button
+BUTTON "Add file" @ref:69 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button#_R_a35ab_
+BUTTON "Code" @ref:70 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button#_R_75ab_
+BUTTON "Open more actions menu" @ref:71 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button#_R_95ab_
+LINK "ulugbekna" @ref:72 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a[1]
+LINK "commits by ulugbekna" @ref:73 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a[2]
+LINK "inline completions: fix passing changeHint cont..." @ref:74 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a.Link--secondary[1]
+LINK "#288428" @ref:75 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a[2]
+LINK ")" @ref:76 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a.Link--secondary[3]
+BUTTON "pending" @ref:77 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/button
+LINK "Commit ea6ce12" @ref:78 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a.Link--secondary
+LINK "143,778 Commits" @ref:79 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/a
+BUTTON "Open commit details" @ref:80 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/button
+LINK "View commit history for this file." @ref:81 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/span#history-icon-button-tooltip/a
+LINK ".config, (Directory)" @ref:82 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a.Link--primary
+LINK ".config, (Directory)" @ref:83 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a.Link--primary
+LINK "chore: suppress node warnings (" @ref:84 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a.Link--secondary[1]
+LINK "#274905" @ref:85 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a[2]
+LINK ")" @ref:86 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-0[2]/a.Link--secondary[3]
+LINK ".devcontainer, (Directory)" @ref:87 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--primary
+LINK ".devcontainer, (Directory)" @ref:88 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--primary
+LINK "fix: changed the node js version from 20 to 22 ..." @ref:89 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--secondary[1]
+LINK "#257193" @ref:90 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a[2]
+LINK "(" @ref:91 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--secondary[3]
+LINK "#257400" @ref:92 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a[4]
+LINK ")" @ref:93 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-1[3]/a.Link--secondary[5]
+LINK ".eslint-plugin-local, (Directory)" @ref:94 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-2[4]/a.Link--primary
+LINK ".eslint-plugin-local, (Directory)" @ref:95 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-2[4]/a.Link--primary
+LINK "Remove Map/Set eslint rule" @ref:96 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-2[4]/a.Link--secondary
+LINK ".github, (Directory)" @ref:97 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a.Link--primary
+LINK ".github, (Directory)" @ref:98 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a.Link--primary
+LINK "updates learnings (" @ref:99 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a.Link--secondary[1]
+LINK "#287749" @ref:100 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a[2]
+LINK ")" @ref:101 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-3[5]/a.Link--secondary[3]
+LINK ".vscode, (Directory)" @ref:102 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a.Link--primary
+LINK ".vscode, (Directory)" @ref:103 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a.Link--primary
+LINK "eng - opt the team into using sessions (" @ref:104 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a.Link--secondary[1]
+LINK "#288384" @ref:105 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a[2]
+LINK ")" @ref:106 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-4[6]/a.Link--secondary[3]
+LINK "build, (Directory)" @ref:107 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a.Link--primary
+LINK "build, (Directory)" @ref:108 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a.Link--primary
+LINK "feat: enable win11 context menu for stable (" @ref:109 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a.Link--secondary[1]
+LINK "#287832" @ref:110 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a[2]
+LINK ")" @ref:111 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-5[7]/a.Link--secondary[3]
+LINK "cli, (Directory)" @ref:112 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a.Link--primary
+LINK "cli, (Directory)" @ref:113 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a.Link--primary
+LINK "3rd party notices (" @ref:114 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a.Link--secondary[1]
+LINK "#286063" @ref:115 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a[2]
+LINK ")" @ref:116 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-6[8]/a.Link--secondary[3]
+LINK "extensions, (Directory)" @ref:117 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a.Link--primary
+LINK "extensions, (Directory)" @ref:118 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a.Link--primary
+LINK "Merge pull request" @ref:119 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a.Link--secondary[1]
+LINK "#288417" @ref:120 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a[2]
+LINK "from microsoft/mrleemurray/probable-quail-…" @ref:121 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-7[9]/a.Link--secondary[3]
+LINK "remote, (Directory)" @ref:122 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a.Link--primary
+LINK "remote, (Directory)" @ref:123 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a.Link--primary
+LINK "Merge pull request" @ref:124 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a.Link--secondary[1]
+LINK "#287561" @ref:125 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a[2]
+LINK "from microsoft/tyriar/xterm_260113" @ref:126 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-8[10]/a.Link--secondary[3]
+LINK "resources, (Directory)" @ref:127 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a.Link--primary
+LINK "resources, (Directory)" @ref:128 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a.Link--primary
+LINK "fix: ci for snap builds (" @ref:129 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a.Link--secondary[1]
+LINK "#280871" @ref:130 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a[2]
+LINK ")" @ref:131 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-9[11]/a.Link--secondary[3]
+LINK "scripts, (Directory)" @ref:132 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a.Link--primary
+LINK "scripts, (Directory)" @ref:133 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a.Link--primary
+LINK "Deletes unused playground-server. (" @ref:134 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a.Link--secondary[1]
+LINK "#286718" @ref:135 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a[2]
+LINK ")" @ref:136 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-10[12]/a.Link--secondary[3]
+LINK "src, (Directory)" @ref:137 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a.Link--primary
+LINK "src, (Directory)" @ref:138 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a.Link--primary
+LINK "inline completions: fix passing changeHint cont..." @ref:139 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a.Link--secondary[1]
+LINK "#288428" @ref:140 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a[2]
+LINK ")" @ref:141 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-11[13]/a.Link--secondary[3]
+LINK "test, (Directory)" @ref:142 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a.Link--primary
+LINK "test, (Directory)" @ref:143 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a.Link--primary
+LINK "deps - check in a package.lock (" @ref:144 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a.Link--secondary[1]
+LINK "#288233" @ref:145 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a[2]
+LINK ")" @ref:146 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-12[14]/a.Link--secondary[3]
+LINK ".editorconfig, (File)" @ref:147 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-13[15]/a.Link--primary
+LINK ".editorconfig, (File)" @ref:148 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-13[15]/a.Link--primary
+LINK "No forcing tabsize on users" @ref:149 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-13[15]/a.Link--secondary
+LINK ".eslint-ignore, (File)" @ref:150 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--primary
+LINK ".eslint-ignore, (File)" @ref:151 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--primary
+LINK "Remove" @ref:152 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary[1]
+LINK "src/vs/loader.js" @ref:153 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary
+LINK "(" @ref:154 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary[2]
+LINK "fix" @ref:155 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary
+LINK "#285255" @ref:156 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a[3]
+LINK ") (" @ref:157 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary[4]
+LINK "#286727" @ref:158 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a[5]
+LINK ")" @ref:159 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-14[16]/a.Link--secondary[6]
+LINK ".git-blame-ignore-revs, (File)" @ref:160 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--primary
+LINK ".git-blame-ignore-revs, (File)" @ref:161 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--primary
+LINK "eng - add ESM migration commit to" @ref:162 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--secondary[1]
+LINK ".git-blame-ignore-revs" @ref:163 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--secondary
+LINK "(" @ref:164 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--secondary[2]
+LINK "#227190" @ref:165 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a[3]
+LINK ")" @ref:166 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-15[17]/a.Link--secondary[4]
+LINK ".gitattributes, (File)" @ref:167 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-16[18]/a.Link--primary
+LINK ".gitattributes, (File)" @ref:168 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-16[18]/a.Link--primary
+LINK "Whitelist comments in all JSON files. For" @ref:169 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-16[18]/a.Link--secondary[1]
+LINK "#129206" @ref:170 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-16[18]/a[2]
+LINK ".gitignore, (File)" @ref:171 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a.Link--primary
+LINK ".gitignore, (File)" @ref:172 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a.Link--primary
+LINK "Add data prompt (" @ref:173 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a.Link--secondary[1]
+LINK "#267543" @ref:174 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a[2]
+LINK ")" @ref:175 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-17[19]/a.Link--secondary[3]
+LINK ".lsifrc.json, (File)" @ref:176 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-18[20]/a.Link--primary
+LINK ".lsifrc.json, (File)" @ref:177 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-18[20]/a.Link--primary
+LINK "Add lsifrc file" @ref:178 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-18[20]/a.Link--secondary
+LINK ".mailmap, (File)" @ref:179 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a.Link--primary
+LINK ".mailmap, (File)" @ref:180 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a.Link--primary
+LINK "update .mailmap (" @ref:181 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a.Link--secondary[1]
+LINK "#159565" @ref:182 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a[2]
+LINK ")" @ref:183 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-19[21]/a.Link--secondary[3]
+LINK ".mention-bot, (File)" @ref:184 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-20[22]/a.Link--primary
+LINK ".mention-bot, (File)" @ref:185 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-20[22]/a.Link--primary
+LINK "update mention bot configuration" @ref:186 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-20[22]/a.Link--secondary
+LINK ".npmrc, (File)" @ref:187 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-21[23]/a.Link--primary
+LINK ".npmrc, (File)" @ref:188 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-21[23]/a.Link--primary
+LINK "fix: capture diagnostics and add workaround for..." @ref:189 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-21[23]/a.Link--secondary
+LINK ".nvmrc, (File)" @ref:190 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a.Link--primary
+LINK ".nvmrc, (File)" @ref:191 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a.Link--primary
+LINK "chore: bump .nvmrc (" @ref:192 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a.Link--secondary[1]
+LINK "#282925" @ref:193 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a[2]
+LINK ")" @ref:194 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-22[24]/a.Link--secondary[3]
+LINK ".vscode-test.js, (File)" @ref:195 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a.Link--primary
+LINK ".vscode-test.js, (File)" @ref:196 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a.Link--primary
+LINK "Support folding in git COMMIT_MSG files (" @ref:197 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a.Link--secondary[1]
+LINK "#272356" @ref:198 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a[2]
+LINK ")" @ref:199 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-23[25]/a.Link--secondary[3]
+LINK "AGENTS.md, (File)" @ref:200 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a.Link--primary
+LINK "AGENTS.md, (File)" @ref:201 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a.Link--primary
+LINK "docs - add instructions for AI coding agents (" @ref:202 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a.Link--secondary[1]
+LINK "#280321" @ref:203 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a[2]
+LINK ")" @ref:204 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-24[26]/a.Link--secondary[3]
+LINK "CONTRIBUTING.md, (File)" @ref:205 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-25[27]/a.Link--primary
+LINK "CONTRIBUTING.md, (File)" @ref:206 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-25[27]/a.Link--primary
+LINK "Merge branch 'main' into patch-1" @ref:207 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-25[27]/a.Link--secondary
+LINK "CodeQL.yml, (File)" @ref:208 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a.Link--primary
+LINK "CodeQL.yml, (File)" @ref:209 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a.Link--primary
+LINK "eng: mark the patch application file as being g..." @ref:210 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a.Link--secondary[1]
+LINK "#194047" @ref:211 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a[2]
+LINK ")" @ref:212 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-26[28]/a.Link--secondary[3]
+LINK "LICENSE.txt, (File)" @ref:213 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-27[29]/a.Link--primary
+LINK "LICENSE.txt, (File)" @ref:214 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-27[29]/a.Link--primary
+LINK "remove blank line (my best checkin ever)" @ref:215 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-27[29]/a.Link--secondary
+LINK "README.md, (File)" @ref:216 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a.Link--primary
+LINK "README.md, (File)" @ref:217 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a.Link--primary
+LINK "docs: update Twitter branding to X in README (" @ref:218 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a.Link--secondary[1]
+LINK "#280235" @ref:219 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a[2]
+LINK ")" @ref:220 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-28[30]/a.Link--secondary[3]
+LINK "SECURITY.md, (File)" @ref:221 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a.Link--primary
+LINK "SECURITY.md, (File)" @ref:222 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a.Link--primary
+LINK "update security.md (" @ref:223 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a.Link--secondary[1]
+LINK "#252288" @ref:224 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a[2]
+LINK ")" @ref:225 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-29[31]/a.Link--secondary[3]
+LINK "ThirdPartyNotices.txt, (File)" @ref:226 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a.Link--primary
+LINK "ThirdPartyNotices.txt, (File)" @ref:227 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a.Link--primary
+LINK "oss tool (" @ref:228 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a.Link--secondary[1]
+LINK "#280470" @ref:229 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a[2]
+LINK ")" @ref:230 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-30[32]/a.Link--secondary[3]
+LINK "cglicenses.json, (File)" @ref:231 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a.Link--primary
+LINK "cglicenses.json, (File)" @ref:232 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a.Link--primary
+LINK "adopt new version of tas-client, no longer use ..." @ref:233 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a.Link--secondary[1]
+LINK "#263340" @ref:234 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a[2]
+LINK ")" @ref:235 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-31[33]/a.Link--secondary[3]
+LINK "cgmanifest.json, (File)" @ref:236 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a.Link--primary
+LINK "cgmanifest.json, (File)" @ref:237 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a.Link--primary
+LINK "chore: bump electron@39.2.7 (" @ref:238 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a.Link--secondary[1]
+LINK "#283786" @ref:239 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a[2]
+LINK ")" @ref:240 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-32[34]/a.Link--secondary[3]
+LINK "eslint.config.js, (File)" @ref:241 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a.Link--primary
+LINK "eslint.config.js, (File)" @ref:242 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a.Link--primary
+LINK "chore: bump native-watchdog (" @ref:243 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a.Link--secondary[1]
+LINK "#287848" @ref:244 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a[2]
+LINK ")" @ref:245 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-33[35]/a.Link--secondary[3]
+LINK "gulpfile.mjs, (File)" @ref:246 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a.Link--primary
+LINK "gulpfile.mjs, (File)" @ref:247 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a.Link--primary
+LINK "Run our build scripts directly as typescript (" @ref:248 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a.Link--secondary[1]
+LINK "#277567" @ref:249 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a[2]
+LINK ")" @ref:250 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-34[36]/a.Link--secondary[3]
+LINK "package-lock.json, (File)" @ref:251 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a.Link--primary
+LINK "package-lock.json, (File)" @ref:252 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a.Link--primary
+LINK "Merge pull request" @ref:253 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a.Link--secondary[1]
+LINK "#287561" @ref:254 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a[2]
+LINK "from microsoft/tyriar/xterm_260113" @ref:255 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-35[37]/a.Link--secondary[3]
+LINK "package.json, (File)" @ref:256 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a.Link--primary
+LINK "package.json, (File)" @ref:257 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a.Link--primary
+LINK "updating distro hash (" @ref:258 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a.Link--secondary[1]
+LINK "#288309" @ref:259 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a[2]
+LINK ")" @ref:260 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-36[38]/a.Link--secondary[3]
+LINK "product.json, (File)" @ref:261 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-37[39]/a.Link--primary
+LINK "product.json, (File)" @ref:262 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-37[39]/a.Link--primary
+LINK "make it a command for the setup tool" @ref:263 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-37[39]/a.Link--secondary
+LINK "tsfmt.json, (File)" @ref:264 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-38[40]/a.Link--primary
+LINK "tsfmt.json, (File)" @ref:265 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-38[40]/a.Link--primary
+LINK "Add insertSpaceAfterOpeningAndBeforeClosingEmpt..." @ref:266 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/tr#folder-row-38[40]/a.Link--secondary
+BUTTON "View all files" @ref:267 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/table.Table-module__Box--KyMHK/button
+LINK "README" @ref:268 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul/li[1]/a
+LINK "Code of conduct" @ref:269 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul/li[2]/a
+LINK "Contributing" @ref:270 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul/li[3]/a
+BUTTON "More Repository files items" @ref:271 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/nav/ul/li[4]/button
+BUTTON "Edit file" @ref:272 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button[1]
+BUTTON "Outline" @ref:273 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/button#_R_r9ab_[2]
+LINK "Permalink: Visual Studio Code - Open Source ("C..." @ref:274 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "issues" @ref:275 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+LINK "issues" @ref:276 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+LINK "vscode" @ref:277 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[3]
+LINK "Permalink: The Repository" @ref:278 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-the-repository
+LINK "Visual Studio Code" @ref:279 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+LINK "roadmap" @ref:280 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+LINK "monthly iteration plans" @ref:281 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[3]
+LINK "endgame plans" @ref:282 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[4]
+LINK "MIT license" @ref:283 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[5]
+LINK "Permalink: Visual Studio Code" @ref:284 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "118224532 3842c400 b438 11eb 923d a5f66fa6785a" @ref:285 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "Visual Studio Code" @ref:286 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+LINK "Microsoft product license" @ref:287 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+LINK "Visual Studio Code" @ref:288 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "Visual Studio Code's website" @ref:289 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+LINK "Insiders build" @ref:290 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+LINK "Permalink: Contributing" @ref:291 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-contributing
+LINK "Submit bugs and feature requests" @ref:292 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[1]/li[1]/a
+LINK "source code changes" @ref:293 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[1]/li[2]/a
+LINK "documentation" @ref:294 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[1]/li[3]/a
+LINK "How to Contribute" @ref:295 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "How to build and run from source" @ref:296 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[1]/a
+LINK "The development workflow, including debugging a..." @ref:297 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[2]/a
+LINK "Coding guidelines" @ref:298 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[3]/a
+LINK "Submitting pull requests" @ref:299 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[4]/a
+LINK "Finding an issue to work on" @ref:300 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[5]/a
+LINK "Contributing to translations" @ref:301 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[2]/li[6]/a
+LINK "Permalink: Feedback" @ref:302 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-feedback
+LINK "Stack Overflow" @ref:303 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[1]/a
+LINK "Request a new feature" @ref:304 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[2]/a
+LINK "popular feature requests" @ref:305 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[3]/a
+LINK "File an issue" @ref:306 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[4]/a
+LINK "GitHub Discussions" @ref:307 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[5]/a[1]
+LINK "Slack" @ref:308 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[5]/a[2]
+LINK "@code" @ref:309 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[3]/li[6]/a
+LINK "wiki" @ref:310 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "Permalink: Related Projects" @ref:311 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-related-projects
+LINK "node debug adapter" @ref:312 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+LINK "mono debug adapter" @ref:313 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+LINK "Related Projects" @ref:314 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[3]
+LINK "wiki" @ref:315 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[4]
+LINK "Permalink: Bundled Extensions" @ref:316 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "extensions" @ref:317 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "Permalink: Development Container" @ref:318 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "Dev Containers" @ref:319 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[4]/li[1]/a
+LINK "here" @ref:320 /article/ul[4]/li[1]/ul/li/a
+LINK "GitHub Codespaces" @ref:321 /turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/ul[4]/li[2]/a
+LINK "development container README" @ref:322 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "Permalink: Code of Conduct" @ref:323 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-code-of-conduct
+LINK "Microsoft Open Source Code of Conduct" @ref:324 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[1]
+LINK "Code of Conduct FAQ" @ref:325 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[2]
+LINK "opencode@microsoft.com" @ref:326 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a[3]
+LINK "Permalink: License" @ref:327 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a#user-content-license
+LINK "MIT" @ref:328 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/article/a
+LINK "code.visualstudio.com" @ref:329 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a
+LINK "electron" @ref:330 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[1]
+LINK "microsoft" @ref:331 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[2]
+LINK "editor" @ref:332 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[3]
+LINK "typescript" @ref:333 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[4]
+LINK "visual-studio-code" @ref:334 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a[5]
+LINK "Readme" @ref:335 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+LINK "MIT license" @ref:336 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+LINK "Code of conduct" @ref:337 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+LINK "Contributing" @ref:338 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+LINK "Security policy" @ref:339 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+LINK "Activity" @ref:340 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+LINK "Custom properties" @ref:341 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+LINK "181k stars" @ref:342 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+LINK "3.4k watching" @ref:343 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+LINK "37.4k forks" @ref:344 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+LINK "Report repository" @ref:345 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--muted
+LINK "Releases 191" @ref:346 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2/a.Link--primary
+LINK "November 2025 Recovery 1 Latest Dec 18, 2025" @ref:347 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--primary
+LINK "+ 190 releases" @ref:348 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link
+LINK "Contributors 2,337" @ref:349 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2/a.Link--primary
+LINK "bpasero" @ref:350 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[1]/a
+LINK "Tyriar" @ref:351 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[2]/a
+LINK "jrieken" @ref:352 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[3]/a
+LINK "mjbvz" @ref:353 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[4]/a
+LINK "joaomoreno" @ref:354 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[5]/a
+LINK "sandy081" @ref:355 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[6]/a
+LINK "alexdima" @ref:356 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[7]/a
+LINK "isidorn" @ref:357 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[8]/a
+LINK "roblourens" @ref:358 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[9]/a
+LINK "aeschli" @ref:359 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[10]/a
+LINK "rebornix" @ref:360 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[11]/a
+LINK "meganrogge" @ref:361 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[12]/a
+LINK "alexr00" @ref:362 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[13]/a
+LINK "connor4312" @ref:363 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[14]/a
+LINK "+ 2,323 contributors" @ref:364 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--inTextBlock
+LINK "Deployments 500+" @ref:365 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/h2/a.Link--primary
+LINK "main July 25, 2024 05:55" @ref:366 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li/a.Link--primary
+LINK "+ more deployments" @ref:367 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/a.Link--inTextBlock
+LINK "TypeScript 95.4%" @ref:368 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[1]/a.Link--secondary
+LINK "CSS 1.5%" @ref:369 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[2]/a.Link--secondary
+LINK "JavaScript 1.0%" @ref:370 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[3]/a.Link--secondary
+LINK "Inno Setup 0.7%" @ref:371 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[4]/a.Link--secondary
+LINK "Rust 0.6%" @ref:372 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[5]/a.Link--secondary
+LINK "HTML 0.5%" @ref:373 /main#js-repo-pjax-container/turbo-frame#repo-content-turbo-frame/div#repo-content-pjax-container/ul.list-style-none/li[6]/a.Link--secondary
+LINK "GitHub Homepage" @ref:374 /footer.footer/a.footer-octicon
+LINK "Terms" @ref:375 /footer.footer/nav/ul.list-style-none/li[1]/a.Link--secondary
+LINK "Privacy" @ref:376 /footer.footer/nav/ul.list-style-none/li[2]/a.Link--secondary
+LINK "Security" @ref:377 /footer.footer/nav/ul.list-style-none/li[3]/a.Link--secondary
+LINK "Status" @ref:378 /footer.footer/nav/ul.list-style-none/li[4]/a.Link--secondary
+LINK "Community" @ref:379 /footer.footer/nav/ul.list-style-none/li[5]/a.Link--secondary
+LINK "Docs" @ref:380 /footer.footer/nav/ul.list-style-none/li[6]/a.Link--secondary
+LINK "Contact" @ref:381 /footer.footer/nav/ul.list-style-none/li[7]/a.Link--secondary
+BUTTON "Manage cookies" @ref:382 /footer.footer/nav/ul.list-style-none/li[8]/button.Link--secondary
+BUTTON "Do not share my personal information" @ref:383 /footer.footer/nav/ul.list-style-none/li[9]/button.Link--secondary

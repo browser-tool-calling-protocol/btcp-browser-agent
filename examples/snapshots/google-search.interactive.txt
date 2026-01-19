@@ -1,0 +1,4 @@
+PAGE: http://localhost/ | hello - Google Search | viewport=1024x768
+SNAPSHOT: elements=6 refs=1
+
+LINK "here" @ref:0 /a

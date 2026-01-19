@@ -1,0 +1,1144 @@
+<!-- source: http://localhost/ -->
+<!-- xpath: /header.header__wrapper-outer -->
+
+### CNN values your feedback
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- US
+- International
+- Arabic
+- Español
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Live TV CNN Fast Shows A-Z CNN10 CNN Max CNN TV Schedules
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+
+
+<!-- xpath: /header.header__wrapper-outer/div.header__wrapper-inner -->
+
+### CNN values your feedback
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- US
+- International
+- Arabic
+- Español
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Live TV CNN Fast Shows A-Z CNN10 CNN Max CNN TV Schedules
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+
+
+<!-- xpath: /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- US
+- International
+- Arabic
+- Español
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Live TV CNN Fast Shows A-Z CNN10 CNN Max CNN TV Schedules
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+
+
+<!-- xpath: /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- US
+- International
+- Arabic
+- Español
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Live TV CNN Fast Shows A-Z CNN10 CNN Max CNN TV Schedules
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+
+
+<!-- xpath: /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner/div.header__subnav-mount -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- US
+- International
+- Arabic
+- Español
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Live TV CNN Fast Shows A-Z CNN10 CNN Max CNN TV Schedules
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+
+
+<!-- xpath: /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner/div.header__subnav-mount/div.header__container[1] -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+
+<!-- xpath: /div.header__wrapper-inner/nav#pageHeader/div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__left[1] -->
+
+
+<!-- xpath: /div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__right[2]/div#desktop-header-account-nav/nav -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+
+<!-- xpath: /section[1] -->
+
+
+<!-- xpath: /section[3] -->
+
+- CIA director in Venezuela
+- Viktor Orbán
+- Lull in nuclear tests
+- Video Trump’s eating habits 3:13
+- Basketball and gambling
+- Tourism in Bangladesh
+- How to find your style
+
+- function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; img.removeAttribute('onerror'); img.src = fallbackImage; let element = img.previousElementSibling; wh...
+- Catch up Trump threatens to invoke a rarely-used law to quell unrest
+- Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project
+
+- The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag but no promise of support
+- CIA director traveled to Venezuela to meet with country’s acting president
+- Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari bank
+
+## Trump floats tariffs on countries opposed to US control of Greenland
+
+Show all
+
+![still_22280221_1756454.3369999998_still.jpg](https://media.cnn.com/api/v1/images/stellar/prod/still-22280221-1756454-3369999998-still.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+## More politics
+
+- • Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48 to 72 hours’ will really matter 2:01
+- • Video 1:32 CNN Video CNN political director breaks down the poll 1:32
+- • Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52
+
+- Ad1 of 1:01Learn MoreSubtitlesOffAudioEnglishCaption Styling Settings Catch up on today's global news • Source: CNN Video Catch up on today’s global news
+
+- Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach. But few tourists visit
+- • Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17
+- Yosef Garfinkel These ancient designs may be the first evidence of humans doing math
+- Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, researchers say
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+
+## More top stories
+
+- Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hungary’s election
+- On the verge of strikes in Iran, the US held off. What happens next is up to Trump
+- At least 7 killed in Uganda election violence
+- Canada’s leader patches things up with China as rift with Trump upends old certainties
+- Video Hundreds evacuated after fire in Seoul 0:25
+- Mother of Elon Musk’s son sues his xAI over AI-deepfake images
+
+## Entertainment
+
+- Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: Director Jafar Panahi on Iran’s deadly protests
+- Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role because she wasn’t pretty enough
+- Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer Seth Rogen at Golden Globes
+
+## More on Minneapolis
+
+- Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis in its conflict with ICE
+- Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead
+
+## Health & wellness
+
+![Elora Rudd](https://media.cnn.com/api/v1/images/stellar/prod/ellie-rudd.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+## Style
+
+- Touchstone/Kobal/Shutterstock How to actually find your personal style in 2026
+- Roger Kisby/2026GG/Penske Media/Getty Images Why men are setting aside their sneakers in 2026
+
+## More US POLITICS
+
+- • Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13
+- • Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backyard chickens and ‘a piece of broccoli’: The Trump team’s awkward austerity talk
+- Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’ advocates warn
+
+## Business & Tech
+
+- David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the heart of Wall Street’s profit engine
+- William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap models are disappearing
+- skynesher/E+/Getty Images When a credit report can hurt your chances of being hired
+
+## Crime & courts
+
+- Rick Egan/Pool/The Salt Lake Tribune Alleged Charlie Kirk assassin Tyler Robinson’s defense is set to argue to disqualify prosecutors from the case
+
+## Sports
+
+- • Analysis Analysis Steven King/Icon Sportswire/Getty Images Analysis Money is flowing freely in college athletics’ new world disorder. It’s no surprise that gambling is playing a role
+
+## Health & Wellness
+
+- Edwin Tan/E+/Getty Images Financial stress may be as bad for the heart as traditional risk factors for cardiovascular disease
+
+## US economy
+
+- Lexi Critchett/Bloomberg/Getty Images Trump and northeastern governors push for massive electricity auction to make tech giants defray costs
+
+## Science & Discovery
+
+- Roger Harris/Science Photo Library RF/Getty Images Fossil analysis changes what paleontologists know about how long T. rex took to grow full size
+
+## Travel
+
+- Wales News Service Two-star Michelin restaurant receives one-star hygiene rating
+
+## CNN Shorts
+
+- • Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12
+- • Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38
+- • Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32
+- • Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41
+- • Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18
+- • Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel 1:15
+- • Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25
+- • Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07
+- • Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York State 0:18
+- • Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22
+- • Video 0:50 Todd Pomerleau Video Student who was mistakenly deported accepts Trump admin apology 0:50
+- • Video 1:46 Reuters Video Trump to use private military contractors in Venezuela 1:46
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+- • Video 0:35 Getty Images Video Palestinian activist Mahmoud Khalil faces possible deportation again 0:35
+- • Video 1:03 Reuters Video More European troops head to Greenland as US annexation threats escalate 1:03
+- • Video 1:18 Metropolitan Detention Center Bernalillo County Video Director Timothy Busfield appears in court for child sex abuse charges 1:18
+- • Video 2:04 CNN Video Buildings collapse over tents in Gaza amid deadly winter storm 2:04
+- • Video 3:05 CNN Video Trump threatens to invoke insurrection act in MN 3:05
+- • Video 1:48 Bryce Urbany/CNN Video Can you buy a longer, healthier life? 1:48
+- • Video 1:08 Andriy Sadovyi, Mayor of Lviv Video Woman in Ukraine carries on working after explosion 1:08
+- • Video 1:09 CNN File Video Why Japan’s Prime Minister may skip sumo award ceremony 1:09
+- • Video 1:29 CNN Video People line up for fast-growing Atlanta church 1:29
+- • Video 0:28 Reuters Video Cars swept out to sea in Australian floods 0:28
+- • Video 0:29 CNN Video Minneapolis mayor says city tensions are ‘not sustainable’ 0:29
+- • Video 0:58 NASA Via YouTube Video NASA SpaceX Crew-11 returns to earth 0:58
+
+## Call to Earth
+
+Show all
+
+- Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing stepwells
+- Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women are finding new purpose
+- Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustainable city
+- One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife
+
+## More from CNN
+
+![Lee Byung-hun of "No Other Choice" poses in the Getty Images Portrait Studio Presented by IMDb and IMDbPro during the Toronto International Film Festival at InterContinental Toronto Centre on September 08, 2025 in Toronto, Ontario.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2234392789.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+- Worried Greenlanders fear for future as Trump threatens US takeover
+- Japan and the Philippines sign a new defense pact as they face growing China aggression
+- 4 questions that will be answered in the NFL playoffs’ divisional round
+- Prehistoric wolf’s gut frozen in time reveals an ice age giant
+- How killing time at a laundromat set Lily Zhang on a path to multiple Olympics
+- Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’
+- Horses really can smell our fear, new study finds
+
+
+<!-- xpath: /section[3]/section -->
+
+- CIA director in Venezuela
+- Viktor Orbán
+- Lull in nuclear tests
+- Video Trump’s eating habits 3:13
+- Basketball and gambling
+- Tourism in Bangladesh
+- How to find your style
+
+- function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; img.removeAttribute('onerror'); img.src = fallbackImage; let element = img.previousElementSibling; wh...
+- Catch up Trump threatens to invoke a rarely-used law to quell unrest
+- Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project
+
+- The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag but no promise of support
+- CIA director traveled to Venezuela to meet with country’s acting president
+- Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari bank
+
+## Trump floats tariffs on countries opposed to US control of Greenland
+
+Show all
+
+![still_22280221_1756454.3369999998_still.jpg](https://media.cnn.com/api/v1/images/stellar/prod/still-22280221-1756454-3369999998-still.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+## More politics
+
+- • Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48 to 72 hours’ will really matter 2:01
+- • Video 1:32 CNN Video CNN political director breaks down the poll 1:32
+- • Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52
+
+- Ad1 of 1:01Learn MoreSubtitlesOffAudioEnglishCaption Styling Settings Catch up on today's global news • Source: CNN Video Catch up on today’s global news
+
+- Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach. But few tourists visit
+- • Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17
+- Yosef Garfinkel These ancient designs may be the first evidence of humans doing math
+- Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, researchers say
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+
+## More top stories
+
+- Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hungary’s election
+- On the verge of strikes in Iran, the US held off. What happens next is up to Trump
+- At least 7 killed in Uganda election violence
+- Canada’s leader patches things up with China as rift with Trump upends old certainties
+- Video Hundreds evacuated after fire in Seoul 0:25
+- Mother of Elon Musk’s son sues his xAI over AI-deepfake images
+
+## Entertainment
+
+- Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: Director Jafar Panahi on Iran’s deadly protests
+- Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role because she wasn’t pretty enough
+- Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer Seth Rogen at Golden Globes
+
+## More on Minneapolis
+
+- Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis in its conflict with ICE
+- Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead
+
+## Health & wellness
+
+![Elora Rudd](https://media.cnn.com/api/v1/images/stellar/prod/ellie-rudd.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+## Style
+
+- Touchstone/Kobal/Shutterstock How to actually find your personal style in 2026
+- Roger Kisby/2026GG/Penske Media/Getty Images Why men are setting aside their sneakers in 2026
+
+## More US POLITICS
+
+- • Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13
+- • Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backyard chickens and ‘a piece of broccoli’: The Trump team’s awkward austerity talk
+- Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’ advocates warn
+
+## Business & Tech
+
+- David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the heart of Wall Street’s profit engine
+- William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap models are disappearing
+- skynesher/E+/Getty Images When a credit report can hurt your chances of being hired
+
+## Crime & courts
+
+- Rick Egan/Pool/The Salt Lake Tribune Alleged Charlie Kirk assassin Tyler Robinson’s defense is set to argue to disqualify prosecutors from the case
+
+## Sports
+
+- • Analysis Analysis Steven King/Icon Sportswire/Getty Images Analysis Money is flowing freely in college athletics’ new world disorder. It’s no surprise that gambling is playing a role
+
+## Health & Wellness
+
+- Edwin Tan/E+/Getty Images Financial stress may be as bad for the heart as traditional risk factors for cardiovascular disease
+
+## US economy
+
+- Lexi Critchett/Bloomberg/Getty Images Trump and northeastern governors push for massive electricity auction to make tech giants defray costs
+
+## Science & Discovery
+
+- Roger Harris/Science Photo Library RF/Getty Images Fossil analysis changes what paleontologists know about how long T. rex took to grow full size
+
+## Travel
+
+- Wales News Service Two-star Michelin restaurant receives one-star hygiene rating
+
+## CNN Shorts
+
+- • Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12
+- • Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38
+- • Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32
+- • Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41
+- • Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18
+- • Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel 1:15
+- • Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25
+- • Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07
+- • Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York State 0:18
+- • Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22
+- • Video 0:50 Todd Pomerleau Video Student who was mistakenly deported accepts Trump admin apology 0:50
+- • Video 1:46 Reuters Video Trump to use private military contractors in Venezuela 1:46
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+- • Video 0:35 Getty Images Video Palestinian activist Mahmoud Khalil faces possible deportation again 0:35
+- • Video 1:03 Reuters Video More European troops head to Greenland as US annexation threats escalate 1:03
+- • Video 1:18 Metropolitan Detention Center Bernalillo County Video Director Timothy Busfield appears in court for child sex abuse charges 1:18
+- • Video 2:04 CNN Video Buildings collapse over tents in Gaza amid deadly winter storm 2:04
+- • Video 3:05 CNN Video Trump threatens to invoke insurrection act in MN 3:05
+- • Video 1:48 Bryce Urbany/CNN Video Can you buy a longer, healthier life? 1:48
+- • Video 1:08 Andriy Sadovyi, Mayor of Lviv Video Woman in Ukraine carries on working after explosion 1:08
+- • Video 1:09 CNN File Video Why Japan’s Prime Minister may skip sumo award ceremony 1:09
+- • Video 1:29 CNN Video People line up for fast-growing Atlanta church 1:29
+- • Video 0:28 Reuters Video Cars swept out to sea in Australian floods 0:28
+- • Video 0:29 CNN Video Minneapolis mayor says city tensions are ‘not sustainable’ 0:29
+- • Video 0:58 NASA Via YouTube Video NASA SpaceX Crew-11 returns to earth 0:58
+
+## Call to Earth
+
+Show all
+
+- Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing stepwells
+- Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women are finding new purpose
+- Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustainable city
+- One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife
+
+## More from CNN
+
+![Lee Byung-hun of "No Other Choice" poses in the Getty Images Portrait Studio Presented by IMDb and IMDbPro during the Toronto International Film Festival at InterContinental Toronto Centre on September 08, 2025 in Toronto, Ontario.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2234392789.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+- Worried Greenlanders fear for future as Trump threatens US takeover
+- Japan and the Philippines sign a new defense pact as they face growing China aggression
+- 4 questions that will be answered in the NFL playoffs’ divisional round
+- Prehistoric wolf’s gut frozen in time reveals an ice age giant
+- How killing time at a laundromat set Lily Zhang on a path to multiple Olympics
+- Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’
+- Horses really can smell our fear, new study finds
+
+
+<!-- xpath: /section[3]/section -->
+
+- CIA director in Venezuela
+- Viktor Orbán
+- Lull in nuclear tests
+- Video Trump’s eating habits 3:13
+- Basketball and gambling
+- Tourism in Bangladesh
+- How to find your style
+
+- function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; img.removeAttribute('onerror'); img.src = fallbackImage; let element = img.previousElementSibling; wh...
+- Catch up Trump threatens to invoke a rarely-used law to quell unrest
+- Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project
+
+- The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag but no promise of support
+- CIA director traveled to Venezuela to meet with country’s acting president
+- Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari bank
+
+## Trump floats tariffs on countries opposed to US control of Greenland
+
+Show all
+
+![still_22280221_1756454.3369999998_still.jpg](https://media.cnn.com/api/v1/images/stellar/prod/still-22280221-1756454-3369999998-still.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+## More politics
+
+- • Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48 to 72 hours’ will really matter 2:01
+- • Video 1:32 CNN Video CNN political director breaks down the poll 1:32
+- • Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52
+
+- Ad1 of 1:01Learn MoreSubtitlesOffAudioEnglishCaption Styling Settings Catch up on today's global news • Source: CNN Video Catch up on today’s global news
+
+- Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach. But few tourists visit
+- • Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17
+- Yosef Garfinkel These ancient designs may be the first evidence of humans doing math
+- Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, researchers say
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+
+## More top stories
+
+- Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hungary’s election
+- On the verge of strikes in Iran, the US held off. What happens next is up to Trump
+- At least 7 killed in Uganda election violence
+- Canada’s leader patches things up with China as rift with Trump upends old certainties
+- Video Hundreds evacuated after fire in Seoul 0:25
+- Mother of Elon Musk’s son sues his xAI over AI-deepfake images
+
+## Entertainment
+
+- Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: Director Jafar Panahi on Iran’s deadly protests
+- Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role because she wasn’t pretty enough
+- Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer Seth Rogen at Golden Globes
+
+## More on Minneapolis
+
+- Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis in its conflict with ICE
+- Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead
+
+## Health & wellness
+
+![Elora Rudd](https://media.cnn.com/api/v1/images/stellar/prod/ellie-rudd.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+## Style
+
+- Touchstone/Kobal/Shutterstock How to actually find your personal style in 2026
+- Roger Kisby/2026GG/Penske Media/Getty Images Why men are setting aside their sneakers in 2026
+
+## More US POLITICS
+
+- • Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13
+- • Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backyard chickens and ‘a piece of broccoli’: The Trump team’s awkward austerity talk
+- Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’ advocates warn
+
+## Business & Tech
+
+- David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the heart of Wall Street’s profit engine
+- William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap models are disappearing
+- skynesher/E+/Getty Images When a credit report can hurt your chances of being hired
+
+## Crime & courts
+
+- Rick Egan/Pool/The Salt Lake Tribune Alleged Charlie Kirk assassin Tyler Robinson’s defense is set to argue to disqualify prosecutors from the case
+
+## Sports
+
+- • Analysis Analysis Steven King/Icon Sportswire/Getty Images Analysis Money is flowing freely in college athletics’ new world disorder. It’s no surprise that gambling is playing a role
+
+## Health & Wellness
+
+- Edwin Tan/E+/Getty Images Financial stress may be as bad for the heart as traditional risk factors for cardiovascular disease
+
+## US economy
+
+- Lexi Critchett/Bloomberg/Getty Images Trump and northeastern governors push for massive electricity auction to make tech giants defray costs
+
+## Science & Discovery
+
+- Roger Harris/Science Photo Library RF/Getty Images Fossil analysis changes what paleontologists know about how long T. rex took to grow full size
+
+## Travel
+
+- Wales News Service Two-star Michelin restaurant receives one-star hygiene rating
+
+## CNN Shorts
+
+- • Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12
+- • Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38
+- • Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32
+- • Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41
+- • Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18
+- • Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel 1:15
+- • Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25
+- • Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07
+- • Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York State 0:18
+- • Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22
+- • Video 0:50 Todd Pomerleau Video Student who was mistakenly deported accepts Trump admin apology 0:50
+- • Video 1:46 Reuters Video Trump to use private military contractors in Venezuela 1:46
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+- • Video 0:35 Getty Images Video Palestinian activist Mahmoud Khalil faces possible deportation again 0:35
+- • Video 1:03 Reuters Video More European troops head to Greenland as US annexation threats escalate 1:03
+- • Video 1:18 Metropolitan Detention Center Bernalillo County Video Director Timothy Busfield appears in court for child sex abuse charges 1:18
+- • Video 2:04 CNN Video Buildings collapse over tents in Gaza amid deadly winter storm 2:04
+- • Video 3:05 CNN Video Trump threatens to invoke insurrection act in MN 3:05
+- • Video 1:48 Bryce Urbany/CNN Video Can you buy a longer, healthier life? 1:48
+- • Video 1:08 Andriy Sadovyi, Mayor of Lviv Video Woman in Ukraine carries on working after explosion 1:08
+- • Video 1:09 CNN File Video Why Japan’s Prime Minister may skip sumo award ceremony 1:09
+- • Video 1:29 CNN Video People line up for fast-growing Atlanta church 1:29
+- • Video 0:28 Reuters Video Cars swept out to sea in Australian floods 0:28
+- • Video 0:29 CNN Video Minneapolis mayor says city tensions are ‘not sustainable’ 0:29
+- • Video 0:58 NASA Via YouTube Video NASA SpaceX Crew-11 returns to earth 0:58
+
+## Call to Earth
+
+Show all
+
+- Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing stepwells
+- Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women are finding new purpose
+- Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustainable city
+- One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife
+
+## More from CNN
+
+![Lee Byung-hun of "No Other Choice" poses in the Getty Images Portrait Studio Presented by IMDb and IMDbPro during the Toronto International Film Festival at InterContinental Toronto Centre on September 08, 2025 in Toronto, Ontario.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2234392789.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+- Worried Greenlanders fear for future as Trump threatens US takeover
+- Japan and the Philippines sign a new defense pact as they face growing China aggression
+- 4 questions that will be answered in the NFL playoffs’ divisional round
+- Prehistoric wolf’s gut frozen in time reveals an ice age giant
+- How killing time at a laundromat set Lily Zhang on a path to multiple Olympics
+- Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’
+- Horses really can smell our fear, new study finds
+
+
+<!-- xpath: /section[3]/section/section.tabcontent -->
+
+- CIA director in Venezuela
+- Viktor Orbán
+- Lull in nuclear tests
+- Video Trump’s eating habits 3:13
+- Basketball and gambling
+- Tourism in Bangladesh
+- How to find your style
+
+- function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; img.removeAttribute('onerror'); img.src = fallbackImage; let element = img.previousElementSibling; wh...
+- Catch up Trump threatens to invoke a rarely-used law to quell unrest
+- Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project
+
+- The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag but no promise of support
+- CIA director traveled to Venezuela to meet with country’s acting president
+- Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari bank
+
+## Trump floats tariffs on countries opposed to US control of Greenland
+
+Show all
+
+![still_22280221_1756454.3369999998_still.jpg](https://media.cnn.com/api/v1/images/stellar/prod/still-22280221-1756454-3369999998-still.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+## More politics
+
+- • Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48 to 72 hours’ will really matter 2:01
+- • Video 1:32 CNN Video CNN political director breaks down the poll 1:32
+- • Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52
+
+- Ad1 of 1:01Learn MoreSubtitlesOffAudioEnglishCaption Styling Settings Catch up on today's global news • Source: CNN Video Catch up on today’s global news
+
+- Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach. But few tourists visit
+- • Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17
+- Yosef Garfinkel These ancient designs may be the first evidence of humans doing math
+- Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, researchers say
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+
+## More top stories
+
+- Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hungary’s election
+- On the verge of strikes in Iran, the US held off. What happens next is up to Trump
+- At least 7 killed in Uganda election violence
+- Canada’s leader patches things up with China as rift with Trump upends old certainties
+- Video Hundreds evacuated after fire in Seoul 0:25
+- Mother of Elon Musk’s son sues his xAI over AI-deepfake images
+
+## Entertainment
+
+- Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: Director Jafar Panahi on Iran’s deadly protests
+- Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role because she wasn’t pretty enough
+- Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer Seth Rogen at Golden Globes
+
+## More on Minneapolis
+
+- Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis in its conflict with ICE
+- Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead
+
+## Health & wellness
+
+![Elora Rudd](https://media.cnn.com/api/v1/images/stellar/prod/ellie-rudd.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+## Style
+
+- Touchstone/Kobal/Shutterstock How to actually find your personal style in 2026
+- Roger Kisby/2026GG/Penske Media/Getty Images Why men are setting aside their sneakers in 2026
+
+## More US POLITICS
+
+- • Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13
+- • Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backyard chickens and ‘a piece of broccoli’: The Trump team’s awkward austerity talk
+- Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’ advocates warn
+
+## Business & Tech
+
+- David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the heart of Wall Street’s profit engine
+- William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap models are disappearing
+- skynesher/E+/Getty Images When a credit report can hurt your chances of being hired
+
+## Crime & courts
+
+- Rick Egan/Pool/The Salt Lake Tribune Alleged Charlie Kirk assassin Tyler Robinson’s defense is set to argue to disqualify prosecutors from the case
+
+## Sports
+
+- • Analysis Analysis Steven King/Icon Sportswire/Getty Images Analysis Money is flowing freely in college athletics’ new world disorder. It’s no surprise that gambling is playing a role
+
+## Health & Wellness
+
+- Edwin Tan/E+/Getty Images Financial stress may be as bad for the heart as traditional risk factors for cardiovascular disease
+
+## US economy
+
+- Lexi Critchett/Bloomberg/Getty Images Trump and northeastern governors push for massive electricity auction to make tech giants defray costs
+
+## Science & Discovery
+
+- Roger Harris/Science Photo Library RF/Getty Images Fossil analysis changes what paleontologists know about how long T. rex took to grow full size
+
+## Travel
+
+- Wales News Service Two-star Michelin restaurant receives one-star hygiene rating
+
+## CNN Shorts
+
+- • Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12
+- • Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38
+- • Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32
+- • Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41
+- • Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18
+- • Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel 1:15
+- • Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25
+- • Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07
+- • Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York State 0:18
+- • Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22
+- • Video 0:50 Todd Pomerleau Video Student who was mistakenly deported accepts Trump admin apology 0:50
+- • Video 1:46 Reuters Video Trump to use private military contractors in Venezuela 1:46
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+- • Video 0:35 Getty Images Video Palestinian activist Mahmoud Khalil faces possible deportation again 0:35
+- • Video 1:03 Reuters Video More European troops head to Greenland as US annexation threats escalate 1:03
+- • Video 1:18 Metropolitan Detention Center Bernalillo County Video Director Timothy Busfield appears in court for child sex abuse charges 1:18
+- • Video 2:04 CNN Video Buildings collapse over tents in Gaza amid deadly winter storm 2:04
+- • Video 3:05 CNN Video Trump threatens to invoke insurrection act in MN 3:05
+- • Video 1:48 Bryce Urbany/CNN Video Can you buy a longer, healthier life? 1:48
+- • Video 1:08 Andriy Sadovyi, Mayor of Lviv Video Woman in Ukraine carries on working after explosion 1:08
+- • Video 1:09 CNN File Video Why Japan’s Prime Minister may skip sumo award ceremony 1:09
+- • Video 1:29 CNN Video People line up for fast-growing Atlanta church 1:29
+- • Video 0:28 Reuters Video Cars swept out to sea in Australian floods 0:28
+- • Video 0:29 CNN Video Minneapolis mayor says city tensions are ‘not sustainable’ 0:29
+- • Video 0:58 NASA Via YouTube Video NASA SpaceX Crew-11 returns to earth 0:58
+
+## Call to Earth
+
+Show all
+
+- Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing stepwells
+- Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women are finding new purpose
+- Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustainable city
+- One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife
+
+## More from CNN
+
+![Lee Byung-hun of "No Other Choice" poses in the Getty Images Portrait Studio Presented by IMDb and IMDbPro during the Toronto International Film Festival at InterContinental Toronto Centre on September 08, 2025 in Toronto, Ontario.](https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2234392789.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+- Worried Greenlanders fear for future as Trump threatens US takeover
+- Japan and the Philippines sign a new defense pact as they face growing China aggression
+- 4 questions that will be answered in the NFL playoffs’ divisional round
+- Prehistoric wolf’s gut frozen in time reveals an ice age giant
+- How killing time at a laundromat set Lily Zhang on a path to multiple Olympics
+- Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’
+- Horses really can smell our fear, new study finds
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container[1] -->
+
+- function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; img.removeAttribute('onerror'); img.src = fallbackImage; let element = img.previousElementSibling; wh...
+- Catch up Trump threatens to invoke a rarely-used law to quell unrest
+- Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project
+
+
+<!-- xpath: /section.tabcontent/div.container[1]/ul/li.card[1]/a[1]/div.card--media-large -->
+
+![Federal agents gather January 7 near the vehicle Renee Good was driving when a federal agent fatally shot her in Minneapolis.](https://media.cnn.com/api/v1/images/stellar/prod/2026-01-07t211354z-1801417696-rc2gwiatu776-rtrmadp-3-usa-trump-minnesota.jpg?c=16x9&q=h_438,w_780,c_fill)
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container[2] -->
+
+- The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag but no promise of support
+- CIA director traveled to Venezuela to meet with country’s acting president
+- Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari bank
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container[1] -->
+
+## Trump floats tariffs on countries opposed to US control of Greenland
+
+Show all
+
+![still_22280221_1756454.3369999998_still.jpg](https://media.cnn.com/api/v1/images/stellar/prod/still-22280221-1756454-3369999998-still.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container[1]/div.card[1] -->
+
+![still_22280221_1756454.3369999998_still.jpg](https://media.cnn.com/api/v1/images/stellar/prod/still-22280221-1756454-3369999998-still.jpg?c=16x9&q=h_720,w_1280,c_fill)
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container[1]/div.card[3] -->
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container[2] -->
+
+## More politics
+
+- • Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48 to 72 hours’ will really matter 2:01
+- • Video 1:32 CNN Video CNN political director breaks down the poll 1:32
+- • Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container[2] -->
+
+- Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach. But few tourists visit
+- • Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17
+- Yosef Garfinkel These ancient designs may be the first evidence of humans doing math
+- Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, researchers say
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container -->
+
+## More top stories
+
+- Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hungary’s election
+- On the verge of strikes in Iran, the US held off. What happens next is up to Trump
+- At least 7 killed in Uganda election violence
+- Canada’s leader patches things up with China as rift with Trump upends old certainties
+- Video Hundreds evacuated after fire in Seoul 0:25
+- Mother of Elon Musk’s son sues his xAI over AI-deepfake images
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container -->
+
+## Entertainment
+
+- Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: Director Jafar Panahi on Iran’s deadly protests
+- Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role because she wasn’t pretty enough
+- Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer Seth Rogen at Golden Globes
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container -->
+
+## More on Minneapolis
+
+- Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis in its conflict with ICE
+- Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container -->
+
+## More US POLITICS
+
+- • Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13
+- • Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backyard chickens and ‘a piece of broccoli’: The Trump team’s awkward austerity talk
+- Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’ advocates warn
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container -->
+
+## Business & Tech
+
+- David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the heart of Wall Street’s profit engine
+- William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap models are disappearing
+- skynesher/E+/Getty Images When a credit report can hurt your chances of being hired
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container -->
+
+- • Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12
+- • Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38
+- • Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32
+- • Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41
+- • Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18
+- • Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel 1:15
+- • Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25
+- • Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07
+- • Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York State 0:18
+- • Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22
+- • Video 0:50 Todd Pomerleau Video Student who was mistakenly deported accepts Trump admin apology 0:50
+- • Video 1:46 Reuters Video Trump to use private military contractors in Venezuela 1:46
+- • Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the US 1:08
+- • Video 0:35 Getty Images Video Palestinian activist Mahmoud Khalil faces possible deportation again 0:35
+- • Video 1:03 Reuters Video More European troops head to Greenland as US annexation threats escalate 1:03
+- • Video 1:18 Metropolitan Detention Center Bernalillo County Video Director Timothy Busfield appears in court for child sex abuse charges 1:18
+- • Video 2:04 CNN Video Buildings collapse over tents in Gaza amid deadly winter storm 2:04
+- • Video 3:05 CNN Video Trump threatens to invoke insurrection act in MN 3:05
+- • Video 1:48 Bryce Urbany/CNN Video Can you buy a longer, healthier life? 1:48
+- • Video 1:08 Andriy Sadovyi, Mayor of Lviv Video Woman in Ukraine carries on working after explosion 1:08
+- • Video 1:09 CNN File Video Why Japan’s Prime Minister may skip sumo award ceremony 1:09
+- • Video 1:29 CNN Video People line up for fast-growing Atlanta church 1:29
+- • Video 0:28 Reuters Video Cars swept out to sea in Australian floods 0:28
+- • Video 0:29 CNN Video Minneapolis mayor says city tensions are ‘not sustainable’ 0:29
+- • Video 0:58 NASA Via YouTube Video NASA SpaceX Crew-11 returns to earth 0:58
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container -->
+
+## Call to Earth
+
+Show all
+
+- Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing stepwells
+- Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women are finding new purpose
+- Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustainable city
+- One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife
+
+
+<!-- xpath: /section[3]/section/section.tabcontent/div.container -->
+
+- Worried Greenlanders fear for future as Trump threatens US takeover
+- Japan and the Philippines sign a new defense pact as they face growing China aggression
+- 4 questions that will be answered in the NFL playoffs’ divisional round
+- Prehistoric wolf’s gut frozen in time reveals an ice age giant
+- How killing time at a laundromat set Lily Zhang on a path to multiple Olympics
+- Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’
+- Horses really can smell our fear, new study finds
+
+
+<!-- xpath: /footer#pageFooter -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Featured Shows & Films Network TV Clips CNN Headlines CNN Shorts TV Shows A-Z CNN 10 CNN Max TV Schedule
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+
+© 2026 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved. CNN Sans ™ & © 2016 Cable News Network.
+
+
+<!-- xpath: /footer#pageFooter/div.footer__inner -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Featured Shows & Films Network TV Clips CNN Headlines CNN Shorts TV Shows A-Z CNN 10 CNN Max TV Schedule
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+
+© 2026 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved. CNN Sans ™ & © 2016 Cable News Network.
+
+
+<!-- xpath: /footer#pageFooter/div.footer__inner/div#mobile-footer-account-nav[2]/nav -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+
+<!-- xpath: /footer#pageFooter/div.footer__inner/div.footer__subnav[3] -->
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Featured Shows & Films Network TV Clips CNN Headlines CNN Shorts TV Shows A-Z CNN 10 CNN Max TV Schedule
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+
+<!-- xpath: /footer#pageFooter/div.footer__inner/div.footer__subnav[3]/nav -->
+
+- World Africa Americas Asia Australia China Europe India Middle East United Kingdom
+- US Politics Trump Facts First CNN Polls 2025 Elections Redistricting Tracker
+- Business Tech Media Calculators Videos
+- Markets Pre-markets After-Hours Fear & Greed Investing Markets Now Nightcap
+- Health Life, But Better Fitness Food Sleep Mindfulness Relationships
+- Entertainment Movies Television Celebrity
+- Tech Innovate Foreseeable Future Mission: Ahead Work Transformed Innovative Cities
+- Style Arts Design Fashion Architecture Luxury Beauty Video
+- Travel Destinations Food & Drink Stay News Videos
+- Sports Football Tennis Golf Motorsport US Sports Olympics Climbing Esports Hockey
+- Science Space Life Unearthed
+- Climate Solutions Weather
+- Weather Video Climate
+- Ukraine-Russia War
+- Israel-Hamas War
+- Features As Equals Call to Earth Freedom Project Impact Your World Inside Africa CNN Heroes
+- Watch Featured Shows & Films Network TV Clips CNN Headlines CNN Shorts TV Shows A-Z CNN 10 CNN Max TV Schedule
+- Listen CNN 5 Things Chasing Life with Dr. Sanjay Gupta The Assignment with Audie Cornish One Thing Tug of War CNN Political Briefing The Axe Files All There Is with Anderson Cooper All CNN Audio po...
+- Games Daily Crossword Jumble Crossword Photo Shuffle Sudoblock Sudoku 5 Things Quiz
+- About CNN Photos Investigations CNN Profiles CNN Leadership CNN Newsletters Work for CNN
+
+
+<!-- xpath: /footer#pageFooter/div.footer__inner/div.footer__row[4] -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+
+
+<!-- xpath: /footer#pageFooter/div.footer__inner/div.footer__row[4]/div.footer__right[2] -->
+
+- Settings
+- Newsletters
+- Topics you follow
+- Sign out
+
+
+
+<!-- xpath: /footer#pageFooter/div.footer__inner/nav.footer__links -->
+
+
+<!-- end: 9973 words extracted -->

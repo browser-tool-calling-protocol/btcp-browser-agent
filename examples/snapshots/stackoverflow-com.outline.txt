@@ -1,0 +1,154 @@
+PAGE: http://localhost/ | Send attachments with PHP Mail()? - Stack Overflow | viewport=1024x768
+OUTLINE: landmarks=7 sections=51 headings=36 words=13320
+
+HEADING level=1 /div#signup-modal-container[1]/aside/h1#signup-modal-title
+HEADING level=1 "OR" /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/h1
+BANNER "current community" @ref:0 [100 words, 22 links, 14 items] /header
+  LIST [3 items] /header/ol
+  REGION "products popover" @ref:1 [59 words, 6 links, 5 items] /header/div#products-popover[2]
+    LIST [5 items] /header/div#products-popover[2]/ol.list-reset
+  NAVIGATION "Topbar" @ref:2 [30 words, 11 links, 6 items] /header/nav
+    LIST [4 items] /header/nav/ol
+      HEADING level=3 "current community" /header/nav/ol/li[1]/div.header[1]/h3
+      LIST [2 items] /header/nav/ol/li[1]/div.modal-content[2]/ul
+      HEADING level=3 "your communities" /header/nav/ol/li[1]/div#your-communities-header[3]/h3
+      HEADING level=3 "more stack exchange communities" /header/nav/ol/li[1]/div.header[5]/h3
+REGION "container" @ref:3 [11789 words, 330 links, 73 paragraphs, 892 items, 60 code] /div.container[5]
+  HEADING level=1 "Let's set up your homepage Select a few topics you're int..." /div.container[5]/div#homepage-wizard-container[1]/aside/h1#signup-modal-title
+  LIST [800 items] /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#search-popover-popover[2]/ul
+  REGION "left sidebar" @ref:4 [122 words, 17 links, 7 paragraphs, 17 items] /div.container[5]/div#left-sidebar[2]
+    NAVIGATION "Primary" @ref:5 [81 words, 15 links, 3 paragraphs, 17 items] /div.container[5]/div#left-sidebar[2]/nav
+      LIST [17 items] /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links
+        LIST [13 items] /div.container[5]/div#left-sidebar[2]/nav/ol.nav-links/li[1]/ol.nav-links
+    HEADING level=5 "Collectives™ on Stack Overflow" /div.container[5]/div#left-sidebar[2]/div#popover-discover-collectives[2]/h5
+  REGION "content" @ref:6 [11633 words, 313 links, 66 paragraphs, 75 items, 60 code] /div.container[5]/div#content[3]
+    HEADING level=1 "Send attachments with PHP Mail()?" /div.container[5]/div#content[3]/div#question-header[1]/h1
+    MAIN "question and answers" @ref:7 [10790 words, 223 links, 58 paragraphs, 37 items, 58 code] /div.container[5]/div#content[3]/div#mainbar[3]
+      REGION "question" @ref:8 [264 words, 19 links, 2 paragraphs, 6 items, 3 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]
+        CODE [php] [8 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]
+        LIST [1 items] /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/ul.list-ls-none
+        REGION "comments 12301358" @ref:9 [154 words, 10 links, 5 items, 1 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/div#comments-12301358[1]
+          LIST [5 items] /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/div#comments-12301358[1]/ul
+      REGION "answers" @ref:10 [10523 words, 204 links, 56 paragraphs, 31 items, 55 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]
+        HEADING level=2 "16 Answers 16" /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answers-header[1]/h2
+        REGION "answer 12302354" @ref:11 [2314 words, 25 links, 6 paragraphs, 8 items, 8 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]
+          LIST [3 items] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/ul
+          CODE [php] [15 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]
+          REGION "follow ups container 12302354" @ref:12 [279 words, 15 links, 5 items, 1 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]
+            HEADING level=2 "19 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/h2
+            LIST [1 items] /div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-30714928[1]/div#popover-menu-30714928/ul
+            REGION "follow up 33855929" @ref:13 [106 words, 3 links, 1 items] /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-33855929[2]
+              LIST [1 items] /div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-33855929[2]/div#popover-menu-33855929/ul
+            LIST [1 items] /div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-37228860[3]/div#popover-menu-37228860/ul
+            LIST [1 items] /div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-39153716[4]/div#popover-menu-39153716/ul
+            LIST [1 items] /div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-46402459[5]/div#popover-menu-46402459/ul
+        REGION "answer 12313090" @ref:14 [1550 words, 23 links, 5 paragraphs, 5 items, 9 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]
+          CODE [php] [46 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]
+          REGION "follow ups container 12313090" @ref:15 [252 words, 16 links, 5 items, 5 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090
+            HEADING level=2 "14 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/h2
+            LIST [1 items] /div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-37135577[1]/div#popover-menu-37135577/ul
+            REGION "follow up 42773381" @ref:16 [65 words, 4 links, 1 items, 3 code] /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-42773381[2]
+              LIST [1 items] /div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-42773381[2]/div#popover-menu-42773381/ul
+            REGION "follow up 88695778" @ref:17 [99 words, 3 links, 1 items] /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-88695778[3]
+              LIST [1 items] /div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-88695778[3]/div#popover-menu-88695778/ul
+            LIST [1 items] /div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-111497504[4]/div#popover-menu-111497504/ul
+            LIST [1 items] /div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-115518345[5]/div#popover-menu-115518345/ul
+        REGION "answer 31428803" @ref:18 [1640 words, 24 links, 2 paragraphs, 5 items, 4 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]
+          CODE [php] [30 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]
+          REGION "follow ups container 31428803" @ref:19 [201 words, 15 links, 5 items, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803
+            HEADING level=2 "20 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/h2
+            LIST [1 items] /div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-54858381[1]/div#popover-menu-54858381/ul
+            LIST [1 items] /div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-61319463[2]/div#popover-menu-61319463/ul
+            LIST [1 items] /div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-61420373[3]/div#popover-menu-61420373/ul
+            LIST [1 items] /div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-65533768[4]/div#popover-menu-65533768/ul
+            LIST [1 items] /div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-120271506[5]/div#popover-menu-120271506/ul
+        REGION "answer 23688766" @ref:20 [463 words, 20 links, 5 paragraphs, 5 items, 5 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]
+          LIST [2 items] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]/ul
+          CODE [php] [11 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]
+          REGION "follow ups container 23688766" @ref:21 [123 words, 9 links, 3 items] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766
+            HEADING level=2 "3 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766/h2
+            LIST [1 items] /div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766/div#follow-up-55674110[1]/div#popover-menu-55674110/ul
+            LIST [1 items] /div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766/div#follow-up-94485305[2]/div#popover-menu-94485305/ul
+            LIST [1 items] /div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766/div#follow-up-94555716[3]/div#popover-menu-94555716/ul
+        REGION "answer 12301415" @ref:22 [652 words, 14 links, 4 paragraphs, 2 items, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8]
+          CODE [php] [55 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8]
+          REGION "follow ups container 12301415" @ref:23 [92 words, 6 links, 2 items] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8]/div#follow-ups-container-12301415
+            HEADING level=2 "2 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8]/div#follow-ups-container-12301415/h2
+            LIST [1 items] /div#answers[3]/div#answer-12301415[8]/div#follow-ups-container-12301415/div#follow-up-16504202[1]/div#popover-menu-16504202/ul
+            REGION "follow up 94155528" @ref:24 [64 words, 3 links, 1 items] /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8]/div#follow-ups-container-12301415/div#follow-up-94155528[2]
+              LIST [1 items] /div#answers[3]/div#answer-12301415[8]/div#follow-ups-container-12301415/div#follow-up-94155528[2]/div#popover-menu-94155528/ul
+        REGION "answer 43537375" @ref:25 [648 words, 13 links, 2 paragraphs, 2 items, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9]
+          CODE [php] [88 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9]
+          REGION "follow ups container 43537375" @ref:26 [77 words, 6 links, 2 items] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9]/div#follow-ups-container-43537375
+            HEADING level=2 "2 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9]/div#follow-ups-container-43537375/h2
+            LIST [1 items] /div#answers[3]/div#answer-43537375[9]/div#follow-ups-container-43537375/div#follow-up-93066305[1]/div#popover-menu-93066305/ul
+            LIST [1 items] /div#answers[3]/div#answer-43537375[9]/div#follow-ups-container-43537375/div#follow-up-94842682[2]/div#popover-menu-94842682/ul
+        REGION "answer 49542186" @ref:27 [556 words, 16 links, 2 paragraphs, 3 items, 8 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10]
+          CODE [php] [43 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10]
+          REGION "follow ups container 49542186" @ref:28 [121 words, 9 links, 3 items, 4 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186
+            HEADING level=2 "3 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186/h2
+            LIST [1 items] /div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186/div#follow-up-106749769[1]/div#popover-menu-106749769/ul
+            LIST [1 items] /div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186/div#follow-up-106751302[2]/div#popover-menu-106751302/ul
+            REGION "follow up 106751372" @ref:29 [67 words, 3 links, 1 items, 2 code] /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186/div#follow-up-106751372[3]
+              LIST [1 items] /div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186/div#follow-up-106751372[3]/div#popover-menu-106751372/ul
+        REGION "answer 37420219" @ref:30 [101 words, 7 links, 2 paragraphs, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37420219[11]
+          CODE [php] [9 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37420219[11]
+          HEADING level=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37420219[11]/div#follow-ups-container-37420219/h2
+        REGION "answer 29913641" @ref:31 [259 words, 7 links, 2 paragraphs, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-29913641[12]
+          CODE [php] [41 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-29913641[12]
+          HEADING level=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-29913641[12]/div#follow-ups-container-29913641/h2
+        REGION "answer 60760040" @ref:32 [361 words, 6 links, 3 paragraphs, 4 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-60760040[13]
+          CODE [php] [10 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-60760040[13]
+          CODE [php] [72 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-60760040[13]
+          HEADING level=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-60760040[13]/div#follow-ups-container-60760040/h2
+        REGION "answer 41580693" @ref:33 [1111 words, 10 links, 3 paragraphs, 1 items, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-41580693[14]
+          CODE [php] [215 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-41580693[14]
+          HEADING level=2 "1 Comment" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-41580693[14]/div#follow-ups-container-41580693/h2
+          LIST [1 items] /div#answers[3]/div#answer-41580693[14]/div#follow-ups-container-41580693/div#follow-up-74690495/div#popover-menu-74690495/ul
+        REGION "answer 46337598" @ref:34 [173 words, 6 links, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-46337598[15]
+          CODE [php] [30 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-46337598[15]
+          HEADING level=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-46337598[15]/div#follow-ups-container-46337598/h2
+        REGION "answer 68113839" @ref:35 [59 words, 8 links, 7 paragraphs, 1 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-68113839[16]
+          CODE [1 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-68113839[16]
+          HEADING level=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-68113839[16]/div#follow-ups-container-68113839/h2
+        REGION "answer 65440773" @ref:36 [83 words, 8 links, 4 paragraphs] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-65440773[17]
+          HEADING level=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-65440773[17]/div#follow-ups-container-65440773/h2
+        REGION "answer 37589937" @ref:37 [215 words, 7 links, 4 paragraphs, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37589937[18]
+          CODE [php] [41 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37589937[18]
+          HEADING level=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37589937[18]/div#follow-ups-container-37589937/h2
+        REGION "answer 33528363" @ref:38 [280 words, 7 links, 4 paragraphs, 2 code] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-33528363[19]
+          CODE [php] [42 lines] /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-33528363[19]
+          HEADING level=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-33528363[19]/div#follow-ups-container-33528363/h2
+    COMPLEMENTARY "sidebar" @ref:39 [670 words, 83 links, 2 paragraphs, 38 items] /div.container[5]/div#content[3]/div#sidebar[4]
+      LIST [9 items] /div.container[5]/div#content[3]/div#sidebar[4]/ul
+      REGION "fragment container 199 573" @ref:40 [63 words, 6 links, 5 items] /div.container[5]/div#content[3]/div#sidebar[4]/div#fragment-container-199-573[6]
+        REGION @ref:41 [63 words, 6 links, 5 items] /div.container[5]/div#content[3]/div#sidebar[4]/div#fragment-container-199-573[6]/div
+          LIST [5 items] /div.container[5]/div#content[3]/div#sidebar[4]/div#fragment-container-199-573[6]/div/ul#heartbeat-items
+      REGION "sidebar linked" @ref:42 [110 words, 21 links] /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]
+        HEADING level=4 "Linked" /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/h4#h-linked
+        REGION "linked" @ref:43 [109 words, 21 links] /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked
+      REGION "sidebar related" @ref:44 [61 words, 20 links] /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]
+        HEADING level=4 "Related" /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/h4#h-related
+      REGION "hot network questions" @ref:45 [269 words, 25 links, 24 items] /div.container[5]/div#content[3]/div#sidebar[4]/div#hot-network-questions[9]
+        HEADING level=4 "Hot Network Questions" /div.container[5]/div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/h4
+        LIST [24 items] /div.container[5]/div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/ul
+      HEADING level=1 "Subscribe to RSS" /div.container[5]/div#content[3]/div#sidebar[4]/aside/h1#feed-modal-title
+    REGION "js follow ups flag modal" @ref:46 [88 words, 2 links, 4 paragraphs, 2 code] /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]
+      HEADING level=1 "Why are you flagging this comment?" /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/h1#follow-ups-flag-modal-title
+      REGION @ref:47 [73 words, 2 links, 4 paragraphs, 2 code] /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]
+        CODE [1 lines] /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]
+        CODE [1 lines] /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1]
+    REGION @ref:48 [56 words, 1 links, 2 paragraphs] /div.container[5]/div#content[3]/div[3]
+      HEADING level=1 /div.container[5]/div#content[3]/div[3]/aside/h1
+      HEADING level=1 "Hang on, you can't upvote just yet." /div.container[5]/div#content[3]/div[3]/aside/div[1]/h1
+CONTENTINFO "footer" @ref:49 [68 words, 33 links, 28 items] /footer#footer
+  NAVIGATION "Footer" @ref:50 [45 words, 26 links, 23 items] /footer#footer/nav
+    HEADING level=5 "Stack Overflow" /footer#footer/nav/h5
+    LIST [3 items] /footer#footer/nav/ul
+    HEADING level=5 "Business" /footer#footer/nav/h5
+    LIST [3 items] /footer#footer/nav/ul
+    HEADING level=5 "Company" /footer#footer/nav/h5
+    LIST [9 items] /footer#footer/nav/ul
+    HEADING level=5 "Stack Exchange Network" /footer#footer/nav/h5
+    LIST [8 items] /footer#footer/nav/ul
+  LIST [5 items] /footer#footer/ul

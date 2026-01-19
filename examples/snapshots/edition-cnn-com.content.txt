@@ -1,0 +1,817 @@
+PAGE: http://localhost/ | Breaking News, Latest News and Videos | CNN
+CONTENT: sections=37 words=9973
+
+SECTION /header.header__wrapper-outer [385 words]
+  HEADING level=3 "CNN values your feedback"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "US"
+    - "International"
+    - "Arabic"
+    - "Español"
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+
+SECTION /header.header__wrapper-outer/div.header__wrapper-inner [385 words]
+  HEADING level=3 "CNN values your feedback"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "US"
+    - "International"
+    - "Arabic"
+    - "Español"
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+
+SECTION /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader [289 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "US"
+    - "International"
+    - "Arabic"
+    - "Español"
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+
+SECTION /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner [289 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "US"
+    - "International"
+    - "Arabic"
+    - "Español"
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+
+SECTION /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner/div.header__subnav-mount [289 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [4 items]
+    - "US"
+    - "International"
+    - "Arabic"
+    - "Español"
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+
+SECTION /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader/div.header__inner/div.header__subnav-mount/div.header__container[1] [62 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+
+SECTION /div.header__wrapper-inner/nav#pageHeader/div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__left[1] [37 words]
+
+SECTION /div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__right[2]/div#desktop-header-account-nav/nav [20 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+
+SECTION /section[1] [0 words]
+
+SECTION /section[3] [1450 words]
+  LIST [7 items]
+    - "CIA director in Venezuela"
+    - "Viktor Orbán"
+    - "Lull in nuclear tests"
+    - "Video Trump’s eating habits 3:13"
+    - "Basketball and gambling"
+    - "Tourism in Bangladesh"
+    - "How to find your style"
+  LIST [3 items]
+    - "function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; i..."
+    - "Catch up Trump threatens to invoke a rarely-used law to quell unrest"
+    - "Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project"
+  LIST [3 items]
+    - "The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag..."
+    - "CIA director traveled to Venezuela to meet with country’s acting president"
+    - "Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari..."
+  HEADING level=2 "Trump floats tariffs on countries opposed to US control of Greenland"
+  TEXT "Show all"
+  HEADING level=2 "More politics"
+  LIST [3 items]
+    - "• Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48..."
+    - "• Video 1:32 CNN Video CNN political director breaks down the poll 1:32"
+    - "• Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52"
+  LIST [3 items]
+    - "Ad1 of 1:01Learn MoreSubtitlesOffAudioEnglishCaption Styling Settings Catch up on today's global ..."
+    - "Off"
+    - "English"
+  LIST [5 items]
+    - "Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach..."
+    - "• Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17"
+    - "Yosef Garfinkel These ancient designs may be the first evidence of humans doing math"
+    - "Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, rese..."
+    - "• Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the ..."
+  HEADING level=2 "More top stories"
+  LIST [6 items]
+    - "Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hu..."
+    - "On the verge of strikes in Iran, the US held off. What happens next is up to Trump"
+    - "At least 7 killed in Uganda election violence"
+    - "Canada’s leader patches things up with China as rift with Trump upends old certainties"
+    - "Video Hundreds evacuated after fire in Seoul 0:25"
+    - "Mother of Elon Musk’s son sues his xAI over AI-deepfake images"
+  HEADING level=2 "Entertainment"
+  LIST [3 items]
+    - "Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: ..."
+    - "Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role becaus..."
+    - "Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer..."
+  HEADING level=2 "More on Minneapolis"
+  LIST [2 items]
+    - "Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis i..."
+    - "Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead"
+  HEADING level=2 "Health & wellness"
+  HEADING level=2 "Style"
+  LIST [2 items]
+    - "Touchstone/Kobal/Shutterstock How to actually find your personal style in 2026"
+    - "Roger Kisby/2026GG/Penske Media/Getty Images Why men are setting aside their sneakers in 2026"
+  HEADING level=2 "More US POLITICS"
+  LIST [3 items]
+    - "• Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13"
+    - "• Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backya..."
+    - "Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’..."
+  HEADING level=2 "Business & Tech"
+  LIST [3 items]
+    - "David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the hea..."
+    - "William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap..."
+    - "skynesher/E+/Getty Images When a credit report can hurt your chances of being hired"
+  HEADING level=2 "Crime & courts"
+  LIST [1 items]
+    - "Rick Egan/Pool/The Salt Lake Tribune Alleged Charlie Kirk assassin Tyler Robinson’s defense is se..."
+  HEADING level=2 "Sports"
+  LIST [1 items]
+    - "• Analysis Analysis Steven King/Icon Sportswire/Getty Images Analysis Money is flowing freely in ..."
+  HEADING level=2 "Health & Wellness"
+  LIST [1 items]
+    - "Edwin Tan/E+/Getty Images Financial stress may be as bad for the heart as traditional risk factor..."
+  HEADING level=2 "US economy"
+  LIST [1 items]
+    - "Lexi Critchett/Bloomberg/Getty Images Trump and northeastern governors push for massive electrici..."
+  HEADING level=2 "Science & Discovery"
+  LIST [1 items]
+    - "Roger Harris/Science Photo Library RF/Getty Images Fossil analysis changes what paleontologists k..."
+  HEADING level=2 "Travel"
+  LIST [1 items]
+    - "Wales News Service Two-star Michelin restaurant receives one-star hygiene rating"
+  HEADING level=2 "CNN Shorts"
+  LIST [10 items]
+    - "• Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12"
+    - "• Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38"
+    - "• Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32"
+    - "• Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41"
+    - "• Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18"
+    - "• Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel ..."
+    - "• Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25"
+    - "• Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07"
+    - "• Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York S..."
+    - "• Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22"
+  HEADING level=2 "Call to Earth"
+  TEXT "Show all"
+  LIST [4 items]
+    - "Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing ste..."
+    - "Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women ..."
+    - "Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustain..."
+    - "One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife"
+  HEADING level=2 "More from CNN"
+  LIST [7 items]
+    - "Worried Greenlanders fear for future as Trump threatens US takeover"
+    - "Japan and the Philippines sign a new defense pact as they face growing China aggression"
+    - "4 questions that will be answered in the NFL playoffs’ divisional round"
+    - "Prehistoric wolf’s gut frozen in time reveals an ice age giant"
+    - "How killing time at a laundromat set Lily Zhang on a path to multiple Olympics"
+    - "Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’"
+    - "Horses really can smell our fear, new study finds"
+
+SECTION /section[3]/section [1450 words]
+  LIST [7 items]
+    - "CIA director in Venezuela"
+    - "Viktor Orbán"
+    - "Lull in nuclear tests"
+    - "Video Trump’s eating habits 3:13"
+    - "Basketball and gambling"
+    - "Tourism in Bangladesh"
+    - "How to find your style"
+  LIST [3 items]
+    - "function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; i..."
+    - "Catch up Trump threatens to invoke a rarely-used law to quell unrest"
+    - "Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project"
+  LIST [3 items]
+    - "The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag..."
+    - "CIA director traveled to Venezuela to meet with country’s acting president"
+    - "Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari..."
+  HEADING level=2 "Trump floats tariffs on countries opposed to US control of Greenland"
+  TEXT "Show all"
+  HEADING level=2 "More politics"
+  LIST [3 items]
+    - "• Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48..."
+    - "• Video 1:32 CNN Video CNN political director breaks down the poll 1:32"
+    - "• Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52"
+  LIST [3 items]
+    - "Ad1 of 1:01Learn MoreSubtitlesOffAudioEnglishCaption Styling Settings Catch up on today's global ..."
+    - "Off"
+    - "English"
+  LIST [5 items]
+    - "Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach..."
+    - "• Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17"
+    - "Yosef Garfinkel These ancient designs may be the first evidence of humans doing math"
+    - "Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, rese..."
+    - "• Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the ..."
+  HEADING level=2 "More top stories"
+  LIST [6 items]
+    - "Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hu..."
+    - "On the verge of strikes in Iran, the US held off. What happens next is up to Trump"
+    - "At least 7 killed in Uganda election violence"
+    - "Canada’s leader patches things up with China as rift with Trump upends old certainties"
+    - "Video Hundreds evacuated after fire in Seoul 0:25"
+    - "Mother of Elon Musk’s son sues his xAI over AI-deepfake images"
+  HEADING level=2 "Entertainment"
+  LIST [3 items]
+    - "Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: ..."
+    - "Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role becaus..."
+    - "Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer..."
+  HEADING level=2 "More on Minneapolis"
+  LIST [2 items]
+    - "Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis i..."
+    - "Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead"
+  HEADING level=2 "Health & wellness"
+  HEADING level=2 "Style"
+  LIST [2 items]
+    - "Touchstone/Kobal/Shutterstock How to actually find your personal style in 2026"
+    - "Roger Kisby/2026GG/Penske Media/Getty Images Why men are setting aside their sneakers in 2026"
+  HEADING level=2 "More US POLITICS"
+  LIST [3 items]
+    - "• Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13"
+    - "• Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backya..."
+    - "Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’..."
+  HEADING level=2 "Business & Tech"
+  LIST [3 items]
+    - "David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the hea..."
+    - "William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap..."
+    - "skynesher/E+/Getty Images When a credit report can hurt your chances of being hired"
+  HEADING level=2 "Crime & courts"
+  LIST [1 items]
+    - "Rick Egan/Pool/The Salt Lake Tribune Alleged Charlie Kirk assassin Tyler Robinson’s defense is se..."
+  HEADING level=2 "Sports"
+  LIST [1 items]
+    - "• Analysis Analysis Steven King/Icon Sportswire/Getty Images Analysis Money is flowing freely in ..."
+  HEADING level=2 "Health & Wellness"
+  LIST [1 items]
+    - "Edwin Tan/E+/Getty Images Financial stress may be as bad for the heart as traditional risk factor..."
+  HEADING level=2 "US economy"
+  LIST [1 items]
+    - "Lexi Critchett/Bloomberg/Getty Images Trump and northeastern governors push for massive electrici..."
+  HEADING level=2 "Science & Discovery"
+  LIST [1 items]
+    - "Roger Harris/Science Photo Library RF/Getty Images Fossil analysis changes what paleontologists k..."
+  HEADING level=2 "Travel"
+  LIST [1 items]
+    - "Wales News Service Two-star Michelin restaurant receives one-star hygiene rating"
+  HEADING level=2 "CNN Shorts"
+  LIST [10 items]
+    - "• Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12"
+    - "• Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38"
+    - "• Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32"
+    - "• Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41"
+    - "• Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18"
+    - "• Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel ..."
+    - "• Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25"
+    - "• Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07"
+    - "• Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York S..."
+    - "• Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22"
+  HEADING level=2 "Call to Earth"
+  TEXT "Show all"
+  LIST [4 items]
+    - "Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing ste..."
+    - "Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women ..."
+    - "Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustain..."
+    - "One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife"
+  HEADING level=2 "More from CNN"
+  LIST [7 items]
+    - "Worried Greenlanders fear for future as Trump threatens US takeover"
+    - "Japan and the Philippines sign a new defense pact as they face growing China aggression"
+    - "4 questions that will be answered in the NFL playoffs’ divisional round"
+    - "Prehistoric wolf’s gut frozen in time reveals an ice age giant"
+    - "How killing time at a laundromat set Lily Zhang on a path to multiple Olympics"
+    - "Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’"
+    - "Horses really can smell our fear, new study finds"
+
+SECTION /section[3]/section [1450 words]
+  LIST [7 items]
+    - "CIA director in Venezuela"
+    - "Viktor Orbán"
+    - "Lull in nuclear tests"
+    - "Video Trump’s eating habits 3:13"
+    - "Basketball and gambling"
+    - "Tourism in Bangladesh"
+    - "How to find your style"
+  LIST [3 items]
+    - "function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; i..."
+    - "Catch up Trump threatens to invoke a rarely-used law to quell unrest"
+    - "Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project"
+  LIST [3 items]
+    - "The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag..."
+    - "CIA director traveled to Venezuela to meet with country’s acting president"
+    - "Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari..."
+  HEADING level=2 "Trump floats tariffs on countries opposed to US control of Greenland"
+  TEXT "Show all"
+  HEADING level=2 "More politics"
+  LIST [3 items]
+    - "• Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48..."
+    - "• Video 1:32 CNN Video CNN political director breaks down the poll 1:32"
+    - "• Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52"
+  LIST [3 items]
+    - "Ad1 of 1:01Learn MoreSubtitlesOffAudioEnglishCaption Styling Settings Catch up on today's global ..."
+    - "Off"
+    - "English"
+  LIST [5 items]
+    - "Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach..."
+    - "• Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17"
+    - "Yosef Garfinkel These ancient designs may be the first evidence of humans doing math"
+    - "Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, rese..."
+    - "• Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the ..."
+  HEADING level=2 "More top stories"
+  LIST [6 items]
+    - "Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hu..."
+    - "On the verge of strikes in Iran, the US held off. What happens next is up to Trump"
+    - "At least 7 killed in Uganda election violence"
+    - "Canada’s leader patches things up with China as rift with Trump upends old certainties"
+    - "Video Hundreds evacuated after fire in Seoul 0:25"
+    - "Mother of Elon Musk’s son sues his xAI over AI-deepfake images"
+  HEADING level=2 "Entertainment"
+  LIST [3 items]
+    - "Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: ..."
+    - "Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role becaus..."
+    - "Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer..."
+  HEADING level=2 "More on Minneapolis"
+  LIST [2 items]
+    - "Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis i..."
+    - "Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead"
+  HEADING level=2 "Health & wellness"
+  HEADING level=2 "Style"
+  LIST [2 items]
+    - "Touchstone/Kobal/Shutterstock How to actually find your personal style in 2026"
+    - "Roger Kisby/2026GG/Penske Media/Getty Images Why men are setting aside their sneakers in 2026"
+  HEADING level=2 "More US POLITICS"
+  LIST [3 items]
+    - "• Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13"
+    - "• Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backya..."
+    - "Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’..."
+  HEADING level=2 "Business & Tech"
+  LIST [3 items]
+    - "David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the hea..."
+    - "William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap..."
+    - "skynesher/E+/Getty Images When a credit report can hurt your chances of being hired"
+  HEADING level=2 "Crime & courts"
+  LIST [1 items]
+    - "Rick Egan/Pool/The Salt Lake Tribune Alleged Charlie Kirk assassin Tyler Robinson’s defense is se..."
+  HEADING level=2 "Sports"
+  LIST [1 items]
+    - "• Analysis Analysis Steven King/Icon Sportswire/Getty Images Analysis Money is flowing freely in ..."
+  HEADING level=2 "Health & Wellness"
+  LIST [1 items]
+    - "Edwin Tan/E+/Getty Images Financial stress may be as bad for the heart as traditional risk factor..."
+  HEADING level=2 "US economy"
+  LIST [1 items]
+    - "Lexi Critchett/Bloomberg/Getty Images Trump and northeastern governors push for massive electrici..."
+  HEADING level=2 "Science & Discovery"
+  LIST [1 items]
+    - "Roger Harris/Science Photo Library RF/Getty Images Fossil analysis changes what paleontologists k..."
+  HEADING level=2 "Travel"
+  LIST [1 items]
+    - "Wales News Service Two-star Michelin restaurant receives one-star hygiene rating"
+  HEADING level=2 "CNN Shorts"
+  LIST [10 items]
+    - "• Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12"
+    - "• Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38"
+    - "• Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32"
+    - "• Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41"
+    - "• Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18"
+    - "• Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel ..."
+    - "• Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25"
+    - "• Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07"
+    - "• Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York S..."
+    - "• Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22"
+  HEADING level=2 "Call to Earth"
+  TEXT "Show all"
+  LIST [4 items]
+    - "Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing ste..."
+    - "Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women ..."
+    - "Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustain..."
+    - "One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife"
+  HEADING level=2 "More from CNN"
+  LIST [7 items]
+    - "Worried Greenlanders fear for future as Trump threatens US takeover"
+    - "Japan and the Philippines sign a new defense pact as they face growing China aggression"
+    - "4 questions that will be answered in the NFL playoffs’ divisional round"
+    - "Prehistoric wolf’s gut frozen in time reveals an ice age giant"
+    - "How killing time at a laundromat set Lily Zhang on a path to multiple Olympics"
+    - "Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’"
+    - "Horses really can smell our fear, new study finds"
+
+SECTION /section[3]/section/section.tabcontent [1450 words]
+  LIST [7 items]
+    - "CIA director in Venezuela"
+    - "Viktor Orbán"
+    - "Lull in nuclear tests"
+    - "Video Trump’s eating habits 3:13"
+    - "Basketball and gambling"
+    - "Tourism in Bangladesh"
+    - "How to find your style"
+  LIST [3 items]
+    - "function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; i..."
+    - "Catch up Trump threatens to invoke a rarely-used law to quell unrest"
+    - "Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project"
+  LIST [3 items]
+    - "The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag..."
+    - "CIA director traveled to Venezuela to meet with country’s acting president"
+    - "Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari..."
+  HEADING level=2 "Trump floats tariffs on countries opposed to US control of Greenland"
+  TEXT "Show all"
+  HEADING level=2 "More politics"
+  LIST [3 items]
+    - "• Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48..."
+    - "• Video 1:32 CNN Video CNN political director breaks down the poll 1:32"
+    - "• Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52"
+  LIST [3 items]
+    - "Ad1 of 1:01Learn MoreSubtitlesOffAudioEnglishCaption Styling Settings Catch up on today's global ..."
+    - "Off"
+    - "English"
+  LIST [5 items]
+    - "Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach..."
+    - "• Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17"
+    - "Yosef Garfinkel These ancient designs may be the first evidence of humans doing math"
+    - "Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, rese..."
+    - "• Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the ..."
+  HEADING level=2 "More top stories"
+  LIST [6 items]
+    - "Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hu..."
+    - "On the verge of strikes in Iran, the US held off. What happens next is up to Trump"
+    - "At least 7 killed in Uganda election violence"
+    - "Canada’s leader patches things up with China as rift with Trump upends old certainties"
+    - "Video Hundreds evacuated after fire in Seoul 0:25"
+    - "Mother of Elon Musk’s son sues his xAI over AI-deepfake images"
+  HEADING level=2 "Entertainment"
+  LIST [3 items]
+    - "Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: ..."
+    - "Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role becaus..."
+    - "Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer..."
+  HEADING level=2 "More on Minneapolis"
+  LIST [2 items]
+    - "Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis i..."
+    - "Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead"
+  HEADING level=2 "Health & wellness"
+  HEADING level=2 "Style"
+  LIST [2 items]
+    - "Touchstone/Kobal/Shutterstock How to actually find your personal style in 2026"
+    - "Roger Kisby/2026GG/Penske Media/Getty Images Why men are setting aside their sneakers in 2026"
+  HEADING level=2 "More US POLITICS"
+  LIST [3 items]
+    - "• Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13"
+    - "• Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backya..."
+    - "Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’..."
+  HEADING level=2 "Business & Tech"
+  LIST [3 items]
+    - "David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the hea..."
+    - "William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap..."
+    - "skynesher/E+/Getty Images When a credit report can hurt your chances of being hired"
+  HEADING level=2 "Crime & courts"
+  LIST [1 items]
+    - "Rick Egan/Pool/The Salt Lake Tribune Alleged Charlie Kirk assassin Tyler Robinson’s defense is se..."
+  HEADING level=2 "Sports"
+  LIST [1 items]
+    - "• Analysis Analysis Steven King/Icon Sportswire/Getty Images Analysis Money is flowing freely in ..."
+  HEADING level=2 "Health & Wellness"
+  LIST [1 items]
+    - "Edwin Tan/E+/Getty Images Financial stress may be as bad for the heart as traditional risk factor..."
+  HEADING level=2 "US economy"
+  LIST [1 items]
+    - "Lexi Critchett/Bloomberg/Getty Images Trump and northeastern governors push for massive electrici..."
+  HEADING level=2 "Science & Discovery"
+  LIST [1 items]
+    - "Roger Harris/Science Photo Library RF/Getty Images Fossil analysis changes what paleontologists k..."
+  HEADING level=2 "Travel"
+  LIST [1 items]
+    - "Wales News Service Two-star Michelin restaurant receives one-star hygiene rating"
+  HEADING level=2 "CNN Shorts"
+  LIST [10 items]
+    - "• Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12"
+    - "• Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38"
+    - "• Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32"
+    - "• Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41"
+    - "• Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18"
+    - "• Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel ..."
+    - "• Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25"
+    - "• Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07"
+    - "• Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York S..."
+    - "• Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22"
+  HEADING level=2 "Call to Earth"
+  TEXT "Show all"
+  LIST [4 items]
+    - "Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing ste..."
+    - "Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women ..."
+    - "Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustain..."
+    - "One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife"
+  HEADING level=2 "More from CNN"
+  LIST [7 items]
+    - "Worried Greenlanders fear for future as Trump threatens US takeover"
+    - "Japan and the Philippines sign a new defense pact as they face growing China aggression"
+    - "4 questions that will be answered in the NFL playoffs’ divisional round"
+    - "Prehistoric wolf’s gut frozen in time reveals an ice age giant"
+    - "How killing time at a laundromat set Lily Zhang on a path to multiple Olympics"
+    - "Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’"
+    - "Horses really can smell our fear, new study finds"
+
+SECTION /section[3]/section/section.tabcontent/div.container[1] [77 words]
+  LIST [3 items]
+    - "function imageLoadError(img) { const fallbackImage = '/media/sites/cnn/cnn-fallback-image.jpg'; i..."
+    - "Catch up Trump threatens to invoke a rarely-used law to quell unrest"
+    - "Analysis Minneapolis is becoming a critical testing ground for Trump’s strongman project"
+
+SECTION /section.tabcontent/div.container[1]/ul/li.card[1]/a[1]/div.card--media-large [37 words]
+
+SECTION /section[3]/section/section.tabcontent/div.container[2] [50 words]
+  LIST [3 items]
+    - "The White House Venezuela’s Machado gave Trump her Nobel prize. In return she received a swag bag..."
+    - "CIA director traveled to Venezuela to meet with country’s acting president"
+    - "Why the Trump administration is holding millions of dollars from Venezuelan oil sales in a Qatari..."
+
+SECTION /section[3]/section/section.tabcontent/div.container[1] [131 words]
+  HEADING level=2 "Trump floats tariffs on countries opposed to US control of Greenland"
+  TEXT "Show all"
+
+SECTION /section[3]/section/section.tabcontent/div.container[1]/div.card[1] [31 words]
+
+SECTION /section[3]/section/section.tabcontent/div.container[1]/div.card[3] [67 words]
+
+SECTION /section[3]/section/section.tabcontent/div.container[2] [49 words]
+  HEADING level=2 "More politics"
+  LIST [3 items]
+    - "• Video 2:01 MAHSA/AFP/Middle East Images/Getty Images Video Angha: In US-Iran tensions, ‘next 48..."
+    - "• Video 1:32 CNN Video CNN political director breaks down the poll 1:32"
+    - "• Video 6:52 CNN Video ‘Sloppy’: Journalist went through ICE’s hiring process 6:52"
+
+SECTION /section[3]/section/section.tabcontent/div.container[2] [79 words]
+  LIST [5 items]
+    - "Md Zakir Hossain/iStock Editorial/Getty Images It’s home to the world’s longest natural sea beach..."
+    - "• Video 18:17 Travel Nevada Video Is this man going to die live on Netflix? 18:17"
+    - "Yosef Garfinkel These ancient designs may be the first evidence of humans doing math"
+    - "Sunny Celeste/imageBROKER/Shutterstock Leonardo da Vinci’s DNA may be hiding in his artwork, rese..."
+    - "• Video 1:08 Youtube/@dhammacetiya Video Why Buddhist monks and their dog are walking across the ..."
+
+SECTION /section[3]/section/section.tabcontent/div.container [76 words]
+  HEADING level=2 "More top stories"
+  LIST [6 items]
+    - "Marton Monus/picture-alliance/dpa/AP Rightwingers of the world unite to endorse Orbán ahead of Hu..."
+    - "On the verge of strikes in Iran, the US held off. What happens next is up to Trump"
+    - "At least 7 killed in Uganda election violence"
+    - "Canada’s leader patches things up with China as rift with Trump upends old certainties"
+    - "Video Hundreds evacuated after fire in Seoul 0:25"
+    - "Mother of Elon Musk’s son sues his xAI over AI-deepfake images"
+
+SECTION /section[3]/section/section.tabcontent/div.container [56 words]
+  HEADING level=2 "Entertainment"
+  LIST [3 items]
+    - "Britta Pedersen/picture alliance/Getty Images ‘As far as I’m concerned, this regime has fallen’: ..."
+    - "Dia Dipasupil/WireImage/Getty Images Jennifer Lawrence says she lost out on Tarantino role becaus..."
+    - "Richard Shotwell/Invision/AP Pamela Anderson felt ‘yucky’ sitting close to ‘Pam & Tommy’ producer..."
+
+SECTION /section[3]/section/section.tabcontent/div.container [37 words]
+  HEADING level=2 "More on Minneapolis"
+  LIST [2 items]
+    - "Richard Tsong-Taatarii/Star Tribune/AP How the unrest of 2020 cast a long shadow on Minneapolis i..."
+    - "Tyrone Siu/Reuters The Minneapolis mayor told ICE to leave his city. Trump doubled down instead"
+
+SECTION /section[3]/section/section.tabcontent/div.container [54 words]
+  HEADING level=2 "More US POLITICS"
+  LIST [3 items]
+    - "• Video 3:13 cnn Video RFK Jr.: Trump has the most ‘unhinged’ eating habits 3:13"
+    - "• Analysis Analysis Francis Chung/Politico/Bloomberg/Getty Images Analysis Dolls, pencils, backya..."
+    - "Mark Schiefelbein/AP/File Pentagon moves to turn independent military outlet into a ‘mouthpiece,’..."
+
+SECTION /section[3]/section/section.tabcontent/div.container [49 words]
+  HEADING level=2 "Business & Tech"
+  LIST [3 items]
+    - "David Paul Morris/Bloomberg/Getty Images Trump’s affordability pledge strikes directly at the hea..."
+    - "William Volcov/Brazil Photo Pres/Shutterstock Americans are paying more than ever for cars. Cheap..."
+    - "skynesher/E+/Getty Images When a credit report can hurt your chances of being hired"
+
+SECTION /section[3]/section/section.tabcontent/div.container [384 words]
+  LIST [10 items]
+    - "• Video 1:12 Wrecktangle Pizza Video Crowd confronts federal agents at MN pizza restaurant 1:12"
+    - "• Video 0:38 Obtained by CNN Video Law enforcement use flash bang to enter home 0:38"
+    - "• Video 1:32 CNN Video CNN Poll: Majority call Trump’s first year a failure 1:32"
+    - "• Video 0:41 Reuters Video Machado gave Trump her Nobel prize medal 0:41"
+    - "• Video 1:18 CNN Video We went to the ‘Mom Dance Party’ 1:18"
+    - "• Video 1:15 The White House Video See Kimmel’s offer to Trump after Machado gives him her Nobel ..."
+    - "• Video 0:25 Reuters Video Hundreds evacuated after fire in Seoul 0:25"
+    - "• Video 1:07 Korean Central TV Video North Korea takes a cue from Hollywood 1:07"
+    - "• Video 0:18 New York State Police Video Several hospitalized after multi-car crash in New York S..."
+    - "• Video 1:22 CNN Video CNN on scene as tear gas deployed in Minneapolis 1:22"
+
+SECTION /section[3]/section/section.tabcontent/div.container [65 words]
+  HEADING level=2 "Call to Earth"
+  TEXT "Show all"
+  LIST [4 items]
+    - "Getty Images He brought over 600 water bodies back to life. Now he’s saving India’s vanishing ste..."
+    - "Deshakalyan Chowdhury/AFP/Getty Images Labeled ‘husband eaters’ after tiger attacks, these women ..."
+    - "Northcrest Developments Inside the abandoned airport being transformed into a $30 billion sustain..."
+    - "One Ocean Foundation First mission to bottom of deep-sea canyon reveals risks to wildlife"
+
+SECTION /section[3]/section/section.tabcontent/div.container [88 words]
+  LIST [7 items]
+    - "Worried Greenlanders fear for future as Trump threatens US takeover"
+    - "Japan and the Philippines sign a new defense pact as they face growing China aggression"
+    - "4 questions that will be answered in the NFL playoffs’ divisional round"
+    - "Prehistoric wolf’s gut frozen in time reveals an ice age giant"
+    - "How killing time at a laundromat set Lily Zhang on a path to multiple Olympics"
+    - "Ariana Grande will reunite with ‘Wicked’ costar Jonathan Bailey for ‘Sunday in the Park with George’"
+    - "Horses really can smell our fear, new study finds"
+
+SECTION /footer#pageFooter [296 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  TEXT "© 2026 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved. CNN Sans ™ & © 2016 Cable News Network."
+
+SECTION /footer#pageFooter/div.footer__inner [296 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+  TEXT "© 2026 Cable News Network. A Warner Bros. Discovery Company. All Rights Reserved. CNN Sans ™ & © 2016 Cable News Network."
+
+SECTION /footer#pageFooter/div.footer__inner/div#mobile-footer-account-nav[2]/nav [20 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+
+SECTION /footer#pageFooter/div.footer__inner/div.footer__subnav[3] [199 words]
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+
+SECTION /footer#pageFooter/div.footer__inner/div.footer__subnav[3]/nav [199 words]
+  LIST [10 items]
+    - "World Africa Americas Asia Australia China Europe India Middle East United Kingdom"
+    - "Africa"
+    - "Americas"
+    - "Asia"
+    - "Australia"
+    - "China"
+    - "Europe"
+    - "India"
+    - "Middle East"
+    - "United Kingdom"
+
+SECTION /footer#pageFooter/div.footer__inner/div.footer__row[4] [31 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+
+SECTION /footer#pageFooter/div.footer__inner/div.footer__row[4]/div.footer__right[2] [31 words]
+  LIST [4 items]
+    - "Settings"
+    - "Newsletters"
+    - "Topics you follow"
+    - "Sign out"
+
+SECTION /footer#pageFooter/div.footer__inner/nav.footer__links [15 words]

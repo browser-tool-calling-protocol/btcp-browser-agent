@@ -1,0 +1,2543 @@
+PAGE: http://localhost/ | Amazon.com: ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C : Electronics
+CONTENT: sections=247 words=193504
+
+SECTION /div#a-page[1] [33006 words]
+  HEADING level=2 "Skip to"
+  LIST [8 items]
+    - "Main content"
+    - "About this item"
+    - "About this item"
+    - "About this item"
+    - "Buying options"
+    - "Compare with similar items"
+    - "Videos"
+    - "Reviews"
+  HEADING level=2 "Keyboard shortcuts"
+  LIST [6 items]
+    - "Search opt + /"
+    - "Cart shift + opt + C"
+    - "Home shift + opt + H"
+    - "Orders shift + opt + O"
+    - "Add to cart shift + opt + K"
+    - "Show/Hide shortcuts shift + opt + Z"
+  HEADING level=5 "International Shopping Transition Alert"
+  HEADING level=I "Your Lists"
+  LIST [2 items]
+    - "Create a List"
+    - "Find a List or Registry"
+  HEADING level=I "Your Account"
+  LIST [10 items]
+    - "Account"
+    - "Orders"
+    - "Recommendations"
+    - "Browsing History"
+    - "Your Shopping preferences"
+    - "Watchlist"
+    - "Video Purchases & Rentals"
+    - "Kindle Unlimited"
+    - "Content & Devices"
+    - "Subscribe & Save Items"
+  LIST [6 items]
+    - "Today's Deals"
+    - "Prime Video"
+    - "Registry"
+    - "Gift Cards"
+    - "Customer Service"
+    - "Sell"
+  LIST [5 items]
+    - "Electronics"
+    - "›"
+    - "Computers & Accessories"
+    - "›"
+    - "Monitors"
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+  LIST [7 items]
+    - "16+"
+    - "15+"
+    - "14+"
+    - "13+"
+    - "12+"
+    - "11+"
+    - "6 VIDEOS"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  HEADING level=4 "Image Unavailable"
+  LIST [1 items]
+    - "To view this video download Flash Player"
+  LIST [3 items]
+    - "VIDEOS"
+    - "360° VIEW"
+    - "IMAGES"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+  HEADING level=1 "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms,..."
+  HEADING level=3 "Shipping & Fee Details"
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+  HEADING level=3 "Purchase options and add-ons"
+  HEADING level=1 "About this item"
+  LIST [7 items]
+    - "32-inch 4K (3840 x 2160) QD-OLED gaming monitor with 240 Hz refresh rate and 0.03 ms (GTG) respon..."
+    - "Highly efficient custom heatsink, advanced airflow design, and graphene film for better heat mana..."
+    - "VESA DisplayHDR 400 True Black compliance, 99% DCI-P3 gamut, true 10-bit, and Delta E < 2 color d..."
+    - "Optional uniform brightness setting ensures consistent luminance levels"
+    - "DisplayWidget Center allows users to access OLED Care functions, as well as adjust monitor settin..."
+    - "Peak brightness may vary due to color pre-calibration"
+    - "3-month Adobe Creative Cloud: Receive complimentary access with the purchase of this product (val..."
+  HEADING level=4 "Consider a similar item"
+  HEADING level=2 "Deals on related products"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+  HEADING level=2 "Products related to this item"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+  HEADING level=2 "Product Videos"
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+  HEADING level=2 "Product information"
+  HEADING level=1 "Technical Details"
+  HEADING level=1 "Additional Information"
+  LIST [2 items]
+    - "#1,666 in Electronics (See Top 100 in Electronics)"
+    - "#68 in Computer Monitors"
+  HEADING level=1 "Warranty & Support"
+  HEADING level=1 "Feedback"
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+  HEADING level=2 "From the brand"
+  HEADING level=3 "ASUS Monitors & Displays"
+  LIST [4 items]
+    - "ROG Gaming Monitors Visit the Store"
+    - "TUF Gaming Monitors Visit the Store"
+    - "ProArt Displays Visit the Store"
+    - "Portable Displays Visit the Store"
+  HEADING level=2 "Product Description"
+  TEXT "The ROG Swift OLED PG32UCDM boasts a 32-inch 4K QD-OLED panel that delivers astounding visuals at a buttery-smooth 240 Hz. Powered by third-generation QD-OLED technology, the PG32UCDM delivers vibrant colors, the deepest black hues, and the brightest highlights. Plus, the 0.03 ms response time ensures blur-free action, even in intense gameplay. Inside, an advanced custom heatsink offers exceptional cooling to reduce the likelihood of burn-in and improve performance and longevity of the OLED panel. This premium monitor is designed for gamers who demand the very best, offering an unbeatable combination of size, image quality, and refresh rate speed for exhilarating gaming experiences."
+  HEADING level=2 "From the manufacturer"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+  HEADING level=2 "ROG Swift OLED PG32UCDM"
+  HEADING level=1 "Experience the Ultimate Gamechanger"
+  TEXT "The 32-inch 4K QD-OLED panel of the PG32UCDM opens up a world of unbelievably lifelike gaming and entertainment experiences. Plus, a 240 Hz refresh rate ensures buttery-smooth visuals and eliminates motion blur to give you the edge in fast-paced games."
+  LIST [4 items]
+    - "Advantages of QD-OLED technology The high contrast ratio offered by QD-OLED technology ensures th..."
+    - "Detailed visuals and clearly defined text Latest-generation QD-OLED panels take advantage of a un..."
+    - "Game in Ultravivid HDR The PG32UCDM supports HDR formats including HDR10 and Dolby Vision to deli..."
+    - "Extreme Low Motion Blur Exclusive ASUS Extreme Low Motion Blue (ELMB) technology further reduces ..."
+  LIST [3 items]
+    - "ASUS OLED Care The custom passive heatsink found in the PG32UCDM prioritizes heat dissipation. In..."
+    - "Graphene film A graphene film behind the QD-OLED panel helps reduce operating temperature. Graphe..."
+    - "ASUS OLED Care ASUS OLED Care software provides users with timely pixel cleaning reminders, a scr..."
+  LIST [3 items]
+    - "Uniform brightness When activated, the exclusive Uniform Brightness setting within the OSD menu d..."
+    - "ASUS DisplayWidget Center The all-new ASUS DisplayWidget Center software lets you easily change m..."
+    - "ASPECT RATIO CONTROL If you prefer playing on a smaller monitor, the PG32UCDM also supports a ran..."
+  LIST [4 items]
+    - "Experience superb smoothness and responsiveness The PG32UCDM features AMD FreeSync Premium Pro te..."
+    - "Futuristic, cyberpunk-inspired aesthetic The PG32UCDM is the epitome of premium ROG design, boast..."
+    - "Rich connectivity Extensive connectivity options such as DisplayPort 1.4 (DSC), HDMI 2.1, USB-C w..."
+    - "Ergonomic stand The specially designed hollowed-out stand offers tilt, swivel, and height adjustm..."
+  HEADING level=2 "What's in the box"
+  HEADING level=2 "Top Brand: ASUS"
+  HEADING level=2 "Brands you might like"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+  HEADING level=2 "Similar brands on Amazon"
+  LIST [5 items]
+    - "Shop the Store on Amazon ›KTC 32 Inch 240Hz Curved Gaming Monitor, 2K 1440P Computer PC Monitor w..."
+    - "Shop the Store on Amazon ›KTC 32 inch 240Hz Curved Gaming Monitor 1500R 1080P 125% sRGB 1ms, Free..."
+    - "Shop the Store on Amazon ›KTC 32 inch Curved Gaming Monitor, 2K 180Hz 1440P PC Monitor, 1500R Fra..."
+    - "Shop the Store on Amazon ›SANSUI 27 Inch WQHD 2560 x 1440 IPS Gaming Monitor, 200Hz 180Hz 1ms Com..."
+    - "Shop the Store on Amazon ›KOORUI 27" Gaming Monitor, 200Hz 1ms Fast IPS, WQHD (2560 x 1440p) HDR ..."
+  HEADING level=2 "Customer reviews"
+  LIST [5 items]
+    - "5 star4 star3 star2 star1 star5 star81%8%4%1%6%81%"
+    - "5 star4 star3 star2 star1 star4 star81%8%4%1%6%8%"
+    - "5 star4 star3 star2 star1 star3 star81%8%4%1%6%4%"
+    - "5 star4 star3 star2 star1 star2 star81%8%4%1%6%1%"
+    - "5 star4 star3 star2 star1 star1 star81%8%4%1%6%6%"
+  TEXT "Customer Reviews, including Product Star Ratings help customers to learn more about the product and decide whether it is the right product for them."
+  TEXT "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and if the reviewer bought the item on Amazon. It also analyzed reviews to verify trustworthiness."
+  HEADING level=3 "Customers say"
+  HEADING level=4 "Select to learn more"
+  HEADING level=5 ""
+  HEADING level=6 "Images in this review"
+  HEADING level=3 "Reviews with images"
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+  HEADING level=3 "Top reviews from the United States"
+  HEADING level=4 "There was a problem filtering reviews. Please reload the page."
+  LIST [3 items]
+    - "Culbrelai5.0 out of 5 stars Outstanding monitor, with some things to know Reviewed in the United ..."
+    - "Betti V 5.0 out of 5 stars This is the one. Reviewed in the United States on October 24, 2025Styl..."
+    - "Sky Dragon5.0 out of 5 stars better than being there! Reviewed in the United States on December 6..."
+  HEADING level=3 "Top reviews from other countries"
+  LIST [5 items]
+    - "Oscar 5.0 out of 5 stars Excelente monitor gamer Reviewed in Mexico on December 8, 2025Style: 27"..."
+    - "Richard5.0 out of 5 stars works great Reviewed in Canada on December 30, 2025Style: 27" OLED QHD ..."
+    - "Edwin G.5.0 out of 5 stars Excelente para Xbox Serie X Reviewed in Mexico on September 6, 2023Sty..."
+    - "Victor Torres5.0 out of 5 stars No te arrepentirás. Reviewed in Mexico on January 5, 2026Style: 3..."
+    - "MJEED ALHRBI5.0 out of 5 stars تعقيم للعين Reviewed in Saudi Arabia on August 24, 2025Style: 27" ..."
+  HEADING level=I "Get to Know Us"
+  LIST [6 items]
+    - "Careers"
+    - "Blog"
+    - "About Amazon"
+    - "Investor Relations"
+    - "Amazon Devices"
+    - "Amazon Science"
+  HEADING level=I "Make Money with Us"
+  LIST [8 items]
+    - "Sell products on Amazon"
+    - "Sell on Amazon Business"
+    - "Sell apps on Amazon"
+    - "Become an Affiliate"
+    - "Advertise Your Products"
+    - "Self-Publish with Us"
+    - "Host an Amazon Hub"
+    - "›See More Make Money with Us"
+  HEADING level=I "Amazon Payment Products"
+  LIST [4 items]
+    - "Amazon Business Card"
+    - "Shop with Points"
+    - "Reload Your Balance"
+    - "Amazon Currency Converter"
+  HEADING level=I "Let Us Help You"
+  LIST [7 items]
+    - "Amazon and COVID-19"
+    - "Your Account"
+    - "Your Orders"
+    - "Shipping Rates & Policies"
+    - "Returns & Replacements"
+    - "Manage Your Content and Devices"
+    - "Help"
+  LIST [5 items]
+    - "Amazon MusicStream millionsof songs"
+    - "Amazon AdsReach customerswherever theyspend their time"
+    - "6pmScore dealson fashion brands"
+    - "AbeBooksBooks, art& collectibles"
+    - "ACX Audiobook PublishingMade Easy"
+  LIST [5 items]
+    - "Amazon BusinessEverything ForYour Business"
+    - "AmazonGlobalShip OrdersInternationally"
+    - "Amazon Web ServicesScalable CloudComputing Services"
+    - "AudibleListen to Books & OriginalAudio Performances"
+    - "Box Office MojoFind MovieBox Office Data"
+  LIST [5 items]
+    - "IMDbProGet Info EntertainmentProfessionals Need"
+    - "Kindle Direct PublishingIndie Digital & Print PublishingMade Easy"
+    - "Prime Video DirectVideo DistributionMade Easy"
+    - "ShopbopDesignerFashion Brands"
+    - "Woot!Deals and Shenanigans"
+  LIST [4 items]
+    - "eero WiFiStream 4K Videoin Every Room"
+    - "BlinkSmart Securityfor Every Home"
+    - "Neighbors App Real-Time Crime& Safety Alerts"
+    - "Amazon Subscription BoxesTop subscription boxes – right to your door"
+  LIST [4 items]
+    - "Conditions of Use"
+    - "Privacy Notice"
+    - "Consumer Health Data Privacy Disclosure"
+    - "Your Ads Privacy Choices"
+
+SECTION /div#a-page[1]/nav#shortcut-menu [71 words]
+  HEADING level=2 "Skip to"
+  LIST [8 items]
+    - "Main content"
+    - "About this item"
+    - "About this item"
+    - "About this item"
+    - "Buying options"
+    - "Compare with similar items"
+    - "Videos"
+    - "Reviews"
+  HEADING level=2 "Keyboard shortcuts"
+  LIST [6 items]
+    - "Search opt + /"
+    - "Cart shift + opt + C"
+    - "Home shift + opt + H"
+    - "Orders shift + opt + O"
+    - "Add to cart shift + opt + K"
+    - "Show/Hide shortcuts shift + opt + Z"
+
+SECTION /div#a-page[1]/header#navbar-main [2019 words]
+  HEADING level=5 "International Shopping Transition Alert"
+  HEADING level=I "Your Lists"
+  LIST [2 items]
+    - "Create a List"
+    - "Find a List or Registry"
+  HEADING level=I "Your Account"
+  LIST [10 items]
+    - "Account"
+    - "Orders"
+    - "Recommendations"
+    - "Browsing History"
+    - "Your Shopping preferences"
+    - "Watchlist"
+    - "Video Purchases & Rentals"
+    - "Kindle Unlimited"
+    - "Content & Devices"
+    - "Subscribe & Save Items"
+  LIST [6 items]
+    - "Today's Deals"
+    - "Prime Video"
+    - "Registry"
+    - "Gift Cards"
+    - "Customer Service"
+    - "Sell"
+
+SECTION /div#a-page[1]/header#navbar-main/div#navbar [2019 words]
+  HEADING level=5 "International Shopping Transition Alert"
+  HEADING level=I "Your Lists"
+  LIST [2 items]
+    - "Create a List"
+    - "Find a List or Registry"
+  HEADING level=I "Your Account"
+  LIST [10 items]
+    - "Account"
+    - "Orders"
+    - "Recommendations"
+    - "Browsing History"
+    - "Your Shopping preferences"
+    - "Watchlist"
+    - "Video Purchases & Rentals"
+    - "Kindle Unlimited"
+    - "Content & Devices"
+    - "Subscribe & Save Items"
+  LIST [6 items]
+    - "Today's Deals"
+    - "Prime Video"
+    - "Registry"
+    - "Gift Cards"
+    - "Customer Service"
+    - "Sell"
+
+SECTION /div#a-page[1]/header#navbar-main/div#navbar/div#nav-belt[1] [127 words]
+
+SECTION /div#a-page[1]/header#navbar-main/div#navbar/div#nav-belt[1]/div.nav-left[1] [35 words]
+
+SECTION /div#a-page[1]/header#navbar-main/div#navbar/div#nav-belt[1]/div#nav-fill-search[2] [76 words]
+
+SECTION /div#a-page[1]/header#navbar-main/div#navbar/div#nav-belt[1]/div#nav-fill-search[2]/div#nav-search [72 words]
+
+SECTION /div#navbar/div#nav-belt[1]/div#nav-fill-search[2]/div#nav-search/form#nav-search-bar-form/div.nav-left[1] [70 words]
+
+SECTION /div#nav-belt[1]/div#nav-fill-search[2]/div#nav-search/form#nav-search-bar-form/div.nav-left[1]/div#nav-search-dropdown-card [70 words]
+
+SECTION /div#nav-fill-search[2]/div#nav-search/form#nav-search-bar-form/div.nav-left[1]/div#nav-search-dropdown-card/div.nav-search-scope [70 words]
+
+SECTION /div#a-page[1]/header#navbar-main/div#navbar/div#nav-main[5] [67 words]
+  LIST [6 items]
+    - "Today's Deals"
+    - "Prime Video"
+    - "Registry"
+    - "Gift Cards"
+    - "Customer Service"
+    - "Sell"
+
+SECTION /div#a-page[1]/header#navbar-main/div#navbar/div#nav-main[5]/div.nav-left[1] [46 words]
+
+SECTION /div#a-page[1]/div#dp[1] [27019 words]
+  LIST [5 items]
+    - "Electronics"
+    - "›"
+    - "Computers & Accessories"
+    - "›"
+    - "Monitors"
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+  LIST [7 items]
+    - "16+"
+    - "15+"
+    - "14+"
+    - "13+"
+    - "12+"
+    - "11+"
+    - "6 VIDEOS"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  HEADING level=4 "Image Unavailable"
+  LIST [1 items]
+    - "To view this video download Flash Player"
+  LIST [3 items]
+    - "VIDEOS"
+    - "360° VIEW"
+    - "IMAGES"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+  HEADING level=1 "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms,..."
+  HEADING level=3 "Shipping & Fee Details"
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+  HEADING level=3 "Purchase options and add-ons"
+  HEADING level=1 "About this item"
+  LIST [7 items]
+    - "32-inch 4K (3840 x 2160) QD-OLED gaming monitor with 240 Hz refresh rate and 0.03 ms (GTG) respon..."
+    - "Highly efficient custom heatsink, advanced airflow design, and graphene film for better heat mana..."
+    - "VESA DisplayHDR 400 True Black compliance, 99% DCI-P3 gamut, true 10-bit, and Delta E < 2 color d..."
+    - "Optional uniform brightness setting ensures consistent luminance levels"
+    - "DisplayWidget Center allows users to access OLED Care functions, as well as adjust monitor settin..."
+    - "Peak brightness may vary due to color pre-calibration"
+    - "3-month Adobe Creative Cloud: Receive complimentary access with the purchase of this product (val..."
+  HEADING level=4 "Consider a similar item"
+  HEADING level=2 "Deals on related products"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+  HEADING level=2 "Products related to this item"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+  HEADING level=2 "Product Videos"
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+  HEADING level=2 "Product information"
+  HEADING level=1 "Technical Details"
+  HEADING level=1 "Additional Information"
+  LIST [2 items]
+    - "#1,666 in Electronics (See Top 100 in Electronics)"
+    - "#68 in Computer Monitors"
+  HEADING level=1 "Warranty & Support"
+  HEADING level=1 "Feedback"
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+  HEADING level=2 "From the brand"
+  HEADING level=3 "ASUS Monitors & Displays"
+  LIST [4 items]
+    - "ROG Gaming Monitors Visit the Store"
+    - "TUF Gaming Monitors Visit the Store"
+    - "ProArt Displays Visit the Store"
+    - "Portable Displays Visit the Store"
+  HEADING level=2 "Product Description"
+  TEXT "The ROG Swift OLED PG32UCDM boasts a 32-inch 4K QD-OLED panel that delivers astounding visuals at a buttery-smooth 240 Hz. Powered by third-generation QD-OLED technology, the PG32UCDM delivers vibrant colors, the deepest black hues, and the brightest highlights. Plus, the 0.03 ms response time ensures blur-free action, even in intense gameplay. Inside, an advanced custom heatsink offers exceptional cooling to reduce the likelihood of burn-in and improve performance and longevity of the OLED panel. This premium monitor is designed for gamers who demand the very best, offering an unbeatable combination of size, image quality, and refresh rate speed for exhilarating gaming experiences."
+  HEADING level=2 "From the manufacturer"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+  HEADING level=2 "ROG Swift OLED PG32UCDM"
+  HEADING level=1 "Experience the Ultimate Gamechanger"
+  TEXT "The 32-inch 4K QD-OLED panel of the PG32UCDM opens up a world of unbelievably lifelike gaming and entertainment experiences. Plus, a 240 Hz refresh rate ensures buttery-smooth visuals and eliminates motion blur to give you the edge in fast-paced games."
+  LIST [4 items]
+    - "Advantages of QD-OLED technology The high contrast ratio offered by QD-OLED technology ensures th..."
+    - "Detailed visuals and clearly defined text Latest-generation QD-OLED panels take advantage of a un..."
+    - "Game in Ultravivid HDR The PG32UCDM supports HDR formats including HDR10 and Dolby Vision to deli..."
+    - "Extreme Low Motion Blur Exclusive ASUS Extreme Low Motion Blue (ELMB) technology further reduces ..."
+  LIST [3 items]
+    - "ASUS OLED Care The custom passive heatsink found in the PG32UCDM prioritizes heat dissipation. In..."
+    - "Graphene film A graphene film behind the QD-OLED panel helps reduce operating temperature. Graphe..."
+    - "ASUS OLED Care ASUS OLED Care software provides users with timely pixel cleaning reminders, a scr..."
+  LIST [3 items]
+    - "Uniform brightness When activated, the exclusive Uniform Brightness setting within the OSD menu d..."
+    - "ASUS DisplayWidget Center The all-new ASUS DisplayWidget Center software lets you easily change m..."
+    - "ASPECT RATIO CONTROL If you prefer playing on a smaller monitor, the PG32UCDM also supports a ran..."
+  LIST [4 items]
+    - "Experience superb smoothness and responsiveness The PG32UCDM features AMD FreeSync Premium Pro te..."
+    - "Futuristic, cyberpunk-inspired aesthetic The PG32UCDM is the epitome of premium ROG design, boast..."
+    - "Rich connectivity Extensive connectivity options such as DisplayPort 1.4 (DSC), HDMI 2.1, USB-C w..."
+    - "Ergonomic stand The specially designed hollowed-out stand offers tilt, swivel, and height adjustm..."
+  HEADING level=2 "What's in the box"
+  HEADING level=2 "Top Brand: ASUS"
+  HEADING level=2 "Brands you might like"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+  HEADING level=2 "Similar brands on Amazon"
+  LIST [5 items]
+    - "Shop the Store on Amazon ›KTC 32 Inch 240Hz Curved Gaming Monitor, 2K 1440P Computer PC Monitor w..."
+    - "Shop the Store on Amazon ›KTC 32 inch 240Hz Curved Gaming Monitor 1500R 1080P 125% sRGB 1ms, Free..."
+    - "Shop the Store on Amazon ›KTC 32 inch Curved Gaming Monitor, 2K 180Hz 1440P PC Monitor, 1500R Fra..."
+    - "Shop the Store on Amazon ›SANSUI 27 Inch WQHD 2560 x 1440 IPS Gaming Monitor, 200Hz 180Hz 1ms Com..."
+    - "Shop the Store on Amazon ›KOORUI 27" Gaming Monitor, 200Hz 1ms Fast IPS, WQHD (2560 x 1440p) HDR ..."
+  HEADING level=2 "Customer reviews"
+  LIST [5 items]
+    - "5 star4 star3 star2 star1 star5 star81%8%4%1%6%81%"
+    - "5 star4 star3 star2 star1 star4 star81%8%4%1%6%8%"
+    - "5 star4 star3 star2 star1 star3 star81%8%4%1%6%4%"
+    - "5 star4 star3 star2 star1 star2 star81%8%4%1%6%1%"
+    - "5 star4 star3 star2 star1 star1 star81%8%4%1%6%6%"
+  TEXT "Customer Reviews, including Product Star Ratings help customers to learn more about the product and decide whether it is the right product for them."
+  TEXT "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and if the reviewer bought the item on Amazon. It also analyzed reviews to verify trustworthiness."
+  HEADING level=3 "Customers say"
+  HEADING level=4 "Select to learn more"
+  HEADING level=5 ""
+  HEADING level=6 "Images in this review"
+  HEADING level=3 "Reviews with images"
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+  HEADING level=3 "Top reviews from the United States"
+  HEADING level=4 "There was a problem filtering reviews. Please reload the page."
+  LIST [3 items]
+    - "Culbrelai5.0 out of 5 stars Outstanding monitor, with some things to know Reviewed in the United ..."
+    - "Betti V 5.0 out of 5 stars This is the one. Reviewed in the United States on October 24, 2025Styl..."
+    - "Sky Dragon5.0 out of 5 stars better than being there! Reviewed in the United States on December 6..."
+  HEADING level=3 "Top reviews from other countries"
+  LIST [5 items]
+    - "Oscar 5.0 out of 5 stars Excelente monitor gamer Reviewed in Mexico on December 8, 2025Style: 27"..."
+    - "Richard5.0 out of 5 stars works great Reviewed in Canada on December 30, 2025Style: 27" OLED QHD ..."
+    - "Edwin G.5.0 out of 5 stars Excelente para Xbox Serie X Reviewed in Mexico on September 6, 2023Sty..."
+    - "Victor Torres5.0 out of 5 stars No te arrepentirás. Reviewed in Mexico on January 5, 2026Style: 3..."
+    - "MJEED ALHRBI5.0 out of 5 stars تعقيم للعين Reviewed in Saudi Arabia on August 24, 2025Style: 27" ..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container [27019 words]
+  LIST [5 items]
+    - "Electronics"
+    - "›"
+    - "Computers & Accessories"
+    - "›"
+    - "Monitors"
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+  LIST [7 items]
+    - "16+"
+    - "15+"
+    - "14+"
+    - "13+"
+    - "12+"
+    - "11+"
+    - "6 VIDEOS"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  HEADING level=4 "Image Unavailable"
+  LIST [1 items]
+    - "To view this video download Flash Player"
+  LIST [3 items]
+    - "VIDEOS"
+    - "360° VIEW"
+    - "IMAGES"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+  HEADING level=1 "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms,..."
+  HEADING level=3 "Shipping & Fee Details"
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+  HEADING level=3 "Purchase options and add-ons"
+  HEADING level=1 "About this item"
+  LIST [7 items]
+    - "32-inch 4K (3840 x 2160) QD-OLED gaming monitor with 240 Hz refresh rate and 0.03 ms (GTG) respon..."
+    - "Highly efficient custom heatsink, advanced airflow design, and graphene film for better heat mana..."
+    - "VESA DisplayHDR 400 True Black compliance, 99% DCI-P3 gamut, true 10-bit, and Delta E < 2 color d..."
+    - "Optional uniform brightness setting ensures consistent luminance levels"
+    - "DisplayWidget Center allows users to access OLED Care functions, as well as adjust monitor settin..."
+    - "Peak brightness may vary due to color pre-calibration"
+    - "3-month Adobe Creative Cloud: Receive complimentary access with the purchase of this product (val..."
+  HEADING level=4 "Consider a similar item"
+  HEADING level=2 "Deals on related products"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+  HEADING level=2 "Products related to this item"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+  HEADING level=2 "Product Videos"
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+  HEADING level=2 "Product information"
+  HEADING level=1 "Technical Details"
+  HEADING level=1 "Additional Information"
+  LIST [2 items]
+    - "#1,666 in Electronics (See Top 100 in Electronics)"
+    - "#68 in Computer Monitors"
+  HEADING level=1 "Warranty & Support"
+  HEADING level=1 "Feedback"
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+  HEADING level=2 "From the brand"
+  HEADING level=3 "ASUS Monitors & Displays"
+  LIST [4 items]
+    - "ROG Gaming Monitors Visit the Store"
+    - "TUF Gaming Monitors Visit the Store"
+    - "ProArt Displays Visit the Store"
+    - "Portable Displays Visit the Store"
+  HEADING level=2 "Product Description"
+  TEXT "The ROG Swift OLED PG32UCDM boasts a 32-inch 4K QD-OLED panel that delivers astounding visuals at a buttery-smooth 240 Hz. Powered by third-generation QD-OLED technology, the PG32UCDM delivers vibrant colors, the deepest black hues, and the brightest highlights. Plus, the 0.03 ms response time ensures blur-free action, even in intense gameplay. Inside, an advanced custom heatsink offers exceptional cooling to reduce the likelihood of burn-in and improve performance and longevity of the OLED panel. This premium monitor is designed for gamers who demand the very best, offering an unbeatable combination of size, image quality, and refresh rate speed for exhilarating gaming experiences."
+  HEADING level=2 "From the manufacturer"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+  HEADING level=2 "ROG Swift OLED PG32UCDM"
+  HEADING level=1 "Experience the Ultimate Gamechanger"
+  TEXT "The 32-inch 4K QD-OLED panel of the PG32UCDM opens up a world of unbelievably lifelike gaming and entertainment experiences. Plus, a 240 Hz refresh rate ensures buttery-smooth visuals and eliminates motion blur to give you the edge in fast-paced games."
+  LIST [4 items]
+    - "Advantages of QD-OLED technology The high contrast ratio offered by QD-OLED technology ensures th..."
+    - "Detailed visuals and clearly defined text Latest-generation QD-OLED panels take advantage of a un..."
+    - "Game in Ultravivid HDR The PG32UCDM supports HDR formats including HDR10 and Dolby Vision to deli..."
+    - "Extreme Low Motion Blur Exclusive ASUS Extreme Low Motion Blue (ELMB) technology further reduces ..."
+  LIST [3 items]
+    - "ASUS OLED Care The custom passive heatsink found in the PG32UCDM prioritizes heat dissipation. In..."
+    - "Graphene film A graphene film behind the QD-OLED panel helps reduce operating temperature. Graphe..."
+    - "ASUS OLED Care ASUS OLED Care software provides users with timely pixel cleaning reminders, a scr..."
+  LIST [3 items]
+    - "Uniform brightness When activated, the exclusive Uniform Brightness setting within the OSD menu d..."
+    - "ASUS DisplayWidget Center The all-new ASUS DisplayWidget Center software lets you easily change m..."
+    - "ASPECT RATIO CONTROL If you prefer playing on a smaller monitor, the PG32UCDM also supports a ran..."
+  LIST [4 items]
+    - "Experience superb smoothness and responsiveness The PG32UCDM features AMD FreeSync Premium Pro te..."
+    - "Futuristic, cyberpunk-inspired aesthetic The PG32UCDM is the epitome of premium ROG design, boast..."
+    - "Rich connectivity Extensive connectivity options such as DisplayPort 1.4 (DSC), HDMI 2.1, USB-C w..."
+    - "Ergonomic stand The specially designed hollowed-out stand offers tilt, swivel, and height adjustm..."
+  HEADING level=2 "What's in the box"
+  HEADING level=2 "Top Brand: ASUS"
+  HEADING level=2 "Brands you might like"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+  HEADING level=2 "Similar brands on Amazon"
+  LIST [5 items]
+    - "Shop the Store on Amazon ›KTC 32 Inch 240Hz Curved Gaming Monitor, 2K 1440P Computer PC Monitor w..."
+    - "Shop the Store on Amazon ›KTC 32 inch 240Hz Curved Gaming Monitor 1500R 1080P 125% sRGB 1ms, Free..."
+    - "Shop the Store on Amazon ›KTC 32 inch Curved Gaming Monitor, 2K 180Hz 1440P PC Monitor, 1500R Fra..."
+    - "Shop the Store on Amazon ›SANSUI 27 Inch WQHD 2560 x 1440 IPS Gaming Monitor, 200Hz 180Hz 1ms Com..."
+    - "Shop the Store on Amazon ›KOORUI 27" Gaming Monitor, 200Hz 1ms Fast IPS, WQHD (2560 x 1440p) HDR ..."
+  HEADING level=2 "Customer reviews"
+  LIST [5 items]
+    - "5 star4 star3 star2 star1 star5 star81%8%4%1%6%81%"
+    - "5 star4 star3 star2 star1 star4 star81%8%4%1%6%8%"
+    - "5 star4 star3 star2 star1 star3 star81%8%4%1%6%4%"
+    - "5 star4 star3 star2 star1 star2 star81%8%4%1%6%1%"
+    - "5 star4 star3 star2 star1 star1 star81%8%4%1%6%6%"
+  TEXT "Customer Reviews, including Product Star Ratings help customers to learn more about the product and decide whether it is the right product for them."
+  TEXT "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and if the reviewer bought the item on Amazon. It also analyzed reviews to verify trustworthiness."
+  HEADING level=3 "Customers say"
+  HEADING level=4 "Select to learn more"
+  HEADING level=5 ""
+  HEADING level=6 "Images in this review"
+  HEADING level=3 "Reviews with images"
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+  HEADING level=3 "Top reviews from the United States"
+  HEADING level=4 "There was a problem filtering reviews. Please reload the page."
+  LIST [3 items]
+    - "Culbrelai5.0 out of 5 stars Outstanding monitor, with some things to know Reviewed in the United ..."
+    - "Betti V 5.0 out of 5 stars This is the one. Reviewed in the United States on October 24, 2025Styl..."
+    - "Sky Dragon5.0 out of 5 stars better than being there! Reviewed in the United States on December 6..."
+  HEADING level=3 "Top reviews from other countries"
+  LIST [5 items]
+    - "Oscar 5.0 out of 5 stars Excelente monitor gamer Reviewed in Mexico on December 8, 2025Style: 27"..."
+    - "Richard5.0 out of 5 stars works great Reviewed in Canada on December 30, 2025Style: 27" OLED QHD ..."
+    - "Edwin G.5.0 out of 5 stars Excelente para Xbox Serie X Reviewed in Mexico on September 6, 2023Sty..."
+    - "Victor Torres5.0 out of 5 stars No te arrepentirás. Reviewed in Mexico on January 5, 2026Style: 3..."
+    - "MJEED ALHRBI5.0 out of 5 stars تعقيم للعين Reviewed in Saudi Arabia on August 24, 2025Style: 27" ..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#above-dp-container[1] [337 words]
+  LIST [5 items]
+    - "Electronics"
+    - "›"
+    - "Computers & Accessories"
+    - "›"
+    - "Monitors"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#above-dp-container[1]/div#desktop-dp-ilm_feature_div_01[1] [334 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#above-dp-container[1]/div#desktop-dp-ilm_feature_div_01[1]/div [201 words]
+
+SECTION /div#dp[1]/div#dp-container/div#above-dp-container[1]/div#desktop-dp-ilm_feature_div_01[1]/div/div [199 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5] [4899 words]
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+  LIST [7 items]
+    - "16+"
+    - "15+"
+    - "14+"
+    - "13+"
+    - "12+"
+    - "11+"
+    - "6 VIDEOS"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  HEADING level=4 "Image Unavailable"
+  LIST [1 items]
+    - "To view this video download Flash Player"
+  LIST [3 items]
+    - "VIDEOS"
+    - "360° VIEW"
+    - "IMAGES"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+  HEADING level=1 "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms,..."
+  HEADING level=3 "Shipping & Fee Details"
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+  HEADING level=3 "Purchase options and add-ons"
+  HEADING level=1 "About this item"
+  LIST [7 items]
+    - "32-inch 4K (3840 x 2160) QD-OLED gaming monitor with 240 Hz refresh rate and 0.03 ms (GTG) respon..."
+    - "Highly efficient custom heatsink, advanced airflow design, and graphene film for better heat mana..."
+    - "VESA DisplayHDR 400 True Black compliance, 99% DCI-P3 gamut, true 10-bit, and Delta E < 2 color d..."
+    - "Optional uniform brightness setting ensures consistent luminance levels"
+    - "DisplayWidget Center allows users to access OLED Care functions, as well as adjust monitor settin..."
+    - "Peak brightness may vary due to color pre-calibration"
+    - "3-month Adobe Creative Cloud: Receive complimentary access with the purchase of this product (val..."
+  HEADING level=4 "Consider a similar item"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1] [1725 words]
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div#desktop_buybox[7] [1132 words]
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div#desktop_buybox[7]/div#buybox [1132 words]
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+
+SECTION /div#dp-container/div#ppd[5]/div#rightCol[1]/div#desktop_buybox[7]/div#buybox/div [1117 words]
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+
+SECTION /div#ppd[5]/div#rightCol[1]/div#desktop_buybox[7]/div#buybox/div/div#qualifiedBuybox [1117 words]
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+
+SECTION /div#desktop_buybox[7]/div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4] [753 words]
+  HEADING level=3 "Shipping & Fee Details"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+
+SECTION /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[4] [120 words]
+  HEADING level=3 "Shipping & Fee Details"
+
+SECTION /div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[4]/div#amazonGlobal_feature_div[8] [111 words]
+  HEADING level=3 "Shipping & Fee Details"
+
+SECTION /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[8] [81 words]
+
+SECTION /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#quantityRelocate_feature_div[11] [128 words]
+
+SECTION /div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#quantityRelocate_feature_div[11]/div#selectQuantity [32 words]
+
+SECTION /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[13] [34 words]
+
+SECTION /div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[13]/div#tp_price_update_feature_ww [34 words]
+
+SECTION /div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[13]/div#tp_price_update_feature_ww/div#tp_price_row_ww [34 words]
+
+SECTION /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#buyNow_feature_div[17] [83 words]
+
+SECTION /div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#buyNow_feature_div[17]/div#buyNow [83 words]
+
+SECTION /div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#buyNow_feature_div[17]/div#buyNow/div#turboState [34 words]
+
+SECTION /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[19] [37 words]
+
+SECTION /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21] [230 words]
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+
+SECTION /div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features [230 words]
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Shipper / Seller"
+  HEADING level=I "Returns"
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+
+SECTION /div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[6] [33 words]
+  HEADING level=I "Returns"
+
+SECTION /div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15] [186 words]
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+
+SECTION /form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div [186 words]
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+
+SECTION /div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[4] [70 words]
+  HEADING level=I "Support"
+  HEADING level=I "What's Product Support?"
+
+SECTION /div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[4]/div [66 words]
+  HEADING level=I "What's Product Support?"
+
+SECTION /div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[5] [45 words]
+  HEADING level=I "Payment"
+  HEADING level=I "Your transaction is secure"
+
+SECTION /div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[5]/div [42 words]
+  HEADING level=I "Your transaction is secure"
+
+SECTION /div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[11] [71 words]
+  HEADING level=I "Packaging"
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+
+SECTION /div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[11]/div [66 words]
+  HEADING level=I "Ships in product packaging"
+  TEXT "This item has been tested to certify it can ship safely in its original box or bag to avoid unnecessary packaging. Since 2015, we have reduced the weight of outbound packaging per shipment by 41% on average, that’s over 2 million tons of packaging material."
+
+SECTION /div#desktop_buybox[7]/div#buybox/div/div#qualifiedBuybox/form#addToCart/div#addToWishlist_feature_div[7] [363 words]
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+
+SECTION /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#addToWishlist_feature_div[7]/div#wishlistButtonStack [169 words]
+  HEADING level=3 "Sorry, there was a problem."
+  HEADING level=3 "Sorry, there was a problem."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div#olpLinkWidget_feature_div[8] [162 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div#tellAFriendBox_feature_div[10] [60 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div[16] [334 words]
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div[16]/div [201 words]
+
+SECTION /div#dp-container/div#ppd[5]/div#rightCol[1]/div[16]/div/div [199 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3] [678 words]
+  LIST [7 items]
+    - "16+"
+    - "15+"
+    - "14+"
+    - "13+"
+    - "12+"
+    - "11+"
+    - "6 VIDEOS"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  HEADING level=4 "Image Unavailable"
+  LIST [1 items]
+    - "To view this video download Flash Player"
+  LIST [3 items]
+    - "VIDEOS"
+    - "360° VIEW"
+    - "IMAGES"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1] [585 words]
+  LIST [7 items]
+    - "16+"
+    - "15+"
+    - "14+"
+    - "13+"
+    - "12+"
+    - "11+"
+    - "6 VIDEOS"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  HEADING level=4 "Image Unavailable"
+  LIST [1 items]
+    - "To view this video download Flash Player"
+  LIST [3 items]
+    - "VIDEOS"
+    - "360° VIEW"
+    - "IMAGES"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1] [314 words]
+  LIST [7 items]
+    - "16+"
+    - "15+"
+    - "14+"
+    - "13+"
+    - "12+"
+    - "11+"
+    - "6 VIDEOS"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  HEADING level=4 "Image Unavailable"
+  LIST [1 items]
+    - "To view this video download Flash Player"
+
+SECTION /div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#altImages[1] [32 words]
+  LIST [7 items]
+    - "16+"
+    - "15+"
+    - "14+"
+    - "13+"
+    - "12+"
+    - "11+"
+    - "6 VIDEOS"
+
+SECTION /div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#main-image-container[1] [277 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  HEADING level=4 "Image Unavailable"
+  LIST [1 items]
+    - "To view this video download Flash Player"
+
+SECTION /div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#main-image-container[1]/div#video-outer-container[1] [76 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+
+SECTION /div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#main-image-container[1]/div#video-outer-container[1]/div#main-video-container[1] [70 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4] [127 words]
+  LIST [3 items]
+    - "VIDEOS"
+    - "360° VIEW"
+    - "IMAGES"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+
+SECTION /div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container [127 words]
+  LIST [3 items]
+    - "VIDEOS"
+    - "360° VIEW"
+    - "IMAGES"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+
+SECTION /div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container/div#ivVideosTab[1] [123 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+
+SECTION /div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container/div#ivVideosTab[1]/div#ivVideoBlock [123 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+
+SECTION /div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container/div#ivVideosTab[1]/div#ivVideoBlock/div [123 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+  LIST [5 items]
+    - "Email"
+    - "Pinterest"
+    - "Facebook"
+    - "X"
+    - "Copy Link"
+
+SECTION /div#a-popover-immersiveView[4]/div#iv-tab-view-container/div#ivVideosTab[1]/div#ivVideoBlock/div/div [54 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+
+SECTION /div#iv-tab-view-container/div#ivVideosTab[1]/div#ivVideoBlock/div/div/div [54 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+
+SECTION /div#ivVideosTab[1]/div#ivVideoBlock/div/div/div/div[2] [32 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  LIST [1 items]
+    - "default, selected"
+  TEXT "This is a modal window."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]/div[3] [88 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4] [2162 words]
+  HEADING level=1 "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms,..."
+  HEADING level=3 "Shipping & Fee Details"
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+  HEADING level=3 "Purchase options and add-ons"
+  HEADING level=1 "About this item"
+  LIST [7 items]
+    - "32-inch 4K (3840 x 2160) QD-OLED gaming monitor with 240 Hz refresh rate and 0.03 ms (GTG) respon..."
+    - "Highly efficient custom heatsink, advanced airflow design, and graphene film for better heat mana..."
+    - "VESA DisplayHDR 400 True Black compliance, 99% DCI-P3 gamut, true 10-bit, and Delta E < 2 color d..."
+    - "Optional uniform brightness setting ensures consistent luminance levels"
+    - "DisplayWidget Center allows users to access OLED Care functions, as well as adjust monitor settin..."
+    - "Peak brightness may vary due to color pre-calibration"
+    - "3-month Adobe Creative Cloud: Receive complimentary access with the purchase of this product (val..."
+  HEADING level=4 "Consider a similar item"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#title_feature_div[1] [34 words]
+  HEADING level=1 "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms,..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[3] [66 words]
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[3]/div#averageCustomerReviews [66 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#acBadge_feature_div[6] [84 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16] [454 words]
+  HEADING level=3 "Shipping & Fee Details"
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div[2] [89 words]
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div[3] [250 words]
+
+SECTION /div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div[3]/div [68 words]
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div#amazonGlobal_feature_div[33] [111 words]
+  HEADING level=3 "Shipping & Fee Details"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[17] [112 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[19] [213 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#twister_feature_div[34] [657 words]
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#twister_feature_div[34]/div[1] [141 words]
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+
+SECTION /div#dp-container/div#ppd[5]/div#centerCol[4]/div#twister_feature_div[34]/div[1]/div[3] [124 words]
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+
+SECTION /div#ppd[5]/div#centerCol[4]/div#twister_feature_div[34]/div[1]/div[3]/div#twister-plus-inline-twister [124 words]
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+
+SECTION /div#centerCol[4]/div#twister_feature_div[34]/div[1]/div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name [124 words]
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+
+SECTION /div#twister_feature_div[34]/div[1]/div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name/div[2] [117 words]
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+
+SECTION /div[1]/div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name/div[2]/div [113 words]
+  LIST [4 items]
+    - "27" OLED QHD 360Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/issues/DPO..."
+    - "32" OLED 4K 240Hz UHD G-SYNC /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/..."
+    - "34" Cruved OLED UWQHD 175Hz /* Temporary CSS overrides for savings. Sim: https://sim.amazon.com/i..."
+    - "27" FHD 170Hz G-SYNC Currently unavailable."
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+
+SECTION /div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name/div[2]/div/nav [2 words]
+  LIST [3 items]
+    - "←Previous"
+    - "1"
+    - "Next→"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#valueAdds_feature_div[36] [42 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[42] [77 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#productOverview_feature_div[46] [77 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#featurebullets_feature_div[47] [123 words]
+  HEADING level=1 "About this item"
+  LIST [7 items]
+    - "32-inch 4K (3840 x 2160) QD-OLED gaming monitor with 240 Hz refresh rate and 0.03 ms (GTG) respon..."
+    - "Highly efficient custom heatsink, advanced airflow design, and graphene film for better heat mana..."
+    - "VESA DisplayHDR 400 True Black compliance, 99% DCI-P3 gamut, true 10-bit, and Delta E < 2 color d..."
+    - "Optional uniform brightness setting ensures consistent luminance levels"
+    - "DisplayWidget Center allows users to access OLED Care functions, as well as adjust monitor settin..."
+    - "Peak brightness may vary due to color pre-calibration"
+    - "3-month Adobe Creative Cloud: Receive complimentary access with the purchase of this product (val..."
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#featurebullets_feature_div[47]/div#feature-bullets [122 words]
+  HEADING level=1 "About this item"
+  LIST [7 items]
+    - "32-inch 4K (3840 x 2160) QD-OLED gaming monitor with 240 Hz refresh rate and 0.03 ms (GTG) respon..."
+    - "Highly efficient custom heatsink, advanced airflow design, and graphene film for better heat mana..."
+    - "VESA DisplayHDR 400 True Black compliance, 99% DCI-P3 gamut, true 10-bit, and Delta E < 2 color d..."
+    - "Optional uniform brightness setting ensures consistent luminance levels"
+    - "DisplayWidget Center allows users to access OLED Care functions, as well as adjust monitor settin..."
+    - "Peak brightness may vary due to color pre-calibration"
+    - "3-month Adobe Creative Cloud: Receive complimentary access with the purchase of this product (val..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#olp_feature_div[56] [81 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#tellAmazon_feature_div[58] [37 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61] [80 words]
+  HEADING level=4 "Consider a similar item"
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61]/div#valuePick_container [80 words]
+  HEADING level=4 "Consider a similar item"
+
+SECTION /div#dp-container/div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61]/div#valuePick_container/div#value-pick-ac [80 words]
+  HEADING level=4 "Consider a similar item"
+
+SECTION /div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61]/div#valuePick_container/div#value-pick-ac/div#value-pick-title-row[1] [31 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#hqpWrapper[5] [334 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#hqpWrapper[5]/div#heroQuickPromoContainer [334 words]
+
+SECTION /div#dp[1]/div#dp-container/div#ppd[5]/div#hqpWrapper[5]/div#heroQuickPromoContainer/div#heroQuickPromo_feature_div [334 words]
+
+SECTION /div#dp-container/div#ppd[5]/div#hqpWrapper[5]/div#heroQuickPromoContainer/div#heroQuickPromo_feature_div/div [201 words]
+
+SECTION /div#ppd[5]/div#hqpWrapper[5]/div#heroQuickPromoContainer/div#heroQuickPromo_feature_div/div/div [199 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[7] [471 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[7]/div[2] [471 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[14] [2498 words]
+  HEADING level=2 "Deals on related products"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[14]/div[1] [2061 words]
+  HEADING level=2 "Deals on related products"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[14]/div[1]/div[1] [397 words]
+  HEADING level=2 "Deals on related products"
+
+SECTION /div#dp-container/div[14]/div[1]/ol/li[1]/div [195 words]
+
+SECTION /div#dp-container/div[14]/div[1]/ol/li[2]/div [197 words]
+
+SECTION /div#dp-container/div[14]/div[1]/ol/li[3]/div [441 words]
+
+SECTION /div[1]/ol/li[3]/div/a[2]/div [102 words]
+
+SECTION /div#dp-container/div[14]/div[1]/ol/li[4]/div [196 words]
+
+SECTION /div#dp-container/div[14]/div[1]/ol/li[5]/div [192 words]
+
+SECTION /div#dp-container/div[14]/div[1]/ol/li[6]/div [194 words]
+
+SECTION /div#dp-container/div[14]/div[1]/ol/li[7]/div [195 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[15] [1483 words]
+  HEADING level=2 "Products related to this item"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[15]/div [1478 words]
+  HEADING level=2 "Products related to this item"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[15]/div/div#sp_detail[1] [1110 words]
+  HEADING level=2 "Products related to this item"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } Feedback .atc-faceout-container...."
+
+SECTION /div#dp[1]/div#dp-container/div[15]/div/div#sp_detail[1]/div#sp_detail_heading[1] [48 words]
+  HEADING level=2 "Products related to this item"
+
+SECTION /div[15]/div/div#sp_detail[1]/ol/li[1]/div#sp_detail_B0FND8BYQS [123 words]
+
+SECTION /div[15]/div/div#sp_detail[1]/ol/li[2]/div#sp_detail_B0BCK1K44F [128 words]
+
+SECTION /div[15]/div/div#sp_detail[1]/ol/li[3]/div#sp_detail_B0FS3LV3WG [120 words]
+
+SECTION /div[15]/div/div#sp_detail[1]/ol/li[4]/div#sp_detail_B0FR44GCLH [120 words]
+
+SECTION /div[15]/div/div#sp_detail[1]/ol/li[5]/div#sp_detail_B0D682HF6R [184 words]
+
+SECTION /div[15]/div/div#sp_detail[1]/ol/li[6]/div#sp_detail_B0D1YBBMYN [128 words]
+
+SECTION /div[15]/div/div#sp_detail[1]/ol/li[7]/div#sp_detail_B0FRMND9J6 [205 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18] [7771 words]
+  HEADING level=2 "Product Videos"
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+  HEADING level=2 "Product information"
+  HEADING level=1 "Technical Details"
+  HEADING level=1 "Additional Information"
+  LIST [2 items]
+    - "#1,666 in Electronics (See Top 100 in Electronics)"
+    - "#68 in Computer Monitors"
+  HEADING level=1 "Warranty & Support"
+  HEADING level=1 "Feedback"
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+  HEADING level=2 "From the brand"
+  HEADING level=3 "ASUS Monitors & Displays"
+  LIST [4 items]
+    - "ROG Gaming Monitors Visit the Store"
+    - "TUF Gaming Monitors Visit the Store"
+    - "ProArt Displays Visit the Store"
+    - "Portable Displays Visit the Store"
+  HEADING level=2 "Product Description"
+  TEXT "The ROG Swift OLED PG32UCDM boasts a 32-inch 4K QD-OLED panel that delivers astounding visuals at a buttery-smooth 240 Hz. Powered by third-generation QD-OLED technology, the PG32UCDM delivers vibrant colors, the deepest black hues, and the brightest highlights. Plus, the 0.03 ms response time ensures blur-free action, even in intense gameplay. Inside, an advanced custom heatsink offers exceptional cooling to reduce the likelihood of burn-in and improve performance and longevity of the OLED panel. This premium monitor is designed for gamers who demand the very best, offering an unbeatable combination of size, image quality, and refresh rate speed for exhilarating gaming experiences."
+  HEADING level=2 "From the manufacturer"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+  HEADING level=2 "ROG Swift OLED PG32UCDM"
+  HEADING level=1 "Experience the Ultimate Gamechanger"
+  TEXT "The 32-inch 4K QD-OLED panel of the PG32UCDM opens up a world of unbelievably lifelike gaming and entertainment experiences. Plus, a 240 Hz refresh rate ensures buttery-smooth visuals and eliminates motion blur to give you the edge in fast-paced games."
+  LIST [4 items]
+    - "Advantages of QD-OLED technology The high contrast ratio offered by QD-OLED technology ensures th..."
+    - "Detailed visuals and clearly defined text Latest-generation QD-OLED panels take advantage of a un..."
+    - "Game in Ultravivid HDR The PG32UCDM supports HDR formats including HDR10 and Dolby Vision to deli..."
+    - "Extreme Low Motion Blur Exclusive ASUS Extreme Low Motion Blue (ELMB) technology further reduces ..."
+  LIST [3 items]
+    - "ASUS OLED Care The custom passive heatsink found in the PG32UCDM prioritizes heat dissipation. In..."
+    - "Graphene film A graphene film behind the QD-OLED panel helps reduce operating temperature. Graphe..."
+    - "ASUS OLED Care ASUS OLED Care software provides users with timely pixel cleaning reminders, a scr..."
+  LIST [3 items]
+    - "Uniform brightness When activated, the exclusive Uniform Brightness setting within the OSD menu d..."
+    - "ASUS DisplayWidget Center The all-new ASUS DisplayWidget Center software lets you easily change m..."
+    - "ASPECT RATIO CONTROL If you prefer playing on a smaller monitor, the PG32UCDM also supports a ran..."
+  LIST [4 items]
+    - "Experience superb smoothness and responsiveness The PG32UCDM features AMD FreeSync Premium Pro te..."
+    - "Futuristic, cyberpunk-inspired aesthetic The PG32UCDM is the epitome of premium ROG design, boast..."
+    - "Rich connectivity Extensive connectivity options such as DisplayPort 1.4 (DSC), HDMI 2.1, USB-C w..."
+    - "Ergonomic stand The specially designed hollowed-out stand offers tilt, swivel, and height adjustm..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div[4] [669 words]
+  HEADING level=2 "Product Videos"
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div[4]/div [240 words]
+  HEADING level=2 "Product Videos"
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div[4]/div/div#vftphero[2] [55 words]
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+
+SECTION /div#dp-container/div[18]/div[4]/div/div#vftphero[2]/div#ive-hero-video-player[1] [55 words]
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+
+SECTION /div[18]/div[4]/div/div#vftphero[2]/div#ive-hero-video-player[1]/div[1] [50 words]
+  LIST [2 items]
+    - "captions settings, opens captions settings dialog"
+    - "captions off, selected"
+  TEXT "This is a modal window."
+  TEXT "Beginning of dialog window. Escape will cancel and close the window."
+  TEXT "End of dialog window."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7] [2847 words]
+  HEADING level=2 "Product information"
+  HEADING level=1 "Technical Details"
+  HEADING level=1 "Additional Information"
+  LIST [2 items]
+    - "#1,666 in Electronics (See Top 100 in Electronics)"
+    - "#68 in Computer Monitors"
+  HEADING level=1 "Warranty & Support"
+  HEADING level=1 "Feedback"
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails [2847 words]
+  HEADING level=2 "Product information"
+  HEADING level=1 "Technical Details"
+  HEADING level=1 "Additional Information"
+  LIST [2 items]
+    - "#1,666 in Electronics (See Top 100 in Electronics)"
+    - "#68 in Computer Monitors"
+  HEADING level=1 "Warranty & Support"
+  HEADING level=1 "Feedback"
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections [90 words]
+  HEADING level=1 "Additional Information"
+  LIST [2 items]
+    - "#1,666 in Electronics (See Top 100 in Electronics)"
+    - "#68 in Computer Monitors"
+
+SECTION /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections/div.table-padding [88 words]
+  LIST [2 items]
+    - "#1,666 in Electronics (See Top 100 in Electronics)"
+    - "#68 in Computer Monitors"
+
+SECTION /div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections/div.table-padding/table/div#averageCustomerReviews [66 words]
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div [166 words]
+  HEADING level=1 "Warranty & Support"
+
+SECTION /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div/div.table-padding[1] [146 words]
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div.table-padding [2507 words]
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+
+SECTION /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div.table-padding/div[2] [224 words]
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+
+SECTION /div[18]/div#productDetails_feature_div[7]/div#prodDetails/div.table-padding/div[2]/div.contentContainer [224 words]
+  TEXT "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C"
+  TEXT "Share:"
+  TEXT "Found a lower price? Let us know. Although we can't match every price reported, we'll use your feedback to ensure that our prices remain competitive."
+  HEADING level=2 "Where did you see a lower price?"
+  TEXT "Fields with an asterisk * are required"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8] [752 words]
+  HEADING level=2 "From the brand"
+  HEADING level=3 "ASUS Monitors & Displays"
+  LIST [4 items]
+    - "ROG Gaming Monitors Visit the Store"
+    - "TUF Gaming Monitors Visit the Store"
+    - "ProArt Displays Visit the Store"
+    - "Portable Displays Visit the Store"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]/div#aplus [752 words]
+  HEADING level=2 "From the brand"
+  HEADING level=3 "ASUS Monitors & Displays"
+  LIST [4 items]
+    - "ROG Gaming Monitors Visit the Store"
+    - "TUF Gaming Monitors Visit the Store"
+    - "ProArt Displays Visit the Store"
+    - "Portable Displays Visit the Store"
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]/div#aplus/div#apm-brand-story-carousel[2] [32 words]
+  LIST [4 items]
+    - "ROG Gaming Monitors Visit the Store"
+    - "TUF Gaming Monitors Visit the Store"
+    - "ProArt Displays Visit the Store"
+    - "Portable Displays Visit the Store"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9] [41 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div[10] [356 words]
+  HEADING level=2 "Product Description"
+  TEXT "The ROG Swift OLED PG32UCDM boasts a 32-inch 4K QD-OLED panel that delivers astounding visuals at a buttery-smooth 240 Hz. Powered by third-generation QD-OLED technology, the PG32UCDM delivers vibrant colors, the deepest black hues, and the brightest highlights. Plus, the 0.03 ms response time ensures blur-free action, even in intense gameplay. Inside, an advanced custom heatsink offers exceptional cooling to reduce the likelihood of burn-in and improve performance and longevity of the OLED panel. This premium monitor is designed for gamers who demand the very best, offering an unbeatable combination of size, image quality, and refresh rate speed for exhilarating gaming experiences."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div[10]/div [356 words]
+  HEADING level=2 "Product Description"
+  TEXT "The ROG Swift OLED PG32UCDM boasts a 32-inch 4K QD-OLED panel that delivers astounding visuals at a buttery-smooth 240 Hz. Powered by third-generation QD-OLED technology, the PG32UCDM delivers vibrant colors, the deepest black hues, and the brightest highlights. Plus, the 0.03 ms response time ensures blur-free action, even in intense gameplay. Inside, an advanced custom heatsink offers exceptional cooling to reduce the likelihood of burn-in and improve performance and longevity of the OLED panel. This premium monitor is designed for gamers who demand the very best, offering an unbeatable combination of size, image quality, and refresh rate speed for exhilarating gaming experiences."
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div[10]/div/div#productDescription[2] [102 words]
+  TEXT "The ROG Swift OLED PG32UCDM boasts a 32-inch 4K QD-OLED panel that delivers astounding visuals at a buttery-smooth 240 Hz. Powered by third-generation QD-OLED technology, the PG32UCDM delivers vibrant colors, the deepest black hues, and the brightest highlights. Plus, the 0.03 ms response time ensures blur-free action, even in intense gameplay. Inside, an advanced custom heatsink offers exceptional cooling to reduce the likelihood of burn-in and improve performance and longevity of the OLED panel. This premium monitor is designed for gamers who demand the very best, offering an unbeatable combination of size, image quality, and refresh rate speed for exhilarating gaming experiences."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11] [3099 words]
+  HEADING level=2 "From the manufacturer"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+  HEADING level=2 "ROG Swift OLED PG32UCDM"
+  HEADING level=1 "Experience the Ultimate Gamechanger"
+  TEXT "The 32-inch 4K QD-OLED panel of the PG32UCDM opens up a world of unbelievably lifelike gaming and entertainment experiences. Plus, a 240 Hz refresh rate ensures buttery-smooth visuals and eliminates motion blur to give you the edge in fast-paced games."
+  LIST [4 items]
+    - "Advantages of QD-OLED technology The high contrast ratio offered by QD-OLED technology ensures th..."
+    - "Detailed visuals and clearly defined text Latest-generation QD-OLED panels take advantage of a un..."
+    - "Game in Ultravivid HDR The PG32UCDM supports HDR formats including HDR10 and Dolby Vision to deli..."
+    - "Extreme Low Motion Blur Exclusive ASUS Extreme Low Motion Blue (ELMB) technology further reduces ..."
+  LIST [3 items]
+    - "ASUS OLED Care The custom passive heatsink found in the PG32UCDM prioritizes heat dissipation. In..."
+    - "Graphene film A graphene film behind the QD-OLED panel helps reduce operating temperature. Graphe..."
+    - "ASUS OLED Care ASUS OLED Care software provides users with timely pixel cleaning reminders, a scr..."
+  LIST [3 items]
+    - "Uniform brightness When activated, the exclusive Uniform Brightness setting within the OSD menu d..."
+    - "ASUS DisplayWidget Center The all-new ASUS DisplayWidget Center software lets you easily change m..."
+    - "ASPECT RATIO CONTROL If you prefer playing on a smaller monitor, the PG32UCDM also supports a ran..."
+  LIST [4 items]
+    - "Experience superb smoothness and responsiveness The PG32UCDM features AMD FreeSync Premium Pro te..."
+    - "Futuristic, cyberpunk-inspired aesthetic The PG32UCDM is the epitome of premium ROG design, boast..."
+    - "Rich connectivity Extensive connectivity options such as DisplayPort 1.4 (DSC), HDMI 2.1, USB-C w..."
+    - "Ergonomic stand The specially designed hollowed-out stand offers tilt, swivel, and height adjustm..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus [3099 words]
+  HEADING level=2 "From the manufacturer"
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+  HEADING level=2 "ROG Swift OLED PG32UCDM"
+  HEADING level=1 "Experience the Ultimate Gamechanger"
+  TEXT "The 32-inch 4K QD-OLED panel of the PG32UCDM opens up a world of unbelievably lifelike gaming and entertainment experiences. Plus, a 240 Hz refresh rate ensures buttery-smooth visuals and eliminates motion blur to give you the edge in fast-paced games."
+  LIST [4 items]
+    - "Advantages of QD-OLED technology The high contrast ratio offered by QD-OLED technology ensures th..."
+    - "Detailed visuals and clearly defined text Latest-generation QD-OLED panels take advantage of a un..."
+    - "Game in Ultravivid HDR The PG32UCDM supports HDR formats including HDR10 and Dolby Vision to deli..."
+    - "Extreme Low Motion Blur Exclusive ASUS Extreme Low Motion Blue (ELMB) technology further reduces ..."
+  LIST [3 items]
+    - "ASUS OLED Care The custom passive heatsink found in the PG32UCDM prioritizes heat dissipation. In..."
+    - "Graphene film A graphene film behind the QD-OLED panel helps reduce operating temperature. Graphe..."
+    - "ASUS OLED Care ASUS OLED Care software provides users with timely pixel cleaning reminders, a scr..."
+  LIST [3 items]
+    - "Uniform brightness When activated, the exclusive Uniform Brightness setting within the OSD menu d..."
+    - "ASUS DisplayWidget Center The all-new ASUS DisplayWidget Center software lets you easily change m..."
+    - "ASPECT RATIO CONTROL If you prefer playing on a smaller monitor, the PG32UCDM also supports a ran..."
+  LIST [4 items]
+    - "Experience superb smoothness and responsiveness The PG32UCDM features AMD FreeSync Premium Pro te..."
+    - "Futuristic, cyberpunk-inspired aesthetic The PG32UCDM is the epitome of premium ROG design, boast..."
+    - "Rich connectivity Extensive connectivity options such as DisplayPort 1.4 (DSC), HDMI 2.1, USB-C w..."
+    - "Ergonomic stand The specially designed hollowed-out stand offers tilt, swivel, and height adjustm..."
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div [100 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+
+SECTION /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div/div[2] [31 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+
+SECTION /div[18]/div#aplus_feature_div[11]/div#aplus/div/div[2]/div [31 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div/div[2]/div/div [31 words]
+  LIST [1 items]
+    - "Chapters"
+  LIST [1 items]
+    - "descriptions off, selected"
+  LIST [1 items]
+    - "Captions off, selected"
+  TEXT "This is a modal window."
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div.secondary-color[2] [48 words]
+  HEADING level=2 "ROG Swift OLED PG32UCDM"
+  HEADING level=1 "Experience the Ultimate Gamechanger"
+  TEXT "The 32-inch 4K QD-OLED panel of the PG32UCDM opens up a world of unbelievably lifelike gaming and entertainment experiences. Plus, a 240 Hz refresh rate ensures buttery-smooth visuals and eliminates motion blur to give you the edge in fast-paced games."
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1] [114 words]
+  LIST [4 items]
+    - "Advantages of QD-OLED technology The high contrast ratio offered by QD-OLED technology ensures th..."
+    - "Detailed visuals and clearly defined text Latest-generation QD-OLED panels take advantage of a un..."
+    - "Game in Ultravivid HDR The PG32UCDM supports HDR formats including HDR10 and Dolby Vision to deli..."
+    - "Extreme Low Motion Blur Exclusive ASUS Extreme Low Motion Blue (ELMB) technology further reduces ..."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[1]/div [32 words]
+  HEADING level=1 "Advantages of QD-OLED technology"
+  TEXT "The high contrast ratio offered by QD-OLED technology ensures the deepest black hues and vivid colors. Plus, an astounding 0.03 ms (GTG) response time ensures supersmooth, low-latency gameplay."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[3]/div [31 words]
+  HEADING level=1 "Game in Ultravivid HDR"
+  TEXT "The PG32UCDM supports HDR formats including HDR10 and Dolby Vision to deliver unmatched brightness and colors. Both can be turned on or off via the OSD menu."
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1] [102 words]
+  LIST [3 items]
+    - "ASUS OLED Care The custom passive heatsink found in the PG32UCDM prioritizes heat dissipation. In..."
+    - "Graphene film A graphene film behind the QD-OLED panel helps reduce operating temperature. Graphe..."
+    - "ASUS OLED Care ASUS OLED Care software provides users with timely pixel cleaning reminders, a scr..."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[1]/div [33 words]
+  HEADING level=1 "ASUS OLED Care"
+  TEXT "The custom passive heatsink found in the PG32UCDM prioritizes heat dissipation. In addition, the monitor’s back cover features top vents that further improve cooling to reduce the risk of burn-in."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[2]/div [32 words]
+  HEADING level=1 "Graphene film"
+  TEXT "A graphene film behind the QD-OLED panel helps reduce operating temperature. Graphene is the thinnest & strongest nanomaterial in the world, and has high thermal conductivity to help dissipate heat."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[3]/div [33 words]
+  HEADING level=1 "ASUS OLED Care"
+  TEXT "ASUS OLED Care software provides users with timely pixel cleaning reminders, a screen saver, a screen move feature, plus more to protect and ensure the longevity of the OLED panel."
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1] [102 words]
+  LIST [3 items]
+    - "Uniform brightness When activated, the exclusive Uniform Brightness setting within the OSD menu d..."
+    - "ASUS DisplayWidget Center The all-new ASUS DisplayWidget Center software lets you easily change m..."
+    - "ASPECT RATIO CONTROL If you prefer playing on a smaller monitor, the PG32UCDM also supports a ran..."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[1]/div [32 words]
+  HEADING level=1 "Uniform brightness"
+  TEXT "When activated, the exclusive Uniform Brightness setting within the OSD menu decreases peak brightness to keep level consistent for better viewing, even when changing the size of bright white windows."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[2]/div [35 words]
+  HEADING level=1 "ASUS DisplayWidget Center"
+  TEXT "The all-new ASUS DisplayWidget Center software lets you easily change monitor settings and OLED-related functions via an intuitive interface, using a mouse ― so there’s no need to access the OSD menu."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[3]/div [31 words]
+  HEADING level=1 "ASPECT RATIO CONTROL"
+  TEXT "If you prefer playing on a smaller monitor, the PG32UCDM also supports a range of aspect ratios, allowing you to choose between 24.5” (esports mode) and 27” imagery."
+
+SECTION /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1] [125 words]
+  LIST [4 items]
+    - "Experience superb smoothness and responsiveness The PG32UCDM features AMD FreeSync Premium Pro te..."
+    - "Futuristic, cyberpunk-inspired aesthetic The PG32UCDM is the epitome of premium ROG design, boast..."
+    - "Rich connectivity Extensive connectivity options such as DisplayPort 1.4 (DSC), HDMI 2.1, USB-C w..."
+    - "Ergonomic stand The specially designed hollowed-out stand offers tilt, swivel, and height adjustm..."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[2]/div [35 words]
+  HEADING level=1 "Futuristic, cyberpunk-inspired aesthetic"
+  TEXT "The PG32UCDM is the epitome of premium ROG design, boasting cyberpunk elements and a frameless panel for maximum immersion. It also includes the ROG wall mount kit for more versatile gaming setups."
+
+SECTION /div#aplus_feature_div[11]/div#aplus/div[1]/ol/li[3]/div [38 words]
+  HEADING level=1 "Rich connectivity"
+  TEXT "Extensive connectivity options such as DisplayPort 1.4 (DSC), HDMI 2.1, USB-C with 90 W* Power Delivery, and a USB hub."
+  TEXT "*Default power delivery at 65 W. 90 W Power Delivery can be enabled via the OSD."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#buffetServiceCard_feature_div[21] [57 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[23] [46 words]
+  HEADING level=2 "What's in the box"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[23]/div#whatsInTheBoxDeck [33 words]
+  HEADING level=2 "What's in the box"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#brandInsights_feature_div_3[25] [41 words]
+  HEADING level=2 "Top Brand: ASUS"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[30] [2332 words]
+  HEADING level=2 "Brands you might like"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[30]/div#sp_detail2-similar_brands[1] [1895 words]
+  HEADING level=2 "Brands you might like"
+  LIST [7 items]
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+    - ".sp_ppu_string { vertical-align:bottom; display: inline-block; } (function(f) {var _np=(window.P...."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/div[1] [397 words]
+  HEADING level=2 "Brands you might like"
+
+SECTION /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[1]/div [141 words]
+
+SECTION /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[2]/div [291 words]
+
+SECTION /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[3]/div [146 words]
+
+SECTION /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[4]/div [148 words]
+
+SECTION /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[5]/div [282 words]
+
+SECTION /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[6]/div [144 words]
+
+SECTION /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[7]/div [292 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[33] [394 words]
+  HEADING level=2 "Similar brands on Amazon"
+  LIST [5 items]
+    - "Shop the Store on Amazon ›KTC 32 Inch 240Hz Curved Gaming Monitor, 2K 1440P Computer PC Monitor w..."
+    - "Shop the Store on Amazon ›KTC 32 inch 240Hz Curved Gaming Monitor 1500R 1080P 125% sRGB 1ms, Free..."
+    - "Shop the Store on Amazon ›KTC 32 inch Curved Gaming Monitor, 2K 180Hz 1440P PC Monitor, 1500R Fra..."
+    - "Shop the Store on Amazon ›SANSUI 27 Inch WQHD 2560 x 1440 IPS Gaming Monitor, 200Hz 180Hz 1ms Com..."
+    - "Shop the Store on Amazon ›KOORUI 27" Gaming Monitor, 200Hz 1ms Fast IPS, WQHD (2560 x 1440p) HDR ..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[33]/div [182 words]
+  HEADING level=2 "Similar brands on Amazon"
+  LIST [5 items]
+    - "Shop the Store on Amazon ›KTC 32 Inch 240Hz Curved Gaming Monitor, 2K 1440P Computer PC Monitor w..."
+    - "Shop the Store on Amazon ›KTC 32 inch 240Hz Curved Gaming Monitor 1500R 1080P 125% sRGB 1ms, Free..."
+    - "Shop the Store on Amazon ›KTC 32 inch Curved Gaming Monitor, 2K 180Hz 1440P PC Monitor, 1500R Fra..."
+    - "Shop the Store on Amazon ›SANSUI 27 Inch WQHD 2560 x 1440 IPS Gaming Monitor, 200Hz 180Hz 1ms Com..."
+    - "Shop the Store on Amazon ›KOORUI 27" Gaming Monitor, 200Hz 1ms Fast IPS, WQHD (2560 x 1440p) HDR ..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36] [5262 words]
+  HEADING level=2 "Customer reviews"
+  LIST [5 items]
+    - "5 star4 star3 star2 star1 star5 star81%8%4%1%6%81%"
+    - "5 star4 star3 star2 star1 star4 star81%8%4%1%6%8%"
+    - "5 star4 star3 star2 star1 star3 star81%8%4%1%6%4%"
+    - "5 star4 star3 star2 star1 star2 star81%8%4%1%6%1%"
+    - "5 star4 star3 star2 star1 star1 star81%8%4%1%6%6%"
+  TEXT "Customer Reviews, including Product Star Ratings help customers to learn more about the product and decide whether it is the right product for them."
+  TEXT "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and if the reviewer bought the item on Amazon. It also analyzed reviews to verify trustworthiness."
+  HEADING level=3 "Customers say"
+  HEADING level=4 "Select to learn more"
+  HEADING level=5 ""
+  HEADING level=6 "Images in this review"
+  HEADING level=3 "Reviews with images"
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+  HEADING level=3 "Top reviews from the United States"
+  HEADING level=4 "There was a problem filtering reviews. Please reload the page."
+  LIST [3 items]
+    - "Culbrelai5.0 out of 5 stars Outstanding monitor, with some things to know Reviewed in the United ..."
+    - "Betti V 5.0 out of 5 stars This is the one. Reviewed in the United States on October 24, 2025Styl..."
+    - "Sky Dragon5.0 out of 5 stars better than being there! Reviewed in the United States on December 6..."
+  HEADING level=3 "Top reviews from other countries"
+  LIST [5 items]
+    - "Oscar 5.0 out of 5 stars Excelente monitor gamer Reviewed in Mexico on December 8, 2025Style: 27"..."
+    - "Richard5.0 out of 5 stars works great Reviewed in Canada on December 30, 2025Style: 27" OLED QHD ..."
+    - "Edwin G.5.0 out of 5 stars Excelente para Xbox Serie X Reviewed in Mexico on September 6, 2023Sty..."
+    - "Victor Torres5.0 out of 5 stars No te arrepentirás. Reviewed in Mexico on January 5, 2026Style: 3..."
+    - "MJEED ALHRBI5.0 out of 5 stars تعقيم للعين Reviewed in Saudi Arabia on August 24, 2025Style: 27" ..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews [5262 words]
+  HEADING level=2 "Customer reviews"
+  LIST [5 items]
+    - "5 star4 star3 star2 star1 star5 star81%8%4%1%6%81%"
+    - "5 star4 star3 star2 star1 star4 star81%8%4%1%6%8%"
+    - "5 star4 star3 star2 star1 star3 star81%8%4%1%6%4%"
+    - "5 star4 star3 star2 star1 star2 star81%8%4%1%6%1%"
+    - "5 star4 star3 star2 star1 star1 star81%8%4%1%6%6%"
+  TEXT "Customer Reviews, including Product Star Ratings help customers to learn more about the product and decide whether it is the right product for them."
+  TEXT "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and if the reviewer bought the item on Amazon. It also analyzed reviews to verify trustworthiness."
+  HEADING level=3 "Customers say"
+  HEADING level=4 "Select to learn more"
+  HEADING level=5 ""
+  HEADING level=6 "Images in this review"
+  HEADING level=3 "Reviews with images"
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+  HEADING level=3 "Top reviews from the United States"
+  HEADING level=4 "There was a problem filtering reviews. Please reload the page."
+  LIST [3 items]
+    - "Culbrelai5.0 out of 5 stars Outstanding monitor, with some things to know Reviewed in the United ..."
+    - "Betti V 5.0 out of 5 stars This is the one. Reviewed in the United States on October 24, 2025Styl..."
+    - "Sky Dragon5.0 out of 5 stars better than being there! Reviewed in the United States on December 6..."
+  HEADING level=3 "Top reviews from other countries"
+  LIST [5 items]
+    - "Oscar 5.0 out of 5 stars Excelente monitor gamer Reviewed in Mexico on December 8, 2025Style: 27"..."
+    - "Richard5.0 out of 5 stars works great Reviewed in Canada on December 30, 2025Style: 27" OLED QHD ..."
+    - "Edwin G.5.0 out of 5 stars Excelente para Xbox Serie X Reviewed in Mexico on September 6, 2023Sty..."
+    - "Victor Torres5.0 out of 5 stars No te arrepentirás. Reviewed in Mexico on January 5, 2026Style: 3..."
+    - "MJEED ALHRBI5.0 out of 5 stars تعقيم للعين Reviewed in Saudi Arabia on August 24, 2025Style: 27" ..."
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley [5256 words]
+  HEADING level=2 "Customer reviews"
+  LIST [5 items]
+    - "5 star4 star3 star2 star1 star5 star81%8%4%1%6%81%"
+    - "5 star4 star3 star2 star1 star4 star81%8%4%1%6%8%"
+    - "5 star4 star3 star2 star1 star3 star81%8%4%1%6%4%"
+    - "5 star4 star3 star2 star1 star2 star81%8%4%1%6%1%"
+    - "5 star4 star3 star2 star1 star1 star81%8%4%1%6%6%"
+  TEXT "Customer Reviews, including Product Star Ratings help customers to learn more about the product and decide whether it is the right product for them."
+  TEXT "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and if the reviewer bought the item on Amazon. It also analyzed reviews to verify trustworthiness."
+  HEADING level=3 "Customers say"
+  HEADING level=4 "Select to learn more"
+  HEADING level=5 ""
+  HEADING level=6 "Images in this review"
+  HEADING level=3 "Reviews with images"
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+  HEADING level=3 "Top reviews from the United States"
+  HEADING level=4 "There was a problem filtering reviews. Please reload the page."
+  LIST [3 items]
+    - "Culbrelai5.0 out of 5 stars Outstanding monitor, with some things to know Reviewed in the United ..."
+    - "Betti V 5.0 out of 5 stars This is the one. Reviewed in the United States on October 24, 2025Styl..."
+    - "Sky Dragon5.0 out of 5 stars better than being there! Reviewed in the United States on December 6..."
+  HEADING level=3 "Top reviews from other countries"
+  LIST [5 items]
+    - "Oscar 5.0 out of 5 stars Excelente monitor gamer Reviewed in Mexico on December 8, 2025Style: 27"..."
+    - "Richard5.0 out of 5 stars works great Reviewed in Canada on December 30, 2025Style: 27" OLED QHD ..."
+    - "Edwin G.5.0 out of 5 stars Excelente para Xbox Serie X Reviewed in Mexico on September 6, 2023Sty..."
+    - "Victor Torres5.0 out of 5 stars No te arrepentirás. Reviewed in Mexico on January 5, 2026Style: 3..."
+    - "MJEED ALHRBI5.0 out of 5 stars تعقيم للعين Reviewed in Saudi Arabia on August 24, 2025Style: 27" ..."
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div [119 words]
+  HEADING level=2 "Customer reviews"
+  LIST [5 items]
+    - "5 star4 star3 star2 star1 star5 star81%8%4%1%6%81%"
+    - "5 star4 star3 star2 star1 star4 star81%8%4%1%6%8%"
+    - "5 star4 star3 star2 star1 star3 star81%8%4%1%6%4%"
+    - "5 star4 star3 star2 star1 star2 star81%8%4%1%6%1%"
+    - "5 star4 star3 star2 star1 star1 star81%8%4%1%6%6%"
+  TEXT "Customer Reviews, including Product Star Ratings help customers to learn more about the product and decide whether it is the right product for them."
+  TEXT "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and if the reviewer bought the item on Amazon. It also analyzed reviews to verify trustworthiness."
+
+SECTION /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#cm_cr_dp_d_rating_histogram [119 words]
+  HEADING level=2 "Customer reviews"
+  LIST [5 items]
+    - "5 star4 star3 star2 star1 star5 star81%8%4%1%6%81%"
+    - "5 star4 star3 star2 star1 star4 star81%8%4%1%6%8%"
+    - "5 star4 star3 star2 star1 star3 star81%8%4%1%6%4%"
+    - "5 star4 star3 star2 star1 star2 star81%8%4%1%6%1%"
+    - "5 star4 star3 star2 star1 star1 star81%8%4%1%6%6%"
+  TEXT "Customer Reviews, including Product Star Ratings help customers to learn more about the product and decide whether it is the right product for them."
+  TEXT "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and if the reviewer bought the item on Amazon. It also analyzed reviews to verify trustworthiness."
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#cr-ADPlaceholder [334 words]
+
+SECTION /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#cr-ADPlaceholder/div [201 words]
+
+SECTION /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#cr-ADPlaceholder/div/div [199 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_0[1] [142 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_1[2] [121 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_2[3] [121 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_3[4] [121 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_4[5] [107 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_5[6] [123 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_6[7] [127 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_7[8] [133 words]
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div [141 words]
+  HEADING level=3 "Reviews with images"
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+
+SECTION /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#popovers[2] [135 words]
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+
+SECTION /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#popovers[2]/div [135 words]
+  HEADING level=5 "Immersive 4K OLED & High Refresh Rate"
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div.card-padding [2273 words]
+  HEADING level=3 "Top reviews from the United States"
+  HEADING level=4 "There was a problem filtering reviews. Please reload the page."
+  LIST [3 items]
+    - "Culbrelai5.0 out of 5 stars Outstanding monitor, with some things to know Reviewed in the United ..."
+    - "Betti V 5.0 out of 5 stars This is the one. Reviewed in the United States on October 24, 2025Styl..."
+    - "Sky Dragon5.0 out of 5 stars better than being there! Reviewed in the United States on December 6..."
+
+SECTION /div#customerReviews/div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#REHPXV4YYIWZ1[1]/div#REHPXV4YYIWZ1-review-card [680 words]
+  HEADING level=5 "5.0 out of 5 stars Outstanding monitor, with some things to know"
+  HEADING level=P "Reviewed in the United States on February 24, 2025"
+
+SECTION /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#REHPXV4YYIWZ1[1]/div#REHPXV4YYIWZ1-review-card/div#customer_review-REHPXV4YYIWZ1 [680 words]
+  HEADING level=5 "5.0 out of 5 stars Outstanding monitor, with some things to know"
+  HEADING level=P "Reviewed in the United States on February 24, 2025"
+
+SECTION /div#customerReviews/div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#RJL5RW1IPKJQA[2]/div#RJL5RW1IPKJQA-review-card [153 words]
+  HEADING level=5 "5.0 out of 5 stars This is the one."
+  HEADING level=P "Reviewed in the United States on October 24, 2025"
+
+SECTION /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#RJL5RW1IPKJQA[2]/div#RJL5RW1IPKJQA-review-card/div#customer_review-RJL5RW1IPKJQA [153 words]
+  HEADING level=5 "5.0 out of 5 stars This is the one."
+  HEADING level=P "Reviewed in the United States on October 24, 2025"
+
+SECTION /div#customerReviews/div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#R1IT4ZS3EXXF5Y[3]/div#R1IT4ZS3EXXF5Y-review-card [1411 words]
+  HEADING level=5 "5.0 out of 5 stars better than being there!"
+  HEADING level=P "Reviewed in the United States on December 6, 2024"
+
+SECTION /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#R1IT4ZS3EXXF5Y[3]/div#R1IT4ZS3EXXF5Y-review-card/div [1411 words]
+  HEADING level=5 "5.0 out of 5 stars better than being there!"
+  HEADING level=P "Reviewed in the United States on December 6, 2024"
+
+SECTION /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div[1] [111 words]
+  HEADING level=3 "Top reviews from other countries"
+
+SECTION /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R143NGPNO5W0QI[1]/div#R143NGPNO5W0QI-review-card [188 words]
+  HEADING level=5 "5.0 out of 5 stars Excelente monitor gamer"
+  HEADING level=P "Reviewed in Mexico on December 8, 2025"
+
+SECTION /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R143NGPNO5W0QI[1]/div#R143NGPNO5W0QI-review-card/div [188 words]
+  HEADING level=5 "5.0 out of 5 stars Excelente monitor gamer"
+  HEADING level=P "Reviewed in Mexico on December 8, 2025"
+
+SECTION /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R1AO0T27NG62IX[2]/div#R1AO0T27NG62IX-review-card [39 words]
+  HEADING level=5 "5.0 out of 5 stars works great"
+  HEADING level=P "Reviewed in Canada on December 30, 2025"
+
+SECTION /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R1AO0T27NG62IX[2]/div#R1AO0T27NG62IX-review-card/div [39 words]
+  HEADING level=5 "5.0 out of 5 stars works great"
+  HEADING level=P "Reviewed in Canada on December 30, 2025"
+
+SECTION /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R23JXY1M8M91UT[3]/div#R23JXY1M8M91UT-review-card [312 words]
+  HEADING level=5 "5.0 out of 5 stars Excelente para Xbox Serie X"
+  HEADING level=P "Reviewed in Mexico on September 6, 2023"
+
+SECTION /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R23JXY1M8M91UT[3]/div#R23JXY1M8M91UT-review-card/div [312 words]
+  HEADING level=5 "5.0 out of 5 stars Excelente para Xbox Serie X"
+  HEADING level=P "Reviewed in Mexico on September 6, 2023"
+
+SECTION /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R27KMCZYN3YGO4[4]/div#R27KMCZYN3YGO4-review-card [89 words]
+  HEADING level=5 "5.0 out of 5 stars No te arrepentirás."
+  HEADING level=P "Reviewed in Mexico on January 5, 2026"
+
+SECTION /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R27KMCZYN3YGO4[4]/div#R27KMCZYN3YGO4-review-card/div [89 words]
+  HEADING level=5 "5.0 out of 5 stars No te arrepentirás."
+  HEADING level=P "Reviewed in Mexico on January 5, 2026"
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[39] [334 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[39]/div [201 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div[39]/div/div [199 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43] [12 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav [11 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[1] [1 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[2] [3 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[3] [1 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[4] [2 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[5] [3 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[6] [1 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/a[1] [0 words]
+
+SECTION /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/a[2] [0 words]
+
+SECTION /div#a-page[1]/div#rhf[2] [73 words]
+
+SECTION /div#a-page[1]/div#navFooter[3] [248 words]
+  HEADING level=I "Get to Know Us"
+  LIST [6 items]
+    - "Careers"
+    - "Blog"
+    - "About Amazon"
+    - "Investor Relations"
+    - "Amazon Devices"
+    - "Amazon Science"
+  HEADING level=I "Make Money with Us"
+  LIST [8 items]
+    - "Sell products on Amazon"
+    - "Sell on Amazon Business"
+    - "Sell apps on Amazon"
+    - "Become an Affiliate"
+    - "Advertise Your Products"
+    - "Self-Publish with Us"
+    - "Host an Amazon Hub"
+    - "›See More Make Money with Us"
+  HEADING level=I "Amazon Payment Products"
+  LIST [4 items]
+    - "Amazon Business Card"
+    - "Shop with Points"
+    - "Reload Your Balance"
+    - "Amazon Currency Converter"
+  HEADING level=I "Let Us Help You"
+  LIST [7 items]
+    - "Amazon and COVID-19"
+    - "Your Account"
+    - "Your Orders"
+    - "Shipping Rates & Policies"
+    - "Returns & Replacements"
+    - "Manage Your Content and Devices"
+    - "Help"
+  LIST [5 items]
+    - "Amazon MusicStream millionsof songs"
+    - "Amazon AdsReach customerswherever theyspend their time"
+    - "6pmScore dealson fashion brands"
+    - "AbeBooksBooks, art& collectibles"
+    - "ACX Audiobook PublishingMade Easy"
+  LIST [5 items]
+    - "Amazon BusinessEverything ForYour Business"
+    - "AmazonGlobalShip OrdersInternationally"
+    - "Amazon Web ServicesScalable CloudComputing Services"
+    - "AudibleListen to Books & OriginalAudio Performances"
+    - "Box Office MojoFind MovieBox Office Data"
+  LIST [5 items]
+    - "IMDbProGet Info EntertainmentProfessionals Need"
+    - "Kindle Direct PublishingIndie Digital & Print PublishingMade Easy"
+    - "Prime Video DirectVideo DistributionMade Easy"
+    - "ShopbopDesignerFashion Brands"
+    - "Woot!Deals and Shenanigans"
+  LIST [4 items]
+    - "eero WiFiStream 4K Videoin Every Room"
+    - "BlinkSmart Securityfor Every Home"
+    - "Neighbors App Real-Time Crime& Safety Alerts"
+    - "Amazon Subscription BoxesTop subscription boxes – right to your door"
+  LIST [4 items]
+    - "Conditions of Use"
+    - "Privacy Notice"
+    - "Consumer Health Data Privacy Disclosure"
+    - "Your Ads Privacy Choices"
+
+SECTION /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1] [88 words]
+  HEADING level=I "Get to Know Us"
+  LIST [6 items]
+    - "Careers"
+    - "Blog"
+    - "About Amazon"
+    - "Investor Relations"
+    - "Amazon Devices"
+    - "Amazon Science"
+  HEADING level=I "Make Money with Us"
+  LIST [8 items]
+    - "Sell products on Amazon"
+    - "Sell on Amazon Business"
+    - "Sell apps on Amazon"
+    - "Become an Affiliate"
+    - "Advertise Your Products"
+    - "Self-Publish with Us"
+    - "Host an Amazon Hub"
+    - "›See More Make Money with Us"
+  HEADING level=I "Amazon Payment Products"
+  LIST [4 items]
+    - "Amazon Business Card"
+    - "Shop with Points"
+    - "Reload Your Balance"
+    - "Amazon Currency Converter"
+  HEADING level=I "Let Us Help You"
+  LIST [7 items]
+    - "Amazon and COVID-19"
+    - "Your Account"
+    - "Your Orders"
+    - "Shipping Rates & Policies"
+    - "Returns & Replacements"
+    - "Manage Your Content and Devices"
+    - "Help"
+
+SECTION /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow [88 words]
+  HEADING level=I "Get to Know Us"
+  LIST [6 items]
+    - "Careers"
+    - "Blog"
+    - "About Amazon"
+    - "Investor Relations"
+    - "Amazon Devices"
+    - "Amazon Science"
+  HEADING level=I "Make Money with Us"
+  LIST [8 items]
+    - "Sell products on Amazon"
+    - "Sell on Amazon Business"
+    - "Sell apps on Amazon"
+    - "Become an Affiliate"
+    - "Advertise Your Products"
+    - "Self-Publish with Us"
+    - "Host an Amazon Hub"
+    - "›See More Make Money with Us"
+  HEADING level=I "Amazon Payment Products"
+  LIST [4 items]
+    - "Amazon Business Card"
+    - "Shop with Points"
+    - "Reload Your Balance"
+    - "Amazon Currency Converter"
+  HEADING level=I "Let Us Help You"
+  LIST [7 items]
+    - "Amazon and COVID-19"
+    - "Your Account"
+    - "Your Orders"
+    - "Shipping Rates & Policies"
+    - "Returns & Replacements"
+    - "Manage Your Content and Devices"
+    - "Help"
+
+SECTION /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[3] [35 words]
+  HEADING level=I "Make Money with Us"
+  LIST [8 items]
+    - "Sell products on Amazon"
+    - "Sell on Amazon Business"
+    - "Sell apps on Amazon"
+    - "Become an Affiliate"
+    - "Advertise Your Products"
+    - "Self-Publish with Us"
+    - "Host an Amazon Hub"
+    - "›See More Make Money with Us"
+
+SECTION /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4] [114 words]
+  LIST [5 items]
+    - "Amazon MusicStream millionsof songs"
+    - "Amazon AdsReach customerswherever theyspend their time"
+    - "6pmScore dealson fashion brands"
+    - "AbeBooksBooks, art& collectibles"
+    - "ACX Audiobook PublishingMade Easy"
+  LIST [5 items]
+    - "Amazon BusinessEverything ForYour Business"
+    - "AmazonGlobalShip OrdersInternationally"
+    - "Amazon Web ServicesScalable CloudComputing Services"
+    - "AudibleListen to Books & OriginalAudio Performances"
+    - "Box Office MojoFind MovieBox Office Data"
+  LIST [5 items]
+    - "IMDbProGet Info EntertainmentProfessionals Need"
+    - "Kindle Direct PublishingIndie Digital & Print PublishingMade Easy"
+    - "Prime Video DirectVideo DistributionMade Easy"
+    - "ShopbopDesignerFashion Brands"
+    - "Woot!Deals and Shenanigans"
+  LIST [4 items]
+    - "eero WiFiStream 4K Videoin Every Room"
+    - "BlinkSmart Securityfor Every Home"
+    - "Neighbors App Real-Time Crime& Safety Alerts"
+    - "Amazon Subscription BoxesTop subscription boxes – right to your door"
+
+SECTION /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4]/div.navFooterMoreOnAmazon [114 words]
+  LIST [5 items]
+    - "Amazon MusicStream millionsof songs"
+    - "Amazon AdsReach customerswherever theyspend their time"
+    - "6pmScore dealson fashion brands"
+    - "AbeBooksBooks, art& collectibles"
+    - "ACX Audiobook PublishingMade Easy"
+  LIST [5 items]
+    - "Amazon BusinessEverything ForYour Business"
+    - "AmazonGlobalShip OrdersInternationally"
+    - "Amazon Web ServicesScalable CloudComputing Services"
+    - "AudibleListen to Books & OriginalAudio Performances"
+    - "Box Office MojoFind MovieBox Office Data"
+  LIST [5 items]
+    - "IMDbProGet Info EntertainmentProfessionals Need"
+    - "Kindle Direct PublishingIndie Digital & Print PublishingMade Easy"
+    - "Prime Video DirectVideo DistributionMade Easy"
+    - "ShopbopDesignerFashion Brands"
+    - "Woot!Deals and Shenanigans"
+  LIST [4 items]
+    - "eero WiFiStream 4K Videoin Every Room"
+    - "BlinkSmart Securityfor Every Home"
+    - "Neighbors App Real-Time Crime& Safety Alerts"
+    - "Amazon Subscription BoxesTop subscription boxes – right to your door"

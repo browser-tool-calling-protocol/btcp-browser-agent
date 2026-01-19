@@ -1,0 +1,2 @@
+PAGE: http://localhost/ | hello - Google Search
+CONTENT: sections=0 words=0

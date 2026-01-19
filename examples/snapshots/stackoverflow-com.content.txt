@@ -1,0 +1,1834 @@
+PAGE: http://localhost/ | Send attachments with PHP Mail()? - Stack Overflow
+CONTENT: sections=70 words=60005
+
+SECTION /div#signup-modal-container[1] [38 words]
+  HEADING level=1 ""
+  HEADING level=1 "OR"
+
+SECTION /div#signup-modal-container[1]/aside/div#signup-modal-description[1] [32 words]
+  HEADING level=1 "OR"
+
+SECTION /header [100 words]
+  LIST [3 items]
+    - "About"
+    - "Products"
+    - "For Teams"
+  LIST [5 items]
+    - "Stack Internal Implement a knowledge platform layer to power your enterprise and AI tools."
+    - "Stack Data Licensing Get access to top-class technical expertise with trusted & attributed content."
+    - "Stack Ads Connect your brand to the world’s most trusted technologist communities."
+    - "Releases Keep up-to-date on features we add to Stack Overflow and Stack Internal."
+    - "About the company Visit the blog"
+  LIST [5 items]
+    - "current community Stack Overflow help chat Meta Stack Overflow your communities Sign up or log in..."
+    - "Stack Overflow help chat"
+    - "Meta Stack Overflow"
+    - "Log in"
+    - "Sign up"
+
+SECTION /header/div#products-popover[2] [59 words]
+  LIST [5 items]
+    - "Stack Internal Implement a knowledge platform layer to power your enterprise and AI tools."
+    - "Stack Data Licensing Get access to top-class technical expertise with trusted & attributed content."
+    - "Stack Ads Connect your brand to the world’s most trusted technologist communities."
+    - "Releases Keep up-to-date on features we add to Stack Overflow and Stack Internal."
+    - "About the company Visit the blog"
+
+SECTION /header/nav [30 words]
+  LIST [5 items]
+    - "current community Stack Overflow help chat Meta Stack Overflow your communities Sign up or log in..."
+    - "Stack Overflow help chat"
+    - "Meta Stack Overflow"
+    - "Log in"
+    - "Sign up"
+
+SECTION /div.container[5] [11789 words]
+  HEADING level=1 "Let's set up your homepage Select a few topics you're interested in:"
+  LIST [10 items]
+    - "javascript"
+    - "python"
+    - "java"
+    - "c#"
+    - "php"
+    - "android"
+    - "html"
+    - "jquery"
+    - "c++"
+    - "css"
+  LIST [9 items]
+    - "Home Questions AI Assist $('.js-disable-askstack-new-link').on("click", function(e) { StackExchan..."
+    - "Home"
+    - "Questions"
+    - "AI Assist"
+    - "Tags"
+    - "Challenges"
+    - "Chat"
+    - "Articles"
+    - "Users"
+  HEADING level=5 "Collectives™ on Stack Overflow"
+  TEXT "Find centralized, trusted content and collaborate around the technologies you use most."
+  TEXT "Stack Internal"
+  TEXT "Knowledge at work"
+  TEXT "Bring the best of human thought and AI automation together at your work."
+  HEADING level=1 "Send attachments with PHP Mail()?"
+  TEXT "I need to send a pdf with mail, is it possible?"
+  CODE [php, 7 lines]
+    Copy$to = "xxx";
+    $subject = "Subject" ;
+    $message = 'Example message with <b>html</b>';
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    ...
+  TEXT "What am I missing?"
+  LIST [1 items]
+    - "php"
+  LIST [5 items]
+    - "17 To send an attachment with mail() function is way harder than you expect, for the sake of your..."
+    - "1 Or you could just link to it? user849137 – user849137 2012-09-06 13:39:28 +00:00 Commented Sep ..."
+    - "@mihai lorga Doesn't that require server side install? If it's possibible without any extensions ..."
+    - "Quick Google search - webcheatsheet.com/php/send_email_text_html_attachment.php Mark – Mark 2012-..."
+    - "2 @ChristianNikkanen it's just an well set script, It also has a lot of features that are hard to..."
+  HEADING level=2 "16 Answers 16"
+  TEXT "I agree with @MihaiIorga in the comments – use the PHPMailer script. You sound like you're rejecting it because you want the easier option. Trust me, PHPMailer is the easier option by a very large margin compared to trying to do it yourself with PHP's built-in mail() function. PHP's mail() function really isn't very good."
+  TEXT "To use PHPMailer:"
+  LIST [3 items]
+    - "Download the PHPMailer script from here: http://github.com/PHPMailer/PHPMailer"
+    - "Extract the archive and copy the script's folder to a convenient place in your project."
+    - "Include the main script file -- require_once('path/to/file/class.phpmailer.php');"
+  TEXT "Now, sending emails with attachments goes from being insanely difficult to incredibly easy:"
+  CODE [php, 14 lines]
+    Copyuse PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    $email = new PHPMailer();
+    $email->SetFrom('you@example.com', 'Your Name'); //Name is optional
+    ...
+  TEXT "It's just that one line $email->AddAttachment(); -- you couldn't ask for any easier."
+  TEXT "If you do it with PHP's mail() function, you'll be writing stacks of code, and you'll probably have lots of really difficult to find bugs."
+  HEADING level=2 "19 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "You can try using the following code:"
+  CODE [php, 45 lines]
+    Copy    $filename = 'myfile';
+        $path = 'your path goes here';
+        $file = $path . "/" . $filename;
+    
+        $mailto = 'mail@mail.com';
+    ...
+  TEXT "Edit 14-June-2018"
+  TEXT "for more readability in some of email provider use"
+  TEXT "$body .= $eol . $message . $eol . $eol; and $body .= $eol . $content . $eol . $eol;"
+  HEADING level=2 "14 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "For PHP 5.5.27 security update"
+  CODE [php, 29 lines]
+    Copy$file = $path.$filename;
+    $content = file_get_contents( $file);
+    $content = chunk_split(base64_encode($content));
+    $uid = md5(uniqid(time()));
+    $file_name = basename($file);
+    ...
+  HEADING level=2 "20 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "Swiftmailer is another easy-to-use script that automatically protects against email injection and makes attachments a breeze. I also strongly discourage using PHP's built-in mail() function."
+  TEXT "To use:"
+  LIST [2 items]
+    - "Download Swiftmailer, and place the lib folder in your project"
+    - "Include the main file using require_once 'lib/swift_required.php';"
+  TEXT "Now add the code when you need to mail:"
+  CODE [php, 10 lines]
+    Copy// Create the message
+    $message = Swift_Message::newInstance()
+        ->setSubject('Your subject')
+        ->setFrom(array('webmaster@mysite.com' => 'Web Master'))
+        ->setTo(array('receiver@example.com'))
+    ...
+  TEXT "More information and options can be found in the Swiftmailer Docs."
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "To send an email with attachment we need to use the multipart/mixed MIME type that specifies that mixed types will be included in the email. Moreover, we want to use multipart/alternative MIME type to send both plain-text and HTML version of the email.Have a look at the example:"
+  CODE [php, 54 lines]
+    Copy<?php 
+    //define the receiver of the email 
+    $to = 'youraddress@example.com'; 
+    //define the subject of the email 
+    $subject = 'Test email with attachment'; 
+    ...
+  TEXT "As you can see, sending an email with attachment is easy to accomplish. In the preceding example we have multipart/mixed MIME type, and inside it we have multipart/alternative MIME type that specifies two versions of the email. To include an attachment to our message, we read the data from the specified file into a string, encode it with base64, split it in smaller chunks to make sure that it matches the MIME specifications and then include it as an attachment."
+  TEXT "Taken from here."
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "This works for me. It also attaches multiple attachments too. easily"
+  CODE [php, 87 lines]
+    Copy<?php
+    
+    if ($_POST && isset($_FILES['file'])) {
+        $recipient_email = "recipient@yourmail.com"; //recepient
+        $from_email = "info@your_domain.com"; //from email using site domain.
+    ...
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "None of the above answers worked for me due to their specified attachment format (application/octet-stream). Use application/pdf for best results with PDF files."
+  CODE [php, 42 lines]
+    Copy<?php
+    
+    // just edit these 
+    $to          = "email1@domain.com, email2@domain.com"; // addresses to email pdf to
+    $from        = "sent_from@domain.com"; // address message is sent from
+    ...
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "After struggling for a while with badly formatted attachments, this is the code I used:"
+  CODE [php, 8 lines]
+    Copy$email = new PHPMailer();
+    $email->From      = 'from@somedomain.com';
+    $email->FromName  = 'FromName';
+    $email->Subject   = 'Subject';
+    $email->Body      = 'Body';
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "Working Concept :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+        $mailto = $_POST["mailTo"];
+        $from_mail = $_POST["fromEmail"];
+        $replyto = $_POST["fromEmail"];
+        $from_name = $_POST["fromName"];
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "HTML Code:"
+  CODE [php, 9 lines]
+    Copy<form enctype="multipart/form-data" method="POST" action=""> 
+        <label>Your Name <input type="text" name="sender_name" /> </label> 
+        <label>Your Email <input type="email" name="sender_email" /> </label> 
+        <label>Your Contact Number <input type="tel" name="contactnumber" /> </label>
+        <label>Subject <input type="text" name="subject" /> </label> 
+    ...
+  TEXT "PHP Code:"
+  CODE [php, 71 lines]
+    Copy<?php
+    if($_POST['button']){
+    {
+        //Server Variables
+        $server_name = "Your Name";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "I ended up writing my own email sending/encoding function. This has worked well for me for sending PDF attachments. I have not used the other features in production."
+  TEXT "Note: Despite the spec being quite emphatic that you must use \r\n to separate headers, I found it only worked when I used PHP_EOL. I have only tested this on Linux. YMMV"
+  CODE [php, 214 lines]
+    Copy<?php
+    # $args must be an associative array
+    #     required keys: from, to, body
+    #          body can be a string or a [tree of] associative arrays. See examples below
+    #     optional keys: subject, reply_to, cc, bcc
+    ...
+  HEADING level=2 "1 Comment"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  CODE [php, 29 lines]
+    Copy            $to = "to@gmail.com";
+                $subject = "Subject Of The Mail";
+                $message = "Hi there,<br/><br/>This is my message.<br><br>";
+    
+                $headers = "From: From-Name<from@gmail.com>";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  CODE [1 lines]
+    ContactRequestSubmittedName:'.$name.'Email:'.$email.'Subject:'.$subject.'Message:'.$message.'';$headers="From:$fromName"."";if(!empty($uploadedFile)&&file_exists($uploadedFile)){$semi_rand=md5(time());$mime_boundary="==Multipart_Boundary_x{$semi_rand}x";$headers.="\nMIME-Version:1.0\n"."Content-Type:multipart/mixed;\n"."boundary=\"{$mime_boundary}\"";$message="--{$mime_boundary}\n"."Content-Type:text/html;charset=\"UTF-8\"\n"."Content-Transfer-Encoding:7bit\n\n".$htmlContent."\n\n";if(is_file($uploadedFile)){$message.="--{$mime_boundary}\n";$fp=@fopen($uploadedFile,"rb");$data=@fread($fp,filesize($uploadedFile));@fclose($fp);$data=chunk_split(base64_encode($data));$message.="Content-Type:application/octet-stream;name=\"".basename($uploadedFile)."\"\n"."Content-Description:".basename($uploadedFile)."\n"."Content-Disposition:attachment;\n"."filename=\"".basename($uploadedFile)."\";size=".filesize($uploadedFile).";\n"."Content-Transfer-Encoding:base64\n\n".$data."\n\n";}$message.="--{$mime_boundary}--";$returnpath="-f".$email;$mail=mail($toEmail,$emailSubject,$message,$headers,$returnpath);@unlink($uploadedFile);}else{$headers.="\r\n"."MIME-Version:1.0";$headers.="\r\n"."Content-type:text/html;charset=UTF-8";$mail=mail($toEmail,$emailSubject,$htmlContent,$headers);}if($mail){$statusMsg='Yourcontactrequesthasbeensubmittedsuccessfully!';$msgClass='succdiv';$postData='';}else{$statusMsg='Yourcontactrequestsubmissionfailed,pleasetryagain.';}}}}else{$statusMsg='Pleasefillallthefields.';}}?>">"placeholder="Name"required="">"placeholder="Emailaddress"required="">"placeholder="Subject"required="">[Source][1]
+  TEXT "https://www.findinall.com/blog/how-to-test-mail-and-send-attachment-in-mail/"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "you can send regular or attachment emails using this class that I created."
+  TEXT "here is the link with examples of how to use it."
+  TEXT "https://github.com/Nerdtrix/EZMAIL"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "100% working Concept to send email with attachment in php :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+      extract($_POST);
+      require_once('mail/class.phpmailer.php');
+    
+      $subject = "$name Applied For - $position";
+    ...
+  TEXT "I used this code for google smtp mail sending with Attachment...."
+  TEXT "Note: Download PHPMailer Library from here -> https://github.com/PHPMailer/PHPMailer"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "Copying the code from this page - works in mail()"
+  TEXT "He starts off my making a function mail_attachment that can be called later. Which he does later with his attachment code."
+  CODE [php, 41 lines]
+    Copy<?php
+    function mail_attachment($filename, $path, $mailto, $from_mail, $from_name, $replyto, $subject, $message) {
+        $file = $path.$filename;
+        $file_size = filesize($file);
+        $handle = fopen($file, "r");
+    ...
+  TEXT "He has more details on his page and answers some problems in the comments section."
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  LIST [9 items]
+    - "The Overflow Blog"
+    - "How Stack Overflow is taking on spam and bad actors"
+    - "How AWS re:Invented the cloud"
+    - "Featured on Meta"
+    - "A proposal for bringing back Community Promotion & Open Source Ads"
+    - "Community Asks Sprint Announcement – January 2026: Custom site-specific badges!"
+    - "Policy: Generative AI (e.g., ChatGPT) is banned"
+    - "All users on Stack Overflow can now participate in chat"
+    - "Should Stack Overflow utilize machine learning anti-spam?"
+  LIST [5 items]
+    - "Users online activity 10031 users online"
+    - "Number of questions asked 11 questions"
+    - "Number of questions that received an answer 22 answers"
+    - "Number of comments posted 68 comments"
+    - "Number of upvotes on posts 231 upvotes"
+  TEXT "Popular tags"
+  HEADING level=4 "Linked"
+  HEADING level=4 "Related"
+  HEADING level=4 "Hot Network Questions"
+  LIST [10 items]
+    - "How to have filled line symbology that merges rather than overlaps"
+    - "datetime2, command \currenttime undefined"
+    - "looking for a short story about a computer"
+    - "How was Case found to have assaulted the police officer?"
+    - "Symmetric metric on the Hilbert cube?"
+    - "How to say "spicy" in Latin?"
+    - "1950s or 60s short story. A Martian disguised as human, tries to convince a woman that Earth is i..."
+    - "How do capital loss carryovers from previous years affect ACA (Marketplace) and Medicaid eligibil..."
+    - "Looking for a way to prevent PCB from sparking when connecting battery?"
+    - "Did Paul intend 1 Corinthians 15:1-4 to be the full disclosure of the Gospel or a reminder of the..."
+  HEADING level=1 "Subscribe to RSS"
+  TEXT "To subscribe to this RSS feed, copy and paste this URL into your RSS reader."
+  HEADING level=1 "Why are you flagging this comment?"
+  TEXT "This comment promotes a product, service or website while failing to disclose the author's affiliation."
+  TEXT "This comment is unkind, insulting or attacks another person or group. Learn more in our Abusive behavior policy."
+  TEXT "This comment is not relevant to the post."
+  CODE [1 lines]
+    
+  TEXT "A problem not listed above. Try to be as specific as possible."
+  CODE [1 lines]
+    
+  HEADING level=1 ""
+  HEADING level=1 "Hang on, you can't upvote just yet."
+  TEXT "You'll need to complete a few actions and gain 15 reputation points before being able to upvote. Upvoting indicates when questions and answers are useful. What's reputation and how do I get it?"
+  TEXT "Instead, you can save this post to reference later."
+
+SECTION /div.container[5]/div#homepage-wizard-container[1] [33 words]
+  HEADING level=1 "Let's set up your homepage Select a few topics you're interested in:"
+  LIST [10 items]
+    - "javascript"
+    - "python"
+    - "java"
+    - "c#"
+    - "php"
+    - "android"
+    - "html"
+    - "jquery"
+    - "c++"
+    - "css"
+
+SECTION /div.container[5]/div#left-sidebar[2] [122 words]
+  LIST [9 items]
+    - "Home Questions AI Assist $('.js-disable-askstack-new-link').on("click", function(e) { StackExchan..."
+    - "Home"
+    - "Questions"
+    - "AI Assist"
+    - "Tags"
+    - "Challenges"
+    - "Chat"
+    - "Articles"
+    - "Users"
+  HEADING level=5 "Collectives™ on Stack Overflow"
+  TEXT "Find centralized, trusted content and collaborate around the technologies you use most."
+  TEXT "Stack Internal"
+  TEXT "Knowledge at work"
+  TEXT "Bring the best of human thought and AI automation together at your work."
+
+SECTION /div.container[5]/div#left-sidebar[2]/nav [81 words]
+  LIST [9 items]
+    - "Home Questions AI Assist $('.js-disable-askstack-new-link').on("click", function(e) { StackExchan..."
+    - "Home"
+    - "Questions"
+    - "AI Assist"
+    - "Tags"
+    - "Challenges"
+    - "Chat"
+    - "Articles"
+    - "Users"
+
+SECTION /div.container[5]/div#content[3] [11633 words]
+  HEADING level=1 "Send attachments with PHP Mail()?"
+  TEXT "I need to send a pdf with mail, is it possible?"
+  CODE [php, 7 lines]
+    Copy$to = "xxx";
+    $subject = "Subject" ;
+    $message = 'Example message with <b>html</b>';
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    ...
+  TEXT "What am I missing?"
+  LIST [1 items]
+    - "php"
+  LIST [5 items]
+    - "17 To send an attachment with mail() function is way harder than you expect, for the sake of your..."
+    - "1 Or you could just link to it? user849137 – user849137 2012-09-06 13:39:28 +00:00 Commented Sep ..."
+    - "@mihai lorga Doesn't that require server side install? If it's possibible without any extensions ..."
+    - "Quick Google search - webcheatsheet.com/php/send_email_text_html_attachment.php Mark – Mark 2012-..."
+    - "2 @ChristianNikkanen it's just an well set script, It also has a lot of features that are hard to..."
+  HEADING level=2 "16 Answers 16"
+  TEXT "I agree with @MihaiIorga in the comments – use the PHPMailer script. You sound like you're rejecting it because you want the easier option. Trust me, PHPMailer is the easier option by a very large margin compared to trying to do it yourself with PHP's built-in mail() function. PHP's mail() function really isn't very good."
+  TEXT "To use PHPMailer:"
+  LIST [3 items]
+    - "Download the PHPMailer script from here: http://github.com/PHPMailer/PHPMailer"
+    - "Extract the archive and copy the script's folder to a convenient place in your project."
+    - "Include the main script file -- require_once('path/to/file/class.phpmailer.php');"
+  TEXT "Now, sending emails with attachments goes from being insanely difficult to incredibly easy:"
+  CODE [php, 14 lines]
+    Copyuse PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    $email = new PHPMailer();
+    $email->SetFrom('you@example.com', 'Your Name'); //Name is optional
+    ...
+  TEXT "It's just that one line $email->AddAttachment(); -- you couldn't ask for any easier."
+  TEXT "If you do it with PHP's mail() function, you'll be writing stacks of code, and you'll probably have lots of really difficult to find bugs."
+  HEADING level=2 "19 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "You can try using the following code:"
+  CODE [php, 45 lines]
+    Copy    $filename = 'myfile';
+        $path = 'your path goes here';
+        $file = $path . "/" . $filename;
+    
+        $mailto = 'mail@mail.com';
+    ...
+  TEXT "Edit 14-June-2018"
+  TEXT "for more readability in some of email provider use"
+  TEXT "$body .= $eol . $message . $eol . $eol; and $body .= $eol . $content . $eol . $eol;"
+  HEADING level=2 "14 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "For PHP 5.5.27 security update"
+  CODE [php, 29 lines]
+    Copy$file = $path.$filename;
+    $content = file_get_contents( $file);
+    $content = chunk_split(base64_encode($content));
+    $uid = md5(uniqid(time()));
+    $file_name = basename($file);
+    ...
+  HEADING level=2 "20 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "Swiftmailer is another easy-to-use script that automatically protects against email injection and makes attachments a breeze. I also strongly discourage using PHP's built-in mail() function."
+  TEXT "To use:"
+  LIST [2 items]
+    - "Download Swiftmailer, and place the lib folder in your project"
+    - "Include the main file using require_once 'lib/swift_required.php';"
+  TEXT "Now add the code when you need to mail:"
+  CODE [php, 10 lines]
+    Copy// Create the message
+    $message = Swift_Message::newInstance()
+        ->setSubject('Your subject')
+        ->setFrom(array('webmaster@mysite.com' => 'Web Master'))
+        ->setTo(array('receiver@example.com'))
+    ...
+  TEXT "More information and options can be found in the Swiftmailer Docs."
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "To send an email with attachment we need to use the multipart/mixed MIME type that specifies that mixed types will be included in the email. Moreover, we want to use multipart/alternative MIME type to send both plain-text and HTML version of the email.Have a look at the example:"
+  CODE [php, 54 lines]
+    Copy<?php 
+    //define the receiver of the email 
+    $to = 'youraddress@example.com'; 
+    //define the subject of the email 
+    $subject = 'Test email with attachment'; 
+    ...
+  TEXT "As you can see, sending an email with attachment is easy to accomplish. In the preceding example we have multipart/mixed MIME type, and inside it we have multipart/alternative MIME type that specifies two versions of the email. To include an attachment to our message, we read the data from the specified file into a string, encode it with base64, split it in smaller chunks to make sure that it matches the MIME specifications and then include it as an attachment."
+  TEXT "Taken from here."
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "This works for me. It also attaches multiple attachments too. easily"
+  CODE [php, 87 lines]
+    Copy<?php
+    
+    if ($_POST && isset($_FILES['file'])) {
+        $recipient_email = "recipient@yourmail.com"; //recepient
+        $from_email = "info@your_domain.com"; //from email using site domain.
+    ...
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "None of the above answers worked for me due to their specified attachment format (application/octet-stream). Use application/pdf for best results with PDF files."
+  CODE [php, 42 lines]
+    Copy<?php
+    
+    // just edit these 
+    $to          = "email1@domain.com, email2@domain.com"; // addresses to email pdf to
+    $from        = "sent_from@domain.com"; // address message is sent from
+    ...
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "After struggling for a while with badly formatted attachments, this is the code I used:"
+  CODE [php, 8 lines]
+    Copy$email = new PHPMailer();
+    $email->From      = 'from@somedomain.com';
+    $email->FromName  = 'FromName';
+    $email->Subject   = 'Subject';
+    $email->Body      = 'Body';
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "Working Concept :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+        $mailto = $_POST["mailTo"];
+        $from_mail = $_POST["fromEmail"];
+        $replyto = $_POST["fromEmail"];
+        $from_name = $_POST["fromName"];
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "HTML Code:"
+  CODE [php, 9 lines]
+    Copy<form enctype="multipart/form-data" method="POST" action=""> 
+        <label>Your Name <input type="text" name="sender_name" /> </label> 
+        <label>Your Email <input type="email" name="sender_email" /> </label> 
+        <label>Your Contact Number <input type="tel" name="contactnumber" /> </label>
+        <label>Subject <input type="text" name="subject" /> </label> 
+    ...
+  TEXT "PHP Code:"
+  CODE [php, 71 lines]
+    Copy<?php
+    if($_POST['button']){
+    {
+        //Server Variables
+        $server_name = "Your Name";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "I ended up writing my own email sending/encoding function. This has worked well for me for sending PDF attachments. I have not used the other features in production."
+  TEXT "Note: Despite the spec being quite emphatic that you must use \r\n to separate headers, I found it only worked when I used PHP_EOL. I have only tested this on Linux. YMMV"
+  CODE [php, 214 lines]
+    Copy<?php
+    # $args must be an associative array
+    #     required keys: from, to, body
+    #          body can be a string or a [tree of] associative arrays. See examples below
+    #     optional keys: subject, reply_to, cc, bcc
+    ...
+  HEADING level=2 "1 Comment"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  CODE [php, 29 lines]
+    Copy            $to = "to@gmail.com";
+                $subject = "Subject Of The Mail";
+                $message = "Hi there,<br/><br/>This is my message.<br><br>";
+    
+                $headers = "From: From-Name<from@gmail.com>";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  CODE [1 lines]
+    ContactRequestSubmittedName:'.$name.'Email:'.$email.'Subject:'.$subject.'Message:'.$message.'';$headers="From:$fromName"."";if(!empty($uploadedFile)&&file_exists($uploadedFile)){$semi_rand=md5(time());$mime_boundary="==Multipart_Boundary_x{$semi_rand}x";$headers.="\nMIME-Version:1.0\n"."Content-Type:multipart/mixed;\n"."boundary=\"{$mime_boundary}\"";$message="--{$mime_boundary}\n"."Content-Type:text/html;charset=\"UTF-8\"\n"."Content-Transfer-Encoding:7bit\n\n".$htmlContent."\n\n";if(is_file($uploadedFile)){$message.="--{$mime_boundary}\n";$fp=@fopen($uploadedFile,"rb");$data=@fread($fp,filesize($uploadedFile));@fclose($fp);$data=chunk_split(base64_encode($data));$message.="Content-Type:application/octet-stream;name=\"".basename($uploadedFile)."\"\n"."Content-Description:".basename($uploadedFile)."\n"."Content-Disposition:attachment;\n"."filename=\"".basename($uploadedFile)."\";size=".filesize($uploadedFile).";\n"."Content-Transfer-Encoding:base64\n\n".$data."\n\n";}$message.="--{$mime_boundary}--";$returnpath="-f".$email;$mail=mail($toEmail,$emailSubject,$message,$headers,$returnpath);@unlink($uploadedFile);}else{$headers.="\r\n"."MIME-Version:1.0";$headers.="\r\n"."Content-type:text/html;charset=UTF-8";$mail=mail($toEmail,$emailSubject,$htmlContent,$headers);}if($mail){$statusMsg='Yourcontactrequesthasbeensubmittedsuccessfully!';$msgClass='succdiv';$postData='';}else{$statusMsg='Yourcontactrequestsubmissionfailed,pleasetryagain.';}}}}else{$statusMsg='Pleasefillallthefields.';}}?>">"placeholder="Name"required="">"placeholder="Emailaddress"required="">"placeholder="Subject"required="">[Source][1]
+  TEXT "https://www.findinall.com/blog/how-to-test-mail-and-send-attachment-in-mail/"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "you can send regular or attachment emails using this class that I created."
+  TEXT "here is the link with examples of how to use it."
+  TEXT "https://github.com/Nerdtrix/EZMAIL"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "100% working Concept to send email with attachment in php :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+      extract($_POST);
+      require_once('mail/class.phpmailer.php');
+    
+      $subject = "$name Applied For - $position";
+    ...
+  TEXT "I used this code for google smtp mail sending with Attachment...."
+  TEXT "Note: Download PHPMailer Library from here -> https://github.com/PHPMailer/PHPMailer"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "Copying the code from this page - works in mail()"
+  TEXT "He starts off my making a function mail_attachment that can be called later. Which he does later with his attachment code."
+  CODE [php, 41 lines]
+    Copy<?php
+    function mail_attachment($filename, $path, $mailto, $from_mail, $from_name, $replyto, $subject, $message) {
+        $file = $path.$filename;
+        $file_size = filesize($file);
+        $handle = fopen($file, "r");
+    ...
+  TEXT "He has more details on his page and answers some problems in the comments section."
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  LIST [9 items]
+    - "The Overflow Blog"
+    - "How Stack Overflow is taking on spam and bad actors"
+    - "How AWS re:Invented the cloud"
+    - "Featured on Meta"
+    - "A proposal for bringing back Community Promotion & Open Source Ads"
+    - "Community Asks Sprint Announcement – January 2026: Custom site-specific badges!"
+    - "Policy: Generative AI (e.g., ChatGPT) is banned"
+    - "All users on Stack Overflow can now participate in chat"
+    - "Should Stack Overflow utilize machine learning anti-spam?"
+  LIST [5 items]
+    - "Users online activity 10031 users online"
+    - "Number of questions asked 11 questions"
+    - "Number of questions that received an answer 22 answers"
+    - "Number of comments posted 68 comments"
+    - "Number of upvotes on posts 231 upvotes"
+  TEXT "Popular tags"
+  HEADING level=4 "Linked"
+  HEADING level=4 "Related"
+  HEADING level=4 "Hot Network Questions"
+  LIST [10 items]
+    - "How to have filled line symbology that merges rather than overlaps"
+    - "datetime2, command \currenttime undefined"
+    - "looking for a short story about a computer"
+    - "How was Case found to have assaulted the police officer?"
+    - "Symmetric metric on the Hilbert cube?"
+    - "How to say "spicy" in Latin?"
+    - "1950s or 60s short story. A Martian disguised as human, tries to convince a woman that Earth is i..."
+    - "How do capital loss carryovers from previous years affect ACA (Marketplace) and Medicaid eligibil..."
+    - "Looking for a way to prevent PCB from sparking when connecting battery?"
+    - "Did Paul intend 1 Corinthians 15:1-4 to be the full disclosure of the Gospel or a reminder of the..."
+  HEADING level=1 "Subscribe to RSS"
+  TEXT "To subscribe to this RSS feed, copy and paste this URL into your RSS reader."
+  HEADING level=1 "Why are you flagging this comment?"
+  TEXT "This comment promotes a product, service or website while failing to disclose the author's affiliation."
+  TEXT "This comment is unkind, insulting or attacks another person or group. Learn more in our Abusive behavior policy."
+  TEXT "This comment is not relevant to the post."
+  CODE [1 lines]
+    
+  TEXT "A problem not listed above. Try to be as specific as possible."
+  CODE [1 lines]
+    
+  HEADING level=1 ""
+  HEADING level=1 "Hang on, you can't upvote just yet."
+  TEXT "You'll need to complete a few actions and gain 15 reputation points before being able to upvote. Upvoting indicates when questions and answers are useful. What's reputation and how do I get it?"
+  TEXT "Instead, you can save this post to reference later."
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3] [10790 words]
+  TEXT "I need to send a pdf with mail, is it possible?"
+  CODE [php, 7 lines]
+    Copy$to = "xxx";
+    $subject = "Subject" ;
+    $message = 'Example message with <b>html</b>';
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    ...
+  TEXT "What am I missing?"
+  LIST [1 items]
+    - "php"
+  LIST [5 items]
+    - "17 To send an attachment with mail() function is way harder than you expect, for the sake of your..."
+    - "1 Or you could just link to it? user849137 – user849137 2012-09-06 13:39:28 +00:00 Commented Sep ..."
+    - "@mihai lorga Doesn't that require server side install? If it's possibible without any extensions ..."
+    - "Quick Google search - webcheatsheet.com/php/send_email_text_html_attachment.php Mark – Mark 2012-..."
+    - "2 @ChristianNikkanen it's just an well set script, It also has a lot of features that are hard to..."
+  HEADING level=2 "16 Answers 16"
+  TEXT "I agree with @MihaiIorga in the comments – use the PHPMailer script. You sound like you're rejecting it because you want the easier option. Trust me, PHPMailer is the easier option by a very large margin compared to trying to do it yourself with PHP's built-in mail() function. PHP's mail() function really isn't very good."
+  TEXT "To use PHPMailer:"
+  LIST [3 items]
+    - "Download the PHPMailer script from here: http://github.com/PHPMailer/PHPMailer"
+    - "Extract the archive and copy the script's folder to a convenient place in your project."
+    - "Include the main script file -- require_once('path/to/file/class.phpmailer.php');"
+  TEXT "Now, sending emails with attachments goes from being insanely difficult to incredibly easy:"
+  CODE [php, 14 lines]
+    Copyuse PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    $email = new PHPMailer();
+    $email->SetFrom('you@example.com', 'Your Name'); //Name is optional
+    ...
+  TEXT "It's just that one line $email->AddAttachment(); -- you couldn't ask for any easier."
+  TEXT "If you do it with PHP's mail() function, you'll be writing stacks of code, and you'll probably have lots of really difficult to find bugs."
+  HEADING level=2 "19 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "You can try using the following code:"
+  CODE [php, 45 lines]
+    Copy    $filename = 'myfile';
+        $path = 'your path goes here';
+        $file = $path . "/" . $filename;
+    
+        $mailto = 'mail@mail.com';
+    ...
+  TEXT "Edit 14-June-2018"
+  TEXT "for more readability in some of email provider use"
+  TEXT "$body .= $eol . $message . $eol . $eol; and $body .= $eol . $content . $eol . $eol;"
+  HEADING level=2 "14 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "For PHP 5.5.27 security update"
+  CODE [php, 29 lines]
+    Copy$file = $path.$filename;
+    $content = file_get_contents( $file);
+    $content = chunk_split(base64_encode($content));
+    $uid = md5(uniqid(time()));
+    $file_name = basename($file);
+    ...
+  HEADING level=2 "20 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "Swiftmailer is another easy-to-use script that automatically protects against email injection and makes attachments a breeze. I also strongly discourage using PHP's built-in mail() function."
+  TEXT "To use:"
+  LIST [2 items]
+    - "Download Swiftmailer, and place the lib folder in your project"
+    - "Include the main file using require_once 'lib/swift_required.php';"
+  TEXT "Now add the code when you need to mail:"
+  CODE [php, 10 lines]
+    Copy// Create the message
+    $message = Swift_Message::newInstance()
+        ->setSubject('Your subject')
+        ->setFrom(array('webmaster@mysite.com' => 'Web Master'))
+        ->setTo(array('receiver@example.com'))
+    ...
+  TEXT "More information and options can be found in the Swiftmailer Docs."
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "To send an email with attachment we need to use the multipart/mixed MIME type that specifies that mixed types will be included in the email. Moreover, we want to use multipart/alternative MIME type to send both plain-text and HTML version of the email.Have a look at the example:"
+  CODE [php, 54 lines]
+    Copy<?php 
+    //define the receiver of the email 
+    $to = 'youraddress@example.com'; 
+    //define the subject of the email 
+    $subject = 'Test email with attachment'; 
+    ...
+  TEXT "As you can see, sending an email with attachment is easy to accomplish. In the preceding example we have multipart/mixed MIME type, and inside it we have multipart/alternative MIME type that specifies two versions of the email. To include an attachment to our message, we read the data from the specified file into a string, encode it with base64, split it in smaller chunks to make sure that it matches the MIME specifications and then include it as an attachment."
+  TEXT "Taken from here."
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "This works for me. It also attaches multiple attachments too. easily"
+  CODE [php, 87 lines]
+    Copy<?php
+    
+    if ($_POST && isset($_FILES['file'])) {
+        $recipient_email = "recipient@yourmail.com"; //recepient
+        $from_email = "info@your_domain.com"; //from email using site domain.
+    ...
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "None of the above answers worked for me due to their specified attachment format (application/octet-stream). Use application/pdf for best results with PDF files."
+  CODE [php, 42 lines]
+    Copy<?php
+    
+    // just edit these 
+    $to          = "email1@domain.com, email2@domain.com"; // addresses to email pdf to
+    $from        = "sent_from@domain.com"; // address message is sent from
+    ...
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "After struggling for a while with badly formatted attachments, this is the code I used:"
+  CODE [php, 8 lines]
+    Copy$email = new PHPMailer();
+    $email->From      = 'from@somedomain.com';
+    $email->FromName  = 'FromName';
+    $email->Subject   = 'Subject';
+    $email->Body      = 'Body';
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "Working Concept :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+        $mailto = $_POST["mailTo"];
+        $from_mail = $_POST["fromEmail"];
+        $replyto = $_POST["fromEmail"];
+        $from_name = $_POST["fromName"];
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "HTML Code:"
+  CODE [php, 9 lines]
+    Copy<form enctype="multipart/form-data" method="POST" action=""> 
+        <label>Your Name <input type="text" name="sender_name" /> </label> 
+        <label>Your Email <input type="email" name="sender_email" /> </label> 
+        <label>Your Contact Number <input type="tel" name="contactnumber" /> </label>
+        <label>Subject <input type="text" name="subject" /> </label> 
+    ...
+  TEXT "PHP Code:"
+  CODE [php, 71 lines]
+    Copy<?php
+    if($_POST['button']){
+    {
+        //Server Variables
+        $server_name = "Your Name";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "I ended up writing my own email sending/encoding function. This has worked well for me for sending PDF attachments. I have not used the other features in production."
+  TEXT "Note: Despite the spec being quite emphatic that you must use \r\n to separate headers, I found it only worked when I used PHP_EOL. I have only tested this on Linux. YMMV"
+  CODE [php, 214 lines]
+    Copy<?php
+    # $args must be an associative array
+    #     required keys: from, to, body
+    #          body can be a string or a [tree of] associative arrays. See examples below
+    #     optional keys: subject, reply_to, cc, bcc
+    ...
+  HEADING level=2 "1 Comment"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  CODE [php, 29 lines]
+    Copy            $to = "to@gmail.com";
+                $subject = "Subject Of The Mail";
+                $message = "Hi there,<br/><br/>This is my message.<br><br>";
+    
+                $headers = "From: From-Name<from@gmail.com>";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  CODE [1 lines]
+    ContactRequestSubmittedName:'.$name.'Email:'.$email.'Subject:'.$subject.'Message:'.$message.'';$headers="From:$fromName"."";if(!empty($uploadedFile)&&file_exists($uploadedFile)){$semi_rand=md5(time());$mime_boundary="==Multipart_Boundary_x{$semi_rand}x";$headers.="\nMIME-Version:1.0\n"."Content-Type:multipart/mixed;\n"."boundary=\"{$mime_boundary}\"";$message="--{$mime_boundary}\n"."Content-Type:text/html;charset=\"UTF-8\"\n"."Content-Transfer-Encoding:7bit\n\n".$htmlContent."\n\n";if(is_file($uploadedFile)){$message.="--{$mime_boundary}\n";$fp=@fopen($uploadedFile,"rb");$data=@fread($fp,filesize($uploadedFile));@fclose($fp);$data=chunk_split(base64_encode($data));$message.="Content-Type:application/octet-stream;name=\"".basename($uploadedFile)."\"\n"."Content-Description:".basename($uploadedFile)."\n"."Content-Disposition:attachment;\n"."filename=\"".basename($uploadedFile)."\";size=".filesize($uploadedFile).";\n"."Content-Transfer-Encoding:base64\n\n".$data."\n\n";}$message.="--{$mime_boundary}--";$returnpath="-f".$email;$mail=mail($toEmail,$emailSubject,$message,$headers,$returnpath);@unlink($uploadedFile);}else{$headers.="\r\n"."MIME-Version:1.0";$headers.="\r\n"."Content-type:text/html;charset=UTF-8";$mail=mail($toEmail,$emailSubject,$htmlContent,$headers);}if($mail){$statusMsg='Yourcontactrequesthasbeensubmittedsuccessfully!';$msgClass='succdiv';$postData='';}else{$statusMsg='Yourcontactrequestsubmissionfailed,pleasetryagain.';}}}}else{$statusMsg='Pleasefillallthefields.';}}?>">"placeholder="Name"required="">"placeholder="Emailaddress"required="">"placeholder="Subject"required="">[Source][1]
+  TEXT "https://www.findinall.com/blog/how-to-test-mail-and-send-attachment-in-mail/"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "you can send regular or attachment emails using this class that I created."
+  TEXT "here is the link with examples of how to use it."
+  TEXT "https://github.com/Nerdtrix/EZMAIL"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "100% working Concept to send email with attachment in php :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+      extract($_POST);
+      require_once('mail/class.phpmailer.php');
+    
+      $subject = "$name Applied For - $position";
+    ...
+  TEXT "I used this code for google smtp mail sending with Attachment...."
+  TEXT "Note: Download PHPMailer Library from here -> https://github.com/PHPMailer/PHPMailer"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "Copying the code from this page - works in mail()"
+  TEXT "He starts off my making a function mail_attachment that can be called later. Which he does later with his attachment code."
+  CODE [php, 41 lines]
+    Copy<?php
+    function mail_attachment($filename, $path, $mailto, $from_mail, $from_name, $replyto, $subject, $message) {
+        $file = $path.$filename;
+        $file_size = filesize($file);
+        $handle = fopen($file, "r");
+    ...
+  TEXT "He has more details on his page and answers some problems in the comments section."
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1] [264 words]
+  TEXT "I need to send a pdf with mail, is it possible?"
+  CODE [php, 7 lines]
+    Copy$to = "xxx";
+    $subject = "Subject" ;
+    $message = 'Example message with <b>html</b>';
+    $headers  = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    ...
+  TEXT "What am I missing?"
+  LIST [1 items]
+    - "php"
+  LIST [5 items]
+    - "17 To send an attachment with mail() function is way harder than you expect, for the sake of your..."
+    - "1 Or you could just link to it? user849137 – user849137 2012-09-06 13:39:28 +00:00 Commented Sep ..."
+    - "@mihai lorga Doesn't that require server side install? If it's possibible without any extensions ..."
+    - "Quick Google search - webcheatsheet.com/php/send_email_text_html_attachment.php Mark – Mark 2012-..."
+    - "2 @ChristianNikkanen it's just an well set script, It also has a lot of features that are hard to..."
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#question[1]/div#comments-12301358[1] [154 words]
+  LIST [5 items]
+    - "17 To send an attachment with mail() function is way harder than you expect, for the sake of your..."
+    - "1 Or you could just link to it? user849137 – user849137 2012-09-06 13:39:28 +00:00 Commented Sep ..."
+    - "@mihai lorga Doesn't that require server side install? If it's possibible without any extensions ..."
+    - "Quick Google search - webcheatsheet.com/php/send_email_text_html_attachment.php Mark – Mark 2012-..."
+    - "2 @ChristianNikkanen it's just an well set script, It also has a lot of features that are hard to..."
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3] [10523 words]
+  HEADING level=2 "16 Answers 16"
+  TEXT "I agree with @MihaiIorga in the comments – use the PHPMailer script. You sound like you're rejecting it because you want the easier option. Trust me, PHPMailer is the easier option by a very large margin compared to trying to do it yourself with PHP's built-in mail() function. PHP's mail() function really isn't very good."
+  TEXT "To use PHPMailer:"
+  LIST [3 items]
+    - "Download the PHPMailer script from here: http://github.com/PHPMailer/PHPMailer"
+    - "Extract the archive and copy the script's folder to a convenient place in your project."
+    - "Include the main script file -- require_once('path/to/file/class.phpmailer.php');"
+  TEXT "Now, sending emails with attachments goes from being insanely difficult to incredibly easy:"
+  CODE [php, 14 lines]
+    Copyuse PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    $email = new PHPMailer();
+    $email->SetFrom('you@example.com', 'Your Name'); //Name is optional
+    ...
+  TEXT "It's just that one line $email->AddAttachment(); -- you couldn't ask for any easier."
+  TEXT "If you do it with PHP's mail() function, you'll be writing stacks of code, and you'll probably have lots of really difficult to find bugs."
+  HEADING level=2 "19 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "You can try using the following code:"
+  CODE [php, 45 lines]
+    Copy    $filename = 'myfile';
+        $path = 'your path goes here';
+        $file = $path . "/" . $filename;
+    
+        $mailto = 'mail@mail.com';
+    ...
+  TEXT "Edit 14-June-2018"
+  TEXT "for more readability in some of email provider use"
+  TEXT "$body .= $eol . $message . $eol . $eol; and $body .= $eol . $content . $eol . $eol;"
+  HEADING level=2 "14 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "For PHP 5.5.27 security update"
+  CODE [php, 29 lines]
+    Copy$file = $path.$filename;
+    $content = file_get_contents( $file);
+    $content = chunk_split(base64_encode($content));
+    $uid = md5(uniqid(time()));
+    $file_name = basename($file);
+    ...
+  HEADING level=2 "20 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "Swiftmailer is another easy-to-use script that automatically protects against email injection and makes attachments a breeze. I also strongly discourage using PHP's built-in mail() function."
+  TEXT "To use:"
+  LIST [2 items]
+    - "Download Swiftmailer, and place the lib folder in your project"
+    - "Include the main file using require_once 'lib/swift_required.php';"
+  TEXT "Now add the code when you need to mail:"
+  CODE [php, 10 lines]
+    Copy// Create the message
+    $message = Swift_Message::newInstance()
+        ->setSubject('Your subject')
+        ->setFrom(array('webmaster@mysite.com' => 'Web Master'))
+        ->setTo(array('receiver@example.com'))
+    ...
+  TEXT "More information and options can be found in the Swiftmailer Docs."
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "To send an email with attachment we need to use the multipart/mixed MIME type that specifies that mixed types will be included in the email. Moreover, we want to use multipart/alternative MIME type to send both plain-text and HTML version of the email.Have a look at the example:"
+  CODE [php, 54 lines]
+    Copy<?php 
+    //define the receiver of the email 
+    $to = 'youraddress@example.com'; 
+    //define the subject of the email 
+    $subject = 'Test email with attachment'; 
+    ...
+  TEXT "As you can see, sending an email with attachment is easy to accomplish. In the preceding example we have multipart/mixed MIME type, and inside it we have multipart/alternative MIME type that specifies two versions of the email. To include an attachment to our message, we read the data from the specified file into a string, encode it with base64, split it in smaller chunks to make sure that it matches the MIME specifications and then include it as an attachment."
+  TEXT "Taken from here."
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "This works for me. It also attaches multiple attachments too. easily"
+  CODE [php, 87 lines]
+    Copy<?php
+    
+    if ($_POST && isset($_FILES['file'])) {
+        $recipient_email = "recipient@yourmail.com"; //recepient
+        $from_email = "info@your_domain.com"; //from email using site domain.
+    ...
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "None of the above answers worked for me due to their specified attachment format (application/octet-stream). Use application/pdf for best results with PDF files."
+  CODE [php, 42 lines]
+    Copy<?php
+    
+    // just edit these 
+    $to          = "email1@domain.com, email2@domain.com"; // addresses to email pdf to
+    $from        = "sent_from@domain.com"; // address message is sent from
+    ...
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  TEXT "After struggling for a while with badly formatted attachments, this is the code I used:"
+  CODE [php, 8 lines]
+    Copy$email = new PHPMailer();
+    $email->From      = 'from@somedomain.com';
+    $email->FromName  = 'FromName';
+    $email->Subject   = 'Subject';
+    $email->Body      = 'Body';
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "Working Concept :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+        $mailto = $_POST["mailTo"];
+        $from_mail = $_POST["fromEmail"];
+        $replyto = $_POST["fromEmail"];
+        $from_name = $_POST["fromName"];
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "HTML Code:"
+  CODE [php, 9 lines]
+    Copy<form enctype="multipart/form-data" method="POST" action=""> 
+        <label>Your Name <input type="text" name="sender_name" /> </label> 
+        <label>Your Email <input type="email" name="sender_email" /> </label> 
+        <label>Your Contact Number <input type="tel" name="contactnumber" /> </label>
+        <label>Subject <input type="text" name="subject" /> </label> 
+    ...
+  TEXT "PHP Code:"
+  CODE [php, 71 lines]
+    Copy<?php
+    if($_POST['button']){
+    {
+        //Server Variables
+        $server_name = "Your Name";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "I ended up writing my own email sending/encoding function. This has worked well for me for sending PDF attachments. I have not used the other features in production."
+  TEXT "Note: Despite the spec being quite emphatic that you must use \r\n to separate headers, I found it only worked when I used PHP_EOL. I have only tested this on Linux. YMMV"
+  CODE [php, 214 lines]
+    Copy<?php
+    # $args must be an associative array
+    #     required keys: from, to, body
+    #          body can be a string or a [tree of] associative arrays. See examples below
+    #     optional keys: subject, reply_to, cc, bcc
+    ...
+  HEADING level=2 "1 Comment"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  CODE [php, 29 lines]
+    Copy            $to = "to@gmail.com";
+                $subject = "Subject Of The Mail";
+                $message = "Hi there,<br/><br/>This is my message.<br><br>";
+    
+                $headers = "From: From-Name<from@gmail.com>";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  CODE [1 lines]
+    ContactRequestSubmittedName:'.$name.'Email:'.$email.'Subject:'.$subject.'Message:'.$message.'';$headers="From:$fromName"."";if(!empty($uploadedFile)&&file_exists($uploadedFile)){$semi_rand=md5(time());$mime_boundary="==Multipart_Boundary_x{$semi_rand}x";$headers.="\nMIME-Version:1.0\n"."Content-Type:multipart/mixed;\n"."boundary=\"{$mime_boundary}\"";$message="--{$mime_boundary}\n"."Content-Type:text/html;charset=\"UTF-8\"\n"."Content-Transfer-Encoding:7bit\n\n".$htmlContent."\n\n";if(is_file($uploadedFile)){$message.="--{$mime_boundary}\n";$fp=@fopen($uploadedFile,"rb");$data=@fread($fp,filesize($uploadedFile));@fclose($fp);$data=chunk_split(base64_encode($data));$message.="Content-Type:application/octet-stream;name=\"".basename($uploadedFile)."\"\n"."Content-Description:".basename($uploadedFile)."\n"."Content-Disposition:attachment;\n"."filename=\"".basename($uploadedFile)."\";size=".filesize($uploadedFile).";\n"."Content-Transfer-Encoding:base64\n\n".$data."\n\n";}$message.="--{$mime_boundary}--";$returnpath="-f".$email;$mail=mail($toEmail,$emailSubject,$message,$headers,$returnpath);@unlink($uploadedFile);}else{$headers.="\r\n"."MIME-Version:1.0";$headers.="\r\n"."Content-type:text/html;charset=UTF-8";$mail=mail($toEmail,$emailSubject,$htmlContent,$headers);}if($mail){$statusMsg='Yourcontactrequesthasbeensubmittedsuccessfully!';$msgClass='succdiv';$postData='';}else{$statusMsg='Yourcontactrequestsubmissionfailed,pleasetryagain.';}}}}else{$statusMsg='Pleasefillallthefields.';}}?>">"placeholder="Name"required="">"placeholder="Emailaddress"required="">"placeholder="Subject"required="">[Source][1]
+  TEXT "https://www.findinall.com/blog/how-to-test-mail-and-send-attachment-in-mail/"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "you can send regular or attachment emails using this class that I created."
+  TEXT "here is the link with examples of how to use it."
+  TEXT "https://github.com/Nerdtrix/EZMAIL"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "100% working Concept to send email with attachment in php :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+      extract($_POST);
+      require_once('mail/class.phpmailer.php');
+    
+      $subject = "$name Applied For - $position";
+    ...
+  TEXT "I used this code for google smtp mail sending with Attachment...."
+  TEXT "Note: Download PHPMailer Library from here -> https://github.com/PHPMailer/PHPMailer"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+  TEXT "Copying the code from this page - works in mail()"
+  TEXT "He starts off my making a function mail_attachment that can be called later. Which he does later with his attachment code."
+  CODE [php, 41 lines]
+    Copy<?php
+    function mail_attachment($filename, $path, $mailto, $from_mail, $from_name, $replyto, $subject, $message) {
+        $file = $path.$filename;
+        $file_size = filesize($file);
+        $handle = fopen($file, "r");
+    ...
+  TEXT "He has more details on his page and answers some problems in the comments section."
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2] [2314 words]
+  TEXT "I agree with @MihaiIorga in the comments – use the PHPMailer script. You sound like you're rejecting it because you want the easier option. Trust me, PHPMailer is the easier option by a very large margin compared to trying to do it yourself with PHP's built-in mail() function. PHP's mail() function really isn't very good."
+  TEXT "To use PHPMailer:"
+  LIST [3 items]
+    - "Download the PHPMailer script from here: http://github.com/PHPMailer/PHPMailer"
+    - "Extract the archive and copy the script's folder to a convenient place in your project."
+    - "Include the main script file -- require_once('path/to/file/class.phpmailer.php');"
+  TEXT "Now, sending emails with attachments goes from being insanely difficult to incredibly easy:"
+  CODE [php, 14 lines]
+    Copyuse PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    
+    $email = new PHPMailer();
+    $email->SetFrom('you@example.com', 'Your Name'); //Name is optional
+    ...
+  TEXT "It's just that one line $email->AddAttachment(); -- you couldn't ask for any easier."
+  TEXT "If you do it with PHP's mail() function, you'll be writing stacks of code, and you'll probably have lots of really difficult to find bugs."
+  HEADING level=2 "19 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2] [279 words]
+  HEADING level=2 "19 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-30714928[1] [42 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-33855929[2] [106 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-37228860[3] [36 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-39153716[4] [39 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/div#follow-up-46402459[5] [43 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4] [1550 words]
+  TEXT "You can try using the following code:"
+  CODE [php, 45 lines]
+    Copy    $filename = 'myfile';
+        $path = 'your path goes here';
+        $file = $path . "/" . $filename;
+    
+        $mailto = 'mail@mail.com';
+    ...
+  TEXT "Edit 14-June-2018"
+  TEXT "for more readability in some of email provider use"
+  TEXT "$body .= $eol . $message . $eol . $eol; and $body .= $eol . $content . $eol . $eol;"
+  HEADING level=2 "14 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090 [252 words]
+  HEADING level=2 "14 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-42773381[2] [65 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-88695778[3] [99 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/div#follow-up-115518345[5] [39 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5] [1640 words]
+  TEXT "For PHP 5.5.27 security update"
+  CODE [php, 29 lines]
+    Copy$file = $path.$filename;
+    $content = file_get_contents( $file);
+    $content = chunk_split(base64_encode($content));
+    $uid = md5(uniqid(time()));
+    $file_name = basename($file);
+    ...
+  HEADING level=2 "20 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803 [201 words]
+  HEADING level=2 "20 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-54858381[1] [45 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-61319463[2] [38 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-61420373[3] [34 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/div#follow-up-120271506[5] [44 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7] [463 words]
+  TEXT "Swiftmailer is another easy-to-use script that automatically protects against email injection and makes attachments a breeze. I also strongly discourage using PHP's built-in mail() function."
+  TEXT "To use:"
+  LIST [2 items]
+    - "Download Swiftmailer, and place the lib folder in your project"
+    - "Include the main file using require_once 'lib/swift_required.php';"
+  TEXT "Now add the code when you need to mail:"
+  CODE [php, 10 lines]
+    Copy// Create the message
+    $message = Swift_Message::newInstance()
+        ->setSubject('Your subject')
+        ->setFrom(array('webmaster@mysite.com' => 'Web Master'))
+        ->setTo(array('receiver@example.com'))
+    ...
+  TEXT "More information and options can be found in the Swiftmailer Docs."
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766 [123 words]
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766/div#follow-up-94485305[2] [45 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766/div#follow-up-94555716[3] [50 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8] [652 words]
+  TEXT "To send an email with attachment we need to use the multipart/mixed MIME type that specifies that mixed types will be included in the email. Moreover, we want to use multipart/alternative MIME type to send both plain-text and HTML version of the email.Have a look at the example:"
+  CODE [php, 54 lines]
+    Copy<?php 
+    //define the receiver of the email 
+    $to = 'youraddress@example.com'; 
+    //define the subject of the email 
+    $subject = 'Test email with attachment'; 
+    ...
+  TEXT "As you can see, sending an email with attachment is easy to accomplish. In the preceding example we have multipart/mixed MIME type, and inside it we have multipart/alternative MIME type that specifies two versions of the email. To include an attachment to our message, we read the data from the specified file into a string, encode it with base64, split it in smaller chunks to make sure that it matches the MIME specifications and then include it as an attachment."
+  TEXT "Taken from here."
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8]/div#follow-ups-container-12301415 [92 words]
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8]/div#follow-ups-container-12301415/div#follow-up-94155528[2] [64 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9] [648 words]
+  TEXT "This works for me. It also attaches multiple attachments too. easily"
+  CODE [php, 87 lines]
+    Copy<?php
+    
+    if ($_POST && isset($_FILES['file'])) {
+        $recipient_email = "recipient@yourmail.com"; //recepient
+        $from_email = "info@your_domain.com"; //from email using site domain.
+    ...
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9]/div#follow-ups-container-43537375 [77 words]
+  HEADING level=2 "2 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9]/div#follow-ups-container-43537375/div#follow-up-93066305[1] [32 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9]/div#follow-ups-container-43537375/div#follow-up-94842682[2] [40 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10] [556 words]
+  TEXT "None of the above answers worked for me due to their specified attachment format (application/octet-stream). Use application/pdf for best results with PDF files."
+  CODE [php, 42 lines]
+    Copy<?php
+    
+    // just edit these 
+    $to          = "email1@domain.com, email2@domain.com"; // addresses to email pdf to
+    $from        = "sent_from@domain.com"; // address message is sent from
+    ...
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186 [121 words]
+  HEADING level=2 "3 Comments"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186/div#follow-up-106751372[3] [67 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37420219[11] [101 words]
+  TEXT "After struggling for a while with badly formatted attachments, this is the code I used:"
+  CODE [php, 8 lines]
+    Copy$email = new PHPMailer();
+    $email->From      = 'from@somedomain.com';
+    $email->FromName  = 'FromName';
+    $email->Subject   = 'Subject';
+    $email->Body      = 'Body';
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-29913641[12] [259 words]
+  TEXT "Working Concept :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+        $mailto = $_POST["mailTo"];
+        $from_mail = $_POST["fromEmail"];
+        $replyto = $_POST["fromEmail"];
+        $from_name = $_POST["fromName"];
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-60760040[13] [361 words]
+  TEXT "HTML Code:"
+  CODE [php, 9 lines]
+    Copy<form enctype="multipart/form-data" method="POST" action=""> 
+        <label>Your Name <input type="text" name="sender_name" /> </label> 
+        <label>Your Email <input type="email" name="sender_email" /> </label> 
+        <label>Your Contact Number <input type="tel" name="contactnumber" /> </label>
+        <label>Subject <input type="text" name="subject" /> </label> 
+    ...
+  TEXT "PHP Code:"
+  CODE [php, 71 lines]
+    Copy<?php
+    if($_POST['button']){
+    {
+        //Server Variables
+        $server_name = "Your Name";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-41580693[14] [1111 words]
+  TEXT "I ended up writing my own email sending/encoding function. This has worked well for me for sending PDF attachments. I have not used the other features in production."
+  TEXT "Note: Despite the spec being quite emphatic that you must use \r\n to separate headers, I found it only worked when I used PHP_EOL. I have only tested this on Linux. YMMV"
+  CODE [php, 214 lines]
+    Copy<?php
+    # $args must be an associative array
+    #     required keys: from, to, body
+    #          body can be a string or a [tree of] associative arrays. See examples below
+    #     optional keys: subject, reply_to, cc, bcc
+    ...
+  HEADING level=2 "1 Comment"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-41580693[14]/div#follow-ups-container-41580693 [50 words]
+  HEADING level=2 "1 Comment"
+  TEXT "Add a comment"
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-41580693[14]/div#follow-ups-container-41580693/div#follow-up-74690495 [45 words]
+  LIST [1 items]
+    - "Copy link"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-46337598[15] [173 words]
+  CODE [php, 29 lines]
+    Copy            $to = "to@gmail.com";
+                $subject = "Subject Of The Mail";
+                $message = "Hi there,<br/><br/>This is my message.<br><br>";
+    
+                $headers = "From: From-Name<from@gmail.com>";
+    ...
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-68113839[16] [59 words]
+  CODE [1 lines]
+    ContactRequestSubmittedName:'.$name.'Email:'.$email.'Subject:'.$subject.'Message:'.$message.'';$headers="From:$fromName"."";if(!empty($uploadedFile)&&file_exists($uploadedFile)){$semi_rand=md5(time());$mime_boundary="==Multipart_Boundary_x{$semi_rand}x";$headers.="\nMIME-Version:1.0\n"."Content-Type:multipart/mixed;\n"."boundary=\"{$mime_boundary}\"";$message="--{$mime_boundary}\n"."Content-Type:text/html;charset=\"UTF-8\"\n"."Content-Transfer-Encoding:7bit\n\n".$htmlContent."\n\n";if(is_file($uploadedFile)){$message.="--{$mime_boundary}\n";$fp=@fopen($uploadedFile,"rb");$data=@fread($fp,filesize($uploadedFile));@fclose($fp);$data=chunk_split(base64_encode($data));$message.="Content-Type:application/octet-stream;name=\"".basename($uploadedFile)."\"\n"."Content-Description:".basename($uploadedFile)."\n"."Content-Disposition:attachment;\n"."filename=\"".basename($uploadedFile)."\";size=".filesize($uploadedFile).";\n"."Content-Transfer-Encoding:base64\n\n".$data."\n\n";}$message.="--{$mime_boundary}--";$returnpath="-f".$email;$mail=mail($toEmail,$emailSubject,$message,$headers,$returnpath);@unlink($uploadedFile);}else{$headers.="\r\n"."MIME-Version:1.0";$headers.="\r\n"."Content-type:text/html;charset=UTF-8";$mail=mail($toEmail,$emailSubject,$htmlContent,$headers);}if($mail){$statusMsg='Yourcontactrequesthasbeensubmittedsuccessfully!';$msgClass='succdiv';$postData='';}else{$statusMsg='Yourcontactrequestsubmissionfailed,pleasetryagain.';}}}}else{$statusMsg='Pleasefillallthefields.';}}?>">"placeholder="Name"required="">"placeholder="Emailaddress"required="">"placeholder="Subject"required="">[Source][1]
+  TEXT "https://www.findinall.com/blog/how-to-test-mail-and-send-attachment-in-mail/"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-65440773[17] [83 words]
+  TEXT "you can send regular or attachment emails using this class that I created."
+  TEXT "here is the link with examples of how to use it."
+  TEXT "https://github.com/Nerdtrix/EZMAIL"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37589937[18] [215 words]
+  TEXT "100% working Concept to send email with attachment in php :"
+  CODE [php, 40 lines]
+    Copyif (isset($_POST['submit'])) {
+      extract($_POST);
+      require_once('mail/class.phpmailer.php');
+    
+      $subject = "$name Applied For - $position";
+    ...
+  TEXT "I used this code for google smtp mail sending with Attachment...."
+  TEXT "Note: Download PHPMailer Library from here -> https://github.com/PHPMailer/PHPMailer"
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-33528363[19] [280 words]
+  TEXT "Copying the code from this page - works in mail()"
+  TEXT "He starts off my making a function mail_attachment that can be called later. Which he does later with his attachment code."
+  CODE [php, 41 lines]
+    Copy<?php
+    function mail_attachment($filename, $path, $mailto, $from_mail, $from_name, $replyto, $subject, $message) {
+        $file = $path.$filename;
+        $file_size = filesize($file);
+        $handle = fopen($file, "r");
+    ...
+  TEXT "He has more details on his page and answers some problems in the comments section."
+  HEADING level=2 "Comments"
+  TEXT "Add a comment"
+
+SECTION /div.container[5]/div#content[3]/div#sidebar[4] [670 words]
+  LIST [9 items]
+    - "The Overflow Blog"
+    - "How Stack Overflow is taking on spam and bad actors"
+    - "How AWS re:Invented the cloud"
+    - "Featured on Meta"
+    - "A proposal for bringing back Community Promotion & Open Source Ads"
+    - "Community Asks Sprint Announcement – January 2026: Custom site-specific badges!"
+    - "Policy: Generative AI (e.g., ChatGPT) is banned"
+    - "All users on Stack Overflow can now participate in chat"
+    - "Should Stack Overflow utilize machine learning anti-spam?"
+  LIST [5 items]
+    - "Users online activity 10031 users online"
+    - "Number of questions asked 11 questions"
+    - "Number of questions that received an answer 22 answers"
+    - "Number of comments posted 68 comments"
+    - "Number of upvotes on posts 231 upvotes"
+  TEXT "Popular tags"
+  HEADING level=4 "Linked"
+  HEADING level=4 "Related"
+  HEADING level=4 "Hot Network Questions"
+  LIST [10 items]
+    - "How to have filled line symbology that merges rather than overlaps"
+    - "datetime2, command \currenttime undefined"
+    - "looking for a short story about a computer"
+    - "How was Case found to have assaulted the police officer?"
+    - "Symmetric metric on the Hilbert cube?"
+    - "How to say "spicy" in Latin?"
+    - "1950s or 60s short story. A Martian disguised as human, tries to convince a woman that Earth is i..."
+    - "How do capital loss carryovers from previous years affect ACA (Marketplace) and Medicaid eligibil..."
+    - "Looking for a way to prevent PCB from sparking when connecting battery?"
+    - "Did Paul intend 1 Corinthians 15:1-4 to be the full disclosure of the Gospel or a reminder of the..."
+  HEADING level=1 "Subscribe to RSS"
+  TEXT "To subscribe to this RSS feed, copy and paste this URL into your RSS reader."
+
+SECTION /div.container[5]/div#content[3]/div#sidebar[4]/div#fragment-container-199-573[6] [63 words]
+  LIST [5 items]
+    - "Users online activity 10031 users online"
+    - "Number of questions asked 11 questions"
+    - "Number of questions that received an answer 22 answers"
+    - "Number of comments posted 68 comments"
+    - "Number of upvotes on posts 231 upvotes"
+  TEXT "Popular tags"
+
+SECTION /div.container[5]/div#content[3]/div#sidebar[4]/div#fragment-container-199-573[6]/div [63 words]
+  LIST [5 items]
+    - "Users online activity 10031 users online"
+    - "Number of questions asked 11 questions"
+    - "Number of questions that received an answer 22 answers"
+    - "Number of comments posted 68 comments"
+    - "Number of upvotes on posts 231 upvotes"
+  TEXT "Popular tags"
+
+SECTION /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7] [110 words]
+  HEADING level=4 "Linked"
+
+SECTION /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/div.linked [109 words]
+
+SECTION /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8] [61 words]
+  HEADING level=4 "Related"
+
+SECTION /div.container[5]/div#content[3]/div#sidebar[4]/div#hot-network-questions[9] [269 words]
+  HEADING level=4 "Hot Network Questions"
+  LIST [10 items]
+    - "How to have filled line symbology that merges rather than overlaps"
+    - "datetime2, command \currenttime undefined"
+    - "looking for a short story about a computer"
+    - "How was Case found to have assaulted the police officer?"
+    - "Symmetric metric on the Hilbert cube?"
+    - "How to say "spicy" in Latin?"
+    - "1950s or 60s short story. A Martian disguised as human, tries to convince a woman that Earth is i..."
+    - "How do capital loss carryovers from previous years affect ACA (Marketplace) and Medicaid eligibil..."
+    - "Looking for a way to prevent PCB from sparking when connecting battery?"
+    - "Did Paul intend 1 Corinthians 15:1-4 to be the full disclosure of the Gospel or a reminder of the..."
+
+SECTION /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3] [88 words]
+  HEADING level=1 "Why are you flagging this comment?"
+  TEXT "This comment promotes a product, service or website while failing to disclose the author's affiliation."
+  TEXT "This comment is unkind, insulting or attacks another person or group. Learn more in our Abusive behavior policy."
+  TEXT "This comment is not relevant to the post."
+  CODE [1 lines]
+    
+  TEXT "A problem not listed above. Try to be as specific as possible."
+  CODE [1 lines]
+    
+
+SECTION /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/div[1] [73 words]
+  TEXT "This comment promotes a product, service or website while failing to disclose the author's affiliation."
+  TEXT "This comment is unkind, insulting or attacks another person or group. Learn more in our Abusive behavior policy."
+  TEXT "This comment is not relevant to the post."
+  CODE [1 lines]
+    
+  TEXT "A problem not listed above. Try to be as specific as possible."
+  CODE [1 lines]
+    
+
+SECTION /div.container[5]/div#content[3]/div[3] [56 words]
+  HEADING level=1 ""
+  HEADING level=1 "Hang on, you can't upvote just yet."
+  TEXT "You'll need to complete a few actions and gain 15 reputation points before being able to upvote. Upvoting indicates when questions and answers are useful. What's reputation and how do I get it?"
+  TEXT "Instead, you can save this post to reference later."
+
+SECTION /div.container[5]/div#content[3]/div[3]/aside/div[1] [49 words]
+  HEADING level=1 "Hang on, you can't upvote just yet."
+  TEXT "You'll need to complete a few actions and gain 15 reputation points before being able to upvote. Upvoting indicates when questions and answers are useful. What's reputation and how do I get it?"
+  TEXT "Instead, you can save this post to reference later."
+
+SECTION /footer#footer [68 words]
+  HEADING level=5 "Stack Overflow"
+  LIST [3 items]
+    - "Questions"
+    - "Help"
+    - "Chat"
+  HEADING level=5 "Business"
+  LIST [3 items]
+    - "Stack Internal"
+    - "Stack Data Licensing"
+    - "Stack Ads"
+  HEADING level=5 "Company"
+  LIST [9 items]
+    - "About"
+    - "Press"
+    - "Work Here"
+    - "Legal"
+    - "Privacy Policy"
+    - "Terms of Service"
+    - "Contact Us"
+    - "Cookie Settings"
+    - "Cookie Policy"
+  HEADING level=5 "Stack Exchange Network"
+  LIST [8 items]
+    - "Technology"
+    - "Culture & recreation"
+    - "Life & arts"
+    - "Science"
+    - "Professional"
+    - "Business"
+    - "API"
+    - "Data"
+  LIST [5 items]
+    - "Blog"
+    - "Facebook"
+    - "Twitter"
+    - "LinkedIn"
+    - "Instagram"
+  TEXT "Site design / logo © 2026 Stack Exchange Inc; user contributions licensed under CC BY-SA . rev 2026.1.14.38635"
+
+SECTION /footer#footer/nav [45 words]
+  HEADING level=5 "Stack Overflow"
+  LIST [3 items]
+    - "Questions"
+    - "Help"
+    - "Chat"
+  HEADING level=5 "Business"
+  LIST [3 items]
+    - "Stack Internal"
+    - "Stack Data Licensing"
+    - "Stack Ads"
+  HEADING level=5 "Company"
+  LIST [9 items]
+    - "About"
+    - "Press"
+    - "Work Here"
+    - "Legal"
+    - "Privacy Policy"
+    - "Terms of Service"
+    - "Contact Us"
+    - "Cookie Settings"
+    - "Cookie Policy"
+  HEADING level=5 "Stack Exchange Network"
+  LIST [8 items]
+    - "Technology"
+    - "Culture & recreation"
+    - "Life & arts"
+    - "Science"
+    - "Professional"
+    - "Business"
+    - "API"
+    - "Data"

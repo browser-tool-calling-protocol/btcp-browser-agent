@@ -1,0 +1,133 @@
+PAGE: http://localhost/ | Rose Mary Woods, Devoted Nixon Secretary, Dies : NPR | viewport=1024x768
+OUTLINE: landmarks=22 sections=53 headings=58 words=2678
+
+LIST [2 items] /ul
+REGION "NPR audio player" @ref:0 [10 words, 3 items] /div#player-react-mount[4]/section#npr-player
+  ARTICLE "item initial" @ref:1 [7 words] /div#player-react-mount[4]/section#npr-player/article.item-initial
+  NAVIGATION "audio player navigation" @ref:2 [4 words, 3 items] /div#player-react-mount[4]/section#npr-player/ul
+BANNER "NPR header" @ref:3 [135 words, 61 links, 63 items] /header#globalheader
+  NAVIGATION "navigation" @ref:4 [135 words, 61 links, 63 items] /header#globalheader/nav.navigation
+    LIST [7 items] /header#globalheader/nav.navigation/ul.navigation__top-level
+      LIST [2 items] /header#globalheader/nav.navigation/ul.navigation__top-level/li[7]/ul
+    REGION "main menu" @ref:5 [101 words, 42 links, 42 items] /header#globalheader/nav.navigation/section#main-menu[1]
+      REGION "menu inner" @ref:6 [101 words, 42 links, 42 items] /header#globalheader/nav.navigation/section#main-menu[1]/div.menu__inner
+        BANNER "menu header" @ref:7 [3 words] /header#globalheader/nav.navigation/section#main-menu[1]/div.menu__inner/header.menu__header
+        LIST [9 items] /header#globalheader/nav.navigation/section#main-menu[1]/div.menu__inner/ul.menu__list
+          LIST [8 items] /nav.navigation/section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[2]/ul
+          LIST [9 items] /nav.navigation/section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[3]/ul
+          LIST [5 items] /nav.navigation/section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[4]/ul
+          LIST [6 items] /nav.navigation/section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[5]/ul[1]
+          LIST [4 items] /nav.navigation/section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[5]/ul[2]
+          LIST [1 items] /nav.navigation/section#main-menu[1]/div.menu__inner/ul.menu__list/li.menu__item[5]/ul[3]
+    REGION "menu" @ref:8 [14 words, 6 links, 6 items] /header#globalheader/nav.navigation/section.menu[2]
+      LIST [6 items] /header#globalheader/nav.navigation/section.menu[2]/div.menu__list-wrap/ul.menu__list
+    REGION "menu" @ref:9 [7 words, 6 links, 6 items] /header#globalheader/nav.navigation/section.menu[3]
+      LIST [6 items] /header#globalheader/nav.navigation/section.menu[3]/div.menu__list-wrap/ul.menu__list
+MAIN "main content" @ref:10 [939 words, 103 links, 19 paragraphs, 34 items, 1 code] /main
+  REGION "wrapper" @ref:11 [837 words, 101 links, 17 paragraphs, 34 items, 1 code] /main/div#wrapper[2]
+    BANNER "contentheader" @ref:12 /main/div#wrapper[2]/header.contentheader
+    REGION "main section" @ref:13 [830 words, 100 links, 15 paragraphs, 34 items, 1 code] /main/div#wrapper[2]/section#main-section
+      ARTICLE "Obituaries" @ref:14 [774 words, 72 links, 15 paragraphs, 5 items, 1 code] /main/div#wrapper[2]/section#main-section/article
+        HEADING level=3 "Obituaries" /main/div#wrapper[2]/section#main-section/article/h3
+        HEADING level=1 "Rose Mary Woods, Devoted Nixon Secretary, Dies" /main/div#wrapper[2]/section#main-section/article/h1
+        ARTICLE "audio-module" @ref:15 [26 words, 1 links, 2 items, 1 code] /main/div#wrapper[2]/section#main-section/article/div#headlineaudio[4]/article#res4463533
+          HEADING level=4 "Rose Mary Woods, Devoted Nixon Secretary, Dies" /div#wrapper[2]/section#main-section/article/div#headlineaudio[4]/article#res4463533/h4
+          LIST [2 items] /div#wrapper[2]/section#main-section/article/div#headlineaudio[4]/article#res4463533/ul
+        REGION "storytext" @ref:16 [409 words, 13 paragraphs] /main/div#wrapper[2]/section#main-section/article/div#storytext[5]
+          COMPLEMENTARY "advertisement" @ref:17 [2 words] /main/div#wrapper[2]/section#main-section/article/div#storytext[5]/aside#ad-backstage-wrap
+        LIST [3 items] /main/div#wrapper[2]/section#main-section/article/ul
+        COMPLEMENTARY "recommended stories" @ref:18 [74 words, 15 links] /main/div#wrapper[2]/section#main-section/article/aside[1]
+          HEADING level=3 "More Stories From NPR" /main/div#wrapper[2]/section#main-section/article/aside[1]/h3
+          ARTICLE "NPR Investigation: January 6, 2021" @ref:19 [16 words, 3 links] /main/div#wrapper[2]/section#main-section/article/aside[1]/article
+            HEADING level=5 "NPR Investigation: January 6, 2021" /div#wrapper[2]/section#main-section/article/aside[1]/article/h5
+            HEADING level=4 "2 police officers relive Jan. 6 through their own bodycam..." /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+          ARTICLE "Politics" @ref:20 [15 words, 3 links] /main/div#wrapper[2]/section#main-section/article/aside[1]/article
+            HEADING level=5 "Politics" /div#wrapper[2]/section#main-section/article/aside[1]/article/h5
+            HEADING level=4 "Venezuela's Machado says she presented her Nobel Peace Pr..." /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+          ARTICLE "NPR+ | The News Roundup For October 24, 2025" @ref:21 [9 words, 2 links] /main/div#wrapper[2]/section#main-section/article/aside[1]/article
+            HEADING level=4 "NPR+ | The News Roundup For October 24, 2025" /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+          ARTICLE "Investigations" @ref:22 [12 words, 3 links] /main/div#wrapper[2]/section#main-section/article/aside[1]/article
+            HEADING level=5 "Investigations" /div#wrapper[2]/section#main-section/article/aside[1]/article/h5
+            HEADING level=4 "House Republicans are investigating Jan. 6. NPR fact-chec..." /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+          ARTICLE "NPR+ | The News Roundup For November 14, 2025" @ref:23 [9 words, 2 links] /main/div#wrapper[2]/section#main-section/article/aside[1]/article
+            HEADING level=4 "NPR+ | The News Roundup For November 14, 2025" /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+          ARTICLE "NPR+ | The News Roundup For January 9, 2026" @ref:24 [9 words, 2 links] /main/div#wrapper[2]/section#main-section/article/aside[1]/article
+            HEADING level=4 "NPR+ | The News Roundup For January 9, 2026" /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+        COMPLEMENTARY "recommended stories" @ref:25 [242 words, 54 links] /main/div#wrapper[2]/section#main-section/article/aside[2]
+          REGION "More Stories From NPR" @ref:26 [85 words, 18 links] /main/div#wrapper[2]/section#main-section/article/aside[2]/section[1]
+            HEADING level=3 "More Stories From NPR" /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/h3
+            ARTICLE "Obituaries" @ref:27 [17 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article
+              HEADING level=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+              HEADING level=4 "Claudette Colvin, who refused to move seats on a bus at s..." /section#main-section/article/aside[2]/section[1]/article/h4
+            ARTICLE "Obituaries" @ref:28 [10 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article
+              HEADING level=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+              HEADING level=4 "Scott Adams, the controversial cartoonist behind 'Dilbert..." /section#main-section/article/aside[2]/section[1]/article/h4
+            ARTICLE "Obituaries" @ref:29 [14 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article
+              HEADING level=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+              HEADING level=4 "Bob Weir, guitarist and founding member of the Grateful D..." /section#main-section/article/aside[2]/section[1]/article/h4
+            ARTICLE "Obituaries" @ref:30 [16 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article
+              HEADING level=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+              HEADING level=4 "CIA turncoat Aldrich Ames, who sold U.S. secrets to the S..." /section#main-section/article/aside[2]/section[1]/article/h4
+            ARTICLE "Obituaries" @ref:31 [13 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article
+              HEADING level=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+              HEADING level=4 "Hungarian filmmaker Béla Tarr — known for bleak, existent..." /section#main-section/article/aside[2]/section[1]/article/h4
+            ARTICLE "Obituaries" @ref:32 [11 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/article
+              HEADING level=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+              HEADING level=4 "Edith Renfrow Smith, pioneer and witness to history, dies..." /section#main-section/article/aside[2]/section[1]/article/h4
+          COMPLEMENTARY "advertisement" @ref:33 [2 words] /main/div#wrapper[2]/section#main-section/article/aside[2]/aside#ad-end-of-story-wrap
+          REGION "Popular on NPR.org" @ref:34 [74 words, 18 links] /main/div#wrapper[2]/section#main-section/article/aside[2]/section[2]
+            HEADING level=3 "Popular on NPR.org" /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/h3
+            ARTICLE "Politics" @ref:35 [10 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article
+              HEADING level=5 "Politics" /section#main-section/article/aside[2]/section[2]/article/h5
+              HEADING level=4 "Minnesota shows what happens when governing and content c..." /section#main-section/article/aside[2]/section[2]/article/h4
+            ARTICLE "Investigations" @ref:36 [11 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article
+              HEADING level=5 "Investigations" /section#main-section/article/aside[2]/section[2]/article/h5
+              HEADING level=4 "House Republicans are investigating Jan. 6. NPR fact-chec..." /section#main-section/article/aside[2]/section[2]/article/h4
+            ARTICLE "Pop Culture Happy Hour" @ref:37 [16 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article
+              HEADING level=5 "Pop Culture Happy Hour" /section#main-section/article/aside[2]/section[2]/article/h5
+              HEADING level=4 "'A Knight of the Seven Kingdoms' is 'Game of Thrones' for..." /section#main-section/article/aside[2]/section[2]/article/h4
+            ARTICLE "Explainer" @ref:38 [11 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article
+              HEADING level=5 "Explainer" /section#main-section/article/aside[2]/section[2]/article/h5
+              HEADING level=4 "Trump threatened to invoke the Insurrection Act (again). ..." /section#main-section/article/aside[2]/section[2]/article/h4
+            ARTICLE "Business" @ref:39 [10 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article
+              HEADING level=5 "Business" /section#main-section/article/aside[2]/section[2]/article/h5
+              HEADING level=4 "Verizon just had a big outage. Here's what we know" /section#main-section/article/aside[2]/section[2]/article/h4
+            ARTICLE "Up First Newsletter" @ref:40 [13 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/article
+              HEADING level=5 "Up First Newsletter" /section#main-section/article/aside[2]/section[2]/article/h5
+              HEADING level=4 "Trump threatens military action in Minneapolis. And, insi..." /section#main-section/article/aside[2]/section[2]/article/h4
+          REGION "NPR Editors' Picks" @ref:41 [84 words, 18 links] /main/div#wrapper[2]/section#main-section/article/aside[2]/section[3]
+            HEADING level=3 "NPR Editors' Picks" /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/h3
+            ARTICLE "Health" @ref:42 [14 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article
+              HEADING level=5 "Health" /section#main-section/article/aside[2]/section[3]/article/h5
+              HEADING level=4 "Trump struck deals with 16 drug companies. But they're st..." /section#main-section/article/aside[2]/section[3]/article/h4
+            ARTICLE "Global Health" @ref:43 [10 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article
+              HEADING level=5 "Global Health" /section#main-section/article/aside[2]/section[3]/article/h5
+              HEADING level=4 "This hospice has a bold new mission: saving lives" /section#main-section/article/aside[2]/section[3]/article/h4
+            ARTICLE "Business" @ref:44 [17 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article
+              HEADING level=5 "Business" /section#main-section/article/aside[2]/section[3]/article/h5
+              HEADING level=4 "Canada agrees to cut tariff on Chinese EVs in return for ..." /section#main-section/article/aside[2]/section[3]/article/h4
+            ARTICLE "The NPR news quiz" @ref:45 [17 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article
+              HEADING level=5 "The NPR news quiz" /section#main-section/article/aside[2]/section[3]/article/h5
+              HEADING level=4 "What do eggs, Grok and Greenland have in common? They're ..." /section#main-section/article/aside[2]/section[3]/article/h4
+            ARTICLE "Politics" @ref:46 [10 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article
+              HEADING level=5 "Politics" /section#main-section/article/aside[2]/section[3]/article/h5
+              HEADING level=4 "With limited political power, Minnesota Democrats navigat..." /section#main-section/article/aside[2]/section[3]/article/h4
+            ARTICLE "Climate" @ref:47 [13 words, 3 links] /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/article
+              HEADING level=5 "Climate" /section#main-section/article/aside[2]/section[3]/article/h5
+              HEADING level=4 "FEMA is getting rid of thousands of workers in areas reco..." /section#main-section/article/aside[2]/section[3]/article/h4
+      CONTENTINFO "NPR footer" @ref:48 [56 words, 28 links, 29 items] /main/div#wrapper[2]/section#main-section/footer#npr-footer
+        HEADING level=6 "Read & Listen" /main/div#wrapper[2]/section#main-section/footer#npr-footer/h6
+        LIST [5 items] /main/div#wrapper[2]/section#main-section/footer#npr-footer/ul
+        HEADING level=6 "Connect" /main/div#wrapper[2]/section#main-section/footer#npr-footer/h6
+        LIST [8 items] /main/div#wrapper[2]/section#main-section/footer#npr-footer/ul
+        HEADING level=6 "About NPR" /main/div#wrapper[2]/section#main-section/footer#npr-footer/h6
+        LIST [6 items] /main/div#wrapper[2]/section#main-section/footer#npr-footer/ul
+        HEADING level=6 "Get Involved" /main/div#wrapper[2]/section#main-section/footer#npr-footer/h6
+        LIST [5 items] /main/div#wrapper[2]/section#main-section/footer#npr-footer/ul
+        LIST [5 items] /main/div#wrapper[2]/section#main-section/footer#npr-footer/ul
+    COMPLEMENTARY "advertisement" @ref:49 [7 words, 1 links, 2 paragraphs] /main/div#wrapper[2]/div#main-sidebar/aside#ad-standard-wrap
+  REGION "global modal mount" @ref:50 /main/section#global-modal-mount[1]
+  REGION "Exclusive benefits" @ref:51 [33 words, 2 links, 2 paragraphs] /main/section[2]
+    HEADING level=5 "Exclusive benefits" /main/section[2]/h5
+    HEADING level=6 "Give a little. Get a lot." /main/section[2]/h6
+REGION "onetrust consent sdk" @ref:52 [592 words, 1 links, 5 paragraphs] /div#onetrust-consent-sdk[5]

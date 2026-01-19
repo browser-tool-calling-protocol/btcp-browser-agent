@@ -1,0 +1,374 @@
+PAGE: http://localhost/ | Amazon.com: ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C : Electronics | viewport=1024x768
+OUTLINE: landmarks=19 sections=208 headings=115 words=33027
+
+REGION "a page" @ref:0 [33006 words, 486 links, 35 paragraphs, 277 items] /div#a-page[1]
+  NAVIGATION "Shortcuts menu" @ref:1 [71 words, 12 links, 14 items] /div#a-page[1]/nav#shortcut-menu
+    HEADING level=2 "Skip to" /div#a-page[1]/nav#shortcut-menu/h2#nav-assistant-links-heading[1]
+    LIST [8 items] /div#a-page[1]/nav#shortcut-menu/ul[1]
+    HEADING level=2 "Keyboard shortcuts" /div#a-page[1]/nav#shortcut-menu/h2#nav-assist-shortcuts-heading[2]
+    LIST [6 items] /div#a-page[1]/nav#shortcut-menu/ul[2]
+  BANNER "navbar main" @ref:2 [2019 words, 30 links, 20 items] /div#a-page[1]/header#navbar-main
+    NAVIGATION "Primary" @ref:3 [2019 words, 30 links, 20 items] /div#a-page[1]/header#navbar-main/div#navbar
+      REGION "nav belt" @ref:4 [127 words, 6 links] /div#a-page[1]/header#navbar-main/div#navbar/div#nav-belt[1]
+        REGION "nav fill search" @ref:5 [76 words] /div#a-page[1]/header#navbar-main/div#navbar/div#nav-belt[1]/div#nav-fill-search[2]
+          REGION "nav search" @ref:6 [72 words] /div#a-page[1]/header#navbar-main/div#navbar/div#nav-belt[1]/div#nav-fill-search[2]/div#nav-search
+            REGION "nav left" @ref:7 [70 words] /div#navbar/div#nav-belt[1]/div#nav-fill-search[2]/div#nav-search/form#nav-search-bar-form/div.nav-left[1]
+              REGION "nav search dropdown card" @ref:8 [70 words] /div#nav-belt[1]/div#nav-fill-search[2]/div#nav-search/form#nav-search-bar-form/div.nav-left[1]/div#nav-search-dropdown-card
+                REGION "nav search scope" @ref:9 [70 words] /div#nav-fill-search[2]/div#nav-search/form#nav-search-bar-form/div.nav-left[1]/div#nav-search-dropdown-card/div.nav-search-scope
+      HEADING level=5 "International Shopping Transition Alert" /div#a-page[1]/header#navbar-main/div#navbar/div#nav-flyout-iss-anchor[2]/div.nav-coreFlyout[2]/h5#glow-toaster-title
+      HEADING level=I "Your Lists" /div#nav-flyout-anchor[3]/div#nav-flyout-accountList[3]/div.nav-template[2]/div#nav-al-container/div#nav-al-wishlist[2]/div#nav-al-title
+      LIST [2 items] /div#nav-flyout-anchor[3]/div#nav-flyout-accountList[3]/div.nav-template[2]/div#nav-al-container/div#nav-al-wishlist[2]/ul
+      HEADING level=I "Your Account" /div#nav-flyout-anchor[3]/div#nav-flyout-accountList[3]/div.nav-template[2]/div#nav-al-container/div#nav-al-your-account[3]/div.nav-title
+      LIST [12 items] /div#nav-flyout-anchor[3]/div#nav-flyout-accountList[3]/div.nav-template[2]/div#nav-al-container/div#nav-al-your-account[3]/ul
+      REGION "nav main" @ref:10 [67 words, 8 links, 6 items] /div#a-page[1]/header#navbar-main/div#navbar/div#nav-main[5]
+        LIST [6 items] /div#navbar/div#nav-main[5]/div.nav-fill[2]/div#nav-xshop-container[2]/div#nav-xshop/ul.nav-ul
+  REGION "dp" @ref:11 [27019 words, 383 links, 35 paragraphs, 161 items] /div#a-page[1]/div#dp[1]
+    MAIN "dp container" @ref:12 [27019 words, 383 links, 35 paragraphs, 161 items] /div#a-page[1]/div#dp[1]/div#dp-container
+      REGION "above dp container" @ref:13 [337 words, 3 links, 5 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#above-dp-container[1]
+        REGION "desktop dp ilm feature div 01" @ref:14 [334 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#above-dp-container[1]/div#desktop-dp-ilm_feature_div_01[1]
+          REGION @ref:15 [201 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#above-dp-container[1]/div#desktop-dp-ilm_feature_div_01[1]/div
+            REGION @ref:16 [199 words] /div#dp[1]/div#dp-container/div#above-dp-container[1]/div#desktop-dp-ilm_feature_div_01[1]/div/div
+        LIST [5 items] /div#dp-container/div#above-dp-container[1]/div[4]/div/div/ul
+      REGION "ppd" @ref:17 [4899 words, 54 links, 3 paragraphs, 45 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]
+        REGION "rightCol" @ref:18 [1725 words, 18 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]
+          REGION "desktop buybox" @ref:19 [1132 words, 17 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div#desktop_buybox[7]
+            REGION "buybox" @ref:20 [1132 words, 17 links] /div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div#desktop_buybox[7]/div#buybox
+              REGION "Shipping & Fee Details" @ref:21 [1117 words, 17 links] /div#dp-container/div#ppd[5]/div#rightCol[1]/div#desktop_buybox[7]/div#buybox/div
+                REGION "qualifiedBuybox" @ref:22 [1117 words, 17 links] /div#ppd[5]/div#rightCol[1]/div#desktop_buybox[7]/div#buybox/div/div#qualifiedBuybox
+                  REGION "desktop qualifiedBuyBox" @ref:23 [753 words, 15 links] /div#desktop_buybox[7]/div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]
+                    REGION "Shipping & Fee Details" @ref:24 [120 words, 3 links] /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[4]
+                      REGION "amazonGlobal feature div" @ref:25 [111 words, 2 links] /div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[4]/div#amazonGlobal_feature_div[8]
+                        HEADING level=3 "Shipping & Fee Details" /form#addToCart/div#desktop_qualifiedBuyBox[4]/div[4]/div#amazonGlobal_feature_div[8]/div#a-popover-NEW_0/h3
+                    REGION @ref:26 [81 words] /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div[8]
+                    REGION "quantityRelocate feature div" @ref:27 [128 words] /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#quantityRelocate_feature_div[11]
+                    REGION "buyNow feature div" @ref:28 [83 words] /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#buyNow_feature_div[17]
+                      REGION "buyNow" @ref:29 [83 words] /div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#buyNow_feature_div[17]/div#buyNow
+                    REGION "offerDisplayFeatures desktop" @ref:30 [230 words, 10 links] /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]
+                      REGION "offer display features" @ref:31 [230 words, 10 links] /div/div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features
+                        HEADING level=I "Shipper / Seller" /div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[3]
+                        HEADING level=I "Shipper / Seller" /form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[3]/div[2]
+                        HEADING level=I "Returns" /div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[6]
+                        REGION @ref:32 [186 words, 6 links] /div#qualifiedBuybox/form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]
+                          REGION @ref:33 [186 words, 6 links] /form#addToCart/div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div
+                            REGION @ref:34 [70 words, 2 links] /div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[4]
+                              HEADING level=I "Support" /div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[4]
+                              REGION @ref:35 [66 words, 1 links] /div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[4]/div
+                                HEADING level=I "What's Product Support?" /div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[4]/div
+                            HEADING level=I "Payment" /div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[5]
+                            HEADING level=I "Your transaction is secure" /div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[5]/div
+                            REGION @ref:36 [71 words, 2 links] /div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[11]
+                              HEADING level=I "Packaging" /div#desktop_qualifiedBuyBox[4]/div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[11]
+                              REGION @ref:37 [66 words, 1 links] /div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[11]/div
+                                HEADING level=I "Ships in product packaging" /div#offerDisplayFeatures_desktop[21]/div#offer-display-features/div[15]/div/div[11]/div
+                  REGION "addToWishlist feature div" @ref:38 [363 words, 2 links] /div#desktop_buybox[7]/div#buybox/div/div#qualifiedBuybox/form#addToCart/div#addToWishlist_feature_div[7]
+                    REGION "wishlistButtonStack" @ref:39 [169 words, 2 links] /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#addToWishlist_feature_div[7]/div#wishlistButtonStack
+                      HEADING level=3 "Sorry, there was a problem." /div#qualifiedBuybox/form#addToCart/div#addToWishlist_feature_div[7]/div#wishlistButtonStack/div#atwl-dd-error-holder[6]/h3
+                      HEADING level=3 "Sorry, there was a problem." /div#qualifiedBuybox/form#addToCart/div#addToWishlist_feature_div[7]/div#wishlistButtonStack/div#atwl-dd-unavail-holder[7]/h3
+          REGION "olpLinkWidget feature div" @ref:40 [162 words, 1 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div#olpLinkWidget_feature_div[8]
+          REGION "tellAFriendBox feature div" @ref:41 [60 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div#tellAFriendBox_feature_div[10]
+          REGION @ref:42 [334 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div[16]
+            REGION @ref:43 [201 words] /div#dp[1]/div#dp-container/div#ppd[5]/div#rightCol[1]/div[16]/div
+              REGION @ref:44 [199 words] /div#dp-container/div#ppd[5]/div#rightCol[1]/div[16]/div/div
+        REGION "leftCol" @ref:45 [678 words, 20 links, 2 paragraphs, 31 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]
+          REGION "imageBlock feature div" @ref:46 [585 words, 19 links, 2 paragraphs, 31 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]
+            REGION "imageBlock" @ref:47 [314 words, 3 links, 18 items] /div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]
+              LIST [10 items] /div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#altImages[1]/ul
+              REGION "main image container" @ref:48 [277 words, 2 links, 8 items] /div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#main-image-container[1]
+                REGION "video outer container" @ref:49 [76 words, 1 links, 4 items] /div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#main-image-container[1]/div#video-outer-container[1]
+                  REGION "main video container" @ref:50 [70 words, 1 links, 4 items] /div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#main-image-container[1]/div#video-outer-container[1]/div#main-video-container[1]
+                LIST [4 items] /div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#main-image-container[1]/ul.list
+            REGION "a popover immersiveView" @ref:51 [127 words, 15 links, 13 items] /div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]
+              REGION "iv tab view container" @ref:52 [127 words, 15 links, 13 items] /div#dp-container/div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container
+                LIST [4 items] /div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container/ul
+                REGION "ivVideosTab" @ref:53 [123 words, 11 links, 9 items] /div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container/div#ivVideosTab[1]
+                  REGION "ivVideoBlock" @ref:54 [123 words, 11 links, 9 items] /div#leftCol[3]/div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container/div#ivVideosTab[1]/div#ivVideoBlock
+                    REGION @ref:55 [123 words, 11 links, 9 items] /div#imageBlock_feature_div[1]/div#a-popover-immersiveView[4]/div#iv-tab-view-container/div#ivVideosTab[1]/div#ivVideoBlock/div
+                      REGION @ref:56 [54 words, 1 links, 4 items] /div#a-popover-immersiveView[4]/div#iv-tab-view-container/div#ivVideosTab[1]/div#ivVideoBlock/div/div
+                        REGION @ref:57 [54 words, 1 links, 4 items] /div#iv-tab-view-container/div#ivVideosTab[1]/div#ivVideoBlock/div/div/div
+                          REGION "Video Player" @ref:58 [32 words, 4 items] /div#ivVideosTab[1]/div#ivVideoBlock/div/div/div/div[2]
+                            LIST [1 items] /div#ivVideoBlock/div/div/div/div[2]/ul
+                            LIST [1 items] /div#ivVideoBlock/div/div/div/div[2]/ul
+                            LIST [1 items] /div#ivVideoBlock/div/div/div/div[2]/ul
+                            LIST [1 items] /div#ivVideoBlock/div/div/div/div[2]/ul
+                      LIST [5 items] /div#ivVideosTab[1]/div#ivVideoBlock/div/div/div/ul
+          REGION @ref:59 [88 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#leftCol[3]/div[3]
+        REGION "centerCol" @ref:60 [2162 words, 16 links, 14 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]
+          HEADING level=1 "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UH..." /div#dp-container/div#ppd[5]/div#centerCol[4]/div#title_feature_div[1]/div#titleSection/h1#title
+          REGION @ref:61 [66 words, 2 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[3]
+            REGION "averageCustomerReviews" @ref:62 [66 words, 2 links] /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[3]/div#averageCustomerReviews
+          REGION "acBadge feature div" @ref:63 [84 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#acBadge_feature_div[6]
+          REGION "apex desktop" @ref:64 [454 words, 4 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]
+            REGION @ref:65 [89 words] /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div[2]
+            REGION @ref:66 [250 words, 2 links] /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div[3]
+              REGION @ref:67 [68 words, 1 links] /div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div[3]/div
+            REGION "amazonGlobal feature div" @ref:68 [111 words, 2 links] /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div#amazonGlobal_feature_div[33]
+              HEADING level=3 "Shipping & Fee Details" /div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div#amazonGlobal_feature_div[33]/div#a-popover-NEW_0/h3
+          REGION @ref:69 [112 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[17]
+          REGION @ref:70 [213 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[19]
+          REGION "twister feature div" @ref:71 [657 words, 3 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#twister_feature_div[34]
+            REGION @ref:72 [141 words, 3 links, 7 items] /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#twister_feature_div[34]/div[1]
+              REGION @ref:73 [124 words, 3 links, 7 items] /div#dp-container/div#ppd[5]/div#centerCol[4]/div#twister_feature_div[34]/div[1]/div[3]
+                REGION "twister plus inline twister" @ref:74 [124 words, 3 links, 7 items] /div#ppd[5]/div#centerCol[4]/div#twister_feature_div[34]/div[1]/div[3]/div#twister-plus-inline-twister
+                  REGION "inline twister row style name" @ref:75 [124 words, 3 links, 7 items] /div#centerCol[4]/div#twister_feature_div[34]/div[1]/div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name
+                    REGION "There are 4 options." @ref:76 [117 words, 3 links, 7 items] /div#twister_feature_div[34]/div[1]/div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name/div[2]
+                      REGION "Make a Style selection" @ref:77 [113 words, 3 links, 7 items] /div[1]/div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name/div[2]/div
+                        LIST [4 items] /div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name/div[2]/div/ul
+                        NAVIGATION @ref:78 [2 words, 3 links, 3 items] /div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name/div[2]/div/nav
+          HEADING level=3 "Purchase options and add-ons" /div#dp-container/div#ppd[5]/div#centerCol[4]/div#twisterPlusWWDesktop[41]/div#twister-plus-feature[2]/h3
+          REGION @ref:79 [77 words, 1 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div[42]
+          REGION "productOverview feature div" @ref:80 [77 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#productOverview_feature_div[46]
+          REGION "featurebullets feature div" @ref:81 [123 words, 1 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#featurebullets_feature_div[47]
+            REGION "feature bullets" @ref:82 [122 words, 1 links, 7 items] /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#featurebullets_feature_div[47]/div#feature-bullets
+              HEADING level=1 "About this item" /div#dp-container/div#ppd[5]/div#centerCol[4]/div#featurebullets_feature_div[47]/div#feature-bullets/h1
+              LIST [7 items] /div#dp-container/div#ppd[5]/div#centerCol[4]/div#featurebullets_feature_div[47]/div#feature-bullets/ul
+          REGION "olp feature div" @ref:83 [81 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#olp_feature_div[56]
+          REGION "valuePick feature div" @ref:84 [80 words, 3 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61]
+            REGION "valuePick container" @ref:85 [80 words, 3 links] /div#dp[1]/div#dp-container/div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61]/div#valuePick_container
+              REGION "value pick ac" @ref:86 [80 words, 3 links] /div#dp-container/div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61]/div#valuePick_container/div#value-pick-ac
+                HEADING level=4 "Consider a similar item" /div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61]/div#valuePick_container/div#value-pick-ac/h4#value-pick-headline-view
+        REGION "hqpWrapper" @ref:87 [334 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#hqpWrapper[5]
+          REGION "heroQuickPromoContainer" @ref:88 [334 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#ppd[5]/div#hqpWrapper[5]/div#heroQuickPromoContainer
+            REGION "heroQuickPromo feature div" @ref:89 [334 words] /div#dp[1]/div#dp-container/div#ppd[5]/div#hqpWrapper[5]/div#heroQuickPromoContainer/div#heroQuickPromo_feature_div
+              REGION @ref:90 [201 words] /div#dp-container/div#ppd[5]/div#hqpWrapper[5]/div#heroQuickPromoContainer/div#heroQuickPromo_feature_div/div
+                REGION @ref:91 [199 words] /div#ppd[5]/div#hqpWrapper[5]/div#heroQuickPromoContainer/div#heroQuickPromo_feature_div/div/div
+      REGION @ref:92 [471 words] /div#a-page[1]/div#dp[1]/div#dp-container/div[7]
+        REGION @ref:93 [471 words] /div#a-page[1]/div#dp[1]/div#dp-container/div[7]/div[2]
+      REGION "Deals on related products" @ref:94 [2498 words, 47 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[14]
+        REGION "Deals on related products" @ref:95 [2061 words, 47 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[14]/div[1]
+          REGION "Deals on related products" @ref:96 [397 words, 2 links] /div#a-page[1]/div#dp[1]/div#dp-container/div[14]/div[1]/div[1]
+            HEADING level=2 "Deals on related products" /div#dp[1]/div#dp-container/div[14]/div[1]/div[1]/h2
+          LIST [7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[14]/div[1]/ol
+            REGION @ref:97 [195 words, 6 links] /div#dp-container/div[14]/div[1]/ol/li[1]/div
+            REGION @ref:98 [197 words, 6 links] /div#dp-container/div[14]/div[1]/ol/li[2]/div
+            REGION @ref:99 [441 words, 7 links] /div#dp-container/div[14]/div[1]/ol/li[3]/div
+              REGION @ref:100 [102 words] /div[1]/ol/li[3]/div/a[2]/div
+            REGION @ref:101 [196 words, 6 links] /div#dp-container/div[14]/div[1]/ol/li[4]/div
+            REGION @ref:102 [192 words, 6 links] /div#dp-container/div[14]/div[1]/ol/li[5]/div
+            REGION @ref:103 [194 words, 6 links] /div#dp-container/div[14]/div[1]/ol/li[6]/div
+            REGION @ref:104 [195 words, 6 links] /div#dp-container/div[14]/div[1]/ol/li[7]/div
+      REGION "Products related to this item" @ref:105 [1483 words, 42 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[15]
+        REGION "Products related to this item" @ref:106 [1478 words, 42 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[15]/div
+          REGION "Products related to this item" @ref:107 [1110 words, 42 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[15]/div/div#sp_detail[1]
+            HEADING level=2 "Products related to this item" /div#dp-container/div[15]/div/div#sp_detail[1]/div#sp_detail_heading[1]/h2
+            LIST [7 items] /div#dp[1]/div#dp-container/div[15]/div/div#sp_detail[1]/ol
+              REGION "sp detail B0FND8BYQS" @ref:108 [123 words, 5 links] /div[15]/div/div#sp_detail[1]/ol/li[1]/div#sp_detail_B0FND8BYQS
+              REGION "sp detail B0BCK1K44F" @ref:109 [128 words, 5 links] /div[15]/div/div#sp_detail[1]/ol/li[2]/div#sp_detail_B0BCK1K44F
+              REGION "sp detail B0FS3LV3WG" @ref:110 [120 words, 5 links] /div[15]/div/div#sp_detail[1]/ol/li[3]/div#sp_detail_B0FS3LV3WG
+              REGION "sp detail B0FR44GCLH" @ref:111 [120 words, 5 links] /div[15]/div/div#sp_detail[1]/ol/li[4]/div#sp_detail_B0FR44GCLH
+              REGION "sp detail B0D682HF6R" @ref:112 [184 words, 6 links] /div[15]/div/div#sp_detail[1]/ol/li[5]/div#sp_detail_B0D682HF6R
+              REGION "sp detail B0D1YBBMYN" @ref:113 [128 words, 5 links] /div[15]/div/div#sp_detail[1]/ol/li[6]/div#sp_detail_B0D1YBBMYN
+              REGION "sp detail B0FRMND9J6" @ref:114 [205 words, 7 links] /div[15]/div/div#sp_detail[1]/ol/li[7]/div#sp_detail_B0FRMND9J6
+      REGION "Product Videos" @ref:115 [7771 words, 58 links, 30 paragraphs, 47 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]
+        REGION "Product Videos" @ref:116 [669 words, 4 links, 3 paragraphs, 2 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div[4]
+          REGION "Product Videos" @ref:117 [240 words, 4 links, 3 paragraphs, 2 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div[4]/div
+            HEADING level=2 "Product Videos" /div#dp[1]/div#dp-container/div[18]/div[4]/div/h2
+            REGION "vftphero" @ref:118 [55 words, 4 links, 3 paragraphs, 2 items] /div#dp[1]/div#dp-container/div[18]/div[4]/div/div#vftphero[2]
+              REGION "ive hero video player" @ref:119 [55 words, 4 links, 3 paragraphs, 2 items] /div#dp-container/div[18]/div[4]/div/div#vftphero[2]/div#ive-hero-video-player[1]
+                REGION "Video Player" @ref:120 [50 words, 3 paragraphs, 2 items] /div[18]/div[4]/div/div#vftphero[2]/div#ive-hero-video-player[1]/div[1]
+                  LIST [2 items] /div[4]/div/div#vftphero[2]/div#ive-hero-video-player[1]/div[1]/ul
+        REGION "productDetails feature div" @ref:121 [2847 words, 10 links, 4 paragraphs, 2 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]
+          REGION "prodDetails" @ref:122 [2847 words, 10 links, 4 paragraphs, 2 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails
+            HEADING level=2 "Product information" /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/h2
+            HEADING level=1 "Technical Details" /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/h1
+            REGION "productDetails db sections" @ref:123 [90 words, 4 links, 2 items] /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections
+              HEADING level=1 "Additional Information" /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections/h1
+              REGION "table padding" @ref:124 [88 words, 4 links, 2 items] /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections/div.table-padding
+                REGION "averageCustomerReviews" @ref:125 [66 words, 2 links] /div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections/div.table-padding/table/div#averageCustomerReviews
+                LIST [2 items] /div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections/div.table-padding/table/ul
+            REGION "Warranty & Support" @ref:126 [166 words, 1 links] /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div
+              HEADING level=1 "Warranty & Support" /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div/h1
+              REGION "table padding" @ref:127 [146 words] /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div/div.table-padding[1]
+            HEADING level=1 "Feedback" /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/h1
+            REGION "table padding" @ref:128 [2507 words, 2 links, 4 paragraphs] /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div.table-padding
+              REGION "Where did you see a lower price?" @ref:129 [224 words, 1 links, 4 paragraphs] /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div.table-padding/div[2]
+                REGION "contentContainer" @ref:130 [224 words, 1 links, 4 paragraphs] /div[18]/div#productDetails_feature_div[7]/div#prodDetails/div.table-padding/div[2]/div.contentContainer
+        REGION "aplusBrandStory feature div" @ref:131 [752 words, 27 links, 5 paragraphs, 12 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]
+          REGION "aplus" @ref:132 [752 words, 27 links, 5 paragraphs, 12 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]/div#aplus
+            HEADING level=2 "From the brand" /div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]/div#aplus/h2
+            HEADING level=3 "ASUS Monitors & Displays" /div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]/div#aplus/h3
+            LIST [12 items] /div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]/div#aplus/div#apm-brand-story-carousel[2]/ol
+              HEADING level=3 "ROG Gaming Monitors" /div#aplusBrandStory_feature_div[8]/div#aplus/div#apm-brand-story-carousel[2]/ol/li[5]/h3
+              HEADING level=3 "TUF Gaming Monitors" /div#aplusBrandStory_feature_div[8]/div#aplus/div#apm-brand-story-carousel[2]/ol/li[6]/h3
+              HEADING level=3 "ProArt Displays" /div#aplusBrandStory_feature_div[8]/div#aplus/div#apm-brand-story-carousel[2]/ol/li[8]/h3
+              HEADING level=3 "Portable Displays" /div#aplusBrandStory_feature_div[8]/div#aplus/div#apm-brand-story-carousel[2]/ol/li[10]/h3
+              HEADING level=3 "Eye Care Monitors" /div#aplusBrandStory_feature_div[8]/div#aplus/div#apm-brand-story-carousel[2]/ol/li[12]/h3
+        REGION "Product Description" @ref:133 [356 words] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div[10]
+          REGION "Product Description" @ref:134 [356 words] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div[10]/div
+            HEADING level=2 "Product Description" /div#dp[1]/div#dp-container/div[18]/div[10]/div/h2
+            REGION "productDescription" @ref:135 [102 words] /div#dp[1]/div#dp-container/div[18]/div[10]/div/div#productDescription[2]
+        REGION "aplus feature div" @ref:136 [3099 words, 9 links, 17 paragraphs, 31 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]
+          REGION "aplus" @ref:137 [3099 words, 9 links, 17 paragraphs, 31 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus
+            HEADING level=2 "From the manufacturer" /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/h2
+            REGION @ref:138 [100 words, 1 links, 3 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div
+              LIST [1 items] /div#aplus/div/div[2]/div/div/ul
+              LIST [1 items] /div#aplus/div/div[2]/div/div/ul
+              LIST [1 items] /div#aplus/div/div[2]/div/div/ul
+            HEADING level=2 "ROG Swift OLED PG32UCDM" /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div.secondary-color[2]/h2
+            HEADING level=1 "Experience the Ultimate Gamechanger" /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div.secondary-color[2]/h1
+            REGION "Featured content carousel" @ref:139 [114 words, 2 links, 4 paragraphs, 4 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1]
+              LIST [4 items] /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1]/ol
+                HEADING level=1 "Advantages of QD-OLED technology" /div#aplus/div[1]/ol/li[1]/div/h1
+                HEADING level=1 "Detailed visuals and clearly defined text" /div#aplus/div[1]/ol/li[2]/div/h1
+                HEADING level=1 "Game in Ultravivid HDR" /div#aplus/div[1]/ol/li[3]/div/h1
+                HEADING level=1 "Extreme Low Motion Blur" /div#aplus/div[1]/ol/li[4]/div/h1
+            LIST [4 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/ul
+            REGION "Featured content carousel" @ref:140 [102 words, 2 links, 3 paragraphs, 3 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1]
+              LIST [3 items] /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1]/ol
+                HEADING level=1 "ASUS OLED Care" /div#aplus/div[1]/ol/li[1]/div/h1
+                HEADING level=1 "Graphene film" /div#aplus/div[1]/ol/li[2]/div/h1
+                HEADING level=1 "ASUS OLED Care" /div#aplus/div[1]/ol/li[3]/div/h1
+            LIST [3 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/ul
+            REGION "Featured content carousel" @ref:141 [102 words, 2 links, 3 paragraphs, 3 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1]
+              LIST [3 items] /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1]/ol
+                HEADING level=1 "Uniform brightness" /div#aplus/div[1]/ol/li[1]/div/h1
+                HEADING level=1 "ASUS DisplayWidget Center" /div#aplus/div[1]/ol/li[2]/div/h1
+                HEADING level=1 "ASPECT RATIO CONTROL" /div#aplus/div[1]/ol/li[3]/div/h1
+            LIST [3 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/ul
+            REGION "Featured content carousel" @ref:142 [125 words, 2 links, 5 paragraphs, 4 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1]
+              LIST [4 items] /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div[1]/ol
+                HEADING level=1 "Experience superb smoothness and responsiveness" /div#aplus/div[1]/ol/li[1]/div/h1
+                HEADING level=1 "Futuristic, cyberpunk-inspired aesthetic" /div#aplus/div[1]/ol/li[2]/div/h1
+                HEADING level=1 "Rich connectivity" /div#aplus/div[1]/ol/li[3]/div/h1
+                HEADING level=1 "Ergonomic stand" /div#aplus/div[1]/ol/li[4]/div/h1
+            LIST [4 items] /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/ul
+      REGION "buffetServiceCard feature div" @ref:143 [57 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#buffetServiceCard_feature_div[21]
+      HEADING level=2 "What's in the box" /div#a-page[1]/div#dp[1]/div#dp-container/div[23]/div#whatsInTheBoxDeck/h2
+      HEADING level=2 "Top Brand: ASUS" /div#a-page[1]/div#dp[1]/div#dp-container/div#brandInsights_feature_div_3[25]/h2
+      REGION "Brands you might like" @ref:144 [2332 words, 42 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[30]
+        REGION "Brands you might like" @ref:145 [1895 words, 42 links, 7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[30]/div#sp_detail2-similar_brands[1]
+          REGION "Brands you might like" @ref:146 [397 words, 2 links] /div#a-page[1]/div#dp[1]/div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/div[1]
+            HEADING level=2 "Brands you might like" /div#dp[1]/div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/div[1]/h2
+          LIST [7 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol
+            REGION @ref:147 [141 words, 5 links] /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[1]/div
+            REGION @ref:148 [291 words, 6 links] /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[2]/div
+            REGION @ref:149 [146 words, 5 links] /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[3]/div
+            REGION @ref:150 [148 words, 5 links] /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[4]/div
+            REGION @ref:151 [282 words, 6 links] /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[5]/div
+            REGION @ref:152 [144 words, 5 links] /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[6]/div
+            REGION @ref:153 [292 words, 6 links] /div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/ol/li[7]/div
+      REGION "Similar brands on Amazon" @ref:154 [394 words, 42 links, 5 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[33]
+        REGION "Similar brands on Amazon" @ref:155 [182 words, 42 links, 5 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[33]/div
+          HEADING level=2 "Similar brands on Amazon" /div#a-page[1]/div#dp[1]/div#dp-container/div[33]/div/h2
+          LIST [5 items] /div#a-page[1]/div#dp[1]/div#dp-container/div[33]/div/ol
+      REGION "customer reviews feature div" @ref:156 [5262 words, 86 links, 2 paragraphs, 26 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]
+        REGION "Top reviews" @ref:157 [5262 words, 86 links, 2 paragraphs, 26 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews
+          REGION "reviewsMedley" @ref:158 [5256 words, 86 links, 2 paragraphs, 26 items] /div#a-page[1]/div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley
+            REGION "Customer reviews" @ref:159 [119 words, 7 links, 2 paragraphs, 5 items] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div
+              REGION "cm cr dp d rating histogram" @ref:160 [119 words, 7 links, 2 paragraphs, 5 items] /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#cm_cr_dp_d_rating_histogram
+                HEADING level=2 "Customer reviews" /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#cm_cr_dp_d_rating_histogram/h2#averageCustomerReviewsAnchor
+                LIST [5 items] /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#cm_cr_dp_d_rating_histogram/ul#histogramTable
+            REGION "cr ADPlaceholder" @ref:161 [334 words] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#cr-ADPlaceholder
+              REGION @ref:162 [201 words] /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#cr-ADPlaceholder/div
+                REGION @ref:163 [199 words] /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#cr-ADPlaceholder/div/div
+            HEADING level=3 "Customers say" /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/h3
+            HEADING level=4 "Select to learn more" /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/h4
+            REGION "Positive aspect monitor quality" @ref:164 [142 words, 4 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_0[1]
+            REGION "Positive aspect picture quality" @ref:165 [121 words, 4 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_1[2]
+            REGION "Positive aspect color quality" @ref:166 [121 words, 4 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_2[3]
+            REGION "Positive aspect looks great" @ref:167 [121 words, 4 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_3[4]
+            REGION "Positive aspect refresh rate" @ref:168 [107 words, 4 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_4[5]
+            REGION "Positive aspect response time" @ref:169 [123 words, 4 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_5[6]
+            REGION "Mixed aspect value for money" @ref:170 [127 words, 4 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_6[7]
+            REGION "Mixed aspect flickering" @ref:171 [133 words, 4 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div#rh_controls_aspect_7[8]
+            HEADING level=5 /div#customerReviews/div#reviewsMedley/div[1]/div#cr_customers_image_gallery[1]/div#crReviewRow[3]/h5
+            HEADING level=6 "Images in this review" /div#reviewsMedley/div[1]/div#cr_customers_image_gallery[1]/div#crReviewRow[3]/div#cr-lightbox-image-picker[2]/h6#arp-images-in-review
+            REGION "Reviews with images" @ref:172 [141 words, 6 links, 13 items] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div
+              HEADING level=3 "Reviews with images" /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#cm_cr_carousel_images_section[1]/h3#cr-media-carousel-heading
+              LIST [12 items] /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#cm_cr_carousel_images_section[1]/ol
+              REGION "popovers" @ref:173 [135 words, 3 links, 1 items] /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#popovers[2]
+                REGION "Immersive 4K OLED & High Refresh Rate" @ref:174 [135 words, 3 links, 1 items] /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#popovers[2]/div
+                  HEADING level=5 "Immersive 4K OLED & High Refresh Rate" /div#customerReviews/div#reviewsMedley/div/div#popovers[2]/div/h5
+                  LIST [1 items] /div#customerReviews/div#reviewsMedley/div/div#popovers[2]/div/ul
+            REGION "card padding" @ref:175 [2273 words, 19 links, 3 items] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div.card-padding
+              HEADING level=3 "Top reviews from the United States" /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div.card-padding/div#cm-cr-local-reviews-title[1]/h3
+              HEADING level=4 "There was a problem filtering reviews. Please reload the ..." /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div.card-padding/h4
+              LIST [3 items] /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list
+                REGION "REHPXV4YYIWZ1 review card" @ref:176 [680 words, 6 links] /div#customerReviews/div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#REHPXV4YYIWZ1[1]/div#REHPXV4YYIWZ1-review-card
+                  REGION "customer review REHPXV4YYIWZ1" @ref:177 [680 words, 6 links] /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#REHPXV4YYIWZ1[1]/div#REHPXV4YYIWZ1-review-card/div#customer_review-REHPXV4YYIWZ1
+                    HEADING level=5 "5.0 out of 5 stars Outstanding monitor, with some things ..." /div.card-padding/ul#cm-cr-dp-review-list/li#REHPXV4YYIWZ1[1]/div#REHPXV4YYIWZ1-review-card/div#customer_review-REHPXV4YYIWZ1/h5
+                    HEADING level=P "Reviewed in the United States on February 24, 2025" /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#REHPXV4YYIWZ1[1]/div#REHPXV4YYIWZ1-review-card/div#customer_review-REHPXV4YYIWZ1
+                REGION "RJL5RW1IPKJQA review card" @ref:178 [153 words, 6 links] /div#customerReviews/div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#RJL5RW1IPKJQA[2]/div#RJL5RW1IPKJQA-review-card
+                  REGION "customer review RJL5RW1IPKJQA" @ref:179 [153 words, 6 links] /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#RJL5RW1IPKJQA[2]/div#RJL5RW1IPKJQA-review-card/div#customer_review-RJL5RW1IPKJQA
+                    HEADING level=5 "5.0 out of 5 stars This is the one." /div.card-padding/ul#cm-cr-dp-review-list/li#RJL5RW1IPKJQA[2]/div#RJL5RW1IPKJQA-review-card/div#customer_review-RJL5RW1IPKJQA/h5
+                    HEADING level=P "Reviewed in the United States on October 24, 2025" /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#RJL5RW1IPKJQA[2]/div#RJL5RW1IPKJQA-review-card/div#customer_review-RJL5RW1IPKJQA
+                REGION "R1IT4ZS3EXXF5Y review card" @ref:180 [1411 words, 6 links] /div#customerReviews/div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#R1IT4ZS3EXXF5Y[3]/div#R1IT4ZS3EXXF5Y-review-card
+                  REGION "5.0 out of 5 stars better than being there!" @ref:181 [1411 words, 6 links] /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#R1IT4ZS3EXXF5Y[3]/div#R1IT4ZS3EXXF5Y-review-card/div
+                    HEADING level=5 "5.0 out of 5 stars better than being there!" /div.card-padding/ul#cm-cr-dp-review-list/li#R1IT4ZS3EXXF5Y[3]/div#R1IT4ZS3EXXF5Y-review-card/div/h5
+                    HEADING level=P "Reviewed in the United States on December 6, 2024" /div#reviewsMedley/div.card-padding/ul#cm-cr-dp-review-list/li#R1IT4ZS3EXXF5Y[3]/div#R1IT4ZS3EXXF5Y-review-card/div
+            REGION "Top reviews from other countries" @ref:182 [111 words, 1 links] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div[1]
+              HEADING level=3 "Top reviews from other countries" /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div[1]/h3
+            LIST [5 items] /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list
+              REGION "R143NGPNO5W0QI review card" @ref:183 [188 words, 4 links] /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R143NGPNO5W0QI[1]/div#R143NGPNO5W0QI-review-card
+                REGION "5.0 out of 5 stars Excelente monitor gamer" @ref:184 [188 words, 4 links] /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R143NGPNO5W0QI[1]/div#R143NGPNO5W0QI-review-card/div
+                  HEADING level=5 "5.0 out of 5 stars Excelente monitor gamer" /div#reviewsMedley/ul#cm-cr-global-review-list/li#R143NGPNO5W0QI[1]/div#R143NGPNO5W0QI-review-card/div/h5
+                  HEADING level=P "Reviewed in Mexico on December 8, 2025" /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R143NGPNO5W0QI[1]/div#R143NGPNO5W0QI-review-card/div
+              HEADING level=5 "5.0 out of 5 stars works great" /div#reviewsMedley/ul#cm-cr-global-review-list/li#R1AO0T27NG62IX[2]/div#R1AO0T27NG62IX-review-card/div/h5
+              HEADING level=P "Reviewed in Canada on December 30, 2025" /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R1AO0T27NG62IX[2]/div#R1AO0T27NG62IX-review-card/div
+              REGION "R23JXY1M8M91UT review card" @ref:185 [312 words, 4 links] /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R23JXY1M8M91UT[3]/div#R23JXY1M8M91UT-review-card
+                REGION "5.0 out of 5 stars Excelente para Xbox Serie X" @ref:186 [312 words, 4 links] /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R23JXY1M8M91UT[3]/div#R23JXY1M8M91UT-review-card/div
+                  HEADING level=5 "5.0 out of 5 stars Excelente para Xbox Serie X" /div#reviewsMedley/ul#cm-cr-global-review-list/li#R23JXY1M8M91UT[3]/div#R23JXY1M8M91UT-review-card/div/h5
+                  HEADING level=P "Reviewed in Mexico on September 6, 2023" /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R23JXY1M8M91UT[3]/div#R23JXY1M8M91UT-review-card/div
+              REGION "R27KMCZYN3YGO4 review card" @ref:187 [89 words, 4 links] /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R27KMCZYN3YGO4[4]/div#R27KMCZYN3YGO4-review-card
+                REGION "5.0 out of 5 stars No te arrepentirás." @ref:188 [89 words, 4 links] /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R27KMCZYN3YGO4[4]/div#R27KMCZYN3YGO4-review-card/div
+                  HEADING level=5 "5.0 out of 5 stars No te arrepentirás." /div#reviewsMedley/ul#cm-cr-global-review-list/li#R27KMCZYN3YGO4[4]/div#R27KMCZYN3YGO4-review-card/div/h5
+                  HEADING level=P "Reviewed in Mexico on January 5, 2026" /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R27KMCZYN3YGO4[4]/div#R27KMCZYN3YGO4-review-card/div
+              HEADING level=5 "5.0 out of 5 stars تعقيم للعين" /div#reviewsMedley/ul#cm-cr-global-review-list/li#R3RC74IWU1Q4CE[5]/div#R3RC74IWU1Q4CE-review-card/div/h5
+              HEADING level=P "Reviewed in Saudi Arabia on August 24, 2025" /div#customerReviews/div#reviewsMedley/ul#cm-cr-global-review-list/li#R3RC74IWU1Q4CE[5]/div#R3RC74IWU1Q4CE-review-card/div
+      REGION @ref:189 [334 words] /div#a-page[1]/div#dp[1]/div#dp-container/div[39]
+        REGION @ref:190 [201 words] /div#a-page[1]/div#dp[1]/div#dp-container/div[39]/div
+          REGION @ref:191 [199 words] /div#a-page[1]/div#dp[1]/div#dp-container/div[39]/div/div
+      NAVIGATION @ref:192 [12 words, 8 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]
+        NAVIGATION @ref:193 [11 words, 6 links] /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav
+          NAVIGATION "Back to top jump link" @ref:194 [1 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[1]
+          NAVIGATION "About this item widget jump link" @ref:195 [3 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[2]
+          NAVIGATION "Similar widget jump link" @ref:196 [1 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[3]
+          NAVIGATION "Product information widget jump link" @ref:197 [2 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[4]
+          NAVIGATION "From the brand widget jump link" @ref:198 [3 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[5]
+          NAVIGATION "Customer reviews widget jump link" @ref:199 [1 words] /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[6]
+        NAVIGATION "Back to top Image jump link" @ref:200 /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/a[1]
+        NAVIGATION "Back to top title jump link" @ref:201 /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/a[2]
+  COMPLEMENTARY "Your recently viewed items and featured recomme..." @ref:202 [73 words, 2 links] /div#a-page[1]/div#rhf[2]
+  REGION "navFooter" @ref:203 [248 words, 59 links, 82 items] /div#a-page[1]/div#navFooter[3]
+    REGION "navFooterVerticalColumn" @ref:204 [88 words, 25 links, 25 items] /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]
+      REGION "navFooterVerticalRow" @ref:205 [88 words, 25 links, 25 items] /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow
+        HEADING level=I "Get to Know Us" /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[1]/div.navFooterColHead
+        LIST [6 items] /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[1]/ul
+        HEADING level=I "Make Money with Us" /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[3]/div.navFooterColHead
+        LIST [8 items] /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[3]/ul
+        HEADING level=I "Amazon Payment Products" /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[5]/div.navFooterColHead
+        LIST [4 items] /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[5]/ul
+        HEADING level=I "Let Us Help You" /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[7]/div.navFooterColHead
+        LIST [7 items] /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[7]/ul
+    NAVIGATION "More on Amazon" @ref:206 [114 words, 26 links, 52 items] /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4]
+      REGION "More on Amazon" @ref:207 [114 words, 26 links, 52 items] /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4]/div.navFooterMoreOnAmazon
+        LIST [13 items] /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]
+          HEADING level=5 "Amazon Music" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[1]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Amazon Ads" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[3]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "6pm" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[5]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "AbeBooks" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[7]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "ACX" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[9]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Sell on Amazon" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[11]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Veeqo" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[13]/a.nav_a/h5.navFooterDescItem_heading
+        LIST [13 items] /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]
+          HEADING level=5 "Amazon Business" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[1]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "AmazonGlobal" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[3]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Amazon Web Services" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[5]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Audible" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[7]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Box Office Mojo" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[9]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Goodreads" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[11]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "IMDb" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[13]/a.nav_a/h5.navFooterDescItem_heading
+        LIST [13 items] /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]
+          HEADING level=5 "IMDbPro" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[1]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Kindle Direct Publishing" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[3]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Prime Video Direct" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[5]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Shopbop" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[7]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Woot!" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[9]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Zappos" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[11]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Ring" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[13]/a.nav_a/h5.navFooterDescItem_heading
+        LIST [13 items] /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]
+          HEADING level=5 "eero WiFi" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[3]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Blink" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[5]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Neighbors App" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[7]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "Amazon Subscription Boxes" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[9]/a.nav_a/h5.navFooterDescItem_heading
+          HEADING level=5 "PillPack" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[11]/a.nav_a/h5.navFooterDescItem_heading
+    LIST [5 items] /div#a-page[1]/div#navFooter[3]/div.navFooterLine[5]/ul
