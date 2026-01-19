@@ -244,6 +244,49 @@ export interface Client {
    * Initialize popup (triggers session reconnection check)
    */
   popupInitialize(): Promise<{ initialized: boolean; reconnected: boolean }>;
+
+  // --- Script Injection ---
+
+  /**
+   * Inject a script into the page's main world
+   *
+   * The script runs in the page context (not the content script isolated world),
+   * allowing access to page-level APIs like window, fetch interceptors, etc.
+   *
+   * @example
+   * ```typescript
+   * await client.scriptInject(`
+   *   window.addEventListener('message', (event) => {
+   *     if (event.data?.type !== 'btcp:script-command') return;
+   *     if (event.data.scriptId !== 'helper') return;
+   *     const { commandId, payload } = event.data;
+   *     // Handle and ack
+   *     window.postMessage({ type: 'btcp:script-ack', commandId, result: { ok: true } }, '*');
+   *   });
+   * `, { scriptId: 'helper' });
+   * ```
+   */
+  scriptInject(
+    code: string,
+    options?: { scriptId?: string }
+  ): Promise<{ scriptId: string; injected: boolean }>;
+
+  /**
+   * Send a command to an injected script and wait for acknowledgment
+   *
+   * @example
+   * ```typescript
+   * const result = await client.scriptSend(
+   *   { action: 'getData', selector: '.items' },
+   *   { scriptId: 'helper', timeout: 5000 }
+   * );
+   * console.log(result); // { items: [...] }
+   * ```
+   */
+  scriptSend(
+    payload: unknown,
+    options?: { scriptId?: string; timeout?: number }
+  ): Promise<unknown>;
 }
 
 let commandIdCounter = 0;
@@ -586,6 +629,30 @@ export function createClient(): Client {
       } as any);
       assertSuccess(response);
       return response.data as { initialized: boolean; reconnected: boolean };
+    },
+
+    // Script Injection
+    async scriptInject(code, options) {
+      const response = await sendCommand({
+        id: generateCommandId(),
+        action: 'scriptInject',
+        code,
+        scriptId: options?.scriptId,
+      } as any);
+      assertSuccess(response);
+      return response.data as { scriptId: string; injected: boolean };
+    },
+
+    async scriptSend(payload, options) {
+      const response = await sendCommand({
+        id: generateCommandId(),
+        action: 'scriptSend',
+        payload,
+        scriptId: options?.scriptId,
+        timeout: options?.timeout,
+      } as any);
+      assertSuccess(response);
+      return (response.data as { result: unknown }).result;
     },
   };
 }
