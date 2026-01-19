@@ -48,17 +48,18 @@ async function handleCommand(command: Command): Promise<Response> {
   }
 
   // Extension commands that need content script execution
+  const id = command.id || 'unknown';
   switch (command.action) {
     case 'getUrl':
       return {
-        id: command.id,
+        id,
         success: true,
         data: { url: window.location.href },
       };
 
     case 'getTitle':
       return {
-        id: command.id,
+        id,
         success: true,
         data: { title: document.title },
       };
@@ -66,7 +67,7 @@ async function handleCommand(command: Command): Promise<Response> {
     default:
       // Forward to background script
       return {
-        id: command.id,
+        id,
         success: false,
         error: `Command ${command.action} must be handled by background script`,
       };
@@ -97,7 +98,7 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
       sendResponse({
         type: 'btcp:response',
         response: {
-          id: msg.command.id,
+          id: msg.command.id || 'unknown',
           success: false,
           error: error instanceof Error ? error.message : String(error),
         },

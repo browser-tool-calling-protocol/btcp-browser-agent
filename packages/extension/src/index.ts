@@ -26,7 +26,7 @@
  * import { createContentAgent } from '@btcp/core';
  *
  * const agent = createContentAgent();
- * await agent.execute({ id: '1', action: 'snapshot' });
+ * await agent.execute({ action: 'snapshot' });
  * ```
  *
  * @example Popup/external usage:
@@ -303,13 +303,14 @@ export function createClient(): Client {
     }
 
     // In popup/content context, use message passing
+    const id = command.id || generateCommandId();
     return new Promise((resolve) => {
       chrome.runtime.sendMessage(
-        { type: 'btcp:command', command } satisfies ExtensionMessage,
+        { type: 'btcp:command', command: { ...command, id } } satisfies ExtensionMessage,
         (response) => {
           if (chrome.runtime.lastError) {
             resolve({
-              id: command.id,
+              id,
               success: false,
               error: chrome.runtime.lastError.message || 'Unknown error',
             });
@@ -320,7 +321,7 @@ export function createClient(): Client {
             } else {
               // Unexpected pong response
               resolve({
-                id: command.id,
+                id,
                 success: false,
                 error: 'Unexpected response type',
               });

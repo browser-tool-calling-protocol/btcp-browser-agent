@@ -23,6 +23,16 @@ import type {
 } from './types.js';
 import { SessionManager } from './session-manager.js';
 
+// Command ID counter for auto-generated IDs
+let bgCommandIdCounter = 0;
+
+/**
+ * Generate a unique command ID for background script
+ */
+function generateBgCommandId(): string {
+  return `bg_${Date.now()}_${bgCommandIdCounter++}`;
+}
+
 /**
  * TabHandle - Interface for interacting with a specific tab
  *
@@ -50,7 +60,7 @@ export interface TabHandle {
  * ```typescript
  * const agent = new BackgroundAgent();
  * await agent.navigate('https://example.com');
- * await agent.execute({ id: '1', action: 'click', selector: '#submit' });
+ * await agent.execute({ action: 'click', selector: '#submit' });
  * ```
  *
  * @example Multi-tab with explicit tabId
@@ -66,7 +76,7 @@ export interface TabHandle {
  * await agent.tab(tab2.id).snapshot();
  *
  * // Or specify tabId in command
- * await agent.execute({ id: '1', action: 'snapshot' }, { tabId: tab2.id });
+ * await agent.execute({ action: 'snapshot' }, { tabId: tab2.id });
  * ```
  */
 export class BackgroundAgent {
@@ -463,31 +473,37 @@ export class BackgroundAgent {
    * Browser-level commands (navigate, screenshot, tabs) are handled here.
    * DOM-level commands are forwarded to the ContentAgent in the target tab.
    *
+   * Command IDs are auto-generated internally - users don't need to provide them.
+   *
    * @param command - The command to execute
    * @param options - Optional settings including target tabId
    *
    * @example Default (active tab)
    * ```typescript
-   * await browser.execute({ id: '1', action: 'snapshot' });
+   * await browser.execute({ action: 'snapshot' });
    * ```
    *
    * @example Specific tab
    * ```typescript
-   * await browser.execute({ id: '1', action: 'snapshot' }, { tabId: 123 });
+   * await browser.execute({ action: 'snapshot' }, { tabId: 123 });
    * ```
    */
   async execute(command: Command, options?: { tabId?: number }): Promise<Response> {
+    // Auto-generate ID if not provided
+    const id = command.id || generateBgCommandId();
+    const internalCmd = { ...command, id };
+
     try {
       // Extension commands are handled directly by BrowserAgent
-      if (this.isExtensionCommand(command)) {
-        return this.executeExtensionCommand(command);
+      if (this.isExtensionCommand(internalCmd)) {
+        return this.executeExtensionCommand(internalCmd as ExtensionCommand & { id: string });
       }
 
       // DOM commands are forwarded to ContentAgent in the target tab
-      return this.sendToContentAgent(command, options?.tabId);
+      return this.sendToContentAgent(internalCmd, options?.tabId);
     } catch (error) {
       return {
-        id: command.id,
+        id,
         success: false,
         error: error instanceof Error ? error.message : String(error),
       };
@@ -498,18 +514,21 @@ export class BackgroundAgent {
    * Send a command to the ContentAgent in a specific tab
    */
   async sendToContentAgent(command: Command, tabId?: number): Promise<Response> {
+    // Ensure command has an ID for internal use
+    const id = command.id || generateBgCommandId();
+    const internalCmd = { ...command, id } as Command & { id: string };
     const targetTabId = tabId ?? this.activeTabId ?? (await this.getActiveTab())?.id;
 
     if (!targetTabId) {
       return {
-        id: command.id,
+        id,
         success: false,
         error: 'No active tab for DOM command',
       };
     }
 
     // Try sending with automatic retry and recovery
-    return this.sendMessageWithRetry(targetTabId, command);
+    return this.sendMessageWithRetry(targetTabId, internalCmd);
   }
 
   /**
@@ -517,7 +536,7 @@ export class BackgroundAgent {
    */
   private async sendMessageWithRetry(
     tabId: number,
-    command: Command,
+    command: Command & { id: string },
     retries = 1
   ): Promise<Response> {
     return new Promise((resolve) => {
@@ -655,7 +674,7 @@ export class BackgroundAgent {
     return extensionActions.includes(command.action);
   }
 
-  private async executeExtensionCommand(command: ExtensionCommand): Promise<Response> {
+  private async executeExtensionCommand(command: ExtensionCommand & { id: string }): Promise<Response> {
     switch (command.action) {
       case 'navigate':
         await this.navigate(command.url, { waitUntil: command.waitUntil });
@@ -861,7 +880,7 @@ export function setupMessageListener(): void {
         sendResponse({
           type: 'btcp:response',
           response: {
-            id: msg.command.id,
+            id: msg.command.id || 'unknown',
             success: false,
             error: error instanceof Error ? error.message : String(error),
           },

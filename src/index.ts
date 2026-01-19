@@ -25,7 +25,7 @@
  * ```typescript
  * import { createContentAgent } from '@btcp/browser-agent';
  * const agent = createContentAgent();
- * await agent.execute({ id: '1', action: 'snapshot' });
+ * await agent.execute({ action: 'snapshot' });
  * ```
  */
 

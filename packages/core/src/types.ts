@@ -45,10 +45,18 @@ export type CoreAction =
   | 'highlight'
   | 'clearHighlight';
 
-// Base command structure
+// Base command structure (id is optional - auto-generated if not provided)
 export interface BaseCommand {
+  /** Optional command ID. Auto-generated if not provided. */
+  id?: string;
+  action: CoreAction;
+}
+
+// Internal command with required id (used after execute() adds it)
+export interface InternalCommand {
   id: string;
   action: CoreAction;
+  [key: string]: unknown;
 }
 
 // Element selector - supports CSS, ref, or semantic selectors
@@ -252,7 +260,6 @@ export interface EvaluateCommand extends BaseCommand {
  * @example Pre-validate before typing
  * ```typescript
  * const validation = await agent.execute({
- *   id: 'v1',
  *   action: 'validateElement',
  *   selector: '#username',
  *   capabilities: ['editable']
@@ -260,7 +267,6 @@ export interface EvaluateCommand extends BaseCommand {
  *
  * if (validation.data.compatible) {
  *   await agent.execute({
- *     id: 'a1',
  *     action: 'type',
  *     selector: '#username',
  *     text: 'user@example.com'
@@ -292,20 +298,19 @@ export interface ValidateElementCommand extends BaseCommand {
  * @example Check ref validity
  * ```typescript
  * const validation = await agent.execute({
- *   id: 'v1',
  *   action: 'validateRefs',
  *   refs: ['@ref:0', '@ref:1', '@ref:2']
  * });
  *
  * // Use only valid refs
  * for (const ref of validation.data.valid) {
- *   await agent.execute({ id: '...', action: 'click', selector: ref });
+ *   await agent.execute({ action: 'click', selector: ref });
  * }
  *
  * // Handle invalid refs
  * if (validation.data.invalid.length > 0) {
  *   // Take new snapshot to get fresh refs
- *   await agent.execute({ id: '...', action: 'snapshot' });
+ *   await agent.execute({ action: 'snapshot' });
  * }
  * ```
  */
@@ -326,17 +331,17 @@ export interface ValidateRefsCommand extends BaseCommand {
  * @example Highlight elements after snapshot
  * ```typescript
  * // Take a snapshot first
- * await agent.execute({ id: 's1', action: 'snapshot' });
+ * await agent.execute({ action: 'snapshot' });
  *
  * // Show visual highlights
- * await agent.execute({ id: 'h1', action: 'highlight' });
+ * await agent.execute({ action: 'highlight' });
  *
  * // Labels now visible on page with @ref:0, @ref:1, etc.
  * // Use the refs to interact with elements
- * await agent.execute({ id: 'c1', action: 'click', selector: '@ref:5' });
+ * await agent.execute({ action: 'click', selector: '@ref:5' });
  *
  * // Clear highlights when done
- * await agent.execute({ id: 'ch1', action: 'clearHighlight' });
+ * await agent.execute({ action: 'clearHighlight' });
  * ```
  */
 export interface HighlightCommand extends BaseCommand {
@@ -350,7 +355,7 @@ export interface HighlightCommand extends BaseCommand {
  *
  * @example Clear highlights
  * ```typescript
- * await agent.execute({ id: 'ch1', action: 'clearHighlight' });
+ * await agent.execute({ action: 'clearHighlight' });
  * ```
  */
 export interface ClearHighlightCommand extends BaseCommand {

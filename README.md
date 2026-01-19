@@ -86,11 +86,11 @@ import { createContentAgent } from 'btcp-browser-agent';
 const agent = createContentAgent();
 
 // Take a snapshot
-const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+const { data } = await agent.execute({ action: 'snapshot' });
 console.log(data.tree);  // Accessibility tree with refs
 
 // Click an element using ref from snapshot
-await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
+await agent.execute({ action: 'click', selector: '@ref:5' });
 ```
 
 **Popup (sending commands via messaging):**
@@ -116,11 +116,11 @@ import { createContentAgent } from 'btcp-browser-agent';
 const agent = createContentAgent();
 
 // Take a snapshot
-const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+const { data } = await agent.execute({ action: 'snapshot' });
 
 // Interact with elements
-await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
-await agent.execute({ id: '3', action: 'fill', selector: '@ref:3', value: 'Hello' });
+await agent.execute({ action: 'click', selector: '@ref:5' });
+await agent.execute({ action: 'fill', selector: '@ref:3', value: 'Hello' });
 ```
 
 ## API Reference
@@ -150,7 +150,7 @@ await agent.reload();
 const screenshot = await agent.screenshot({ format: 'png' });
 
 // Execute commands (routes to ContentAgent for DOM operations)
-await agent.execute({ id: '1', action: 'click', selector: '#submit' });
+await agent.execute({ action: 'click', selector: '#submit' });
 ```
 
 #### Multi-Tab Operations
@@ -167,7 +167,7 @@ await githubTab.click('@ref:5');
 
 // Method 2: Specify tabId in execute
 await agent.execute(
-  { id: '1', action: 'getText', selector: 'h1' },
+  { action: 'getText', selector: 'h1' },
   { tabId: tab2.id }
 );
 
@@ -184,10 +184,7 @@ import { createContentAgent } from 'btcp-browser-agent';
 const agent = createContentAgent();
 
 // Execute commands
-const response = await agent.execute({
-  id: 'cmd1',
-  action: 'snapshot'
-});
+const response = await agent.execute({ action: 'snapshot' });
 ```
 
 #### Available Actions
@@ -238,11 +235,11 @@ const response = await agent.execute({
 The `snapshot` action returns element references for stable selection:
 
 ```typescript
-const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+const { data } = await agent.execute({ action: 'snapshot' });
 // data.tree: "BUTTON 'Submit' [@ref:5]\nTEXTBOX 'Email' [@ref:3]"
 
 // Use refs in subsequent commands
-await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
+await agent.execute({ action: 'click', selector: '@ref:5' });
 ```
 
 ## Architecture

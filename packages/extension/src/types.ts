@@ -30,9 +30,10 @@ export type ExtensionAction =
   | 'sessionGetCurrent'
   | 'popupInitialize';
 
-// Base extension command
+// Base extension command (id is optional - auto-generated if not provided)
 export interface ExtensionBaseCommand {
-  id: string;
+  /** Optional command ID. Auto-generated if not provided. */
+  id?: string;
   action: ExtensionAction;
 }
 

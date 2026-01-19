@@ -23,6 +23,16 @@ import {
   createInvalidParametersError,
 } from './errors.js';
 
+// Command ID counter for auto-generated IDs
+let commandIdCounter = 0;
+
+/**
+ * Generate a unique command ID
+ */
+export function generateCommandId(): string {
+  return `cmd_${Date.now()}_${commandIdCounter++}`;
+}
+
 /**
  * DOM Actions executor
  */
@@ -43,18 +53,23 @@ export class DOMActions {
 
   /**
    * Execute a command and return a response
+   *
+   * The command ID is auto-generated internally - users don't need to provide it.
    */
   async execute(command: Command): Promise<Response> {
+    // Auto-generate ID if not provided
+    const id = command.id || generateCommandId();
+
     try {
       const data = await this.dispatch(command);
-      return { id: command.id, success: true, data };
+      return { id, success: true, data };
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
 
       // Include structured error data if available
       if (error instanceof DetailedError) {
         return {
-          id: command.id,
+          id,
           success: false,
           error: message,
           errorCode: error.code,
@@ -63,7 +78,7 @@ export class DOMActions {
         };
       }
 
-      return { id: command.id, success: false, error: message };
+      return { id, success: false, error: message };
     }
   }
 

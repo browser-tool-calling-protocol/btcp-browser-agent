@@ -11,17 +11,10 @@
  * const agent = createContentAgent(document, window);
  *
  * // Take a snapshot
- * const snapshot = await agent.execute({
- *   id: '1',
- *   action: 'snapshot'
- * });
+ * const snapshot = await agent.execute({ action: 'snapshot' });
  *
  * // Click an element
- * await agent.execute({
- *   id: '2',
- *   action: 'click',
- *   selector: '@ref:5'  // From snapshot
- * });
+ * await agent.execute({ action: 'click', selector: '@ref:5' });
  * ```
  */
 
@@ -33,7 +26,7 @@ export * from './types.js';
 export * from './errors.js';
 export { createSnapshot } from './snapshot.js';
 export { createRefMap, createSimpleRefMap } from './ref-map.js';
-export { DOMActions } from './actions.js';
+export { DOMActions, generateCommandId } from './actions.js';
 
 /**
  * ContentAgent - DOM automation agent that runs in content script context
@@ -97,10 +90,10 @@ export interface ContentAgent {
  * const agent = createContentAgent();
  *
  * // Take a snapshot of the page
- * const { data } = await agent.execute({ id: '1', action: 'snapshot' });
+ * const { data } = await agent.execute({ action: 'snapshot' });
  *
  * // Click an element using ref from snapshot
- * await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
+ * await agent.execute({ action: 'click', selector: '@ref:5' });
  * ```
  */
 export function createContentAgent(doc: Document = document, win: Window = window): ContentAgent {
