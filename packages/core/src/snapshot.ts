@@ -3,9 +3,14 @@
  *
  * Generates a flat accessibility snapshot of the DOM.
  * Produces a compact, AI-friendly list of interactive elements.
+ *
+ * Supports three modes:
+ * - 'interactive': Find clickable elements (default)
+ * - 'outline': Understand page structure with xpaths + metadata
+ * - 'content': Extract text content from sections
  */
 
-import type { SnapshotData, RefMap } from './types.js';
+import type { SnapshotData, RefMap, SnapshotMode, SnapshotFormat } from './types.js';
 
 /**
  * Get HTML element constructors from window (works in both browser and jsdom)
@@ -52,12 +57,33 @@ interface SnapshotOptions {
   root?: Element;
   maxDepth?: number;
   includeHidden?: boolean;
+  /** @deprecated Use mode: 'interactive' instead */
   interactive?: boolean;
   compact?: boolean;
+  /** @deprecated Use mode instead */
   all?: boolean;
-  format?: 'tree' | 'html';
+  /**
+   * Snapshot mode:
+   * - 'interactive': Find clickable elements (default)
+   * - 'outline': Understand page structure with xpaths + metadata
+   * - 'content': Extract text content from sections
+   */
+  mode?: SnapshotMode;
+  /**
+   * Output format:
+   * - 'tree': Flat accessibility tree (default)
+   * - 'html': Raw HTML
+   * - 'markdown': Markdown formatted content
+   */
+  format?: SnapshotFormat;
   /** Grep filter - string pattern or options object */
   grep?: string | GrepOptions;
+  /** Max chars per section in content mode */
+  maxLength?: number;
+  /** Include links as [text](url) in markdown format */
+  includeLinks?: boolean;
+  /** Include images as ![alt](src) in markdown format */
+  includeImages?: boolean;
 }
 
 const TRUNCATE_LIMITS = {
@@ -657,8 +683,752 @@ function buildSemanticXPath(element: Element): string {
   return '/' + parts.join('/');
 }
 
+// Landmark roles that define page structure
+const LANDMARK_ROLES = new Set([
+  'banner', 'main', 'contentinfo', 'navigation', 'complementary', 'region'
+]);
+
+/**
+ * Count words in text content
+ */
+function countWords(text: string): number {
+  return text.trim().split(/\s+/).filter(w => w.length > 0).length;
+}
+
+/**
+ * Get full text content with whitespace normalization
+ */
+function getCleanTextContent(element: Element, maxLength?: number): string {
+  const text = (element.textContent || '').replace(/\s+/g, ' ').trim();
+  if (maxLength && text.length > maxLength) {
+    return text.slice(0, maxLength - 3) + '...';
+  }
+  return text;
+}
+
+/**
+ * Count specific child elements
+ */
+function countChildElements(element: Element, tagNames: string[]): number {
+  const tags = new Set(tagNames.map(t => t.toUpperCase()));
+  let count = 0;
+  const walk = (el: Element) => {
+    if (tags.has(el.tagName)) count++;
+    for (const child of el.children) walk(child);
+  };
+  walk(element);
+  return count;
+}
+
+/**
+ * Get list items as strings
+ */
+function getListItems(element: Element, maxItems: number = 10): string[] {
+  const items: string[] = [];
+  const listItems = element.querySelectorAll('li');
+  for (let i = 0; i < Math.min(listItems.length, maxItems); i++) {
+    const text = getCleanTextContent(listItems[i], 100);
+    if (text) items.push(text);
+  }
+  return items;
+}
+
+/**
+ * Detect code language from class or content
+ */
+function detectCodeLanguage(element: Element): string | null {
+  // Check class names for language hints
+  const classes = element.className?.toString() || '';
+  const match = classes.match(/(?:language-|lang-)(\w+)/i);
+  if (match) return match[1].toLowerCase();
+
+  // Check parent pre/code element
+  const parent = element.closest('pre, code');
+  if (parent && parent !== element) {
+    const parentClasses = parent.className?.toString() || '';
+    const parentMatch = parentClasses.match(/(?:language-|lang-)(\w+)/i);
+    if (parentMatch) return parentMatch[1].toLowerCase();
+  }
+
+  return null;
+}
+
+/**
+ * Build metadata string for outline mode
+ */
+function buildOutlineMetadata(element: Element): string {
+  const parts: string[] = [];
+  const wordCount = countWords(element.textContent || '');
+
+  if (wordCount > 0) {
+    parts.push(`${wordCount} words`);
+  }
+
+  // Count specific elements
+  const links = element.querySelectorAll('a[href]').length;
+  if (links > 0) parts.push(`${links} links`);
+
+  const paragraphs = countChildElements(element, ['P']);
+  if (paragraphs > 1) parts.push(`${paragraphs} paragraphs`);
+
+  const listItems = countChildElements(element, ['LI']);
+  if (listItems > 0) parts.push(`${listItems} items`);
+
+  const codeBlocks = element.querySelectorAll('pre, code').length;
+  if (codeBlocks > 0) parts.push(`${codeBlocks} code`);
+
+  return parts.length > 0 ? `[${parts.join(', ')}]` : '';
+}
+
+/**
+ * Get section name/label from element
+ */
+function getSectionName(element: Element): string {
+  // Try aria-label first
+  const ariaLabel = element.getAttribute('aria-label');
+  if (ariaLabel) return ariaLabel.trim();
+
+  // Try aria-labelledby
+  const labelledBy = element.getAttribute('aria-labelledby');
+  if (labelledBy) {
+    const labels = labelledBy
+      .split(/\s+/)
+      .map(id => element.ownerDocument.getElementById(id)?.textContent?.trim())
+      .filter(Boolean);
+    if (labels.length) return labels.join(' ');
+  }
+
+  // Try id or class for name hint
+  const id = element.id;
+  if (id && id.length < 30 && !/^\d/.test(id)) {
+    return id.replace(/[-_]/g, ' ');
+  }
+
+  const semanticClass = getSemanticClass(element);
+  if (semanticClass) {
+    return semanticClass.replace(/[-_]/g, ' ');
+  }
+
+  // Try first heading inside
+  const heading = element.querySelector('h1, h2, h3, h4, h5, h6');
+  if (heading) {
+    return getCleanTextContent(heading, 50);
+  }
+
+  return '';
+}
+
+/**
+ * Create outline snapshot - structural overview with metadata
+ */
+function createOutlineSnapshot(
+  document: Document,
+  refMap: RefMap,
+  options: SnapshotOptions
+): SnapshotData {
+  const {
+    root = document.body,
+    maxDepth = 50,
+    includeHidden = false,
+    grep: grepPattern
+  } = options;
+
+  refMap.clear();
+  const win = document.defaultView || window;
+  const refs: SnapshotData['refs'] = {};
+  const lines: string[] = [];
+  let refCounter = 0;
+
+  // Stats for header
+  let landmarkCount = 0;
+  let sectionCount = 0;
+  let headingCount = 0;
+  let totalWords = 0;
+
+  // Recursive function to build outline with indentation
+  function buildOutline(element: Element, depth: number, indent: number): void {
+    if (depth > maxDepth) return;
+    if (!includeHidden && !isVisible(element, false)) return;
+
+    const role = getRole(element);
+    const tagName = element.tagName;
+
+    // Track stats
+    if (role?.startsWith('heading')) headingCount++;
+    if (LANDMARK_ROLES.has(role || '')) landmarkCount++;
+
+    // Determine if this element should be in the outline
+    let shouldInclude = false;
+    let line = '';
+    const indentStr = '  '.repeat(indent);
+
+    // Landmarks (MAIN, BANNER, etc.)
+    if (role && LANDMARK_ROLES.has(role)) {
+      shouldInclude = true;
+      const roleUpper = role.toUpperCase();
+      const name = getSectionName(element);
+      const metadata = buildOutlineMetadata(element);
+      const xpath = buildSemanticXPath(element);
+
+      // Generate ref for landmarks
+      const ref = `@ref:${refCounter++}`;
+      refMap.set(ref, element);
+      refs[ref] = {
+        selector: generateSelector(element),
+        role: role,
+        name: name || undefined
+      };
+
+      line = `${indentStr}${roleUpper}`;
+      if (name) line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
+      line += ` ${ref}`;
+      if (metadata) line += ` ${metadata}`;
+      line += ` ${xpath}`;
+
+      sectionCount++;
+    }
+    // Headings
+    else if (role?.startsWith('heading')) {
+      shouldInclude = true;
+      const level = tagName[1];
+      const text = getCleanTextContent(element, 60);
+      const xpath = buildSemanticXPath(element);
+
+      line = `${indentStr}HEADING level=${level}`;
+      if (text) line += ` "${text}"`;
+      line += ` ${xpath}`;
+    }
+    // Articles and named sections/regions
+    else if (tagName === 'ARTICLE' || (tagName === 'SECTION' && (element.id || element.getAttribute('aria-label')))) {
+      shouldInclude = true;
+      const roleUpper = tagName === 'ARTICLE' ? 'ARTICLE' : 'REGION';
+      const name = getSectionName(element);
+      const metadata = buildOutlineMetadata(element);
+      const xpath = buildSemanticXPath(element);
+
+      // Generate ref
+      const ref = `@ref:${refCounter++}`;
+      refMap.set(ref, element);
+      refs[ref] = {
+        selector: generateSelector(element),
+        role: roleUpper.toLowerCase(),
+        name: name || undefined
+      };
+
+      line = `${indentStr}${roleUpper}`;
+      if (name) line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
+      line += ` ${ref}`;
+      if (metadata) line += ` ${metadata}`;
+      line += ` ${xpath}`;
+
+      sectionCount++;
+    }
+    // Divs with semantic id/class that contain substantial content
+    else if (tagName === 'DIV' && (element.id || getSemanticClass(element))) {
+      const wordCount = countWords(element.textContent || '');
+      if (wordCount > 50) {
+        shouldInclude = true;
+        const name = getSectionName(element);
+        const metadata = buildOutlineMetadata(element);
+        const xpath = buildSemanticXPath(element);
+
+        const ref = `@ref:${refCounter++}`;
+        refMap.set(ref, element);
+        refs[ref] = {
+          selector: generateSelector(element),
+          role: 'region',
+          name: name || undefined
+        };
+
+        line = `${indentStr}REGION`;
+        if (name) line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
+        line += ` ${ref}`;
+        if (metadata) line += ` ${metadata}`;
+        line += ` ${xpath}`;
+
+        sectionCount++;
+      }
+    }
+    // Paragraph counts (grouped under parent)
+    else if (tagName === 'P' && depth > 0) {
+      // Don't include individual paragraphs, they're counted in metadata
+    }
+    // Lists
+    else if (tagName === 'UL' || tagName === 'OL') {
+      const items = element.querySelectorAll(':scope > li').length;
+      if (items > 0) {
+        shouldInclude = true;
+        const xpath = buildSemanticXPath(element);
+        line = `${indentStr}LIST [${items} items] ${xpath}`;
+      }
+    }
+    // Code blocks
+    else if (tagName === 'PRE') {
+      shouldInclude = true;
+      const lang = detectCodeLanguage(element);
+      const lineCount = (element.textContent || '').split('\n').length;
+      const xpath = buildSemanticXPath(element);
+
+      line = `${indentStr}CODE`;
+      if (lang) line += ` [${lang}]`;
+      line += ` [${lineCount} lines]`;
+      line += ` ${xpath}`;
+    }
+
+    if (shouldInclude && line) {
+      lines.push(line);
+    }
+
+    // Recurse into children (increase indent if we included this element)
+    const nextIndent = shouldInclude ? indent + 1 : indent;
+    for (const child of element.children) {
+      buildOutline(child, depth + 1, nextIndent);
+    }
+  }
+
+  buildOutline(root, 0, 0);
+
+  // Calculate total words
+  totalWords = countWords(root.textContent || '');
+
+  // Apply grep filter
+  let filteredLines = lines;
+  let grepDisplayPattern = '';
+
+  if (grepPattern) {
+    const grepOpts = typeof grepPattern === 'string'
+      ? { pattern: grepPattern }
+      : grepPattern;
+
+    const { pattern, ignoreCase = false, invert = false, fixedStrings = false } = grepOpts;
+    grepDisplayPattern = pattern;
+
+    let regexPattern = fixedStrings
+      ? pattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      : pattern;
+
+    const flags = ignoreCase ? 'i' : '';
+
+    try {
+      const regex = new RegExp(regexPattern, flags);
+      filteredLines = lines.filter(line => {
+        const matches = regex.test(line);
+        return invert ? !matches : matches;
+      });
+    } catch {
+      filteredLines = lines.filter(line => {
+        const matches = ignoreCase
+          ? line.toLowerCase().includes(pattern.toLowerCase())
+          : line.includes(pattern);
+        return invert ? !matches : matches;
+      });
+    }
+  }
+
+  // Build headers
+  const pageHeader = `PAGE: ${document.location?.href || 'about:blank'} | ${document.title || 'Untitled'} | viewport=${win.innerWidth}x${win.innerHeight}`;
+  let outlineHeader = `OUTLINE: landmarks=${landmarkCount} sections=${sectionCount} headings=${headingCount} words=${totalWords}`;
+  if (grepPattern) {
+    outlineHeader += ` grep=${grepDisplayPattern} matches=${filteredLines.length}`;
+  }
+
+  const output = [pageHeader, outlineHeader, '', ...filteredLines].join('\n');
+
+  return {
+    tree: output,
+    refs,
+    metadata: {
+      totalInteractiveElements: sectionCount,
+      capturedElements: refCounter,
+      quality: 'high'
+    }
+  };
+}
+
+/**
+ * Content section for markdown generation
+ */
+interface ContentSection {
+  xpath: string;
+  element: Element;
+  heading?: string;
+  headingLevel?: number;
+}
+
+/**
+ * Create content snapshot - extract text content from sections
+ */
+function createContentSnapshot(
+  document: Document,
+  refMap: RefMap,
+  options: SnapshotOptions
+): SnapshotData {
+  const {
+    root = document.body,
+    maxDepth = 50,
+    includeHidden = false,
+    format = 'tree',
+    grep: grepPattern,
+    maxLength = 2000,
+    includeLinks = true,
+    includeImages = false
+  } = options;
+
+  refMap.clear();
+  const refs: SnapshotData['refs'] = {};
+  let refCounter = 0;
+
+  // Collect content sections based on grep pattern
+  const sections: ContentSection[] = [];
+
+  function collectSections(element: Element, depth: number): void {
+    if (depth > maxDepth) return;
+    if (!includeHidden && !isVisible(element, false)) return;
+
+    const xpath = buildSemanticXPath(element);
+    const role = getRole(element);
+    const tagName = element.tagName;
+
+    // Check if this element should be a section
+    let isSection = false;
+
+    // Landmarks and articles are sections
+    if (role && (LANDMARK_ROLES.has(role) || role === 'article')) {
+      isSection = true;
+    }
+    // Named sections/regions
+    else if (tagName === 'SECTION' && (element.id || element.getAttribute('aria-label'))) {
+      isSection = true;
+    }
+    // Semantic divs with substantial content
+    else if (tagName === 'DIV' && (element.id || getSemanticClass(element))) {
+      const wordCount = countWords(element.textContent || '');
+      if (wordCount > 30) isSection = true;
+    }
+
+    if (isSection) {
+      // Get first heading in section
+      const heading = element.querySelector('h1, h2, h3, h4, h5, h6');
+      sections.push({
+        xpath,
+        element,
+        heading: heading ? getCleanTextContent(heading, 100) : undefined,
+        headingLevel: heading ? parseInt(heading.tagName[1]) : undefined
+      });
+    }
+
+    // Recurse into children
+    for (const child of element.children) {
+      collectSections(child, depth + 1);
+    }
+  }
+
+  collectSections(root, 0);
+
+  // Filter sections by grep pattern (matches xpath)
+  let filteredSections = sections;
+  let grepDisplayPattern = '';
+
+  if (grepPattern) {
+    const grepOpts = typeof grepPattern === 'string'
+      ? { pattern: grepPattern }
+      : grepPattern;
+
+    const { pattern, ignoreCase = false, invert = false, fixedStrings = false } = grepOpts;
+    grepDisplayPattern = pattern;
+
+    let regexPattern = fixedStrings
+      ? pattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+      : pattern;
+
+    const flags = ignoreCase ? 'i' : '';
+
+    try {
+      const regex = new RegExp(regexPattern, flags);
+      filteredSections = sections.filter(section => {
+        const matches = regex.test(section.xpath);
+        return invert ? !matches : matches;
+      });
+    } catch {
+      filteredSections = sections.filter(section => {
+        const matches = ignoreCase
+          ? section.xpath.toLowerCase().includes(pattern.toLowerCase())
+          : section.xpath.includes(pattern);
+        return invert ? !matches : matches;
+      });
+    }
+  }
+
+  // Generate output based on format
+  if (format === 'markdown') {
+    return generateMarkdownContent(document, filteredSections, refs, refMap, refCounter, {
+      maxLength,
+      includeLinks,
+      includeImages
+    });
+  }
+
+  // Tree format (default for content mode)
+  const lines: string[] = [];
+  let totalWords = 0;
+
+  for (const section of filteredSections) {
+    const sectionWords = countWords(section.element.textContent || '');
+    totalWords += sectionWords;
+
+    lines.push(`SECTION ${section.xpath} [${sectionWords} words]`);
+
+    // Extract content from section
+    extractContentLines(section.element, lines, '  ', maxLength, refMap, refs, refCounter);
+    lines.push('');
+  }
+
+  // Build headers
+  const pageHeader = `PAGE: ${document.location?.href || 'about:blank'} | ${document.title || 'Untitled'}`;
+  let contentHeader = `CONTENT: sections=${filteredSections.length} words=${totalWords}`;
+  if (grepPattern) {
+    contentHeader += ` grep=${grepDisplayPattern}`;
+  }
+
+  const output = [pageHeader, contentHeader, '', ...lines].join('\n');
+
+  return {
+    tree: output,
+    refs,
+    metadata: {
+      totalInteractiveElements: filteredSections.length,
+      capturedElements: Object.keys(refs).length,
+      quality: 'high'
+    }
+  };
+}
+
+/**
+ * Extract content lines from an element (for tree format)
+ */
+function extractContentLines(
+  element: Element,
+  lines: string[],
+  indent: string,
+  maxLength: number,
+  refMap: RefMap,
+  refs: SnapshotData['refs'],
+  refCounter: number
+): void {
+  const tagName = element.tagName;
+  const role = getRole(element);
+
+  // Headings
+  if (role?.startsWith('heading')) {
+    const level = tagName[1];
+    const text = getCleanTextContent(element, 100);
+    lines.push(`${indent}HEADING level=${level} "${text}"`);
+    return;
+  }
+
+  // Paragraphs
+  if (tagName === 'P') {
+    const text = getCleanTextContent(element, maxLength);
+    if (text) {
+      lines.push(`${indent}TEXT "${text}"`);
+    }
+    return;
+  }
+
+  // Lists
+  if (tagName === 'UL' || tagName === 'OL') {
+    const items = getListItems(element, 10);
+    if (items.length > 0) {
+      lines.push(`${indent}LIST [${items.length} items]`);
+      for (const item of items) {
+        lines.push(`${indent}  - "${item}"`);
+      }
+    }
+    return;
+  }
+
+  // Code blocks
+  if (tagName === 'PRE') {
+    const lang = detectCodeLanguage(element);
+    const code = (element.textContent || '').trim();
+    const codeLines = code.split('\n');
+    const preview = codeLines.slice(0, 5).join('\n');
+
+    let line = `${indent}CODE`;
+    if (lang) line += ` [${lang}, ${codeLines.length} lines]`;
+    else line += ` [${codeLines.length} lines]`;
+    lines.push(line);
+
+    // Add preview of code
+    for (const codeLine of preview.split('\n')) {
+      lines.push(`${indent}  ${codeLine}`);
+    }
+    if (codeLines.length > 5) {
+      lines.push(`${indent}  ...`);
+    }
+    return;
+  }
+
+  // Recurse into other elements
+  for (const child of element.children) {
+    extractContentLines(child, lines, indent, maxLength, refMap, refs, refCounter);
+  }
+}
+
+/**
+ * Generate markdown content output
+ */
+function generateMarkdownContent(
+  document: Document,
+  sections: ContentSection[],
+  refs: SnapshotData['refs'],
+  refMap: RefMap,
+  refCounter: number,
+  options: {
+    maxLength: number;
+    includeLinks: boolean;
+    includeImages: boolean;
+  }
+): SnapshotData {
+  const { maxLength, includeLinks, includeImages } = options;
+  const lines: string[] = [];
+  let totalWords = 0;
+
+  // Source comment
+  lines.push(`<!-- source: ${document.location?.href || 'about:blank'} -->`);
+
+  for (const section of sections) {
+    const sectionWords = countWords(section.element.textContent || '');
+    totalWords += sectionWords;
+
+    // Section xpath comment
+    lines.push(`<!-- xpath: ${section.xpath} -->`);
+    lines.push('');
+
+    // Extract markdown content
+    extractMarkdownContent(section.element, lines, maxLength, includeLinks, includeImages, refMap, refs, refCounter);
+    lines.push('');
+  }
+
+  // End comment
+  lines.push(`<!-- end: ${totalWords} words extracted -->`);
+
+  const output = lines.join('\n');
+
+  return {
+    tree: output,
+    refs,
+    metadata: {
+      totalInteractiveElements: sections.length,
+      capturedElements: Object.keys(refs).length,
+      quality: 'high'
+    }
+  };
+}
+
+/**
+ * Extract markdown content from element
+ */
+function extractMarkdownContent(
+  element: Element,
+  lines: string[],
+  maxLength: number,
+  includeLinks: boolean,
+  includeImages: boolean,
+  refMap: RefMap,
+  refs: SnapshotData['refs'],
+  refCounter: number
+): void {
+  const tagName = element.tagName;
+  const role = getRole(element);
+
+  // Headings
+  if (role?.startsWith('heading')) {
+    const level = parseInt(tagName[1]);
+    const text = getCleanTextContent(element, 100);
+    const prefix = '#'.repeat(level);
+    lines.push(`${prefix} ${text}`);
+    lines.push('');
+    return;
+  }
+
+  // Paragraphs
+  if (tagName === 'P') {
+    const text = getCleanTextContent(element, maxLength);
+    if (text) {
+      lines.push(text);
+      lines.push('');
+    }
+    return;
+  }
+
+  // Lists
+  if (tagName === 'UL') {
+    const items = element.querySelectorAll(':scope > li');
+    for (const item of items) {
+      const text = getCleanTextContent(item as Element, 200);
+      if (text) lines.push(`- ${text}`);
+    }
+    lines.push('');
+    return;
+  }
+
+  if (tagName === 'OL') {
+    const items = element.querySelectorAll(':scope > li');
+    let i = 1;
+    for (const item of items) {
+      const text = getCleanTextContent(item as Element, 200);
+      if (text) lines.push(`${i}. ${text}`);
+      i++;
+    }
+    lines.push('');
+    return;
+  }
+
+  // Code blocks
+  if (tagName === 'PRE') {
+    const lang = detectCodeLanguage(element) || '';
+    const code = (element.textContent || '').trim();
+    lines.push('```' + lang);
+    lines.push(code);
+    lines.push('```');
+    lines.push('');
+    return;
+  }
+
+  // Blockquotes
+  if (tagName === 'BLOCKQUOTE') {
+    const text = getCleanTextContent(element, maxLength);
+    if (text) {
+      const quotedLines = text.split('\n').map(l => `> ${l}`);
+      lines.push(...quotedLines);
+      lines.push('');
+    }
+    return;
+  }
+
+  // Images (if requested)
+  if (includeImages && tagName === 'IMG') {
+    const alt = element.getAttribute('alt') || 'image';
+    const src = element.getAttribute('src') || '';
+    lines.push(`![${alt}](${src})`);
+    lines.push('');
+    return;
+  }
+
+  // Recurse into other elements
+  for (const child of element.children) {
+    extractMarkdownContent(child, lines, maxLength, includeLinks, includeImages, refMap, refs, refCounter);
+  }
+}
+
 /**
  * Generate flat snapshot of the DOM
+ *
+ * Supports three modes:
+ * - 'interactive' (default): Find clickable elements with @ref markers
+ * - 'outline': Structural overview with xpaths and metadata
+ * - 'content': Extract text content from sections
  */
 export function createSnapshot(
   document: Document,
@@ -671,9 +1441,23 @@ export function createSnapshot(
     includeHidden = false,
     interactive = true,
     all = false,
+    mode,
     format = 'tree',
     grep: grepPattern
   } = options;
+
+  // Dispatch based on mode
+  const effectiveMode = mode || (all ? 'all' : (interactive ? 'interactive' : 'interactive'));
+
+  if (effectiveMode === 'outline') {
+    return createOutlineSnapshot(document, refMap, { ...options, root });
+  }
+
+  if (effectiveMode === 'content') {
+    return createContentSnapshot(document, refMap, { ...options, root });
+  }
+
+  // Default: interactive mode (original behavior)
 
   // Fast path for HTML format - return raw body HTML without processing
   if (format === 'html') {
