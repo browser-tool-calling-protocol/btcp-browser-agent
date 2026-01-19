@@ -19,7 +19,7 @@ The design follows **reactive summarization** - letting AI agents decide what to
 ┌──────────────────────────┐     ┌──────────────────────────┐
 │  snapshot                │     │  snapshot                │
 │  mode: 'outline'         │────▶│  mode: 'content'         │
-│                          │     │  xpathGrep: 'pattern'    │
+│                          │     │  grep: 'pattern'         │
 │  Returns:                │     │                          │
 │  - Page structure        │     │  Returns:                │
 │  - Semantic xpaths       │     │  - Markdown content      │
@@ -40,7 +40,7 @@ The design follows **reactive summarization** - letting AI agents decide what to
 |------|---------|--------|
 | `interactive` | Find clickable elements (default) | Tree with `@ref:N` markers |
 | `outline` | Understand page structure | Tree with xpaths + metadata |
-| `content` | Extract text content | Markdown from matched sections |
+| `content` | Extract text content | Text/Markdown from matched sections |
 
 ### Format Options
 
@@ -58,7 +58,7 @@ interface SnapshotOptions {
   selector?: string;
   maxDepth?: number;
   includeHidden?: boolean;
-  grep?: string | GrepOptions;
+  grep?: string | GrepOptions;    // Reused for xpath pattern matching
 
   // Mode selection
   mode?: 'interactive' | 'outline' | 'content';
@@ -67,7 +67,6 @@ interface SnapshotOptions {
   format?: 'tree' | 'html' | 'markdown';
 
   // Content mode options
-  xpathGrep?: string;        // Pipe-separated xpath patterns
   maxLength?: number;        // Max chars per section
   includeLinks?: boolean;    // Include [text](url) in markdown
   includeImages?: boolean;   // Include ![alt](src) in markdown
@@ -186,21 +185,26 @@ OUTLINE: landmarks={n} sections={n} headings={n} words={n}
 
 ### Purpose
 
-Extract actual text content from the page using xpath pattern matching. AI agents use patterns derived from outline to target specific sections.
+Extract actual text content from the page. Uses the existing `grep` option to filter which sections to extract based on xpath patterns from the outline.
 
 ### Usage
 
 ```typescript
-// Extract by xpath patterns
+// Extract all content
 const content = await client.snapshot({
+  mode: 'content'
+});
+
+// Extract by xpath patterns (using existing grep option)
+const filtered = await client.snapshot({
   mode: 'content',
-  xpathGrep: 'article|section.content'
+  grep: 'article|section.content'
 });
 
 // Extract with markdown format
 const markdown = await client.snapshot({
   mode: 'content',
-  xpathGrep: 'section.intro|section.content',
+  grep: 'section.intro|section.content',
   format: 'markdown'
 });
 
@@ -212,9 +216,9 @@ const section = await client.snapshot({
 });
 ```
 
-### XPath Grep Patterns
+### Grep Pattern Matching
 
-The `xpathGrep` parameter accepts pipe-separated patterns matched against semantic xpaths.
+The existing `grep` option filters output lines. Since outline/content mode output includes xpaths, grep naturally filters by xpath patterns.
 
 #### Syntax
 
@@ -230,22 +234,40 @@ pattern1|pattern2|pattern3
 | `section.content` | Sections with class "content" |
 | `/main/` | Direct children of main |
 | `h[1-3]` | Headings h1, h2, h3 (regex) |
-| `section\|article` | Sections or articles |
 | `reviews\|comments` | Review or comment sections |
 
-#### Matching Rules
+#### GrepOptions
 
-1. Patterns are case-insensitive
-2. Substring matching by default
-3. `^` prefix matches xpath start
-4. `$` suffix matches xpath end
-5. Regex supported: `h[1-3]`, `section.*content`
+The full `GrepOptions` interface is supported:
+
+```typescript
+interface GrepOptions {
+  pattern: string;      // Pattern to search for
+  ignoreCase?: boolean; // Case-insensitive (grep -i)
+  invert?: boolean;     // Invert match (grep -v)
+  fixedStrings?: boolean; // Literal string, not regex (grep -F)
+}
+
+// Example: case-insensitive matching
+snapshot({
+  mode: 'content',
+  grep: { pattern: 'ARTICLE|SECTION', ignoreCase: true },
+  format: 'markdown'
+});
+
+// Example: exclude navigation
+snapshot({
+  mode: 'content',
+  grep: { pattern: 'nav|footer', invert: true },
+  format: 'markdown'
+});
+```
 
 ### Output: Tree Format (default)
 
 ```
 PAGE: https://example.com/article | Article Title
-CONTENT: sections=3 words=1720 xpathGrep=section.intro|section.content
+CONTENT: sections=3 words=1720 grep=section.intro|section.content
 
 SECTION /main/article/section.intro [320 words]
   HEADING level=2 "Introduction"
@@ -277,7 +299,7 @@ SECTION /main/article/section.content [1400 words]
 ### Output: Markdown Format
 
 ```typescript
-snapshot({ mode: 'content', xpathGrep: 'section.intro|section.content', format: 'markdown' })
+snapshot({ mode: 'content', grep: 'section.intro|section.content', format: 'markdown' })
 ```
 
 ```markdown
@@ -354,7 +376,7 @@ Use the snapshot action with different modes:
    - Get page structure with semantic xpaths
    - Analyze to identify relevant content sections
 
-2. snapshot({ mode: 'content', xpathGrep: 'patterns', format: 'markdown' })
+2. snapshot({ mode: 'content', grep: 'patterns', format: 'markdown' })
    - Extract content from sections matching xpath patterns
    - Use patterns from outline analysis
 
@@ -393,7 +415,7 @@ Agent: This is API documentation. I'll extract auth section and overview.
 
 > snapshot({
     mode: 'content',
-    xpathGrep: 'section#overview|section#auth',
+    grep: 'section#overview|section#auth',
     format: 'markdown'
   })
 
@@ -490,7 +512,6 @@ interface SnapshotOptions {
 
   // New
   mode?: SnapshotMode;
-  xpathGrep?: string;
   maxLength?: number;
   includeLinks?: boolean;
   includeImages?: boolean;
@@ -523,9 +544,6 @@ function createContentSnapshot(document: Document, options: SnapshotOptions): st
 
 // Markdown formatter
 function formatAsMarkdown(sections: ContentSection[]): string;
-
-// XPath pattern matcher
-function matchXPathPattern(xpath: string, patterns: string[]): boolean;
 ```
 
 ---
@@ -538,6 +556,13 @@ function matchXPathPattern(xpath: string, patterns: string[]): boolean;
 2. **Shared infrastructure**: DOM traversal, xpath generation, refs
 3. **Simpler mental model**: "snapshot shows me the page"
 4. **Consistent return type**: Always returns string
+
+### Why reuse `grep` (not new parameter)?
+
+1. **Already exists**: No new parameter needed
+2. **Familiar**: Unix-like semantics users know
+3. **Works naturally**: Output lines contain xpaths, grep filters them
+4. **Full featured**: Supports ignoreCase, invert, fixedStrings
 
 ### Why string return type?
 
@@ -553,10 +578,3 @@ function matchXPathPattern(xpath: string, patterns: string[]): boolean;
 3. **Compact**: Less tokens than JSON
 4. **Parseable**: Easy to chunk and process
 5. **Human-readable**: Debuggable output
-
-### Why xpathGrep patterns?
-
-1. **Derived from outline**: Direct path from analysis to extraction
-2. **Flexible**: Regex patterns for complex matching
-3. **Semantic**: Matches meaningful structure, not DOM noise
-4. **Composable**: Pipe-separated for multiple targets
