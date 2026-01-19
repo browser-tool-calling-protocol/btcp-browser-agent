@@ -1,4 +1,4 @@
-# @btcp/browser-agent
+# btcp-browser-agent
 
 Give AI agents the power to see and control any browser.
 
@@ -32,7 +32,7 @@ One command gives your agent a clean, semantic view of any page. Stable `@ref` m
 ## Quick Example
 
 ```typescript
-import { createClient } from '@btcp/browser-agent/extension';
+import { createClient } from 'btcp-browser-agent/extension';
 
 const agent = createClient();
 
@@ -57,7 +57,7 @@ await agent.click('@ref:0');
 ## Installation
 
 ```bash
-npm install @btcp/browser-agent
+npm install btcp-browser-agent
 ```
 
 ## Usage Modes
@@ -68,7 +68,7 @@ For Chrome extensions with cross-origin access, tab management, and screenshots.
 
 **Background Script:**
 ```typescript
-import { BackgroundAgent, setupMessageListener } from '@btcp/browser-agent/extension';
+import { BackgroundAgent, setupMessageListener } from 'btcp-browser-agent/extension';
 
 // Option 1: Just set up message routing
 setupMessageListener();
@@ -81,7 +81,7 @@ await agent.screenshot();
 
 **Content Script:**
 ```typescript
-import { createContentAgent } from '@btcp/browser-agent';
+import { createContentAgent } from 'btcp-browser-agent';
 
 const agent = createContentAgent();
 
@@ -95,7 +95,7 @@ await agent.execute({ id: '2', action: 'click', selector: '@ref:5' });
 
 **Popup (sending commands via messaging):**
 ```typescript
-import { createClient } from '@btcp/browser-agent';
+import { createClient } from 'btcp-browser-agent';
 
 const client = createClient();
 
@@ -111,7 +111,7 @@ const screenshot = await client.screenshot();
 For use directly in a web page (limited to same-origin, no tab management):
 
 ```typescript
-import { createContentAgent } from '@btcp/browser-agent';
+import { createContentAgent } from 'btcp-browser-agent';
 
 const agent = createContentAgent();
 
@@ -130,7 +130,7 @@ await agent.execute({ id: '3', action: 'fill', selector: '@ref:3', value: 'Hello
 High-level browser orchestrator that runs in the extension's background script.
 
 ```typescript
-import { BackgroundAgent } from '@btcp/browser-agent/extension';
+import { BackgroundAgent } from 'btcp-browser-agent/extension';
 
 const agent = new BackgroundAgent();
 
@@ -179,7 +179,7 @@ await agent.execute(
 DOM automation agent that runs in content scripts or web pages.
 
 ```typescript
-import { createContentAgent } from '@btcp/browser-agent';
+import { createContentAgent } from 'btcp-browser-agent';
 
 const agent = createContentAgent();
 
@@ -289,7 +289,7 @@ btcp-browser-agent/
 │   ├── setupMessageListener()
 │   └── createClient()
 │
-└── @btcp/browser-agent   # Main package - re-exports both
+└── btcp-browser-agent   # Main package - re-exports both
 ```
 
 ## Capabilities Comparison
