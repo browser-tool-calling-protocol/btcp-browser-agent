@@ -60,6 +60,18 @@ import {
 
 export * from './types.js';
 
+// Re-export script messenger types and functions
+export {
+  createScriptMessenger,
+  createMethodMessenger,
+  type MessageDefinitions,
+  type ScriptMessenger,
+  type MethodMessenger,
+  type ScriptMessengerOptions,
+  type PayloadOf,
+  type ResultOf,
+} from './script-messenger.js';
+
 // Re-export BackgroundAgent for background script usage
 export {
   _BackgroundAgent as BackgroundAgent,
@@ -287,6 +299,7 @@ export interface Client {
     payload: unknown,
     options?: { scriptId?: string; timeout?: number }
   ): Promise<unknown>;
+
 }
 
 let commandIdCounter = 0;
