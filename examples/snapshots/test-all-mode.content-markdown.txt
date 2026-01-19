@@ -1,0 +1,68 @@
+<!-- source: http://localhost/ -->
+<!-- xpath: /header -->
+
+# Welcome to Our Website
+
+![Company Logo](/images/logo.png)
+
+
+<!-- xpath: /main -->
+
+## About Us
+
+We are a leading provider of innovative solutions for modern businesses. Our team has over 20 years of experience in delivering exceptional results.
+
+![Our dedicated team working together](/images/team.jpg)
+
+## Our Services
+
+### Consulting
+
+Expert consulting services to help your business grow and thrive in today's competitive market.
+
+### Development
+
+Custom software development tailored to your specific needs and requirements.
+
+![Code editor showing programming](/images/code.png)
+
+## Contact Us
+
+
+<!-- xpath: /main/section[1] -->
+
+## About Us
+
+We are a leading provider of innovative solutions for modern businesses. Our team has over 20 years of experience in delivering exceptional results.
+
+![Our dedicated team working together](/images/team.jpg)
+
+
+<!-- xpath: /main/section[2] -->
+
+## Our Services
+
+### Consulting
+
+Expert consulting services to help your business grow and thrive in today's competitive market.
+
+### Development
+
+Custom software development tailored to your specific needs and requirements.
+
+![Code editor showing programming](/images/code.png)
+
+
+<!-- xpath: /main/section[3] -->
+
+## Contact Us
+
+
+<!-- xpath: /footer -->
+
+Copyright 2025 - All rights reserved
+
+![Footer brand logo](footer-logo.png)
+
+
+<!-- end: 124 words extracted -->

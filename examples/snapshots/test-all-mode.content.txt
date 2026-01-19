@@ -1,0 +1,32 @@
+PAGE: http://localhost/ | Test All Mode - Images, Headings, and Text
+CONTENT: sections=6 words=124
+
+SECTION /header [4 words]
+  HEADING level=1 "Welcome to Our Website"
+
+SECTION /main [57 words]
+  HEADING level=2 "About Us"
+  TEXT "We are a leading provider of innovative solutions for modern businesses. Our team has over 20 years of experience in delivering exceptional results."
+  HEADING level=2 "Our Services"
+  HEADING level=3 "Consulting"
+  TEXT "Expert consulting services to help your business grow and thrive in today's competitive market."
+  HEADING level=3 "Development"
+  TEXT "Custom software development tailored to your specific needs and requirements."
+  HEADING level=2 "Contact Us"
+
+SECTION /main/section[1] [25 words]
+  HEADING level=2 "About Us"
+  TEXT "We are a leading provider of innovative solutions for modern businesses. Our team has over 20 years of experience in delivering exceptional results."
+
+SECTION /main/section[2] [28 words]
+  HEADING level=2 "Our Services"
+  HEADING level=3 "Consulting"
+  TEXT "Expert consulting services to help your business grow and thrive in today's competitive market."
+  HEADING level=3 "Development"
+  TEXT "Custom software development tailored to your specific needs and requirements."
+
+SECTION /main/section[3] [4 words]
+  HEADING level=2 "Contact Us"
+
+SECTION /footer [6 words]
+  TEXT "Copyright 2025 - All rights reserved"

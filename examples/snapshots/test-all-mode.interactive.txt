@@ -1,0 +1,5 @@
+PAGE: http://localhost/ | Test All Mode - Images, Headings, and Text | viewport=1024x768
+SNAPSHOT: elements=25 refs=2
+
+TEXTBOX "Email:" @ref:0 [type=email] /main/section[3]/form/input#email
+BUTTON "Submit" @ref:1 /main/section[3]/form/button

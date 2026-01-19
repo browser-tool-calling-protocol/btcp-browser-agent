@@ -1,0 +1,15 @@
+PAGE: http://localhost/ | Test All Mode - Images, Headings, and Text | viewport=1024x768
+OUTLINE: landmarks=6 sections=6 headings=6 words=67
+
+BANNER "Welcome to Our Website" @ref:0 [4 words] /header
+  HEADING level=1 "Welcome to Our Website" /header/h1
+MAIN "About Us" @ref:1 [57 words, 3 paragraphs] /main
+  REGION "About Us" @ref:2 [25 words] /main/section[1]
+    HEADING level=2 "About Us" /main/section[1]/h2
+  REGION "Our Services" @ref:3 [28 words, 2 paragraphs] /main/section[2]
+    HEADING level=2 "Our Services" /main/section[2]/h2
+    HEADING level=3 "Consulting" /main/section[2]/h3[1]
+    HEADING level=3 "Development" /main/section[2]/h3[2]
+  REGION "Contact Us" @ref:4 [4 words] /main/section[3]
+    HEADING level=2 "Contact Us" /main/section[3]/h2
+CONTENTINFO @ref:5 [6 words] /footer
