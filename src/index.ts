@@ -60,5 +60,9 @@ export {
   getBackgroundAgent,
   setupMessageListener,
   createClient,
+  generateCommandId,
   type Client,
+  // Deprecated aliases for backwards compatibility
+  BrowserAgent,
+  getBrowserAgent,
 } from '../packages/extension/dist/index.js';

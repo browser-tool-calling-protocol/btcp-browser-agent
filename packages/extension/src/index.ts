@@ -244,7 +244,10 @@ export interface Client {
 
 let commandIdCounter = 0;
 
-function generateCommandId(): string {
+/**
+ * Generate a unique command ID for BTCP commands
+ */
+export function generateCommandId(): string {
   return `cmd_${Date.now()}_${commandIdCounter++}`;
 }
 
