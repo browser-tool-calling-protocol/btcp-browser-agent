@@ -2,12 +2,9 @@
 
 ## Overview
 
-This document describes the design for AI-driven content extraction from web pages. The system enables AI agents to reactively explore and extract page content through a two-phase approach:
+This document describes the design for AI-driven content extraction from web pages. The system extends the existing `snapshot` API with new modes for content understanding and extraction.
 
-1. **Outline Phase**: Get structural overview with semantic xpaths
-2. **Extract Phase**: Extract content using xpath pattern matching
-
-This design follows the principle of **reactive summarization** - letting the AI agent decide what to extract based on the page structure, rather than using a fixed extraction strategy.
+The design follows **reactive summarization** - letting AI agents decide what to extract based on page structure, rather than using a fixed extraction strategy.
 
 ## Architecture
 
@@ -19,27 +16,74 @@ This design follows the principle of **reactive summarization** - letting the AI
                               │
               ┌───────────────┴───────────────┐
               ▼                               ▼
-┌──────────────────────┐         ┌──────────────────────┐
-│  snapshot            │         │  extract             │
-│  mode: 'outline'     │ ──────▶ │  xpathGrep: pattern  │
-│                      │         │                      │
-│  Returns:            │         │  Returns:            │
-│  - Page structure    │         │  - Markdown content  │
-│  - Semantic xpaths   │         │  - From matched      │
-│  - Section metadata  │         │    xpath patterns    │
-└──────────────────────┘         └──────────────────────┘
+┌──────────────────────────┐     ┌──────────────────────────┐
+│  snapshot                │     │  snapshot                │
+│  mode: 'outline'         │────▶│  mode: 'content'         │
+│                          │     │  xpathGrep: 'pattern'    │
+│  Returns:                │     │                          │
+│  - Page structure        │     │  Returns:                │
+│  - Semantic xpaths       │     │  - Markdown content      │
+│  - Section metadata      │     │  - From matched xpaths   │
+└──────────────────────────┘     └──────────────────────────┘
               │                               │
               ▼                               ▼
-        AI analyzes                    Structured pieces
-        decides what                   ready for
-        to extract                     summarization
+        AI analyzes                    Markdown string
+        decides what                   ready for parsing
+        to extract                     and chunking
 ```
 
-## Phase 1: Snapshot Outline Mode
+## Snapshot API Extension
+
+### Mode Overview
+
+| Mode | Purpose | Output |
+|------|---------|--------|
+| `interactive` | Find clickable elements (default) | Tree with `@ref:N` markers |
+| `outline` | Understand page structure | Tree with xpaths + metadata |
+| `content` | Extract text content | Markdown from matched sections |
+
+### Format Options
+
+| Format | Description |
+|--------|-------------|
+| `tree` | Flat accessibility tree (default) |
+| `html` | Raw HTML |
+| `markdown` | Markdown formatted content |
+
+### Interface
+
+```typescript
+interface SnapshotOptions {
+  // Existing options
+  selector?: string;
+  maxDepth?: number;
+  includeHidden?: boolean;
+  grep?: string | GrepOptions;
+
+  // Mode selection
+  mode?: 'interactive' | 'outline' | 'content';
+
+  // Output format
+  format?: 'tree' | 'html' | 'markdown';
+
+  // Content mode options
+  xpathGrep?: string;        // Pipe-separated xpath patterns
+  maxLength?: number;        // Max chars per section
+  includeLinks?: boolean;    // Include [text](url) in markdown
+  includeImages?: boolean;   // Include ![alt](src) in markdown
+}
+
+// Return type is always string
+function snapshot(options?: SnapshotOptions): Promise<string>;
+```
+
+---
+
+## Mode: `outline`
 
 ### Purpose
 
-Provide AI agents with a structural overview of the page content, including:
+Provide AI agents with a structural overview of page content including:
 - Landmark regions (header, main, footer, nav)
 - Content sections with semantic identifiers
 - Headings hierarchy
@@ -84,7 +128,7 @@ CONTENTINFO [85 words] /footer
 
 ### Output Components
 
-#### Header Line
+#### Header
 ```
 PAGE: {url} | {title} | viewport={width}x{height}
 OUTLINE: landmarks={n} sections={n} headings={n} words={n}
@@ -97,25 +141,23 @@ OUTLINE: landmarks={n} sections={n} headings={n} words={n}
 
 | Component | Description |
 |-----------|-------------|
-| `ROLE` | Landmark or element role (MAIN, HEADING, PARAGRAPH, LIST, etc.) |
+| `ROLE` | Landmark or content role (MAIN, HEADING, PARAGRAPH, etc.) |
 | `"name"` | Optional label or preview text |
-| `[metadata]` | Word count, item count, link count, etc. |
-| `xpath` | Semantic xpath for extraction targeting |
+| `[metadata]` | Word count, item count, paragraph count |
+| `xpath` | Semantic xpath for content mode targeting |
 
 #### Metadata Indicators
 
 | Indicator | Meaning |
 |-----------|---------|
-| `[N words]` | Approximate word count in section |
+| `[N words]` | Approximate word count |
 | `[N items]` | Number of list items |
-| `[N links]` | Number of links in section |
-| `[N paragraphs]` | Number of paragraph elements |
-| `[preview]` | Content is truncated, more available |
-| `[truncated]` | Section exceeds display limit |
+| `[N paragraphs]` | Number of paragraphs |
+| `[N links]` | Number of links |
+| `[N lines]` | Lines of code |
+| `[preview]` | Content truncated, more available |
 
 ### Semantic XPath Format
-
-XPaths use semantic HTML tags and meaningful identifiers:
 
 ```
 /main/article/section.content/h2[2]
@@ -126,68 +168,61 @@ XPaths use semantic HTML tags and meaningful identifiers:
 └─ Landmark
 ```
 
-**Included in xpath:**
-- Semantic HTML5 tags: `main`, `article`, `section`, `nav`, `header`, `footer`, `aside`
+**Included:**
+- Semantic HTML5: `main`, `article`, `section`, `nav`, `header`, `footer`, `aside`
 - Content tags: `h1`-`h6`, `p`, `ul`, `ol`, `li`, `pre`, `code`, `blockquote`
 - IDs: `#identifier`
-- Semantic classes: `.content`, `.intro`, `.reviews` (filtered for meaningful names)
-- Sibling index: `[n]` when multiple same-tag siblings exist
+- Semantic classes: `.content`, `.intro`, `.reviews`
+- Sibling index: `[n]` when needed
 
-**Excluded from xpath:**
-- Generic `div`/`span` without semantic meaning
-- Utility CSS classes (Tailwind, Bootstrap utilities)
-- Auto-generated or hash-based identifiers
+**Excluded:**
+- Generic `div`/`span` without meaning
+- Utility CSS classes
+- Auto-generated identifiers
 
-## Phase 2: Extract Action
+---
+
+## Mode: `content`
 
 ### Purpose
 
-Extract actual text content from the page using xpath pattern matching. The AI agent uses patterns derived from the outline to target specific content areas.
+Extract actual text content from the page using xpath pattern matching. AI agents use patterns derived from outline to target specific sections.
 
 ### Usage
 
 ```typescript
-const content = await client.extract({
-  xpathGrep: 'article|section.content|/main'
+// Extract by xpath patterns
+const content = await client.snapshot({
+  mode: 'content',
+  xpathGrep: 'article|section.content'
+});
+
+// Extract with markdown format
+const markdown = await client.snapshot({
+  mode: 'content',
+  xpathGrep: 'section.intro|section.content',
+  format: 'markdown'
+});
+
+// Extract from specific selector
+const section = await client.snapshot({
+  mode: 'content',
+  selector: '@ref:5',
+  format: 'markdown'
 });
 ```
 
-### Command Interface
+### XPath Grep Patterns
 
-```typescript
-interface ExtractCommand extends BaseCommand {
-  action: 'extract';
+The `xpathGrep` parameter accepts pipe-separated patterns matched against semantic xpaths.
 
-  // Primary: xpath pattern matching (pipe-separated patterns)
-  xpathGrep?: string;
-
-  // Alternative: specific refs from snapshot
-  refs?: string[];
-
-  // Alternative: CSS selector
-  selector?: string;
-
-  // Output options
-  format?: 'markdown' | 'text' | 'json';
-  maxLength?: number;      // Max chars per section (default: 2000)
-  includeLinks?: boolean;  // Include [text](url) in markdown (default: true)
-  includeImages?: boolean; // Include ![alt](src) in markdown (default: false)
-}
-```
-
-### XPath Grep Pattern Matching
-
-The `xpathGrep` parameter accepts pipe-separated patterns that match against semantic xpaths from the outline.
-
-#### Pattern Syntax
+#### Syntax
 
 ```
 pattern1|pattern2|pattern3
 ```
 
-Each pattern is matched against the xpath of each element. Matching uses substring/regex matching.
-
-#### Pattern Examples
+#### Examples
 
 | Pattern | Matches |
 |---------|---------|
@@ -200,20 +235,54 @@ Each pattern is matched against the xpath of each element. Matching uses substri
 
 #### Matching Rules
 
-1. Patterns are case-insensitive by default
-2. Each pattern is tested as a substring match
-3. Patterns starting with `^` match from xpath start
-4. Patterns ending with `$` match xpath end
-5. Regex special chars work: `h[1-3]`, `section.*content`
+1. Patterns are case-insensitive
+2. Substring matching by default
+3. `^` prefix matches xpath start
+4. `$` suffix matches xpath end
+5. Regex supported: `h[1-3]`, `section.*content`
 
-### Output Format: Markdown
+### Output: Tree Format (default)
 
-Default output format optimized for AI consumption.
+```
+PAGE: https://example.com/article | Article Title
+CONTENT: sections=3 words=1720 xpathGrep=section.intro|section.content
+
+SECTION /main/article/section.intro [320 words]
+  HEADING level=2 "Introduction"
+  TEXT "AI agents are autonomous software entities that can perceive
+  their environment, make decisions, and take actions to achieve
+  specific goals. Unlike traditional programs that follow predetermined
+  scripts, AI agents adapt their behavior based on situations."
+
+SECTION /main/article/section.content [1400 words]
+  HEADING level=2 "What are AI Agents?"
+  TEXT "An AI agent consists of several key components..."
+  LIST [5 items]
+    - "Perception: Ability to observe and interpret the environment"
+    - "Reasoning: Processing observations to make decisions"
+    - "Action: Executing decisions to affect the environment"
+    - "Learning: Improving performance over time"
+    - "Memory: Storing and recalling past experiences"
+  HEADING level=2 "How They Work"
+  TEXT "AI agents operate in a continuous loop..."
+  CODE [python, 12 lines]
+    class Agent:
+        def run(self):
+            while not self.done:
+                state = self.observe()
+                action = self.decide(state)
+                self.execute(action)
+```
+
+### Output: Markdown Format
+
+```typescript
+snapshot({ mode: 'content', xpathGrep: 'section.intro|section.content', format: 'markdown' })
+```
 
 ```markdown
-# Understanding AI Agents
-
-> Extracted from: /main/article
+<!-- source: https://example.com/article -->
+<!-- xpath: /main/article/section.intro -->
 
 ## Introduction
 
@@ -221,6 +290,8 @@ AI agents are autonomous software entities that can perceive their environment,
 make decisions, and take actions to achieve specific goals. Unlike traditional
 programs that follow predetermined scripts, AI agents adapt their behavior
 based on the situations they encounter.
+
+<!-- xpath: /main/article/section.content -->
 
 ## What are AI Agents?
 
@@ -230,6 +301,7 @@ An AI agent consists of several key components:
 - **Reasoning**: Processing observations to make decisions
 - **Action**: Executing decisions to affect the environment
 - **Learning**: Improving performance over time
+- **Memory**: Storing and recalling past experiences
 
 The fundamental difference between an AI agent and a simple program is
 autonomy. While a script executes a fixed sequence of operations, an agent
@@ -251,79 +323,22 @@ class Agent:
         while not self.done:
             state = self.observe()
             action = self.decide(state)
-            result = self.execute(action)
-            self.learn(state, action, result)
+            self.execute(action)
 ```
+
+<!-- end: 1720 words extracted -->
+```
+
+### Markdown Features
+
+- HTML comments for metadata (xpath source, word count)
+- Preserved heading hierarchy
+- Lists (ordered and unordered)
+- Code blocks with language hints
+- Links as `[text](url)` when `includeLinks: true`
+- Images as `![alt](src)` when `includeImages: true`
 
 ---
-
-*Extracted 1,847 words from 3 sections*
-```
-
-### Output Format: JSON
-
-Structured output for programmatic processing.
-
-```json
-{
-  "sections": [
-    {
-      "xpath": "/main/article/section.intro",
-      "heading": "Introduction",
-      "content": "AI agents are autonomous software entities...",
-      "wordCount": 320,
-      "links": [
-        { "text": "AI overview", "href": "/docs/ai" }
-      ]
-    },
-    {
-      "xpath": "/main/article/section.content",
-      "heading": "What are AI Agents?",
-      "content": "An AI agent consists of several key components...",
-      "wordCount": 1400,
-      "lists": [
-        {
-          "type": "unordered",
-          "items": ["Perception: Ability to observe...", "..."]
-        }
-      ],
-      "code": [
-        { "language": "python", "content": "class Agent:..." }
-      ]
-    }
-  ],
-  "metadata": {
-    "url": "https://example.com/article",
-    "title": "Understanding AI Agents",
-    "totalWords": 2200,
-    "sectionsExtracted": 3,
-    "patternsMatched": ["article", "section.content"]
-  }
-}
-```
-
-### Output Format: Text
-
-Plain text without formatting, useful for simple extraction.
-
-```
-Understanding AI Agents
-
-Introduction
-
-AI agents are autonomous software entities that can perceive their environment,
-make decisions, and take actions to achieve specific goals.
-
-What are AI Agents?
-
-An AI agent consists of several key components:
-- Perception: Ability to observe and interpret the environment
-- Reasoning: Processing observations to make decisions
-- Action: Executing decisions to affect the environment
-- Learning: Improving performance over time
-
-...
-```
 
 ## AI Agent Workflow
 
@@ -331,18 +346,17 @@ An AI agent consists of several key components:
 
 ```
 You are a content extraction agent. Your task is to extract relevant
-information from web pages for downstream summarization.
+information from web pages for downstream processing.
 
-Available actions:
-- snapshot({ mode: 'outline' }) - Get page structure with xpaths
-- extract({ xpathGrep: 'pattern' }) - Extract content matching xpath patterns
+Use the snapshot action with different modes:
 
-Workflow:
-1. Call snapshot({ mode: 'outline' }) to understand page structure
-2. Analyze the outline to identify relevant content sections
-3. Construct xpathGrep patterns to target those sections
-4. Call extract({ xpathGrep: 'your|patterns' }) to get content
-5. Return extracted markdown for summarization
+1. snapshot({ mode: 'outline' })
+   - Get page structure with semantic xpaths
+   - Analyze to identify relevant content sections
+
+2. snapshot({ mode: 'content', xpathGrep: 'patterns', format: 'markdown' })
+   - Extract content from sections matching xpath patterns
+   - Use patterns from outline analysis
 
 Pattern tips:
 - Use 'article|main' for main content
@@ -350,7 +364,7 @@ Pattern tips:
 - Use 'h[1-2]' for top-level headings only
 - Combine patterns with | for multiple targets
 
-You extract content. You do NOT summarize. Return the markdown as-is.
+Return extracted markdown for further processing.
 ```
 
 ### Example Session
@@ -373,21 +387,18 @@ MAIN [4200 words] /main
     CODE [25 lines] /main/section#auth/pre
   REGION "endpoints" [2800 words] /main/section#endpoints
     HEADING level=2 "Endpoints" /main/section#endpoints/h2
-    REGION "users-api" [800 words] /main/section#endpoints/section.users
-      HEADING level=3 "Users API" /main/section#endpoints/section.users/h3
-      ...
-    REGION "orders-api" [1200 words] /main/section#endpoints/section.orders
-      ...
-ASIDE [300 words] /aside
-  HEADING level=3 "Quick Links" /aside/h3
-  LIST [8 items] /aside/ul
+    ...
 
-Agent: This is API documentation. The user asked about authentication,
-so I'll extract the auth section and overview.
+Agent: This is API documentation. I'll extract auth section and overview.
 
-> extract({ xpathGrep: 'section#overview|section#auth', format: 'markdown' })
+> snapshot({
+    mode: 'content',
+    xpathGrep: 'section#overview|section#auth',
+    format: 'markdown'
+  })
 
-# API Reference
+<!-- source: https://docs.example.com/api -->
+<!-- xpath: /main/section#overview -->
 
 ## Overview
 
@@ -395,6 +406,8 @@ The Example API provides programmatic access to all platform features.
 This RESTful API uses JSON for request and response bodies.
 
 Base URL: `https://api.example.com/v1`
+
+<!-- xpath: /main/section#auth -->
 
 ## Authentication
 
@@ -407,120 +420,143 @@ curl -H "Authorization: Bearer YOUR_API_KEY" \
   https://api.example.com/v1/users
 ```
 
-To generate an API key:
-1. Go to Settings > API Keys
-2. Click "Generate New Key"
-3. Copy and store the key securely
+<!-- end: 750 words extracted -->
+
+Agent: Here is the extracted API documentation.
+```
 
 ---
 
-*Extracted 750 words from 2 sections*
+## Downstream Processing
 
-Agent: Here is the extracted content about API authentication and overview.
+### Markdown Parser & Chunker (Future)
+
+The markdown output is designed for downstream parsing and chunking:
+
+```
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  snapshot       │     │  Markdown       │     │  Chunks         │
+│  mode: content  │────▶│  Parser         │────▶│  for LLM        │
+│  format: md     │     │                 │     │                 │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+        │                       │                       │
+        ▼                       ▼                       ▼
+   Raw markdown          Structured AST          Sized pieces
+   string                with metadata           for context
 ```
 
-## Implementation Notes
+**Parser responsibilities:**
+- Extract xpath comments as section metadata
+- Build heading hierarchy
+- Identify code blocks, lists, paragraphs
+- Track word/token counts
 
-### Outline Mode Implementation
+**Chunker responsibilities:**
+- Split by semantic boundaries (headings)
+- Respect max token limits
+- Preserve context (heading breadcrumbs)
+- Handle code blocks atomically
 
-Location: `packages/core/src/snapshot.ts`
+---
 
-Key additions:
-1. New `mode: 'outline'` option in `SnapshotOptions`
-2. Content role detection (headings, paragraphs, lists, etc.)
-3. Word count calculation per section
-4. Hierarchical output with indentation
-5. Enhanced semantic xpath generation
+## Implementation Plan
 
-### Extract Action Implementation
+### Files to Modify
 
-Location: `packages/core/src/extract.ts` (new file)
+```
+packages/core/src/
+├── types.ts          # Add mode, format options
+├── snapshot.ts       # Add outline and content modes
+└── actions.ts        # Update snapshot dispatch
+```
 
-Key components:
-1. XPath pattern parser and matcher
-2. Content extraction from matched elements
-3. Markdown formatter
-4. Text content cleaner (whitespace normalization)
-5. Link and image extraction
-
-### Type Definitions
-
-Location: `packages/core/src/types.ts`
+### Type Additions
 
 ```typescript
-// Snapshot mode extension
-type SnapshotMode = 'interactive' | 'outline';
+// types.ts
+
+type SnapshotMode = 'interactive' | 'outline' | 'content';
+type SnapshotFormat = 'tree' | 'html' | 'markdown';
 
 interface SnapshotOptions {
-  mode?: SnapshotMode;
-  // ... existing options
-}
+  // Existing
+  root?: Element;
+  maxDepth?: number;
+  includeHidden?: boolean;
+  interactive?: boolean;  // deprecated, use mode
+  all?: boolean;          // deprecated, use mode
+  format?: SnapshotFormat;
+  grep?: string | GrepOptions;
 
-// New extract action
-interface ExtractCommand extends BaseCommand {
-  action: 'extract';
+  // New
+  mode?: SnapshotMode;
   xpathGrep?: string;
-  refs?: string[];
-  selector?: string;
-  format?: 'markdown' | 'text' | 'json';
   maxLength?: number;
   includeLinks?: boolean;
   includeImages?: boolean;
 }
-
-interface ExtractResult {
-  content: string;  // Formatted content (markdown/text)
-  sections: ExtractSection[];
-  metadata: ExtractMetadata;
-}
-
-interface ExtractSection {
-  xpath: string;
-  heading?: string;
-  content: string;
-  wordCount: number;
-  links?: Array<{ text: string; href: string }>;
-  images?: Array<{ alt: string; src: string }>;
-  lists?: Array<{ type: 'ordered' | 'unordered'; items: string[] }>;
-  code?: Array<{ language?: string; content: string }>;
-}
-
-interface ExtractMetadata {
-  url: string;
-  title: string;
-  totalWords: number;
-  sectionsExtracted: number;
-  patternsMatched: string[];
-}
 ```
+
+### Snapshot.ts Additions
+
+```typescript
+// snapshot.ts
+
+// Content roles for outline/content modes
+const CONTENT_ROLES = [
+  'banner', 'main', 'contentinfo', 'navigation', 'complementary',
+  'article', 'region', 'heading', 'paragraph', 'list', 'listitem',
+  'figure', 'blockquote', 'code', 'img'
+];
+
+// Word count helper
+function getWordCount(element: Element): number;
+
+// Content text extraction
+function getTextContent(element: Element, maxLength?: number): string;
+
+// Outline mode implementation
+function createOutlineSnapshot(document: Document, options: SnapshotOptions): string;
+
+// Content mode implementation
+function createContentSnapshot(document: Document, options: SnapshotOptions): string;
+
+// Markdown formatter
+function formatAsMarkdown(sections: ContentSection[]): string;
+
+// XPath pattern matcher
+function matchXPathPattern(xpath: string, patterns: string[]): boolean;
+```
+
+---
 
 ## Design Decisions
 
-### Why Outline + Extract (not just enhanced snapshot)?
+### Why extend snapshot (not new action)?
 
-1. **Separation of concerns**: Outline is cheap (metadata only), extract is expensive (full text)
-2. **AI agency**: Agent decides what to extract based on outline analysis
-3. **Token efficiency**: Don't send full page content when only structure is needed
-4. **Reactive pattern**: Matches how humans skim then read
+1. **Unified API**: One action for all page understanding
+2. **Shared infrastructure**: DOM traversal, xpath generation, refs
+3. **Simpler mental model**: "snapshot shows me the page"
+4. **Consistent return type**: Always returns string
 
-### Why xpathGrep patterns (not CSS selectors)?
+### Why string return type?
 
-1. **Semantic meaning**: Xpaths from outline carry semantic context
-2. **Pattern matching**: Easy to express "any section about reviews"
-3. **AI-friendly**: Natural language maps well to xpath patterns
-4. **Composable**: Pipe-separated patterns allow flexible targeting
+1. **Simplicity**: No complex type unions
+2. **Streaming-ready**: String can be streamed
+3. **Downstream processing**: Parser handles structure
+4. **AI-friendly**: LLMs work with text
 
-### Why Markdown output (not just JSON)?
+### Why markdown format?
 
-1. **AI consumption**: LLMs work well with markdown structure
-2. **Readable**: Human-debuggable output
-3. **Compact**: Less tokens than verbose JSON
-4. **Structured enough**: Headers, lists, code blocks preserved
+1. **Universal**: Every LLM understands markdown
+2. **Structured**: Headings, lists, code preserved
+3. **Compact**: Less tokens than JSON
+4. **Parseable**: Easy to chunk and process
+5. **Human-readable**: Debuggable output
 
-## Future Considerations
+### Why xpathGrep patterns?
 
-- **Streaming extraction**: For very large pages, stream sections
-- **Caching**: Cache outline between extract calls
-- **Smart truncation**: Summarize middle content, keep start/end
-- **Content scoring**: Rank sections by relevance to query
-- **Multi-page**: Extract across paginated content
+1. **Derived from outline**: Direct path from analysis to extraction
+2. **Flexible**: Regex patterns for complex matching
+3. **Semantic**: Matches meaningful structure, not DOM noise
+4. **Composable**: Pipe-separated for multiple targets
