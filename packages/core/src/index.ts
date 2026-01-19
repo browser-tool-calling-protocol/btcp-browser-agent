@@ -24,7 +24,7 @@ import type { Command, Response, RefMap } from './types.js';
 
 export * from './types.js';
 export * from './errors.js';
-export { createSnapshot } from './snapshot.js';
+export { createSnapshot, extractPageContent } from './snapshot.js';
 export { createRefMap, createSimpleRefMap } from './ref-map.js';
 export { DOMActions, generateCommandId } from './actions.js';
 

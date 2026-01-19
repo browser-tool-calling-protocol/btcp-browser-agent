@@ -43,7 +43,9 @@ export type CoreAction =
   | 'validateRefs'
   // Visualization
   | 'highlight'
-  | 'clearHighlight';
+  | 'clearHighlight'
+  // Content extraction
+  | 'getPageContent';
 
 // Base command structure (id is optional - auto-generated if not provided)
 export interface BaseCommand {
@@ -362,6 +364,98 @@ export interface ClearHighlightCommand extends BaseCommand {
   action: 'clearHighlight';
 }
 
+/**
+ * Extract readable page content for AI summarization
+ *
+ * Returns the page's readable text content organized by semantic structure,
+ * optimized for AI agents to understand and summarize page content.
+ *
+ * @example Get page content for summarization
+ * ```typescript
+ * const result = await agent.execute({
+ *   action: 'getPageContent',
+ *   strategy: 'readability',
+ *   maxLength: 5000,
+ *   includeHeadings: true
+ * });
+ *
+ * // result.data contains:
+ * // - content: readable text
+ * // - headings: heading hierarchy
+ * // - landmarks: region summaries
+ * // - stats: word/char counts
+ * ```
+ */
+export interface GetPageContentCommand extends BaseCommand {
+  action: 'getPageContent';
+
+  /** Content extraction strategy */
+  strategy?: 'readability' | 'full' | 'structured';
+
+  /** Maximum content length in characters (default: 10000) */
+  maxLength?: number;
+
+  /** Include heading hierarchy (default: true) */
+  includeHeadings?: boolean;
+
+  /** Include landmark region summaries (default: true) */
+  includeLandmarks?: boolean;
+
+  /** Include metadata like title, description, etc. (default: true) */
+  includeMetadata?: boolean;
+
+  /** Extract from specific selector (default: document.body) */
+  selector?: Selector;
+}
+
+/**
+ * Heading info from page content extraction
+ */
+export interface HeadingInfo {
+  level: number;
+  text: string;
+  /** Optional ref if heading is interactive */
+  ref?: string;
+}
+
+/**
+ * Landmark region summary
+ */
+export interface LandmarkInfo {
+  role: string;
+  label?: string;
+  summary: string;
+}
+
+/**
+ * Response data for getPageContent command
+ */
+export interface PageContentResponse {
+  /** Main readable text content */
+  content: string;
+
+  /** Page title */
+  title: string;
+
+  /** Meta description if available */
+  description?: string;
+
+  /** Heading hierarchy */
+  headings: HeadingInfo[];
+
+  /** Landmark region summaries */
+  landmarks: LandmarkInfo[];
+
+  /** Content statistics */
+  stats: {
+    words: number;
+    chars: number;
+    headings: number;
+    paragraphs: number;
+    links: number;
+  };
+}
+
 export type Modifier = 'Alt' | 'Control' | 'Meta' | 'Shift';
 
 // Union of all commands
@@ -397,7 +491,8 @@ export type Command =
   | ValidateElementCommand
   | ValidateRefsCommand
   | HighlightCommand
-  | ClearHighlightCommand;
+  | ClearHighlightCommand
+  | GetPageContentCommand;
 
 // Response types
 export interface SuccessResponse<T = unknown> {

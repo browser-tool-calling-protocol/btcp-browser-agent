@@ -13,8 +13,9 @@ import type {
   Modifier,
   ValidateElementResponse,
   ValidateRefsResponse,
+  PageContentResponse,
 } from './types.js';
-import { createSnapshot } from './snapshot.js';
+import { createSnapshot, extractPageContent } from './snapshot.js';
 import {
   DetailedError,
   createElementNotFoundError,
@@ -206,6 +207,16 @@ export class DOMActions {
 
       case 'clearHighlight':
         return this.clearHighlight();
+
+      case 'getPageContent':
+        return this.getPageContent({
+          selector: command.selector,
+          strategy: command.strategy,
+          maxLength: command.maxLength,
+          includeHeadings: command.includeHeadings,
+          includeLandmarks: command.includeLandmarks,
+          includeMetadata: command.includeMetadata,
+        });
 
       default:
         throw new Error(`Unknown action: ${(command as Command).action}`);
@@ -1186,6 +1197,31 @@ export class DOMActions {
   private async clearHighlight(): Promise<{ cleared: true }> {
     this.clearExistingOverlay();
     return { cleared: true };
+  }
+
+  /**
+   * Extract page content for AI summarization
+   */
+  private async getPageContent(options: {
+    selector?: string;
+    strategy?: 'readability' | 'full' | 'structured';
+    maxLength?: number;
+    includeHeadings?: boolean;
+    includeLandmarks?: boolean;
+    includeMetadata?: boolean;
+  }): Promise<PageContentResponse> {
+    const root = options.selector
+      ? this.getElement(options.selector)
+      : this.document.body;
+
+    return extractPageContent(this.document, {
+      root,
+      strategy: options.strategy,
+      maxLength: options.maxLength,
+      includeHeadings: options.includeHeadings,
+      includeLandmarks: options.includeLandmarks,
+      includeMetadata: options.includeMetadata,
+    });
   }
 
   /**

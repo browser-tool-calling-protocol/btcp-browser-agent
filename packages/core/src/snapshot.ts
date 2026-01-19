@@ -5,7 +5,7 @@
  * Produces a compact, AI-friendly list of interactive elements.
  */
 
-import type { SnapshotData, RefMap } from './types.js';
+import type { SnapshotData, RefMap, PageContentResponse, HeadingInfo, LandmarkInfo } from './types.js';
 
 /**
  * Get HTML element constructors from window (works in both browser and jsdom)
@@ -869,5 +869,358 @@ export function createSnapshot(
       quality: viewportArea === 0 || capturedInteractive === 0 ? 'low' : capturedInteractive < totalInteractive * 0.5 ? 'medium' : 'high',
       warnings: warnings.length > 0 ? warnings : undefined
     }
+  };
+}
+
+/**
+ * Content extraction options
+ */
+interface ContentExtractionOptions {
+  root?: Element;
+  strategy?: 'readability' | 'full' | 'structured';
+  maxLength?: number;
+  includeHeadings?: boolean;
+  includeLandmarks?: boolean;
+  includeMetadata?: boolean;
+}
+
+// Elements that typically don't contain readable content
+const SKIP_CONTENT_TAGS = new Set([
+  'SCRIPT', 'STYLE', 'NOSCRIPT', 'IFRAME', 'OBJECT', 'EMBED',
+  'SVG', 'CANVAS', 'VIDEO', 'AUDIO', 'MAP', 'TEMPLATE'
+]);
+
+// Landmark roles for content extraction
+const LANDMARK_ROLES: Record<string, string> = {
+  'main': 'main',
+  'MAIN': 'main',
+  'nav': 'navigation',
+  'NAV': 'navigation',
+  'aside': 'complementary',
+  'ASIDE': 'complementary',
+  'header': 'banner',
+  'HEADER': 'banner',
+  'footer': 'contentinfo',
+  'FOOTER': 'contentinfo',
+  'article': 'article',
+  'ARTICLE': 'article',
+  'section': 'region',
+  'SECTION': 'region',
+  'form': 'form',
+  'FORM': 'form',
+};
+
+// Tags that typically contain boilerplate/navigation (deprioritize in readability mode)
+const BOILERPLATE_TAGS = new Set(['NAV', 'HEADER', 'FOOTER', 'ASIDE']);
+
+/**
+ * Extract text content from an element, handling whitespace properly
+ */
+function extractTextContent(element: Element): string {
+  const win = element.ownerDocument.defaultView;
+  if (!win) return '';
+
+  // Skip hidden elements
+  const HTMLElementConstructor = win.HTMLElement;
+  if (element instanceof HTMLElementConstructor) {
+    try {
+      const style = win.getComputedStyle(element);
+      if (style.display === 'none' || style.visibility === 'hidden') {
+        return '';
+      }
+    } catch {
+      // Continue if getComputedStyle fails
+    }
+  }
+
+  const textParts: string[] = [];
+
+  for (const node of element.childNodes) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const text = node.textContent?.trim();
+      if (text) {
+        textParts.push(text);
+      }
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      const childElement = node as Element;
+      const tagName = childElement.tagName;
+
+      // Skip non-content elements
+      if (SKIP_CONTENT_TAGS.has(tagName)) continue;
+
+      // Add line breaks for block elements
+      const isBlock = ['P', 'DIV', 'BR', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6',
+                       'LI', 'TR', 'BLOCKQUOTE', 'PRE', 'ADDRESS'].includes(tagName);
+
+      const childText = extractTextContent(childElement);
+      if (childText) {
+        if (isBlock && textParts.length > 0) {
+          textParts.push('\n');
+        }
+        textParts.push(childText);
+        if (isBlock) {
+          textParts.push('\n');
+        }
+      }
+    }
+  }
+
+  return textParts.join(' ').replace(/\s+/g, ' ').replace(/\n\s*\n/g, '\n\n').trim();
+}
+
+/**
+ * Extract headings from the document
+ */
+function extractHeadings(root: Element): HeadingInfo[] {
+  const headings: HeadingInfo[] = [];
+  const headingElements = root.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  for (const heading of headingElements) {
+    const level = parseInt(heading.tagName[1], 10);
+    const text = heading.textContent?.trim() || '';
+
+    if (text) {
+      headings.push({
+        level,
+        text: text.slice(0, 200), // Limit heading length
+      });
+    }
+  }
+
+  return headings;
+}
+
+/**
+ * Extract landmark regions and their summaries
+ */
+function extractLandmarks(root: Element): LandmarkInfo[] {
+  const landmarks: LandmarkInfo[] = [];
+
+  // Find elements with explicit landmark roles
+  const roleElements = root.querySelectorAll('[role]');
+  for (const element of roleElements) {
+    const role = element.getAttribute('role');
+    if (role && ['main', 'navigation', 'banner', 'contentinfo', 'complementary', 'form', 'search', 'region'].includes(role)) {
+      const label = element.getAttribute('aria-label') ||
+                    element.getAttribute('aria-labelledby') ||
+                    undefined;
+
+      const text = extractTextContent(element);
+      const summary = text.slice(0, 300) + (text.length > 300 ? '...' : '');
+
+      landmarks.push({
+        role,
+        label: label || undefined,
+        summary,
+      });
+    }
+  }
+
+  // Find semantic landmark elements
+  for (const tagName of Object.keys(LANDMARK_ROLES)) {
+    const elements = root.querySelectorAll(tagName.toLowerCase());
+    for (const element of elements) {
+      // Skip if already has a role attribute (handled above)
+      if (element.hasAttribute('role')) continue;
+
+      const role = LANDMARK_ROLES[tagName];
+      const label = element.getAttribute('aria-label') || undefined;
+
+      const text = extractTextContent(element);
+      const summary = text.slice(0, 300) + (text.length > 300 ? '...' : '');
+
+      // Avoid duplicate landmarks
+      const existingLandmark = landmarks.find(l => l.role === role && l.summary === summary);
+      if (!existingLandmark && summary.length > 10) {
+        landmarks.push({
+          role,
+          label,
+          summary,
+        });
+      }
+    }
+  }
+
+  return landmarks;
+}
+
+/**
+ * Extract main content using readability heuristics
+ */
+function extractMainContent(root: Element, maxLength: number): string {
+  // Try to find main content area
+  const mainElement = root.querySelector('main, [role="main"], article, .content, #content, .main, #main');
+
+  if (mainElement) {
+    const content = extractTextContent(mainElement);
+    if (content.length >= 100) {
+      return content.slice(0, maxLength);
+    }
+  }
+
+  // Fallback: extract from body, deprioritizing boilerplate
+  const contentParts: string[] = [];
+  let totalLength = 0;
+
+  // First pass: collect main content (non-boilerplate)
+  const walker = document.createTreeWalker(
+    root,
+    NodeFilter.SHOW_ELEMENT,
+    {
+      acceptNode: (node: Element) => {
+        if (SKIP_CONTENT_TAGS.has(node.tagName)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        if (BOILERPLATE_TAGS.has(node.tagName)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  let node: Element | null;
+  const processedElements = new Set<Element>();
+
+  while ((node = walker.nextNode() as Element | null)) {
+    // Only process leaf containers (elements without child elements that contain text)
+    if (processedElements.has(node)) continue;
+
+    // Check for direct text content
+    const directText = Array.from(node.childNodes)
+      .filter(n => n.nodeType === Node.TEXT_NODE)
+      .map(n => n.textContent?.trim())
+      .filter(Boolean)
+      .join(' ');
+
+    if (directText && directText.length > 20) {
+      contentParts.push(directText);
+      totalLength += directText.length;
+
+      if (totalLength >= maxLength) break;
+    }
+
+    // Mark ancestors as processed to avoid duplication
+    let ancestor: Element | null = node;
+    while (ancestor && ancestor !== root) {
+      processedElements.add(ancestor);
+      ancestor = ancestor.parentElement;
+    }
+  }
+
+  // If not enough content found, fall back to full extraction
+  if (totalLength < 200) {
+    return extractTextContent(root).slice(0, maxLength);
+  }
+
+  return contentParts.join('\n\n').slice(0, maxLength);
+}
+
+/**
+ * Extract structured content with section markers
+ */
+function extractStructuredContent(root: Element, maxLength: number): string {
+  const parts: string[] = [];
+  let totalLength = 0;
+
+  // Get headings and their content
+  const headings = root.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  for (const heading of headings) {
+    if (totalLength >= maxLength) break;
+
+    const level = parseInt(heading.tagName[1], 10);
+    const headingText = heading.textContent?.trim() || '';
+    const marker = '#'.repeat(level);
+
+    parts.push(`${marker} ${headingText}`);
+    totalLength += headingText.length + level + 1;
+
+    // Get content between this heading and the next
+    let sibling = heading.nextElementSibling;
+    while (sibling && !sibling.tagName.match(/^H[1-6]$/)) {
+      if (totalLength >= maxLength) break;
+
+      if (!SKIP_CONTENT_TAGS.has(sibling.tagName) && !BOILERPLATE_TAGS.has(sibling.tagName)) {
+        const text = extractTextContent(sibling);
+        if (text && text.length > 10) {
+          parts.push(text);
+          totalLength += text.length;
+        }
+      }
+      sibling = sibling.nextElementSibling;
+    }
+
+    parts.push(''); // Add blank line between sections
+  }
+
+  // If no headings found, fall back to readability extraction
+  if (parts.length === 0) {
+    return extractMainContent(root, maxLength);
+  }
+
+  return parts.join('\n').slice(0, maxLength);
+}
+
+/**
+ * Extract page content for AI summarization
+ */
+export function extractPageContent(
+  document: Document,
+  options: ContentExtractionOptions = {}
+): PageContentResponse {
+  const {
+    root = document.body,
+    strategy = 'readability',
+    maxLength = 10000,
+    includeHeadings = true,
+    includeLandmarks = true,
+    includeMetadata = true,
+  } = options;
+
+  // Extract content based on strategy
+  let content: string;
+  switch (strategy) {
+    case 'full':
+      content = extractTextContent(root).slice(0, maxLength);
+      break;
+    case 'structured':
+      content = extractStructuredContent(root, maxLength);
+      break;
+    case 'readability':
+    default:
+      content = extractMainContent(root, maxLength);
+      break;
+  }
+
+  // Extract headings
+  const headings = includeHeadings ? extractHeadings(root) : [];
+
+  // Extract landmarks
+  const landmarks = includeLandmarks ? extractLandmarks(root) : [];
+
+  // Get metadata
+  const title = document.title || '';
+  const metaDescription = document.querySelector('meta[name="description"]')?.getAttribute('content') || undefined;
+
+  // Calculate stats
+  const words = content.split(/\s+/).filter(Boolean).length;
+  const chars = content.length;
+  const paragraphCount = (content.match(/\n\n/g) || []).length + 1;
+  const linkCount = root.querySelectorAll('a[href]').length;
+
+  return {
+    content,
+    title,
+    description: includeMetadata ? metaDescription : undefined,
+    headings,
+    landmarks,
+    stats: {
+      words,
+      chars,
+      headings: headings.length,
+      paragraphs: paragraphCount,
+      links: linkCount,
+    },
   };
 }
