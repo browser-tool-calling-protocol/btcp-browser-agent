@@ -71,14 +71,14 @@ export {
 };
 
 // Re-export ContentAgent for content script usage
-export { createContentAgent, type ContentAgent } from '@btcp/core';
+export { createContentAgent, type ContentAgent } from '../../core/dist/index.js';
 
 // Re-export core types
 export type {
   SnapshotData,
   BoundingBox,
   Modifier,
-} from '@btcp/core';
+} from '../../core/dist/index.js';
 
 /**
  * Client for sending commands to the extension background script

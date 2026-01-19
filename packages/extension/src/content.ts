@@ -5,7 +5,7 @@
  * Uses ContentAgent from @btcp/core for DOM operations.
  */
 
-import { createContentAgent, type ContentAgent, type Command as CoreCommand, type Response } from '@btcp/core';
+import { createContentAgent, type ContentAgent, type Command as CoreCommand, type Response } from '../../core/dist/index.js';
 import type { ExtensionMessage, ExtensionResponse, Command } from './types.js';
 
 let agent: ContentAgent | null = null;

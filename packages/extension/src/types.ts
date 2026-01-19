@@ -4,7 +4,7 @@
  * Types for extension commands and Chrome API wrappers.
  */
 
-import type { Command as CoreCommand, Response } from '@btcp/core';
+import type { Command as CoreCommand, Response } from '../../core/dist/index.js';
 import type { SessionCommand } from './session-types.js';
 
 // Extension-specific actions

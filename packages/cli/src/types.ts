@@ -4,7 +4,7 @@
  * Types for CLI commands, parsing, and execution.
  */
 
-import type { Response } from '@btcp/extension';
+import type { Response, Command, TabInfo } from '../../extension/dist/index.js';
 
 /**
  * Parsed CLI command structure
@@ -78,7 +78,7 @@ export type CommandExecuteFn = (
  * This is a subset of the @btcp/extension Client
  */
 export interface CommandClient {
-  execute(command: import('@btcp/extension').Command): Promise<Response>;
+  execute(command: Command): Promise<Response>;
   navigate(url: string, options?: { waitUntil?: 'load' | 'domcontentloaded' }): Promise<Response>;
   back(): Promise<Response>;
   forward(): Promise<Response>;
@@ -98,7 +98,7 @@ export interface CommandClient {
   tabNew(options?: { url?: string; active?: boolean }): Promise<{ tabId: number; url?: string }>;
   tabClose(tabId?: number): Promise<Response>;
   tabSwitch(tabId: number): Promise<Response>;
-  tabList(): Promise<import('@btcp/extension').TabInfo[]>;
+  tabList(): Promise<TabInfo[]>;
 }
 
 /**
