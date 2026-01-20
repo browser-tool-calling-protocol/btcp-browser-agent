@@ -7,57 +7,264 @@ A lightweight foundation for building AI systems that need browser access — au
 ## Why This Package?
 
 AI agents struggle with browsers because:
-- Raw HTML is too noisy (thousands of nodes)
-- CSS selectors break when layouts change
-- No stable way to reference elements across turns
+- **Raw HTML is too noisy** — thousands of nodes, most irrelevant
+- **CSS selectors break** — layouts change, classes get renamed
+- **No stable way to reference elements** — across conversation turns
 
 **Browser Agent solves this with smart snapshots:**
 
 ```
-BUTTON "Submit" [@ref:0]
-TEXTBOX "Email" [required] [@ref:1]
-LINK "Forgot password?" [@ref:2]
+PAGE: https://github.com/login | Sign in to GitHub | viewport=1920x1080
+SNAPSHOT: elements=847 refs=12
+
+TEXTBOX "Username or email address" @ref:0 [required] /main/form/input#login_field
+TEXTBOX "Password" @ref:1 [type=password required] /main/form/input#password
+LINK "Forgot password?" @ref:2 /main/form/a.forgot-password
+BUTTON "Sign in" @ref:3 /main/form/button[type=submit]
+LINK "Create an account" @ref:4 /main/div.signup-prompt/a
 ```
 
 One command gives your agent a clean, semantic view of any page. Stable `@ref` markers let it interact without fragile selectors.
 
-## Features
+## The Snapshot Advantage
 
-- **Smart Snapshots** - Accessibility tree format optimized for AI comprehension
-- **Stable Element Refs** - `@ref:N` markers that survive DOM changes within a session
-- **Full Browser Control** - Navigation, tabs, screenshots, keyboard/mouse
-- **46 DOM Actions** - Click, type, fill, scroll, hover, and more
-- **Two Modes** - Chrome extension (full control) or standalone (same-origin)
+### What Makes It AI-Friendly
+
+| Raw HTML | Browser Agent Snapshot |
+|----------|----------------------|
+| 50KB of nested `<div>`s | 12 actionable elements |
+| `class="btn-primary-lg-v2"` | `BUTTON "Sign in" @ref:3` |
+| No context about element purpose | Role + label + semantic xpath |
+| Breaks when CSS changes | Refs survive DOM mutations |
+
+### Three Snapshot Modes
+
+```typescript
+// Interactive mode (default): Find clickable elements
+const snapshot = await client.snapshot();
+// Returns: BUTTON "Submit" @ref:0, TEXTBOX "Email" @ref:1, ...
+
+// Outline mode: Understand page structure
+const outline = await client.snapshot({ mode: 'outline' });
+// Returns: MAIN @ref:0 [342 words] /body/main, NAVIGATION @ref:1 /body/nav, ...
+
+// Content mode: Extract readable text
+const content = await client.snapshot({ mode: 'content' });
+// Returns: HEADING level=1 "Welcome", TEXT "Sign in to continue...", ...
+```
+
+### Grep Filtering
+
+Filter snapshots to focus on specific elements:
+
+```typescript
+// Find all buttons
+await client.snapshot({ grep: 'BUTTON' });
+
+// Case-insensitive search
+await client.snapshot({ grep: { pattern: 'submit', ignoreCase: true } });
+
+// Exclude navigation elements
+await client.snapshot({ grep: { pattern: 'nav', invert: true } });
+```
+
+## Sample AI Reasoning Process
+
+Here's how an AI agent thinks through a login task using Browser Agent — demonstrating why semantic snapshots outperform raw HTML:
+
+---
+
+**User Request:** "Log into my GitHub account"
+
+**Step 1: Understand the Page**
+```typescript
+const snapshot = await client.snapshot();
+```
+```
+PAGE: https://github.com/login | Sign in to GitHub | viewport=1920x1080
+SNAPSHOT: elements=847 refs=12
+
+TEXTBOX "Username or email address" @ref:0 [required] /main/form/input#login_field
+TEXTBOX "Password" @ref:1 [type=password required] /main/form/input#password
+LINK "Forgot password?" @ref:2 /main/form/a.forgot-password
+BUTTON "Sign in" @ref:3 /main/form/button[type=submit]
+LINK "Create an account" @ref:4 /main/div.signup-prompt/a
+```
+
+**AI Reasoning:**
+> I can see this is GitHub's login page. The snapshot shows 5 relevant interactive elements out of 847 total DOM elements — the noise has been filtered out.
+>
+> I need to:
+> 1. Fill the username field (@ref:0) — labeled "Username or email address", marked required
+> 2. Fill the password field (@ref:1) — labeled "Password", type=password, marked required
+> 3. Click the sign in button (@ref:3) — labeled "Sign in"
+>
+> The semantic xpaths confirm these are in the main form. I don't need to parse HTML or guess at selectors.
+
+**Step 2: Fill Credentials**
+```typescript
+await client.fill('@ref:0', 'user@example.com');
+await client.fill('@ref:1', 'secretpassword');
+```
+
+**Step 3: Submit**
+```typescript
+await client.click('@ref:3');
+```
+
+**Step 4: Verify Success**
+```typescript
+const result = await client.snapshot({ grep: 'error|invalid', ignoreCase: true });
+```
+```
+PAGE: https://github.com | GitHub | viewport=1920x1080
+SNAPSHOT: elements=1203 refs=0 grep=error|invalid matches=0
+```
+
+**AI Reasoning:**
+> No error messages found. The page URL changed from `/login` to `/`, indicating successful authentication. Task complete.
+
+---
+
+### Why This Works Better Than Raw HTML
+
+| Approach | What the AI Sees | Problems |
+|----------|------------------|----------|
+| **Raw HTML** | `<input class="form-control input-block js-login-field" name="login" autocomplete="username" ...>` | No clear purpose, must parse attributes, class names are meaningless |
+| **Screenshot + OCR** | Pixel coordinates: (450, 320) | Breaks on different screen sizes, can't distinguish input types |
+| **Browser Agent** | `TEXTBOX "Username or email address" @ref:0 [required]` | Clear purpose, stable reference, includes validation state |
+
+The snapshot gives the AI exactly what it needs to reason about the page — nothing more, nothing less.
 
 ## Quick Example
 
 ```typescript
 import { createClient } from 'btcp-browser-agent/extension';
 
-const agent = createClient();
+const client = createClient();
 
 // Navigate and understand the page
-await agent.navigate('https://example.com');
-const snapshot = await agent.snapshot();
-// Returns: BUTTON "Login" [@ref:0], TEXTBOX "Email" [@ref:1], ...
+await client.navigate('https://example.com');
+const snapshot = await client.snapshot();
+// Returns: BUTTON "Login" @ref:0, TEXTBOX "Email" @ref:1, ...
 
 // Interact using refs - no CSS selectors needed
-await agent.fill('@ref:1', 'user@example.com');
-await agent.click('@ref:0');
+await client.fill('@ref:1', 'user@example.com');
+await client.click('@ref:0');
 ```
 
-## Use Cases
+## Features
 
-- **AI Assistants** - Let LLMs browse the web and complete tasks for users
-- **Browser Agents** - Foundation for autonomous web agents that research, navigate, and act
-- **Automated Testing** - Reliable UI tests with stable element refs that don't break on layout changes
-- **Web Automation** - Form filling, data extraction, multi-step workflow automation
-- **Web Scraping** - Extract structured data with semantic understanding of page content
+- **Smart Snapshots** — Accessibility tree format optimized for AI comprehension
+- **Three Modes** — Interactive (actions), Outline (structure), Content (text)
+- **Stable Element Refs** — `@ref:N` markers that survive DOM changes within a session
+- **Grep Filtering** — Unix-style filtering to focus on specific elements
+- **Semantic XPaths** — Human-readable paths like `/main/form/button` for context
+- **Full Browser Control** — Navigation, tabs, screenshots, keyboard/mouse
+- **46 DOM Actions** — Click, type, fill, scroll, hover, and more
 
 ## Installation
 
 ```bash
 npm install btcp-browser-agent
+```
+
+## API Reference
+
+### Snapshot API
+
+The `snapshot()` method is the core of Browser Agent — it returns a string containing an AI-optimized view of the page.
+
+```typescript
+const snapshot = await client.snapshot(options);
+```
+
+#### Options
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `mode` | `'interactive' \| 'outline' \| 'content'` | `'interactive'` | What to capture |
+| `format` | `'tree' \| 'html' \| 'markdown'` | `'tree'` | Output format |
+| `grep` | `string \| GrepOptions` | — | Filter output lines |
+| `selector` | `string` | — | Scope to specific element |
+| `maxDepth` | `number` | `50` | Maximum DOM depth |
+| `maxLength` | `number` | `2000` | Max chars per section (content mode) |
+| `includeLinks` | `boolean` | `true` | Include links in markdown |
+| `includeImages` | `boolean` | `false` | Include images in markdown |
+
+#### Modes Explained
+
+**Interactive Mode** (default)
+- Returns all clickable/editable elements with `@ref:N` markers
+- Best for: Form filling, clicking buttons, navigation
+- Output: `BUTTON "Submit" @ref:0 /form/button`
+
+**Outline Mode**
+- Returns page structure with landmarks and sections
+- Best for: Understanding page layout, finding content areas
+- Output: `MAIN @ref:0 [342 words, 5 links] /body/main`
+
+**Content Mode**
+- Extracts readable text content from sections
+- Best for: Reading articles, extracting information
+- Output: `HEADING level=1 "Article Title"` + `TEXT "Article content..."`
+
+#### Grep Options
+
+```typescript
+interface GrepOptions {
+  pattern: string;      // Search pattern (regex by default)
+  ignoreCase?: boolean; // Case-insensitive (like grep -i)
+  invert?: boolean;     // Return non-matching (like grep -v)
+  fixedStrings?: boolean; // Literal string match (like grep -F)
+}
+```
+
+### Element Refs
+
+Refs are stable identifiers for elements within a browser session:
+
+```typescript
+// Get a snapshot with refs
+const snapshot = await client.snapshot();
+// "BUTTON 'Submit' @ref:5"
+
+// Use refs in commands
+await client.click('@ref:5');
+await client.fill('@ref:3', 'hello');
+await client.getText('@ref:7');
+```
+
+**Ref Lifecycle:**
+- Generated fresh on each `snapshot()` call
+- Valid until page navigation or DOM refresh
+- Use `validateRefs` to check if refs are still valid
+
+### Navigation
+
+```typescript
+await client.navigate('https://example.com');
+await client.back();
+await client.forward();
+await client.reload();
+const url = await client.getUrl();
+const title = await client.getTitle();
+```
+
+### Interaction
+
+```typescript
+await client.click('@ref:5');                    // Click element
+await client.fill('@ref:3', 'text');             // Fill input (instant)
+await client.type('@ref:3', 'text', { delay: 50 }); // Type with delay
+await client.press('Enter');                     // Press key
+await client.wait({ selector: '#loaded' });      // Wait for element
+```
+
+### Screenshots
+
+```typescript
+const base64 = await client.screenshot({ format: 'png' });
 ```
 
 ## Usage Modes
@@ -73,10 +280,9 @@ import { BackgroundAgent, setupMessageListener } from 'btcp-browser-agent/extens
 // Option 1: Just set up message routing
 setupMessageListener();
 
-// Option 2: Use BackgroundAgent directly for programmatic control
+// Option 2: Use BackgroundAgent directly
 const agent = new BackgroundAgent();
 await agent.navigate('https://example.com');
-await agent.screenshot();
 ```
 
 **Content Script:**
@@ -84,199 +290,31 @@ await agent.screenshot();
 import { createContentAgent } from 'btcp-browser-agent';
 
 const agent = createContentAgent();
-
-// Take a snapshot
 const { data } = await agent.execute({ action: 'snapshot' });
-console.log(data.tree);  // Accessibility tree with refs
-
-// Click an element using ref from snapshot
-await agent.execute({ action: 'click', selector: '@ref:5' });
 ```
 
-**Popup (sending commands via messaging):**
+**Popup:**
 ```typescript
-import { createClient } from 'btcp-browser-agent';
+import { createClient } from 'btcp-browser-agent/extension';
 
 const client = createClient();
-
-// Navigate and interact
 await client.navigate('https://example.com');
 const snapshot = await client.snapshot();
-await client.click('@ref:5');
-const screenshot = await client.screenshot();
 ```
 
 ### Standalone Mode (No Extension)
 
-For use directly in a web page (limited to same-origin, no tab management):
+For use directly in a web page (limited to same-origin):
 
 ```typescript
 import { createContentAgent } from 'btcp-browser-agent';
 
 const agent = createContentAgent();
-
-// Take a snapshot
 const { data } = await agent.execute({ action: 'snapshot' });
-
-// Interact with elements
-await agent.execute({ action: 'click', selector: '@ref:5' });
-await agent.execute({ action: 'fill', selector: '@ref:3', value: 'Hello' });
-```
-
-## API Reference
-
-### BackgroundAgent (Extension Background Script)
-
-High-level browser orchestrator that runs in the extension's background script.
-
-```typescript
-import { BackgroundAgent } from 'btcp-browser-agent/extension';
-
-const agent = new BackgroundAgent();
-
-// Tab Management
-await agent.newTab({ url: 'https://example.com' });
-await agent.switchTab(tabId);
-await agent.closeTab(tabId);
-const tabs = await agent.listTabs();
-
-// Navigation
-await agent.navigate('https://example.com');
-await agent.back();
-await agent.forward();
-await agent.reload();
-
-// Screenshots
-const screenshot = await agent.screenshot({ format: 'png' });
-
-// Execute commands (routes to ContentAgent for DOM operations)
-await agent.execute({ action: 'click', selector: '#submit' });
-```
-
-#### Multi-Tab Operations
-
-```typescript
-// Open tabs
-const tab1 = await agent.newTab({ url: 'https://google.com' });
-const tab2 = await agent.newTab({ url: 'https://github.com', active: false });
-
-// Method 1: tab() handle - interact without switching
-const githubTab = agent.tab(tab2.id);
-await githubTab.snapshot();
-await githubTab.click('@ref:5');
-
-// Method 2: Specify tabId in execute
-await agent.execute(
-  { action: 'getText', selector: 'h1' },
-  { tabId: tab2.id }
-);
-
-// Active tab stays tab1 (no switching needed)
-```
-
-### ContentAgent (Content Script)
-
-DOM automation agent that runs in content scripts or web pages.
-
-```typescript
-import { createContentAgent } from 'btcp-browser-agent';
-
-const agent = createContentAgent();
-
-// Execute commands
-const response = await agent.execute({ action: 'snapshot' });
-```
-
-#### Available Actions
-
-**DOM Reading:**
-| Action | Description |
-|--------|-------------|
-| `snapshot` | Get accessibility tree with element refs |
-| `getText` | Get element text content |
-| `getAttribute` | Get element attribute value |
-| `isVisible` | Check if element is visible |
-| `isEnabled` | Check if element is enabled |
-| `isChecked` | Check if checkbox/radio is checked |
-| `getBoundingBox` | Get element dimensions |
-
-**Element Interaction:**
-| Action | Description |
-|--------|-------------|
-| `click` | Click an element |
-| `dblclick` | Double-click an element |
-| `type` | Type text (keystroke by keystroke) |
-| `fill` | Fill input (instant) |
-| `clear` | Clear input value |
-| `check` | Check checkbox |
-| `uncheck` | Uncheck checkbox |
-| `select` | Select dropdown option |
-| `hover` | Hover over element |
-| `focus` | Focus element |
-| `blur` | Remove focus |
-
-**Keyboard/Mouse:**
-| Action | Description |
-|--------|-------------|
-| `press` | Press a key |
-| `keyDown` | Key down event |
-| `keyUp` | Key up event |
-
-**Other:**
-| Action | Description |
-|--------|-------------|
-| `scroll` | Scroll page or element |
-| `scrollIntoView` | Scroll element into view |
-| `wait` | Wait for element state |
-| `evaluate` | Execute JavaScript |
-
-### Element Refs
-
-The `snapshot` action returns element references for stable selection:
-
-```typescript
-const { data } = await agent.execute({ action: 'snapshot' });
-// data.tree: "BUTTON 'Submit' [@ref:5]\nTEXTBOX 'Email' [@ref:3]"
-
-// Use refs in subsequent commands
 await agent.execute({ action: 'click', selector: '@ref:5' });
 ```
-
-### Script Injection
-
-Inject custom JavaScript into the page's main world and communicate with it:
-
-```typescript
-// Inject a helper script
-await client.scriptInject(`
-  window.addEventListener('message', (e) => {
-    if (e.data?.type === 'btcp:script-command') {
-      const { commandId, payload } = e.data;
-      // Handle command and respond
-      window.postMessage({
-        type: 'btcp:script-ack',
-        commandId,
-        result: { /* your data */ }
-      }, '*');
-    }
-  });
-`, { scriptId: 'helper' });
-
-// Send commands to injected script
-const result = await client.scriptSend(
-  { action: 'getData', id: '123' },
-  { scriptId: 'helper' }
-);
-```
-
-**Why script injection?**
-- Access page-level APIs (fetch with page cookies, window globals)
-- Interact with page frameworks (React state, etc.)
-- Execute code with full page context
 
 ## Architecture
-
-The package provides a clean separation between browser-level and DOM-level operations:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -304,22 +342,13 @@ The package provides a clean separation between browser-level and DOM-level oper
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-## Package Structure
+## Use Cases
 
-```
-btcp-browser-agent/
-├── @btcp/core          # ContentAgent - DOM operations
-│   ├── createContentAgent()
-│   ├── DOMActions
-│   └── createSnapshot()
-│
-├── @btcp/extension     # BackgroundAgent - Browser operations
-│   ├── BackgroundAgent
-│   ├── setupMessageListener()
-│   └── createClient()
-│
-└── btcp-browser-agent   # Main package - re-exports both
-```
+- **AI Assistants** — Let LLMs browse the web and complete tasks for users
+- **Browser Agents** — Foundation for autonomous web agents that research, navigate, and act
+- **Automated Testing** — Reliable UI tests with stable element refs
+- **Web Automation** — Form filling, data extraction, multi-step workflows
+- **Web Scraping** — Extract structured data with semantic understanding
 
 ## Capabilities Comparison
 
