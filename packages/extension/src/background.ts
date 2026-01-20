@@ -22,7 +22,7 @@ import type {
   ChromeTab,
 } from './types.js';
 import { SessionManager } from './session-manager.js';
-import { assertUrlOrigin, createVerificationError } from '@btcp/core';
+import { assertUrlOrigin, createVerificationError } from '../../core/dist/index.js';
 
 // Command ID counter for auto-generated IDs
 let bgCommandIdCounter = 0;
