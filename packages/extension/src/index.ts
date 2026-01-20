@@ -72,6 +72,19 @@ export {
   type ResultOf,
 } from './script-messenger.js';
 
+// Re-export remote agent for BTCP protocol control
+export {
+  createRemoteAgent,
+  getBrowserToolDefinitions,
+  mapToolToCommand,
+  formatResponseForBTCP,
+  type RemoteAgent,
+  type RemoteAgentConfig,
+  type RemoteAgentEvents,
+  type BTCPToolDefinition,
+  type BTCPContent,
+} from './remote.js';
+
 // Re-export BackgroundAgent for background script usage
 export {
   _BackgroundAgent as BackgroundAgent,

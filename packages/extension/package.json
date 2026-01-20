@@ -17,6 +17,10 @@
     "./background": {
       "types": "./dist/background.d.ts",
       "import": "./dist/background.js"
+    },
+    "./remote": {
+      "types": "./dist/remote.d.ts",
+      "import": "./dist/remote.js"
     }
   },
   "scripts": {
