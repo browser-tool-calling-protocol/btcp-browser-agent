@@ -8,6 +8,7 @@
 const serverUrlInput = document.getElementById('serverUrl') as HTMLInputElement;
 const btnConnect = document.getElementById('btnConnect') as HTMLButtonElement;
 const btnDisconnect = document.getElementById('btnDisconnect') as HTMLButtonElement;
+const btnDemo = document.getElementById('btnDemo') as HTMLButtonElement;
 const statusDot = document.getElementById('statusDot') as HTMLSpanElement;
 const statusText = document.getElementById('statusText') as HTMLSpanElement;
 const logOutput = document.getElementById('logOutput') as HTMLDivElement;
@@ -42,12 +43,14 @@ function updateUI(connected: boolean) {
     statusText.textContent = 'Connected';
     btnConnect.style.display = 'none';
     btnDisconnect.style.display = 'block';
+    btnDemo.style.display = 'block';
     serverUrlInput.disabled = true;
   } else {
     statusDot.style.background = '#ef4444';
     statusText.textContent = 'Disconnected';
     btnConnect.style.display = 'block';
     btnDisconnect.style.display = 'none';
+    btnDemo.style.display = 'none';
     serverUrlInput.disabled = false;
   }
 }
@@ -99,6 +102,36 @@ async function disconnect() {
   }
 }
 
+// Start demo scenario
+async function startDemo() {
+  const serverUrl = serverUrlInput.value.trim();
+
+  btnDemo.disabled = true;
+  btnDemo.textContent = 'Running...';
+  log('Starting demo scenario...', 'info');
+
+  try {
+    const response = await fetch(`${serverUrl}/start-demo`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: 'demo-request' }),
+    });
+
+    const result = await response.json();
+
+    if (result.error) {
+      log(`Demo failed: ${result.error}`, 'error');
+    } else {
+      log('Demo started successfully!', 'success');
+    }
+  } catch (error) {
+    log(`Demo error: ${error}`, 'error');
+  } finally {
+    btnDemo.disabled = false;
+    btnDemo.textContent = 'Start Demo';
+  }
+}
+
 // Handle events from background
 chrome.runtime.onMessage.addListener((message) => {
   if (message.type !== 'remote:event') return;
@@ -142,6 +175,7 @@ async function init() {
 // Event listeners
 btnConnect.addEventListener('click', connect);
 btnDisconnect.addEventListener('click', disconnect);
+btnDemo.addEventListener('click', startDemo);
 serverUrlInput.addEventListener('keypress', (e) => {
   if (e.key === 'Enter' && !isConnected) {
     connect();

@@ -99,6 +99,19 @@
     .btn-disconnect:hover {
       background: #dc2626;
     }
+    .btn-demo {
+      background: #8b5cf6;
+      color: white;
+      margin-top: 8px;
+      display: none;
+    }
+    .btn-demo:hover {
+      background: #7c3aed;
+    }
+    .btn-demo:disabled {
+      background: #9ca3af;
+      cursor: not-allowed;
+    }
     .log-container {
       background: #1f2937;
       border-radius: 8px;
@@ -157,6 +170,7 @@
     <input type="text" id="serverUrl" value="http://localhost:8080" placeholder="http://localhost:8080">
     <button class="btn-connect" id="btnConnect">Connect</button>
     <button class="btn-disconnect" id="btnDisconnect">Disconnect</button>
+    <button class="btn-demo" id="btnDemo">Start Demo</button>
   </div>
 
   <div class="section">

@@ -213,6 +213,31 @@ async function handlePost(req: IncomingMessage, res: ServerResponse, path: strin
     return;
   }
 
+  if (path === '/start-demo') {
+    // Find an active session to run demo on
+    let activeSession: string | null = null;
+    for (const [sessionId, session] of sessions) {
+      if (session.response) {
+        activeSession = sessionId;
+        break;
+      }
+    }
+
+    if (!activeSession) {
+      res.statusCode = 400;
+      res.end(JSON.stringify({ error: 'No active browser session' }));
+      return;
+    }
+
+    // Start demo asynchronously
+    runGoogleGithubDemo(activeSession).catch(err => {
+      logError('Demo failed:', err.message);
+    });
+
+    res.end(JSON.stringify({ jsonrpc: '2.0', id: body.id, result: { success: true, sessionId: activeSession } }));
+    return;
+  }
+
   res.statusCode = 404;
   res.end(JSON.stringify({ error: 'Not found' }));
 }
