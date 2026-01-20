@@ -288,45 +288,6 @@ export function getBrowserToolDefinitions(): BTCPToolDefinition[] {
       },
     },
 
-    // Tab management tools
-    {
-      name: 'browser_tab_new',
-      description: 'Open a new tab',
-      inputSchema: {
-        type: 'object',
-        properties: {
-          url: { type: 'string', description: 'URL to open (optional)' },
-          active: { type: 'boolean', description: 'Make the new tab active (default: true)' },
-        },
-      },
-    },
-    {
-      name: 'browser_tab_close',
-      description: 'Close a tab',
-      inputSchema: {
-        type: 'object',
-        properties: {
-          tabId: { type: 'number', description: 'Tab ID to close (optional, closes active tab if omitted)' },
-        },
-      },
-    },
-    {
-      name: 'browser_tab_switch',
-      description: 'Switch to a different tab',
-      inputSchema: {
-        type: 'object',
-        properties: {
-          tabId: { type: 'number', description: 'Tab ID to switch to' },
-        },
-        required: ['tabId'],
-      },
-    },
-    {
-      name: 'browser_tab_list',
-      description: 'List all tabs in the current session',
-      inputSchema: { type: 'object', properties: {} },
-    },
-
     // Keyboard tools
     {
       name: 'browser_press',
@@ -338,41 +299,6 @@ export function getBrowserToolDefinitions(): BTCPToolDefinition[] {
           selector: { type: 'string', description: 'Optional element to focus before pressing' },
         },
         required: ['key'],
-      },
-    },
-
-    // Script injection tools
-    {
-      name: 'browser_script_inject',
-      description:
-        "Inject JavaScript code into the page's main world. The script can listen for commands via btcp:script-command messages and respond with btcp:script-ack.",
-      inputSchema: {
-        type: 'object',
-        properties: {
-          code: { type: 'string', description: 'JavaScript code to inject' },
-          scriptId: {
-            type: 'string',
-            description: 'Unique identifier for this script (default: "default"). Used to target with script_send.',
-          },
-        },
-        required: ['code'],
-      },
-    },
-    {
-      name: 'browser_script_send',
-      description:
-        'Send a command to an injected script and wait for acknowledgment. The injected script should listen for btcp:script-command and respond with btcp:script-ack.',
-      inputSchema: {
-        type: 'object',
-        properties: {
-          payload: {
-            type: 'object',
-            description: 'Payload to send to the script. Typically includes an "action" field.',
-          },
-          scriptId: { type: 'string', description: 'Target script ID (default: "default")' },
-          timeout: { type: 'number', description: 'Timeout in milliseconds (default: 30000)' },
-        },
-        required: ['payload'],
       },
     },
 
@@ -417,6 +343,8 @@ export function mapToolToCommand(
   args: Record<string, unknown>
 ): Command {
   // Remove 'browser_' prefix and convert to action
+  // Note: Tab management (tabNew, tabClose, tabSwitch, tabList) and script injection
+  // (scriptInject, scriptSend) are intentionally not exposed - session/tab management is internal
   const actionMap: Record<string, string> = {
     browser_navigate: 'navigate',
     browser_back: 'back',
@@ -435,13 +363,7 @@ export function mapToolToCommand(
     browser_getAttribute: 'getAttribute',
     browser_isVisible: 'isVisible',
     browser_screenshot: 'screenshot',
-    browser_tab_new: 'tabNew',
-    browser_tab_close: 'tabClose',
-    browser_tab_switch: 'tabSwitch',
-    browser_tab_list: 'tabList',
     browser_press: 'press',
-    browser_script_inject: 'scriptInject',
-    browser_script_send: 'scriptSend',
     browser_wait: 'wait',
     browser_evaluate: 'evaluate',
   };
@@ -662,20 +584,8 @@ export function createRemoteAgent(config: RemoteAgentConfig): RemoteAgent {
     emit('toolCall', name, args);
 
     try {
-      // Auto-create session if needed for commands that require it
-      const sessionRequiredTools = [
-        'browser_navigate', 'browser_tab_new', 'browser_tab_close',
-        'browser_tab_switch', 'browser_tab_list', 'browser_snapshot',
-        'browser_click', 'browser_type', 'browser_fill', 'browser_select',
-        'browser_check', 'browser_uncheck', 'browser_hover', 'browser_scroll',
-        'browser_getText', 'browser_getAttribute', 'browser_isVisible',
-        'browser_press', 'browser_wait', 'browser_evaluate',
-        'browser_script_inject', 'browser_script_send',
-      ];
-
-      if (sessionRequiredTools.includes(name)) {
-        await ensureSession();
-      }
+      // Auto-ensure session for all browser tools (session management is internal)
+      await ensureSession();
 
       // Map tool to command and execute
       const command = mapToolToCommand(name, args);

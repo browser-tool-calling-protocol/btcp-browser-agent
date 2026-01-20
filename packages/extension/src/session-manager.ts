@@ -33,6 +33,12 @@ export interface SessionManagerOptions {
    * When limit is reached, new session creation will fail
    */
   maxSession?: number;
+
+  /**
+   * Maximum number of open tabs per session (default: 1)
+   * When limit is reached, oldest tabs will be closed
+   */
+  maxOpenTab?: number;
 }
 
 /**
@@ -43,9 +49,11 @@ export class SessionManager {
   private sessionCounter = 0;
   private initialized = false;
   private maxSession: number;
+  private maxOpenTab: number;
 
   constructor(options: SessionManagerOptions = {}) {
     this.maxSession = options.maxSession ?? 1;
+    this.maxOpenTab = options.maxOpenTab ?? 1;
     // Restore session on creation
     this.restoreSession();
   }
@@ -354,6 +362,51 @@ export class SessionManager {
   }
 
   /**
+   * Get the maximum number of open tabs per session
+   */
+  getMaxOpenTab(): number {
+    return this.maxOpenTab;
+  }
+
+  /**
+   * Enforce the tab limit in the active session
+   * Closes oldest tabs if the limit is exceeded
+   */
+  async enforceTabLimit(): Promise<void> {
+    if (this.activeSessionGroupId === null) {
+      return;
+    }
+
+    try {
+      // Get all tabs in the session
+      const tabs = await chrome.tabs.query({ groupId: this.activeSessionGroupId });
+
+      if (tabs.length <= this.maxOpenTab) {
+        return; // Within limit
+      }
+
+      // Sort by index (lower index = older tab position)
+      tabs.sort((a, b) => (a.index ?? 0) - (b.index ?? 0));
+
+      // Close excess tabs (oldest first)
+      const tabsToClose = tabs.slice(0, tabs.length - this.maxOpenTab);
+      console.log(`[SessionManager] Closing ${tabsToClose.length} excess tabs to enforce limit of ${this.maxOpenTab}`);
+
+      for (const tab of tabsToClose) {
+        if (tab.id) {
+          try {
+            await chrome.tabs.remove(tab.id);
+          } catch (err) {
+            console.error('[SessionManager] Failed to close tab:', err);
+          }
+        }
+      }
+    } catch (err) {
+      console.error('[SessionManager] Failed to enforce tab limit:', err);
+    }
+  }
+
+  /**
    * Get the count of existing BTCP sessions by checking:
    * 1. Persistent session from storage
    * 2. Current active session
@@ -443,6 +496,7 @@ export class SessionManager {
 
   /**
    * Add a tab to the active session (if one exists)
+   * Automatically enforces the tab limit after adding
    */
   async addTabToActiveSession(tabId: number): Promise<boolean> {
     if (this.activeSessionGroupId === null) {
@@ -451,6 +505,8 @@ export class SessionManager {
 
     try {
       await this.addTabsToGroup(this.activeSessionGroupId, [tabId]);
+      // Enforce tab limit after adding
+      await this.enforceTabLimit();
       return true;
     } catch (error) {
       // Group may no longer exist
