@@ -186,6 +186,107 @@ describe('@btcp/core', () => {
         expect(response.data).not.toContain('Other');
       }
     });
+
+    it('should capture contenteditable elements as textbox', async () => {
+      document.body.innerHTML = '<div contenteditable="true" id="editor">Edit me</div>';
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data).toContain('TEXTBOX');
+        expect(response.data).toContain('@ref:0');
+      }
+    });
+
+    it('should extract placeholder from contenteditable data-placeholder attribute', async () => {
+      document.body.innerHTML = `
+        <div contenteditable="true" data-placeholder="Ask anything" id="prompt-textarea"></div>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data).toContain('TEXTBOX');
+        expect(response.data).toContain('Ask anything');
+        expect(response.data).toContain('@ref:0');
+      }
+    });
+
+    it('should extract placeholder from contenteditable child element', async () => {
+      document.body.innerHTML = `
+        <div contenteditable="true" id="editor">
+          <p data-placeholder="Type here..." class="placeholder"></p>
+        </div>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data).toContain('TEXTBOX');
+        expect(response.data).toContain('Type here...');
+      }
+    });
+
+    it('should handle contenteditable with empty string attribute', async () => {
+      const div = document.createElement('div');
+      div.setAttribute('contenteditable', '');
+      div.id = 'editor';
+      document.body.appendChild(div);
+
+      const agent = createAgent(document, window);
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data).toContain('TEXTBOX');
+        expect(response.data).toContain('@ref:0');
+      }
+    });
+
+    it('should not capture contenteditable="false"', async () => {
+      document.body.innerHTML = '<div contenteditable="false" id="editor">Not editable</div>';
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        expect(response.data).not.toContain('TEXTBOX');
+        expect(response.data).not.toContain('@ref:');
+      }
+    });
+
+    it('should capture ProseMirror-style contenteditable (ChatGPT case)', async () => {
+      document.body.innerHTML = `
+        <form>
+          <textarea name="prompt-textarea" style="display: none;"></textarea>
+          <div contenteditable="true" class="ProseMirror" id="prompt-textarea" data-virtualkeyboard="true">
+            <p data-placeholder="Ask anything" class="placeholder"><br class="ProseMirror-trailingBreak"></p>
+          </div>
+        </form>
+      `;
+      const agent = createAgent(document, window);
+
+      const response = await agent.execute({ id: '1', action: 'snapshot' });
+
+      expect(response.success).toBe(true);
+      if (response.success) {
+        // Should capture the contenteditable div with placeholder
+        expect(response.data).toContain('TEXTBOX "Ask anything"');
+        // Should NOT capture the hidden textarea (or capture without useful label)
+        const lines = response.data.split('\n').filter(line => line.includes('TEXTBOX'));
+        expect(lines.length).toBeGreaterThanOrEqual(1);
+        // The contenteditable should have the "Ask anything" label
+        const contentEditableLine = lines.find(line => line.includes('Ask anything'));
+        expect(contentEditableLine).toBeDefined();
+      }
+    });
   });
 
   describe('click', () => {
@@ -273,6 +374,42 @@ describe('@btcp/core', () => {
 
       expect(response.success).toBe(true);
       expect(input.value).toBe('New');
+    });
+
+    it('should type text into contenteditable element', async () => {
+      document.body.innerHTML = '<div id="editor" contenteditable="true"></div>';
+      const editor = document.getElementById('editor')!;
+
+      const agent = createAgent(document, window);
+      const response = await agent.execute({
+        id: '1',
+        action: 'type',
+        selector: '#editor',
+        text: 'Hello World',
+      });
+
+      expect(response.success).toBe(true);
+      expect(editor.textContent).toContain('Hello World');
+    });
+
+    it('should type into contenteditable using @ref selector', async () => {
+      document.body.innerHTML = '<div contenteditable="true" data-placeholder="Ask anything"></div>';
+      const agent = createAgent(document, window);
+
+      // First get snapshot to generate refs
+      await agent.execute({ id: '1', action: 'snapshot' });
+
+      // Then type using ref
+      const response = await agent.execute({
+        id: '2',
+        action: 'type',
+        selector: '@ref:0',
+        text: 'Test message',
+      });
+
+      expect(response.success).toBe(true);
+      const editor = document.querySelector('[contenteditable="true"]');
+      expect(editor?.textContent).toContain('Test message');
     });
   });
 

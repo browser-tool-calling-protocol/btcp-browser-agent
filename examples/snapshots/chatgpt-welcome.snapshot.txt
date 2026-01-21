@@ -1,0 +1,86 @@
+PAGE: http://localhost/ | ChatGPT | viewport=1024x768
+SNAPSHOT: elements=560 refs=83
+
+LINK "Skip to content" @ref:0 /a
+BUTTON "Open sidebar" @ref:1 /div#stage-slideover-sidebar[1]/div#stage-sidebar-tiny-bar[1]/div.items-center[1]/button.items-center
+LINK @ref:2 /div#stage-slideover-sidebar[1]/div#stage-sidebar-tiny-bar[1]/a
+LINK "images" @ref:3 /div#stage-slideover-sidebar[1]/div#stage-sidebar-tiny-bar[1]/a
+BUTTON "Open profile menu" @ref:4 /div#stage-slideover-sidebar[1]/div#stage-sidebar-tiny-bar[1]/div#radix-_R_plb33ih6kcm_
+LINK "Home" @ref:5 /div#stage-slideover-sidebar[1]/nav/div#sidebar-header/a.items-center
+BUTTON "Close sidebar" @ref:6 (expanded) /div#stage-slideover-sidebar[1]/nav/div#sidebar-header/button.items-center
+LINK "New chat ⇧⌘O" @ref:7 /div#stage-slideover-sidebar[1]/nav/aside/a[1]
+LINK "Images" @ref:8 /div#stage-slideover-sidebar[1]/nav/aside/a[2]
+LINK "Apps" @ref:9 /div#stage-slideover-sidebar[1]/nav/a[1]
+LINK "Codex" @ref:10 /div#stage-slideover-sidebar[1]/nav/a[2]
+BUTTON "GPTs" @ref:11 /div#stage-slideover-sidebar[1]/nav/button.items-center
+BUTTON "Projects" @ref:12 /div#stage-slideover-sidebar[1]/nav/button.items-center
+BUTTON "Your chats" @ref:13 (expanded) /div#stage-slideover-sidebar[1]/nav/button.items-center
+LINK "JWT Refresh Token Handling" @ref:14 /div#stage-slideover-sidebar[1]/nav/div#history/a[1]
+BUTTON "Open conversation options" @ref:15 /div#stage-slideover-sidebar[1]/nav/div#history/a[1]/button#radix-_r_43_
+LINK "New chat" @ref:16 /div#stage-slideover-sidebar[1]/nav/div#history/a[2]
+BUTTON "Open conversation options" @ref:17 /div#stage-slideover-sidebar[1]/nav/div#history/a[2]/button#radix-_r_45_
+LINK "JavaScript Error Debugging" @ref:18 /div#stage-slideover-sidebar[1]/nav/div#history/a[3]
+BUTTON "Open conversation options" @ref:19 /div#stage-slideover-sidebar[1]/nav/div#history/a[3]/button#radix-_r_47_
+LINK "Excalidraw Integration Guide" @ref:20 /div#stage-slideover-sidebar[1]/nav/div#history/a[4]
+BUTTON "Open conversation options" @ref:21 /div#stage-slideover-sidebar[1]/nav/div#history/a[4]/button#radix-_r_49_
+LINK "Kiểm tra chính tả" @ref:22 /div#stage-slideover-sidebar[1]/nav/div#history/a[5]
+BUTTON "Open conversation options" @ref:23 /div#stage-slideover-sidebar[1]/nav/div#history/a[5]/button#radix-_r_4b_
+LINK "Format text evaluation" @ref:24 /div#stage-slideover-sidebar[1]/nav/div#history/a[6]
+BUTTON "Open conversation options" @ref:25 /div#stage-slideover-sidebar[1]/nav/div#history/a[6]/button#radix-_r_4d_
+LINK "Open-source AI Name Ideas" @ref:26 /div#stage-slideover-sidebar[1]/nav/div#history/a[7]
+BUTTON "Open conversation options" @ref:27 /div#stage-slideover-sidebar[1]/nav/div#history/a[7]/button#radix-_r_4f_
+LINK "BcoWork AI Browser Agent" @ref:28 /div#stage-slideover-sidebar[1]/nav/div#history/a[8]
+BUTTON "Open conversation options" @ref:29 /div#stage-slideover-sidebar[1]/nav/div#history/a[8]/button#radix-_r_4h_
+LINK "Reply to Business Email" @ref:30 /div#stage-slideover-sidebar[1]/nav/div#history/a[9]
+BUTTON "Open conversation options" @ref:31 /div#stage-slideover-sidebar[1]/nav/div#history/a[9]/button#radix-_r_4j_
+LINK "Agentic LLM Budgeting" @ref:32 /div#stage-slideover-sidebar[1]/nav/div#history/a[10]
+BUTTON "Open conversation options" @ref:33 /div#stage-slideover-sidebar[1]/nav/div#history/a[10]/button#radix-_r_4l_
+LINK "AI Agent API Design" @ref:34 /div#stage-slideover-sidebar[1]/nav/div#history/a[11]
+BUTTON "Open conversation options" @ref:35 /div#stage-slideover-sidebar[1]/nav/div#history/a[11]/button#radix-_r_4n_
+LINK "CLI vs MCP for LLM" @ref:36 /div#stage-slideover-sidebar[1]/nav/div#history/a[12]
+BUTTON "Open conversation options" @ref:37 /div#stage-slideover-sidebar[1]/nav/div#history/a[12]/button#radix-_r_4p_
+LINK "Coffee and Heart Health" @ref:38 /div#stage-slideover-sidebar[1]/nav/div#history/a[13]
+BUTTON "Open conversation options" @ref:39 /div#stage-slideover-sidebar[1]/nav/div#history/a[13]/button#radix-_r_4r_
+LINK "GCP Cloud Log Traces" @ref:40 /div#stage-slideover-sidebar[1]/nav/div#history/a[14]
+BUTTON "Open conversation options" @ref:41 /div#stage-slideover-sidebar[1]/nav/div#history/a[14]/button#radix-_r_4t_
+LINK "Auth in Gateway vs BE" @ref:42 /div#stage-slideover-sidebar[1]/nav/div#history/a[15]
+BUTTON "Open conversation options" @ref:43 /div#stage-slideover-sidebar[1]/nav/div#history/a[15]/button#radix-_r_4v_
+LINK "Metal Smell Explained" @ref:44 /div#stage-slideover-sidebar[1]/nav/div#history/a[16]
+BUTTON "Open conversation options" @ref:45 /div#stage-slideover-sidebar[1]/nav/div#history/a[16]/button#radix-_r_51_
+LINK "Agent Instruction Following" @ref:46 /div#stage-slideover-sidebar[1]/nav/div#history/a[17]
+BUTTON "Open conversation options" @ref:47 /div#stage-slideover-sidebar[1]/nav/div#history/a[17]/button#radix-_r_53_
+LINK "AI Failure Research Analysis" @ref:48 /div#stage-slideover-sidebar[1]/nav/div#history/a[18]
+BUTTON "Open conversation options" @ref:49 /div#stage-slideover-sidebar[1]/nav/div#history/a[18]/button#radix-_r_55_
+LINK "OpenTelemetry TraceId Propagation" @ref:50 /div#stage-slideover-sidebar[1]/nav/div#history/a[19]
+BUTTON "Open conversation options" @ref:51 /div#stage-slideover-sidebar[1]/nav/div#history/a[19]/button#radix-_r_57_
+LINK "TraceId Propagation Across Systems" @ref:52 /div#stage-slideover-sidebar[1]/nav/div#history/a[20]
+BUTTON "Open conversation options" @ref:53 /div#stage-slideover-sidebar[1]/nav/div#history/a[20]/button#radix-_r_59_
+LINK "Icon design for project" @ref:54 /div#stage-slideover-sidebar[1]/nav/div#history/a[21]
+BUTTON "Open conversation options" @ref:55 /div#stage-slideover-sidebar[1]/nav/div#history/a[21]/button#radix-_r_5b_
+LINK "Slack Message Refinement" @ref:56 /div#stage-slideover-sidebar[1]/nav/div#history/a[22]
+BUTTON "Open conversation options" @ref:57 /div#stage-slideover-sidebar[1]/nav/div#history/a[22]/button#radix-_r_5d_
+LINK "Decoding Brain Waves" @ref:58 /div#stage-slideover-sidebar[1]/nav/div#history/a[23]
+BUTTON "Open conversation options" @ref:59 /div#stage-slideover-sidebar[1]/nav/div#history/a[23]/button#radix-_r_5f_
+LINK "Claude Code Skills Workflow" @ref:60 /div#stage-slideover-sidebar[1]/nav/div#history/a[24]
+BUTTON "Open conversation options" @ref:61 /div#stage-slideover-sidebar[1]/nav/div#history/a[24]/button#radix-_r_5h_
+LINK "JWT Refresh Token Storage" @ref:62 /div#stage-slideover-sidebar[1]/nav/div#history/a[25]
+BUTTON "Open conversation options" @ref:63 /div#stage-slideover-sidebar[1]/nav/div#history/a[25]/button#radix-_r_5j_
+LINK "Cloud Run Log Explanation" @ref:64 /div#stage-slideover-sidebar[1]/nav/div#history/a[26]
+BUTTON "Open conversation options" @ref:65 /div#stage-slideover-sidebar[1]/nav/div#history/a[26]/button#radix-_r_5l_
+LINK "Google Password Manager PIN" @ref:66 /div#stage-slideover-sidebar[1]/nav/div#history/a[27]
+BUTTON "Open conversation options" @ref:67 /div#stage-slideover-sidebar[1]/nav/div#history/a[27]/button#radix-_r_5n_
+LINK "Upwork scam warning" @ref:68 /div#stage-slideover-sidebar[1]/nav/div#history/a[28]
+BUTTON "Open conversation options" @ref:69 /div#stage-slideover-sidebar[1]/nav/div#history/a[28]/button#radix-_r_5p_
+BUTTON "Open profile menu" @ref:70 /div#stage-slideover-sidebar[1]/nav/div#radix-_R_1relb33ih6kcm_
+BUTTON "Model selector, current model is 5.2" @ref:71 /header#page-header/div.items-center[2]/button#radix-_R_squb33ih6kcm_
+BUTTON "Start a group chat" @ref:72 /header#page-header/div.items-center[3]/div.items-center[2]/div#conversation-header-actions/div.items-center/button.items-center
+BUTTON "Turn on temporary chat" @ref:73 /header#page-header/div.items-center[3]/div.items-center[2]/div#conversation-header-actions/div.items-center/button.items-center
+BUTTON @ref:74 /main#main/div#thread/div#thread-bottom-container[2]/div#thread-bottom[1]/button
+TEXTBOX @ref:75 [type=file] /main#main/div#thread/div#thread-bottom-container[2]/div#thread-bottom[1]/form/input
+TEXTBOX @ref:76 /div#thread/div#thread-bottom-container[2]/div#thread-bottom[1]/form/div.items-center[1]/textarea
+TEXTBOX "Ask anything" @ref:77 /div#thread/div#thread-bottom-container[2]/div#thread-bottom[1]/form/div.items-center[1]/div#prompt-textarea
+BUTTON "Add files and more" @ref:78 /main#main/div#thread/div#thread-bottom-container[2]/div#thread-bottom[1]/form/button#composer-plus-btn
+BUTTON "Dictate button" @ref:79 /div#thread-bottom-container[2]/div#thread-bottom[1]/form/div.items-center[3]/div.items-center/button
+BUTTON "Start voice mode" @ref:80 /div#thread-bottom-container[2]/div#thread-bottom[1]/form/div.items-center[3]/div.items-center/button.items-center
+TEXTBOX @ref:81 [type=file] /main#main/div#thread/div#thread-bottom-container[2]/div#thread-bottom[1]/input#upload-photos[1]
+TEXTBOX @ref:82 [type=file] /main#main/div#thread/div#thread-bottom-container[2]/div#thread-bottom[1]/input#upload-camera[2]

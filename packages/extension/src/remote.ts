@@ -379,7 +379,7 @@ export function createRemoteAgent(config: RemoteAgentConfig): RemoteAgent {
     log('No existing session found, creating one automatically...');
     const groupResult = await backgroundAgent.execute({
       action: 'groupCreate',
-      title: 'BTCP Session',
+      // Don't specify title - let SessionManager generate proper numbered title
       color: 'blue',
     });
 

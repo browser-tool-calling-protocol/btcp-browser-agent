@@ -48,14 +48,22 @@ export class SessionManager {
   private activeSessionGroupId: number | null = null;
   private sessionCounter = 0;
   private initialized = false;
+  private initializationPromise: Promise<void>;
   private maxSession: number;
   private maxOpenTab: number;
 
   constructor(options: SessionManagerOptions = {}) {
     this.maxSession = options.maxSession ?? 1;
     this.maxOpenTab = options.maxOpenTab ?? 1;
-    // Restore session on creation
-    this.restoreSession();
+    // Restore session on creation and store the promise
+    this.initializationPromise = this.restoreSession();
+  }
+
+  /**
+   * Wait for SessionManager to finish initialization
+   */
+  private async waitForInitialization(): Promise<void> {
+    await this.initializationPromise;
   }
 
   /**
@@ -89,10 +97,121 @@ export class SessionManager {
       } else {
         console.log('[SessionManager] No stored session found');
       }
+
+      // Clean up any duplicate sessions after restoring
+      await this.cleanupDuplicateSessions();
     } catch (err) {
       console.error('[SessionManager] Failed to restore session:', err);
     } finally {
       this.initialized = true;
+    }
+  }
+
+  /**
+   * Scan for and cleanup duplicate BTCP session groups
+   * Ensures only one BTCP session exists at any time
+   *
+   * @returns Stats about cleanup: { found, kept, removed }
+   */
+  async cleanupDuplicateSessions(): Promise<{ found: number; kept: number; removed: number }> {
+    try {
+      console.log('[SessionManager] Scanning for duplicate BTCP sessions...');
+
+      // Get all tab groups
+      const allGroups = await chrome.tabGroups.query({});
+      const btcpGroups = allGroups.filter(g => g.title?.startsWith('BTCP'));
+
+      console.log(`[SessionManager] Found ${btcpGroups.length} BTCP session group(s)`);
+
+      if (btcpGroups.length <= 1) {
+        // No duplicates, nothing to clean up
+        return { found: btcpGroups.length, kept: btcpGroups.length, removed: 0 };
+      }
+
+      // Multiple sessions found - need to consolidate
+      console.warn(`[SessionManager] Found ${btcpGroups.length} BTCP sessions - cleaning up duplicates!`);
+
+      // Determine which session to keep
+      let toKeep: chrome.tabGroups.TabGroup | undefined;
+
+      // Priority 1: Keep the one matching stored session ID
+      if (this.activeSessionGroupId !== null) {
+        const activeGroup = btcpGroups.find(g => g.id === this.activeSessionGroupId);
+        if (activeGroup) {
+          console.log('[SessionManager] Keeping active session:', activeGroup.id);
+          toKeep = activeGroup;
+        }
+      }
+
+      // Priority 2: Keep the one from storage if active session not set
+      if (!toKeep) {
+        const result = await chrome.storage.session.get(SESSION_STORAGE_KEY);
+        const data = result[SESSION_STORAGE_KEY] as StoredSessionData | undefined;
+
+        if (data?.groupId) {
+          const storedGroup = btcpGroups.find(g => g.id === data.groupId);
+          if (storedGroup) {
+            console.log('[SessionManager] Keeping stored session:', storedGroup.id);
+            toKeep = storedGroup;
+          }
+        }
+      }
+
+      // Priority 3: Keep the one with the most tabs
+      if (!toKeep) {
+        console.log('[SessionManager] No active/stored session - keeping the one with most tabs');
+        const groupsWithTabCounts = await Promise.all(
+          btcpGroups.map(async g => ({
+            group: g,
+            tabs: await chrome.tabs.query({ groupId: g.id })
+          }))
+        );
+        groupsWithTabCounts.sort((a, b) => b.tabs.length - a.tabs.length);
+        toKeep = groupsWithTabCounts[0]?.group;
+        if (toKeep) {
+          console.log(`[SessionManager] Keeping session ${toKeep.id} with ${groupsWithTabCounts[0].tabs.length} tabs`);
+        }
+      }
+
+      // If we still don't have a group to keep (shouldn't happen), just keep the first one
+      if (!toKeep) {
+        toKeep = btcpGroups[0];
+        console.log('[SessionManager] Fallback: keeping first session:', toKeep.id);
+      }
+
+      // Delete all other sessions
+      const toDelete = btcpGroups.filter(g => g.id !== toKeep!.id);
+      console.log(`[SessionManager] Removing ${toDelete.length} duplicate session(s)`);
+
+      for (const group of toDelete) {
+        try {
+          console.log(`[SessionManager] Deleting duplicate session: ${group.id} (${group.title})`);
+          // Get tabs in this group and ungroup them (don't close them)
+          const tabs = await chrome.tabs.query({ groupId: group.id });
+          for (const tab of tabs) {
+            if (tab.id !== undefined) {
+              await chrome.tabs.ungroup(tab.id);
+            }
+          }
+        } catch (err) {
+          console.error(`[SessionManager] Failed to delete duplicate session ${group.id}:`, err);
+        }
+      }
+
+      // Set the kept session as active
+      this.activeSessionGroupId = toKeep.id;
+      await this.persistSession();
+
+      console.log('[SessionManager] Cleanup complete - only one session remains');
+
+      return {
+        found: btcpGroups.length,
+        kept: 1,
+        removed: toDelete.length
+      };
+    } catch (err) {
+      console.error('[SessionManager] Failed to cleanup duplicate sessions:', err);
+      return { found: 0, kept: 0, removed: 0 };
     }
   }
 
@@ -165,6 +284,9 @@ export class SessionManager {
    * Create a new tab group
    */
   async createGroup(options: GroupCreateOptions = {}): Promise<GroupInfo> {
+    // Wait for initialization to complete first
+    await this.waitForInitialization();
+
     console.log('[SessionManager] createGroup called with options:', options);
 
     // Check if we can create a new session
@@ -413,41 +535,34 @@ export class SessionManager {
    * 3. Existing tab groups (BTCP prefixed)
    */
   async getSessionCount(): Promise<number> {
-    // If we have an active session, that counts as 1
-    if (this.activeSessionGroupId !== null) {
-      try {
-        // Verify the group still exists
-        await chrome.tabGroups.get(this.activeSessionGroupId);
-        return 1;
-      } catch {
-        // Group no longer exists, clear it
-        this.activeSessionGroupId = null;
-      }
-    }
-
-    // Check if there's a persistent session in storage
-    try {
-      const result = await chrome.storage.session.get(SESSION_STORAGE_KEY);
-      const data = result[SESSION_STORAGE_KEY] as StoredSessionData | undefined;
-
-      if (data?.groupId) {
-        // Verify the stored group still exists
-        try {
-          await chrome.tabGroups.get(data.groupId);
-          return 1;
-        } catch {
-          // Group no longer exists, clear storage
-          await this.clearStoredSession();
-        }
-      }
-    } catch (err) {
-      console.error('[SessionManager] Failed to check persistent session:', err);
-    }
-
-    // Count existing BTCP tab groups
+    // Always count all BTCP tab groups to detect duplicates
     try {
       const groups = await chrome.tabGroups.query({});
       const btcpGroups = groups.filter(g => g.title?.startsWith('BTCP'));
+
+      // Clean up stale references while counting
+      if (this.activeSessionGroupId !== null) {
+        const activeExists = btcpGroups.some(g => g.id === this.activeSessionGroupId);
+        if (!activeExists) {
+          this.activeSessionGroupId = null;
+        }
+      }
+
+      // Check stored session exists
+      try {
+        const result = await chrome.storage.session.get(SESSION_STORAGE_KEY);
+        const data = result[SESSION_STORAGE_KEY] as StoredSessionData | undefined;
+
+        if (data?.groupId) {
+          const storedExists = btcpGroups.some(g => g.id === data.groupId);
+          if (!storedExists) {
+            await this.clearStoredSession();
+          }
+        }
+      } catch (err) {
+        console.error('[SessionManager] Failed to check persistent session:', err);
+      }
+
       return btcpGroups.length;
     } catch (err) {
       console.error('[SessionManager] Failed to count tab groups:', err);

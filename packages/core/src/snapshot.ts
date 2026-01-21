@@ -163,6 +163,12 @@ function getRole(element: Element): string | null {
     return INPUT_ROLES[type] || 'textbox';
   }
 
+  // Detect contenteditable elements (ProseMirror, Quill, TinyMCE, etc.)
+  const contentEditable = element.getAttribute('contenteditable');
+  if (contentEditable === 'true' || contentEditable === '') {
+    return 'textbox';
+  }
+
   return IMPLICIT_ROLES[tagName] || null;
 }
 
@@ -390,6 +396,21 @@ function getAccessibleName(element: Element): string {
   const isImage = constructors.HTMLImageElement && element instanceof constructors.HTMLImageElement;
   if (isImage) {
     return getImageLabel(element as HTMLImageElement);
+  }
+
+  // Handle contenteditable elements (ProseMirror, Quill, TinyMCE, etc.)
+  const contentEditable = element.getAttribute('contenteditable');
+  if (contentEditable === 'true' || contentEditable === '') {
+    // Try data-placeholder attribute (common in rich text editors)
+    const placeholder = element.getAttribute('data-placeholder');
+    if (placeholder) return placeholder.trim();
+
+    // Try finding placeholder in child paragraph element
+    const placeholderEl = element.querySelector('[data-placeholder]');
+    if (placeholderEl) {
+      const placeholderText = placeholderEl.getAttribute('data-placeholder');
+      if (placeholderText) return placeholderText.trim();
+    }
   }
 
   const ariaLabel = element.getAttribute('aria-label');
