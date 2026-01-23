@@ -1,0 +1,103 @@
+PAGE: http://localhost/ | Amazon.com: ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32UCDM) - UHD (3840 x 2160), QD-OLED, 240Hz, 0.03ms, G-SYNC Compatible, Custom Heatsink, Graphene Film, 99% DCI-P3, True 10-bit, 90W USB-C : Electronics | viewport=1024x768
+STRUCTURE: elements=100 maxLines=100
+
+NAVIGATION "Shortcuts menu" [2 buttons, 12 links] /div#a-page[1]/nav#shortcut-menu
+BANNER "window.navmet.tmp=+new Date(); .us window.navme..." [8 buttons, 28 links, 2 inputs, 28 other] /div#a-page[1]/header#navbar-main
+COMPLEMENTARY "Your recently viewed items and featured recomme..." [2 links] /div#a-page[1]/div#rhf[2]
+  HEADING LEVEL=2 "Skip to" /div#a-page[1]/nav#shortcut-menu/h2#nav-assistant-links-heading[1]
+  HEADING LEVEL=2 "Keyboard shortcuts" /div#a-page[1]/nav#shortcut-menu/h2#nav-assist-shortcuts-heading[2]
+  NAVIGATION "Primary" [8 buttons, 28 links, 2 inputs, 28 other] /div#a-page[1]/header#navbar-main/div#navbar
+MAIN "{"deviceType":"web"} window.renderingWeblabs = ..." [184 buttons, 293 links, 47 inputs, 210 other] /div#a-page[1]/div#dp[1]/div#dp-container
+NAVIGATION "More on Amazon" [26 links] /div#a-page[1]/div#navFooter[3]/div.navFooterLine[4]
+FORM /div#a-page[1]/div#be[5]/form
+  NAVIGATION "{"btf-sub-nav-desktop-from-the-brand-tab":["#pr..." /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]
+  NAVIGATION "{"btf-sub-nav-desktop-from-the-brand-tab":["#pr..." /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]
+  HEADING LEVEL=2 "What's in the box" /div#a-page[1]/div#dp[1]/div#dp-container/div[23]/div#whatsInTheBoxDeck/h2
+    NAVIGATION "Top About this item Similar Product information..." /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav
+    NAVIGATION "Back to top Image jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/a[1]
+    NAVIGATION "Back to top title jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/a[2]
+HEADING "Get to Know Us" /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[1]/div.navFooterColHead
+HEADING "Make Money with Us" /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[3]/div.navFooterColHead
+HEADING "Amazon Payment Products" /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[5]/div.navFooterColHead
+HEADING "Let Us Help You" /div#a-page[1]/div#navFooter[3]/div.navFooterVerticalColumn[1]/div.navFooterVerticalRow/div.navFooterLinkCol[7]/div.navFooterColHead
+    SEARCH "All Select the department you want to search in..." [2 buttons, 2 inputs, 28 other] /header#navbar-main/div#navbar/div#nav-belt[1]/div#nav-fill-search[2]/div#nav-search/form#nav-search-bar-form
+    HEADING LEVEL=5 "International Shopping Transition Alert" /div#a-page[1]/header#navbar-main/div#navbar/div#nav-flyout-iss-anchor[2]/div.nav-coreFlyout[2]/h5#glow-toaster-title
+  HEADING LEVEL=2 "From the brand" /div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]/div#aplus/h2
+    NAVIGATION "Navigate within the product detail page" /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/nav
+    NAVIGATION "Back to top Image jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/a[1]
+    NAVIGATION "Back to top title jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/a[2]
+  HEADING LEVEL=2 "From the manufacturer" /div#dp[1]/div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/h2
+  HEADING LEVEL=2 "Top Brand: ASUS" /div#a-page[1]/div#dp[1]/div#dp-container/div#brandInsights_feature_div_3[25]/h2
+      NAVIGATION "Back to top jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[1]
+      NAVIGATION "About this item widget jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[2]
+      NAVIGATION "Similar widget jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[3]
+      NAVIGATION "Product information widget jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[4]
+      NAVIGATION "From the brand widget jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[5]
+      NAVIGATION "Customer reviews widget jump link" /div#a-page[1]/div#dp[1]/div#dp-container/div#btfSubNavDesktop_feature_div[43]/nav/a[6]
+  FORM /div#dp-container/div#ppd[5]/div#rightCol[1]/div#olpLinkWidget_feature_div[8]/div#all-offers-display[1]/form
+  HEADING LEVEL=1 "ASUS ROG Swift 32” 4K OLED Gaming Monitor (PG32..." /div#dp-container/div#ppd[5]/div#centerCol[4]/div#title_feature_div[1]/div#titleSection/h1#title
+  HEADING LEVEL=3 "Purchase options and add-ons" /div#dp-container/div#ppd[5]/div#centerCol[4]/div#twisterPlusWWDesktop[41]/div#twister-plus-feature[2]/h3
+  HEADING LEVEL=1 "About this item" /div#dp-container/div#ppd[5]/div#centerCol[4]/div#featurebullets_feature_div[47]/div#feature-bullets/h1
+  FORM /div#dp-container/div#ppd[5]/div#centerCol[4]/div#olp_feature_div[56]/div#all-offers-display/form
+  HEADING LEVEL=2 "Product information" /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/h2
+      NAVIGATION "Back to top jump link" /div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/nav/a[1]
+      NAVIGATION "About this item widget jump link" /div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/nav/a[2]
+      NAVIGATION "Similar widget jump link" /div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/nav/a[3]
+      NAVIGATION "Product information widget jump link" /div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/nav/a[4]
+      NAVIGATION "From the brand widget jump link" /div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/nav/a[5]
+      NAVIGATION "Customer reviews widget jump link" /div#dp[1]/div#dp-container/div[18]/div#btfSubNavDesktopCopy[9]/nav/a[6]
+  HEADING LEVEL=2 "Product Description" /div#dp[1]/div#dp-container/div[18]/div[10]/div/h2
+  HEADING LEVEL=5 "Amazon Music" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[1]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Amazon Ads" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[3]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "6pm" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[5]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "AbeBooks" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[7]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "ACX" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[9]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Sell on Amazon" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[11]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Veeqo" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[1]/li.navFooterDescItem[13]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Amazon Business" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[1]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "AmazonGlobal" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[3]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Amazon Web Services" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[5]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Audible" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[7]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Box Office Mojo" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[9]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Goodreads" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[11]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "IMDb" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[2]/li.navFooterDescItem[13]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "IMDbPro" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[1]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Kindle Direct Publishing" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[3]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Prime Video Direct" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[5]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Shopbop" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[7]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Woot!" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[9]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Zappos" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[11]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Ring" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[3]/li.navFooterDescItem[13]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "eero WiFi" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[3]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Blink" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[5]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Neighbors App" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[7]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "Amazon Subscription Boxes" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[9]/a.nav_a/h5.navFooterDescItem_heading
+  HEADING LEVEL=5 "PillPack" /div.navFooterLine[4]/div.navFooterMoreOnAmazon/ul[4]/li.navFooterDescItem[11]/a.nav_a/h5.navFooterDescItem_heading
+    HEADING "Your Lists" /div#nav-flyout-anchor[3]/div#nav-flyout-accountList[3]/div.nav-template[2]/div#nav-al-container/div#nav-al-wishlist[2]/div#nav-al-title
+    HEADING "Your Account" /div#nav-flyout-anchor[3]/div#nav-flyout-accountList[3]/div.nav-template[2]/div#nav-al-container/div#nav-al-your-account[3]/div.nav-title
+  HEADING LEVEL=2 "Deals on related products" /div#dp[1]/div#dp-container/div[14]/div[1]/div[1]/h2
+  HEADING LEVEL=2 "Brands you might like" /div#dp[1]/div#dp-container/div[30]/div#sp_detail2-similar_brands[1]/div[1]/h2
+  HEADING LEVEL=3 "Shipping & Fee Details" /div#ppd[5]/div#centerCol[4]/div#apex_desktop[16]/div#amazonGlobal_feature_div[33]/div#a-popover-NEW_0/h3
+  HEADING LEVEL=2 "Similar brands on Amazon" /div#a-page[1]/div#dp[1]/div#dp-container/div[33]/div/h2
+  FORM "$999.00$999.00 P.when('A').execute(function(A) ..." [10 buttons, 9 links, 2 inputs, 30 other] /div#rightCol[1]/div#desktop_buybox[7]/div#buybox/div/div#qualifiedBuybox/form#addToCart
+  HEADING LEVEL=4 "Consider a similar item" /div#ppd[5]/div#centerCol[4]/div#valuePick_feature_div[61]/div#valuePick_container/div#value-pick-ac/h4#value-pick-headline-view
+  HEADING LEVEL=2 "Products related to this item" /div#dp-container/div[15]/div/div#sp_detail[1]/div#sp_detail_heading[1]/h2
+  HEADING LEVEL=2 "Product Videos" /div#dp[1]/div#dp-container/div[18]/div[4]/div/h2
+  HEADING LEVEL=1 "Additional Information" /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div#productDetails_db_sections/h1
+  HEADING LEVEL=1 "Feedback" /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/h1
+  NAVIGATION "←Previous 1Next→" [3 links] /div[3]/div#twister-plus-inline-twister/div#inline-twister-row-style_name/div[2]/div/nav
+  HEADING LEVEL=1 "Warranty & Support" /div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/div/h1
+  HEADING LEVEL=3 "ASUS Monitors & Displays" /div#dp[1]/div#dp-container/div[18]/div#aplusBrandStory_feature_div[8]/div#aplus/h3
+  REGION "Video Player" [7 buttons, 9 inputs, 55 other] /div[18]/div[4]/div/div#vftphero[2]/div#ive-hero-video-player[1]/div[1]
+  HEADING LEVEL=1 "Technical Details" /div#dp[1]/div#dp-container/div[18]/div#productDetails_feature_div[7]/div#prodDetails/h1
+  HEADING LEVEL=2 "ROG Swift OLED PG32UCDM" /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div.secondary-color[2]/h2
+  HEADING LEVEL=1 "Experience the Ultimate Gamechanger" /div#dp-container/div[18]/div#aplus_feature_div[11]/div#aplus/div.secondary-color[2]/h1
+  HEADING LEVEL=2 "Customer reviews" /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div/div#cm_cr_dp_d_rating_histogram/h2#averageCustomerReviewsAnchor
+  HEADING LEVEL=3 "Customers say" /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/h3
+  HEADING LEVEL=3 "Top reviews from other countries" /div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div[1]/h3
+  HEADING LEVEL=4 "Image Unavailable" /div#ppd[5]/div#leftCol[3]/div#imageBlock_feature_div[1]/div#imageBlock[1]/div#main-image-container[1]/h4
+  HEADING LEVEL=4 "Select to learn more" /div#dp[1]/div#dp-container/div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/h4
+  HEADING LEVEL=3 "Top reviews from the United States" /div#customer-reviews_feature_div[36]/div#customerReviews/div#reviewsMedley/div.card-padding/div#cm-cr-local-reviews-title[1]/h3
+    FORM /div#buybox/div/div#qualifiedBuybox/form#addToCart/div#addToWishlist_feature_div[7]/form
+  HEADING LEVEL=5 /div#customerReviews/div#reviewsMedley/div[1]/div#cr_customers_image_gallery[1]/div#crReviewRow[3]/h5
+  HEADING LEVEL=6 "Images in this review" /div#reviewsMedley/div[1]/div#cr_customers_image_gallery[1]/div#crReviewRow[3]/div#cr-lightbox-image-picker[2]/h6#arp-images-in-review

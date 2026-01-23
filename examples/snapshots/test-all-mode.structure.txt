@@ -1,0 +1,16 @@
+PAGE: http://localhost/ | Test All Mode - Images, Headings, and Text | viewport=1024x768
+STRUCTURE: elements=13 maxLines=100
+
+BANNER "Welcome to Our Website" /header
+MAIN "About Us We are a leading provider of innovativ..." [1 button, 1 input] /main
+CONTENTINFO "Copyright 2025 - All rights reserved" /footer
+  HEADING LEVEL=1 "Welcome to Our Website" /header/h1
+  REGION "About Us We are a leading provider of innovativ..." /main/section[1]
+  REGION "Our Services Consulting Expert consulting servi..." /main/section[2]
+  REGION "Contact Us Email: Submit" [1 button, 1 input] /main/section[3]
+    HEADING LEVEL=2 "About Us" /main/section[1]/h2
+    HEADING LEVEL=2 "Our Services" /main/section[2]/h2
+    HEADING LEVEL=3 "Consulting" /main/section[2]/h3[1]
+    HEADING LEVEL=3 "Development" /main/section[2]/h3[2]
+    HEADING LEVEL=2 "Contact Us" /main/section[3]/h2
+    FORM "Email: Submit" [1 button, 1 input] /main/section[3]/form

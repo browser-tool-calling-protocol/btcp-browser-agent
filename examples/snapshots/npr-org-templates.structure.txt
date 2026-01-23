@@ -1,0 +1,96 @@
+PAGE: http://localhost/ | Rose Mary Woods, Devoted Nixon Secretary, Dies : NPR | viewport=1024x768
+STRUCTURE: elements=93 maxLines=100
+
+BANNER "NPR header" [6 buttons, 61 links] /header#globalheader
+MAIN "main content" [10 buttons, 103 links, 1 input] /main
+  NAVIGATION "Open Navigation Menu Newsletters Sign InPersona..." [6 buttons, 61 links] /header#globalheader/nav.navigation
+  REGION /main/section#global-modal-mount[1]
+  REGION "Exclusive benefitsGive a little. Get a lot.Supp..." [1 button, 2 links] /main/section[2]
+REGION "Cookie banner" /div#onetrust-consent-sdk[5]/div#onetrust-banner-sdk[2]
+REGION "Preference center" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]
+    REGION "Close Navigation Menu Home News Expand/collapse..." [5 buttons, 42 links] /header#globalheader/nav.navigation/section#main-menu[1]
+    REGION "The Best Music of 2025 All Songs Considered Tin..." [6 links] /header#globalheader/nav.navigation/section.menu[2]
+    REGION "About NPR Diversity Support Careers Press Ethics" [6 links] /header#globalheader/nav.navigation/section.menu[3]
+  BANNER /main/div#wrapper[2]/header.contentheader
+  REGION "Obituaries Rose Mary Woods, Devoted Nixon Secre..." [9 buttons, 100 links, 1 input] /main/div#wrapper[2]/section#main-section
+    CONTENTINFO "NPR footer" [28 links] /main/div#wrapper[2]/section#main-section/footer#npr-footer
+  COMPLEMENTARY "advertisement" [1 link] /main/div#wrapper[2]/div#main-sidebar/aside#ad-standard-wrap
+  REGION "Back ButtonCookie List Search IconFilter IconCl..." /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/section#ot-pc-lst
+REGION "NPR audio player" [9 buttons] /div#player-react-mount[4]/section#npr-player
+      BANNER "Close Navigation Menu" [1 button] /header#globalheader/nav.navigation/section#main-menu[1]/div.menu__inner/header.menu__header
+    COMPLEMENTARY "recommended stories" [15 links] /main/div#wrapper[2]/section#main-section/article/aside[1]
+    COMPLEMENTARY "recommended stories" [54 links] /main/div#wrapper[2]/section#main-section/article/aside[2]
+  HEADING LEVEL=2 "Privacy Preference Center" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/div#ot-pc-content[2]/h2#ot-pc-title
+  REGION "Manage Consent PreferencesStrictly Necessary or..." /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/div#ot-pc-content[2]/section
+    REGION "Consent Leg.Interest checkbox label label check..." /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/section#ot-pc-lst/section#ot-lst-cnt
+    HEADING LEVEL=3 "Obituaries" /main/div#wrapper[2]/section#main-section/article/h3
+    HEADING LEVEL=1 "Rose Mary Woods, Devoted Nixon Secretary, Dies" /main/div#wrapper[2]/section#main-section/article/h1
+    COMPLEMENTARY "advertisement" /main/div#wrapper[2]/section#main-section/article/div#storytext[5]/aside#ad-backstage-wrap
+    HEADING LEVEL=5 "Exclusive benefits" /main/section[2]/h5
+    HEADING LEVEL=6 "Give a little. Get a lot." /main/section[2]/h6
+    HEADING LEVEL=3 "Manage Consent Preferences" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/div#ot-pc-content[2]/section/h3#ot-category-title
+  NAVIGATION "audio player navigation" [3 buttons] /div#player-react-mount[4]/section#npr-player/ul
+      HEADING LEVEL=3 "More Stories From NPR" /main/div#wrapper[2]/section#main-section/article/aside[1]/h3
+      REGION "More Stories From NPR ObituariesClaudette Colvi..." [18 links] /main/div#wrapper[2]/section#main-section/article/aside[2]/section[1]
+      COMPLEMENTARY "advertisement" /main/div#wrapper[2]/section#main-section/article/aside[2]/aside#ad-end-of-story-wrap
+      REGION "Popular on NPR.org PoliticsMinnesota shows what..." [18 links] /main/div#wrapper[2]/section#main-section/article/aside[2]/section[2]
+      REGION "NPR Editors' Picks HealthTrump struck deals wit..." [18 links] /main/div#wrapper[2]/section#main-section/article/aside[2]/section[3]
+    HEADING LEVEL=3 "Cookie List" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/section#ot-pc-lst/div#ot-pc-hdr/div#ot-lst-title[1]/h3
+    REGION "Clear checkbox label labelApply Cancel" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/section#ot-pc-lst/div#ot-pc-hdr/section#ot-fltr-modal
+    HEADING LEVEL=4 "Rose Mary Woods, Devoted Nixon Secretary, Dies" /div#wrapper[2]/section#main-section/article/div#headlineaudio[4]/article#res4463533/h4
+        HEADING LEVEL=3 "More Stories From NPR" /div#wrapper[2]/section#main-section/article/aside[2]/section[1]/h3
+        HEADING LEVEL=3 "Popular on NPR.org" /div#wrapper[2]/section#main-section/article/aside[2]/section[2]/h3
+        HEADING LEVEL=3 "NPR Editors' Picks" /div#wrapper[2]/section#main-section/article/aside[2]/section[3]/h3
+      HEADING LEVEL=6 "Read & Listen" /main/div#wrapper[2]/section#main-section/footer#npr-footer/h6
+      HEADING LEVEL=6 "Connect" /main/div#wrapper[2]/section#main-section/footer#npr-footer/h6
+      HEADING LEVEL=6 "About NPR" /main/div#wrapper[2]/section#main-section/footer#npr-footer/h6
+      HEADING LEVEL=6 "Get Involved" /main/div#wrapper[2]/section#main-section/footer#npr-footer/h6
+    HEADING LEVEL=4 "Strictly Necessary or Essential Cookies" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/div#ot-pc-content[2]/section/h4#ot-header-id-C0001
+    HEADING LEVEL=4 "Performance and Analytics Cookies" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/div#ot-pc-content[2]/section/h4#ot-header-id-C0002
+    HEADING LEVEL=4 "Functional Cookies" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/div#ot-pc-content[2]/section/h4#ot-header-id-C0003
+    HEADING LEVEL=4 "Targeting and Sponsor Cookies" /div#onetrust-consent-sdk[5]/div#onetrust-pc-sdk[3]/div#ot-pc-content[2]/section/h4#ot-header-id-C0004
+      HEADING LEVEL=5 "NPR Investigation: January 6, 2021" /div#wrapper[2]/section#main-section/article/aside[1]/article/h5
+      HEADING LEVEL=4 "2 police officers relive Jan. 6 through their o..." /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+      HEADING LEVEL=5 "Politics" /div#wrapper[2]/section#main-section/article/aside[1]/article/h5
+      HEADING LEVEL=4 "Venezuela's Machado says she presented her Nobe..." /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+      HEADING LEVEL=4 "NPR+ | The News Roundup For October 24, 2025" /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+      HEADING LEVEL=5 "Investigations" /div#wrapper[2]/section#main-section/article/aside[1]/article/h5
+      HEADING LEVEL=4 "House Republicans are investigating Jan. 6. NPR..." /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+      HEADING LEVEL=4 "NPR+ | The News Roundup For November 14, 2025" /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+      HEADING LEVEL=4 "NPR+ | The News Roundup For January 9, 2026" /div#wrapper[2]/section#main-section/article/aside[1]/article/h4
+        HEADING LEVEL=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+        HEADING LEVEL=4 "Claudette Colvin, who refused to move seats on ..." /section#main-section/article/aside[2]/section[1]/article/h4
+        HEADING LEVEL=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+        HEADING LEVEL=4 "Scott Adams, the controversial cartoonist behin..." /section#main-section/article/aside[2]/section[1]/article/h4
+        HEADING LEVEL=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+        HEADING LEVEL=4 "Bob Weir, guitarist and founding member of the ..." /section#main-section/article/aside[2]/section[1]/article/h4
+        HEADING LEVEL=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+        HEADING LEVEL=4 "CIA turncoat Aldrich Ames, who sold U.S. secret..." /section#main-section/article/aside[2]/section[1]/article/h4
+        HEADING LEVEL=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+        HEADING LEVEL=4 "Hungarian filmmaker Béla Tarr — known for bleak..." /section#main-section/article/aside[2]/section[1]/article/h4
+        HEADING LEVEL=5 "Obituaries" /section#main-section/article/aside[2]/section[1]/article/h5
+        HEADING LEVEL=4 "Edith Renfrow Smith, pioneer and witness to his..." /section#main-section/article/aside[2]/section[1]/article/h4
+        HEADING LEVEL=5 "Politics" /section#main-section/article/aside[2]/section[2]/article/h5
+        HEADING LEVEL=4 "Minnesota shows what happens when governing and..." /section#main-section/article/aside[2]/section[2]/article/h4
+        HEADING LEVEL=5 "Investigations" /section#main-section/article/aside[2]/section[2]/article/h5
+        HEADING LEVEL=4 "House Republicans are investigating Jan. 6. NPR..." /section#main-section/article/aside[2]/section[2]/article/h4
+        HEADING LEVEL=5 "Pop Culture Happy Hour" /section#main-section/article/aside[2]/section[2]/article/h5
+        HEADING LEVEL=4 "'A Knight of the Seven Kingdoms' is 'Game of Th..." /section#main-section/article/aside[2]/section[2]/article/h4
+        HEADING LEVEL=5 "Explainer" /section#main-section/article/aside[2]/section[2]/article/h5
+        HEADING LEVEL=4 "Trump threatened to invoke the Insurrection Act..." /section#main-section/article/aside[2]/section[2]/article/h4
+        HEADING LEVEL=5 "Business" /section#main-section/article/aside[2]/section[2]/article/h5
+        HEADING LEVEL=4 "Verizon just had a big outage. Here's what we know" /section#main-section/article/aside[2]/section[2]/article/h4
+        HEADING LEVEL=5 "Up First Newsletter" /section#main-section/article/aside[2]/section[2]/article/h5
+        HEADING LEVEL=4 "Trump threatens military action in Minneapolis...." /section#main-section/article/aside[2]/section[2]/article/h4
+        HEADING LEVEL=5 "Health" /section#main-section/article/aside[2]/section[3]/article/h5
+        HEADING LEVEL=4 "Trump struck deals with 16 drug companies. But ..." /section#main-section/article/aside[2]/section[3]/article/h4
+        HEADING LEVEL=5 "Global Health" /section#main-section/article/aside[2]/section[3]/article/h5
+        HEADING LEVEL=4 "This hospice has a bold new mission: saving lives" /section#main-section/article/aside[2]/section[3]/article/h4
+        HEADING LEVEL=5 "Business" /section#main-section/article/aside[2]/section[3]/article/h5
+        HEADING LEVEL=4 "Canada agrees to cut tariff on Chinese EVs in r..." /section#main-section/article/aside[2]/section[3]/article/h4
+        HEADING LEVEL=5 "The NPR news quiz" /section#main-section/article/aside[2]/section[3]/article/h5
+        HEADING LEVEL=4 "What do eggs, Grok and Greenland have in common..." /section#main-section/article/aside[2]/section[3]/article/h4
+        HEADING LEVEL=5 "Politics" /section#main-section/article/aside[2]/section[3]/article/h5
+        HEADING LEVEL=4 "With limited political power, Minnesota Democra..." /section#main-section/article/aside[2]/section[3]/article/h4
+        HEADING LEVEL=5 "Climate" /section#main-section/article/aside[2]/section[3]/article/h5
+        HEADING LEVEL=4 "FEMA is getting rid of thousands of workers in ..." /section#main-section/article/aside[2]/section[3]/article/h4

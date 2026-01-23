@@ -1,0 +1,22 @@
+PAGE: http://localhost/ | Test All Mode - Images, Headings, and Text | viewport=1024x768
+ALL: elements=19 refs=19
+
+BANNER "Welcome to Our Website" @ref:0 /header
+HEADING LEVEL=1 "Welcome to Our Website" @ref:1 /header/h1
+IMG "Company Logo" @ref:2 /header
+MAIN "About Us We are a leading provider of innovativ..." @ref:3 /main
+REGION "About Us We are a leading provider of innovativ..." @ref:4 /main/section[1]
+HEADING LEVEL=2 "About Us" @ref:5 /main/section[1]/h2
+IMG "Our dedicated team working together" @ref:6 /main/section[1]
+REGION "Our Services Consulting Expert consulting servi..." @ref:7 /main/section[2]
+HEADING LEVEL=2 "Our Services" @ref:8 /main/section[2]/h2
+HEADING LEVEL=3 "Consulting" @ref:9 /main/section[2]/h3[1]
+HEADING LEVEL=3 "Development" @ref:10 /main/section[2]/h3[2]
+IMG "Code editor showing programming" @ref:11 /main/section[2]
+REGION "Contact Us Email: Submit" @ref:12 /main/section[3]
+HEADING LEVEL=2 "Contact Us" @ref:13 /main/section[3]/h2
+FORM "Email: Submit" @ref:14 /main/section[3]/form
+TEXTBOX "Email:" @ref:15 /main/section[3]/form/input#email
+BUTTON "Submit" @ref:16 /main/section[3]/form/button
+CONTENTINFO "Copyright 2025 - All rights reserved" @ref:17 /footer
+IMG "Footer brand logo" @ref:18 /footer

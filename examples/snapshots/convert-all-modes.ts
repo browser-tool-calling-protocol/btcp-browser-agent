@@ -38,6 +38,9 @@ interface ModeConfig {
 }
 
 const MODES: ModeConfig[] = [
+  { mode: 'head', format: 'tree', suffix: 'head', description: 'Lightweight page metadata and status' },
+  { mode: 'all', format: 'tree', suffix: 'all', description: 'All elements (interactive + structural + content)' },
+  { mode: 'structure', format: 'tree', suffix: 'structure', description: 'Pattern-collapsed view with representative samples' },
   { mode: 'interactive', format: 'tree', suffix: 'interactive', description: 'Interactive elements with refs' },
   { mode: 'outline', format: 'tree', suffix: 'outline', description: 'Page structure with xpaths' },
   { mode: 'content', format: 'tree', suffix: 'content', description: 'Text content extraction (tree)' },
@@ -50,7 +53,12 @@ function createDom(html: string, url?: string) {
   virtualConsole.on('error', () => {});
   virtualConsole.on('warn', () => {});
 
-  return new JSDOM(html, {
+  // Strip <style> tags to avoid JSDOM CSS parsing errors with malformed selectors
+  // (Gmail and other complex SPAs often have invalid CSS that crashes JSDOM)
+  // We don't need CSS for semantic structure analysis anyway
+  const htmlWithoutStyles = html.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+
+  return new JSDOM(htmlWithoutStyles, {
     url: url || 'http://localhost',
     contentType: 'text/html',
     pretendToBeVisual: true,

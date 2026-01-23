@@ -1,0 +1,51 @@
+PAGE: http://localhost/ | hello - Google Search | viewport=1024x768
+STRUCTURE: elements=48 maxLines=100
+
+HEADING LEVEL=1 "Accessibility links" /h1
+CONTENTINFO "Footer links Results are personalised-Try witho..." [5 buttons, 5 links] /div#main[3]/div#cnt/div#sfooter[22]
+MAIN "Search Results Videos Adele - Hello (Official M..." [16 buttons, 47 links] /div#main[3]/div#cnt/div#rcnt[12]/div#center_col[1]
+  HEADING LEVEL=1 "Footer links" /div#main[3]/div#cnt/div#sfooter[22]/h1
+SEARCH "Press / to jump to the search box hello Choose ..." [9 buttons, 2 links, 1 input, 12 other] /div#searchform/form#tsf
+  NAVIGATION /div#main[3]/div#cnt/div#rcnt[12]/div#center_col[1]
+HEADING LEVEL=1 "Filters and topics" /div#main[3]/div#cnt/h1
+NAVIGATION "AI Mode All Images Videos Short videos Shopping..." [4 buttons, 10 links] /div#main[3]/div#cnt
+  NAVIGATION "Page navigation 1 2 3 4 5 6 7 8 9 10 Next" [10 links] /div#main[3]/div#cnt/div#rcnt[12]/div#center_col[1]/div#botstuff[3]
+  HEADING LEVEL=1 "Search Results" /div#cnt/div#rcnt[12]/div#center_col[1]/div#res[2]/div#search[2]/h1
+    HEADING LEVEL=1 "Page navigation" /div#main[3]/div#cnt/div#rcnt[12]/div#center_col[1]/div#botstuff[3]/h1
+COMPLEMENTARY "Featured results" [4 links] /div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#uLEOKb[2]/div#_KqRraf7aHOHG1e8PieqD8Ak_46[1]
+HEADING "People also search for" /div#main[3]/div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#PP76df[6]
+    HEADING "Next" /div#main[3]/div#cnt/div#rcnt[12]/div#center_col[1]/div#botstuff[3]/table
+HEADING "Choose what you’re giving feedback on" /div#rcnt[12]/div#rhs[2]/div#jOAHU/div#uOz6nd[1]/div[2]/div#_KqRraf7aHOHG1e8PieqD8Ak_65
+HEADING "Or give general feedback" /div#rcnt[12]/div#rhs[2]/div#jOAHU/div#uOz6nd[1]/div[2]/div#_KqRraf7aHOHG1e8PieqD8Ak_65
+  HEADING "Choose what you’re giving feedback on" /div#searchform/form#tsf/div#_KqRraf7aHOHG1e8PieqD8Ak_5[3]/div#_KqRraf7aHOHG1e8PieqD8Ak_11
+  REGION "Ads" /div#center_col[1]/div#res[2]/div#search[2]/div#rso/div#bottomads/div#tadsb
+    HEADING LEVEL=1 "Ads" /div#res[2]/div#search[2]/div#rso/div#bottomads/div#tadsb/h1
+  HEADING "People also search for" /div#main[3]/div#cnt/div#rcnt[12]/div#center_col[1]/div#botstuff[3]/div#bres[3]
+HEADING "Nghe" /div#main[3]/div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#dG0eW[4]
+HEADING "Other recordings" /div#main[3]/div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#AkU20[5]
+  HEADING "Videos" /div#rcnt[12]/div#center_col[1]/div#res[2]/div#search[2]/div#rso/span#_KqRraf7aHOHG1e8PieqD8Ak_77[1]
+HEADING "Bài hát của Adele ‧ 2015" /div#main[3]/div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#uOz6nd[1]
+HEADING "Hello" /div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#uOz6nd[1]/a
+  HEADING LEVEL=3 "HELLO | Định nghĩa trong Từ điển tiếng Anh Camb..." /div#center_col[1]/div#res[2]/div#search[2]/div#rso/a/h3#_KqRraf7aHOHG1e8PieqD8Ak_33
+  HEADING LEVEL=3 "Hello – Wikipedia tiếng Việt" /div#center_col[1]/div#res[2]/div#search[2]/div#rso/a/h3#_KqRraf7aHOHG1e8PieqD8Ak_88
+  HEADING LEVEL=3 "HELLO! - Daily royal, celebrity, fashion, beaut..." /div#center_col[1]/div#res[2]/div#search[2]/div#rso/a/h3#_KqRraf7aHOHG1e8PieqD8Ak_86
+  HEADING LEVEL=3 "hello network" /div#center_col[1]/div#res[2]/div#search[2]/div#rso/a/h3#_KqRraf7aHOHG1e8PieqD8Ak_91
+  HEADING LEVEL=3 "The Best & Fastest WordPress Theme: Hello by El..." /div#center_col[1]/div#res[2]/div#search[2]/div#rso/a/h3#_KqRraf7aHOHG1e8PieqD8Ak_87
+  HEADING LEVEL=3 "no hello" /div#center_col[1]/div#res[2]/div#search[2]/div#rso/a/h3#_KqRraf7aHOHG1e8PieqD8Ak_90
+  HEADING LEVEL=3 "Hello" /div#center_col[1]/div#res[2]/div#search[2]/div#rso/a/h3#_KqRraf7aHOHG1e8PieqD8Ak_89
+  HEADING LEVEL=3 "Hello Products" /div#center_col[1]/div#res[2]/div#search[2]/div#rso/a/h3#_KqRraf7aHOHG1e8PieqD8Ak_92
+  HEADING "Lyrics" /div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#uLEOKb[2]/div#_KqRraf7aHOHG1e8PieqD8Ak_46[1]
+HEADING "Set Fire to the Rain" /div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#PP76df[6]/div[1]
+HEADING "Someone Like You" /div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#PP76df[6]/div[1]
+HEADING "Skyfall" /div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#PP76df[6]/div[1]
+HEADING "Rolling in the Deep" /div#cnt/div#rcnt[12]/div#rhs[2]/div#jOAHU/div#PP76df[6]/div[1]
+HEADING "Customised date range" /div#cnt/div#top_nav[6]/div#hdtb/div#tn_KqRraf7aHOHG1e8PieqD8Ak_1/div#_KqRraf7aHOHG1e8PieqD8Ak_17/div#_KqRraf7aHOHG1e8PieqD8Ak_18
+FORM "Go" [1 button, 2 inputs] /div#top_nav[6]/div#hdtb/div#tn_KqRraf7aHOHG1e8PieqD8Ak_1/div#_KqRraf7aHOHG1e8PieqD8Ak_17/div#_KqRraf7aHOHG1e8PieqD8Ak_18/form#T3kYXe
+  HEADING "Lionel Richie - Hello (Official Music Video) Yo..." /div#rcnt[12]/div#center_col[1]/div#res[2]/div#search[2]/div#rso/a
+  HEADING "Hello YouTube · Adele - Topic Dec 21, 2019" /div#rcnt[12]/div#center_col[1]/div#res[2]/div#search[2]/div#rso/a
+  HEADING "Adele - Hello (Official Music Video) YouTube · ..." /div#center_col[1]/div#res[2]/div#search[2]/div#rso/div#ow14/a
+  HEADING "Nam Em - HELLO | Sáng tác: Richie Lionel | From..." /div#rcnt[12]/div#center_col[1]/div#res[2]/div#search[2]/div#rso/a
+  HEADING LEVEL=1 "Adele - Hello (Official Music Video)" /div#search[2]/div#rso/div#ow14/div[2]/a[1]/h1
+  HEADING LEVEL=1 "Hello" /div#res[2]/div#search[2]/div#rso/div[2]/a[1]/h1
+  HEADING LEVEL=1 "Nam Em - HELLO | Sáng tác: Richie Lionel | From..." /div#res[2]/div#search[2]/div#rso/div[2]/a[1]/h1
+HEADING "Share" /div#jOAHU/div#uOz6nd[1]/g-popup#ow18/div#_KqRraf7aHOHG1e8PieqD8Ak_36[2]/div#_KqRraf7aHOHG1e8PieqD8Ak_44[2]/div#_KqRraf7aHOHG1e8PieqD8Ak_47

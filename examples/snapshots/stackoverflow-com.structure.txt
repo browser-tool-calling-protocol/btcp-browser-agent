@@ -1,0 +1,51 @@
+PAGE: http://localhost/ | Send attachments with PHP Mail()? - Stack Overflow | viewport=1024x768
+STRUCTURE: elements=48 maxLines=100
+
+BANNER "Skip to main content Stack Overflow About Produ..." [3 buttons, 22 links, 1 input] /header
+CONTENTINFO "Stack Overflow Questions Help Chat Business Sta..." [1 button, 33 links] /footer#footer
+FORM /div#one-tap-container[2]/form#one-tap-form
+  SEARCH "Loading…" [1 input] /header/form#search
+  NAVIGATION "Topbar" [2 buttons, 11 links] /header/nav
+  NAVIGATION "Footer" [1 button, 26 links] /footer#footer/nav
+HEADING LEVEL=1 /div#signup-modal-container[1]/aside/h1#signup-modal-title
+NAVIGATION "Primary" [2 buttons, 13 links] /div.container[5]/div#left-sidebar[2]/nav
+HEADING LEVEL=5 "Collectives™ on Stack Overflow" /div.container[5]/div#left-sidebar[2]/div#popover-discover-collectives[2]/h5
+MAIN "question and answers" [249 buttons, 221 links, 18 inputs, 30 other] /div.container[5]/div#content[3]/div#mainbar[3]
+COMPLEMENTARY "sidebar" [1 button, 83 links, 1 input] /div.container[5]/div#content[3]/div#sidebar[4]
+    HEADING LEVEL=5 "Stack Overflow" /footer#footer/nav/h5
+    HEADING LEVEL=5 "Business" /footer#footer/nav/h5
+    HEADING LEVEL=5 "Company" /footer#footer/nav/h5
+HEADING LEVEL=1 "OR" /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/h1
+FORM "Email Password Sign up" [2 buttons, 2 inputs] /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form#signup-modal-signup-form
+HEADING LEVEL=1 "Let's set up your homepage Select a few topics ..." /div.container[5]/div#homepage-wizard-container[1]/aside/h1#signup-modal-title
+HEADING LEVEL=1 "Send attachments with PHP Mail()?" /div.container[5]/div#content[3]/div#question-header[1]/h1
+    HEADING LEVEL=5 "Stack Exchange Network" /footer#footer/nav/h5
+FORM "Sign up with Google Sign up with GitHub" [2 buttons] /div#signup-modal-container[1]/aside/div#signup-modal-description[1]/form
+  HEADING LEVEL=4 "Linked" /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-linked[7]/h4#h-linked
+  HEADING LEVEL=4 "Related" /div.container[5]/div#content[3]/div#sidebar[4]/div.sidebar-related[8]/h4#h-related
+  HEADING LEVEL=4 "Hot Network Questions" /div.container[5]/div#content[3]/div#sidebar[4]/div#hot-network-questions[9]/h4
+HEADING LEVEL=1 "Why are you flagging this comment?" /div.container[5]/div#content[3]/div#js-follow-ups-flag-modal[3]/aside/h1#follow-ups-flag-modal-title
+    HEADING LEVEL=3 "current community" /header/nav/ol/li[1]/div.header[1]/h3
+    HEADING LEVEL=3 "your communities" /header/nav/ol/li[1]/div#your-communities-header[3]/h3
+    HEADING LEVEL=3 "more stack exchange communities" /header/nav/ol/li[1]/div.header[5]/h3
+  HEADING LEVEL=1 "Subscribe to RSS" /div.container[5]/div#content[3]/div#sidebar[4]/aside/h1#feed-modal-title
+HEADING LEVEL=1 /div.container[5]/div#content[3]/div[3]/aside/h1
+  HEADING LEVEL=2 "16 Answers 16" /div.container[5]/div#content[3]/div#mainbar[3]/div#answers[3]/div#answers-header[1]/h2
+HEADING LEVEL=1 "Hang on, you can't upvote just yet." /div.container[5]/div#content[3]/div[3]/aside/div[1]/h1
+  HEADING LEVEL=2 "19 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12302354[2]/div#follow-ups-container-12302354[2]/h2
+  HEADING LEVEL=2 "14 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12313090[4]/div#follow-ups-container-12313090/h2
+  HEADING LEVEL=2 "20 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-31428803[5]/div#follow-ups-container-31428803/h2
+  HEADING LEVEL=2 "3 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-23688766[7]/div#follow-ups-container-23688766/h2
+  HEADING LEVEL=2 "2 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-12301415[8]/div#follow-ups-container-12301415/h2
+  HEADING LEVEL=2 "2 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-43537375[9]/div#follow-ups-container-43537375/h2
+  HEADING LEVEL=2 "3 Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-49542186[10]/div#follow-ups-container-49542186/h2
+  HEADING LEVEL=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37420219[11]/div#follow-ups-container-37420219/h2
+  HEADING LEVEL=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-29913641[12]/div#follow-ups-container-29913641/h2
+  HEADING LEVEL=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-60760040[13]/div#follow-ups-container-60760040/h2
+  HEADING LEVEL=2 "1 Comment" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-41580693[14]/div#follow-ups-container-41580693/h2
+  HEADING LEVEL=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-46337598[15]/div#follow-ups-container-46337598/h2
+  HEADING LEVEL=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-68113839[16]/div#follow-ups-container-68113839/h2
+  HEADING LEVEL=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-65440773[17]/div#follow-ups-container-65440773/h2
+  HEADING LEVEL=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-37589937[18]/div#follow-ups-container-37589937/h2
+  HEADING LEVEL=2 "Comments" /div#content[3]/div#mainbar[3]/div#answers[3]/div#answer-33528363[19]/div#follow-ups-container-33528363/h2
+SEARCH "tags" /div.container[5]/div#homepage-wizard-container[1]/aside/div#signup-modal-description[1]/div#text-input-container/input#filterInput

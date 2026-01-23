@@ -1,0 +1,31 @@
+PAGE: http://localhost/ | Untitled | viewport=1024x768
+STRUCTURE: elements=28 maxLines=100
+
+REGION "bỏ qua nội dung chính" [1 button] /div#main[1]/section
+BANNER "Kênh Người Bán Tải ứng dụng Kết nối Thông báo H..." [6 buttons, 18 links, 2 inputs, 2 other] /div#main[1]/header
+CONTENTINFO "Trang Chủ > Thời Trang Nam Top Bán Chạy Sản Phẩ..." [117 links] /div#main[1]/footer
+  NAVIGATION "Kênh Người Bán Tải ứng dụng Kết nối Thông báo H..." [3 buttons, 6 links] /div#main[1]/header/div.navbar-wrapper[1]/nav.container
+  SEARCH "Trong Thời Trang Nam Trong Thời Trang Nam Trong..." [2 buttons, 2 inputs, 2 other] /div#main[1]/header/div.container/form
+MAIN "Sắp xếp theo Phổ biếnMới nhấtBán chạy Giá 1/8 -..." [4 buttons, 39 links] /div#main[1]/div.container[4]
+  REGION "Trang Chủ > Thời Trang Nam" [1 link] /div#main[1]/footer/section[1]
+  REGION "Top Bán Chạy Sản Phẩm Thời Trang Nam 1. Áo khoá..." [20 links] /div#main[1]/footer/section[2]
+  REGION "Có Thể Bạn Đang Tìm Kiếm thời trang nam yame | ..." [30 links] /div#main[1]/footer/section[3]
+  REGION "Quần áo thời trang nam mới nhất - Phong cách th..." [22 links] /div#main[1]/footer/section[4]
+  REGION "Sắp xếp theo Phổ biếnMới nhấtBán chạy Giá 1/8 -..." [4 buttons, 39 links] /div#main[1]/div.container[4]/section
+    HEADING LEVEL=3 "Top Bán Chạy Sản Phẩm Thời Trang Nam" /div#main[1]/footer/section[2]/h3
+    HEADING LEVEL=3 "Có Thể Bạn Đang Tìm Kiếm" /div#main[1]/footer/section[3]/h3
+    HEADING LEVEL=1 "Quần áo thời trang nam mới nhất - Phong cách th..." /div#main[1]/footer/section[4]/h1
+    HEADING LEVEL=2 "Bí quyết lựa chọn sản phẩm quần áo thời trang n..." /div#main[1]/footer/section[4]/h2[1]
+    HEADING LEVEL=2 "Những mẫu quần áo thời trang nam không bao giờ ..." /div#main[1]/footer/section[4]/h2[2]
+    HEADING LEVEL=3 "Áo thun nam" /div#main[1]/footer/section[4]/h3[1]
+    HEADING LEVEL=3 "Áo sơ mi nam" /div#main[1]/footer/section[4]/h3[2]
+    HEADING LEVEL=3 "Quần nam" /div#main[1]/footer/section[4]/h3[3]
+    HEADING LEVEL=2 "Cách phối đồ nam đẹp" /div#main[1]/footer/section[4]/h2[3]
+    HEADING LEVEL=2 "Hướng dẫn cách bảo quản quần áo thời trang nam" /div#main[1]/footer/section[4]/h2[4]
+    HEADING LEVEL=2 "Một vài lưu ý nhỏ khi bảo quản quần áo thời tra..." /div#main[1]/footer/section[4]/h2[5]
+    HEADING LEVEL=2 "Mua sắm thông minh các sản phẩm thời trang nam ..." /div#main[1]/footer/section[4]/h2[6]
+    HEADING LEVEL=2 "Đặt mua sản phẩm quần áo thời trang nam hàng hi..." /div#main[1]/footer/section[4]/h2[7]
+HEADING LEVEL=2 "Bộ lọc tìm kiếm" /div#main[1]/div.container[4]/h2
+    NAVIGATION "12345..." [7 links] /div#main[1]/div.container[4]/section/nav
+    REGION "Phổ biếnMới nhấtBán chạy" [3 buttons] /div#main[1]/div.container[4]/section/section[1]
+    REGION "Giá" [1 button] /div#main[1]/div.container[4]/section/section[2]

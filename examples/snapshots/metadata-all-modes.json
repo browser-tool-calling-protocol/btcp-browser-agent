@@ -1,390 +1,167 @@
 {
-  "generatedAt": "2026-01-19T14:41:03.487Z",
+  "generatedAt": "2026-01-23T00:10:20.020Z",
   "modes": [
     {
-      "mode": "interactive",
+      "mode": "structure",
       "format": "tree",
-      "suffix": "interactive"
-    },
-    {
-      "mode": "outline",
-      "format": "tree",
-      "suffix": "outline"
-    },
-    {
-      "mode": "content",
-      "format": "tree",
-      "suffix": "content"
-    },
-    {
-      "mode": "content",
-      "format": "markdown",
-      "suffix": "content-markdown"
+      "suffix": "structure"
     }
   ],
   "files": [
     {
       "filename": "amazon-com-detail",
-      "outputFile": "amazon-com-detail.interactive.txt",
-      "mode": "interactive",
+      "outputFile": "amazon-com-detail.structure.txt",
+      "mode": "structure",
       "format": "tree",
       "stats": {
-        "outputSize": 76688,
-        "lineCount": 619,
-        "refCount": 616,
-        "wordCount": 3727,
-        "generationTime": 13825
-      }
-    },
-    {
-      "filename": "amazon-com-detail",
-      "outputFile": "amazon-com-detail.outline.txt",
-      "mode": "outline",
-      "format": "tree",
-      "stats": {
-        "outputSize": 56445,
-        "lineCount": 374,
-        "refCount": 208,
-        "wordCount": 3036,
-        "generationTime": 14591
-      }
-    },
-    {
-      "filename": "amazon-com-detail",
-      "outputFile": "amazon-com-detail.content.txt",
-      "mode": "content",
-      "format": "tree",
-      "stats": {
-        "outputSize": 137482,
-        "lineCount": 2544,
+        "outputSize": 13969,
+        "lineCount": 103,
         "refCount": 0,
-        "wordCount": 16543,
-        "generationTime": 22237
+        "wordCount": 667,
+        "generationTime": 1226
       }
     },
     {
-      "filename": "amazon-com-detail",
-      "outputFile": "amazon-com-detail.content-markdown.txt",
-      "mode": "content",
-      "format": "markdown",
+      "filename": "chatgpt-welcome",
+      "outputFile": "chatgpt-welcome.structure.txt",
+      "mode": "structure",
+      "format": "tree",
       "stats": {
-        "outputSize": 188675,
-        "lineCount": 4358,
+        "outputSize": 1128,
+        "lineCount": 14,
         "refCount": 0,
-        "wordCount": 19901,
-        "generationTime": 22278
+        "wordCount": 91,
+        "generationTime": 82
       }
     },
     {
       "filename": "edition-cnn-com",
-      "outputFile": "edition-cnn-com.interactive.txt",
-      "mode": "interactive",
+      "outputFile": "edition-cnn-com.structure.txt",
+      "mode": "structure",
       "format": "tree",
       "stats": {
-        "outputSize": 22617,
-        "lineCount": 202,
-        "refCount": 199,
-        "wordCount": 1671,
-        "generationTime": 37956
-      }
-    },
-    {
-      "filename": "edition-cnn-com",
-      "outputFile": "edition-cnn-com.outline.txt",
-      "mode": "outline",
-      "format": "tree",
-      "stats": {
-        "outputSize": 7385,
-        "lineCount": 72,
-        "refCount": 28,
-        "wordCount": 524,
-        "generationTime": 38209
-      }
-    },
-    {
-      "filename": "edition-cnn-com",
-      "outputFile": "edition-cnn-com.content.txt",
-      "mode": "content",
-      "format": "tree",
-      "stats": {
-        "outputSize": 42133,
-        "lineCount": 818,
+        "outputSize": 6586,
+        "lineCount": 59,
         "refCount": 0,
-        "wordCount": 5968,
-        "generationTime": 39183
-      }
-    },
-    {
-      "filename": "edition-cnn-com",
-      "outputFile": "edition-cnn-com.content-markdown.txt",
-      "mode": "content",
-      "format": "markdown",
-      "stats": {
-        "outputSize": 59942,
-        "lineCount": 1144,
-        "refCount": 0,
-        "wordCount": 9090,
-        "generationTime": 37701
+        "wordCount": 450,
+        "generationTime": 1058
       }
     },
     {
       "filename": "github-com-microsoft-vscode",
-      "outputFile": "github-com-microsoft-vscode.interactive.txt",
-      "mode": "interactive",
+      "outputFile": "github-com-microsoft-vscode.structure.txt",
+      "mode": "structure",
       "format": "tree",
       "stats": {
-        "outputSize": 64137,
-        "lineCount": 387,
-        "refCount": 384,
-        "wordCount": 2094,
-        "generationTime": 563
-      }
-    },
-    {
-      "filename": "github-com-microsoft-vscode",
-      "outputFile": "github-com-microsoft-vscode.outline.txt",
-      "mode": "outline",
-      "format": "tree",
-      "stats": {
-        "outputSize": 10048,
-        "lineCount": 76,
-        "refCount": 18,
-        "wordCount": 477,
-        "generationTime": 560
-      }
-    },
-    {
-      "filename": "github-com-microsoft-vscode",
-      "outputFile": "github-com-microsoft-vscode.content.txt",
-      "mode": "content",
-      "format": "tree",
-      "stats": {
-        "outputSize": 22401,
-        "lineCount": 427,
+        "outputSize": 10096,
+        "lineCount": 77,
         "refCount": 0,
-        "wordCount": 3059,
-        "generationTime": 874
+        "wordCount": 447,
+        "generationTime": 456
       }
     },
     {
-      "filename": "github-com-microsoft-vscode",
-      "outputFile": "github-com-microsoft-vscode.content-markdown.txt",
-      "mode": "content",
-      "format": "markdown",
+      "filename": "gmail-compose",
+      "outputFile": "gmail-compose.structure.txt",
+      "mode": "structure",
+      "format": "tree",
       "stats": {
-        "outputSize": 20154,
-        "lineCount": 637,
+        "outputSize": 1662,
+        "lineCount": 26,
         "refCount": 0,
-        "wordCount": 2959,
-        "generationTime": 860
+        "wordCount": 170,
+        "generationTime": 1164
+      }
+    },
+    {
+      "filename": "gmail-inbox",
+      "outputFile": "gmail-inbox.structure.txt",
+      "mode": "structure",
+      "format": "tree",
+      "stats": {
+        "outputSize": 1449,
+        "lineCount": 23,
+        "refCount": 0,
+        "wordCount": 143,
+        "generationTime": 985
       }
     },
     {
       "filename": "google-search",
-      "outputFile": "google-search.interactive.txt",
-      "mode": "interactive",
+      "outputFile": "google-search.structure.txt",
+      "mode": "structure",
       "format": "tree",
       "stats": {
-        "outputSize": 118,
-        "lineCount": 4,
-        "refCount": 1,
-        "wordCount": 16,
-        "generationTime": 484
-      }
-    },
-    {
-      "filename": "google-search",
-      "outputFile": "google-search.outline.txt",
-      "mode": "outline",
-      "format": "tree",
-      "stats": {
-        "outputSize": 165,
-        "lineCount": 4,
+        "outputSize": 5510,
+        "lineCount": 51,
         "refCount": 0,
-        "wordCount": 19,
-        "generationTime": 422
-      }
-    },
-    {
-      "filename": "google-search",
-      "outputFile": "google-search.content.txt",
-      "mode": "content",
-      "format": "tree",
-      "stats": {
-        "outputSize": 76,
-        "lineCount": 3,
-        "refCount": 0,
-        "wordCount": 10,
-        "generationTime": 328
-      }
-    },
-    {
-      "filename": "google-search",
-      "outputFile": "google-search.content-markdown.txt",
-      "mode": "content",
-      "format": "markdown",
-      "stats": {
-        "outputSize": 66,
-        "lineCount": 2,
-        "refCount": 0,
-        "wordCount": 10,
-        "generationTime": 300
+        "wordCount": 362,
+        "generationTime": 332
       }
     },
     {
       "filename": "npr-org-templates",
-      "outputFile": "npr-org-templates.interactive.txt",
-      "mode": "interactive",
+      "outputFile": "npr-org-templates.structure.txt",
+      "mode": "structure",
       "format": "tree",
       "stats": {
-        "outputSize": 19707,
-        "lineCount": 195,
-        "refCount": 192,
-        "wordCount": 1212,
-        "generationTime": 1443
-      }
-    },
-    {
-      "filename": "npr-org-templates",
-      "outputFile": "npr-org-templates.outline.txt",
-      "mode": "outline",
-      "format": "tree",
-      "stats": {
-        "outputSize": 15981,
-        "lineCount": 133,
-        "refCount": 53,
-        "wordCount": 1094,
-        "generationTime": 1464
-      }
-    },
-    {
-      "filename": "npr-org-templates",
-      "outputFile": "npr-org-templates.content.txt",
-      "mode": "content",
-      "format": "tree",
-      "stats": {
-        "outputSize": 47623,
-        "lineCount": 843,
+        "outputSize": 11084,
+        "lineCount": 96,
         "refCount": 0,
-        "wordCount": 6635,
-        "generationTime": 1569
+        "wordCount": 729,
+        "generationTime": 237
       }
     },
     {
-      "filename": "npr-org-templates",
-      "outputFile": "npr-org-templates.content-markdown.txt",
-      "mode": "content",
-      "format": "markdown",
-      "stats": {
-        "outputSize": 97513,
-        "lineCount": 1702,
-        "refCount": 0,
-        "wordCount": 9435,
-        "generationTime": 1600
-      }
-    },
-    {
-      "filename": "stackoverflow-com",
-      "outputFile": "stackoverflow-com.interactive.txt",
-      "mode": "interactive",
+      "filename": "shopee-home",
+      "outputFile": "shopee-home.structure.txt",
+      "mode": "structure",
       "format": "tree",
       "stats": {
-        "outputSize": 300304,
-        "lineCount": 2338,
-        "refCount": 2335,
-        "wordCount": 10462,
-        "generationTime": 128032
-      }
-    },
-    {
-      "filename": "stackoverflow-com",
-      "outputFile": "stackoverflow-com.outline.txt",
-      "mode": "outline",
-      "format": "tree",
-      "stats": {
-        "outputSize": 20391,
-        "lineCount": 154,
-        "refCount": 51,
-        "wordCount": 1135,
-        "generationTime": 7440
-      }
-    },
-    {
-      "filename": "stackoverflow-com",
-      "outputFile": "stackoverflow-com.content.txt",
-      "mode": "content",
-      "format": "tree",
-      "stats": {
-        "outputSize": 84285,
-        "lineCount": 1835,
-        "refCount": 0,
-        "wordCount": 9952,
-        "generationTime": 70025
-      }
-    },
-    {
-      "filename": "stackoverflow-com",
-      "outputFile": "stackoverflow-com.content-markdown.txt",
-      "mode": "content",
-      "format": "markdown",
-      "stats": {
-        "outputSize": 246430,
-        "lineCount": 7937,
-        "refCount": 0,
-        "wordCount": 26725,
-        "generationTime": 70515
-      }
-    },
-    {
-      "filename": "test-all-mode",
-      "outputFile": "test-all-mode.interactive.txt",
-      "mode": "interactive",
-      "format": "tree",
-      "stats": {
-        "outputSize": 241,
-        "lineCount": 5,
-        "refCount": 2,
-        "wordCount": 25,
-        "generationTime": 9
-      }
-    },
-    {
-      "filename": "test-all-mode",
-      "outputFile": "test-all-mode.outline.txt",
-      "mode": "outline",
-      "format": "tree",
-      "stats": {
-        "outputSize": 799,
-        "lineCount": 15,
-        "refCount": 6,
-        "wordCount": 94,
-        "generationTime": 8
-      }
-    },
-    {
-      "filename": "test-all-mode",
-      "outputFile": "test-all-mode.content.txt",
-      "mode": "content",
-      "format": "tree",
-      "stats": {
-        "outputSize": 1390,
-        "lineCount": 33,
-        "refCount": 0,
-        "wordCount": 187,
-        "generationTime": 12
-      }
-    },
-    {
-      "filename": "test-all-mode",
-      "outputFile": "test-all-mode.content-markdown.txt",
-      "mode": "content",
-      "format": "markdown",
-      "stats": {
-        "outputSize": 1419,
-        "lineCount": 68,
+        "outputSize": 1541,
+        "lineCount": 18,
         "refCount": 0,
         "wordCount": 188,
-        "generationTime": 7
+        "generationTime": 617
+      }
+    },
+    {
+      "filename": "shopee-list",
+      "outputFile": "shopee-list.structure.txt",
+      "mode": "structure",
+      "format": "tree",
+      "stats": {
+        "outputSize": 2818,
+        "lineCount": 31,
+        "refCount": 0,
+        "wordCount": 345,
+        "generationTime": 489
+      }
+    },
+    {
+      "filename": "stackoverflow-com",
+      "outputFile": "stackoverflow-com.structure.txt",
+      "mode": "structure",
+      "format": "tree",
+      "stats": {
+        "outputSize": 5434,
+        "lineCount": 51,
+        "refCount": 0,
+        "wordCount": 311,
+        "generationTime": 1119
+      }
+    },
+    {
+      "filename": "test-all-mode",
+      "outputFile": "test-all-mode.structure.txt",
+      "mode": "structure",
+      "format": "tree",
+      "stats": {
+        "outputSize": 932,
+        "lineCount": 16,
+        "refCount": 0,
+        "wordCount": 112,
+        "generationTime": 6
       }
     }
   ]

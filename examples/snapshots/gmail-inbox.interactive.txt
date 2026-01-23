@@ -1,0 +1,452 @@
+PAGE: http://localhost/ | Inbox (7,625) - luk.mink@gmail.com - Gmail | viewport=1024x768
+SNAPSHOT: elements=4749 refs=449
+
+LINK "Help Center" @ref:0 /a
+LINK "Skip to content" @ref:1 /div[1]/a[1]
+LINK "Using Gmail with screen readers" @ref:2 /div[1]/a[2]
+LINK "Gmail" @ref:3 /div[2]/h1/header#gb/a
+BUTTON "Main menu" @ref:4 (expanded) /div[2]/h1/header#gb
+BUTTON "Go back" @ref:5 /div[2]/h1/header#gb
+BUTTON "Close" @ref:6 /div[2]/h1/header#gb
+LINK "Gmail" @ref:7 /div[2]/h1/header#gb/a
+BUTTON "Close search" @ref:8 /div[2]/h1/header#gb/form#aso_search_form_anchor/button[1]
+TEXTBOX "Search mail" @ref:9 /header#gb/form#aso_search_form_anchor/table/table/div#gs_lc50/input[1]
+BUTTON "Advanced search options" @ref:10 /div[2]/h1/header#gb/form#aso_search_form_anchor/button[2]
+BUTTON "Clear search" @ref:11 /div[2]/h1/header#gb/form#aso_search_form_anchor/button[3]
+BUTTON "Search mail" @ref:12 /div[2]/h1/header#gb/form#aso_search_form_anchor/button[4]
+BUTTON "Try Gemini" @ref:13 /div[2]/h1/header#gb/button
+BUTTON "Google apps" @ref:14 /div[2]/h1/header#gb/div#gbwa/a
+BUTTON "Google Account: Minh Luc (luk.mink@gmail.com)" @ref:15 /div[2]/h1/header#gb/a
+LINK "OK" @ref:16 /div[4]/span#link_enable_notifications[1]
+LINK "No thanks" @ref:17 /div[4]/span[2]
+BUTTON "Close" @ref:18 /div[4]
+BUTTON "Compose" @ref:19 /div
+LINK "Upgrade" @ref:20 /button
+BUTTON "Select" @ref:21 /div[1]/div
+CHECKBOX @ref:22 /div[1]/div
+BUTTON "Refresh" @ref:23 /div[1]
+BUTTON "More email options" @ref:24 /div[1]/div
+BUTTON "Show more messages" @ref:25 /div[1]/div[1]
+BUTTON "Newer" @ref:26 /div[1]/div[2]
+BUTTON "Older" @ref:27 /div[1]/div[3]
+TAB "Primary" @ref:28 (selected) /div/div[1]/table/div
+TAB "Promotions, 100 new messages," @ref:29 /div/div[1]/table/div
+TAB "Social, one new message," @ref:30 /div/div[1]/table/div
+BUTTON "Select which tabs to show or hide." @ref:31 /div/div[1]/table
+BUTTON "Primary" @ref:32 /div/div[1]/div[1]/h3
+BUTTON "Show more messages" @ref:33 /div/div[1]/div[1]
+BUTTON "Inbox section options" @ref:34 /div/div[1]/div[1]
+CHECKBOX "Render, Update to Render's list of subprocessor..." @ref:35 /div[1]/div[1]/table/tr[1]/td[2]/div
+BUTTON "Not starred" @ref:36 /div/div[1]/div[1]/table/tr[1]/span
+SWITCH "Not important" @ref:37 /div/div[1]/div[1]/table/tr[1]/div
+LINK "Update to Render's list of subprocessors - Rend..." @ref:38 /div/div[1]/div[1]/table/tr[1]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:39 /div[1]/div[1]/table/tr[2]/td[2]/div
+BUTTON "Not starred" @ref:40 /div/div[1]/div[1]/table/tr[2]/span
+SWITCH "Not important" @ref:41 /div/div[1]/div[1]/table/tr[2]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:42 /div/div[1]/div[1]/table/tr[2]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:43 /div[1]/div[1]/table/tr[3]/td[2]/div
+BUTTON "Not starred" @ref:44 /div/div[1]/div[1]/table/tr[3]/span
+SWITCH "Not important" @ref:45 /div/div[1]/div[1]/table/tr[3]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:46 /div/div[1]/div[1]/table/tr[3]/td[6]
+CHECKBOX "xAI, xAI Messages API Endpoint Deprecation, 2:1..." @ref:47 /div[1]/div[1]/table/tr[4]/td[2]/div
+BUTTON "Not starred" @ref:48 /div/div[1]/div[1]/table/tr[4]/span
+SWITCH "Not important" @ref:49 /div/div[1]/div[1]/table/tr[4]/div
+LINK "xAI Messages API Endpoint Deprecation - xAI Mes..." @ref:50 /div/div[1]/div[1]/table/tr[4]/td[6]
+CHECKBOX "unread, Pat @ Starter Story, Be part of the 1%,..." @ref:51 /div[1]/div[1]/table/tr[5]/td[2]/div
+BUTTON "Not starred" @ref:52 /div/div[1]/div[1]/table/tr[5]/span
+SWITCH "Not important" @ref:53 /div/div[1]/div[1]/table/tr[5]/div
+LINK "Be part of the 1% - Read time: 49 sec. The easi..." @ref:54 /div/div[1]/div[1]/table/tr[5]/td[6]
+BUTTON "Unsubscribe" @ref:55 /div/div[1]/div[1]/table/tr[5]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:56 /div[1]/div[1]/table/tr[6]/td[2]/div
+BUTTON "Not starred" @ref:57 /div/div[1]/div[1]/table/tr[6]/span
+SWITCH "Not important" @ref:58 /div/div[1]/div[1]/table/tr[6]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:59 /div/div[1]/div[1]/table/tr[6]/td[6]
+CHECKBOX "npm, Successfully published btcp-browser-agent@..." @ref:60 /div[1]/div[1]/table/tr[7]/td[2]/div
+BUTTON "Not starred" @ref:61 /div/div[1]/div[1]/table/tr[7]/span
+SWITCH "Not important" @ref:62 /div/div[1]/div[1]/table/tr[7]/div
+LINK "Successfully published btcp-browser-agent@0.1.1..." @ref:63 /div/div[1]/div[1]/table/tr[7]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:64 /div[1]/div[1]/table/tr[8]/td[2]/div
+BUTTON "Not starred" @ref:65 /div/div[1]/div[1]/table/tr[8]/span
+SWITCH "Not important" @ref:66 /div/div[1]/div[1]/table/tr[8]/div
+LINK "Successfully published btcp-browser-agent@0.1.1..." @ref:67 /div/div[1]/div[1]/table/tr[8]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:68 /div[1]/div[1]/table/tr[9]/td[2]/div
+BUTTON "Not starred" @ref:69 /div/div[1]/div[1]/table/tr[9]/span
+SWITCH "Not important" @ref:70 /div/div[1]/div[1]/table/tr[9]/div
+LINK "Successfully published btcp-browser-agent@0.1.1..." @ref:71 /div/div[1]/div[1]/table/tr[9]/td[6]
+CHECKBOX "Aimu, 3.0.0 - Download Source Code, Jan 21, Tha..." @ref:72 /div[1]/div[1]/table/tr[10]/td[2]/div
+BUTTON "Not starred" @ref:73 /div/div[1]/div[1]/table/tr[10]/span
+SWITCH "Important according to Google magic." @ref:74 /div/div[1]/div[1]/table/tr[10]/div
+LINK "3.0.0 - Download Source Code - Thank you for yo..." @ref:75 /div/div[1]/div[1]/table/tr[10]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:76 /div[1]/div[1]/table/tr[11]/td[2]/div
+BUTTON "Not starred" @ref:77 /div/div[1]/div[1]/table/tr[11]/span
+SWITCH "Not important" @ref:78 /div/div[1]/div[1]/table/tr[11]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:79 /div/div[1]/div[1]/table/tr[11]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:80 /div[1]/div[1]/table/tr[12]/td[2]/div
+BUTTON "Not starred" @ref:81 /div/div[1]/div[1]/table/tr[12]/span
+SWITCH "Not important" @ref:82 /div/div[1]/div[1]/table/tr[12]/div
+LINK "Successfully published btcp-browser-agent@0.1.1..." @ref:83 /div/div[1]/div[1]/table/tr[12]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:84 /div[1]/div[1]/table/tr[13]/td[2]/div
+BUTTON "Not starred" @ref:85 /div/div[1]/div[1]/table/tr[13]/span
+SWITCH "Not important" @ref:86 /div/div[1]/div[1]/table/tr[13]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:87 /div/div[1]/div[1]/table/tr[13]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:88 /div[1]/div[1]/table/tr[14]/td[2]/div
+BUTTON "Not starred" @ref:89 /div/div[1]/div[1]/table/tr[14]/span
+SWITCH "Not important" @ref:90 /div/div[1]/div[1]/table/tr[14]/div
+LINK "Successfully published btcp-browser-agent@0.1.1..." @ref:91 /div/div[1]/div[1]/table/tr[14]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:92 /div[1]/div[1]/table/tr[15]/td[2]/div
+BUTTON "Not starred" @ref:93 /div/div[1]/div[1]/table/tr[15]/span
+SWITCH "Not important" @ref:94 /div/div[1]/div[1]/table/tr[15]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:95 /div/div[1]/div[1]/table/tr[15]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:96 /div[1]/div[1]/table/tr[16]/td[2]/div
+BUTTON "Not starred" @ref:97 /div/div[1]/div[1]/table/tr[16]/span
+SWITCH "Not important" @ref:98 /div/div[1]/div[1]/table/tr[16]/div
+LINK "Successfully published btcp-browser-agent@0.1.1..." @ref:99 /div/div[1]/div[1]/table/tr[16]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:100 /div[1]/div[1]/table/tr[17]/td[2]/div
+BUTTON "Not starred" @ref:101 /div/div[1]/div[1]/table/tr[17]/span
+SWITCH "Not important" @ref:102 /div/div[1]/div[1]/table/tr[17]/div
+LINK "Successfully published btcp-browser-agent@0.1.9..." @ref:103 /div/div[1]/div[1]/table/tr[17]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:104 /div[1]/div[1]/table/tr[18]/td[2]/div
+BUTTON "Not starred" @ref:105 /div/div[1]/div[1]/table/tr[18]/span
+SWITCH "Not important" @ref:106 /div/div[1]/div[1]/table/tr[18]/div
+LINK "Successfully published btcp-browser-agent@0.1.8..." @ref:107 /div/div[1]/div[1]/table/tr[18]/td[6]
+CHECKBOX "Pat Walls, A few hours left., Jan 20, last chan..." @ref:108 /div[1]/div[1]/table/tr[19]/td[2]/div
+BUTTON "Not starred" @ref:109 /div/div[1]/div[1]/table/tr[19]/span
+SWITCH "Not important" @ref:110 /div/div[1]/div[1]/table/tr[19]/div
+LINK "A few hours left. - last chance for 35% off + f..." @ref:111 /div/div[1]/div[1]/table/tr[19]/td[6]
+BUTTON "Unsubscribe" @ref:112 /div/div[1]/div[1]/table/tr[19]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:113 /div[1]/div[1]/table/tr[20]/td[2]/div
+BUTTON "Not starred" @ref:114 /div/div[1]/div[1]/table/tr[20]/span
+SWITCH "Not important" @ref:115 /div/div[1]/div[1]/table/tr[20]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:116 /div/div[1]/div[1]/table/tr[20]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:117 /div[1]/div[1]/table/tr[21]/td[2]/div
+BUTTON "Not starred" @ref:118 /div/div[1]/div[1]/table/tr[21]/span
+SWITCH "Not important" @ref:119 /div/div[1]/div[1]/table/tr[21]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:120 /div/div[1]/div[1]/table/tr[21]/td[6]
+CHECKBOX "unread, Pat Walls, Flash sale (ends tonight), J..." @ref:121 /div[1]/div[1]/table/tr[22]/td[2]/div
+BUTTON "Not starred" @ref:122 /div/div[1]/div[1]/table/tr[22]/span
+SWITCH "Not important" @ref:123 /div/div[1]/div[1]/table/tr[22]/div
+LINK "Flash sale (ends tonight) - Hey, Quick heads up..." @ref:124 /div/div[1]/div[1]/table/tr[22]/td[6]
+BUTTON "Unsubscribe" @ref:125 /div/div[1]/div[1]/table/tr[22]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:126 /div[1]/div[1]/table/tr[23]/td[2]/div
+BUTTON "Not starred" @ref:127 /div/div[1]/div[1]/table/tr[23]/span
+SWITCH "Not important" @ref:128 /div/div[1]/div[1]/table/tr[23]/div
+LINK "Successfully published btcp-browser-agent@0.1.7..." @ref:129 /div/div[1]/div[1]/table/tr[23]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:130 /div[1]/div[1]/table/tr[24]/td[2]/div
+BUTTON "Not starred" @ref:131 /div/div[1]/div[1]/table/tr[24]/span
+SWITCH "Not important" @ref:132 /div/div[1]/div[1]/table/tr[24]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:133 /div/div[1]/div[1]/table/tr[24]/td[6]
+CHECKBOX "unread, npm, [npm] A security key was added to ..." @ref:134 /div[1]/div[1]/table/tr[25]/td[2]/div
+BUTTON "Not starred" @ref:135 /div/div[1]/div[1]/table/tr[25]/span
+SWITCH "Not important" @ref:136 /div/div[1]/div[1]/table/tr[25]/div
+LINK "[npm] A security key was added to your account ..." @ref:137 /div/div[1]/div[1]/table/tr[25]/td[6]
+CHECKBOX "unread, Mailchimp Account I., Weekly insights f..." @ref:138 /div[1]/div[1]/table/tr[26]/td[2]/div
+BUTTON "Not starred" @ref:139 /div/div[1]/div[1]/table/tr[26]/span
+SWITCH "Not important" @ref:140 /div/div[1]/div[1]/table/tr[26]/div
+LINK "Weekly insights from Mailchimp - We ran the num..." @ref:141 /div/div[1]/div[1]/table/tr[26]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:142 /div[1]/div[1]/table/tr[27]/td[2]/div
+BUTTON "Not starred" @ref:143 /div/div[1]/div[1]/table/tr[27]/span
+SWITCH "Not important" @ref:144 /div/div[1]/div[1]/table/tr[27]/div
+LINK "Successfully published btcp-browser-agent@0.1.6..." @ref:145 /div/div[1]/div[1]/table/tr[27]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:146 /div[1]/div[1]/table/tr[28]/td[2]/div
+BUTTON "Not starred" @ref:147 /div/div[1]/div[1]/table/tr[28]/span
+SWITCH "Not important" @ref:148 /div/div[1]/div[1]/table/tr[28]/div
+LINK "Successfully published btcp-browser-agent@0.1.4..." @ref:149 /div/div[1]/div[1]/table/tr[28]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:150 /div[1]/div[1]/table/tr[29]/td[2]/div
+BUTTON "Not starred" @ref:151 /div/div[1]/div[1]/table/tr[29]/span
+SWITCH "Not important" @ref:152 /div/div[1]/div[1]/table/tr[29]/div
+LINK "Successfully published btcp-browser-agent@0.1.3..." @ref:153 /div/div[1]/div[1]/table/tr[29]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:154 /div[1]/div[1]/table/tr[30]/td[2]/div
+BUTTON "Not starred" @ref:155 /div/div[1]/div[1]/table/tr[30]/span
+SWITCH "Not important" @ref:156 /div/div[1]/div[1]/table/tr[30]/div
+LINK "Successfully published btcp-browser-agent@0.1.2..." @ref:157 /div/div[1]/div[1]/table/tr[30]/td[6]
+CHECKBOX "unread, Grab Việt Nam, Đi làm về, nhà thiếu đủ ..." @ref:158 /div[1]/div[1]/table/tr[31]/td[2]/div
+BUTTON "Not starred" @ref:159 /div/div[1]/div[1]/table/tr[31]/span
+SWITCH "Not important" @ref:160 /div/div[1]/div[1]/table/tr[31]/div
+LINK "Đi làm về, nhà thiếu đủ thứ? - Từ dầu gội, bông..." @ref:161 /div/div[1]/div[1]/table/tr[31]/td[6]
+BUTTON "Unsubscribe" @ref:162 /div/div[1]/div[1]/table/tr[31]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:163 /div[1]/div[1]/table/tr[32]/td[2]/div
+BUTTON "Not starred" @ref:164 /div/div[1]/div[1]/table/tr[32]/span
+SWITCH "Not important" @ref:165 /div/div[1]/div[1]/table/tr[32]/div
+LINK "Successfully published btcp-browser-agent@0.1.1..." @ref:166 /div/div[1]/div[1]/table/tr[32]/td[6]
+CHECKBOX "unread, npm, Successfully published btcp-browse..." @ref:167 /div[1]/div[1]/table/tr[33]/td[2]/div
+BUTTON "Not starred" @ref:168 /div/div[1]/div[1]/table/tr[33]/span
+SWITCH "Not important" @ref:169 /div/div[1]/div[1]/table/tr[33]/div
+LINK "Successfully published btcp-browser-agent@0.1.0..." @ref:170 /div/div[1]/div[1]/table/tr[33]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/vistockai] Run ..." @ref:171 /div[1]/div[1]/table/tr[34]/td[2]/div
+BUTTON "Not starred" @ref:172 /div/div[1]/div[1]/table/tr[34]/span
+SWITCH "Not important" @ref:173 /div/div[1]/div[1]/table/tr[34]/div
+LINK "[edges-ai/vistockai] Run failed: Delete merged ..." @ref:174 /div/div[1]/div[1]/table/tr[34]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:175 /div[1]/div[1]/table/tr[35]/td[2]/div
+BUTTON "Not starred" @ref:176 /div/div[1]/div[1]/table/tr[35]/span
+SWITCH "Not important" @ref:177 /div/div[1]/div[1]/table/tr[35]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:178 /div/div[1]/div[1]/table/tr[35]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:179 /div[1]/div[1]/table/tr[36]/td[2]/div
+BUTTON "Not starred" @ref:180 /div/div[1]/div[1]/table/tr[36]/span
+SWITCH "Not important" @ref:181 /div/div[1]/div[1]/table/tr[36]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:182 /div/div[1]/div[1]/table/tr[36]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:183 /div[1]/div[1]/table/tr[37]/td[2]/div
+BUTTON "Not starred" @ref:184 /div/div[1]/div[1]/table/tr[37]/span
+SWITCH "Not important" @ref:185 /div/div[1]/div[1]/table/tr[37]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:186 /div/div[1]/div[1]/table/tr[37]/td[6]
+CHECKBOX "unread, Pat @ Starter Story, Unusual marketing ..." @ref:187 /div[1]/div[1]/table/tr[38]/td[2]/div
+BUTTON "Not starred" @ref:188 /div/div[1]/div[1]/table/tr[38]/span
+SWITCH "Not important" @ref:189 /div/div[1]/div[1]/table/tr[38]/div
+LINK "Unusual marketing channel = $14K/month - Starte..." @ref:190 /div/div[1]/div[1]/table/tr[38]/td[6]
+BUTTON "Unsubscribe" @ref:191 /div/div[1]/div[1]/table/tr[38]/td[6]
+CHECKBOX "unread, Minh Luc Van, [visub-ai/visub-web] Run ..." @ref:192 /div[1]/div[1]/table/tr[39]/td[2]/div
+BUTTON "Not starred" @ref:193 /div/div[1]/div[1]/table/tr[39]/span
+SWITCH "Not important" @ref:194 /div/div[1]/div[1]/table/tr[39]/div
+LINK "[visub-ai/visub-web] Run failed: Security Scan ..." @ref:195 /div/div[1]/div[1]/table/tr[39]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:196 /div[1]/div[1]/table/tr[40]/td[2]/div
+BUTTON "Not starred" @ref:197 /div/div[1]/div[1]/table/tr[40]/span
+SWITCH "Not important" @ref:198 /div/div[1]/div[1]/table/tr[40]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:199 /div/div[1]/div[1]/table/tr[40]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:200 /div[1]/div[1]/table/tr[41]/td[2]/div
+BUTTON "Not starred" @ref:201 /div/div[1]/div[1]/table/tr[41]/span
+SWITCH "Not important" @ref:202 /div/div[1]/div[1]/table/tr[41]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:203 /div/div[1]/div[1]/table/tr[41]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:204 /div[1]/div[1]/table/tr[42]/td[2]/div
+BUTTON "Not starred" @ref:205 /div/div[1]/div[1]/table/tr[42]/span
+SWITCH "Not important" @ref:206 /div/div[1]/div[1]/table/tr[42]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:207 /div/div[1]/div[1]/table/tr[42]/td[6]
+CHECKBOX "unread, Memori Labs 3, Invitation to try Memori..." @ref:208 /div[1]/div[1]/table/tr[43]/td[2]/div
+BUTTON "Not starred" @ref:209 /div/div[1]/div[1]/table/tr[43]/span
+SWITCH "Not important" @ref:210 /div/div[1]/div[1]/table/tr[43]/div
+LINK "Invitation to try Memori v3 - Hello! Thank you ..." @ref:211 /div/div[1]/div[1]/table/tr[43]/td[6]
+CHECKBOX "noreply-google-clou., Publicly Accessible Googl..." @ref:212 /div[1]/div[1]/table/tr[44]/td[2]/div
+BUTTON "Not starred" @ref:213 /div/div[1]/div[1]/table/tr[44]/span
+SWITCH "Not important" @ref:214 /div/div[1]/div[1]/table/tr[44]/div
+LINK "Publicly Accessible Google API Key for Oneflow ..." @ref:215 /div/div[1]/div[1]/table/tr[44]/td[6]
+CHECKBOX "Lynaisha, me 3, Found you on github, Jan 17, Hi..." @ref:216 /div[1]/div[1]/table/tr[45]/td[2]/div
+BUTTON "Not starred" @ref:217 /div/div[1]/div[1]/table/tr[45]/span
+SWITCH "Not important" @ref:218 /div/div[1]/div[1]/table/tr[45]/div
+LINK "Found you on github - Hi Lynaisha, Thanks for r..." @ref:219 /div/div[1]/div[1]/table/tr[45]/td[6]
+CHECKBOX "unread, Công ty chứng khoán., VPS | THÔNG BÁO T..." @ref:220 /div[1]/div[1]/table/tr[46]/td[2]/div
+BUTTON "Not starred" @ref:221 /div/div[1]/div[1]/table/tr[46]/span
+SWITCH "Not important" @ref:222 /div/div[1]/div[1]/table/tr[46]/div
+LINK "VPS | THÔNG BÁO THAY ĐỔI ĐỊA ĐIỂM HỘI SỞ - Kính..." @ref:223 /div/div[1]/div[1]/table/tr[46]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:224 /div[1]/div[1]/table/tr[47]/td[2]/div
+BUTTON "Not starred" @ref:225 /div/div[1]/div[1]/table/tr[47]/span
+SWITCH "Not important" @ref:226 /div/div[1]/div[1]/table/tr[47]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:227 /div/div[1]/div[1]/table/tr[47]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:228 /div[1]/div[1]/table/tr[48]/td[2]/div
+BUTTON "Not starred" @ref:229 /div/div[1]/div[1]/table/tr[48]/span
+SWITCH "Not important" @ref:230 /div/div[1]/div[1]/table/tr[48]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:231 /div/div[1]/div[1]/table/tr[48]/td[6]
+CHECKBOX "unread, Pat @ Starter Story, commit and build, ..." @ref:232 /div[1]/div[1]/table/tr[49]/td[2]/div
+BUTTON "Not starred" @ref:233 /div/div[1]/div[1]/table/tr[49]/span
+SWITCH "Not important" @ref:234 /div/div[1]/div[1]/table/tr[49]/div
+LINK "commit and build - Read time: 52 sec. This week..." @ref:235 /div/div[1]/div[1]/table/tr[49]/td[6]
+BUTTON "Unsubscribe" @ref:236 /div/div[1]/div[1]/table/tr[49]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:237 /div[1]/div[1]/table/tr[50]/td[2]/div
+BUTTON "Not starred" @ref:238 /div/div[1]/div[1]/table/tr[50]/span
+SWITCH "Not important" @ref:239 /div/div[1]/div[1]/table/tr[50]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:240 /div/div[1]/div[1]/table/tr[50]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:241 /div[1]/div[1]/table/tr[51]/td[2]/div
+BUTTON "Not starred" @ref:242 /div/div[1]/div[1]/table/tr[51]/span
+SWITCH "Not important" @ref:243 /div/div[1]/div[1]/table/tr[51]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:244 /div/div[1]/div[1]/table/tr[51]/td[6]
+CHECKBOX "unread, Lotusmiles E-Newsle., Thông báo tài kho..." @ref:245 /div[1]/div[1]/table/tr[52]/td[2]/div
+BUTTON "Not starred" @ref:246 /div/div[1]/div[1]/table/tr[52]/span
+SWITCH "Not important" @ref:247 /div/div[1]/div[1]/table/tr[52]/div
+LINK "Thông báo tài khoản Bông Sen Vàng tháng 01.2026..." @ref:248 /div/div[1]/div[1]/table/tr[52]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:249 /div[1]/div[1]/table/tr[53]/td[2]/div
+BUTTON "Not starred" @ref:250 /div/div[1]/div[1]/table/tr[53]/span
+SWITCH "Not important" @ref:251 /div/div[1]/div[1]/table/tr[53]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:252 /div/div[1]/div[1]/table/tr[53]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:253 /div[1]/div[1]/table/tr[54]/td[2]/div
+BUTTON "Not starred" @ref:254 /div/div[1]/div[1]/table/tr[54]/span
+SWITCH "Not important" @ref:255 /div/div[1]/div[1]/table/tr[54]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:256 /div/div[1]/div[1]/table/tr[54]/td[6]
+CHECKBOX "unread, Binance, [Binance] Login Attempted from..." @ref:257 /div[1]/div[1]/table/tr[55]/td[2]/div
+BUTTON "Not starred" @ref:258 /div/div[1]/div[1]/table/tr[55]/span
+SWITCH "Not important" @ref:259 /div/div[1]/div[1]/table/tr[55]/div
+LINK "[Binance] Login Attempted from New IP address 1..." @ref:260 /div/div[1]/div[1]/table/tr[55]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:261 /div[1]/div[1]/table/tr[56]/td[2]/div
+BUTTON "Not starred" @ref:262 /div/div[1]/div[1]/table/tr[56]/span
+SWITCH "Not important" @ref:263 /div/div[1]/div[1]/table/tr[56]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:264 /div/div[1]/div[1]/table/tr[56]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:265 /div[1]/div[1]/table/tr[57]/td[2]/div
+BUTTON "Not starred" @ref:266 /div/div[1]/div[1]/table/tr[57]/span
+SWITCH "Not important" @ref:267 /div/div[1]/div[1]/table/tr[57]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:268 /div/div[1]/div[1]/table/tr[57]/td[6]
+CHECKBOX "unread, Pat @ Starter Story, “I’m not even a re..." @ref:269 /div[1]/div[1]/table/tr[58]/td[2]/div
+BUTTON "Not starred" @ref:270 /div/div[1]/div[1]/table/tr[58]/span
+SWITCH "Not important" @ref:271 /div/div[1]/div[1]/table/tr[58]/div
+LINK "“I’m not even a real developer” - Read time: 47..." @ref:272 /div/div[1]/div[1]/table/tr[58]/td[6]
+BUTTON "Unsubscribe" @ref:273 /div/div[1]/div[1]/table/tr[58]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:274 /div[1]/div[1]/table/tr[59]/td[2]/div
+BUTTON "Not starred" @ref:275 /div/div[1]/div[1]/table/tr[59]/span
+SWITCH "Not important" @ref:276 /div/div[1]/div[1]/table/tr[59]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:277 /div/div[1]/div[1]/table/tr[59]/td[6]
+CHECKBOX "npm, Successfully published agent-browser-mcp@0..." @ref:278 /div[1]/div[1]/table/tr[60]/td[2]/div
+BUTTON "Not starred" @ref:279 /div/div[1]/div[1]/table/tr[60]/span
+SWITCH "Not important" @ref:280 /div/div[1]/div[1]/table/tr[60]/div
+LINK "Successfully published agent-browser-mcp@0.1.3 ..." @ref:281 /div/div[1]/div[1]/table/tr[60]/td[6]
+CHECKBOX "unread, npm, Successfully published agent-brows..." @ref:282 /div[1]/div[1]/table/tr[61]/td[2]/div
+BUTTON "Not starred" @ref:283 /div/div[1]/div[1]/table/tr[61]/span
+SWITCH "Not important" @ref:284 /div/div[1]/div[1]/table/tr[61]/div
+LINK "Successfully published agent-browser-mcp@0.1.2 ..." @ref:285 /div/div[1]/div[1]/table/tr[61]/td[6]
+CHECKBOX "unread, npm, Successfully published agent-brows..." @ref:286 /div[1]/div[1]/table/tr[62]/td[2]/div
+BUTTON "Not starred" @ref:287 /div/div[1]/div[1]/table/tr[62]/span
+SWITCH "Not important" @ref:288 /div/div[1]/div[1]/table/tr[62]/div
+LINK "Successfully published agent-browser-mcp@0.1.1 ..." @ref:289 /div/div[1]/div[1]/table/tr[62]/td[6]
+CHECKBOX "npm, Successfully published agent-browser-mcp@0..." @ref:290 /div[1]/div[1]/table/tr[63]/td[2]/div
+BUTTON "Not starred" @ref:291 /div/div[1]/div[1]/table/tr[63]/span
+SWITCH "Not important" @ref:292 /div/div[1]/div[1]/table/tr[63]/div
+LINK "Successfully published agent-browser-mcp@0.1.0 ..." @ref:293 /div/div[1]/div[1]/table/tr[63]/td[6]
+CHECKBOX "unread, npm, [npm] Two-factor authentication en..." @ref:294 /div[1]/div[1]/table/tr[64]/td[2]/div
+BUTTON "Not starred" @ref:295 /div/div[1]/div[1]/table/tr[64]/span
+SWITCH "Not important" @ref:296 /div/div[1]/div[1]/table/tr[64]/div
+LINK "[npm] Two-factor authentication enabled - Two-f..." @ref:297 /div/div[1]/div[1]/table/tr[64]/td[6]
+CHECKBOX "unread, npm, [npm] A security key was added to ..." @ref:298 /div[1]/div[1]/table/tr[65]/td[2]/div
+BUTTON "Not starred" @ref:299 /div/div[1]/div[1]/table/tr[65]/span
+SWITCH "Not important" @ref:300 /div/div[1]/div[1]/table/tr[65]/div
+LINK "[npm] A security key was added to your account ..." @ref:301 /div/div[1]/div[1]/table/tr[65]/td[6]
+CHECKBOX "npm 2, [npm] OTP for logging in to your account..." @ref:302 /div[1]/div[1]/table/tr[66]/td[2]/div
+BUTTON "Not starred" @ref:303 /div/div[1]/div[1]/table/tr[66]/span
+SWITCH "Not important" @ref:304 /div/div[1]/div[1]/table/tr[66]/div
+LINK "[npm] OTP for logging in to your account: minhl..." @ref:305 /div/div[1]/div[1]/table/tr[66]/td[6]
+CHECKBOX "unread, Google Play, Updates to how privacy set..." @ref:306 /div[1]/div[1]/table/tr[67]/td[2]/div
+BUTTON "Not starred" @ref:307 /div/div[1]/div[1]/table/tr[67]/span
+SWITCH "Not important" @ref:308 /div/div[1]/div[1]/table/tr[67]/div
+LINK "Updates to how privacy settings work on Play - ..." @ref:309 /div/div[1]/div[1]/table/tr[67]/td[6]
+CHECKBOX "Peter, Collaboration Opportunity, Jan 14, Hi, T..." @ref:310 /div[1]/div[1]/table/tr[68]/td[2]/div
+BUTTON "Not starred" @ref:311 /div/div[1]/div[1]/table/tr[68]/span
+SWITCH "Not important" @ref:312 /div/div[1]/div[1]/table/tr[68]/div
+LINK "Collaboration Opportunity - Hi, This is Peter f..." @ref:313 /div/div[1]/div[1]/table/tr[68]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:314 /div[1]/div[1]/table/tr[69]/td[2]/div
+BUTTON "Not starred" @ref:315 /div/div[1]/div[1]/table/tr[69]/span
+SWITCH "Not important" @ref:316 /div/div[1]/div[1]/table/tr[69]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:317 /div/div[1]/div[1]/table/tr[69]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:318 /div[1]/div[1]/table/tr[70]/td[2]/div
+BUTTON "Not starred" @ref:319 /div/div[1]/div[1]/table/tr[70]/span
+SWITCH "Not important" @ref:320 /div/div[1]/div[1]/table/tr[70]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:321 /div/div[1]/div[1]/table/tr[70]/td[6]
+CHECKBOX "unread, Pat @ Starter Story, This guy is making..." @ref:322 /div[1]/div[1]/table/tr[71]/td[2]/div
+BUTTON "Not starred" @ref:323 /div/div[1]/div[1]/table/tr[71]/span
+SWITCH "Not important" @ref:324 /div/div[1]/div[1]/table/tr[71]/div
+LINK "This guy is making $20K/month from an iOS app -..." @ref:325 /div/div[1]/div[1]/table/tr[71]/td[6]
+BUTTON "Unsubscribe" @ref:326 /div/div[1]/div[1]/table/tr[71]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:327 /div[1]/div[1]/table/tr[72]/td[2]/div
+BUTTON "Not starred" @ref:328 /div/div[1]/div[1]/table/tr[72]/span
+SWITCH "Not important" @ref:329 /div/div[1]/div[1]/table/tr[72]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:330 /div/div[1]/div[1]/table/tr[72]/td[6]
+CHECKBOX "unread, Meetup, Last call: your Meetup account ..." @ref:331 /div[1]/div[1]/table/tr[73]/td[2]/div
+BUTTON "Not starred" @ref:332 /div/div[1]/div[1]/table/tr[73]/span
+SWITCH "Not important" @ref:333 /div/div[1]/div[1]/table/tr[73]/div
+LINK "Last call: your Meetup account will be deactiva..." @ref:334 /div/div[1]/div[1]/table/tr[73]/td[6]
+CHECKBOX "unread, ITviec, Thông báo về việc thay đổi Chín..." @ref:335 /div[1]/div[1]/table/tr[74]/td[2]/div
+BUTTON "Not starred" @ref:336 /div/div[1]/div[1]/table/tr[74]/span
+SWITCH "Not important" @ref:337 /div/div[1]/div[1]/table/tr[74]/div
+LINK "Thông báo về việc thay đổi Chính sách quyền riê..." @ref:338 /div/div[1]/div[1]/table/tr[74]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:339 /div[1]/div[1]/table/tr[75]/td[2]/div
+BUTTON "Not starred" @ref:340 /div/div[1]/div[1]/table/tr[75]/span
+SWITCH "Not important" @ref:341 /div/div[1]/div[1]/table/tr[75]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:342 /div/div[1]/div[1]/table/tr[75]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:343 /div[1]/div[1]/table/tr[76]/td[2]/div
+BUTTON "Not starred" @ref:344 /div/div[1]/div[1]/table/tr[76]/span
+SWITCH "Not important" @ref:345 /div/div[1]/div[1]/table/tr[76]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:346 /div/div[1]/div[1]/table/tr[76]/td[6]
+CHECKBOX "unread, Google Payments 2, Google Cloud Platfor..." @ref:347 /div[1]/div[1]/table/tr[77]/td[2]/div
+BUTTON "Not starred" @ref:348 /div/div[1]/div[1]/table/tr[77]/span
+SWITCH "Not important" @ref:349 /div/div[1]/div[1]/table/tr[77]/div
+LINK "Google Cloud Platform & APIs: We've received yo..." @ref:350 /div/div[1]/div[1]/table/tr[77]/td[6]
+CHECKBOX "unread, Timo Support 2, Debit Transaction Notic..." @ref:351 /div[1]/div[1]/table/tr[78]/td[2]/div
+BUTTON "Not starred" @ref:352 /div/div[1]/div[1]/table/tr[78]/span
+SWITCH "Not important" @ref:353 /div/div[1]/div[1]/table/tr[78]/div
+LINK "Debit Transaction Notice - Hi Luc Van Minh, You..." @ref:354 /div/div[1]/div[1]/table/tr[78]/td[6]
+CHECKBOX "unread, Timo Support 2, Credit Transaction Noti..." @ref:355 /div[1]/div[1]/table/tr[79]/td[2]/div
+BUTTON "Not starred" @ref:356 /div/div[1]/div[1]/table/tr[79]/span
+SWITCH "Not important" @ref:357 /div/div[1]/div[1]/table/tr[79]/div
+LINK "Credit Transaction Notice - Hi Luc Van Minh, Yo..." @ref:358 /div/div[1]/div[1]/table/tr[79]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:359 /div[1]/div[1]/table/tr[80]/td[2]/div
+BUTTON "Not starred" @ref:360 /div/div[1]/div[1]/table/tr[80]/span
+SWITCH "Not important" @ref:361 /div/div[1]/div[1]/table/tr[80]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:362 /div/div[1]/div[1]/table/tr[80]/td[6]
+CHECKBOX "unread, Mailchimp Account I., Weekly insights f..." @ref:363 /div[1]/div[1]/table/tr[81]/td[2]/div
+BUTTON "Not starred" @ref:364 /div/div[1]/div[1]/table/tr[81]/span
+SWITCH "Not important" @ref:365 /div/div[1]/div[1]/table/tr[81]/div
+LINK "Weekly insights from Mailchimp - We ran the num..." @ref:366 /div/div[1]/div[1]/table/tr[81]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/vistockai] Run ..." @ref:367 /div[1]/div[1]/table/tr[82]/td[2]/div
+BUTTON "Not starred" @ref:368 /div/div[1]/div[1]/table/tr[82]/span
+SWITCH "Not important" @ref:369 /div/div[1]/div[1]/table/tr[82]/div
+LINK "[edges-ai/vistockai] Run failed: Delete merged ..." @ref:370 /div/div[1]/div[1]/table/tr[82]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:371 /div[1]/div[1]/table/tr[83]/td[2]/div
+BUTTON "Not starred" @ref:372 /div/div[1]/div[1]/table/tr[83]/span
+SWITCH "Not important" @ref:373 /div/div[1]/div[1]/table/tr[83]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:374 /div/div[1]/div[1]/table/tr[83]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:375 /div[1]/div[1]/table/tr[84]/td[2]/div
+BUTTON "Not starred" @ref:376 /div/div[1]/div[1]/table/tr[84]/span
+SWITCH "Not important" @ref:377 /div/div[1]/div[1]/table/tr[84]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:378 /div/div[1]/div[1]/table/tr[84]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:379 /div[1]/div[1]/table/tr[85]/td[2]/div
+BUTTON "Not starred" @ref:380 /div/div[1]/div[1]/table/tr[85]/span
+SWITCH "Not important" @ref:381 /div/div[1]/div[1]/table/tr[85]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:382 /div/div[1]/div[1]/table/tr[85]/td[6]
+CHECKBOX "unread, Pat @ Starter Story, If you hate market..." @ref:383 /div[1]/div[1]/table/tr[86]/td[2]/div
+BUTTON "Not starred" @ref:384 /div/div[1]/div[1]/table/tr[86]/span
+SWITCH "Not important" @ref:385 /div/div[1]/div[1]/table/tr[86]/div
+LINK "If you hate marketing... watch this - Starter S..." @ref:386 /div/div[1]/div[1]/table/tr[86]/td[6]
+BUTTON "Unsubscribe" @ref:387 /div/div[1]/div[1]/table/tr[86]/td[6]
+CHECKBOX "unread, VPSRE.NET, VPSRE Thông báo Chương trình..." @ref:388 /div[1]/div[1]/table/tr[87]/td[2]/div
+BUTTON "Not starred" @ref:389 /div/div[1]/div[1]/table/tr[87]/span
+SWITCH "Not important" @ref:390 /div/div[1]/div[1]/table/tr[87]/div
+LINK "VPSRE Thông báo Chương trình Ưu đãi VPS đặc biệ..." @ref:391 /div/div[1]/div[1]/table/tr[87]/td[6]
+CHECKBOX "unread, Minh Luc Van, [visub-ai/visub-web] Run ..." @ref:392 /div[1]/div[1]/table/tr[88]/td[2]/div
+BUTTON "Not starred" @ref:393 /div/div[1]/div[1]/table/tr[88]/span
+SWITCH "Not important" @ref:394 /div/div[1]/div[1]/table/tr[88]/div
+LINK "[visub-ai/visub-web] Run failed: Security Scan ..." @ref:395 /div/div[1]/div[1]/table/tr[88]/td[6]
+CHECKBOX "unread, Timo Support 3, Debit Transaction Notic..." @ref:396 /div[1]/div[1]/table/tr[89]/td[2]/div
+BUTTON "Not starred" @ref:397 /div/div[1]/div[1]/table/tr[89]/span
+SWITCH "Not important" @ref:398 /div/div[1]/div[1]/table/tr[89]/div
+LINK "Debit Transaction Notice - Hi Luc Van Minh, You..." @ref:399 /div/div[1]/div[1]/table/tr[89]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:400 /div[1]/div[1]/table/tr[90]/td[2]/div
+BUTTON "Not starred" @ref:401 /div/div[1]/div[1]/table/tr[90]/span
+SWITCH "Not important" @ref:402 /div/div[1]/div[1]/table/tr[90]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:403 /div/div[1]/div[1]/table/tr[90]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:404 /div[1]/div[1]/table/tr[91]/td[2]/div
+BUTTON "Not starred" @ref:405 /div/div[1]/div[1]/table/tr[91]/span
+SWITCH "Not important" @ref:406 /div/div[1]/div[1]/table/tr[91]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:407 /div/div[1]/div[1]/table/tr[91]/td[6]
+CHECKBOX "unread, Google Payments, Google Cloud Platform ..." @ref:408 /div[1]/div[1]/table/tr[92]/td[2]/div
+BUTTON "Not starred" @ref:409 /div/div[1]/div[1]/table/tr[92]/span
+SWITCH "Not important" @ref:410 /div/div[1]/div[1]/table/tr[92]/div
+LINK "Google Cloud Platform & APIs: We've received yo..." @ref:411 /div/div[1]/div[1]/table/tr[92]/td[6]
+CHECKBOX "unread, Timo Support, Credit Transaction Notice..." @ref:412 /div[1]/div[1]/table/tr[93]/td[2]/div
+BUTTON "Not starred" @ref:413 /div/div[1]/div[1]/table/tr[93]/span
+SWITCH "Not important" @ref:414 /div/div[1]/div[1]/table/tr[93]/div
+LINK "Credit Transaction Notice - Hi Luc Van Minh, Yo..." @ref:415 /div/div[1]/div[1]/table/tr[93]/td[6]
+CHECKBOX "unread, OpenAI, Your OpenAI API account has bee..." @ref:416 /div[1]/div[1]/table/tr[94]/td[2]/div
+BUTTON "Not starred" @ref:417 /div/div[1]/div[1]/table/tr[94]/span
+SWITCH "Not important" @ref:418 /div/div[1]/div[1]/table/tr[94]/div
+LINK "Your OpenAI API account has been funded - Hi th..." @ref:419 /div/div[1]/div[1]/table/tr[94]/td[6]
+CHECKBOX "noreply-analytics, You have been granted access..." @ref:420 /div[1]/div[1]/table/tr[95]/td[2]/div
+BUTTON "Not starred" @ref:421 /div/div[1]/div[1]/table/tr[95]/span
+SWITCH "Not important" @ref:422 /div/div[1]/div[1]/table/tr[95]/div
+LINK "You have been granted access to a Google Analyt..." @ref:423 /div/div[1]/div[1]/table/tr[95]/td[6]
+CHECKBOX "BugSnag, Activate your BugSnag account, Jan 10,..." @ref:424 /div[1]/div[1]/table/tr[96]/td[2]/div
+BUTTON "Not starred" @ref:425 /div/div[1]/div[1]/table/tr[96]/span
+SWITCH "Not important" @ref:426 /div/div[1]/div[1]/table/tr[96]/div
+LINK "Activate your BugSnag account - Hoang Nguyen in..." @ref:427 /div/div[1]/div[1]/table/tr[96]/td[6]
+CHECKBOX "unread, Hoang Nguyen, hoangnguyenduc3009 invite..." @ref:428 /div[1]/div[1]/table/tr[97]/td[2]/div
+BUTTON "Not starred" @ref:429 /div/div[1]/div[1]/table/tr[97]/span
+SWITCH "Not important" @ref:430 /div/div[1]/div[1]/table/tr[97]/div
+LINK "hoangnguyenduc3009 invited you to hoangnguyendu..." @ref:431 /div/div[1]/div[1]/table/tr[97]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-agents] R..." @ref:432 /div[1]/div[1]/table/tr[98]/td[2]/div
+BUTTON "Not starred" @ref:433 /div/div[1]/div[1]/table/tr[98]/span
+SWITCH "Not important" @ref:434 /div/div[1]/div[1]/table/tr[98]/div
+LINK "[edges-ai/edges-agents] Run failed: Integration..." @ref:435 /div/div[1]/div[1]/table/tr[98]/td[6]
+CHECKBOX "unread, Minh Luc Van, [edges-ai/edges-infra] Ru..." @ref:436 /div[1]/div[1]/table/tr[99]/td[2]/div
+BUTTON "Not starred" @ref:437 /div/div[1]/div[1]/table/tr[99]/span
+SWITCH "Not important" @ref:438 /div/div[1]/div[1]/table/tr[99]/div
+LINK "[edges-ai/edges-infra] Run cancelled: Clean Doc..." @ref:439 /div/div[1]/div[1]/table/tr[99]/td[6]
+CHECKBOX "unread, Minh Luc Van, [autobotasia/autolabel2] ..." @ref:440 /div[1]/div[1]/table/tr[100]/td[2]/div
+BUTTON "Not starred" @ref:441 /div/div[1]/div[1]/table/tr[100]/span
+SWITCH "Not important" @ref:442 /div/div[1]/div[1]/table/tr[100]/div
+LINK "[autobotasia/autolabel2] Run failed: CI-nightly..." @ref:443 /div/div[1]/div[1]/table/tr[100]/td[6]
+LINK "48% of 15 GB used" @ref:444 /div/div[2]/div[1]/a
+LINK "Terms" @ref:445 /div/div[2]/div/a[1]
+LINK "Privacy" @ref:446 /div/div[2]/div/a[2]
+LINK "Program Policies" @ref:447 /div/div[2]/div/a[3]
+LINK "Details" @ref:448 /div/div[2]/div[3]/span

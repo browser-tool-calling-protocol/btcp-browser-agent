@@ -1,0 +1,18 @@
+PAGE: http://localhost/ | Shopee Việt Nam | Mua Sắm Online | viewport=1024x768
+STRUCTURE: elements=15 maxLines=100
+
+REGION "bỏ qua nội dung chính" [1 button] /div#main[1]/section
+BANNER "Kênh Người BánTrở thành Người bán ShopeeTải ứng..." [4 buttons, 21 links, 1 input] /div#main[1]/header
+CONTENTINFO "SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE Shopee - ..." [539 links] /div#main[1]/footer
+REGION [1 link] /div#modal[2]/section#HomePagePopupBannerSection
+  NAVIGATION "Kênh Người BánTrở thành Người bán ShopeeTải ứng..." [2 buttons, 9 links] /div#main[1]/header/div.navbar-wrapper[1]/nav.container
+  SEARCH [1 button, 1 input] /div#main[1]/header/div.container/form
+MAIN "Danh MụcThời Trang NamThời Trang NữĐiện Thoại &..." [7 buttons, 83 links] /div#main[1]/div.container[2]
+  REGION "SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE Shopee - ..." [152 links] /div#main[1]/footer/section
+REGION "Banner" [11 links] /div#main[1]/section#HomePageCarouselBannerSection
+    HEADING LEVEL=1 "SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE" /div#main[1]/footer/section/h1
+    HEADING LEVEL=2 "MUA SẮM VÀ BÁN HÀNG ONLINE ĐƠN GIẢN, NHANH CHÓN..." /div#main[1]/footer/section/h2[1]
+    HEADING LEVEL=2 "TẢI ỨNG DỤNG SHOPEE NGAY ĐỂ MUA BÁN ONLINE MỌI ..." /div#main[1]/footer/section/h2[2]
+    HEADING LEVEL=2 "MUA HÀNG HIỆU CAO CẤP GIÁ TỐT TẠI SHOPEE" /div#main[1]/footer/section/h2[3]
+    HEADING LEVEL=2 "MUA HÀNG CHÍNH HÃNG TỪ CÁC THƯƠNG HIỆU LỚN VỚI ..." /div#main[1]/footer/section/h2[4]
+    HEADING LEVEL=2 "TOP THƯƠNG HIỆU NỔI BẬT" /div#main[1]/footer/section/h2[5]

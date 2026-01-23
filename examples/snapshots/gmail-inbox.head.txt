@@ -1,0 +1,6 @@
+URL: http://localhost/
+TITLE: Inbox (7,625) - luk.mink@gmail.com - Gmail
+VIEWPORT: 1024x768
+STATUS: interactive
+ELEMENTS: total=5312 interactive=210
+READY_STATE: loading

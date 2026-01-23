@@ -1,0 +1,218 @@
+PAGE: http://localhost/ | Inbox (7,625) - luk.mink@gmail.com - Gmail
+CONTENT: sections=89 words=41021
+
+SECTION /div[2] [978 words]
+  HEADING level=1 "GmailSearchtabHelpTrainingSend feedback to GoogleTry Gemini"
+
+SECTION /div[2]/h1/header#gb [5 words]
+  HEADING level=P ""
+  HEADING level=2 "Search"
+
+SECTION /div [5 words]
+  HEADING level=2 "Labels"
+  HEADING level=P "Labels"
+  HEADING level=2 "Labels"
+
+SECTION /div [9103 words]
+  HEADING level=2 "Conversations"
+  HEADING level=D "Primary"
+  HEADING level=D "100 newPromotionsTechcombank — [QC] Thưởng chưa tiêu, tiền đã sinh lời"
+  HEADING level=D "1 newSocialLinkedIn — Updates to our terms"
+  TEXT "Personal messages and messages that don’t appear in other tabs will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+  TEXT "Marketing, interests, social and political causes, and other promotional emails will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+  TEXT "Emails from social networks, media-sharing sites, dating services and other social sites will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+
+SECTION /div/div[1] [9082 words]
+  HEADING level=2 "Conversations"
+  HEADING level=D "Primary"
+  HEADING level=D "100 newPromotionsTechcombank — [QC] Thưởng chưa tiêu, tiền đã sinh lời"
+  HEADING level=D "1 newSocialLinkedIn — Updates to our terms"
+  TEXT "Personal messages and messages that don’t appear in other tabs will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+  TEXT "Marketing, interests, social and political causes, and other promotional emails will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+  TEXT "Emails from social networks, media-sharing sites, dating services and other social sites will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+
+SECTION /div/div[1] [9082 words]
+  HEADING level=2 "Conversations"
+  HEADING level=D "Primary"
+  HEADING level=D "100 newPromotionsTechcombank — [QC] Thưởng chưa tiêu, tiền đã sinh lời"
+  HEADING level=D "1 newSocialLinkedIn — Updates to our terms"
+  TEXT "Personal messages and messages that don’t appear in other tabs will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+  TEXT "Marketing, interests, social and political causes, and other promotional emails will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+  TEXT "Emails from social networks, media-sharing sites, dating services and other social sites will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+
+SECTION /div/div[1]/div[1] [9009 words]
+  TEXT "Personal messages and messages that don’t appear in other tabs will be shown here."
+  TEXT "To add or remove tabs click inbox settings."
+
+SECTION /div/div[1]/div[1]/table/tr[1]/div[1] [45 words]
+
+SECTION /div/div[1]/div[1]/table/tr[2]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[3]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[4]/div[1] [41 words]
+
+SECTION /div/div[1]/div[1]/table/tr[5]/div[1] [52 words]
+
+SECTION /div/div[1]/div[1]/table/tr[6]/div[1] [35 words]
+
+SECTION /div/div[1]/div[1]/table/tr[10]/div[1] [35 words]
+
+SECTION /div/div[1]/div[1]/table/tr[11]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[13]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[15]/div[1] [37 words]
+
+SECTION /div/div[1]/div[1]/table/tr[19]/div[1] [98 words]
+
+SECTION /div/div[1]/div[1]/table/tr[20]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[21]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[22]/div[1] [44 words]
+
+SECTION /div/div[1]/div[1]/table/tr[24]/div[1] [37 words]
+
+SECTION /div/div[1]/div[1]/table/tr[25]/div[1] [42 words]
+
+SECTION /div/div[1]/div[1]/table/tr[26]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[31]/div[1] [97 words]
+
+SECTION /div/div[1]/div[1]/table/tr[34]/div[1] [44 words]
+
+SECTION /div/div[1]/div[1]/table/tr[35]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[36]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[37]/div[1] [37 words]
+
+SECTION /div/div[1]/div[1]/table/tr[38]/div[1] [101 words]
+
+SECTION /div/div[1]/div[1]/table/tr[39]/div[1] [42 words]
+
+SECTION /div/div[1]/div[1]/table/tr[40]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[41]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[42]/div[1] [40 words]
+
+SECTION /div/div[1]/div[1]/table/tr[43]/div[1] [41 words]
+
+SECTION /div/div[1]/div[1]/table/tr[44]/div[1] [40 words]
+
+SECTION /div/div[1]/div[1]/table/tr[45]/div[1] [44 words]
+
+SECTION /div/div[1]/div[1]/table/tr[46]/div[1] [61 words]
+
+SECTION /div/div[1]/div[1]/table/tr[47]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[48]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[49]/div[1] [42 words]
+
+SECTION /div/div[1]/div[1]/table/tr[50]/div[1] [39 words]
+
+SECTION /div/div[1]/div[1]/table/tr[51]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[52]/div[1] [57 words]
+
+SECTION /div/div[1]/div[1]/table/tr[53]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[54]/div[1] [40 words]
+
+SECTION /div/div[1]/div[1]/table/tr[55]/div[1] [47 words]
+
+SECTION /div/div[1]/div[1]/table/tr[56]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[57]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[58]/div[1] [51 words]
+
+SECTION /div/div[1]/div[1]/table/tr[59]/div[1] [40 words]
+
+SECTION /div/div[1]/div[1]/table/tr[64]/div[1] [37 words]
+
+SECTION /div/div[1]/div[1]/table/tr[65]/div[1] [42 words]
+
+SECTION /div/div[1]/div[1]/table/tr[66]/div[1] [48 words]
+
+SECTION /div/div[1]/div[1]/table/tr[67]/div[1] [41 words]
+
+SECTION /div/div[1]/div[1]/table/tr[68]/div[1] [40 words]
+
+SECTION /div/div[1]/div[1]/table/tr[69]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[70]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[71]/div[1] [52 words]
+
+SECTION /div/div[1]/div[1]/table/tr[72]/div[1] [37 words]
+
+SECTION /div/div[1]/div[1]/table/tr[73]/div[1] [51 words]
+
+SECTION /div/div[1]/div[1]/table/tr[74]/div[1] [62 words]
+
+SECTION /div/div[1]/div[1]/table/tr[75]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[76]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[77]/div[1] [53 words]
+
+SECTION /div/div[1]/div[1]/table/tr[78]/div[1] [40 words]
+
+SECTION /div/div[1]/div[1]/table/tr[79]/div[1] [42 words]
+
+SECTION /div/div[1]/div[1]/table/tr[80]/div[1] [40 words]
+
+SECTION /div/div[1]/div[1]/table/tr[81]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[82]/div[1] [44 words]
+
+SECTION /div/div[1]/div[1]/table/tr[83]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[84]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[85]/div[1] [37 words]
+
+SECTION /div/div[1]/div[1]/table/tr[86]/div[1] [102 words]
+
+SECTION /div/div[1]/div[1]/table/tr[87]/div[1] [59 words]
+
+SECTION /div/div[1]/div[1]/table/tr[88]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[89]/div[1] [40 words]
+
+SECTION /div/div[1]/div[1]/table/tr[90]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[91]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[92]/div[1] [52 words]
+
+SECTION /div/div[1]/div[1]/table/tr[93]/div[1] [39 words]
+
+SECTION /div/div[1]/div[1]/table/tr[94]/div[1] [48 words]
+
+SECTION /div/div[1]/div[1]/table/tr[95]/div[1] [45 words]
+
+SECTION /div/div[1]/div[1]/table/tr[96]/div[1] [37 words]
+
+SECTION /div/div[1]/div[1]/table/tr[97]/div[1] [34 words]
+
+SECTION /div/div[1]/div[1]/table/tr[98]/div[1] [37 words]
+
+SECTION /div/div[1]/div[1]/table/tr[99]/div[1] [43 words]
+
+SECTION /div/div[1]/div[1]/table/tr[100]/div[1] [43 words]
+
+SECTION /div/div[2] [22 words]

@@ -1,0 +1,14 @@
+PAGE: http://localhost/ | ChatGPT | viewport=1024x768
+STRUCTURE: elements=11 maxLines=100
+
+BANNER "ChatGPT 5.2" [3 buttons] /header#page-header
+MAIN "Ready when you are. Ready when you are. window...." [4 buttons, 4 inputs] /main#main
+HEADING LEVEL=2 "Chat history" /div#stage-slideover-sidebar[1]/h2
+NAVIGATION "Chat history" [33 buttons, 33 links] /div#stage-slideover-sidebar[1]/nav
+  COMPLEMENTARY "New chat ⇧⌘O Search chats ⌘K Images" [2 links] /div#stage-slideover-sidebar[1]/nav/aside
+  HEADING LEVEL=2 "GPTs" /div#stage-slideover-sidebar[1]/nav/button.items-center/h2
+  HEADING LEVEL=2 "Projects" /div#stage-slideover-sidebar[1]/nav/button.items-center/h2
+  HEADING LEVEL=2 "Your chats" /div#stage-slideover-sidebar[1]/nav/button.items-center/h2
+  FORM "window.__oai_logHTML ? window.__oai_logHTML() :..." [3 buttons, 2 inputs] /main#main/div#thread/div#thread-bottom-container[2]/div#thread-bottom[1]/form
+  HEADING LEVEL=1 "Ready when you are." /main#main/div#thread/div.items-center/h1.items-baseline
+  HEADING LEVEL=1 "Ready when you are." /main#main/div#thread/div.items-center[2]/div.items-center/h1.items-baseline

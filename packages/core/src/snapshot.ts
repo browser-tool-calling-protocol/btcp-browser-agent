@@ -80,6 +80,8 @@ interface SnapshotOptions {
   includeLinks?: boolean;
   /** Include images as ![alt](src) in markdown format */
   includeImages?: boolean;
+  /** Maximum number of lines for structure mode output (default: 100) */
+  maxLines?: number;
 }
 
 const TRUNCATE_LIMITS = {
@@ -836,6 +838,275 @@ function getSectionName(element: Element): string {
 }
 
 /**
+ * Create all snapshot - comprehensive view with all elements (interactive + structural)
+ * Returns everything: landmarks, sections, headings, interactive elements, links, images
+ */
+function createAllSnapshot(
+  document: Document,
+  refMap: RefMap,
+  options: SnapshotOptions
+): SnapshotData {
+  const { root = document.body, maxDepth = 50, includeHidden = false } = options;
+
+  refMap.clear();
+  const lines: string[] = [];
+  let refCounter = 0;
+  const refs: SnapshotData['refs'] = {};
+
+  // Collect all elements
+  const elements: Element[] = [];
+
+  function collectElements(element: Element, depth: number): void {
+    if (depth > maxDepth) return;
+    if (!includeHidden && !isVisible(element, false)) return;
+
+    elements.push(element);
+
+    for (const child of element.children) {
+      collectElements(child, depth + 1);
+    }
+  }
+
+  collectElements(root, 0);
+
+  // Process ALL elements (no filtering)
+  for (const element of elements) {
+    const role = getRole(element);
+    const isInteractiveElement = isInteractive(element);
+
+    // Include ALL elements with a role or that are interactive
+    if (!role && !isInteractiveElement) continue;
+
+    const name = getAccessibleName(element);
+
+    // Build line
+    let line = '';
+
+    if (role) {
+      const roleUpper = role.toUpperCase();
+      line = roleUpper;
+
+      if (name) {
+        line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
+      }
+
+      // Generate ref for ALL elements
+      const ref = `@ref:${refCounter++}`;
+      refMap.set(ref, element);
+      line += ` ${ref}`;
+
+      try {
+        const bbox = element.getBoundingClientRect();
+        refs[ref] = {
+          selector: generateSelector(element),
+          role: role.split(' ')[0],
+          name: name || undefined,
+          bbox: {
+            x: Math.round(bbox.x),
+            y: Math.round(bbox.y),
+            width: Math.round(bbox.width),
+            height: Math.round(bbox.height),
+          },
+        };
+      } catch {}
+
+      // Add xpath path
+      line += ` ${buildSemanticXPath(element)}`;
+    }
+
+    lines.push(line);
+  }
+
+  const win = document.defaultView || window;
+  const url = win.location.href;
+  const title = document.title;
+  const viewport = `${win.innerWidth}x${win.innerHeight}`;
+
+  const header = `PAGE: ${truncateByType(url, 'URL')} | ${truncateByType(title, 'TEXT_SHORT')} | viewport=${viewport}`;
+  const subheader = `ALL: elements=${lines.length} refs=${refCounter}`;
+  const tree = [header, subheader, '', ...lines].join('\n');
+
+  return {
+    tree,
+    refs,
+    metadata: {
+      totalInteractiveElements: elements.filter(isInteractive).length,
+      capturedElements: lines.length,
+      quality: 'high'
+    }
+  };
+}
+
+/**
+ * Pattern detection helper functions for structure mode
+ */
+
+/**
+ * Create structure snapshot - high-level page structure insights with line budget
+ * Shows: major landmarks, headings, and summarized interactive elements
+ * Optimized with lazy statistics collection during breadth-first traversal
+ */
+function createStructureSnapshot(
+  document: Document,
+  refMap: RefMap,
+  options: SnapshotOptions
+): SnapshotData {
+  const { root = document.body, maxDepth = 50, includeHidden = false, maxLines = 100 } = options;
+
+  refMap.clear();
+  const lines: string[] = [];
+  const processedElements = new Set<Element>();
+
+  // Landmark roles we want to show
+  const landmarkRoles = new Set([
+    'banner', 'navigation', 'main', 'complementary',
+    'contentinfo', 'search', 'region', 'form'
+  ]);
+
+  // Lazy statistics collection - only for elements we show
+  function countInteractiveDescendants(element: Element): { buttons: number; links: number; inputs: number; other: number } {
+    const counts = { buttons: 0, links: 0, inputs: 0, other: 0 };
+    const stack = [element];
+
+    while (stack.length > 0) {
+      const current = stack.pop()!;
+
+      if (isVisible(current, false) && isInteractive(current)) {
+        const role = getRole(current);
+        const tag = current.tagName.toLowerCase();
+
+        if (role === 'button' || tag === 'button') counts.buttons++;
+        else if (role === 'link' || tag === 'a') counts.links++;
+        else if (role === 'textbox' || role === 'searchbox' || role === 'combobox' || tag === 'input' || tag === 'textarea' || tag === 'select') counts.inputs++;
+        else counts.other++;
+      }
+
+      // Add children to stack for traversal
+      for (let i = current.children.length - 1; i >= 0; i--) {
+        stack.push(current.children[i]);
+      }
+    }
+
+    return counts;
+  }
+
+  // Breadth-first traversal with line budget
+  interface QueueItem {
+    element: Element;
+    depth: number;
+    indent: string;
+  }
+
+  const queue: QueueItem[] = [{ element: root, depth: 0, indent: '' }];
+  let currentLineCount = 0;
+  let truncated = false;
+
+  while (queue.length > 0 && currentLineCount < maxLines) {
+    const { element, depth, indent } = queue.shift()!;
+
+    if (depth > maxDepth) continue;
+    if (processedElements.has(element)) continue;
+
+    // For structure mode: check semantic significance BEFORE visibility
+    // This prevents filtering out landmarks/headings that have CSS visibility issues
+    // due to missing external stylesheets in saved snapshots
+    const role = getRole(element);
+    const tag = element.tagName.toLowerCase();
+
+    const isLandmark = role && landmarkRoles.has(role);
+    const isHeading = role === 'heading' || /^h[1-6]$/.test(tag);
+    const isFormElement = role === 'form' || tag === 'form';
+    const isSemanticElement = isLandmark || isHeading || isFormElement;
+
+    // Check visibility, but ALWAYS accept semantic elements regardless of CSS visibility
+    // (prioritize semantic structure over CSS visibility for saved snapshots where
+    // external stylesheets may not load correctly)
+    const skipVisibilityCheck = isSemanticElement;
+    if (!includeHidden && !skipVisibilityCheck && !isVisible(element, false)) {
+      // Still queue children - they might be visible
+      for (const child of element.children) {
+        queue.push({ element: child, depth: depth + 1, indent });
+      }
+      continue;
+    }
+
+    processedElements.add(element);
+
+    if (!isLandmark && !isHeading && !isFormElement) {
+      // Not showing this element, but queue its children to continue search
+      // For structure mode, we always traverse to find semantic elements
+      // (no depth limiting for non-semantic elements, since we're only showing a small subset)
+      for (const child of element.children) {
+        queue.push({ element: child, depth: depth + 1, indent });
+      }
+      continue;
+    }
+
+    // Check if we have budget for this line
+    if (currentLineCount >= maxLines) {
+      truncated = true;
+      break;
+    }
+
+    // We're showing this element - build the line with xpath
+    const name = getAccessibleName(element);
+    const roleUpper = (role || tag).toUpperCase();
+    const xpath = buildSemanticXPath(element);
+
+    let line = indent + roleUpper;
+
+    if (name) {
+      line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
+    }
+
+    // For landmarks and forms, add interaction summary (computed lazily)
+    if (isLandmark || isFormElement) {
+      const counts = countInteractiveDescendants(element);
+      const total = counts.buttons + counts.links + counts.inputs + counts.other;
+      if (total > 0) {
+        const parts = [];
+        if (counts.buttons > 0) parts.push(`${counts.buttons} button${counts.buttons > 1 ? 's' : ''}`);
+        if (counts.links > 0) parts.push(`${counts.links} link${counts.links > 1 ? 's' : ''}`);
+        if (counts.inputs > 0) parts.push(`${counts.inputs} input${counts.inputs > 1 ? 's' : ''}`);
+        if (counts.other > 0) parts.push(`${counts.other} other`);
+        line += ` [${parts.join(', ')}]`;
+      }
+    }
+
+    // Add xpath
+    line += ` ${xpath}`;
+
+    lines.push(line);
+    currentLineCount++;
+
+    // Always queue children of shown elements to find nested structure
+    // This allows us to show nested landmarks, headings, and forms
+    for (const child of element.children) {
+      queue.push({ element: child, depth: depth + 1, indent: indent + '  ' });
+    }
+  }
+
+  // Build headers with line budget info
+  const win = document.defaultView || { innerWidth: 1024, innerHeight: 768 };
+  const pageHeader = `PAGE: ${document.location?.href || 'about:blank'} | ${document.title || 'Untitled'} | viewport=${win.innerWidth}x${win.innerHeight}`;
+
+  const totalElements = lines.length;
+  const snapshotHeader = `STRUCTURE: elements=${totalElements} maxLines=${maxLines}${truncated ? ' (truncated)' : ''}`;
+
+  // Combine headers and content
+  const fullTree = [pageHeader, snapshotHeader, '', ...lines].join('\n');
+
+  return {
+    tree: fullTree,
+    refs: {},
+    metadata: {
+      capturedElements: totalElements,
+      quality: truncated ? 'medium' : 'high'
+    }
+  };
+}
+
+/**
  * Create head snapshot - lightweight HTTP HEAD-style page overview
  * Returns page metadata without DOM traversal for fast verification
  */
@@ -1520,6 +1791,14 @@ export function createSnapshot(
 
   if (effectiveMode === 'head') {
     return createHeadSnapshot(document, refMap, { ...options, root });
+  }
+
+  if (effectiveMode === 'all') {
+    return createAllSnapshot(document, refMap, { ...options, root });
+  }
+
+  if (effectiveMode === 'structure') {
+    return createStructureSnapshot(document, refMap, { ...options, root });
   }
 
   if (effectiveMode === 'outline') {

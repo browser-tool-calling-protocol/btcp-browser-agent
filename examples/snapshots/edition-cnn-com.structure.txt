@@ -1,0 +1,59 @@
+PAGE: http://localhost/ | Breaking News, Latest News and Videos | CNN | viewport=1024x768
+STRUCTURE: elements=56 maxLines=100
+
+BANNER "CNN values your feedback 1. How relevant is thi..." [13 buttons, 169 links, 19 inputs] /header.header__wrapper-outer
+REGION /section[1]
+REGION /section[2]
+REGION "CIA director in Venezuela Viktor Orbán Lull in ..." [155 links] /section[3]
+REGION "Preference center" [7 buttons, 2 links, 5 inputs] /div#onetrust-consent-sdk[3]/div#onetrust-pc-sdk[2]
+  NAVIGATION "Close icon US World Politics Business Health En..." [11 buttons, 169 links, 1 input] /header.header__wrapper-outer/div.header__wrapper-inner/nav#pageHeader
+  REGION "CIA director in Venezuela Viktor Orbán Lull in ..." [155 links] /section[3]/section
+CONTENTINFO "Subscribe Sign in My Account Settings Newslette..." [9 buttons, 157 links, 1 input] /footer#pageFooter
+    MAIN "CIA director in Venezuela Viktor Orbán Lull in ..." [155 links] /section[3]/section
+  REGION "Back ButtonCookie List Search IconFilter IconCl..." [5 buttons, 5 inputs] /div#onetrust-consent-sdk[3]/div#onetrust-pc-sdk[2]/section#ot-pc-lst
+  FORM "CNN values your feedback 1. How relevant is thi..." [2 buttons, 18 inputs] /header.header__wrapper-outer/div.header__wrapper-inner/div#ad-feedback__modal-overlay[1]/form
+      REGION "CIA director in Venezuela Viktor Orbán Lull in ..." [155 links] /section[3]/section/section.tabcontent
+  NAVIGATION "Terms of Use Privacy Policy Manage Cookies Ad C..." [8 links] /footer#pageFooter/div.footer__inner/nav.footer__links
+BANNER "Download the CNN app" /dialog#GooglePlayDialog[1]/header
+CONTENTINFO /dialog#GooglePlayDialog[1]/footer
+BANNER "Download the CNN app" /dialog#AppStoreDialog[2]/header
+CONTENTINFO /dialog#AppStoreDialog[2]/footer
+  HEADING LEVEL=2 /div#onetrust-consent-sdk[3]/div#onetrust-pc-sdk[2]/div#ot-pc-content[2]/h2#ot-pc-title
+  REGION "Privacy PolicyFor privacy options, please see o..." [1 link] /div#onetrust-consent-sdk[3]/div#onetrust-pc-sdk[2]/div#ot-pc-content[2]/section
+    REGION "Consent Leg.Interest checkbox label label check..." [3 inputs] /div#onetrust-consent-sdk[3]/div#onetrust-pc-sdk[2]/section#ot-pc-lst/section#ot-lst-cnt
+  SEARCH [1 button, 1 input] /footer#pageFooter/div.footer__inner/div.search-bar[1]/form.search-bar__form
+  NAVIGATION "User Account Nav" [3 buttons, 5 links] /footer#pageFooter/div.footer__inner/div#mobile-footer-account-nav[2]/nav
+  NAVIGATION "World Africa Americas Asia Australia China Euro..." [123 links] /footer#pageFooter/div.footer__inner/div.footer__subnav[3]/nav
+  HEADING LEVEL=2 "Download the CNN app" /dialog#GooglePlayDialog[1]/header/h2
+  HEADING LEVEL=2 "Download the CNN app" /dialog#AppStoreDialog[2]/header/h2
+    HEADING LEVEL=3 "CNN values your feedback" /header.header__wrapper-outer/div.header__wrapper-inner/div#ad-feedback__modal-overlay[1]/form/h3
+    HEADING LEVEL=4 "Privacy Policy" /div#onetrust-consent-sdk[3]/div#onetrust-pc-sdk[2]/div#ot-pc-content[2]/section/h4#ot-header-id-BG2362
+    HEADING LEVEL=3 "Cookie List" /div#onetrust-consent-sdk[3]/div#onetrust-pc-sdk[2]/section#ot-pc-lst/div#ot-pc-hdr/div#ot-lst-title[1]/h3
+    REGION "Clear checkbox label labelApply Cancel" [3 buttons, 1 input] /div#onetrust-consent-sdk[3]/div#onetrust-pc-sdk[2]/section#ot-pc-lst/div#ot-pc-hdr/section#ot-fltr-modal
+    NAVIGATION "US World Politics Business Health Entertainment..." [20 links] /nav#pageHeader/div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__left[1]/nav.header__nav
+    NAVIGATION "Edition US International Arabic Español Edition..." [8 links] /nav#pageHeader/div.header__inner/div.header__subnav-mount/div#headerSubNav[2]/div.header__container/nav.header__editionizer[1]
+    NAVIGATION "World Africa Americas Asia Australia China Euro..." [119 links] /nav#pageHeader/div.header__inner/div.header__subnav-mount/div#headerSubNav[2]/div.header__container/nav[2]
+  NAVIGATION "User Account Nav" [3 buttons, 5 links] /footer#pageFooter/div.footer__inner/div.footer__row[4]/div.footer__right[2]/div#desktop-footer-account-nav[1]/nav
+    NAVIGATION "User Account Nav" [3 buttons, 5 links] /div.header__inner/div.header__subnav-mount/div.header__container[1]/div.header__right[2]/div#desktop-header-account-nav/nav
+    SEARCH [1 button, 1 input] /div.header__inner/div.header__subnav-mount/div#headerSubNav[2]/div.header__container/div.search-bar[1]/form.search-bar__form
+    NAVIGATION "User Account Nav" [3 buttons, 5 links] /div.header__inner/div.header__subnav-mount/div#headerSubNav[2]/div.header__container/div#mobile-header-account-nav[2]/nav
+        HEADING LEVEL=2 "CNN Shorts" /section[3]/section/section.tabcontent/h2
+        HEADING LEVEL=2 "More from CNN" /section[3]/section/section.tabcontent/h2
+        HEADING LEVEL=2 "More politics" /section[3]/section/section.tabcontent/div.container[2]/h2
+        HEADING LEVEL=2 "More top stories" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Entertainment" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "More on Minneapolis" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Health & wellness" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Style" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "More US POLITICS" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Business & Tech" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Crime & courts" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Sports" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Health & Wellness" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "US economy" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Science & Discovery" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Travel" /section[3]/section/section.tabcontent/div.container/h2
+        HEADING LEVEL=2 "Trump floats tariffs on countries opposed to US..." /section[3]/section/section.tabcontent/div.container[1]/a/h2
+        HEADING LEVEL=2 "Call to Earth" /section[3]/section/section.tabcontent/div.container/a/h2
+        HEADING "Subtitles" /div.card--media-large/div/div/div#overlay-root/div#menuContainer_2ed4c/span#text-tracks-heading
+        HEADING "Audio" /div.card--media-large/div/div/div#overlay-root/div#menuContainer_2ed4c/span#audio-tracks-heading

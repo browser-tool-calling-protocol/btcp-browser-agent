@@ -1,0 +1,6 @@
+URL: http://localhost/
+TITLE: Test All Mode - Images, Headings, and Text
+VIEWPORT: 1024x768
+STATUS: interactive
+ELEMENTS: total=24 interactive=2
+READY_STATE: loading

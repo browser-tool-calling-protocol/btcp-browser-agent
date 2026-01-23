@@ -1,0 +1,23 @@
+PAGE: http://localhost/ | Inbox (7,625) - luk.mink@gmail.com - Gmail | viewport=1024x768
+STRUCTURE: elements=20 maxLines=100
+
+NAVIGATION "ComposeLabelsInbox7,625StarredSnoozedImportantS..." [6 buttons, 16 links] /div
+FORM "If you're on a slow connection, try ." [1 button] /div#loading[1]/div#loadingError[4]/ol/li[1]/form#undefined
+HEADING LEVEL=1 "GmailSearchtabHelpTrainingSend feedback to Goog..." /div[2]/h1
+  BANNER "GmailSearchtabHelpTrainingSend feedback to Goog..." [10 buttons, 2 links, 1 input, 3 other] /div[2]/h1/header#gb
+COMPLEMENTARY "Side panel" [1 button, 5 other] /div
+    HEADING /div[2]/h1/header#gb
+    SEARCH "Searchtab" [4 buttons, 1 input] /div[2]/h1/header#gb/form#aso_search_form_anchor
+CONTENTINFO "48% of 15 GB usedTerms · Privacy · Program Poli..." [5 links] /div/div[2]
+      HEADING LEVEL=2 "Search" /div[2]/h1/header#gb/form#aso_search_form_anchor/h2
+  HEADING "Labels" /div
+MAIN "ConversationsPrimary100 newPromotionsTechcomban..." [117 buttons, 100 links, 203 other] /div/div[1]
+  HEADING LEVEL=2 "Labels" /div/h2
+  HEADING LEVEL=2 "Labels" /div/h2
+  HEADING LEVEL=2 "Conversations" /div/div[1]/h2
+  HEADING "Primary" /div/div[1]/table
+  HEADING "100 newPromotionsTechcombank — [QC] Thưởng chưa..." /div/div[1]/table
+  HEADING "1 newSocialLinkedIn — Updates to our terms" /div/div[1]/table
+  BUTTON "Primary" /div/div[1]/div[1]/h3
+  BUTTON "Promotions" /div/div[1]/div[2]/h3
+  BUTTON "Social" /div/div[1]/div[3]/h3
