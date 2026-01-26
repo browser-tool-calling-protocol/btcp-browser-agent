@@ -528,6 +528,448 @@ if (cachedRegions && !pageStructureChanged()) {
 
 ---
 
+## Handling Messy DOM (No Semantic Markup)
+
+Real-world HTML often lacks semantic structure:
+
+```html
+<!-- Reality: CSS-in-JS, minified classes, div soup -->
+<div class="css-1a2b3c">
+  <div class="sc-aBcDeF">
+    <div class="_3xKf2">
+      <button class="btn-239x">Add to Cart</button>
+    </div>
+  </div>
+</div>
+```
+
+### Fallback Strategies for Region Detection
+
+When semantic landmarks are missing, use **multiple signals**:
+
+#### 1. Visual/Positional Heuristics
+
+```typescript
+function detectRegionsWithoutSemantics(document: Document): Region[] {
+  const viewport = { width: window.innerWidth, height: window.innerHeight };
+  const regions: Region[] = [];
+
+  // Strategy 1: Position-based detection
+  const allElements = document.querySelectorAll('*');
+
+  for (const el of allElements) {
+    const rect = el.getBoundingClientRect();
+
+    // Header heuristic: top 15% of viewport, spans full width
+    if (rect.top < viewport.height * 0.15 &&
+        rect.width > viewport.width * 0.8 &&
+        rect.height < viewport.height * 0.2) {
+      markAsRegion(el, 'header', 'Page Header');
+    }
+
+    // Footer heuristic: bottom of page, spans full width
+    if (rect.bottom > document.body.scrollHeight - 200 &&
+        rect.width > viewport.width * 0.8) {
+      markAsRegion(el, 'footer', 'Page Footer');
+    }
+
+    // Sidebar heuristic: narrow, tall, on left/right edge
+    if (rect.width < viewport.width * 0.25 &&
+        rect.height > viewport.height * 0.5 &&
+        (rect.left < 50 || rect.right > viewport.width - 50)) {
+      markAsRegion(el, 'aside', 'Sidebar');
+    }
+  }
+
+  // Strategy 2: Main content = largest scrollable area
+  const mainContent = findLargestContentArea(document);
+  if (mainContent) {
+    markAsRegion(mainContent, 'main', 'Main Content');
+  }
+
+  return regions;
+}
+```
+
+#### 2. Content-Based Classification
+
+Use visible text and element patterns to infer purpose:
+
+```typescript
+function classifyRegionByContent(element: Element): RegionInfo {
+  const text = element.textContent?.toLowerCase() || '';
+  const html = element.innerHTML.toLowerCase();
+
+  // Navigation detection
+  const links = element.querySelectorAll('a');
+  const linkDensity = links.length / (element.children.length || 1);
+  if (linkDensity > 0.6 && links.length > 3) {
+    return { type: 'nav', name: 'Navigation' };
+  }
+
+  // Form detection
+  const inputs = element.querySelectorAll('input, textarea, select');
+  if (inputs.length >= 2) {
+    const formPurpose = detectFormPurpose(element);
+    return { type: 'form', name: formPurpose };
+  }
+
+  // Table/data detection
+  if (element.querySelector('table, [role="grid"]') ||
+      element.querySelectorAll('[class*="row"], [class*="cell"]').length > 10) {
+    return { type: 'data', name: 'Data Table' };
+  }
+
+  // Search detection
+  if (html.includes('search') ||
+      element.querySelector('input[type="search"], [placeholder*="search" i]')) {
+    return { type: 'search', name: 'Search' };
+  }
+
+  // Login/auth detection
+  if (element.querySelector('input[type="password"]')) {
+    return { type: 'form', name: 'Login Form' };
+  }
+
+  // Product/card grid detection
+  const similarChildren = findRepeatingPatterns(element);
+  if (similarChildren.length > 3) {
+    return { type: 'grid', name: `${similarChildren.length} Items` };
+  }
+
+  return { type: 'section', name: 'Content Section' };
+}
+```
+
+#### 3. Interactive Element Clustering
+
+Group interactive elements by proximity:
+
+```typescript
+function clusterInteractiveElements(elements: Element[]): Cluster[] {
+  const clusters: Cluster[] = [];
+  const used = new Set<Element>();
+
+  for (const el of elements) {
+    if (used.has(el)) continue;
+
+    const rect = el.getBoundingClientRect();
+    const cluster: Element[] = [el];
+    used.add(el);
+
+    // Find nearby interactive elements (within 100px)
+    for (const other of elements) {
+      if (used.has(other)) continue;
+      const otherRect = other.getBoundingClientRect();
+
+      const distance = Math.sqrt(
+        Math.pow(rect.x - otherRect.x, 2) +
+        Math.pow(rect.y - otherRect.y, 2)
+      );
+
+      if (distance < 100) {
+        cluster.push(other);
+        used.add(other);
+      }
+    }
+
+    if (cluster.length >= 2) {
+      clusters.push({
+        elements: cluster,
+        bounds: getBoundingRect(cluster),
+        name: inferClusterName(cluster)
+      });
+    }
+  }
+
+  return clusters;
+}
+
+function inferClusterName(elements: Element[]): string {
+  // Use most common action words in cluster
+  const texts = elements.map(e => e.textContent?.toLowerCase() || '');
+  const combined = texts.join(' ');
+
+  if (combined.includes('submit') || combined.includes('save')) return 'Form Actions';
+  if (combined.includes('next') || combined.includes('prev')) return 'Pagination';
+  if (combined.includes('edit') || combined.includes('delete')) return 'Item Actions';
+  if (combined.includes('filter') || combined.includes('sort')) return 'Filter Controls';
+
+  return 'Action Group';
+}
+```
+
+#### 4. Ancestor-Based Grouping
+
+Walk up from interactive elements to find natural containers:
+
+```typescript
+function findNaturalContainer(element: Element): Element | null {
+  let current = element.parentElement;
+  let bestContainer: Element | null = null;
+  let bestScore = 0;
+
+  while (current && current !== document.body) {
+    const score = scoreAsContainer(current);
+
+    if (score > bestScore) {
+      bestScore = score;
+      bestContainer = current;
+    }
+
+    // Stop at major boundaries
+    if (score > 0.8) break;
+
+    current = current.parentElement;
+  }
+
+  return bestContainer;
+}
+
+function scoreAsContainer(element: Element): number {
+  let score = 0;
+  const rect = element.getBoundingClientRect();
+
+  // Has meaningful size
+  if (rect.width > 100 && rect.height > 50) score += 0.2;
+
+  // Has multiple interactive children
+  const interactive = element.querySelectorAll('button, a, input, select');
+  if (interactive.length >= 2) score += 0.2;
+
+  // Has visible border or background (likely intentional grouping)
+  const style = getComputedStyle(element);
+  if (style.border !== 'none' || style.backgroundColor !== 'transparent') {
+    score += 0.2;
+  }
+
+  // Has padding (intentional spacing)
+  if (parseInt(style.padding) > 0) score += 0.1;
+
+  // Common container patterns in class name
+  const className = element.className.toLowerCase();
+  if (/card|panel|box|container|wrapper|section|group|block/.test(className)) {
+    score += 0.3;
+  }
+
+  return Math.min(score, 1);
+}
+```
+
+---
+
+### Example: Messy DOM Analysis
+
+**Input: Generic div soup**
+```html
+<div class="_a1b">
+  <div class="_c2d">
+    <div class="_e3f"><a href="/">Logo</a></div>
+    <div class="_g4h">
+      <input class="_i5j" placeholder="Search...">
+      <button class="_k6l">Go</button>
+    </div>
+    <div class="_m7n">
+      <button class="_o8p">Cart (2)</button>
+      <button class="_q9r">Account</button>
+    </div>
+  </div>
+</div>
+<div class="_s1t">
+  <div class="_u2v">
+    <a class="_w3x">Home</a>
+    <a class="_y4z">Products</a>
+    <a class="_a5b">About</a>
+  </div>
+</div>
+<div class="_c6d">
+  <div class="_e7f">
+    <div class="_g8h">
+      <img class="_i9j" src="product1.jpg">
+      <span class="_k1l">Product 1</span>
+      <span class="_m2n">$29.99</span>
+      <button class="_o3p">Add to Cart</button>
+    </div>
+    <!-- ... 11 more similar product divs ... -->
+  </div>
+</div>
+```
+
+**Output: Inferred regions**
+```
+REGIONS (inferred from structure + position + content):
+
+  [R0] HEADER "Page Header" (position: top, width: 100%)
+       /body/div[1]
+       Summary: Logo, search box, cart/account buttons
+       Interactive: 1 input, 3 buttons, 1 link
+       Subsections: Logo, Search, UserActions
+
+  [R1] NAV "Navigation" (link density: 100%, horizontal layout)
+       /body/div[2]
+       Summary: Main navigation with 3 items
+       Interactive: 3 links
+
+  [R2] MAIN "Product Grid" (repeating pattern: 12 similar children)
+       /body/div[3]
+       Summary: 12 product cards with images and Add to Cart buttons
+       Interactive: 12 buttons
+       Pattern: Each item has image, title, price, button
+```
+
+**Despite zero semantic markup, we detected:**
+- Header (by position + size)
+- Navigation (by link density)
+- Product grid (by repeating DOM pattern)
+
+---
+
+### Fallback Naming Strategies
+
+When we can't infer names from structure:
+
+```typescript
+function generateRegionName(region: Region): string {
+  // Priority 1: Visible heading text
+  const heading = region.element.querySelector('h1,h2,h3,h4,h5,h6');
+  if (heading?.textContent) {
+    return heading.textContent.trim().slice(0, 30);
+  }
+
+  // Priority 2: ARIA label (rare in messy DOM, but check)
+  const ariaLabel = region.element.getAttribute('aria-label');
+  if (ariaLabel) return ariaLabel;
+
+  // Priority 3: First significant text
+  const textContent = getFirstSignificantText(region.element);
+  if (textContent) {
+    return `Section: "${textContent.slice(0, 20)}..."`;
+  }
+
+  // Priority 4: Describe by content type
+  const contentType = describeContentType(region);
+  if (contentType) return contentType;
+
+  // Priority 5: Position-based name
+  return getPositionBasedName(region);
+}
+
+function describeContentType(region: Region): string | null {
+  const el = region.element;
+
+  const buttons = el.querySelectorAll('button, [role="button"]').length;
+  const links = el.querySelectorAll('a').length;
+  const inputs = el.querySelectorAll('input, textarea, select').length;
+  const images = el.querySelectorAll('img').length;
+
+  if (inputs > 3) return `Form (${inputs} fields)`;
+  if (images > 3 && buttons > 3) return `Product/Card Grid (${images} items)`;
+  if (links > 5) return `Link Collection (${links} links)`;
+  if (buttons > 3) return `Action Panel (${buttons} buttons)`;
+  if (images > 5) return `Image Gallery (${images} images)`;
+
+  return null;
+}
+
+function getPositionBasedName(region: Region): string {
+  const rect = region.bounds;
+  const viewport = { w: window.innerWidth, h: window.innerHeight };
+
+  if (rect.top < viewport.h * 0.1) return 'Top Section';
+  if (rect.bottom > document.body.scrollHeight - 100) return 'Bottom Section';
+  if (rect.left < 50) return 'Left Panel';
+  if (rect.right > viewport.w - 50) return 'Right Panel';
+
+  return 'Content Area';
+}
+```
+
+---
+
+### Search Term Extraction (Without Labels)
+
+Build searchable index from visible content:
+
+```typescript
+function extractSearchTerms(element: Element): string[] {
+  const terms = new Set<string>();
+
+  // 1. All visible text (split into words)
+  const textContent = element.textContent || '';
+  const words = textContent.toLowerCase().match(/\b[a-z]{3,}\b/g) || [];
+  words.forEach(w => terms.add(w));
+
+  // 2. Input placeholders
+  element.querySelectorAll('[placeholder]').forEach(el => {
+    const placeholder = el.getAttribute('placeholder') || '';
+    placeholder.toLowerCase().split(/\s+/).forEach(w => terms.add(w));
+  });
+
+  // 3. Button/link text (higher priority)
+  element.querySelectorAll('button, a').forEach(el => {
+    const text = el.textContent?.toLowerCase() || '';
+    text.split(/\s+/).forEach(w => {
+      if (w.length > 2) terms.add(w);
+    });
+  });
+
+  // 4. Image alt text
+  element.querySelectorAll('img[alt]').forEach(el => {
+    const alt = el.getAttribute('alt') || '';
+    alt.toLowerCase().split(/\s+/).forEach(w => terms.add(w));
+  });
+
+  // 5. Value attributes
+  element.querySelectorAll('[value]').forEach(el => {
+    const value = el.getAttribute('value') || '';
+    if (value.length > 2 && value.length < 30) {
+      terms.add(value.toLowerCase());
+    }
+  });
+
+  return Array.from(terms).filter(t => t.length > 2);
+}
+```
+
+---
+
+### Confidence Scoring
+
+Report confidence so AI knows when to be cautious:
+
+```typescript
+interface RegionWithConfidence extends Region {
+  confidence: {
+    overall: number;        // 0-1
+    nameSource: 'semantic' | 'heading' | 'content' | 'position' | 'fallback';
+    boundarySource: 'landmark' | 'visual' | 'clustering' | 'heuristic';
+    warnings?: string[];
+  };
+}
+
+// Example output
+{
+  id: 'R2',
+  name: 'Product Grid',
+  confidence: {
+    overall: 0.72,
+    nameSource: 'content',      // Inferred from repeating pattern
+    boundarySource: 'visual',   // Detected by position/size
+    warnings: [
+      'No semantic landmarks found',
+      'Name inferred from DOM pattern'
+    ]
+  }
+}
+```
+
+AI can adjust behavior based on confidence:
+- High confidence (>0.8): Use region directly
+- Medium confidence (0.5-0.8): Use with verification
+- Low confidence (<0.5): Fall back to flat grep
+
+---
+
 ## Summary
 
 The Hybrid approach combines:
