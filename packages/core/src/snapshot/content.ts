@@ -17,11 +17,13 @@ import {
   LANDMARK_ROLES,
 } from './utils/inspect.js';
 import {
-  grepItems,
+  grepElements,
+  buildElementSearchData,
   countWords,
   getCleanTextContent,
   getListItems,
   detectCodeLanguage,
+  type ElementSearchData,
 } from './utils/filter.js';
 import {
   buildPageHeader,
@@ -37,13 +39,14 @@ import {
 } from './utils/format.js';
 
 /**
- * Content section for processing
+ * Content section for processing with search data
  */
 interface ContentSection {
   xpath: string;
   element: Element;
   heading?: string;
   headingLevel?: number;
+  searchData: ElementSearchData;
 }
 
 /**
@@ -99,7 +102,7 @@ export function snapshotContent(
   refMap.clear();
   const refs: SnapshotData['refs'] = {};
 
-  // Collect content sections
+  // Collect content sections with search data
   const sections: ContentSection[] = [];
 
   function collectSections(element: Element, depth: number): void {
@@ -130,11 +133,17 @@ export function snapshotContent(
     if (isSection) {
       // Get first heading in section
       const heading = element.querySelector('h1, h2, h3, h4, h5, h6');
+      const headingText = heading ? getCleanTextContent(heading, 100) : undefined;
+
+      // Build rich search data for element-level grep
+      const searchData = buildElementSearchData(element, role || 'section', headingText, xpath);
+
       sections.push({
         xpath,
         element,
-        heading: heading ? getCleanTextContent(heading, 100) : undefined,
-        headingLevel: heading ? parseInt(heading.tagName[1]) : undefined
+        heading: headingText,
+        headingLevel: heading ? parseInt(heading.tagName[1]) : undefined,
+        searchData,
       });
     }
 
@@ -146,12 +155,23 @@ export function snapshotContent(
 
   collectSections(root, 0);
 
-  // Filter sections by grep pattern (matches xpath)
+  // Filter sections by grep pattern at ELEMENT level (matches full content)
   let filteredSections = sections;
+  let grepInfo: { pattern: string; matchCount: number; totalCount: number } | undefined;
 
   if (grepPattern) {
-    const grepResult = grepItems(sections, grepPattern, s => s.xpath);
-    filteredSections = grepResult.items;
+    const searchDataList = sections.map(s => s.searchData);
+    const grepResult = grepElements(searchDataList, grepPattern);
+
+    // Map back to sections
+    const matchedSet = new Set(grepResult.items.map(d => d.element));
+    filteredSections = sections.filter(s => matchedSet.has(s.element));
+
+    grepInfo = {
+      pattern: grepResult.pattern,
+      matchCount: grepResult.matchCount,
+      totalCount: grepResult.totalCount,
+    };
   }
 
   // Generate output based on format
@@ -183,9 +203,8 @@ export function snapshotContent(
   const pageHeader = buildPageHeader(pageInfo);
 
   let contentHeader = `CONTENT: sections=${filteredSections.length} words=${totalWords}`;
-  if (grepPattern) {
-    const pattern = typeof grepPattern === 'string' ? grepPattern : grepPattern.pattern;
-    contentHeader += ` grep=${pattern}`;
+  if (grepInfo) {
+    contentHeader += ` grep=${grepInfo.pattern} matches=${grepInfo.matchCount}`;
   }
 
   const output = [pageHeader, contentHeader, '', ...lines].join('\n');

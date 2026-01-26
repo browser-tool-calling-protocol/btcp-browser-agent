@@ -18,7 +18,14 @@ import {
   generateSelector,
   LANDMARK_ROLES,
 } from './utils/inspect.js';
-import { grepLines, countWords, getCleanTextContent, detectCodeLanguage } from './utils/filter.js';
+import {
+  grepElements,
+  buildElementSearchData,
+  countWords,
+  getCleanTextContent,
+  detectCodeLanguage,
+  type ElementSearchData,
+} from './utils/filter.js';
 import { truncateByType, buildPageHeader, getPageInfo, buildOutlineMetadata } from './utils/format.js';
 
 /**
@@ -43,6 +50,20 @@ import { truncateByType, buildPageHeader, getPageInfo, buildOutlineMetadata } fr
  * //   ARTICLE "blog post" @ref:1 [200 words] /main/article
  * ```
  */
+/**
+ * Outline item with element data for grep filtering
+ */
+interface OutlineItem {
+  element: Element;
+  line: string;
+  indent: number;
+  role: string;
+  name: string;
+  xpath: string;
+  needsRef: boolean;
+  searchData: ElementSearchData;
+}
+
 export function snapshotOutline(
   document: Document,
   refMap: RefMap,
@@ -53,7 +74,6 @@ export function snapshotOutline(
 
   refMap.clear();
   const refs: SnapshotData['refs'] = {};
-  const lines: string[] = [];
   let refCounter = 0;
 
   // Stats for header
@@ -61,8 +81,11 @@ export function snapshotOutline(
   let sectionCount = 0;
   let headingCount = 0;
 
-  // Recursive function to build outline with indentation
-  function buildOutline(element: Element, depth: number, indent: number): void {
+  // Collect outline items with search data (BEFORE grep)
+  const outlineItems: OutlineItem[] = [];
+
+  // Recursive function to collect outline items
+  function collectOutlineItems(element: Element, depth: number, indent: number): void {
     if (depth > maxDepth) return;
     if (!includeHidden && !isVisible(element, false)) return;
 
@@ -75,31 +98,27 @@ export function snapshotOutline(
 
     // Determine if this element should be in the outline
     let shouldInclude = false;
-    let line = '';
+    let lineBase = '';
+    let itemRole = '';
+    let itemName = '';
+    let itemXpath = '';
+    let needsRef = false;
     const indentStr = '  '.repeat(indent);
 
     // Landmarks (MAIN, BANNER, etc.)
     if (role && LANDMARK_ROLES.has(role)) {
       shouldInclude = true;
-      const roleUpper = role.toUpperCase();
-      const name = getSectionName(element);
+      needsRef = true;
+      itemRole = role.toUpperCase();
+      itemName = getSectionName(element);
       const metadata = buildOutlineMetadata(element);
-      const xpath = buildSemanticXPath(element);
+      itemXpath = buildSemanticXPath(element);
 
-      // Generate ref for landmarks
-      const ref = `@ref:${refCounter++}`;
-      refMap.set(ref, element);
-      refs[ref] = {
-        selector: generateSelector(element),
-        role: role,
-        name: name || undefined
-      };
-
-      line = `${indentStr}${roleUpper}`;
-      if (name) line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
-      line += ` ${ref}`;
-      if (metadata) line += ` ${metadata}`;
-      line += ` ${xpath}`;
+      lineBase = `${indentStr}${itemRole}`;
+      if (itemName) lineBase += ` "${truncateByType(itemName, 'ELEMENT_NAME')}"`;
+      lineBase += ` {{REF}}`;  // Placeholder for ref
+      if (metadata) lineBase += ` ${metadata}`;
+      lineBase += ` ${itemXpath}`;
 
       sectionCount++;
     }
@@ -107,35 +126,28 @@ export function snapshotOutline(
     else if (role?.startsWith('heading')) {
       shouldInclude = true;
       const level = tagName[1];
-      const text = getCleanTextContent(element, 60);
-      const xpath = buildSemanticXPath(element);
+      itemRole = 'heading';
+      itemName = getCleanTextContent(element, 60);
+      itemXpath = buildSemanticXPath(element);
 
-      line = `${indentStr}HEADING level=${level}`;
-      if (text) line += ` "${text}"`;
-      line += ` ${xpath}`;
+      lineBase = `${indentStr}HEADING level=${level}`;
+      if (itemName) lineBase += ` "${itemName}"`;
+      lineBase += ` ${itemXpath}`;
     }
     // Articles and named sections/regions
     else if (tagName === 'ARTICLE' || (tagName === 'SECTION' && (element.id || element.getAttribute('aria-label')))) {
       shouldInclude = true;
-      const roleUpper = tagName === 'ARTICLE' ? 'ARTICLE' : 'REGION';
-      const name = getSectionName(element);
+      needsRef = true;
+      itemRole = tagName === 'ARTICLE' ? 'ARTICLE' : 'REGION';
+      itemName = getSectionName(element);
       const metadata = buildOutlineMetadata(element);
-      const xpath = buildSemanticXPath(element);
+      itemXpath = buildSemanticXPath(element);
 
-      // Generate ref
-      const ref = `@ref:${refCounter++}`;
-      refMap.set(ref, element);
-      refs[ref] = {
-        selector: generateSelector(element),
-        role: roleUpper.toLowerCase(),
-        name: name || undefined
-      };
-
-      line = `${indentStr}${roleUpper}`;
-      if (name) line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
-      line += ` ${ref}`;
-      if (metadata) line += ` ${metadata}`;
-      line += ` ${xpath}`;
+      lineBase = `${indentStr}${itemRole}`;
+      if (itemName) lineBase += ` "${truncateByType(itemName, 'ELEMENT_NAME')}"`;
+      lineBase += ` {{REF}}`;
+      if (metadata) lineBase += ` ${metadata}`;
+      lineBase += ` ${itemXpath}`;
 
       sectionCount++;
     }
@@ -144,23 +156,17 @@ export function snapshotOutline(
       const wordCount = countWords(element.textContent || '');
       if (wordCount > 50) {
         shouldInclude = true;
-        const name = getSectionName(element);
+        needsRef = true;
+        itemRole = 'REGION';
+        itemName = getSectionName(element);
         const metadata = buildOutlineMetadata(element);
-        const xpath = buildSemanticXPath(element);
+        itemXpath = buildSemanticXPath(element);
 
-        const ref = `@ref:${refCounter++}`;
-        refMap.set(ref, element);
-        refs[ref] = {
-          selector: generateSelector(element),
-          role: 'region',
-          name: name || undefined
-        };
-
-        line = `${indentStr}REGION`;
-        if (name) line += ` "${truncateByType(name, 'ELEMENT_NAME')}"`;
-        line += ` ${ref}`;
-        if (metadata) line += ` ${metadata}`;
-        line += ` ${xpath}`;
+        lineBase = `${indentStr}REGION`;
+        if (itemName) lineBase += ` "${truncateByType(itemName, 'ELEMENT_NAME')}"`;
+        lineBase += ` {{REF}}`;
+        if (metadata) lineBase += ` ${metadata}`;
+        lineBase += ` ${itemXpath}`;
 
         sectionCount++;
       }
@@ -170,50 +176,89 @@ export function snapshotOutline(
       const items = element.querySelectorAll(':scope > li').length;
       if (items > 0) {
         shouldInclude = true;
-        const xpath = buildSemanticXPath(element);
-        line = `${indentStr}LIST [${items} items] ${xpath}`;
+        itemRole = 'list';
+        itemXpath = buildSemanticXPath(element);
+        lineBase = `${indentStr}LIST [${items} items] ${itemXpath}`;
       }
     }
     // Code blocks
     else if (tagName === 'PRE') {
       shouldInclude = true;
+      itemRole = 'code';
       const lang = detectCodeLanguage(element);
       const lineCount = (element.textContent || '').split('\n').length;
-      const xpath = buildSemanticXPath(element);
+      itemXpath = buildSemanticXPath(element);
 
-      line = `${indentStr}CODE`;
-      if (lang) line += ` [${lang}]`;
-      line += ` [${lineCount} lines]`;
-      line += ` ${xpath}`;
+      lineBase = `${indentStr}CODE`;
+      if (lang) lineBase += ` [${lang}]`;
+      lineBase += ` [${lineCount} lines]`;
+      lineBase += ` ${itemXpath}`;
     }
 
-    if (shouldInclude && line) {
-      lines.push(line);
+    if (shouldInclude && lineBase) {
+      // Build rich search data with full text and attributes
+      const searchData = buildElementSearchData(element, itemRole, itemName, itemXpath);
+
+      outlineItems.push({
+        element,
+        line: lineBase,
+        indent,
+        role: itemRole,
+        name: itemName,
+        xpath: itemXpath,
+        needsRef,
+        searchData,
+      });
     }
 
     // Recurse into children (increase indent if we included this element)
     const nextIndent = shouldInclude ? indent + 1 : indent;
     for (const child of element.children) {
-      buildOutline(child, depth + 1, nextIndent);
+      collectOutlineItems(child, depth + 1, nextIndent);
     }
   }
 
-  buildOutline(root, 0, 0);
+  collectOutlineItems(root, 0, 0);
 
   // Calculate total words
   const totalWords = countWords(root.textContent || '');
 
-  // Apply grep filter
-  let filteredLines = lines;
-  let grepInfo: { pattern: string; matchCount: number } | undefined;
+  // Apply grep filter at ELEMENT level (matches against full data)
+  let matchedItems = outlineItems;
+  let grepInfo: { pattern: string; matchCount: number; totalCount: number } | undefined;
 
   if (grepPattern) {
-    const grepResult = grepLines(lines, grepPattern);
-    filteredLines = grepResult.items;
+    const searchDataList = outlineItems.map(item => item.searchData);
+    const grepResult = grepElements(searchDataList, grepPattern);
+
+    // Map back to items
+    const matchedSet = new Set(grepResult.items.map(d => d.element));
+    matchedItems = outlineItems.filter(item => matchedSet.has(item.element));
+
     grepInfo = {
       pattern: grepResult.pattern,
       matchCount: grepResult.matchCount,
+      totalCount: grepResult.totalCount,
     };
+  }
+
+  // Build final lines with refs (only for matched items)
+  const lines: string[] = [];
+  for (const item of matchedItems) {
+    let line = item.line;
+
+    if (item.needsRef) {
+      const ref = `@ref:${refCounter++}`;
+      refMap.set(ref, item.element);
+      refs[ref] = {
+        selector: generateSelector(item.element),
+        role: item.role.toLowerCase(),
+        name: item.name || undefined,
+      };
+      line = line.replace('{{REF}}', ref);
+    }
+
+    lines.push(line);
   }
 
   // Build headers
@@ -225,7 +270,7 @@ export function snapshotOutline(
     outlineHeader += ` grep=${grepInfo.pattern} matches=${grepInfo.matchCount}`;
   }
 
-  const output = [pageHeader, outlineHeader, '', ...filteredLines].join('\n');
+  const output = [pageHeader, outlineHeader, '', ...lines].join('\n');
 
   return {
     tree: output,

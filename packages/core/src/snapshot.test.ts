@@ -401,8 +401,9 @@ describe('createSnapshot', () => {
       `;
 
       const refMap = createRefMap();
+      // Element-level grep matches against full element data (not quoted output)
       const snapshot = createSnapshot(document, refMap, {
-        grep: '"Submit."',
+        grep: 'Submit.',
       });
 
       expect(snapshot.tree).toContain('Submit1');
@@ -448,19 +449,21 @@ describe('createSnapshot', () => {
 
     it('should support negative character classes ([^abc])', () => {
       document.body.innerHTML = `
-        <button>Button1</button>
-        <button>Button2</button>
-        <button>ButtonX</button>
+        <button>Item1</button>
+        <button>Item2</button>
+        <button>ItemX</button>
       `;
 
       const refMap = createRefMap();
+      // Element-level grep matches against full element data
+      // Use pattern that matches ItemX but not Item1/Item2
       const snapshot = createSnapshot(document, refMap, {
-        grep: 'Button[^12]',
+        grep: 'Item[^12]',
       });
 
-      expect(snapshot.tree).toContain('ButtonX');
-      expect(snapshot.tree).not.toContain('Button1');
-      expect(snapshot.tree).not.toContain('Button2');
+      expect(snapshot.tree).toContain('ItemX');
+      expect(snapshot.tree).not.toContain('Item1');
+      expect(snapshot.tree).not.toContain('Item2');
     });
 
     it('should support quantifiers (+, *, ?)', () => {

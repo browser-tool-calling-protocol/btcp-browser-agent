@@ -19,7 +19,7 @@ import {
   generateSelector,
   generateSimpleSelector,
 } from './utils/inspect.js';
-import { grepLines } from './utils/filter.js';
+import { grepElements, buildElementSearchData, type ElementSearchData } from './utils/filter.js';
 import {
   truncateByType,
   buildPageHeader,
@@ -66,9 +66,17 @@ export function snapshotInteractive(
   // Collect all elements with traversal
   const elements = collectElements(root, { maxDepth, includeHidden, checkAncestors: false });
 
-  // Filter and process elements
+  // Build search data for interactive elements (BEFORE grep filtering)
+  // This enables grep to match against FULL element data (not truncated output)
+  const interactiveElements: Array<{
+    element: Element;
+    role: string;
+    name: string;
+    xpath: string;
+    searchData: ElementSearchData;
+  }> = [];
+
   let totalInteractive = 0;
-  let capturedInteractive = 0;
 
   for (const element of elements) {
     const role = getRole(element);
@@ -76,14 +84,41 @@ export function snapshotInteractive(
 
     if (isInteractiveElement) totalInteractive++;
 
-    // Skip non-interactive elements in interactive mode
-    if (!isInteractiveElement) continue;
-
-    // Skip elements without role
-    if (!role) continue;
+    // Skip non-interactive elements
+    if (!isInteractiveElement || !role) continue;
 
     const name = getAccessibleName(element);
+    const xpath = buildSemanticXPath(element);
 
+    // Build rich search data with FULL text content and all attributes
+    const searchData = buildElementSearchData(element, role, name, xpath);
+
+    interactiveElements.push({ element, role, name, xpath, searchData });
+  }
+
+  // Apply grep filter at ELEMENT level (matches against full data)
+  let matchedElements = interactiveElements;
+  let grepInfo: { pattern: string; matchCount: number; totalCount: number } | undefined;
+
+  if (grepPattern) {
+    const searchDataList = interactiveElements.map(e => e.searchData);
+    const grepResult = grepElements(searchDataList, grepPattern);
+
+    // Map back to the full element info
+    const matchedSet = new Set(grepResult.items.map(d => d.element));
+    matchedElements = interactiveElements.filter(e => matchedSet.has(e.element));
+
+    grepInfo = {
+      pattern: grepResult.pattern,
+      matchCount: grepResult.matchCount,
+      totalCount: grepResult.totalCount,
+    };
+  }
+
+  // Format ONLY matched elements (search result style)
+  let capturedInteractive = 0;
+
+  for (const { element, role, name, xpath } of matchedElements) {
     // Build line
     const roleUpper = role.toUpperCase();
     let line = roleUpper;
@@ -133,7 +168,6 @@ export function snapshotInteractive(
     if (states.length) line += ` (${states.join(', ')})`;
 
     // Add semantic xpath
-    const xpath = buildSemanticXPath(element);
     line += ` ${xpath}`;
 
     lines.push(line);
@@ -143,26 +177,13 @@ export function snapshotInteractive(
   const pageInfo = getPageInfo(document);
   const pageHeader = buildPageHeader(pageInfo);
 
-  // Apply grep filter if specified
-  let filteredLines = lines;
-  let grepInfo: { pattern: string; matchCount: number } | undefined;
-
-  if (grepPattern) {
-    const grepResult = grepLines(lines, grepPattern);
-    filteredLines = grepResult.items;
-    grepInfo = {
-      pattern: grepResult.pattern,
-      matchCount: grepResult.matchCount,
-    };
-  }
-
   // Build snapshot header
   let snapshotHeader = `SNAPSHOT: elements=${elements.length} refs=${capturedInteractive}`;
   if (grepInfo) {
     snapshotHeader += ` grep=${grepInfo.pattern} matches=${grepInfo.matchCount}`;
   }
 
-  const output = buildSnapshotOutput(pageHeader, snapshotHeader, filteredLines);
+  const output = buildSnapshotOutput(pageHeader, snapshotHeader, lines);
 
   // Detect problematic page states
   const warnings: string[] = [];
