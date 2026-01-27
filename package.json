@@ -1,6 +1,6 @@
 {
   "name": "btcp-browser-agent",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "Give AI agents the power to control browsers. A foundation for building agentic systems with smart DOM snapshots and stable element references.",
   "type": "module",
   "main": "dist/index.js",
