@@ -565,10 +565,10 @@ export function buildSemanticXPath(element: Element): string {
 
   // Always start with body for context
   if (parts.length === 0) {
-    return '/' + element.tagName.toLowerCase();
+    return '/body/' + element.tagName.toLowerCase();
   }
 
-  return '/' + parts.join('/');
+  return '/body/' + parts.join('/');
 }
 
 // ============================================================================

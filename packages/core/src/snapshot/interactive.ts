@@ -19,7 +19,7 @@ import {
   generateSelector,
   generateSimpleSelector,
 } from './utils/inspect.js';
-import { grepElements, buildElementSearchData, type ElementSearchData } from './utils/filter.js';
+import { grepElements, buildElementSearchData, filterBySelector, type ElementSearchData } from './utils/filter.js';
 import {
   truncateByType,
   buildPageHeader,
@@ -54,7 +54,7 @@ export function snapshotInteractive(
   options: InteractiveOptions = {}
 ): SnapshotData {
   const root = validateRoot(options.root, document);
-  const { maxDepth = 50, includeHidden = false, grep: grepPattern } = options;
+  const { maxDepth = 50, includeHidden = false, select: selectPattern, grep: grepPattern } = options;
 
   refMap.clear();
 
@@ -96,22 +96,33 @@ export function snapshotInteractive(
     interactiveElements.push({ element, role, name, xpath, searchData });
   }
 
-  // Apply grep filter at ELEMENT level (matches against full data)
+  // Apply filtering: selector first (semantic), then grep (text)
   let matchedElements = interactiveElements;
   let grepInfo: { pattern: string; matchCount: number; totalCount: number } | undefined;
 
-  if (grepPattern) {
+  // Step 1: Apply selector filter (semantic/structural)
+  if (selectPattern) {
     const searchDataList = interactiveElements.map(e => e.searchData);
+    const selectFiltered = filterBySelector(searchDataList, selectPattern);
+
+    // Map back to the full element info
+    const matchedSet = new Set(selectFiltered.map(d => d.element));
+    matchedElements = interactiveElements.filter(e => matchedSet.has(e.element));
+  }
+
+  // Step 2: Apply grep filter (text/content) on already-selected elements
+  if (grepPattern) {
+    const searchDataList = matchedElements.map(e => e.searchData);
     const grepResult = grepElements(searchDataList, grepPattern);
 
     // Map back to the full element info
     const matchedSet = new Set(grepResult.items.map(d => d.element));
-    matchedElements = interactiveElements.filter(e => matchedSet.has(e.element));
+    matchedElements = matchedElements.filter(e => matchedSet.has(e.element));
 
     grepInfo = {
       pattern: grepResult.pattern,
       matchCount: grepResult.matchCount,
-      totalCount: grepResult.totalCount,
+      totalCount: searchDataList.length, // Total after selector filtering
     };
   }
 

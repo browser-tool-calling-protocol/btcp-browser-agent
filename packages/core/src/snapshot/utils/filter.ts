@@ -166,21 +166,20 @@ export function grepLines(lines: string[], grepPattern: string | GrepOptions): G
  * Defaults to case-insensitive with wildcard support.
  *
  * @param items - Array of objects to filter
- * @param grepPattern - String pattern or GrepOptions object
+ * @param grepPattern - String pattern to match
  * @param extractor - Function to extract the string to match against
  * @returns Grep result with filtered items and metadata
  */
 export function grepItems<T>(
   items: T[],
-  grepPattern: string | GrepOptions,
+  grepPattern: string,
   extractor: (item: T) => string
 ): GrepResult<T> {
-  const grepOpts = typeof grepPattern === 'string'
-    ? { pattern: grepPattern }
-    : grepPattern;
-
   // DEFAULT: ignoreCase = true (case-insensitive by default)
-  const { pattern, ignoreCase = true, invert = false, fixedStrings = false } = grepOpts;
+  const pattern = grepPattern;
+  const ignoreCase = true;
+  const invert = false;
+  const fixedStrings = false;
 
   const regexPattern = buildRegexPattern(pattern, fixedStrings);
   const flags = ignoreCase ? 'i' : '';
@@ -308,7 +307,7 @@ export function buildElementSearchText(data: ElementSearchData): string {
  */
 export function grepElements(
   elements: ElementSearchData[],
-  grepPattern: string | GrepOptions
+  grepPattern: string
 ): GrepResult<ElementSearchData> {
   return grepItems(elements, grepPattern, buildElementSearchText);
 }
@@ -418,6 +417,179 @@ export function detectCodeLanguage(element: Element): string | null {
   }
 
   return null;
+}
+
+// ============================================================================
+// Selector Parsing and Filtering
+// ============================================================================
+
+/**
+ * Selector type detection
+ */
+export type SelectorType = 'role' | 'xpath';
+
+/**
+ * Parsed selector result
+ */
+export interface ParsedSelector {
+  type: SelectorType;
+  /** Original selector string */
+  raw: string;
+  /** Parsed selector parts (for XPath unions) */
+  parts: string[];
+}
+
+/**
+ * Detect selector type from selector string
+ *
+ * Simple detection:
+ * - Starts with '/' → XPath
+ * - Otherwise → Role selector
+ *
+ * XPath supports unions with '|' operator: '//button | //link'
+ *
+ * @param selector - Selector string
+ * @returns Detected selector type
+ */
+export function detectSelectorType(selector: string): SelectorType {
+  const trimmed = selector.trim();
+
+  // XPath: starts with /
+  if (trimmed.startsWith('/')) {
+    return 'xpath';
+  }
+
+  // Default: role selector
+  return 'role';
+}
+
+/**
+ * Parse selector string into structured format
+ *
+ * @param selector - Selector string
+ * @returns Parsed selector with type and parts
+ *
+ * @example
+ * ```typescript
+ * parseSelector('button')
+ * // → { type: 'role', raw: 'button', parts: ['button'] }
+ *
+ * parseSelector('//main//button')
+ * // → { type: 'xpath', raw: '//main//button', parts: ['//main//button'] }
+ *
+ * parseSelector('//button | //link')
+ * // → { type: 'xpath', raw: '//button | //link', parts: ['//button', '//link'] }
+ * ```
+ */
+export function parseSelector(selector: string): ParsedSelector {
+  const type = detectSelectorType(selector);
+
+  let parts: string[];
+  if (type === 'xpath' && selector.includes('|')) {
+    // XPath union: split by | and trim each part
+    parts = selector.split('|').map(p => p.trim()).filter(p => p.length > 0);
+  } else {
+    parts = [selector.trim()];
+  }
+
+  return {
+    type,
+    raw: selector,
+    parts,
+  };
+}
+
+/**
+ * Test if an element matches a role selector
+ *
+ * @param data - Element search data
+ * @param rolePattern - Role pattern (may contain wildcards)
+ * @returns True if element matches the role pattern
+ */
+function matchesRoleSelector(data: ElementSearchData, rolePattern: string): boolean {
+  if (!data.role) return false;
+
+  // Convert wildcard pattern to regex
+  const regexPattern = buildRegexPattern(rolePattern, false);
+  try {
+    const regex = new RegExp(`^${regexPattern}$`, 'i'); // Case-insensitive, full match
+    return regex.test(data.role);
+  } catch {
+    // Fallback to simple case-insensitive string match
+    return data.role.toLowerCase() === rolePattern.toLowerCase();
+  }
+}
+
+/**
+ * Test if an element matches an XPath selector
+ *
+ * @param data - Element search data
+ * @param xpathPattern - XPath pattern (may contain wildcards)
+ * @returns True if element matches the XPath pattern
+ */
+function matchesXPathSelector(data: ElementSearchData, xpathPattern: string): boolean {
+  if (!data.xpath) return false;
+
+  // Convert wildcard pattern to regex
+  const regexPattern = buildRegexPattern(xpathPattern, false);
+  try {
+    const regex = new RegExp(regexPattern, 'i'); // Case-insensitive partial match
+    return regex.test(data.xpath);
+  } catch {
+    // Fallback to simple contains match
+    return data.xpath.toLowerCase().includes(xpathPattern.toLowerCase());
+  }
+}
+
+/**
+ * Filter elements by selector
+ *
+ * Supports two selector types:
+ * 1. Role selectors: 'button', 'link', 'textbox'
+ * 2. XPath patterns: '//main//button', '/body/nav//*'
+ *    - XPath unions use `|` operator: '//button | //link'
+ *
+ * Works in conjunction with grep - selector filters by structure/semantics,
+ * grep filters by text content.
+ *
+ * @param elements - Array of ElementSearchData to filter
+ * @param selector - Selector string
+ * @returns Filtered array of elements matching the selector
+ *
+ * @example
+ * ```typescript
+ * // Find all buttons
+ * filterBySelector(elements, 'button')
+ *
+ * // Find buttons in main landmark
+ * filterBySelector(elements, '//main//button')
+ *
+ * // Find buttons or links using XPath union
+ * filterBySelector(elements, '//button | //link')
+ * ```
+ */
+export function filterBySelector(
+  elements: ElementSearchData[],
+  selector: string
+): ElementSearchData[] {
+  if (!selector || selector.trim().length === 0) {
+    return elements;
+  }
+
+  const parsed = parseSelector(selector);
+
+  return elements.filter(data => {
+    // Check if element matches ANY of the selector parts (OR logic for XPath unions)
+    return parsed.parts.some(part => {
+      if (parsed.type === 'role') {
+        // Role selector
+        return matchesRoleSelector(data, part);
+      } else {
+        // XPath selector
+        return matchesXPathSelector(data, part);
+      }
+    });
+  });
 }
 
 // ============================================================================

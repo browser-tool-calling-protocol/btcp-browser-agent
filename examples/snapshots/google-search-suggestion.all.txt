@@ -1,0 +1,98 @@
+PAGE: http://localhost/ |  | viewport=1024x768
+ALL: elements=95 refs=95
+
+NAVIGATION "Gmail Images Something went wrong. Your history..." @ref:0 /body/div
+NONE "Gmail Images" @ref:1 /body/header#gb
+LINK "Gmail" @ref:2 /body/header#gb/a
+LINK "Search for Images" @ref:3 /body/header#gb/a
+BUTTON "Search Labs" @ref:4 /body/header#gb/a
+BUTTON "Google apps" @ref:5 /body/header#gb/div#gbwa[3]/a
+BUTTON "Google Account: Minh Luc (luk.mink@gmail.com)" @ref:6 /body/header#gb/a
+IMG "AF2bZyhOmY03kwpeSofWQUWiRcwUDEOCof7Y7WsmJ6ZVSLI..." @ref:7 /body/header#gb/a
+IMG "Google" @ref:8 /body/div#LS8OJ[3]
+SEARCH "Upload image Upload file AI Mode Choose what yo..." @ref:9 /body/form
+BUTTON "Upload files or images" @ref:10 /body/form/button
+MENU "Upload image Upload file" @ref:11 /body/form/ul
+PRESENTATION "Upload image" @ref:12 /body/form/ul/li[1]
+MENUITEM "Upload image" @ref:13 /body/form/ul/li[1]/button
+PRESENTATION "Upload file" @ref:14 /body/form/ul/li[2]
+MENUITEM "Upload file" @ref:15 /body/form/ul/li[2]/button
+COMBOBOX "Search" @ref:16 /body/form/textarea#APjFqb
+BUTTON "Clear" @ref:17 /body/form
+LINK "AI Mode" @ref:18 /body/form/button
+DIALOG "Choose what you’re giving feedback on" @ref:19 /body/form
+BUTTON "Close Choose what you’re giving feedback on" @ref:20 /body/form/div#_xu13aYOzGJPt1e8P7drSmAs_5
+HEADING "Choose what you’re giving feedback on" @ref:21 /body/form/div#_xu13aYOzGJPt1e8P7drSmAs_5
+PRESENTATION "weather journal See more Delete weather See mor..." @ref:22 /body/form/div#Alh6id[2]
+PRESENTATION "weather journal See more Delete weather See mor..." @ref:23 /body/form/div#Alh6id[2]
+LISTBOX "weather journal See more Delete weather See mor..." @ref:24 /body/form/div#Alh6id[2]/ul
+PRESENTATION "weather journal See more Delete" @ref:25 /body/form/div#Alh6id[2]/ul/li[1]
+OPTION "weather journal" @ref:26 /body/form/div#Alh6id[2]/ul/li[1]/div#jZ2SBf[1]
+PRESENTATION "weather journal" @ref:27 /body/form/div#Alh6id[2]/ul/li[1]/div#jZ2SBf[1]
+BUTTON "Delete weather journal from search history" @ref:28 /body/form/div#Alh6id[2]/ul/li[1]/div#MFb78d[3]
+PRESENTATION "Delete" @ref:29 /body/form/div#Alh6id[2]/ul/li[1]/div#MFb78d[3]
+PRESENTATION "weather See more Delete" @ref:30 /body/form/div#Alh6id[2]/ul/li[2]
+OPTION "weather" @ref:31 /body/form/div#Alh6id[2]/ul/li[2]/div#ERWdKc[1]
+PRESENTATION "weather" @ref:32 /body/form/div#Alh6id[2]/ul/li[2]/div#ERWdKc[1]
+BUTTON "Delete weather from search history" @ref:33 /body/form/div#Alh6id[2]/ul/li[2]/div#GwAatf[3]
+PRESENTATION "Delete" @ref:34 /body/form/div#Alh6id[2]/ul/li[2]/div#GwAatf[3]
+PRESENTATION "wuthering wave Plant See more Delete" @ref:35 /body/form/div#Alh6id[2]/ul/li[3]
+OPTION "wuthering wave" @ref:36 /body/form/div#Alh6id[2]/ul/li[3]/div#c7mM1c[1]
+PRESENTATION "wuthering wave" @ref:37 /body/form/div#Alh6id[2]/ul/li[3]/div#c7mM1c[1]
+PRESENTATION "wuthering Animal See more Delete" @ref:38 /body/form/div#Alh6id[2]/ul/li[4]
+OPTION "wuthering" @ref:39 /body/form/div#Alh6id[2]/ul/li[4]/div#Zrbbw[1]
+PRESENTATION "wuthering" @ref:40 /body/form/div#Alh6id[2]/ul/li[4]/div#Zrbbw[1]
+PRESENTATION "weather in boston now See more Delete" @ref:41 /body/form/div#Alh6id[2]/ul/li[5]
+OPTION "weather in boston now" @ref:42 /body/form/div#Alh6id[2]/ul/li[5]/div#sBQTL[1]
+PRESENTATION "weather in boston now" @ref:43 /body/form/div#Alh6id[2]/ul/li[5]/div#sBQTL[1]
+PRESENTATION "weather in denver City in Massachusetts See mor..." @ref:44 /body/form/div#Alh6id[2]/ul/li[6]
+OPTION "weather in denver" @ref:45 /body/form/div#Alh6id[2]/ul/li[6]/div#vTtioc[1]
+PRESENTATION "weather in denver" @ref:46 /body/form/div#Alh6id[2]/ul/li[6]/div#vTtioc[1]
+PRESENTATION "weather new york city Video game See more Delete" @ref:47 /body/form/div#Alh6id[2]/ul/li[7]
+OPTION "weather new york city" @ref:48 /body/form/div#Alh6id[2]/ul/li[7]/div#gLuoSb[1]
+PRESENTATION "weather new york city" @ref:49 /body/form/div#Alh6id[2]/ul/li[7]/div#gLuoSb[1]
+PRESENTATION "weather uk Television series See more Delete" @ref:50 /body/form/div#Alh6id[2]/ul/li[8]
+OPTION "weather uk" @ref:51 /body/form/div#Alh6id[2]/ul/li[8]/div#mdzGzd[1]
+PRESENTATION "weather uk" @ref:52 /body/form/div#Alh6id[2]/ul/li[8]/div#mdzGzd[1]
+PRESENTATION "weather vietnam Plant See more Delete" @ref:53 /body/form/div#Alh6id[2]/ul/li[9]
+OPTION "weather vietnam" @ref:54 /body/form/div#Alh6id[2]/ul/li[9]/div#hwdq1[1]
+PRESENTATION "weather vietnam" @ref:55 /body/form/div#Alh6id[2]/ul/li[9]/div#hwdq1[1]
+PRESENTATION "weather dalat 2008 film See more Delete" @ref:56 /body/form/div#Alh6id[2]/ul/li[10]
+OPTION "weather dalat" @ref:57 /body/form/div#Alh6id[2]/ul/li[10]/div#HFKcI[1]
+PRESENTATION "weather dalat" @ref:58 /body/form/div#Alh6id[2]/ul/li[10]/div#HFKcI[1]
+PRESENTATION @ref:59 /body/form/div#Alh6id[2]
+PRESENTATION @ref:60 /body/form/div#shJ2Vb[3]
+LISTBOX @ref:61 /body/form/div#shJ2Vb[3]/ul
+PRESENTATION @ref:62 /body/form
+PRESENTATION @ref:63 /body/form
+PRESENTATION @ref:64 /body/form/div#ynRric[5]
+PRESENTATION "See more Delete" @ref:65 /body/form/li#YMXe[1]
+OPTION @ref:66 /body/form/li#YMXe[1]
+BUTTON "Delete" @ref:67 /body/form/li#YMXe[1]
+PRESENTATION "Delete" @ref:68 /body/form/li#YMXe[1]
+PRESENTATION @ref:69 /body/form/li#d6ItKb[2]
+PRESENTATION "Delete" @ref:70 /body/form/li#mitGyb[3]
+OPTION @ref:71 /body/form/li#mitGyb[3]
+BUTTON "Delete" @ref:72 /body/form/li#mitGyb[3]
+PRESENTATION "Delete" @ref:73 /body/form/li#mitGyb[3]
+PRESENTATION @ref:74 /body/form/li#TN4rFf[4]
+PRESENTATION @ref:75 /body/form/li#TN4rFf[4]
+OPTION @ref:76 /body/form/li#TN4rFf[4]
+BUTTON "Google Search" @ref:77 /body/form/input[1]
+BUTTON "I'm Feeling Lucky" @ref:78 /body/form/input[2]
+BUTTON "See more" @ref:79 /body/form/div#TWnylf[6]/g-popup#ow16
+PRESENTATION @ref:80 /body/form/div#dh215c[7]
+OPTION @ref:81 /body/form/div#dh215c[7]
+BUTTON "Google Search" @ref:82 /body/form/input[1]
+BUTTON "I'm Feeling Lucky" @ref:83 /body/form/input[2]
+LINK "Tiếng Việt" @ref:84 /body/div[3]/div#SIvCob/a[1]
+LINK "Français" @ref:85 /body/div[3]/div#SIvCob/a[2]
+LINK "繁體中文" @ref:86 /body/div[3]/div#SIvCob/a[3]
+CONTENTINFO "Vietnam AboutAdvertisingBusiness How Search wor..." @ref:87 /body/div
+LINK "About" @ref:88 /body/a[1]
+LINK "Advertising" @ref:89 /body/a[2]
+LINK "Business" @ref:90 /body/a[3]
+LINK "How Search works" @ref:91 /body/a[4]
+LINK "Privacy" @ref:92 /body/a[1]
+LINK "Terms" @ref:93 /body/a[2]
+BUTTON "Settings" @ref:94 /body/div

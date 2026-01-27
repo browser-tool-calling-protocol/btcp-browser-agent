@@ -62,6 +62,9 @@ export function createSnapshot(
     maxLines,
   } = options;
 
+  // Convert GrepOptions to string for backward compatibility
+  const grepPattern = typeof grep === 'string' ? grep : grep?.pattern;
+
   // Fast path for HTML format - return raw body HTML without processing
   if (format === 'html') {
     const bodyHTML = document.body?.outerHTML || '';
@@ -96,7 +99,7 @@ export function createSnapshot(
         root,
         maxDepth,
         includeHidden,
-        grep,
+        grep: grepPattern,
       });
 
     case 'content':
@@ -126,7 +129,7 @@ export function createSnapshot(
         root,
         maxDepth,
         includeHidden,
-        grep,
+        grep: grepPattern,
         maxLength,
       });
 
@@ -143,7 +146,7 @@ export function createSnapshot(
         root,
         maxDepth,
         includeHidden,
-        grep,
+        grep: grepPattern,
       });
   }
 }

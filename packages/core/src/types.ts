@@ -194,8 +194,39 @@ export interface SnapshotCommand extends BaseCommand {
    * @deprecated Use extract action for format conversion
    */
   format?: SnapshotFormat;
-  /** Filter output lines - simple string or full grep options */
-  grep?: string | GrepOptions;
+  /** Filter output lines by pattern */
+  grep?: string;
+  /**
+   * Semantic element selector - filters elements by role or xpath
+   *
+   * Provides clear separation from grep (text filtering):
+   * - `select` filters elements by structure/semantics
+   * - `grep` filters by text content/attributes
+   *
+   * Supports two selector types:
+   * 1. Role selectors: 'button', 'link', 'textbox'
+   * 2. XPath patterns: '//main//button', '/body/nav//*'
+   *    - XPath unions use `|` operator: '//button | //link'
+   *
+   * @example Role selector
+   * ```typescript
+   * snapshot({ select: 'button', grep: 'submit*' })
+   * // Finds buttons containing "submit"
+   * ```
+   *
+   * @example XPath selector
+   * ```typescript
+   * snapshot({ select: '//main//button' })
+   * // Finds buttons within main landmark
+   * ```
+   *
+   * @example XPath unions
+   * ```typescript
+   * snapshot({ select: '//button | //link' })
+   * // Finds buttons or links using XPath union operator
+   * ```
+   */
+  select?: string;
   /** Max chars per section in content mode */
   maxLength?: number;
 }

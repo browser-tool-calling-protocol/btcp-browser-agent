@@ -1,0 +1,95 @@
+PAGE: http://localhost/ | Untitled | viewport=1024x768
+SNAPSHOT: elements=789 refs=92
+
+LINK "Gmail" @ref:0 /header#gb/a
+LINK "Search for Images" @ref:1 /header#gb/a
+BUTTON "Search Labs" @ref:2 /header#gb/a
+BUTTON "Google apps" @ref:3 /header#gb/div#gbwa[3]/a
+BUTTON "Google Account: Minh Luc (luk.mink@gmail.com)" @ref:4 /header#gb/a
+BUTTON "close" @ref:5 /dialog#spch-dlg/div#spch/button#spchx
+BUTTON "Upload files or images" @ref:6 /form/button
+MENUITEM "Upload image" @ref:7 /form/ul/li[1]/button
+MENUITEM "Upload file" @ref:8 /form/ul/li[2]/button
+TEXTBOX @ref:9 [type=file] /form/input[1]
+TEXTBOX @ref:10 [type=file] /form/input[2]
+BUTTON "Remove file attachment" @ref:11 /form/button
+COMBOBOX "Search" @ref:12 (expanded) /form/textarea#APjFqb
+BUTTON "Clear" @ref:13 /form
+BUTTON "Search by voice" @ref:14 /form
+BUTTON "Search by image" @ref:15 /form
+LINK ".plR5qb { align-self: center; background: inher..." @ref:16 /form/button
+BUTTON "Close Choose what you’re giving feedback on" @ref:17 /form/div#_xu13aYOzGJPt1e8P7drSmAs_5
+LISTBOX "weather journal .MagqMc .ZFiwCf { background-co..." @ref:18 /form/div#Alh6id[2]/ul
+OPTION "weather journal" @ref:19 /form/div#Alh6id[2]/ul/li[1]/div#jZ2SBf[1]
+BUTTON "See more" @ref:20 /form/div#Alh6id[2]/ul/li[1]
+BUTTON "Delete weather journal from search history" @ref:21 /form/div#Alh6id[2]/ul/li[1]/div#MFb78d[3]
+OPTION "weather" @ref:22 /form/div#Alh6id[2]/ul/li[2]/div#ERWdKc[1]
+BUTTON "See more" @ref:23 /form/div#Alh6id[2]/ul/li[2]
+BUTTON "Delete weather from search history" @ref:24 /form/div#Alh6id[2]/ul/li[2]/div#GwAatf[3]
+OPTION "wuthering wave" @ref:25 /form/div#Alh6id[2]/ul/li[3]/div#c7mM1c[1]
+BUTTON "See more" @ref:26 /form/div#Alh6id[2]/ul/li[3]
+BUTTON "Delete w3c llm model context from search history" @ref:27 /form/div#Alh6id[2]/ul/li[3]/div#Nn72lb[3]
+OPTION "wuthering" @ref:28 /form/div#Alh6id[2]/ul/li[4]/div#Zrbbw[1]
+BUTTON "See more" @ref:29 /form/div#Alh6id[2]/ul/li[4]
+BUTTON "Delete hello from search history" @ref:30 /form/div#Alh6id[2]/ul/li[4]/div#VTWCve[3]
+OPTION "weather in boston now" @ref:31 /form/div#Alh6id[2]/ul/li[5]/div#sBQTL[1]
+BUTTON "See more" @ref:32 /form/div#Alh6id[2]/ul/li[5]
+BUTTON "Delete openai api from search history" @ref:33 /form/div#Alh6id[2]/ul/li[5]/div#qaMLu[3]
+OPTION "weather in denver" @ref:34 /form/div#Alh6id[2]/ul/li[6]/div#vTtioc[1]
+BUTTON "See more" @ref:35 /form/div#Alh6id[2]/ul/li[6]
+BUTTON "Delete playwright mcp from search history" @ref:36 /form/div#Alh6id[2]/ul/li[6]/div#z2JPDe[3]
+OPTION "weather new york city" @ref:37 /form/div#Alh6id[2]/ul/li[7]/div#gLuoSb[1]
+BUTTON "See more" @ref:38 /form/div#Alh6id[2]/ul/li[7]
+BUTTON "Delete apify from search history" @ref:39 /form/div#Alh6id[2]/ul/li[7]/div#JompMd[3]
+OPTION "weather uk" @ref:40 /form/div#Alh6id[2]/ul/li[8]/div#mdzGzd[1]
+BUTTON "See more" @ref:41 /form/div#Alh6id[2]/ul/li[8]
+BUTTON "Delete pageindex github from search history" @ref:42 /form/div#Alh6id[2]/ul/li[8]/div#OFppPd[3]
+OPTION "weather vietnam" @ref:43 /form/div#Alh6id[2]/ul/li[9]/div#hwdq1[1]
+BUTTON "See more" @ref:44 /form/div#Alh6id[2]/ul/li[9]
+BUTTON "Delete casl like from search history" @ref:45 /form/div#Alh6id[2]/ul/li[9]/div#hja9S[3]
+OPTION "weather dalat" @ref:46 /form/div#Alh6id[2]/ul/li[10]/div#HFKcI[1]
+BUTTON "See more" @ref:47 /form/div#Alh6id[2]/ul/li[10]
+BUTTON "Delete ai studio from search history" @ref:48 /form/div#Alh6id[2]/ul/li[10]/div#ukuVI[3]
+LISTBOX @ref:49 /form/div#shJ2Vb[3]/ul
+OPTION @ref:50 /form/li#YMXe[1]
+BUTTON "See more" @ref:51 /form/li#YMXe[1]
+BUTTON ".JCHpcb:hover, .LvqzR .JCHpcb { color: #1558d6;..." @ref:52 /form/li#YMXe[1]
+OPTION @ref:53 /form/li#d6ItKb[2]/div#fU0xAb
+BUTTON "Word pronunciation" @ref:54 /form/li#d6ItKb[2]/div#fU0xAb
+OPTION @ref:55 /form/li#mitGyb[3]
+BUTTON "Delete" @ref:56 /form/li#mitGyb[3]
+OPTION @ref:57 /form/div#fU0xAb[6]
+BUTTON "Word pronunciation" @ref:58 /form/div#fU0xAb[6]
+OPTION @ref:59 /form/li#TN4rFf[4]
+BUTTON "Google Search" @ref:60 [type=submit] /form/input[1]
+BUTTON "I'm Feeling Lucky" @ref:61 [type=submit] /form/input[2]
+BUTTON "Report inappropriate predictions" @ref:62 /form
+BUTTON "See more" @ref:63 /form/div#TWnylf[6]/g-popup#ow16
+MENUITEM "Dismiss" @ref:64 /form/div#TWnylf[6]/g-popup#ow16
+OPTION @ref:65 /form/div#dh215c[7]
+BUTTON "Google Search" @ref:66 [type=submit] /form/input[1]
+BUTTON "I'm Feeling Lucky" @ref:67 [type=submit] /form/input[2]
+TEXTBOX @ref:68 [type=hidden] /form/div#tophf[2]/input[1]
+TEXTBOX @ref:69 [type=hidden] /form/div#tophf[2]/input[2]
+TEXTBOX @ref:70 [type=hidden] /form/div#tophf[2]/input[3]
+TEXTBOX @ref:71 [type=hidden] /form/div#tophf[2]/input[4]
+TEXTBOX @ref:72 [type=hidden] /form/div#tophf[2]/input[5]
+LINK "Tiếng Việt" @ref:73 /div[3]/div#SIvCob/a[1]
+LINK "Français" @ref:74 /div[3]/div#SIvCob/a[2]
+LINK "繁體中文" @ref:75 /div[3]/div#SIvCob/a[3]
+LINK "About" @ref:76 /a[1]
+LINK "Advertising" @ref:77 /a[2]
+LINK "Business" @ref:78 /a[3]
+LINK "How Search works" @ref:79 /a[4]
+LINK "Privacy" @ref:80 /a[1]
+LINK "Terms" @ref:81 /a[2]
+BUTTON "Settings" @ref:82 /div
+MENUITEM "Search settings" @ref:83 /a
+MENUITEM "Advanced search" @ref:84 /a
+MENUITEM "Your data in Search" @ref:85 /a
+MENUITEM "Search history" @ref:86 /a
+MENUITEM "Search help" @ref:87 /a
+MENUITEM "Send feedback" @ref:88 /span
+MENUITEM ".tFYjZe { align-items: center; display: flex; j..." @ref:89 /div#YUIDDb
+LINK "Dark theme: Off" @ref:90 /div#YUIDDb
+TEXTBOX @ref:91 /textarea

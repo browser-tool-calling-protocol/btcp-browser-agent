@@ -1,0 +1,281 @@
+PAGE: http://localhost/ | Untitled | viewport=1024x768
+SNAPSHOT: elements=2829 refs=278
+
+BUTTON "bỏ qua nội dung chính" @ref:0 /div#main[1]/section/button
+LINK "Kênh Người Bán" @ref:1 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/a
+LINK "Tải ứng dụng" @ref:2 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/div#pc-drawer-id-0[1]/a#temporaryId
+LINK "Kết nối Facebook" @ref:3 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/a.header-navbar-background[1]
+LINK "Kết nối Instagram!" @ref:4 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/a.header-navbar-background[2]
+BUTTON "Thông báo" @ref:5 /header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/li.navbar__link[1]/div#stardust-popover1
+LINK "Thông báo" @ref:6 /div.navbar-wrapper[1]/nav.container/ul.navbar__links/li.navbar__link[1]/div#stardust-popover1/a
+LINK "Hỗ Trợ" @ref:7 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/a.navbar__link
+BUTTON "Tiếng Việt" @ref:8 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/li.navbar__link[2]
+BUTTON "minhlucvan" @ref:9 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/li.navbar__link
+LINK @ref:10 /div#main[1]/header/div.container/a
+COMBOBOX "Tìm trong Thời Trang Nam" @ref:11 [maxlength=128] /div#main[1]/header/div.container/form/input
+COMBOBOX "Trong Thời Trang Nam" @ref:12 /div#main[1]/header/div.container/form/button
+COMBOBOX @ref:13 /div#main[1]/header/div.container/form/select
+OPTION "Trong Thời Trang Nam" @ref:14 /div#main[1]/header/div.container/form/select
+OPTION "Trong Shopee" @ref:15 /div#main[1]/header/div.container/form/select
+BUTTON @ref:16 /div#main[1]/header/div.container/form/button.btn
+LINK "Dây Sạc Type C" @ref:17 /div#main[1]/header/div.container/a[1]
+LINK "Outin Nano" @ref:18 /div#main[1]/header/div.container/a[2]
+LINK "Sale 1k Điện Thoại" @ref:19 /div#main[1]/header/div.container/a[3]
+LINK "Bình Pha Cà Phê" @ref:20 /div#main[1]/header/div.container/a[4]
+LINK "Áo Khoác Nam" @ref:21 /div#main[1]/header/div.container/a[5]
+LINK "Dây Sạc Macbook Pro" @ref:22 /div#main[1]/header/div.container/a[6]
+LINK "Vòi Nước Bồn Rửa Chén" @ref:23 /div#main[1]/header/div.container/a[7]
+LINK "Giày 0 Đồng" @ref:24 /div#main[1]/header/div.container/a[8]
+LINK "16 Pro Max 256 Viettel" @ref:25 /div#main[1]/header/div.container/a[9]
+LINK "iPhone 14 Pro Max Giá Rẻ 1k" @ref:26 /div#main[1]/header/div.container/a[10]
+BUTTON "Shopping Cart Icon Shopping Cart number of item..." @ref:27 /div#main[1]/header/div.container/div#cart_drawer_target_id
+LINK "Shopping Cart Icon Shopping Cart number of item..." @ref:28 /div#main[1]/header/div.container/div#cart_drawer_target_id/div.cart-drawer-container/a#cart_drawer_target_id
+LINK "Shopee Mall" @ref:29 /div#main[1]/div.container[2]/a[1]
+LINK "Xem tất cả" @ref:30 /div#main[1]/div.container[2]/a[2]
+LINK "coolmate" @ref:31 /div#main[1]/div.container[2]/ul/li[1]/a
+LINK "torano official" @ref:32 /div#main[1]/div.container[2]/ul/li[1]/a
+LINK "guzado" @ref:33 /div#main[1]/div.container[2]/ul/li[2]/a
+LINK "nguonhangthoitrang" @ref:34 /div#main[1]/div.container[2]/ul/li[2]/a
+LINK "jbagy official" @ref:35 /div#main[1]/div.container[2]/ul/li[3]/a
+LINK "poloman" @ref:36 /div#main[1]/div.container[2]/ul/li[3]/a
+LINK "roway" @ref:37 /div#main[1]/div.container[2]/ul/li[4]/a
+LINK "teelab official" @ref:38 /div#main[1]/div.container[2]/ul/li[4]/a
+LINK "thebadgod" @ref:39 /div#main[1]/div.container[2]/ul/li[5]/a
+LINK "pealovn" @ref:40 /div#main[1]/div.container[2]/ul/li[5]/a
+LINK "onoff official" @ref:41 /div#main[1]/div.container[2]/ul/li[6]/a
+LINK "5s official" @ref:42 /div#main[1]/div.container[2]/ul/li[6]/a
+LINK "simpson" @ref:43 /div#main[1]/div.container[2]/ul/li[7]/a
+LINK "karants" @ref:44 /div#main[1]/div.container[2]/ul/li[7]/a
+LINK "sp" @ref:45 /div#main[1]/div.container[2]/ul/li[8]/a
+LINK "boo online" @ref:46 /div#main[1]/div.container[2]/ul/li[8]/a
+LINK "cloudzy official" @ref:47 /div#main[1]/div.container[2]/ul/li[9]/a
+LINK "akuba" @ref:48 /div#main[1]/div.container[2]/ul/li[9]/a
+LINK "icon denim" @ref:49 /div#main[1]/div.container[2]/ul/li[10]/a
+LINK "tsla" @ref:50 /div#main[1]/div.container[2]/ul/li[10]/a
+LINK "paradox" @ref:51 /div#main[1]/div.container[2]/ul/li[11]/a
+LINK "patternvn" @ref:52 /div#main[1]/div.container[2]/ul/li[11]/a
+LINK "morpheus sofy" @ref:53 /div#main[1]/div.container[2]/ul/li[12]/a
+LINK "Xem tất cả" @ref:54 /div#main[1]/div.container[2]/ul/li[12]/a
+BUTTON @ref:55 /div#main[1]/div.container[2]
+BUTTON @ref:56 /div#main[1]/div.container[2]
+LINK "từ19.800₫" @ref:57 /div#main[1]/div.container[3]/ul/li[1]/a
+LINK "từ2.000₫" @ref:58 /div#main[1]/div.container[3]/ul/li[2]/a
+LINK "từ9.196₫" @ref:59 /div#main[1]/div.container[3]/ul/li[3]/a
+LINK "từ4.000₫" @ref:60 /div#main[1]/div.container[3]/ul/li[4]/a
+LINK "từ5.000₫" @ref:61 /div#main[1]/div.container[3]/ul/li[5]/a
+BUTTON @ref:62 /div#main[1]/div.container[3]
+BUTTON @ref:63 /div#main[1]/div.container[3]
+LINK "từ4.000₫" @ref:64 /div#main[1]/div.container[3]/ul/li[1]/a
+LINK "từ8.999₫" @ref:65 /div#main[1]/div.container[3]/ul/li[2]/a
+LINK "từ1.000₫" @ref:66 /div#main[1]/div.container[3]/ul/li[3]/a
+LINK "từ20.000₫" @ref:67 /div#main[1]/div.container[3]/ul/li[4]/a
+LINK "từ40.000₫" @ref:68 /div#main[1]/div.container[3]/ul/li[5]/a
+BUTTON @ref:69 /div#main[1]/div.container[3]
+BUTTON @ref:70 /div#main[1]/div.container[3]
+LINK "Tất cả Danh mục" @ref:71 /div#main[1]/div.container[4]/a
+LINK "Thời Trang Nam" @ref:72 /div#main[1]/div.container[4]/a
+LINK "Áo Khoác" @ref:73 /div#main[1]/div.container[4]/a[1]
+LINK "Áo Vest và Blazer" @ref:74 /div#main[1]/div.container[4]/a[2]
+LINK "Áo Hoodie, Áo Len & Áo Nỉ" @ref:75 /div#main[1]/div.container[4]/a[3]
+LINK "Quần Jeans" @ref:76 /div#main[1]/div.container[4]/a[4]
+LINK "Quần Dài/Quần Âu" @ref:77 /div#main[1]/div.container[4]/a[5]
+LINK "Quần Short" @ref:78 /div#main[1]/div.container[4]/a[1]
+LINK "Áo" @ref:79 /div#main[1]/div.container[4]/a[2]
+LINK "Áo Ba Lỗ" @ref:80 /div#main[1]/div.container[4]/a[3]
+LINK "Đồ Lót" @ref:81 /div#main[1]/div.container[4]/a[4]
+LINK "Đồ Ngủ" @ref:82 /div#main[1]/div.container[4]/a[5]
+LINK "Đồ Bộ" @ref:83 /div#main[1]/div.container[4]/a[6]
+LINK "Vớ/Tất" @ref:84 /div#main[1]/div.container[4]/a[7]
+LINK "Trang Phục Truyền Thống" @ref:85 /div#main[1]/div.container[4]/a[8]
+LINK "Đồ Hóa Trang" @ref:86 /div#main[1]/div.container[4]/a[9]
+LINK "Trang Phục Ngành Nghề" @ref:87 /div#main[1]/div.container[4]/a[10]
+LINK "Khác" @ref:88 /div#main[1]/div.container[4]/a[11]
+LINK "Trang Sức Nam" @ref:89 /div#main[1]/div.container[4]/a[12]
+LINK "Kính Mắt Nam" @ref:90 /div#main[1]/div.container[4]/a[13]
+LINK "Thắt Lưng Nam" @ref:91 /div#main[1]/div.container[4]/a[14]
+LINK "Cà vạt & Nơ cổ" @ref:92 /div#main[1]/div.container[4]/a[15]
+LINK "Phụ Kiện Nam" @ref:93 /div#main[1]/div.container[4]/a[16]
+CHECKBOX "TP. Hồ Chí Minh" @ref:94 [type=checkbox] /div#main[1]/div.container[4]/label/input
+CHECKBOX "Đà Nẵng" @ref:95 [type=checkbox] /div#main[1]/div.container[4]/label/input
+CHECKBOX "Hưng Yên" @ref:96 [type=checkbox] /div#main[1]/div.container[4]/label/input
+CHECKBOX "Đồng Nai" @ref:97 [type=checkbox] /div#main[1]/div.container[4]/label/input
+BUTTON "Thêm" @ref:98 /div#main[1]/div.container[4]/button
+BUTTON "Thêm" @ref:99 /div#main[1]/div.container[4]/button
+CHECKBOX "AVOCADO" @ref:100 [type=checkbox] /div#main[1]/div.container[4]/label/input
+CHECKBOX "COOLMATE" @ref:101 [type=checkbox] /div#main[1]/div.container[4]/label/input
+CHECKBOX "L66" @ref:102 [type=checkbox] /div#main[1]/div.container[4]/label/input
+CHECKBOX "VESCA" @ref:103 [type=checkbox] /div#main[1]/div.container[4]/label/input
+BUTTON "Thêm" @ref:104 /div#main[1]/div.container[4]/button
+TEXTBOX @ref:105 [maxlength=13] /div#main[1]/div.container[4]/input[1]
+TEXTBOX @ref:106 [maxlength=13] /div#main[1]/div.container[4]/input[2]
+BUTTON "Áp dụng" @ref:107 /div#main[1]/div.container[4]/button
+BUTTON "Thêm" @ref:108 /div#main[1]/div.container[4]/button
+BUTTON "Thêm" @ref:109 /div#main[1]/div.container[4]/button
+BUTTON "Thêm" @ref:110 /div#main[1]/div.container[4]/button
+RADIO @ref:111 [type=radio] /div#main[1]/div.container[4]/input
+RADIO @ref:112 [type=radio] /div#main[1]/div.container[4]/input
+RADIO @ref:113 [type=radio] /div#main[1]/div.container[4]/input
+RADIO @ref:114 [type=radio] /div#main[1]/div.container[4]/input
+BUTTON "Thêm" @ref:115 /div#main[1]/div.container[4]/button
+BUTTON "Thêm" @ref:116 /div#main[1]/div.container[4]/button
+BUTTON "Xóa tất cả" @ref:117 /div#main[1]/div.container[4]/button
+BUTTON "Phổ biến" @ref:118 /div#main[1]/div.container[4]/section/section[1]/button[1]
+BUTTON "Mới nhất" @ref:119 /div#main[1]/div.container[4]/section/section[1]/button[2]
+BUTTON "Bán chạy" @ref:120 /div#main[1]/div.container[4]/section/section[1]/button[3]
+COMBOBOX "Giá" @ref:121 /div#main[1]/div.container[4]/section/section[2]/button
+LINK @ref:122 /div#main[1]/div.container[4]/section/a[1]
+LINK "Thời Trang Nam cat" @ref:123 /div#main[1]/div.container[4]/section/a[2]
+LINK "-45% Thắt lưng nam da cao cấp, dây lưng nam mặt..." @ref:124 /div.container[4]/section/ul.row/li[1]/div.active:shadow-active/a.contents
+LINK "-32% [SALE TẾT]Combo 5 quần lót sịp nam Trunk C..." @ref:125 /div.container[4]/section/ul.row/li[2]/div.active:shadow-active/a.contents
+LINK "-7% Lố 10 đôi tất nam Zara Men cổ ngắn 28.000₫ ..." @ref:126 /div.container[4]/section/ul.row/li[3]/div.active:shadow-active/a.contents
+LINK "-9% Tất đá bóng chống trơn Combo 2-3 vớ đá banh..." @ref:127 /div.container[4]/section/ul.row/li[4]/div.active:shadow-active/a.contents
+LINK "-44% 🔥 SỐC 🔥 Thắt lưng nam da cao cấp khóa hợ..." @ref:128 /div.container[4]/section/ul.row/li[5]/div.active:shadow-active/a.contents
+LINK "-25% [ COMBO 5C] Quần Lót Nam Boxer Thun Lạnh K..." @ref:129 /div.container[4]/section/ul.row/li[6]/div.active:shadow-active/a.contents
+LINK "-25% [SALE TẾT]Combo 5 quần lót nam tam giác Co..." @ref:130 /div.container[4]/section/ul.row/li[7]/div.active:shadow-active/a.contents
+LINK "Thắt lưng mặt xoay nam thắt lưng nam cao cấp th..." @ref:131 /div.container[4]/section/ul.row/li[8]/div.active:shadow-active/a.contents
+LINK "-42% Áo Chống Nắng Nam Thông Hơi Túi Khoá Rẻ Vô..." @ref:132 /div.container[4]/section/ul.row/li[9]/div.active:shadow-active/a.contents
+LINK "-30% [SALE TẾT]Combo 3 quần lót nam dáng Trunk ..." @ref:133 /div.container[4]/section/ul.row/li[10]/div.active:shadow-active/a.contents
+LINK "-36% Tất nam thể thao dày dặn gân ma sát MATELI..." @ref:134 /div.container[4]/section/ul.row/li[11]/div.active:shadow-active/a.contents
+LINK "-50% Quần lót nam , quần sịp tam giác họa tiết ..." @ref:135 /div.container[4]/section/ul.row/li[12]/div.active:shadow-active/a.contents
+LINK "Dây lưng nam cao cấp, thắt lưng nam caro, dây l..." @ref:136 /div.container[4]/section/ul.row/li[13]/div.active:shadow-active/a.contents
+LINK "-42% Tất chạy bộ Feetures, vớ thể thao cổ ngắn ..." @ref:137 /div.container[4]/section/ul.row/li[14]/div.active:shadow-active/a.contents
+LINK "-29% Quần Sịp Đùi Boxer Nam (40-110kg) cao cấp ..." @ref:138 /div.container[4]/section/ul.row/li[15]/div.active:shadow-active/a.contents
+LINK "-1% Vớ thể thao dày dặn chuyên dụng dành cho na..." @ref:139 /div.container[4]/section/ul.row/li[16]/div.active:shadow-active/a.contents
+LINK "-10% [Combo 5 đôi] Tất vớ bamboo sợi tre cổ tr..." @ref:140 /div.container[4]/section/ul.row/li[17]/div.active:shadow-active/a.contents
+LINK "-74% [Set 10, 5 ĐÔI] Tất nam nữ cổ cao cổ lửng ..." @ref:141 /div.container[4]/section/ul.row/li[18]/div.active:shadow-active/a.contents
+LINK "-4% Thắt lưng nam cao cấp, sang trọg lịch sự LE..." @ref:142 /div.container[4]/section/ul.row/li[19]/div.active:shadow-active/a.contents
+LINK "-8% Tất vớ lười nam GOMTAT chất liệu cotton mềm..." @ref:143 /div.container[4]/section/ul.row/li[20]/div.active:shadow-active/a.contents
+LINK "-37% Combo 5 Quần sịp đùi nam, quần lót boxer n..." @ref:144 /div.container[4]/section/ul.row/li[21]/div.active:shadow-active/a.contents
+LINK "-35% Thắt Lưng Da Nam, dây nịt Khóa Tự Động Cao..." @ref:145 /div.container[4]/section/ul.row/li[22]/div.active:shadow-active/a.contents
+LINK "-31% Quần Sip Nam tam giác Mipass sư tử Menswea..." @ref:146 /div.container[4]/section/ul.row/li[23]/div.active:shadow-active/a.contents
+LINK "-38% Tất chân nam cổ ngắn basic đa dụng, vớ nam..." @ref:147 /div.container[4]/section/ul.row/li[24]/div.active:shadow-active/a.contents
+LINK "-13% Quần lót nam , quần sịp nam tam giác Icon ..." @ref:148 /div.container[4]/section/ul.row/li[25]/div.active:shadow-active/a.contents
+LINK "-32% Thắt lưng mặt xoay nam cao cấp thời trang,..." @ref:149 /div.container[4]/section/ul.row/li[26]/div.active:shadow-active/a.contents
+LINK "-36% Quần Đùi Thể Thao Nam PoLy Cực Đẹp Store N..." @ref:150 /div.container[4]/section/ul.row/li[27]/div.active:shadow-active/a.contents
+LINK "Tất Đá Bóng Chống Trơn Thể Thao, Vớ Chống Trượt..." @ref:151 /div.container[4]/section/ul.row/li[28]/div.active:shadow-active/a.contents
+LINK "-74% Quần lót nam ⚡️ Giá Sốc ⚡️ size 35 -> 99kg..." @ref:152 /div.container[4]/section/ul.row/li[29]/div.active:shadow-active/a.contents
+LINK "-10% [ SIÊU RẺ ] Vớ ZARA NAM , NỮ cổ ngắn thoán..." @ref:153 /div.container[4]/section/ul.row/li[30]/div.active:shadow-active/a.contents
+LINK @ref:154 /div#main[1]/div.container[4]/section/nav/a[1]
+LINK "1" @ref:155 /div#main[1]/div.container[4]/section/nav/a[2]
+LINK "2" @ref:156 /div#main[1]/div.container[4]/section/nav/a[3]
+LINK "3" @ref:157 /div#main[1]/div.container[4]/section/nav/a[4]
+LINK "4" @ref:158 /div#main[1]/div.container[4]/section/nav/a[5]
+LINK "5" @ref:159 /div#main[1]/div.container[4]/section/nav/a[6]
+LINK "Thời Trang Nam cat" @ref:160 /div#main[1]/div.container[4]/section/nav/a[8]
+LINK "Trang Chủ" @ref:161 /div#main[1]/footer/section[1]/a
+LINK "1. Áo khoác da nam, áo da thật Ftt Leather Race..." @ref:162 /div#main[1]/footer/section[2]/a[1]
+LINK "₫4.450.000" @ref:163 /div#main[1]/footer/section[2]/a[2]
+LINK "2. Áo Khoác Candles True Compound Varsity Jacke..." @ref:164 /div#main[1]/footer/section[2]/a[3]
+LINK "₫1.667.500" @ref:165 /div#main[1]/footer/section[2]/a[4]
+LINK "3. Áo Da Nam Áo Khoác Nam Da Dê BUTUNI Martin R..." @ref:166 /div#main[1]/footer/section[2]/a[5]
+LINK "₫6.500.000" @ref:167 /div#main[1]/footer/section[2]/a[6]
+LINK "4. Áo phông unisex MIKENCO VII Monogram Jersey ..." @ref:168 /div#main[1]/footer/section[2]/a[7]
+LINK "₫990.000" @ref:169 /div#main[1]/footer/section[2]/a[8]
+LINK "5. [DEAL MỞ BÁN] Áo Phông GC Thêu Full Chất Cot..." @ref:170 /div#main[1]/footer/section[2]/a[9]
+LINK "₫317.363" @ref:171 /div#main[1]/footer/section[2]/a[10]
+LINK "6. Bộ áo Phông Unisex nam nữ DENVER Chất Liệu C..." @ref:172 /div#main[1]/footer/section[2]/a[11]
+LINK "₫550.000" @ref:173 /div#main[1]/footer/section[2]/a[12]
+LINK "7. Quần Ngủ Nam Bami Home Mặc Nhà Chất Liệu Thu..." @ref:174 /div#main[1]/footer/section[2]/a[13]
+LINK "₫79.000" @ref:175 /div#main[1]/footer/section[2]/a[14]
+LINK "8. Quần Jeans Nam Bootcut Lưng Cao Raw Denim ph..." @ref:176 /div#main[1]/footer/section[2]/a[15]
+LINK "₫1.265.000" @ref:177 /div#main[1]/footer/section[2]/a[16]
+LINK "9. Set Bộ Áo Thun Unisex Nam/ Nữ M.L.B Chất Liệ..." @ref:178 /div#main[1]/footer/section[2]/a[17]
+LINK "₫549.600" @ref:179 /div#main[1]/footer/section[2]/a[18]
+LINK "10. Quần jeans nam suông ống rộng vải denim, nh..." @ref:180 /div#main[1]/footer/section[2]/a[19]
+LINK "₫185.000" @ref:181 /div#main[1]/footer/section[2]/a[20]
+LINK "thời trang nam yame" @ref:182 /div#main[1]/footer/section[3]/a[1]
+LINK "phi boutique-thời trang nam" @ref:183 /div#main[1]/footer/section[3]/a[2]
+LINK "kính mát thời trang nam" @ref:184 /div#main[1]/footer/section[3]/a[3]
+LINK "mắt kính thời trang nam" @ref:185 /div#main[1]/footer/section[3]/a[4]
+LINK "thời trang nam" @ref:186 /div#main[1]/footer/section[3]/a[5]
+LINK "giày thời trang nam" @ref:187 /div#main[1]/footer/section[3]/a[6]
+LINK "balo thời trang nam" @ref:188 /div#main[1]/footer/section[3]/a[7]
+LINK "torano thời trang nam" @ref:189 /div#main[1]/footer/section[3]/a[8]
+LINK "hoa mừng thọ" @ref:190 /div#main[1]/footer/section[3]/a[9]
+LINK "thiệp chúc xuân 2025" @ref:191 /div#main[1]/footer/section[3]/a[10]
+LINK "búp bê trang điểm" @ref:192 /div#main[1]/footer/section[3]/a[11]
+LINK "điện thoại samsung s25 plus" @ref:193 /div#main[1]/footer/section[3]/a[12]
+LINK "đồ chơi xe đổ rác" @ref:194 /div#main[1]/footer/section[3]/a[13]
+LINK "ô tô mazda cx5" @ref:195 /div#main[1]/footer/section[3]/a[14]
+LINK "quà mừng thọ" @ref:196 /div#main[1]/footer/section[3]/a[15]
+LINK "micropipet" @ref:197 /div#main[1]/footer/section[3]/a[16]
+LINK "trò chơi máy xúc" @ref:198 /div#main[1]/footer/section[3]/a[17]
+LINK "mcqueen cars" @ref:199 /div#main[1]/footer/section[3]/a[18]
+LINK "tàu lửa thomas" @ref:200 /div#main[1]/footer/section[3]/a[19]
+LINK "tàu lửa" @ref:201 /div#main[1]/footer/section[3]/a[20]
+LINK "musaking" @ref:202 /div#main[1]/footer/section[3]/a[21]
+LINK "đồ vest hoà bình" @ref:203 /div#main[1]/footer/section[3]/a[22]
+LINK "áo mưa quảng nam" @ref:204 /div#main[1]/footer/section[3]/a[23]
+LINK "viva star" @ref:205 /div#main[1]/footer/section[3]/a[24]
+LINK "áo real madrid 2017" @ref:206 /div#main[1]/footer/section[3]/a[25]
+LINK "quần áo nam form rộng" @ref:207 /div#main[1]/footer/section[3]/a[26]
+LINK "hades vn" @ref:208 /div#main[1]/footer/section[3]/a[27]
+LINK "longtee" @ref:209 /div#main[1]/footer/section[3]/a[28]
+LINK "áo thun puma" @ref:210 /div#main[1]/footer/section[3]/a[29]
+LINK "áo polo cặp" @ref:211 /div#main[1]/footer/section[3]/a[30]
+LINK "thời trang nam" @ref:212 /div#main[1]/footer/section[4]/a
+LINK "phụ kiện nam" @ref:213 /div#main[1]/footer/section[4]/a
+LINK "áo" @ref:214 /div#main[1]/footer/section[4]/ul[1]/li[2]/a
+LINK "áo thun nam" @ref:215 /div#main[1]/footer/section[4]/ul[2]/li[1]/a
+LINK "áo sơ mi nam" @ref:216 /div#main[1]/footer/section[4]/ul[3]/li[2]/a
+LINK "quần kaki" @ref:217 /div#main[1]/footer/section[4]/ul[3]/li[3]/a
+LINK "quần tây âu" @ref:218 /div#main[1]/footer/section[4]/ul[4]/li[2]/a
+LINK "quần jeans" @ref:219 /div#main[1]/footer/section[4]/a
+LINK "áo vest" @ref:220 /div#main[1]/footer/section[4]/a
+LINK "bột giặt" @ref:221 /div#main[1]/footer/section[4]/ul[5]/li[1]/a
+LINK "nước xả" @ref:222 /div#main[1]/footer/section[4]/ul[5]/li[5]/a
+LINK "móc" @ref:223 /div#main[1]/footer/section[4]/ul[6]/li[2]/a
+LINK "Shopee Blog" @ref:224 /div#main[1]/footer/section[4]/a
+LINK "phối đồ nam" @ref:225 /div#main[1]/footer/section[4]/a
+LINK "Cách phối đồ nam đơn giản" @ref:226 /div#main[1]/footer/section[4]/ul[7]/li[1]/a
+LINK "Cách phối đồ nam mùa đông ấm áp mà vẫn cuốn hút" @ref:227 /div#main[1]/footer/section[4]/ul[7]/li[2]/a
+LINK "Cách phối màu quần áo nam theo chuẩn bánh xe mà..." @ref:228 /div#main[1]/footer/section[4]/ul[7]/li[3]/a
+LINK "Trang phục đi đám cưới cho nam cuốn hút nhất" @ref:229 /div#main[1]/footer/section[4]/ul[7]/li[4]/a
+LINK "Cách phối đồ nam lùn giúp hack chiều cao hiệu quả" @ref:230 /div#main[1]/footer/section[4]/ul[7]/li[5]/a
+LINK "Shopee" @ref:231 /div#main[1]/footer/section[4]/a
+LINK "Voucher Xtra" @ref:232 /div#main[1]/footer/section[4]/a
+LINK "Shopee Mall" @ref:233 /div#main[1]/footer/section[4]/a
+LINK "Trung Tâm Trợ Giúp Shopee" @ref:234 /div#main[1]/footer/ul/li[1]/a
+LINK "Shopee Blog" @ref:235 /div#main[1]/footer/ul/li[2]/a
+LINK "Shopee Mall" @ref:236 /div#main[1]/footer/ul/li[3]/a
+LINK "Hướng Dẫn Mua Hàng/Đặt Hàng" @ref:237 /div#main[1]/footer/ul/li[4]/a
+LINK "Hướng Dẫn Bán Hàng" @ref:238 /div#main[1]/footer/ul/li[5]/a
+LINK "Ví ShopeePay" @ref:239 /div#main[1]/footer/ul/li[6]/a
+LINK "Shopee Xu" @ref:240 /div#main[1]/footer/ul/li[7]/a
+LINK "Đơn Hàng" @ref:241 /div#main[1]/footer/ul/li[8]/a
+LINK "Trả Hàng/Hoàn Tiền" @ref:242 /div#main[1]/footer/ul/li[9]/a
+LINK "Liên Hệ Shopee" @ref:243 /div#main[1]/footer/ul/li[10]/a
+LINK "Chính Sách Bảo Hành" @ref:244 /div#main[1]/footer/ul/li[11]/a
+LINK "Về Shopee" @ref:245 /div#main[1]/footer/ul/li[1]/a
+LINK "Tuyển Dụng" @ref:246 /div#main[1]/footer/ul/li[2]/a
+LINK "Điều Khoản Shopee" @ref:247 /div#main[1]/footer/ul/li[3]/a
+LINK "Chính Sách Bảo Mật" @ref:248 /div#main[1]/footer/ul/li[4]/a
+LINK "Shopee Mall" @ref:249 /div#main[1]/footer/ul/li[5]/a
+LINK "Kênh Người Bán" @ref:250 /div#main[1]/footer/ul/li[6]/a
+LINK "Flash Sale" @ref:251 /div#main[1]/footer/ul/li[7]/a
+LINK "Tiếp Thị Liên Kết" @ref:252 /div#main[1]/footer/ul/li[8]/a
+LINK "Liên Hệ Truyền Thông" @ref:253 /div#main[1]/footer/ul/li[9]/a
+LINK "Facebook" @ref:254 /div#main[1]/footer/ul/li[1]/a
+LINK "Instagram" @ref:255 /div#main[1]/footer/ul/li[2]/a
+LINK "LinkedIn" @ref:256 /div#main[1]/footer/ul/li[3]/a
+LINK "web" @ref:257 /div#main[1]/footer/a
+LINK "web" @ref:258 /div#main[1]/footer/a[1]
+LINK "web" @ref:259 /div#main[1]/footer/a[2]
+LINK "web" @ref:260 /div#main[1]/footer/a[3]
+LINK "Argentina" @ref:261 /div#main[1]/footer/a
+LINK "Singapore" @ref:262 /div#main[1]/footer/a
+LINK "Indonesia" @ref:263 /div#main[1]/footer/a
+LINK "Thái Lan" @ref:264 /div#main[1]/footer/a
+LINK "Malaysia" @ref:265 /div#main[1]/footer/a
+LINK "Việt Nam" @ref:266 /div#main[1]/footer/a
+LINK "Philippines" @ref:267 /div#main[1]/footer/a
+LINK "Brazil" @ref:268 /div#main[1]/footer/a
+LINK "México" @ref:269 /div#main[1]/footer/a
+LINK "Đài Loan" @ref:270 /div#main[1]/footer/a
+LINK "Chính sách bảo mật" @ref:271 /div#main[1]/footer/a
+LINK "Quy chế hoạt động" @ref:272 /div#main[1]/footer/a
+LINK "Chính sách vận chuyển" @ref:273 /div#main[1]/footer/a
+LINK "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN" @ref:274 /div#main[1]/footer/a
+LINK "18367" @ref:275 /div#main[1]/footer/a[1]
+LINK "29" @ref:276 /div#main[1]/footer/a[2]
+LINK "170" @ref:277 /div#main[1]/footer/a[3]

@@ -1,0 +1,682 @@
+PAGE: http://localhost/ | Shopee Việt Nam | Mua Sắm Online | viewport=1024x768
+SNAPSHOT: elements=3932 refs=679
+
+BUTTON "bỏ qua nội dung chính" @ref:0 /div#main[1]/section/button
+LINK "Kênh Người Bán" @ref:1 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/a[1]
+LINK "Trở thành Người bán Shopee" @ref:2 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/a[2]
+LINK "Tải ứng dụng" @ref:3 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/div#pc-drawer-id-2[1]/a#temporaryId
+LINK "Kết nối Facebook" @ref:4 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/a.header-navbar-background[1]
+LINK "Kết nối Instagram!" @ref:5 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/a.header-navbar-background[2]
+BUTTON "Thông báo" @ref:6 /header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/li.navbar__link[1]/div#stardust-popover6
+LINK "Thông báo" @ref:7 /div.navbar-wrapper[1]/nav.container/ul.navbar__links/li.navbar__link[1]/div#stardust-popover6/a
+LINK "Hỗ Trợ" @ref:8 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/a.navbar__link[1]
+BUTTON "Tiếng Việt" @ref:9 /header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/li.navbar__link[2]/div#stardust-popover7
+LINK "Đăng Ký" @ref:10 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/a.navbar__link[2]
+LINK "Đăng Nhập" @ref:11 /div#main[1]/header/div.navbar-wrapper[1]/nav.container/ul.navbar__links/a.navbar__link[3]
+LINK @ref:12 /div#main[1]/header/div.container/a
+COMBOBOX "Shopee bao ship 0Đ - Đăng ký ngay!" @ref:13 [maxlength=128] /div#main[1]/header/div.container/form/input
+BUTTON @ref:14 /div#main[1]/header/div.container/form/button.btn
+LINK "Sục Crocs" @ref:15 /div#main[1]/header/div.container/a[1]
+LINK "Áo Len" @ref:16 /div#main[1]/header/div.container/a[2]
+LINK "Cặp 0 Đồng" @ref:17 /div#main[1]/header/div.container/a[3]
+LINK "Món Ăn Vặt" @ref:18 /div#main[1]/header/div.container/a[4]
+LINK "Máy Ảnh Chụp Ảnh Lấy Liền" @ref:19 /div#main[1]/header/div.container/a[5]
+LINK "Dép Đg Chính Hãng" @ref:20 /div#main[1]/header/div.container/a[6]
+LINK "Đồ Ngủ Ở Nhà" @ref:21 /div#main[1]/header/div.container/a[7]
+LINK "Áo Khoác Hoodie Dày 2 Lớp Mũ To" @ref:22 /div#main[1]/header/div.container/a[8]
+LINK "Son Bóng Chính Hãng" @ref:23 /div#main[1]/header/div.container/a[9]
+LINK "Chắn Bùn Cnc" @ref:24 /div#main[1]/header/div.container/a[10]
+BUTTON "Shopping Cart IconShopping Cart Please log in t..." @ref:25 /div#main[1]/header/div.container/div#cart_drawer_target_id
+LINK "Shopping Cart IconShopping Cart Please log in t..." @ref:26 /div#main[1]/header/div.container/div#cart_drawer_target_id/div.cart-drawer-container/a#cart_drawer_target_id
+LINK "guihang" @ref:27 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[1]/a
+LINK "don dau tien mien phi" @ref:28 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[2]/a
+LINK "larocheposay officialstore" @ref:29 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[3]/a
+LINK "tet sieu sale" @ref:30 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[4]/a
+LINK "shopee xu ly" @ref:31 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[5]/a
+LINK "samsung official store" @ref:32 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[6]/a
+LINK "108166524" @ref:33 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[7]/a
+LINK "guihang" @ref:34 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[8]/a
+LINK "don dau tien mien phi" @ref:35 /div#main[1]/section#HomePageCarouselBannerSection/ul/li[9]/a
+LINK "di cho cung shopeefood giam den 80000d" @ref:36 /div#main[1]/section#HomePageCarouselBannerSection/a
+LINK "shop moi len san moi" @ref:37 /div#main[1]/section#HomePageCarouselBannerSection/a
+LINK "Deal Từ 1.000Đ" @ref:38 /div#main[1]/a[1]
+LINK "Shopee Xử Lý" @ref:39 /div#main[1]/a[2]
+LINK "Deal Hot Giờ Vàng" @ref:40 /div#main[1]/a[3]
+LINK "Shopee Style Voucher 30%" @ref:41 /div#main[1]/a[4]
+LINK "Khách Hàng Thân Thiết" @ref:42 /div#main[1]/a[5]
+LINK "Mã Giảm Giá" @ref:43 /div#main[1]/a[6]
+LINK "Thời Trang Nam" @ref:44 /div#main[1]/div.container[2]/ul/li[1]/a
+LINK "Thời Trang Nữ" @ref:45 /div#main[1]/div.container[2]/ul/li[2]/a
+LINK "Điện Thoại & Phụ Kiện" @ref:46 /div#main[1]/div.container[2]/ul/li[3]/a
+LINK "Mẹ & Bé" @ref:47 /div#main[1]/div.container[2]/ul/li[4]/a
+LINK "Thiết Bị Điện Tử" @ref:48 /div#main[1]/div.container[2]/ul/li[5]/a
+LINK "Nhà Cửa & Đời Sống" @ref:49 /div#main[1]/div.container[2]/ul/li[6]/a
+LINK "Máy Tính & Laptop" @ref:50 /div#main[1]/div.container[2]/ul/li[7]/a
+LINK "Sắc Đẹp" @ref:51 /div#main[1]/div.container[2]/ul/li[8]/a
+LINK "Máy Ảnh & Máy Quay Phim" @ref:52 /div#main[1]/div.container[2]/ul/li[9]/a
+LINK "Sức Khỏe" @ref:53 /div#main[1]/div.container[2]/ul/li[10]/a
+LINK "Đồng Hồ" @ref:54 /div#main[1]/div.container[2]/ul/li[11]/a
+LINK "Giày Dép Nữ" @ref:55 /div#main[1]/div.container[2]/ul/li[12]/a
+LINK "Giày Dép Nam" @ref:56 /div#main[1]/div.container[2]/ul/li[13]/a
+LINK "Túi Ví Nữ" @ref:57 /div#main[1]/div.container[2]/ul/li[14]/a
+LINK "Thiết Bị Điện Gia Dụng" @ref:58 /div#main[1]/div.container[2]/ul/li[15]/a
+LINK "Phụ Kiện & Trang Sức Nữ" @ref:59 /div#main[1]/div.container[2]/ul/li[16]/a
+LINK "Thể Thao & Du Lịch" @ref:60 /div#main[1]/div.container[2]/ul/li[17]/a
+LINK "Bách Hóa Online" @ref:61 /div#main[1]/div.container[2]/ul/li[18]/a
+LINK "Ô Tô & Xe Máy & Xe Đạp" @ref:62 /div#main[1]/div.container[2]/ul/li[19]/a
+LINK "Nhà Sách Online" @ref:63 /div#main[1]/div.container[2]/ul/li[20]/a
+LINK "Balo & Túi Ví Nam" @ref:64 /div#main[1]/div.container[2]/ul/li[21]/a
+LINK "Thời Trang Trẻ Em" @ref:65 /div#main[1]/div.container[2]/ul/li[22]/a
+LINK "Đồ Chơi" @ref:66 /div#main[1]/div.container[2]/ul/li[23]/a
+LINK "Giặt Giũ & Chăm Sóc Nhà Cửa" @ref:67 /div#main[1]/div.container[2]/ul/li[24]/a
+LINK "Chăm Sóc Thú Cưng" @ref:68 /div#main[1]/div.container[2]/ul/li[25]/a
+LINK "Voucher & Dịch Vụ" @ref:69 /div#main[1]/div.container[2]/ul/li[26]/a
+LINK "Dụng cụ và thiết bị tiện ích" @ref:70 /div#main[1]/div.container[2]/ul/li[27]/a
+BUTTON @ref:71 /div#main[1]/div.container[2]
+BUTTON @ref:72 /div#main[1]/div.container[2]
+LINK "click, enter flash sale button Xem tất cả" @ref:73 /div#main[1]/div.container[2]/a
+LINK "VB - Bộ 2 kem chống nắng không gây nhờn rít Vic..." @ref:74 /div#main[1]/div.container[2]/ul/li[1]/a
+LINK "Bộ 2 dao cạo râu cho nam 72 lưỡi thay thế + Tặn..." @ref:75 /div#main[1]/div.container[2]/ul/li[2]/a
+LINK "[Choice] Quần Jeans Wash FA1-2080-25 Cạp Cao, Ố..." @ref:76 /div#main[1]/div.container[2]/ul/li[3]/a
+LINK "[Choice] Áo Hai Dây NH28 Thun Gân Viền Ren Phối..." @ref:77 /div#main[1]/div.container[2]/ul/li[4]/a
+LINK "[Choice] Áo Thun Cổ Trụ Tàu FA1-0018-72 Ôm Dáng..." @ref:78 /div#main[1]/div.container[2]/ul/li[5]/a
+LINK "[Choice] Áo Thun HT53 Tay Ngắn, Cổ Vuông, Dáng ..." @ref:79 /div#main[1]/div.container[2]/ul/li[6]/a
+LINK "[Choice] Áo Thun Cổ Tròn Unisex FA1-2713-2 Form..." @ref:80 /div#main[1]/div.container[2]/ul/li[7]/a
+LINK "NS ĐỒNG HỒ TREO TƯỜNG K THUẬT SỐ LỚN NGÀY TUẦN ..." @ref:81 /div#main[1]/div.container[2]/ul/li[8]/a
+LINK "Quần Lót Nam [ COMBO 5C] boxer nam, quần lót ch..." @ref:82 /div#main[1]/div.container[2]/ul/li[9]/a
+LINK "Mắt kính nữ nam giả cận chữ V râm mát chống tia..." @ref:83 /div#main[1]/div.container[2]/ul/li[10]/a
+LINK "1 Vợt cầu lông KUMPOO K520 PRO chính hãng, căng..." @ref:84 /div#main[1]/div.container[2]/ul/li[11]/a
+LINK "Nước Hoa Xịt Thơm BEAR BABY trẻ em 50ml (tránh ..." @ref:85 /div#main[1]/div.container[2]/ul/li[12]/a
+LINK "Khô cá lóc đồng tháp 1kg phơi tự nhiên, ít mặn,..." @ref:86 /div#main[1]/div.container[2]/ul/li[13]/a
+LINK "CÁP VENTION ETHERNET LAN CAT8 40GPS 2000MHZ CÁP..." @ref:87 /div#main[1]/div.container[2]/ul/li[14]/a
+LINK "[Choice] Áo Mưa Đi Xe Máy FS1-2925-729 Che Phủ ..." @ref:88 /div#main[1]/div.container[2]/ul/li[15]/a
+LINK "Tăm bông silicon vệ sinh tai DÙNG NHIỀU LẦN, bô..." @ref:89 /div#main[1]/div.container[2]/ul/li[16]/a
+BUTTON @ref:90 /div#main[1]/div.container[2]
+BUTTON "click, scroll left to see more" @ref:91 /div#main[1]/div.container[2]
+BUTTON @ref:92 /div#main[1]/div.container[2]
+BUTTON "click, scroll right to see more" @ref:93 /div#main[1]/div.container[2]
+LINK "Shopee Mall" @ref:94 /div#main[1]/div.container[2]/a
+BUTTON "Xem tất cả" @ref:95 /div#main[1]/div.container[2]/button
+LINK "Xem tất cả" @ref:96 /div#main[1]/div.container[2]/button/a
+LINK "cpd" @ref:97 /div#main[1]/div.container[2]/ul/li[1]/a
+LINK "unilever hc" @ref:98 /div#main[1]/div.container[2]/ul/li[2]/a
+LINK "cocoonvietnamofficial" @ref:99 /div#main[1]/div.container[2]/ul/li[3]/a
+LINK "unilever beauty wellbeing" @ref:100 /div#main[1]/div.container[2]/ul/li[4]/a
+LINK "unilevervn beauty" @ref:101 /div#main[1]/div.container[2]/ul/li[5]/a
+LINK "193849872" @ref:102 /div#main[1]/div.container[2]/ul/li[6]/a
+LINK "larocheposay officialstore" @ref:103 /div#main[1]/div.container[2]/ul/li[7]/a
+LINK "cerave officialstore" @ref:104 /div#main[1]/div.container[2]/ul/li[8]/a
+LINK "garnier officialstore" @ref:105 /div#main[1]/div.container[2]/ul/li[9]/a
+LINK "coolmate sieu sale" @ref:106 /div#main[1]/div.container[2]/ul/li[10]/a
+LINK "delivietnam" @ref:107 /div#main[1]/div.container[2]/ul/li[11]/a
+LINK "thienlongofficialstore" @ref:108 /div#main[1]/div.container[2]/ul/li[12]/a
+LINK "unicharm hb" @ref:109 /div#main[1]/div.container[2]/ul/li[13]/a
+LINK "ahc day" @ref:110 /div#main[1]/div.container[2]/ul/li[14]/a
+LINK "huggies" @ref:111 /div#main[1]/div.container[2]/ul/li[15]/a
+LINK "Xem tất cả" @ref:112 /div#main[1]/div.container[2]/ul/li[16]/a
+BUTTON @ref:113 /div#main[1]/div.container[2]
+BUTTON @ref:114 /div#main[1]/div.container[2]
+LINK "Xem tất cả" @ref:115 /div#main[1]/div.container[2]/a
+BUTTON "Xem tất cả" @ref:116 /div#main[1]/div.container[2]/a/button
+BUTTON @ref:117 /div#main[1]/div.container[2]/button[1]
+LINK "Bán 18k+ / thángDây Buộc Tóc Scrunchies" @ref:118 /div#main[1]/div.container[2]/ul/li[1]/a
+LINK "Bán 19k+ / thángDây Buộc Tóc Cho Nữ" @ref:119 /div#main[1]/div.container[2]/ul/li[2]/a
+LINK "Bán 32k+ / thángDây Buộc Tóc Dễ Thương" @ref:120 /div#main[1]/div.container[2]/ul/li[3]/a
+LINK "Bán 2k+ / thángBút Chì Bấm" @ref:121 /div#main[1]/div.container[2]/ul/li[4]/a
+LINK "Bán 2k+ / thángBuộc Tóc Scrunchies" @ref:122 /div#main[1]/div.container[2]/ul/li[5]/a
+LINK "Bán 5k+ / thángHình Dán Trang Trí Sổ" @ref:123 /div#main[1]/div.container[2]/ul/li[6]/a
+LINK "Bán 77k+ / thángBút Mực Gel" @ref:124 /div#main[1]/div.container[2]/ul/li[7]/a
+LINK "Bán 8k+ / thángMiếng Dán Trang Trí Sổ" @ref:125 /div#main[1]/div.container[2]/ul/li[8]/a
+LINK "Bán 2k+ / thángTẩy Gôm Mono" @ref:126 /div#main[1]/div.container[2]/ul/li[9]/a
+LINK "Bán 18k+ / thángTúi Bút" @ref:127 /div#main[1]/div.container[2]/ul/li[10]/a
+LINK "Bán 66k+ / thángÁo Lót Nữ Không Gọng" @ref:128 /div#main[1]/div.container[2]/ul/li[11]/a
+LINK "Bán 375 / thángNón Tai Thỏ Giật" @ref:129 /div#main[1]/div.container[2]/ul/li[12]/a
+LINK "Bán 9k+ / thángVỏ Bảo Vệ Silicon Apple Pencil" @ref:130 /div#main[1]/div.container[2]/ul/li[13]/a
+LINK "Bán 15k+ / thángKẹp Tóc Cổ Điển" @ref:131 /div#main[1]/div.container[2]/ul/li[14]/a
+LINK "Bán 90k+ / thángSon Kem Lì Mịn Môi Romand" @ref:132 /div#main[1]/div.container[2]/ul/li[15]/a
+LINK "Bán 50k+ / thángSticker Dán Trang Trí" @ref:133 /div#main[1]/div.container[2]/ul/li[16]/a
+LINK "Bán 8k+ / thángKính Mát Mắt Mèo" @ref:134 /div#main[1]/div.container[2]/ul/li[17]/a
+LINK "Bán 30k+ / thángBút Chì Bấm" @ref:135 /div#main[1]/div.container[2]/ul/li[18]/a
+LINK "Bán 83k+ / thángÁo Thun" @ref:136 /div#main[1]/div.container[2]/ul/li[19]/a
+LINK "Bán 89k+ / thángGăng Tay Chống Nắng Xỏ Ngón" @ref:137 /div#main[1]/div.container[2]/ul/li[20]/a
+BUTTON @ref:138 /div#main[1]/div.container[2]/button[2]
+LINK "Singapore" @ref:139 /div#main[1]/footer/section/a
+LINK "Malaysia" @ref:140 /div#main[1]/footer/section/a
+LINK "Indonesia" @ref:141 /div#main[1]/footer/section/a
+LINK "Thái Lan" @ref:142 /div#main[1]/footer/section/a
+LINK "Philippines" @ref:143 /div#main[1]/footer/section/a
+LINK "Đài Loan" @ref:144 /div#main[1]/footer/section/a
+LINK "Brazil" @ref:145 /div#main[1]/footer/section/a
+LINK "México" @ref:146 /div#main[1]/footer/section/a
+LINK "Colombia" @ref:147 /div#main[1]/footer/section/a
+LINK "Chile" @ref:148 /div#main[1]/footer/section/a
+LINK "Shopee Mall" @ref:149 /div#main[1]/footer/section/a
+LINK "Shopee Blog - trang blog thông tin chính thức c..." @ref:150 /div#main[1]/footer/section/a
+LINK "tạo chương trình khuyến mãi trên Shopee" @ref:151 /div#main[1]/footer/section/a
+LINK "SPX" @ref:152 /div#main[1]/footer/section/a
+LINK "tổng đài shopee" @ref:153 /div#main[1]/footer/section/ul/li[1]/a
+LINK "Shopee Flash Sale" @ref:154 /div#main[1]/footer/section/ul/li[3]/a
+LINK "mã giảm giá" @ref:155 /div#main[1]/footer/section/a
+LINK "Voucher Xtra" @ref:156 /div#main[1]/footer/section/a
+LINK "Sale Tết" @ref:157 /div#main[1]/footer/section/a
+LINK "Sale" @ref:158 /div#main[1]/footer/section/a
+LINK "Năm Mới" @ref:159 /div#main[1]/footer/section/a
+LINK "Sale 3.3" @ref:160 /div#main[1]/footer/section/a
+LINK "S" @ref:161 /div#main[1]/footer/section/a
+LINK "ale 4.4" @ref:162 /div#main[1]/footer/section/a
+LINK "Sale 5.5" @ref:163 /div#main[1]/footer/section/a
+LINK "Sale 6.6" @ref:164 /div#main[1]/footer/section/a
+LINK "Sale 7.7" @ref:165 /div#main[1]/footer/section/a
+LINK "Sale 8.8" @ref:166 /div#main[1]/footer/section/a
+LINK "Sale 9.9" @ref:167 /div#main[1]/footer/section/a
+LINK "Sale 10.10" @ref:168 /div#main[1]/footer/section/a
+LINK "Sale 11.11" @ref:169 /div#main[1]/footer/section/a
+LINK "Sale Sinh Nhật 12.12" @ref:170 /div#main[1]/footer/section/a
+LINK "Khuyến Mãi Tết" @ref:171 /div#main[1]/footer/section/a
+LINK "quà Tết" @ref:172 /div#main[1]/footer/section/a
+LINK "Sale giữa tháng" @ref:173 /div#main[1]/footer/section/a
+LINK "Sale cuối tháng đón lương về" @ref:174 /div#main[1]/footer/section/a
+LINK "Shopee Premium" @ref:175 /div#main[1]/footer/section/a
+LINK "hàng hiệu giảm đến 50%" @ref:176 /div#main[1]/footer/section/a
+LINK "top sản phẩm hot deal cho bạn săn sale" @ref:177 /div#main[1]/footer/section/a
+LINK "Kiehl's" @ref:178 /div#main[1]/footer/section/a
+LINK "MAC" @ref:179 /div#main[1]/footer/section/a
+LINK "Foreo" @ref:180 /div#main[1]/footer/section/a
+LINK "SK-II" @ref:181 /div#main[1]/footer/section/a
+LINK "Estee Lauder" @ref:182 /div#main[1]/footer/section/a
+LINK "camera hành trình Gopro" @ref:183 /div#main[1]/footer/section/a
+LINK "máy ảnh Fuifilm" @ref:184 /div#main[1]/footer/section/a
+LINK "webcam Hikvision" @ref:185 /div#main[1]/footer/section/a
+LINK "máy đọc sách Kindle" @ref:186 /div#main[1]/footer/section/a
+LINK "New Balance" @ref:187 /div#main[1]/footer/section/a
+LINK "Nike" @ref:188 /div#main[1]/footer/section/a
+LINK "Vans" @ref:189 /div#main[1]/footer/section/a
+LINK "Crocs" @ref:190 /div#main[1]/footer/section/a
+LINK "thời trang nam" @ref:191 /div#main[1]/footer/section/a
+LINK "thời trang nữ" @ref:192 /div#main[1]/footer/section/a
+LINK "đồng hồ" @ref:193 /div#main[1]/footer/section/a
+LINK "điện thoại" @ref:194 /div#main[1]/footer/section/a
+LINK "máy tính & laptop" @ref:195 /div#main[1]/footer/section/a
+LINK "thẻ quà tặng ShopeeGifts" @ref:196 /div#main[1]/footer/section/a
+LINK "Shopee Xu" @ref:197 /div#main[1]/footer/section/a
+LINK "Shopee Video" @ref:198 /div#main[1]/footer/section/a
+LINK "Shopee Home Club" @ref:199 /div#main[1]/footer/section/a
+LINK "Shopee Mum Club" @ref:200 /div#main[1]/footer/section/a
+LINK "Shopee Beauty Club" @ref:201 /div#main[1]/footer/section/a
+LINK "Shopee Book Club" @ref:202 /div#main[1]/footer/section/a
+LINK "Philips" @ref:203 /div#main[1]/footer/section/a
+LINK "Deerma" @ref:204 /div#main[1]/footer/section/a
+LINK "L'Oréal" @ref:205 /div#main[1]/footer/section/a
+LINK "Kiehl's" @ref:206 /div#main[1]/footer/section/a
+LINK "Kappa" @ref:207 /div#main[1]/footer/section/a
+LINK "Juno" @ref:208 /div#main[1]/footer/section/a
+LINK "Converse" @ref:209 /div#main[1]/footer/section/a
+LINK "Biti's" @ref:210 /div#main[1]/footer/section/a
+LINK "Owen" @ref:211 /div#main[1]/footer/section/a
+LINK "Pedro" @ref:212 /div#main[1]/footer/section/a
+LINK "New Balance" @ref:213 /div#main[1]/footer/section/a
+LINK "adidas" @ref:214 /div#main[1]/footer/section/a
+LINK "Samsung" @ref:215 /div#main[1]/footer/section/a
+LINK "Sunhouse" @ref:216 /div#main[1]/footer/section/a
+LINK "Xiaomi" @ref:217 /div#main[1]/footer/section/a
+LINK "Oreo" @ref:218 /div#main[1]/footer/section/a
+LINK "Nike" @ref:219 /div#main[1]/footer/section/a
+LINK "Pantio" @ref:220 /div#main[1]/footer/section/a
+LINK "Supreme" @ref:221 /div#main[1]/footer/section/a
+LINK "PUMA" @ref:222 /div#main[1]/footer/section/a
+LINK "Kindle" @ref:223 /div#main[1]/footer/section/a
+LINK "DHC" @ref:224 /div#main[1]/footer/section/a
+LINK "Transino" @ref:225 /div#main[1]/footer/section/a
+LINK "Martiderm" @ref:226 /div#main[1]/footer/section/a
+LINK "Paula’s Choice" @ref:227 /div#main[1]/footer/section/a
+LINK "The Ordinary" @ref:228 /div#main[1]/footer/section/a
+LINK "KitKat" @ref:229 /div#main[1]/footer/section/a
+LINK "Teelab" @ref:230 /div#main[1]/footer/section/a
+LINK "SomeHow" @ref:231 /div#main[1]/footer/section/a
+LINK "Elise" @ref:232 /div#main[1]/footer/section/a
+LINK "YODY" @ref:233 /div#main[1]/footer/section/a
+LINK "Coolmate" @ref:234 /div#main[1]/footer/section/a
+LINK "MARC Fashion" @ref:235 /div#main[1]/footer/section/a
+LINK "Vergency" @ref:236 /div#main[1]/footer/section/a
+LINK "Scott Platon" @ref:237 /div#main[1]/footer/section/a
+LINK "GUMAC" @ref:238 /div#main[1]/footer/section/a
+LINK "Vascara" @ref:239 /div#main[1]/footer/section/a
+LINK "MWC" @ref:240 /div#main[1]/footer/section/a
+LINK "Shondo" @ref:241 /div#main[1]/footer/section/a
+LINK "CANIFA" @ref:242 /div#main[1]/footer/section/a
+LINK "Sablanca" @ref:243 /div#main[1]/footer/section/a
+LINK "OLV Boutique" @ref:244 /div#main[1]/footer/section/a
+LINK "Pandora" @ref:245 /div#main[1]/footer/section/a
+LINK "Bear" @ref:246 /div#main[1]/footer/section/a
+LINK "Santagift" @ref:247 /div#main[1]/footer/section/a
+LINK "Mlen diary" @ref:248 /div#main[1]/footer/section/a
+LINK "Rhys man" @ref:249 /div#main[1]/footer/section/a
+LINK "Bamozo" @ref:250 /div#main[1]/footer/section/a
+LINK "Colorkey" @ref:251 /div#main[1]/footer/section/a
+LINK "The Weird Studio" @ref:252 /div#main[1]/footer/section/a
+LINK "OOKAS" @ref:253 /div#main[1]/footer/section/a
+LINK "Aperire Cosmetic Vietnam" @ref:254 /div#main[1]/footer/section/a
+LINK "Yuumi" @ref:255 /div#main[1]/footer/section/a
+LINK "Ezviz" @ref:256 /div#main[1]/footer/section/a
+LINK "Venson" @ref:257 /div#main[1]/footer/section/a
+LINK "Hobebar" @ref:258 /div#main[1]/footer/section/a
+LINK "YOWXII" @ref:259 /div#main[1]/footer/section/a
+LINK "Ventas" @ref:260 /div#main[1]/footer/section/a
+LINK "Laura Sunshine" @ref:261 /div#main[1]/footer/section/a
+LINK "Vijully" @ref:262 /div#main[1]/footer/section/a
+LINK "bao lì xì" @ref:263 /div#main[1]/footer/section/a
+LINK "bao lì xì tết" @ref:264 /div#main[1]/footer/section/a
+LINK "bao lì xì 3d" @ref:265 /div#main[1]/footer/section/a
+LINK "bia tiger" @ref:266 /div#main[1]/footer/section/a
+LINK "bia heineken" @ref:267 /div#main[1]/footer/section/a
+LINK "bia tiger bạc" @ref:268 /div#main[1]/footer/section/a
+LINK "bia không cồn" @ref:269 /div#main[1]/footer/section/a
+LINK "bia budweiser 330ml" @ref:270 /div#main[1]/footer/section/a
+LINK "hạt điều" @ref:271 /div#main[1]/footer/section/a
+LINK "hạt dẻ cười" @ref:272 /div#main[1]/footer/section/a
+LINK "hạt macca" @ref:273 /div#main[1]/footer/section/a
+LINK "hạt hướng dương" @ref:274 /div#main[1]/footer/section/a
+LINK "hạt thông" @ref:275 /div#main[1]/footer/section/a
+LINK "hạt điều rang muối" @ref:276 /div#main[1]/footer/section/a
+LINK "thịt trâu gác bếp" @ref:277 /div#main[1]/footer/section/a
+LINK "bánh tét trà cuôn" @ref:278 /div#main[1]/footer/section/a
+LINK "mứt dừa" @ref:279 /div#main[1]/footer/section/a
+LINK "mứt tết" @ref:280 /div#main[1]/footer/section/a
+LINK "mứt gừng" @ref:281 /div#main[1]/footer/section/a
+LINK "giỏ quà tết" @ref:282 /div#main[1]/footer/section/a
+LINK "tháp nước ngọt" @ref:283 /div#main[1]/footer/section/a
+LINK "tháp bánh tết" @ref:284 /div#main[1]/footer/section/a
+LINK "áo dài" @ref:285 /div#main[1]/footer/section/a
+LINK "áo dài cách tân" @ref:286 /div#main[1]/footer/section/a
+LINK "áo dài cách tân nữ" @ref:287 /div#main[1]/footer/section/a
+LINK "đồ tết" @ref:288 /div#main[1]/footer/section/a
+LINK "áo dài cách tân nam" @ref:289 /div#main[1]/footer/section/a
+LINK "áo dài cẩm" @ref:290 /div#main[1]/footer/section/a
+LINK "xe đạp trợ lực điện" @ref:291 /div#main[1]/footer/ul/li[1]/a
+LINK "pháo giấy" @ref:292 /div#main[1]/footer/ul/li[2]/a
+LINK "hộp quà tết orion" @ref:293 /div#main[1]/footer/ul/li[3]/a
+LINK "cây mai giả" @ref:294 /div#main[1]/footer/ul/li[4]/a
+LINK "tủ quần áo nhựa" @ref:295 /div#main[1]/footer/ul/li[5]/a
+LINK "đầm dự tiệc" @ref:296 /div#main[1]/footer/ul/li[6]/a
+LINK "đèn năng lượng mặt trời" @ref:297 /div#main[1]/footer/ul/li[7]/a
+LINK "máy ấp trứng" @ref:298 /div#main[1]/footer/ul/li[8]/a
+LINK "loa vi tính" @ref:299 /div#main[1]/footer/ul/li[9]/a
+LINK "trang trí tết mành tre" @ref:300 /div#main[1]/footer/ul/li[10]/a
+LINK "chanh tứ quý" @ref:301 /div#main[1]/footer/ul/li[11]/a
+LINK "giá đỡ laptop" @ref:302 /div#main[1]/footer/ul/li[12]/a
+LINK "giỏ quà tết" @ref:303 /div#main[1]/footer/ul/li[13]/a
+LINK "bảng ghi số điện thoại trên ô tô" @ref:304 /div#main[1]/footer/ul/li[14]/a
+LINK "áo dài cho bé gái 12 tuổi" @ref:305 /div#main[1]/footer/ul/li[15]/a
+LINK "máy bắn bóng pickleball" @ref:306 /div#main[1]/footer/ul/li[16]/a
+LINK "quần lọt khe" @ref:307 /div#main[1]/footer/ul/li[17]/a
+LINK "loa báo chuyển khoản" @ref:308 /div#main[1]/footer/ul/li[18]/a
+LINK "hạt dẻ cười" @ref:309 /div#main[1]/footer/ul/li[19]/a
+LINK "đầu đọc thẻ nhớ" @ref:310 /div#main[1]/footer/ul/li[20]/a
+LINK "đồ tết nam" @ref:311 /div#main[1]/footer/ul/li[21]/a
+LINK "decor" @ref:312 /div#main[1]/footer/ul/li[22]/a
+LINK "hoa tùng tuyết mai" @ref:313 /div#main[1]/footer/ul/li[23]/a
+LINK "quà tết sức khỏe" @ref:314 /div#main[1]/footer/ul/li[24]/a
+LINK "thùng bia heineken bạc" @ref:315 /div#main[1]/footer/ul/li[25]/a
+LINK "nhẫn kim tiền nữ" @ref:316 /div#main[1]/footer/ul/li[26]/a
+LINK "hoa kim ngân đà nẵng" @ref:317 /div#main[1]/footer/ul/li[27]/a
+LINK "cây cherry mỹ long an" @ref:318 /div#main[1]/footer/ul/li[28]/a
+LINK "phao bơi quảng nam" @ref:319 /div#main[1]/footer/ul/li[29]/a
+LINK "kem dưỡng ẩm điện biên" @ref:320 /div#main[1]/footer/ul/li[30]/a
+LINK "Thời Trang Nam" @ref:321 /div#main[1]/footer/a
+LINK "Áo Khoác" @ref:322 /div#main[1]/footer/a
+LINK "Áo Vest và Blazer" @ref:323 /div#main[1]/footer/a
+LINK "Áo Hoodie, Áo Len & Áo Nỉ" @ref:324 /div#main[1]/footer/a
+LINK "Quần Jeans" @ref:325 /div#main[1]/footer/a
+LINK "Quần Dài/Quần Âu" @ref:326 /div#main[1]/footer/a
+LINK "Quần Short" @ref:327 /div#main[1]/footer/a
+LINK "Áo" @ref:328 /div#main[1]/footer/a
+LINK "Áo Ba Lỗ" @ref:329 /div#main[1]/footer/a
+LINK "Đồ Lót" @ref:330 /div#main[1]/footer/a
+LINK "Đồ Ngủ" @ref:331 /div#main[1]/footer/a
+LINK "Đồ Bộ" @ref:332 /div#main[1]/footer/a
+LINK "Vớ/Tất" @ref:333 /div#main[1]/footer/a
+LINK "Trang Phục Truyền Thống" @ref:334 /div#main[1]/footer/a
+LINK "Đồ Hóa Trang" @ref:335 /div#main[1]/footer/a
+LINK "Trang Phục Ngành Nghề" @ref:336 /div#main[1]/footer/a
+LINK "Khác" @ref:337 /div#main[1]/footer/a
+LINK "Trang Sức Nam" @ref:338 /div#main[1]/footer/a
+LINK "Kính Mắt Nam" @ref:339 /div#main[1]/footer/a
+LINK "Thắt Lưng Nam" @ref:340 /div#main[1]/footer/a
+LINK "Cà vạt & Nơ cổ" @ref:341 /div#main[1]/footer/a
+LINK "Phụ Kiện Nam" @ref:342 /div#main[1]/footer/a
+LINK "Nhà Cửa & Đời Sống" @ref:343 /div#main[1]/footer/a
+LINK "Chăn, Ga, Gối & Nệm" @ref:344 /div#main[1]/footer/a
+LINK "Đồ nội thất" @ref:345 /div#main[1]/footer/a
+LINK "Trang trí nhà cửa" @ref:346 /div#main[1]/footer/a
+LINK "Dụng cụ & Thiết bị tiện ích" @ref:347 /div#main[1]/footer/a
+LINK "Đồ dùng nhà bếp và hộp đựng thực phẩm" @ref:348 /div#main[1]/footer/a
+LINK "Đèn" @ref:349 /div#main[1]/footer/a
+LINK "Ngoài trời & Sân vườn" @ref:350 /div#main[1]/footer/a
+LINK "Đồ dùng phòng tắm" @ref:351 /div#main[1]/footer/a
+LINK "Vật phẩm thờ cúng" @ref:352 /div#main[1]/footer/a
+LINK "Đồ trang trí tiệc" @ref:353 /div#main[1]/footer/a
+LINK "Chăm sóc nhà cửa và giặt ủi" @ref:354 /div#main[1]/footer/a
+LINK "Sắp xếp nhà cửa" @ref:355 /div#main[1]/footer/a
+LINK "Dụng cụ pha chế" @ref:356 /div#main[1]/footer/a
+LINK "Tinh dầu thơm phòng" @ref:357 /div#main[1]/footer/a
+LINK "Đồ dùng phòng ăn" @ref:358 /div#main[1]/footer/a
+LINK "Đồng Hồ" @ref:359 /div#main[1]/footer/a
+LINK "Đồng Hồ Nam" @ref:360 /div#main[1]/footer/a
+LINK "Đồng Hồ Nữ" @ref:361 /div#main[1]/footer/a
+LINK "Bộ Đồng Hồ & Đồng Hồ Cặp" @ref:362 /div#main[1]/footer/a
+LINK "Đồng Hồ Trẻ Em" @ref:363 /div#main[1]/footer/a
+LINK "Phụ Kiện Đồng Hồ" @ref:364 /div#main[1]/footer/a
+LINK "Khác" @ref:365 /div#main[1]/footer/a
+LINK "Phụ Kiện & Trang Sức Nữ" @ref:366 /div#main[1]/footer/a
+LINK "Nhẫn" @ref:367 /div#main[1]/footer/a
+LINK "Bông tai" @ref:368 /div#main[1]/footer/a
+LINK "Khăn choàng" @ref:369 /div#main[1]/footer/a
+LINK "Găng tay" @ref:370 /div#main[1]/footer/a
+LINK "Phụ kiện tóc" @ref:371 /div#main[1]/footer/a
+LINK "Vòng tay & Lắc tay" @ref:372 /div#main[1]/footer/a
+LINK "Lắc chân" @ref:373 /div#main[1]/footer/a
+LINK "Mũ" @ref:374 /div#main[1]/footer/a
+LINK "Dây chuyền" @ref:375 /div#main[1]/footer/a
+LINK "Kính mắt" @ref:376 /div#main[1]/footer/a
+LINK "Kim loại quý" @ref:377 /div#main[1]/footer/a
+LINK "Thắt lưng" @ref:378 /div#main[1]/footer/a
+LINK "Cà vạt & Nơ cổ" @ref:379 /div#main[1]/footer/a
+LINK "Phụ kiện thêm" @ref:380 /div#main[1]/footer/a
+LINK "Bộ phụ kiện" @ref:381 /div#main[1]/footer/a
+LINK "Khác" @ref:382 /div#main[1]/footer/a
+LINK "Vớ/ Tất" @ref:383 /div#main[1]/footer/a
+LINK "Ô/Dù" @ref:384 /div#main[1]/footer/a
+LINK "Balo & Túi Ví Nam" @ref:385 /div#main[1]/footer/a
+LINK "Ba Lô Nam" @ref:386 /div#main[1]/footer/a
+LINK "Ba Lô Laptop Nam" @ref:387 /div#main[1]/footer/a
+LINK "Túi & Cặp Đựng Laptop" @ref:388 /div#main[1]/footer/a
+LINK "Túi Chống Sốc Laptop Nam" @ref:389 /div#main[1]/footer/a
+LINK "Túi Tote Nam" @ref:390 /div#main[1]/footer/a
+LINK "Cặp Xách Công Sở Nam" @ref:391 /div#main[1]/footer/a
+LINK "Ví Cầm Tay Nam" @ref:392 /div#main[1]/footer/a
+LINK "Túi Đeo Hông & Túi Đeo Ngực Nam" @ref:393 /div#main[1]/footer/a
+LINK "Túi Đeo Chéo Nam" @ref:394 /div#main[1]/footer/a
+LINK "Bóp/Ví Nam" @ref:395 /div#main[1]/footer/a
+LINK "Khác" @ref:396 /div#main[1]/footer/a
+LINK "Voucher & Dịch Vụ" @ref:397 /div#main[1]/footer/a
+LINK "Nhà hàng & Ăn uống" @ref:398 /div#main[1]/footer/a
+LINK "Sự kiện & Giải trí" @ref:399 /div#main[1]/footer/a
+LINK "Nạp tiền tài khoản" @ref:400 /div#main[1]/footer/a
+LINK "Sức khỏe & Làm đẹp" @ref:401 /div#main[1]/footer/a
+LINK "Gọi xe" @ref:402 /div#main[1]/footer/a
+LINK "Khóa học" @ref:403 /div#main[1]/footer/a
+LINK "Du lịch & Khách sạn" @ref:404 /div#main[1]/footer/a
+LINK "Mua sắm" @ref:405 /div#main[1]/footer/a
+LINK "Mã quà tặng Shopee" @ref:406 /div#main[1]/footer/a
+LINK "Thanh toán hóa đơn" @ref:407 /div#main[1]/footer/a
+LINK "Dịch vụ khác" @ref:408 /div#main[1]/footer/a
+LINK "Thời Trang Nữ" @ref:409 /div#main[1]/footer/a
+LINK "Quần" @ref:410 /div#main[1]/footer/a
+LINK "Quần đùi" @ref:411 /div#main[1]/footer/a
+LINK "Chân váy" @ref:412 /div#main[1]/footer/a
+LINK "Quần jeans" @ref:413 /div#main[1]/footer/a
+LINK "Đầm/Váy" @ref:414 /div#main[1]/footer/a
+LINK "Váy cưới" @ref:415 /div#main[1]/footer/a
+LINK "Đồ liền thân" @ref:416 /div#main[1]/footer/a
+LINK "Áo khoác, Áo choàng & Vest" @ref:417 /div#main[1]/footer/a
+LINK "Áo len & Cardigan" @ref:418 /div#main[1]/footer/a
+LINK "Hoodie và Áo nỉ" @ref:419 /div#main[1]/footer/a
+LINK "Bộ" @ref:420 /div#main[1]/footer/a
+LINK "Đồ lót" @ref:421 /div#main[1]/footer/a
+LINK "Đồ ngủ" @ref:422 /div#main[1]/footer/a
+LINK "Áo" @ref:423 /div#main[1]/footer/a
+LINK "Đồ tập" @ref:424 /div#main[1]/footer/a
+LINK "Đồ Bầu" @ref:425 /div#main[1]/footer/a
+LINK "Đồ truyền thống" @ref:426 /div#main[1]/footer/a
+LINK "Đồ hóa trang" @ref:427 /div#main[1]/footer/a
+LINK "Vải" @ref:428 /div#main[1]/footer/a
+LINK "Vớ/ Tất" @ref:429 /div#main[1]/footer/a
+LINK "Khác" @ref:430 /div#main[1]/footer/a
+LINK "Máy Tính & Laptop" @ref:431 /div#main[1]/footer/a
+LINK "Máy Tính Bàn" @ref:432 /div#main[1]/footer/a
+LINK "Màn Hình" @ref:433 /div#main[1]/footer/a
+LINK "Linh Kiện Máy Tính" @ref:434 /div#main[1]/footer/a
+LINK "Thiết Bị Lưu Trữ" @ref:435 /div#main[1]/footer/a
+LINK "Thiết Bị Mạng" @ref:436 /div#main[1]/footer/a
+LINK "Máy In, Máy Scan & Máy Chiếu" @ref:437 /div#main[1]/footer/a
+LINK "Phụ Kiện Máy Tính" @ref:438 /div#main[1]/footer/a
+LINK "Laptop" @ref:439 /div#main[1]/footer/a
+LINK "Khác" @ref:440 /div#main[1]/footer/a
+LINK "Gaming" @ref:441 /div#main[1]/footer/a
+LINK "Giày Dép Nữ" @ref:442 /div#main[1]/footer/a
+LINK "Bốt" @ref:443 /div#main[1]/footer/a
+LINK "Giày Thể Thao/ Sneaker" @ref:444 /div#main[1]/footer/a
+LINK "Giày Đế Bằng" @ref:445 /div#main[1]/footer/a
+LINK "Giày Cao Gót" @ref:446 /div#main[1]/footer/a
+LINK "Giày Đế Xuồng" @ref:447 /div#main[1]/footer/a
+LINK "Xăng-đan Và Dép" @ref:448 /div#main[1]/footer/a
+LINK "Phụ Kiện Giày" @ref:449 /div#main[1]/footer/a
+LINK "Giày Khác" @ref:450 /div#main[1]/footer/a
+LINK "Thể Thao & Du Lịch" @ref:451 /div#main[1]/footer/a
+LINK "Vali" @ref:452 /div#main[1]/footer/a
+LINK "Túi du lịch" @ref:453 /div#main[1]/footer/a
+LINK "Phụ kiện du lịch" @ref:454 /div#main[1]/footer/a
+LINK "Dụng Cụ Thể Thao & Dã Ngoại" @ref:455 /div#main[1]/footer/a
+LINK "Giày Thể Thao" @ref:456 /div#main[1]/footer/a
+LINK "Thời Trang Thể Thao & Dã Ngoại" @ref:457 /div#main[1]/footer/a
+LINK "Phụ Kiện Thể Thao & Dã Ngoại" @ref:458 /div#main[1]/footer/a
+LINK "Khác" @ref:459 /div#main[1]/footer/a
+LINK "Thời Trang Trẻ Em" @ref:460 /div#main[1]/footer/a
+LINK "Trang phục bé trai" @ref:461 /div#main[1]/footer/a
+LINK "Trang phục bé gái" @ref:462 /div#main[1]/footer/a
+LINK "Giày dép bé trai" @ref:463 /div#main[1]/footer/a
+LINK "Giày dép bé gái" @ref:464 /div#main[1]/footer/a
+LINK "Khác" @ref:465 /div#main[1]/footer/a
+LINK "Quần áo em bé" @ref:466 /div#main[1]/footer/a
+LINK "Giày tập đi & Tất sơ sinh" @ref:467 /div#main[1]/footer/a
+LINK "Phụ kiện trẻ em" @ref:468 /div#main[1]/footer/a
+LINK "Dụng cụ và thiết bị tiện ích" @ref:469 /div#main[1]/footer/a
+LINK "Dụng cụ cầm tay" @ref:470 /div#main[1]/footer/a
+LINK "Dụng cụ điện và thiết bị lớn" @ref:471 /div#main[1]/footer/a
+LINK "Thiết bị mạch điện" @ref:472 /div#main[1]/footer/a
+LINK "Vật liệu xây dựng" @ref:473 /div#main[1]/footer/a
+LINK "Thiết bị và phụ kiện xây dựng" @ref:474 /div#main[1]/footer/a
+LINK "Điện Thoại & Phụ Kiện" @ref:475 /div#main[1]/footer/a
+LINK "Điện thoại" @ref:476 /div#main[1]/footer/a
+LINK "Máy tính bảng" @ref:477 /div#main[1]/footer/a
+LINK "Pin Dự Phòng" @ref:478 /div#main[1]/footer/a
+LINK "Pin Gắn Trong, Cáp và Bộ Sạc" @ref:479 /div#main[1]/footer/a
+LINK "Ốp lưng, bao da, Miếng dán điện thoại" @ref:480 /div#main[1]/footer/a
+LINK "Bảo vệ màn hình" @ref:481 /div#main[1]/footer/a
+LINK "Đế giữ điện thoại" @ref:482 /div#main[1]/footer/a
+LINK "Thẻ nhớ" @ref:483 /div#main[1]/footer/a
+LINK "Sim" @ref:484 /div#main[1]/footer/a
+LINK "Phụ kiện khác" @ref:485 /div#main[1]/footer/a
+LINK "Thiết bị khác" @ref:486 /div#main[1]/footer/a
+LINK "Sắc Đẹp" @ref:487 /div#main[1]/footer/a
+LINK "Chăm sóc da mặt" @ref:488 /div#main[1]/footer/a
+LINK "Tắm & chăm sóc cơ thể" @ref:489 /div#main[1]/footer/a
+LINK "Trang điểm" @ref:490 /div#main[1]/footer/a
+LINK "Chăm sóc tóc" @ref:491 /div#main[1]/footer/a
+LINK "Dụng cụ & Phụ kiện Làm đẹp" @ref:492 /div#main[1]/footer/a
+LINK "Vệ sinh răng miệng" @ref:493 /div#main[1]/footer/a
+LINK "Nước hoa" @ref:494 /div#main[1]/footer/a
+LINK "Chăm sóc nam giới" @ref:495 /div#main[1]/footer/a
+LINK "Khác" @ref:496 /div#main[1]/footer/a
+LINK "Chăm sóc phụ nữ" @ref:497 /div#main[1]/footer/a
+LINK "Bộ sản phẩm làm đẹp" @ref:498 /div#main[1]/footer/a
+LINK "Giày Dép Nam" @ref:499 /div#main[1]/footer/a
+LINK "Bốt" @ref:500 /div#main[1]/footer/a
+LINK "Giày Thể Thao/ Sneakers" @ref:501 /div#main[1]/footer/a
+LINK "Giày Sục" @ref:502 /div#main[1]/footer/a
+LINK "Giày Tây Lười" @ref:503 /div#main[1]/footer/a
+LINK "Giày Oxfords & Giày Buộc Dây" @ref:504 /div#main[1]/footer/a
+LINK "Xăng-đan và Dép" @ref:505 /div#main[1]/footer/a
+LINK "Phụ kiện giày dép" @ref:506 /div#main[1]/footer/a
+LINK "Khác" @ref:507 /div#main[1]/footer/a
+LINK "Bách Hóa Online" @ref:508 /div#main[1]/footer/a
+LINK "Đồ ăn vặt" @ref:509 /div#main[1]/footer/a
+LINK "Đồ chế biến sẵn" @ref:510 /div#main[1]/footer/a
+LINK "Nhu yếu phẩm" @ref:511 /div#main[1]/footer/a
+LINK "Nguyên liệu nấu ăn" @ref:512 /div#main[1]/footer/a
+LINK "Đồ làm bánh" @ref:513 /div#main[1]/footer/a
+LINK "Sữa - trứng" @ref:514 /div#main[1]/footer/a
+LINK "Đồ uống" @ref:515 /div#main[1]/footer/a
+LINK "Ngũ cốc & mứt" @ref:516 /div#main[1]/footer/a
+LINK "Các loại bánh" @ref:517 /div#main[1]/footer/a
+LINK "Đồ uống có cồn" @ref:518 /div#main[1]/footer/a
+LINK "Bộ quà tặng" @ref:519 /div#main[1]/footer/a
+LINK "Thực phẩm tươi sống và thực phẩm đông lạnh" @ref:520 /div#main[1]/footer/a
+LINK "Khác" @ref:521 /div#main[1]/footer/a
+LINK "Đồ Chơi" @ref:522 /div#main[1]/footer/a
+LINK "Sở thích & Sưu tầm" @ref:523 /div#main[1]/footer/a
+LINK "Đồ chơi giải trí" @ref:524 /div#main[1]/footer/a
+LINK "Đồ chơi giáo dục" @ref:525 /div#main[1]/footer/a
+LINK "Đồ chơi cho trẻ sơ sinh & trẻ nhỏ" @ref:526 /div#main[1]/footer/a
+LINK "Đồ chơi vận động & ngoài trời" @ref:527 /div#main[1]/footer/a
+LINK "Búp bê & Đồ chơi nhồi bông" @ref:528 /div#main[1]/footer/a
+LINK "Mẹ & Bé" @ref:529 /div#main[1]/footer/a
+LINK "Đồ dùng du lịch cho bé" @ref:530 /div#main[1]/footer/a
+LINK "Đồ dùng ăn dặm cho bé" @ref:531 /div#main[1]/footer/a
+LINK "Phụ kiện cho mẹ" @ref:532 /div#main[1]/footer/a
+LINK "Chăm sóc sức khỏe mẹ" @ref:533 /div#main[1]/footer/a
+LINK "Đồ dùng phòng tắm & Chăm sóc cơ thể bé" @ref:534 /div#main[1]/footer/a
+LINK "Đồ dùng phòng ngủ cho bé" @ref:535 /div#main[1]/footer/a
+LINK "An toàn cho bé" @ref:536 /div#main[1]/footer/a
+LINK "Thực phẩm cho bé" @ref:537 /div#main[1]/footer/a
+LINK "Chăm sóc sức khỏe bé" @ref:538 /div#main[1]/footer/a
+LINK "Tã & bô em bé" @ref:539 /div#main[1]/footer/a
+LINK "Đồ chơi" @ref:540 /div#main[1]/footer/a
+LINK "Bộ & Gói quà tặng" @ref:541 /div#main[1]/footer/a
+LINK "Khác" @ref:542 /div#main[1]/footer/a
+LINK "Sữa công thức trên 24 tháng" @ref:543 /div#main[1]/footer/a
+LINK "Sữa công thức 0-24 tháng tuổi" @ref:544 /div#main[1]/footer/a
+LINK "Máy Ảnh & Máy Quay Phim" @ref:545 /div#main[1]/footer/a
+LINK "Máy ảnh - Máy quay phim" @ref:546 /div#main[1]/footer/a
+LINK "Camera giám sát & Camera hệ thống" @ref:547 /div#main[1]/footer/a
+LINK "Thẻ nhớ" @ref:548 /div#main[1]/footer/a
+LINK "Ống kính" @ref:549 /div#main[1]/footer/a
+LINK "Phụ kiện máy ảnh" @ref:550 /div#main[1]/footer/a
+LINK "Máy bay camera & Phụ kiện" @ref:551 /div#main[1]/footer/a
+LINK "Túi Ví Nữ" @ref:552 /div#main[1]/footer/a
+LINK "Ba Lô Nữ" @ref:553 /div#main[1]/footer/a
+LINK "Cặp Laptop" @ref:554 /div#main[1]/footer/a
+LINK "Ví Dự Tiệc & Ví Cầm Tay" @ref:555 /div#main[1]/footer/a
+LINK "Túi Đeo Hông & Túi Đeo Ngực" @ref:556 /div#main[1]/footer/a
+LINK "Túi Tote" @ref:557 /div#main[1]/footer/a
+LINK "Túi Quai Xách" @ref:558 /div#main[1]/footer/a
+LINK "Túi Đeo Chéo & Túi Đeo Vai" @ref:559 /div#main[1]/footer/a
+LINK "Ví/Bóp Nữ" @ref:560 /div#main[1]/footer/a
+LINK "Phụ Kiện Túi" @ref:561 /div#main[1]/footer/a
+LINK "Khác" @ref:562 /div#main[1]/footer/a
+LINK "Ô Tô & Xe Máy & Xe Đạp" @ref:563 /div#main[1]/footer/a
+LINK "Xe đạp, xe điện" @ref:564 /div#main[1]/footer/a
+LINK "Mô tô, xe máy" @ref:565 /div#main[1]/footer/a
+LINK "Xe Ô tô" @ref:566 /div#main[1]/footer/a
+LINK "Mũ bảo hiểm" @ref:567 /div#main[1]/footer/a
+LINK "Phụ kiện xe máy" @ref:568 /div#main[1]/footer/a
+LINK "Phụ kiện xe đạp" @ref:569 /div#main[1]/footer/a
+LINK "Phụ kiện bên trong ô tô" @ref:570 /div#main[1]/footer/a
+LINK "Dầu nhớt & dầu nhờn" @ref:571 /div#main[1]/footer/a
+LINK "Phụ tùng ô tô" @ref:572 /div#main[1]/footer/a
+LINK "Phụ tùng xe máy" @ref:573 /div#main[1]/footer/a
+LINK "Phụ kiện bên ngoài ô tô" @ref:574 /div#main[1]/footer/a
+LINK "Chăm sóc ô tô" @ref:575 /div#main[1]/footer/a
+LINK "Dịch vụ cho xe" @ref:576 /div#main[1]/footer/a
+LINK "Giặt Giũ & Chăm Sóc Nhà Cửa" @ref:577 /div#main[1]/footer/a
+LINK "Giặt giũ & Chăm sóc nhà cửa" @ref:578 /div#main[1]/footer/a
+LINK "Giấy vệ sinh, khăn giấy" @ref:579 /div#main[1]/footer/a
+LINK "Vệ sinh nhà cửa" @ref:580 /div#main[1]/footer/a
+LINK "Vệ sinh bát đĩa" @ref:581 /div#main[1]/footer/a
+LINK "Dụng cụ vệ sinh" @ref:582 /div#main[1]/footer/a
+LINK "Chất khử mùi, làm thơm" @ref:583 /div#main[1]/footer/a
+LINK "Thuốc diệt côn trùng" @ref:584 /div#main[1]/footer/a
+LINK "Túi, màng bọc thực phẩm" @ref:585 /div#main[1]/footer/a
+LINK "Bao bì, túi đựng rác" @ref:586 /div#main[1]/footer/a
+LINK "Thiết Bị Điện Tử" @ref:587 /div#main[1]/footer/a
+LINK "Phụ kiện tivi" @ref:588 /div#main[1]/footer/a
+LINK "Máy Game Console" @ref:589 /div#main[1]/footer/a
+LINK "Phụ kiện Console" @ref:590 /div#main[1]/footer/a
+LINK "Đĩa game" @ref:591 /div#main[1]/footer/a
+LINK "Linh phụ kiện" @ref:592 /div#main[1]/footer/a
+LINK "Tai nghe nhét tai" @ref:593 /div#main[1]/footer/a
+LINK "Loa" @ref:594 /div#main[1]/footer/a
+LINK "Tivi" @ref:595 /div#main[1]/footer/a
+LINK "Tivi Box" @ref:596 /div#main[1]/footer/a
+LINK "Headphones" @ref:597 /div#main[1]/footer/a
+LINK "Sức Khỏe" @ref:598 /div#main[1]/footer/a
+LINK "Vật tư y tế" @ref:599 /div#main[1]/footer/a
+LINK "Chống muỗi & xua đuổi côn trùng" @ref:600 /div#main[1]/footer/a
+LINK "Thực phẩm chức năng" @ref:601 /div#main[1]/footer/a
+LINK "Tã người lớn" @ref:602 /div#main[1]/footer/a
+LINK "Hỗ trợ làm đẹp" @ref:603 /div#main[1]/footer/a
+LINK "Hỗ trợ tình dục" @ref:604 /div#main[1]/footer/a
+LINK "Dụng cụ massage và trị liệu" @ref:605 /div#main[1]/footer/a
+LINK "Khác" @ref:606 /div#main[1]/footer/a
+LINK "Thiết Bị Điện Gia Dụng" @ref:607 /div#main[1]/footer/a
+LINK "Đồ gia dụng nhà bếp" @ref:608 /div#main[1]/footer/a
+LINK "Đồ gia dụng lớn" @ref:609 /div#main[1]/footer/a
+LINK "Máy hút bụi & Thiết bị làm sạch" @ref:610 /div#main[1]/footer/a
+LINK "Quạt & Máy nóng lạnh" @ref:611 /div#main[1]/footer/a
+LINK "Thiết bị chăm sóc quần áo" @ref:612 /div#main[1]/footer/a
+LINK "Khác" @ref:613 /div#main[1]/footer/a
+LINK "Máy xay, ép, máy đánh trứng trộn bột, máy xay t..." @ref:614 /div#main[1]/footer/a
+LINK "Bếp điện" @ref:615 /div#main[1]/footer/a
+LINK "Nhà Sách Online" @ref:616 /div#main[1]/footer/a
+LINK "Sách Tiếng Việt" @ref:617 /div#main[1]/footer/a
+LINK "Sách ngoại văn" @ref:618 /div#main[1]/footer/a
+LINK "Gói Quà" @ref:619 /div#main[1]/footer/a
+LINK "Bút viết" @ref:620 /div#main[1]/footer/a
+LINK "Dụng cụ học sinh & văn phòng" @ref:621 /div#main[1]/footer/a
+LINK "Màu, Họa Cụ và Đồ Thủ Công" @ref:622 /div#main[1]/footer/a
+LINK "Sổ và Giấy Các Loại" @ref:623 /div#main[1]/footer/a
+LINK "Quà Lưu Niệm" @ref:624 /div#main[1]/footer/a
+LINK "Nhạc cụ và phụ kiện âm nhạc" @ref:625 /div#main[1]/footer/a
+LINK "Chăm Sóc Thú Cưng" @ref:626 /div#main[1]/footer/a
+LINK "Thức ăn cho thú cưng" @ref:627 /div#main[1]/footer/a
+LINK "Phụ kiện cho thú cưng" @ref:628 /div#main[1]/footer/a
+LINK "Vệ sinh cho thú cưng" @ref:629 /div#main[1]/footer/a
+LINK "Quần áo thú cưng" @ref:630 /div#main[1]/footer/a
+LINK "Chăm sóc sức khỏe" @ref:631 /div#main[1]/footer/a
+LINK "Làm đẹp cho thú cưng" @ref:632 /div#main[1]/footer/a
+LINK "Khác" @ref:633 /div#main[1]/footer/a
+LINK "Trung Tâm Trợ Giúp Shopee" @ref:634 /div#main[1]/footer/ul/li[1]/a
+LINK "Shopee Blog" @ref:635 /div#main[1]/footer/ul/li[2]/a
+LINK "Shopee Mall" @ref:636 /div#main[1]/footer/ul/li[3]/a
+LINK "Hướng Dẫn Mua Hàng/Đặt Hàng" @ref:637 /div#main[1]/footer/ul/li[4]/a
+LINK "Hướng Dẫn Bán Hàng" @ref:638 /div#main[1]/footer/ul/li[5]/a
+LINK "Ví ShopeePay" @ref:639 /div#main[1]/footer/ul/li[6]/a
+LINK "Shopee Xu" @ref:640 /div#main[1]/footer/ul/li[7]/a
+LINK "Đơn Hàng" @ref:641 /div#main[1]/footer/ul/li[8]/a
+LINK "Trả Hàng/Hoàn Tiền" @ref:642 /div#main[1]/footer/ul/li[9]/a
+LINK "Liên Hệ Shopee" @ref:643 /div#main[1]/footer/ul/li[10]/a
+LINK "Chính Sách Bảo Hành" @ref:644 /div#main[1]/footer/ul/li[11]/a
+LINK "Về Shopee" @ref:645 /div#main[1]/footer/ul/li[1]/a
+LINK "Tuyển Dụng" @ref:646 /div#main[1]/footer/ul/li[2]/a
+LINK "Điều Khoản Shopee" @ref:647 /div#main[1]/footer/ul/li[3]/a
+LINK "Chính Sách Bảo Mật" @ref:648 /div#main[1]/footer/ul/li[4]/a
+LINK "Shopee Mall" @ref:649 /div#main[1]/footer/ul/li[5]/a
+LINK "Kênh Người Bán" @ref:650 /div#main[1]/footer/ul/li[6]/a
+LINK "Flash Sale" @ref:651 /div#main[1]/footer/ul/li[7]/a
+LINK "Tiếp Thị Liên Kết" @ref:652 /div#main[1]/footer/ul/li[8]/a
+LINK "Liên Hệ Truyền Thông" @ref:653 /div#main[1]/footer/ul/li[9]/a
+LINK "Facebook" @ref:654 /div#main[1]/footer/ul/li[1]/a
+LINK "Instagram" @ref:655 /div#main[1]/footer/ul/li[2]/a
+LINK "LinkedIn" @ref:656 /div#main[1]/footer/ul/li[3]/a
+LINK "web" @ref:657 /div#main[1]/footer/a
+LINK "web" @ref:658 /div#main[1]/footer/a[1]
+LINK "web" @ref:659 /div#main[1]/footer/a[2]
+LINK "web" @ref:660 /div#main[1]/footer/a[3]
+LINK "Argentina" @ref:661 /div#main[1]/footer/a
+LINK "Singapore" @ref:662 /div#main[1]/footer/a
+LINK "Indonesia" @ref:663 /div#main[1]/footer/a
+LINK "Thái Lan" @ref:664 /div#main[1]/footer/a
+LINK "Malaysia" @ref:665 /div#main[1]/footer/a
+LINK "Việt Nam" @ref:666 /div#main[1]/footer/a
+LINK "Philippines" @ref:667 /div#main[1]/footer/a
+LINK "Brazil" @ref:668 /div#main[1]/footer/a
+LINK "México" @ref:669 /div#main[1]/footer/a
+LINK "Đài Loan" @ref:670 /div#main[1]/footer/a
+LINK "Chính sách bảo mật" @ref:671 /div#main[1]/footer/a
+LINK "Quy chế hoạt động" @ref:672 /div#main[1]/footer/a
+LINK "Chính sách vận chuyển" @ref:673 /div#main[1]/footer/a
+LINK "CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN" @ref:674 /div#main[1]/footer/a
+LINK "18367" @ref:675 /div#main[1]/footer/a[1]
+LINK "29" @ref:676 /div#main[1]/footer/a[2]
+LINK "170" @ref:677 /div#main[1]/footer/a[3]
+LINK "larocheposay officialstore" @ref:678 /div#modal[2]/section#HomePagePopupBannerSection/a

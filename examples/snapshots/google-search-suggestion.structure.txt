@@ -1,0 +1,7 @@
+PAGE: http://localhost/ | Untitled | viewport=1024x768
+STRUCTURE: elements=4 maxLines=100
+
+NAVIGATION "Gmail Images Something went wrong. Your history..." [3 buttons, 2 links] /body/div
+SEARCH "Upload image Upload file AI Mode Choose what yo..." [18 buttons, 1 input, 19 other] /body/form
+CONTENTINFO "Vietnam AboutAdvertisingBusiness How Search wor..." [1 button, 12 links, 2 other] /body/div
+  HEADING "Choose what you’re giving feedback on" /body/form/div#_xu13aYOzGJPt1e8P7drSmAs_5

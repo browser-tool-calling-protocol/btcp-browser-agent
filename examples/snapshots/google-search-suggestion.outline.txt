@@ -1,0 +1,9 @@
+PAGE: http://localhost/ | Untitled | viewport=1024x768
+OUTLINE: landmarks=2 sections=3 headings=1 words=4615
+
+NAVIGATION @ref:0 [9 words, 5 links] /body/div
+LIST [2 items] /body/form/ul
+HEADING level=I "Choose what you’re giving feedback on" /body/form/div#_xu13aYOzGJPt1e8P7drSmAs_5
+REGION "Alh6id" @ref:1 [65 words, 10 items] /body/form/div#Alh6id[2]
+  LIST [10 items] /body/form/div#Alh6id[2]/ul
+CONTENTINFO @ref:2 [24 words, 11 links] /body/div

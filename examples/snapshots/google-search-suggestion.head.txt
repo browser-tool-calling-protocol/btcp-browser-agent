@@ -1,0 +1,6 @@
+URL: http://localhost/
+TITLE: Untitled
+VIEWPORT: 1024x768
+STATUS: interactive
+ELEMENTS: total=694 interactive=73
+READY_STATE: loading

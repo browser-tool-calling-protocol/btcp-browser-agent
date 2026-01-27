@@ -1,0 +1,50 @@
+PAGE: http://localhost/ | Untitled | viewport=1024x768
+SNAPSHOT: elements=328 refs=47
+
+LINK "Gmail" @ref:0 /body/header#gb/a
+LINK "Search for Images" @ref:1 /body/header#gb/a
+BUTTON "Search Labs" @ref:2 /body/header#gb/a
+BUTTON "Google apps" @ref:3 /body/header#gb/div#gbwa[3]/a
+BUTTON "Google Account: Minh Luc (luk.mink@gmail.com)" @ref:4 /body/header#gb/a
+BUTTON "Upload files or images" @ref:5 /body/form/button
+MENUITEM "Upload image" @ref:6 /body/form/ul/li[1]/button
+MENUITEM "Upload file" @ref:7 /body/form/ul/li[2]/button
+COMBOBOX "Search" @ref:8 (expanded) /body/form/textarea#APjFqb
+BUTTON "Clear" @ref:9 /body/form
+LINK "AI Mode" @ref:10 /body/form/button
+BUTTON "Close Choose what you’re giving feedback on" @ref:11 /body/form/div#_xu13aYOzGJPt1e8P7drSmAs_5
+LISTBOX "weather journal See more Delete weather See mor..." @ref:12 /body/form/div#Alh6id[2]/ul
+OPTION "weather journal" @ref:13 /body/form/div#Alh6id[2]/ul/li[1]/div#jZ2SBf[1]
+BUTTON "Delete weather journal from search history" @ref:14 /body/form/div#Alh6id[2]/ul/li[1]/div#MFb78d[3]
+OPTION "weather" @ref:15 /body/form/div#Alh6id[2]/ul/li[2]/div#ERWdKc[1]
+BUTTON "Delete weather from search history" @ref:16 /body/form/div#Alh6id[2]/ul/li[2]/div#GwAatf[3]
+OPTION "wuthering wave" @ref:17 /body/form/div#Alh6id[2]/ul/li[3]/div#c7mM1c[1]
+OPTION "wuthering" @ref:18 /body/form/div#Alh6id[2]/ul/li[4]/div#Zrbbw[1]
+OPTION "weather in boston now" @ref:19 /body/form/div#Alh6id[2]/ul/li[5]/div#sBQTL[1]
+OPTION "weather in denver" @ref:20 /body/form/div#Alh6id[2]/ul/li[6]/div#vTtioc[1]
+OPTION "weather new york city" @ref:21 /body/form/div#Alh6id[2]/ul/li[7]/div#gLuoSb[1]
+OPTION "weather uk" @ref:22 /body/form/div#Alh6id[2]/ul/li[8]/div#mdzGzd[1]
+OPTION "weather vietnam" @ref:23 /body/form/div#Alh6id[2]/ul/li[9]/div#hwdq1[1]
+OPTION "weather dalat" @ref:24 /body/form/div#Alh6id[2]/ul/li[10]/div#HFKcI[1]
+LISTBOX @ref:25 /body/form/div#shJ2Vb[3]/ul
+OPTION @ref:26 /body/form/li#YMXe[1]
+BUTTON "Delete" @ref:27 /body/form/li#YMXe[1]
+OPTION @ref:28 /body/form/li#mitGyb[3]
+BUTTON "Delete" @ref:29 /body/form/li#mitGyb[3]
+OPTION @ref:30 /body/form/li#TN4rFf[4]
+BUTTON "Google Search" @ref:31 [type=submit] /body/form/input[1]
+BUTTON "I'm Feeling Lucky" @ref:32 [type=submit] /body/form/input[2]
+BUTTON "See more" @ref:33 /body/form/div#TWnylf[6]/g-popup#ow16
+OPTION @ref:34 /body/form/div#dh215c[7]
+BUTTON "Google Search" @ref:35 [type=submit] /body/form/input[1]
+BUTTON "I'm Feeling Lucky" @ref:36 [type=submit] /body/form/input[2]
+LINK "Tiếng Việt" @ref:37 /body/div[3]/div#SIvCob/a[1]
+LINK "Français" @ref:38 /body/div[3]/div#SIvCob/a[2]
+LINK "繁體中文" @ref:39 /body/div[3]/div#SIvCob/a[3]
+LINK "About" @ref:40 /body/a[1]
+LINK "Advertising" @ref:41 /body/a[2]
+LINK "Business" @ref:42 /body/a[3]
+LINK "How Search works" @ref:43 /body/a[4]
+LINK "Privacy" @ref:44 /body/a[1]
+LINK "Terms" @ref:45 /body/a[2]
+BUTTON "Settings" @ref:46 /body/div

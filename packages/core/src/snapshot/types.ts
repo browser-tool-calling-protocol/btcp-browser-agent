@@ -109,8 +109,10 @@ export interface HeadOptions {
  * Find clickable/interactive elements with @ref markers.
  */
 export interface InteractiveOptions extends BaseTraverseOptions {
+  /** Filter elements by semantic selector (role, xpath, or CSS-like unions) */
+  select?: string;
   /** Filter output lines by grep pattern */
-  grep?: string | GrepOptions;
+  grep?: string;
 }
 
 /**
@@ -129,8 +131,10 @@ export interface StructureOptions extends BaseTraverseOptions {
  * Structural overview with metadata (landmarks, sections, headings).
  */
 export interface OutlineOptions extends BaseTraverseOptions {
+  /** Filter elements by semantic selector (role, xpath, or CSS-like unions) */
+  select?: string;
   /** Filter output lines by grep pattern */
-  grep?: string | GrepOptions;
+  grep?: string;
 }
 
 /**
@@ -140,8 +144,10 @@ export interface OutlineOptions extends BaseTraverseOptions {
  * Always returns tree format (use extract() for markdown/HTML).
  */
 export interface ContentOptions extends BaseTraverseOptions {
+  /** Filter sections by semantic selector (xpath patterns) */
+  select?: string;
   /** Filter sections by grep pattern (matches xpath) */
-  grep?: string | GrepOptions;
+  grep?: string;
   /** Maximum characters per section (default: 2000) */
   maxLength?: number;
 }
