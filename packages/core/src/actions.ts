@@ -405,8 +405,47 @@ export class DOMActions {
       return this.refMap.get(selector);
     }
 
+    // Check if it's an XPath selector
+    if (selector.startsWith('/')) {
+      return this.evaluateXPath(selector);
+    }
+
     // CSS selector
     return this.document.querySelector(selector);
+  }
+
+  /**
+   * Evaluate XPath expression and return first matching element
+   * Supports union operators (|) for multiple paths
+   */
+  private evaluateXPath(xpath: string): Element | null {
+    try {
+      // Handle union operators by splitting and trying each path
+      if (xpath.includes('|')) {
+        const paths = xpath.split('|').map(p => p.trim());
+        for (const path of paths) {
+          const result = this.evaluateXPath(path);
+          if (result) {
+            return result;
+          }
+        }
+        return null;
+      }
+
+      // Evaluate single XPath expression
+      const result = this.document.evaluate(
+        xpath,
+        this.document,
+        null,
+        XPathResult.FIRST_ORDERED_NODE_TYPE,
+        null
+      );
+
+      return result.singleNodeValue as Element | null;
+    } catch (error) {
+      // Invalid XPath syntax - return null like querySelector would
+      return null;
+    }
   }
 
   private queryElements(selector: string): Element[] {
@@ -414,7 +453,53 @@ export class DOMActions {
       const el = this.refMap.get(selector);
       return el ? [el] : [];
     }
+
+    // Check if it's an XPath selector
+    if (selector.startsWith('/')) {
+      return this.evaluateXPathAll(selector);
+    }
+
     return Array.from(this.document.querySelectorAll(selector));
+  }
+
+  /**
+   * Evaluate XPath expression and return all matching elements
+   * Supports union operators (|) for multiple paths
+   */
+  private evaluateXPathAll(xpath: string): Element[] {
+    try {
+      const elements: Element[] = [];
+
+      // Handle union operators by splitting and evaluating each path
+      if (xpath.includes('|')) {
+        const paths = xpath.split('|').map(p => p.trim());
+        for (const path of paths) {
+          elements.push(...this.evaluateXPathAll(path));
+        }
+        return elements;
+      }
+
+      // Evaluate single XPath expression
+      const result = this.document.evaluate(
+        xpath,
+        this.document,
+        null,
+        XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+        null
+      );
+
+      for (let i = 0; i < result.snapshotLength; i++) {
+        const node = result.snapshotItem(i);
+        if (node && node.nodeType === Node.ELEMENT_NODE) {
+          elements.push(node as Element);
+        }
+      }
+
+      return elements;
+    } catch (error) {
+      // Invalid XPath syntax - return empty array like querySelectorAll would
+      return [];
+    }
   }
 
   // --- Actions ---
