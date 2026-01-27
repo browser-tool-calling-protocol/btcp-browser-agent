@@ -54,10 +54,25 @@ export class DOMActions {
   private overlayContainer: HTMLElement | null = null;
   private scrollListener: (() => void) | null = null;
   private rafId: number | null = null;
+  // Cached HTML element constructors for cross-context instanceof checks
+  private _HTMLElement: typeof HTMLElement;
+  private _HTMLInputElement: typeof HTMLInputElement;
+  private _HTMLTextAreaElement: typeof HTMLTextAreaElement;
+  private _HTMLSelectElement: typeof HTMLSelectElement;
+  private _HTMLButtonElement: typeof HTMLButtonElement;
+  private _HTMLAnchorElement: typeof HTMLAnchorElement;
 
   constructor(doc: Document, win: Window, refMap: RefMap) {
     this.document = doc;
     this.window = win;
+    // Cache HTML element constructors from the window context
+    // This ensures instanceof checks work correctly in JSDOM and cross-frame scenarios
+    this._HTMLElement = (win as any).HTMLElement;
+    this._HTMLInputElement = (win as any).HTMLInputElement;
+    this._HTMLTextAreaElement = (win as any).HTMLTextAreaElement;
+    this._HTMLSelectElement = (win as any).HTMLSelectElement;
+    this._HTMLButtonElement = (win as any).HTMLButtonElement;
+    this._HTMLAnchorElement = (win as any).HTMLAnchorElement;
     this.refMap = refMap;
   }
 
@@ -326,7 +341,7 @@ export class DOMActions {
       const elements = this.document.querySelectorAll(interactiveSelectors.join(','));
 
       elements.forEach(el => {
-        if (el instanceof HTMLElement) {
+        if (el instanceof this._HTMLElement) {
           const style = this.window.getComputedStyle(el);
           const isVisible = style.display !== 'none' && style.visibility !== 'hidden';
 
@@ -361,8 +376,8 @@ export class DOMActions {
 
     // Clickable elements
     if (
-      element instanceof HTMLButtonElement ||
-      element instanceof HTMLAnchorElement ||
+      element instanceof this._HTMLButtonElement ||
+      element instanceof this._HTMLAnchorElement ||
       element.getAttribute('role') === 'button' ||
       element.getAttribute('role') === 'link' ||
       element.hasAttribute('onclick')
@@ -371,7 +386,7 @@ export class DOMActions {
     }
 
     // Input elements
-    if (element instanceof HTMLInputElement) {
+    if (element instanceof this._HTMLInputElement) {
       actions.push('fill', 'clear', 'focus', 'blur', 'isEnabled');
 
       if (element.type === 'checkbox' || element.type === 'radio') {
@@ -382,17 +397,17 @@ export class DOMActions {
     }
 
     // Textarea elements
-    if (element instanceof HTMLTextAreaElement) {
+    if (element instanceof this._HTMLTextAreaElement) {
       actions.push('type', 'fill', 'clear', 'focus', 'blur');
     }
 
     // Select elements
-    if (element instanceof HTMLSelectElement) {
+    if (element instanceof this._HTMLSelectElement) {
       actions.push('select', 'focus', 'blur');
     }
 
     // Focusable elements
-    if (element instanceof HTMLElement) {
+    if (element instanceof this._HTMLElement) {
       actions.push('focus', 'blur', 'scroll', 'scrollIntoView', 'press');
     }
 
@@ -511,7 +526,7 @@ export class DOMActions {
     const element = this.getElement(selector);
     const { button = 'left', clickCount = 1, modifiers = [] } = options;
 
-    if (element instanceof HTMLElement) {
+    if (element instanceof this._HTMLElement) {
       element.focus();
     }
 
@@ -556,7 +571,7 @@ export class DOMActions {
     const isContentEditable = element.getAttribute('contenteditable') === 'true' ||
                               element.getAttribute('contenteditable') === '';
 
-    if (!(element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement || isContentEditable)) {
+    if (!(element instanceof this._HTMLInputElement || element instanceof this._HTMLTextAreaElement || isContentEditable)) {
       const actualType = element.tagName.toLowerCase();
       const availableActions = this.getAvailableActionsForElement(element);
 
@@ -570,7 +585,7 @@ export class DOMActions {
     }
 
     // Focus the element (cast to HTMLElement for contenteditable)
-    if (element instanceof HTMLElement) {
+    if (element instanceof this._HTMLElement) {
       element.focus();
     }
 
@@ -579,20 +594,30 @@ export class DOMActions {
       const htmlElement = element as HTMLElement;
 
       if (options.clear) {
-        // Use execCommand for better undo/redo support
-        this.document.execCommand('selectAll', false);
-        this.document.execCommand('delete', false);
-        // Fallback if execCommand doesn't work
+        // Use execCommand for better undo/redo support (when available)
+        const hasExec = typeof this.document.execCommand === 'function';
+        if (hasExec) {
+          try {
+            this.document.execCommand('selectAll', false);
+            this.document.execCommand('delete', false);
+          } catch {
+            // Ignore execCommand errors
+          }
+        }
+        // Fallback/ensure cleared
         if (htmlElement.textContent) {
           htmlElement.textContent = '';
         }
         htmlElement.dispatchEvent(new Event('input', { bubbles: true }));
       }
 
+      // Check if execCommand is available (not in JSDOM)
+      const hasExecCommand = typeof this.document.execCommand === 'function';
+
       // Try fast path: execCommand('insertText') for entire text at once
       // This works with most rich text editors (Gmail, Slack, etc.) and supports undo/redo
       let inserted = false;
-      if (!options.delay) {
+      if (!options.delay && hasExecCommand) {
         // Ensure cursor is positioned in the element for execCommand
         const selection = this.window.getSelection();
         if (selection) {
@@ -603,20 +628,31 @@ export class DOMActions {
           selection.addRange(range);
         }
 
-        inserted = this.document.execCommand('insertText', false, text);
-        if (inserted) {
-          htmlElement.dispatchEvent(new Event('input', { bubbles: true }));
+        try {
+          inserted = this.document.execCommand('insertText', false, text);
+          if (inserted) {
+            htmlElement.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        } catch {
+          inserted = false;
         }
       }
 
-      // Fallback: char-by-char for delay mode or if execCommand failed
+      // Fallback: char-by-char for delay mode or if execCommand failed/unavailable
       if (!inserted) {
         for (const char of text) {
           htmlElement.dispatchEvent(new KeyboardEvent('keydown', { key: char, bubbles: true }));
           htmlElement.dispatchEvent(new KeyboardEvent('keypress', { key: char, bubbles: true }));
 
           // Try execCommand first (works with undo/redo in real browsers)
-          let charInserted = this.document.execCommand('insertText', false, char);
+          let charInserted = false;
+          if (hasExecCommand) {
+            try {
+              charInserted = this.document.execCommand('insertText', false, char);
+            } catch {
+              charInserted = false;
+            }
+          }
 
           // Fallback: append to textContent (works in JSDOM and as last resort)
           if (!charInserted) {
@@ -704,7 +740,7 @@ export class DOMActions {
   private async fill(selector: string, value: string): Promise<ActionResult> {
     const element = this.getElement(selector);
 
-    if (!(element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement)) {
+    if (!(element instanceof this._HTMLInputElement || element instanceof this._HTMLTextAreaElement)) {
       const actualType = element.tagName.toLowerCase();
       const availableActions = this.getAvailableActionsForElement(element);
 
@@ -738,7 +774,7 @@ export class DOMActions {
   private async clear(selector: string): Promise<ActionResult> {
     const element = this.getElement(selector);
 
-    if (element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement) {
+    if (element instanceof this._HTMLInputElement || element instanceof this._HTMLTextAreaElement) {
       element.value = '';
       element.dispatchEvent(new Event('input', { bubbles: true }));
       element.dispatchEvent(new Event('change', { bubbles: true }));
@@ -750,7 +786,7 @@ export class DOMActions {
   private async check(selector: string): Promise<ActionResult> {
     const element = this.getElement(selector);
 
-    if (!(element instanceof HTMLInputElement)) {
+    if (!(element instanceof this._HTMLInputElement)) {
       const actualType = element.tagName.toLowerCase();
       const availableActions = this.getAvailableActionsForElement(element);
 
@@ -783,7 +819,7 @@ export class DOMActions {
   private async uncheck(selector: string): Promise<ActionResult> {
     const element = this.getElement(selector);
 
-    if (!(element instanceof HTMLInputElement)) {
+    if (!(element instanceof this._HTMLInputElement)) {
       const actualType = element.tagName.toLowerCase();
       const availableActions = this.getAvailableActionsForElement(element);
 
@@ -816,7 +852,7 @@ export class DOMActions {
   private async select(selector: string, values: string | string[]): Promise<ActionResult & { values: string[] }> {
     const element = this.getElement(selector);
 
-    if (!(element instanceof HTMLSelectElement)) {
+    if (!(element instanceof this._HTMLSelectElement)) {
       const actualType = element.tagName.toLowerCase();
       const availableActions = this.getAvailableActionsForElement(element);
 
@@ -853,7 +889,7 @@ export class DOMActions {
   private async focus(selector: string): Promise<ActionResult> {
     const element = this.getElement(selector);
 
-    if (element instanceof HTMLElement) {
+    if (element instanceof this._HTMLElement) {
       element.focus();
     }
 
@@ -863,7 +899,7 @@ export class DOMActions {
   private async blur(selector: string): Promise<ActionResult> {
     const element = this.getElement(selector);
 
-    if (element instanceof HTMLElement) {
+    if (element instanceof this._HTMLElement) {
       element.blur();
     }
 
@@ -1034,7 +1070,7 @@ export class DOMActions {
 
   private async isVisible(selector: string): Promise<ActionResult & { visible: boolean }> {
     const element = this.queryElement(selector);
-    if (!element || !(element instanceof HTMLElement)) {
+    if (!element || !(element instanceof this._HTMLElement)) {
       return { success: true, error: null, visible: false };
     }
 
@@ -1116,7 +1152,7 @@ export class DOMActions {
       const element = this.queryElement(selector);
 
       // Track element state for error reporting
-      if (element instanceof HTMLElement) {
+      if (element instanceof this._HTMLElement) {
         const style = this.window.getComputedStyle(element);
         lastState = {
           attached: true,
@@ -1140,7 +1176,7 @@ export class DOMActions {
           conditionMet = element === null;
           break;
         case 'visible':
-          if (element instanceof HTMLElement) {
+          if (element instanceof this._HTMLElement) {
             const style = this.window.getComputedStyle(element);
             conditionMet =
               style.display !== 'none' &&
@@ -1150,7 +1186,7 @@ export class DOMActions {
         case 'hidden':
           conditionMet =
             !element ||
-            (element instanceof HTMLElement &&
+            (element instanceof this._HTMLElement &&
               this.window.getComputedStyle(element).display === 'none');
           break;
         case 'enabled':
@@ -1187,13 +1223,13 @@ export class DOMActions {
   ): Promise<ValidateElementResponse> {
     const element = this.getElement(selector);
     const actualRole = element.getAttribute('role') || element.tagName.toLowerCase();
-    const actualType = element instanceof HTMLInputElement ? element.type : undefined;
+    const actualType = element instanceof this._HTMLInputElement ? element.type : undefined;
 
     // Get element capabilities
     const capabilities = this.getAvailableActionsForElement(element);
 
     // Get element state
-    const style = element instanceof HTMLElement ? this.window.getComputedStyle(element) : null;
+    const style = element instanceof this._HTMLElement ? this.window.getComputedStyle(element) : null;
     const state = {
       attached: true,
       visible: style ? style.display !== 'none' && style.visibility !== 'hidden' : false,
@@ -1207,11 +1243,11 @@ export class DOMActions {
     if (options.expectedType) {
       const typeMatch =
         options.expectedType === actualRole ||
-        (options.expectedType === 'input' && element instanceof HTMLInputElement) ||
-        (options.expectedType === 'textarea' && element instanceof HTMLTextAreaElement) ||
-        (options.expectedType === 'button' && element instanceof HTMLButtonElement) ||
-        (options.expectedType === 'link' && element instanceof HTMLAnchorElement) ||
-        (options.expectedType === 'select' && element instanceof HTMLSelectElement);
+        (options.expectedType === 'input' && element instanceof this._HTMLInputElement) ||
+        (options.expectedType === 'textarea' && element instanceof this._HTMLTextAreaElement) ||
+        (options.expectedType === 'button' && element instanceof this._HTMLButtonElement) ||
+        (options.expectedType === 'link' && element instanceof this._HTMLAnchorElement) ||
+        (options.expectedType === 'select' && element instanceof this._HTMLSelectElement);
 
       if (!typeMatch) {
         compatible = false;
@@ -1223,17 +1259,17 @@ export class DOMActions {
     if (options.capabilities && compatible) {
       const capabilityMap: Record<string, boolean> = {
         clickable:
-          element instanceof HTMLButtonElement ||
-          element instanceof HTMLAnchorElement ||
+          element instanceof this._HTMLButtonElement ||
+          element instanceof this._HTMLAnchorElement ||
           element.getAttribute('role') === 'button' ||
           element.hasAttribute('onclick'),
         editable:
-          element instanceof HTMLInputElement ||
-          element instanceof HTMLTextAreaElement,
+          element instanceof this._HTMLInputElement ||
+          element instanceof this._HTMLTextAreaElement,
         checkable:
-          element instanceof HTMLInputElement &&
+          element instanceof this._HTMLInputElement &&
           (element.type === 'checkbox' || element.type === 'radio'),
-        hoverable: element instanceof HTMLElement,
+        hoverable: element instanceof this._HTMLElement,
       };
 
       for (const cap of options.capabilities) {
