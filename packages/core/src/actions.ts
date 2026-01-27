@@ -579,34 +579,57 @@ export class DOMActions {
       const htmlElement = element as HTMLElement;
 
       if (options.clear) {
-        htmlElement.textContent = '';
+        // Use execCommand for better undo/redo support
+        this.document.execCommand('selectAll', false);
+        this.document.execCommand('delete', false);
+        // Fallback if execCommand doesn't work
+        if (htmlElement.textContent) {
+          htmlElement.textContent = '';
+        }
         htmlElement.dispatchEvent(new Event('input', { bubbles: true }));
       }
 
-      for (const char of text) {
-        htmlElement.dispatchEvent(new KeyboardEvent('keydown', { key: char, bubbles: true }));
-        htmlElement.dispatchEvent(new KeyboardEvent('keypress', { key: char, bubbles: true }));
-
-        // Insert text at cursor position or append
+      // Try fast path: execCommand('insertText') for entire text at once
+      // This works with most rich text editors (Gmail, Slack, etc.) and supports undo/redo
+      let inserted = false;
+      if (!options.delay) {
+        // Ensure cursor is positioned in the element for execCommand
         const selection = this.window.getSelection();
-        if (selection && selection.rangeCount > 0) {
-          const range = selection.getRangeAt(0);
-          range.deleteContents();
-          const textNode = this.document.createTextNode(char);
-          range.insertNode(textNode);
-          range.setStartAfter(textNode);
-          range.setEndAfter(textNode);
+        if (selection) {
+          const range = this.document.createRange();
+          range.selectNodeContents(htmlElement);
+          range.collapse(false); // collapse to end
           selection.removeAllRanges();
           selection.addRange(range);
-        } else {
-          htmlElement.textContent += char;
         }
 
-        htmlElement.dispatchEvent(new Event('input', { bubbles: true }));
-        htmlElement.dispatchEvent(new KeyboardEvent('keyup', { key: char, bubbles: true }));
+        inserted = this.document.execCommand('insertText', false, text);
+        if (inserted) {
+          htmlElement.dispatchEvent(new Event('input', { bubbles: true }));
+        }
+      }
 
-        if (options.delay) {
-          await this.sleep(options.delay);
+      // Fallback: char-by-char for delay mode or if execCommand failed
+      if (!inserted) {
+        for (const char of text) {
+          htmlElement.dispatchEvent(new KeyboardEvent('keydown', { key: char, bubbles: true }));
+          htmlElement.dispatchEvent(new KeyboardEvent('keypress', { key: char, bubbles: true }));
+
+          // Try execCommand first (works with undo/redo in real browsers)
+          let charInserted = this.document.execCommand('insertText', false, char);
+
+          // Fallback: append to textContent (works in JSDOM and as last resort)
+          if (!charInserted) {
+            // For plain contenteditable, direct append works reliably
+            htmlElement.textContent = (htmlElement.textContent || '') + char;
+          }
+
+          htmlElement.dispatchEvent(new Event('input', { bubbles: true }));
+          htmlElement.dispatchEvent(new KeyboardEvent('keyup', { key: char, bubbles: true }));
+
+          if (options.delay) {
+            await this.sleep(options.delay);
+          }
         }
       }
 
