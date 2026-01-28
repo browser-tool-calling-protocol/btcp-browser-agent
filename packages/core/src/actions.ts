@@ -740,7 +740,13 @@ export class DOMActions {
   private async fill(selector: string, value: string): Promise<ActionResult> {
     const element = this.getElement(selector);
 
-    if (!(element instanceof this._HTMLInputElement || element instanceof this._HTMLTextAreaElement)) {
+    // Check if element is contenteditable (same pattern as type())
+    const isContentEditable = element.getAttribute('contenteditable') === 'true' ||
+                              element.getAttribute('contenteditable') === '';
+
+    if (!(element instanceof this._HTMLInputElement ||
+          element instanceof this._HTMLTextAreaElement ||
+          isContentEditable)) {
       const actualType = element.tagName.toLowerCase();
       const availableActions = this.getAvailableActionsForElement(element);
 
@@ -748,19 +754,156 @@ export class DOMActions {
         selector,
         'fill',
         actualType,
-        ['input', 'textarea'],
+        ['input', 'textarea', 'contenteditable'],
         availableActions
       );
     }
 
-    element.focus();
-    element.value = value;
-    element.dispatchEvent(new Event('input', { bubbles: true }));
-    element.dispatchEvent(new Event('change', { bubbles: true }));
+    // Focus the element
+    if (element instanceof this._HTMLElement) {
+      element.focus();
+    }
+
+    // Handle contenteditable elements with real key events
+    if (isContentEditable) {
+      const htmlElement = element as HTMLElement;
+
+      // Clear existing content first
+      htmlElement.textContent = '';
+      htmlElement.dispatchEvent(new Event('input', { bubbles: true }));
+
+      // Position cursor at start
+      const selection = this.window.getSelection();
+      if (selection) {
+        const range = this.document.createRange();
+        range.selectNodeContents(htmlElement);
+        range.collapse(true); // collapse to start
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+
+      // Type each character with real key events (like a real user)
+      for (const char of value) {
+        // Dispatch keydown event
+        htmlElement.dispatchEvent(new KeyboardEvent('keydown', {
+          key: char,
+          code: `Key${char.toUpperCase()}`,
+          bubbles: true,
+          cancelable: true
+        }));
+
+        // Dispatch keypress event (deprecated but some apps still use it)
+        htmlElement.dispatchEvent(new KeyboardEvent('keypress', {
+          key: char,
+          code: `Key${char.toUpperCase()}`,
+          bubbles: true,
+          cancelable: true
+        }));
+
+        // Insert the character using Selection API
+        const sel = this.window.getSelection();
+        if (sel && sel.rangeCount > 0) {
+          const currentRange = sel.getRangeAt(0);
+          currentRange.deleteContents();
+          const textNode = this.document.createTextNode(char);
+          currentRange.insertNode(textNode);
+          // Move cursor after the inserted character
+          currentRange.setStartAfter(textNode);
+          currentRange.setEndAfter(textNode);
+          sel.removeAllRanges();
+          sel.addRange(currentRange);
+        }
+
+        // Dispatch input event after each character (like browsers do)
+        htmlElement.dispatchEvent(new InputEvent('input', {
+          bubbles: true,
+          cancelable: false,
+          inputType: 'insertText',
+          data: char
+        }));
+
+        // Dispatch keyup event
+        htmlElement.dispatchEvent(new KeyboardEvent('keyup', {
+          key: char,
+          code: `Key${char.toUpperCase()}`,
+          bubbles: true,
+          cancelable: true
+        }));
+      }
+
+      // Final change event
+      htmlElement.dispatchEvent(new Event('change', { bubbles: true }));
+
+      // Wait for verification that textContent equals expected value
+      const result = await waitForAssertion(
+        () => {
+          const content = htmlElement.textContent || '';
+          if (content !== value) {
+            return {
+              success: false,
+              error: `Expected textContent to equal "${value}" but got "${content}"`,
+              description: 'textContent check',
+              expected: value,
+              actual: content
+            };
+          }
+          return {
+            success: true,
+            error: null,
+            description: 'textContent check',
+            expected: value,
+            actual: content
+          };
+        },
+        { timeout: 1000, interval: 50 }
+      );
+
+      if (!result.success) {
+        throw createVerificationError('fill', result, selector);
+      }
+
+      return { success: true, error: null };
+    }
+
+    // Handle regular input/textarea elements with real key events for realistic behavior
+    const inputElement = element as HTMLInputElement | HTMLTextAreaElement;
+    inputElement.value = '';
+    inputElement.dispatchEvent(new Event('input', { bubbles: true }));
+
+    for (const char of value) {
+      inputElement.dispatchEvent(new KeyboardEvent('keydown', {
+        key: char,
+        bubbles: true,
+        cancelable: true
+      }));
+
+      inputElement.dispatchEvent(new KeyboardEvent('keypress', {
+        key: char,
+        bubbles: true,
+        cancelable: true
+      }));
+
+      // For input/textarea, append to value
+      inputElement.value += char;
+
+      inputElement.dispatchEvent(new InputEvent('input', {
+        bubbles: true,
+        inputType: 'insertText',
+        data: char
+      }));
+
+      inputElement.dispatchEvent(new KeyboardEvent('keyup', {
+        key: char,
+        bubbles: true,
+        cancelable: true
+      }));
+    }
+
+    inputElement.dispatchEvent(new Event('change', { bubbles: true }));
 
     // Wait for verification that value equals expected
     const result = await waitForAssertion(
-      () => assertValueEquals(element, value),
+      () => assertValueEquals(inputElement, value),
       { timeout: 1000, interval: 50 }
     );
 
